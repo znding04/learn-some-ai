@@ -1,0 +1,172 @@
+# 学点啥 (What to Learn) — Daily Build Task
+
+## Project Context
+- **App Name**: 学点啥 (What to Learn)
+- **Repo**: znding04/what-to-learn
+- **Local Path**: ~/Work/what-to-learn
+- **Live URL**: learn.ljding.app (Cloudflare Pages, to be configured)
+- **Part of**: ljding.app ecosystem (with 找谁玩, 玩点啥)
+- **Research Docs**: Already in repo (RESEARCH.md, SUMMARY.md)
+
+## Core Concept
+A serious, structured self-learning platform with:
+- Mastery-based progression (no time limits)
+- Zero gamification (no badges, streaks, leaderboards)
+- Curated external resources (YouTube, articles, papers)
+- Initial topics: High School Math, Physics, AI/ML
+
+## Daily Work Instructions
+Each day, check current progress and continue building. Follow this priority order:
+
+### Phase 1: Project Scaffolding (Days 1-3)
+1. **Check if scaffold exists**: Look for package.json, vite.config.js, etc.
+2. If NOT scaffolded:
+   - Scaffold Vue 3 + Vite + Tailwind CSS project (matching 玩点啥 stack)
+   - Install dependencies: `npm install vue-router@4 tailwindcss@3 postcss autoprefixer kaTeX`
+   - Configure Tailwind (tailwind.config.js, postcss.config.js)
+   - Setup Vue Router with placeholder routes: `/`, `/topics`, `/topic/:id`, `/lesson/:id`
+   - Create directory structure:
+     ```
+     src/
+       components/
+       views/
+       router/
+       content/  (markdown lessons)
+       assets/
+     public/
+     ```
+   - Initialize Cloudflare Pages: `npx wrangler pages project create what-to-learn`
+   - Commit: "Initial scaffold: Vue3 + Vite + Tailwind + Vue Router"
+
+### Phase 2: Core Features (Days 4-10)
+1. **Topic Listing Page** (`/topics`):
+   - Display topics from JSON config (math, physics, AI)
+   - Show progress per topic (from localStorage)
+   - Link to first lesson of each topic
+
+2. **Lesson View** (`/lesson/:id`):
+   - Fetch and render Markdown content from `content/` folder
+   - Use `markdown-it` for rendering, `marked` or `remark` for parsing
+   - Render KaTeX math: wrap `$inline$` and `$$block$$` in KaTeX
+   - Embed YouTube videos from markdown frontmatter
+   - Display curated external resource links (from markdown frontmatter)
+   - Add "Mark as Complete" checkbox (localStorage)
+
+3. **Navigation**:
+   - Sidebar with topic tree
+   - Previous/Next lesson buttons
+   - Breadcrumb navigation
+
+4. **Progress Tracking (localStorage)**:
+   - Store completed lesson IDs
+   - Calculate and display progress percentage per topic
+   - Simple progress bar component
+
+5. **Homepage** (`/`):
+   - App title: 学点啥 (What to Learn)
+   - Brief description
+   - Links to topics
+   - Overall progress summary
+
+### Phase 3: Content Creation (Days 11-30, ongoing)
+1. **Create content JSON/config**:
+   - `content/topics.json`: list of topics with metadata
+   - `content/math/algebra/lessons.json`: lesson list
+   - Each lesson: id, title, file path, prerequisites, estimated time
+
+2. **Add Initial Lessons** (start with ONE topic, ~15 lessons):
+   - Topic: High School Math — Algebra
+   - Lessons: Variables, Linear Equations, Inequalities, Systems, Polynomials, Factoring, etc.
+   - Each lesson as Markdown file in `content/math/algebra/01-variables.md`
+   - Include: concept explanation, 1-2 embedded YouTube links, 2-3 external resource links, practice problems with solutions
+
+3. **Content Template** (use for each lesson):
+   ```markdown
+   ---
+   id: algebra-variables
+   title: "Variables and Expressions"
+   topic: math-algebra
+   prerequisites: []
+   estimated_time: 25min
+   difficulty: beginner
+   resources:
+     - type: video
+       url: https://youtube.com/watch?v=XXXX
+       title: "Khan Academy - What is a variable?"
+       duration: 8min
+     - type: article
+       url: https://www.mathsisfun.com/definitions/variable.html
+       title: "Math is Fun - Variables"
+   ---
+
+   # Variables and Expressions
+
+   ## Introduction
+   A variable is a symbol (usually a letter) that represents an unknown number...
+
+   ## Video Lesson
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/XXXX" ...></iframe>
+
+   ## Key Concepts
+   ...
+
+   ## Practice Problems
+   1. Identify the variable in: 3x + 5 = 20
+      <details><summary>Answer</summary>x is the variable</details>
+   ```
+
+### Phase 4: Deploy & Polish (Days 31+)
+1. **Cloudflare Pages Deploy**:
+   - Connect GitHub repo to Cloudflare Pages
+   - Configure build: `npm run build`, output `dist/`
+   - Set custom domain: learn.ljding.app
+   - Enable auto-deploy on push to main
+
+2. **Enhancements**:
+   - Search functionality
+   - Dark mode toggle
+   - Responsive design improvements
+   - Math rendering optimization
+   - Loading states and error handling
+
+## Daily Execution Steps
+1. `cd ~/Work/what-to-learn && git pull` (always start fresh)
+2. Check current state: what's done? what's next in priority order?
+3. Pick the next uncompleted item from the phase list above
+4. Implement it fully (code + test + verify)
+5. `git add . && git commit -m "Brief description of what was done" && git push`
+6. Report what was completed and what's planned for next run
+
+## Progress Tracking
+Create/update `PROGRESS.md` in repo root with:
+- Current phase
+- Completed items (checklist)
+- Next 3 items to work on
+- Any blockers or decisions needed
+
+## Daily Report Format
+Return a concise report:
+```
+## 学点啥 Daily Build - [Date]
+
+**Phase**: [Current Phase]
+**Completed Today**:
+- [x] Item 1
+- [x] Item 2
+
+**Files Changed**: list key files
+
+**Next Session**:
+- [ ] Next item 1
+- [ ] Next item 2
+
+**Blockers**: None / List any
+```
+
+## Constraints
+- Never break existing functionality (check before push)
+- Keep commits atomic and well-described
+- Follow Vue 3 + Vite + Tailwind patterns from 玩点啥 project
+- Reference ~/Work/play-arcade-games for code style consistency
+- All content must be in Markdown with YAML frontmatter
+- Use Cloudflare Pages (not traditional hosting)
