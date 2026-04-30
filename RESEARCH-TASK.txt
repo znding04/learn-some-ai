@@ -1,0 +1,96 @@
+# 学点啥 (Xué Diǎn Shá) — Deep Research Task
+
+## Context
+User wants to build a systematic online self-learning platform under the ljding.app domain. The app name is 学点啥 (learn.ljding.app or xuediansha.ljding.app).
+
+## Core Concept
+A serious, structured self-learning platform (NOT gamified like Duolingo) focusing on:
+- Clear learning progression with mastery-based advancement
+- Links to external resources (YouTube videos, articles, research papers)
+- Topics starting with: high school math, high school physics, AI/ML fundamentals
+- Designed for real learning outcomes, not just engagement metrics
+
+## Research Questions (Answer ALL thoroughly)
+
+### 1. Competitive Landscape Analysis
+- Analyze Duolingo, Khan Academy, Brilliant, Coursera, edX, MasterClass, Udacity
+- What makes each "serious" or "casual"?
+- What's missing in the market for serious self-learners?
+- Identify gaps: platforms that combine structured progression + external resource curation + no gamification
+
+### 2. Pedagogical Approach
+- Research mastery-based learning vs time-based progression
+- How to structure "clear progression" (modules → lessons → checkpoints?)
+- How to verify learning without gamification (quizzes, exercises, self-assessment?)
+- Spaced repetition integration (Anki-style) for long-term retention
+- How to incorporate external resources effectively (YouTube embeds, article links)
+
+### 3. Content Structure Proposal
+For initial topics (high school math, physics, AI):
+- How should content be organized? (Topic trees, prerequisite graphs?)
+- How to handle dependencies between concepts?
+- Example progression path for "High School Math: Algebra → Calculus"
+- How to curate and link external resources systematically
+
+### 4. Technical Feasibility & Stack
+- Frontend: Vue 3 + Vite (matching 玩点啥 stack) vs Next.js vs other?
+- Backend: Cloudflare Workers (matching existing apps) vs separate API?
+- Database: Cloudflare D1 (SQLite) vs PostgreSQL vs ?
+- Video embedding: YouTube API, direct embeds, or custom player?
+- Progress tracking: per-user? anonymous? Zane's personal use vs public?
+- Content management: Markdown files (like Obsidian) vs CMS vs database-driven?
+
+### 5. Feature Prioritization (MVP vs Full)
+MVP (launch-ready):
+- Topic listing with progression indicators
+- Lesson pages with embedded YouTube + text content
+- Simple progress tracking (localStorage or D1)
+- External resource links
+
+Full version:
+- User accounts (Better Auth, matching 找谁玩)
+- Spaced repetition system
+- Quizzes with automatic grading
+- Community features (discussions, Q&A)
+- Certificate generation on completion
+
+### 6. Monetization & Sustainability (if ever needed)
+- Free vs paid content models
+- Donation/sponsorship models
+- How Khan Academy sustains (non-profit model)
+
+### 7. Integration with Existing Ecosystem
+- How does 学点啥 complement 找谁玩 (social) and 玩点啥 (entertainment)?
+- Can users share learning progress on 找谁玩?
+- Cross-app navigation and consistent UI/UX
+
+### 8. Feasibility Assessment
+- Development time estimate (MVP vs Full)
+- Complexity score (1-10)
+- Maintenance overhead
+- Content creation burden (who creates lessons? Zane? Community?)
+- Recommended approach: Build from scratch vs fork existing open-source platform?
+
+## Deliverable
+Create a comprehensive research document at `~/Work/XUEDIANSHA-RESEARCH.md` with:
+1. Executive summary (1 paragraph)
+2. Detailed answers to all 8 sections above
+3. Recommended tech stack with rationale
+4. MVP feature list with priorities (P0, P1, P2)
+5. Suggested content structure for first 3 topics
+6. Risk assessment (technical, content, adoption)
+7. Next steps / implementation roadmap
+
+Also create a brief summary file `~/Work/XUEDIANSHA-SUMMARY.md` (max 500 words) with key findings and recommendation.
+
+## Constraints
+- Focus on SERIOUS learning (no badges, streaks, leaderboards, or Duolingo-style gamification)
+- Must be deployable on Cloudflare (Pages or Workers)
+- Content should be easy to author (Markdown preferred)
+- Consider both Zane's personal use and public availability
+- Budget-conscious: prefer free tiers and open-source tools
+
+## After Completion
+- Commit both files to a new GitHub repo: znding04/xuediansha-research
+- Push to GitHub
+- Report back: (1) Recommended tech stack, (2) MVP scope, (3) Biggest risk, (4) Whether to proceed with building
