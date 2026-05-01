@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* KaTeX block math centering */
+.katex-display {
+  margin: 1rem 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
