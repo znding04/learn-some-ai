@@ -1,7 +1,7 @@
 # 学点啥 — Build Progress
 
 ## Current Phase
-**Phase 1: Project Scaffolding** — ✅ COMPLETE
+**Phase 2: Core Features** — In Progress
 
 ## Completed Items
 
@@ -18,33 +18,39 @@
 - [x] localStorage progress tracking (wtl-completed key)
 - [x] Cloudflare Pages ready: @cloudflare/vite-plugin + wrangler.toml + dist/wrangler.json
 - [x] 4 sample lessons with real content (algebra variables, linear equations, physics motion, ML intro)
-- [x] Verify build succeeds (`npm run build` → ✓ 431ms, 474KB JS, 12KB CSS)
+- [x] Verify build succeeds (`npm run build` → ✓ 462KB JS, 12KB CSS)
 - [x] git commit + push to main
+
+### Phase 2: Core Features ✅ (in progress)
+- [x] **Lesson View** — connect to real markdown files in `content/` folder instead of inline content
+- [x] Create `public/content/topics.json` with topic metadata
+- [x] Create `public/content/lessons.json` with lesson registry
+- [x] Create actual markdown lesson files in `public/content/` (algebra, physics, ai)
+- [x] Update LessonView.vue to fetch markdown content dynamically from `/content/` paths
+- [x] Update TopicDetail.vue and Topics.vue to load from JSON registries
+- [x] Remove inline lessonRegistry from LessonView.vue (now external content)
 
 ## Next Items
 
 ### Phase 2: Core Features (Next Priority)
-1. **Lesson View** — connect to real markdown files in `content/` folder instead of inline content
-2. **Sidebar navigation** — topic tree sidebar on lesson pages
-3. **Breadcrumb navigation** — already in LessonView, verify it works
-4. **Progress persistence** — localStorage integration (partially done)
-5. **Responsive design** — verify mobile layout
+1. **Sidebar navigation** — topic tree sidebar on lesson pages
+2. **Breadcrumb navigation** — verify it works
+3. **Responsive design** — verify mobile layout
 
 ### Phase 3: Content Creation
-1. Create `content/topics.json` with full topic metadata
-2. Create `content/math-algebra/lessons.json` with lesson registry
-3. Write actual markdown lesson files (variables, equations, etc.)
+1. Add more algebra lessons (inequalities, systems, polynomials, factoring, quadratics, etc.)
+2. Add more physics lessons to match the topic outline
+3. Add more AI/ML lessons to match the topic outline
 4. Add YouTube video embeds from markdown frontmatter
 
 ### Phase 4: Deploy & Polish
 1. Connect GitHub repo to Cloudflare Pages (user must do interactive auth)
-2. Configure build: `npm run build`, output `dist/`
+2. Configure build: `npm run build`, output dir `dist`
 3. Set custom domain: learn.ljding.app
 4. Search functionality, dark mode toggle
 
 ## Blockers
 - **Cloudflare Pages init**: `npx wrangler pages project create` requires browser OAuth. User needs to run this manually or set up via dashboard.
-- **Content**: Need real markdown lesson files. Currently using inline content placeholders.
 
 ## Notes
 - Stack: Vue 3 + Vite + Tailwind CSS (matching 玩点啥)
@@ -52,3 +58,5 @@
 - For Cloudflare Pages: set build command `npm run build`, output dir `dist`
 - KaTeX for math rendering (inline `$...$` and block `$$...$$`)
 - localStorage key: `wtl-completed` for completed lesson IDs
+- Content now loaded dynamically from `public/content/` directory
+- Lesson metadata in `lessons.json`, topic metadata in `topics.json`
