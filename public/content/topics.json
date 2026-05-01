@@ -1,0 +1,23 @@
+[
+  {
+    "id": "math-algebra",
+    "title": "High School Math — Algebra",
+    "icon": "📐",
+    "description": "The foundation of all mathematics — from variables to polynomials.",
+    "path": "algebra"
+  },
+  {
+    "id": "physics-mechanics",
+    "title": "Physics — Mechanics",
+    "icon": "⚡",
+    "description": "The laws of motion and the forces that shape our universe.",
+    "path": "physics"
+  },
+  {
+    "id": "ai-ml",
+    "title": "AI / ML Fundamentals",
+    "icon": "🤖",
+    "description": "Understanding how machines can learn from data and make predictions.",
+    "path": "ai"
+  }
+]

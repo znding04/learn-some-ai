@@ -1,0 +1,66 @@
+{
+  "algebra-variables": {
+    "id": "algebra-variables",
+    "title": "Variables and Expressions",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "25min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Understanding what variables are and how to use them in expressions.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/v-7pz06wneI", "title": "Khan Academy — Variables and Expressions", "duration": "10min" },
+      { "type": "article", "url": "https://www.mathsisfun.com/definitions/variable.html", "title": "Math is Fun — Variable Definition" }
+    ],
+    "contentPath": "algebra/variables.md"
+  },
+  "algebra-equations": {
+    "id": "algebra-equations",
+    "title": "Linear Equations",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": ["algebra-variables"],
+    "summary": "Solving equations of the form ax + b = c.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/LDiR4_JSfB8", "title": "Khan Academy — Linear Equations", "duration": "12min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/solvlin.htm", "title": "Purplemath — Solving Linear Equations" }
+    ],
+    "contentPath": "algebra/equations.md"
+  },
+  "physics-motion": {
+    "id": "physics-motion",
+    "title": "Motion and Kinematics",
+    "topic": "physics-mechanics",
+    "topicPath": "physics",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Position, velocity, acceleration, and the equations of motion.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/u_8oD8-OxC8", "title": "Khan Academy — One-Dimensional Motion", "duration": "15min" },
+      { "type": "article", "url": "https://physics.info/motion/", "title": "Physics.info — Motion" }
+    ],
+    "contentPath": "physics/motion.md"
+  },
+  "ml-intro": {
+    "id": "ml-intro",
+    "title": "What is Machine Learning?",
+    "topic": "ai-ml",
+    "topicPath": "ai",
+    "estimatedTime": "25min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Definitions, types of ML, and key concepts.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/aircAruvnKk", "title": "3Blue1Brown — What is Machine Learning?", "duration": "10min" },
+      { "type": "article", "url": "https://developers.google.com/machine-learning/intro-to-ml", "title": "Google — Introduction to Machine Learning" }
+    ],
+    "contentPath": "ai/intro.md"
+  }
+}

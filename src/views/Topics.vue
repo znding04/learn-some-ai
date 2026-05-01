@@ -8,9 +8,14 @@
       <p class="text-stone-400">Choose a subject area to start learning.</p>
     </header>
 
-    <div class="space-y-6">
+    <!-- Loading state -->
+    <div v-if="loading" class="flex items-center justify-center py-20">
+      <div class="text-stone-400">Loading topics...</div>
+    </div>
+
+    <div v-else class="space-y-6">
       <router-link
-        v-for="topic in topics"
+        v-for="topic in topicsWithStats"
         :key="topic.id"
         :to="`/topic/${topic.id}`"
         class="block bg-stone-800 border border-stone-700 rounded-2xl p-8 hover:border-stone-500 transition-colors"
@@ -22,24 +27,23 @@
               <h2 class="text-2xl font-semibold text-stone-100">{{ topic.title }}</h2>
               <span
                 class="text-xs font-medium px-2 py-1 rounded"
-                :class="topic.difficulty === 'beginner' ? 'bg-emerald-900 text-emerald-300' : topic.difficulty === 'intermediate' ? 'bg-amber-900 text-amber-300' : 'bg-red-900 text-red-300'"
+                :class="topic.difficulty || 'bg-stone-700 text-stone-400'"
               >
-                {{ topic.difficulty }}
+                {{ topic.difficulty || 'beginner' }}
               </span>
             </div>
             <p class="text-stone-400 mb-4">{{ topic.description }}</p>
             <div class="flex items-center gap-6 text-sm text-stone-500">
               <span>{{ topic.lessonCount }} lessons</span>
-              <span>~{{ topic.totalTime }}</span>
               <span class="flex items-center gap-2">
-                <span class="text-emerald-400 font-medium">{{ getTopicProgress(topic.id) }}%</span> complete
+                <span class="text-emerald-400 font-medium">{{ topic.progress }}%</span> complete
               </span>
             </div>
             <!-- Progress bar -->
             <div class="mt-4 h-2 bg-stone-700 rounded-full overflow-hidden">
               <div
                 class="h-full bg-emerald-500 rounded-full transition-all"
-                :style="{ width: getTopicProgress(topic.id) + '%' }"
+                :style="{ width: topic.progress + '%' }"
               />
             </div>
           </div>
@@ -50,45 +54,58 @@
 </template>
 
 <script setup>
-const topics = [
-  {
-    id: 'math-algebra',
-    title: 'High School Math — Algebra',
-    icon: '📐',
-    description: 'Variables, equations, inequalities, polynomials, factoring, and more. The foundation of all mathematics.',
-    lessonCount: 15,
-    totalTime: '6 hours',
-    difficulty: 'beginner',
-  },
-  {
-    id: 'physics-mechanics',
-    title: 'Physics — Mechanics',
-    icon: '⚡',
-    description: 'Motion, forces, energy, momentum, and the laws governing the physical universe.',
-    lessonCount: 12,
-    totalTime: '5 hours',
-    difficulty: 'intermediate',
-  },
-  {
-    id: 'ai-ml',
-    title: 'AI / ML Fundamentals',
-    icon: '🤖',
-    description: 'Machine learning basics, neural networks, and how to build intelligent systems.',
-    lessonCount: 10,
-    totalTime: '8 hours',
-    difficulty: 'intermediate',
-  },
-]
+import { computed, onMounted, ref } from 'vue'
 
-function getTopicProgress(topicId) {
+// State
+const loading = ref(true)
+const topicsData = ref([])
+const lessonsData = ref({})
+
+// Load data from JSON
+onMounted(async () => {
   try {
-    const completed = JSON.parse(localStorage.getItem('wtl-completed') || '[]')
-    const topic = topics.find(t => t.id === topicId)
-    if (!topic) return 0
-    const topicLessonsCompleted = completed.filter(id => id.startsWith(topicId.split('-')[0]))
-    return Math.round((topicLessonsCompleted.length / topic.lessonCount) * 100)
+    const [topicsRes, lessonsRes] = await Promise.all([
+      fetch('/content/topics.json'),
+      fetch('/content/lessons.json')
+    ])
+    
+    if (topicsRes.ok) {
+      topicsData.value = await topicsRes.json()
+    }
+    
+    if (lessonsRes.ok) {
+      lessonsData.value = await lessonsRes.json()
+    }
+  } catch (e) {
+    console.error('Failed to load data:', e)
+  } finally {
+    loading.value = false
+  }
+})
+
+// Compute topics with lesson counts and progress
+const topicsWithStats = computed(() => {
+  return topicsData.value.map(topic => {
+    const lessons = Object.values(lessonsData.value).filter(l => l.topic === topic.id)
+    const completed = getCompleted()
+    const lessonCount = lessons.length
+    const doneCount = lessons.filter(l => completed.includes(l.id)).length
+    const progress = lessonCount > 0 ? Math.round((doneCount / lessonCount) * 100) : 0
+    
+    return {
+      ...topic,
+      lessonCount,
+      progress,
+      difficulty: 'beginner' // Default for now, can be enhanced later
+    }
+  })
+})
+
+function getCompleted() {
+  try {
+    return JSON.parse(localStorage.getItem('wtl-completed') || '[]')
   } catch {
-    return 0
+    return []
   }
 }
 </script>
