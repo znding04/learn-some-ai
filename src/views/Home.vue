@@ -1,9 +1,7 @@
 <template>
   <div class="max-w-4xl mx-auto px-6 py-16">
     <!-- Header -->
-    <header class="text-center mb-16">
-      <h1 class="text-6xl font-bold text-stone-50 mb-4">学点啥</h1>
-      <p class="text-2xl text-stone-400 mb-2">What to Learn</p>
+    <header class="text-center mb-16 mt-8">
       <p class="text-stone-500 max-w-lg mx-auto">
         A serious, structured self-learning platform. No gamification, no badges — just mastery-based progression through curated resources.
       </p>
