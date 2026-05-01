@@ -29,13 +29,19 @@
 - [x] Update LessonView.vue to fetch markdown content dynamically from `/content/` paths
 - [x] Update TopicDetail.vue and Topics.vue to load from JSON registries
 - [x] Remove inline lessonRegistry from LessonView.vue (now external content)
+- [x] **Sidebar navigation** — topic tree sidebar on lesson pages (LessonSidebar component)
+- [x] **Breadcrumb navigation** — verify it works
+- [x] **App header** — consistent header bar across all views
+- [x] **Responsive layout** — mobile-friendly with sidebar toggle
 
 ## Next Items
 
 ### Phase 2: Core Features (Next Priority)
-1. **Sidebar navigation** — topic tree sidebar on lesson pages
-2. **Breadcrumb navigation** — verify it works
-3. **Responsive design** — verify mobile layout
+1. ~~**Sidebar navigation** — topic tree sidebar on lesson pages~~ ✓ Done
+2. ~~**Breadcrumb navigation** — verify it works~~ ✓ Done (already working)
+3. ~~**Responsive design** — verify mobile layout~~ ✓ Done (mobile toggle added)
+4. Search functionality (Phase 4)
+5. Dark mode toggle (Phase 4)
 
 ### Phase 3: Content Creation
 1. Add more algebra lessons (inequalities, systems, polynomials, factoring, quadratics, etc.)
