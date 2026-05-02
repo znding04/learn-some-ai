@@ -43,8 +43,8 @@
 4. Search functionality (Phase 4)
 5. Dark mode toggle (Phase 4)
 
-### Phase 3: Content Creation
-1. Add more algebra lessons (inequalities, systems, polynomials, factoring, quadratics, etc.)
+### Phase 3: Content Creation ✅ (in progress)
+1. ~~Add more algebra lessons (inequalities, systems, polynomials, factoring, quadratics, etc.)~~ ✓ Done — added 8 new lessons
 2. Add more physics lessons to match the topic outline
 3. Add more AI/ML lessons to match the topic outline
 4. Add YouTube video embeds from markdown frontmatter
