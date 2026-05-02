@@ -1,511 +1,112 @@
 {
-  "algebra-variables": {
-    "id": "algebra-variables",
-    "title": "Variables and Expressions",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "25min",
+  "ai-fundamentals-01": {
+    "id": "ai-fundamentals-01",
+    "title": "What is Artificial Intelligence?",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Understanding what variables are and how to use them in expressions.",
-    "videoUrl": "https://www.youtube.com/embed/v-7pz06wneI",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/v-7pz06wneI",
-        "title": "Khan Academy — Variables and Expressions",
-        "duration": "10min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.mathsisfun.com/definitions/variable.html",
-        "title": "Math is Fun — Variable Definition"
-      }
-    ],
-    "contentPath": "algebra/variables.md"
+    "summary": "Introduction to AI history, definitions, and types.",
+    "contentPath": "ai-fundamentals/01-what-is-ai.md"
   },
-  "algebra-equations": {
-    "id": "algebra-equations",
-    "title": "Linear Equations",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "30min",
-    "difficulty": "beginner",
-    "prerequisites": [
-      "algebra-variables"
-    ],
-    "summary": "Solving equations of the form ax + b = c.",
-    "videoUrl": "https://www.youtube.com/embed/LDiR4_JSfB8",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/LDiR4_JSfB8",
-        "title": "Khan Academy — Linear Equations",
-        "duration": "12min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/solvlin.htm",
-        "title": "Purplemath — Solving Linear Equations"
-      }
-    ],
-    "contentPath": "algebra/equations.md"
-  },
-  "algebra-inequalities": {
-    "id": "algebra-inequalities",
-    "title": "Inequalities",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "30min",
-    "difficulty": "beginner",
-    "prerequisites": [
-      "algebra-equations"
-    ],
-    "summary": "Solving and graphing inequalities, including compound inequalities.",
-    "videoUrl": "https://www.youtube.com/embed/oLakMp3-GIw",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/oLakMp3-GIw",
-        "title": "Khan Academy — Inequalities",
-        "duration": "15min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/ineqlin.htm",
-        "title": "Purplemath — Solving Linear Inequalities"
-      }
-    ],
-    "contentPath": "algebra/inequalities.md"
-  },
-  "algebra-systems": {
-    "id": "algebra-systems",
-    "title": "Systems of Equations",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "45min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "algebra-equations"
-    ],
-    "summary": "Solving two equations with two unknowns using substitution, elimination, and graphing.",
-    "videoUrl": "https://www.youtube.com/embed/ZhKj8YhpSyE",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/ZhKj8YhpSyE",
-        "title": "Khan Academy — Systems of Equations",
-        "duration": "20min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/systrbl.htm",
-        "title": "Purplemath — Solving Systems"
-      }
-    ],
-    "contentPath": "algebra/systems.md"
-  },
-  "algebra-polynomials": {
-    "id": "algebra-polynomials",
-    "title": "Polynomials",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "40min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "algebra-variables",
-      "algebra-equations"
-    ],
-    "summary": "Adding, subtracting, multiplying, and dividing polynomial expressions.",
-    "videoUrl": "https://www.youtube.com/embed/VCsYP4T3k2A",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/VCsYP4T3k2A",
-        "title": "Khan Academy — Polynomials",
-        "duration": "18min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/polyadd.htm",
-        "title": "Purplemath — Polynomials"
-      }
-    ],
-    "contentPath": "algebra/polynomials.md"
-  },
-  "algebra-factoring": {
-    "id": "algebra-factoring",
-    "title": "Factoring Polynomials",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "45min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "algebra-polynomials"
-    ],
-    "summary": "Factoring using GCF, trinomials, difference of squares, and sum/difference of cubes.",
-    "videoUrl": "https://www.youtube.com/embed/KU8fK9K1YO0",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/KU8fK9K1YO0",
-        "title": "Khan Academy — Factoring",
-        "duration": "20min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/factquad.htm",
-        "title": "Purplemath — Factoring Quadratics"
-      }
-    ],
-    "contentPath": "algebra/factoring.md"
-  },
-  "algebra-quadratics": {
-    "id": "algebra-quadratics",
-    "title": "Quadratic Equations",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "50min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "algebra-factoring"
-    ],
-    "summary": "Solving quadratics by factoring, completing the square, and the quadratic formula.",
-    "videoUrl": "https://www.youtube.com/embed/5zY3ELxXkwI",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/5zY3ELxXkwI",
-        "title": "Khan Academy — Quadratic Formula",
-        "duration": "15min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/quadform.htm",
-        "title": "Purplemath — The Quadratic Formula"
-      }
-    ],
-    "contentPath": "algebra/quadratics.md"
-  },
-  "algebra-rational": {
-    "id": "algebra-rational",
-    "title": "Rational Expressions",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
-    "estimatedTime": "45min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "algebra-factoring",
-      "algebra-quadratics"
-    ],
-    "summary": "Simplifying, multiplying, dividing, adding, and subtracting rational expressions.",
-    "videoUrl": "https://www.youtube.com/embed/Q0Vv2zKdzoo",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/Q0Vv2zKdzoo",
-        "title": "Khan Academy — Rational Expressions",
-        "duration": "22min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/rtnlfunc.htm",
-        "title": "Purplemath — Rational Expressions"
-      }
-    ],
-    "contentPath": "algebra/rational-expressions.md"
-  },
-  "algebra-exponents": {
-    "id": "algebra-exponents",
-    "title": "Exponents and Powers",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
+  "ai-fundamentals-02": {
+    "id": "ai-fundamentals-02",
+    "title": "Machine Learning Basics",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": [
-      "algebra-variables"
-    ],
-    "summary": "The laws of exponents, scientific notation, and rational exponents.",
-    "videoUrl": "https://www.youtube.com/embed/KaKGu3UBVPg",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/KaKGu3UBVPg",
-        "title": "Khan Academy — Exponents",
-        "duration": "14min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.mathsisfun.com/exponent.html",
-        "title": "Math is Fun — Exponents"
-      }
-    ],
-    "contentPath": "algebra/exponents.md"
+    "prerequisites": ["ai-fundamentals-01"],
+    "summary": "Supervised, unsupervised, and reinforcement learning fundamentals.",
+    "contentPath": "ai-fundamentals/02-machine-learning-basics.md"
   },
-  "algebra-radicals": {
-    "id": "algebra-radicals",
-    "title": "Radicals and Square Roots",
-    "topic": "math-algebra",
-    "topicPath": "algebra",
+  "ai-fundamentals-03": {
+    "id": "ai-fundamentals-03",
+    "title": "Deep Learning Foundations",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": [
-      "algebra-exponents"
-    ],
-    "summary": "Simplifying radicals, adding/subtracting/multiplying radicals, and solving radical equations.",
-    "videoUrl": "https://www.youtube.com/embed/Vamt9AKip40",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/Vamt9AKip40",
-        "title": "Khan Academy — Radicals",
-        "duration": "16min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.purplemath.com/modules/rtnls.htm",
-        "title": "Purplemath — Simplifying Radicals"
-      }
-    ],
-    "contentPath": "algebra/radicals.md"
+    "prerequisites": ["ai-fundamentals-02"],
+    "summary": "Neural network basics, activation functions, and backpropagation.",
+    "contentPath": "ai-fundamentals/03-deep-learning-foundations.md"
   },
-  "physics-motion": {
-    "id": "physics-motion",
-    "title": "Motion and Kinematics",
-    "topic": "physics-mechanics",
-    "topicPath": "physics",
+  "ai-fundamentals-04": {
+    "id": "ai-fundamentals-04",
+    "title": "CNNs for Image Processing",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-fundamentals-03"],
+    "summary": "Convolutional neural networks for computer vision tasks.",
+    "contentPath": "ai-fundamentals/04-convolutional-neural-networks.md"
+  },
+  "ai-fundamentals-05": {
+    "id": "ai-fundamentals-05",
+    "title": "RNNs and LSTMs for Sequence Data",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-fundamentals-03"],
+    "summary": "Recurrent neural networks and LSTMs for sequential data processing.",
+    "contentPath": "ai-fundamentals/05-rnns-and-lstms.md"
+  },
+  "ai-fundamentals-06": {
+    "id": "ai-fundamentals-06",
+    "title": "Transformers Architecture",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-fundamentals-05"],
+    "summary": "Self-attention, encoder-decoder architecture, and modern transformer models.",
+    "contentPath": "ai-fundamentals/06-transformers-architecture.md"
+  },
+  "ai-fundamentals-07": {
+    "id": "ai-fundamentals-07",
+    "title": "AI Ethics and Bias",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-fundamentals-01"],
+    "summary": "Fairness, accountability, transparency, and bias in AI systems.",
+    "contentPath": "ai-fundamentals/07-ai-ethics-and-bias.md"
+  },
+  "ai-fundamentals-08": {
+    "id": "ai-fundamentals-08",
+    "title": "AI Safety and Alignment",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-fundamentals-07"],
+    "summary": "Alignment problem, value alignment, and AI safety research.",
+    "contentPath": "ai-fundamentals/08-ai-safety-and-alignment.md"
+  },
+  "ai-fundamentals-09": {
+    "id": "ai-fundamentals-09",
+    "title": "Evaluating AI Systems",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
     "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-fundamentals-02"],
+    "summary": "Metrics, benchmarks, and evaluation methodologies for AI models.",
+    "contentPath": "ai-fundamentals/09-evaluating-ai-systems.md"
+  },
+  "ai-fundamentals-10": {
+    "id": "ai-fundamentals-10",
+    "title": "Future of AI",
+    "topic": "ai-fundamentals",
+    "topicPath": "ai-fundamentals",
+    "estimatedTime": "30min",
     "difficulty": "beginner",
-    "prerequisites": [],
-    "summary": "Position, velocity, acceleration, and the equations of motion.",
-    "videoUrl": "https://www.youtube.com/embed/u_8oD8-OxC8",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/u_8oD8-OxC8",
-        "title": "Khan Academy — One-Dimensional Motion",
-        "duration": "15min"
-      },
-      {
-        "type": "article",
-        "url": "https://physics.info/motion/",
-        "title": "Physics.info — Motion"
-      }
-    ],
-    "contentPath": "physics/motion.md"
-  },
-  "ml-intro": {
-    "id": "ml-intro",
-    "title": "What is Machine Learning?",
-    "topic": "ai-ml",
-    "topicPath": "ai",
-    "estimatedTime": "25min",
-    "difficulty": "beginner",
-    "prerequisites": [],
-    "summary": "Definitions, types of ML, and key concepts.",
-    "videoUrl": "https://www.youtube.com/embed/aircAruvnKk",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/aircAruvnKk",
-        "title": "3Blue1Brown — What is Machine Learning?",
-        "duration": "10min"
-      },
-      {
-        "type": "article",
-        "url": "https://developers.google.com/machine-learning/intro-to-ml",
-        "title": "Google — Introduction to Machine Learning"
-      }
-    ],
-    "contentPath": "ai/intro.md"
-  },
-  "physics-forces": {
-    "id": "physics-forces",
-    "title": "Newton's Laws and Forces",
-    "topic": "physics-mechanics",
-    "topicPath": "physics",
-    "estimatedTime": "45min",
-    "difficulty": "beginner",
-    "prerequisites": [
-      "physics-motion"
-    ],
-    "summary": "Newton's three laws, friction, normal force, and free body diagrams.",
-    "videoUrl": "https://www.youtube.com/embed/8XgNJC4qTzw",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/8XgNJC4qTzw",
-        "title": "Khan Academy — Newton's Laws",
-        "duration": "18min"
-      },
-      {
-        "type": "article",
-        "url": "https://physics.info/motion-force/",
-        "title": "Physics.info — Force and Motion"
-      }
-    ],
-    "contentPath": "physics/forces.md"
-  },
-  "physics-energy": {
-    "id": "physics-energy",
-    "title": "Kinetic Energy, Potential Energy, and Work",
-    "topic": "physics-mechanics",
-    "topicPath": "physics",
-    "estimatedTime": "50min",
-    "difficulty": "beginner",
-    "prerequisites": [
-      "physics-forces"
-    ],
-    "summary": "Work, kinetic and potential energy, conservation of mechanical energy, and power.",
-    "videoUrl": "https://www.youtube.com/embed/WB-Ym8_m1HU",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/WB-Ym8_m1HU",
-        "title": "Khan Academy — Work and Energy",
-        "duration": "20min"
-      },
-      {
-        "type": "article",
-        "url": "https://physics.info/work/",
-        "title": "Physics.info — Work and Energy"
-      }
-    ],
-    "contentPath": "physics/energy.md"
-  },
-  "physics-momentum": {
-    "id": "physics-momentum",
-    "title": "Impulse and Momentum",
-    "topic": "physics-mechanics",
-    "topicPath": "physics",
-    "estimatedTime": "45min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "physics-energy"
-    ],
-    "summary": "Linear momentum, impulse-momentum theorem, conservation of momentum, and collision types.",
-    "videoUrl": "https://www.youtube.com/embed/M5yF4NyS_MY",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/M5yF4NyS_MY",
-        "title": "Khan Academy — Momentum",
-        "duration": "22min"
-      },
-      {
-        "type": "article",
-        "url": "https://physics.info/momentum/",
-        "title": "Physics.info — Momentum"
-      }
-    ],
-    "contentPath": "physics/momentum.md"
-  },
-  "physics-waves": {
-    "id": "physics-waves",
-    "title": "Wave Properties, Sound, and Light",
-    "topic": "physics-waves",
-    "topicPath": "physics",
-    "estimatedTime": "55min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "physics-momentum"
-    ],
-    "summary": "Wave characteristics, sound, light, reflection, refraction, diffraction, and the Doppler effect.",
-    "videoUrl": "https://www.youtube.com/embed/3tybD4iD-x4",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/3tybD4iD-x4",
-        "title": "Khan Academy — Waves",
-        "duration": "25min"
-      },
-      {
-        "type": "article",
-        "url": "https://physics.info/waves/",
-        "title": "Physics.info — Waves"
-      }
-    ],
-    "contentPath": "physics/waves.md"
-  },
-  "ai-linear-algebra": {
-    "id": "ai-linear-algebra",
-    "title": "Linear Algebra for Machine Learning",
-    "topic": "ai-ml-foundations",
-    "topicPath": "ai",
-    "estimatedTime": "50min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "ml-intro"
-    ],
-    "summary": "Vectors, matrices, dot products, matrix multiplication, and eigenvalues with ML applications.",
-    "videoUrl": "https://www.youtube.com/embed/fNk_zzaMoSs",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/fNk_zzaMoSs",
-        "title": "3Blue1Brown — Linear Algebra",
-        "duration": "15min"
-      },
-      {
-        "type": "article",
-        "url": "https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.1/",
-        "title": "Deep Learning Book — Linear Algebra Primer"
-      }
-    ],
-    "contentPath": "ai/linear-algebra.md"
-  },
-  "ai-probability": {
-    "id": "ai-probability",
-    "title": "Probability for Machine Learning",
-    "topic": "ai-ml-foundations",
-    "topicPath": "ai",
-    "estimatedTime": "55min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "ai-linear-algebra"
-    ],
-    "summary": "Probability basics, Bayes theorem, distributions, and their role in ML.",
-    "videoUrl": "https://www.youtube.com/embed/HZGCoNr3Yyw",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/HZGCoNr3Yyw",
-        "title": "3Blue1Brown — Probability",
-        "duration": "20min"
-      },
-      {
-        "type": "article",
-        "url": "https://probabilityforhackers.com/",
-        "title": "Probability for Hackers"
-      }
-    ],
-    "contentPath": "ai/probability.md"
-  },
-  "ai-neural-networks": {
-    "id": "ai-neural-networks",
-    "title": "Neural Networks: From Perceptrons to Backpropagation",
-    "topic": "ai-ml-deep-learning",
-    "topicPath": "ai",
-    "estimatedTime": "60min",
-    "difficulty": "intermediate",
-    "prerequisites": [
-      "ai-probability"
-    ],
-    "summary": "Perceptrons, activation functions, forward propagation, backpropagation, and gradient descent.",
-    "videoUrl": "https://www.youtube.com/embed/aircAruvnKk",
-    "resources": [
-      {
-        "type": "video",
-        "url": "https://www.youtube.com/embed/aircAruvnKk",
-        "title": "3Blue1Brown — Neural Networks",
-        "duration": "21min"
-      },
-      {
-        "type": "article",
-        "url": "https://www.deeplearningbook.org/contents/mlp.html",
-        "title": "Deep Learning Book — Feedforward Networks"
-      }
-    ],
-    "contentPath": "ai/neural-networks.md"
+    "prerequisites": ["ai-fundamentals-06", "ai-fundamentals-08"],
+    "summary": "AGI, emerging trends, and the future landscape of artificial intelligence.",
+    "contentPath": "ai-fundamentals/10-future-of-ai.md"
   }
 }

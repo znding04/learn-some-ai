@@ -1,23 +1,23 @@
 [
   {
-    "id": "math-algebra",
-    "title": "High School Math — Algebra",
-    "icon": "📐",
-    "description": "The foundation of all mathematics — from variables to polynomials.",
-    "path": "algebra"
-  },
-  {
-    "id": "physics-mechanics",
-    "title": "Physics — Mechanics",
-    "icon": "⚡",
-    "description": "The laws of motion and the forces that shape our universe.",
-    "path": "physics"
-  },
-  {
-    "id": "ai-ml",
-    "title": "AI / ML Fundamentals",
+    "id": "ai-fundamentals",
+    "title": "AI Fundamentals",
     "icon": "🤖",
-    "description": "Understanding how machines can learn from data and make predictions.",
-    "path": "ai"
+    "description": "The foundations of artificial intelligence — from neural networks to ethics.",
+    "path": "ai-fundamentals"
+  },
+  {
+    "id": "llm",
+    "title": "Large Language Models",
+    "icon": "📝",
+    "description": "Understanding how LLMs work — architecture, training, and applications.",
+    "path": "llm"
+  },
+  {
+    "id": "ai-agents",
+    "title": "AI Agents",
+    "icon": "🧠",
+    "description": "Building autonomous AI agents that can reason, plan, and use tools.",
+    "path": "ai-agents"
   }
 ]
