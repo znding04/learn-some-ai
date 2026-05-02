@@ -190,5 +190,117 @@
       { "type": "article", "url": "https://developers.google.com/machine-learning/intro-to-ml", "title": "Google — Introduction to Machine Learning" }
     ],
     "contentPath": "ai/intro.md"
+  },
+  "physics-forces": {
+    "id": "physics-forces",
+    "title": "Newton's Laws and Forces",
+    "topic": "physics-mechanics",
+    "topicPath": "physics",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": ["physics-motion"],
+    "summary": "Newton's three laws, friction, normal force, and free body diagrams.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/8XgNJC4qTzw", "title": "Khan Academy — Newton's Laws", "duration": "18min" },
+      { "type": "article", "url": "https://physics.info/motion-force/", "title": "Physics.info — Force and Motion" }
+    ],
+    "contentPath": "physics/forces.md"
+  },
+  "physics-energy": {
+    "id": "physics-energy",
+    "title": "Kinetic Energy, Potential Energy, and Work",
+    "topic": "physics-mechanics",
+    "topicPath": "physics",
+    "estimatedTime": "50min",
+    "difficulty": "beginner",
+    "prerequisites": ["physics-forces"],
+    "summary": "Work, kinetic and potential energy, conservation of mechanical energy, and power.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/WB-Ym8_m1HU", "title": "Khan Academy — Work and Energy", "duration": "20min" },
+      { "type": "article", "url": "https://physics.info/work/", "title": "Physics.info — Work and Energy" }
+    ],
+    "contentPath": "physics/energy.md"
+  },
+  "physics-momentum": {
+    "id": "physics-momentum",
+    "title": "Impulse and Momentum",
+    "topic": "physics-mechanics",
+    "topicPath": "physics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["physics-energy"],
+    "summary": "Linear momentum, impulse-momentum theorem, conservation of momentum, and collision types.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/M5yF4NyS_MY", "title": "Khan Academy — Momentum", "duration": "22min" },
+      { "type": "article", "url": "https://physics.info/momentum/", "title": "Physics.info — Momentum" }
+    ],
+    "contentPath": "physics/momentum.md"
+  },
+  "physics-waves": {
+    "id": "physics-waves",
+    "title": "Wave Properties, Sound, and Light",
+    "topic": "physics-waves",
+    "topicPath": "physics",
+    "estimatedTime": "55min",
+    "difficulty": "intermediate",
+    "prerequisites": ["physics-momentum"],
+    "summary": "Wave characteristics, sound, light, reflection, refraction, diffraction, and the Doppler effect.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/u8S内科_sU", "title": "Khan Academy — Waves", "duration": "25min" },
+      { "type": "article", "url": "https://physics.info/waves/", "title": "Physics.info — Waves" }
+    ],
+    "contentPath": "physics/waves.md"
+  },
+  "ai-linear-algebra": {
+    "id": "ai-linear-algebra",
+    "title": "Linear Algebra for Machine Learning",
+    "topic": "ai-ml-foundations",
+    "topicPath": "ai",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ml-intro"],
+    "summary": "Vectors, matrices, dot products, matrix multiplication, and eigenvalues with ML applications.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/fNk_zzaMoSs", "title": "3Blue1Brown — Linear Algebra", "duration": "15min" },
+      { "type": "article", "url": "https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.1/", "title": "Deep Learning Book — Linear Algebra Primer" }
+    ],
+    "contentPath": "ai/linear-algebra.md"
+  },
+  "ai-probability": {
+    "id": "ai-probability",
+    "title": "Probability for Machine Learning",
+    "topic": "ai-ml-foundations",
+    "topicPath": "ai",
+    "estimatedTime": "55min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-linear-algebra"],
+    "summary": "Probability basics, Bayes theorem, distributions, and their role in ML.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/HZGCoNr3Yyw", "title": "3Blue1Brown — Probability", "duration": "20min" },
+      { "type": "article", "url": "https://probabilityforhackers.com/", "title": "Probability for Hackers" }
+    ],
+    "contentPath": "ai/probability.md"
+  },
+  "ai-neural-networks": {
+    "id": "ai-neural-networks",
+    "title": "Neural Networks: From Perceptrons to Backpropagation",
+    "topic": "ai-ml-deep-learning",
+    "topicPath": "ai",
+    "estimatedTime": "60min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-probability"],
+    "summary": "Perceptrons, activation functions, forward propagation, backpropagation, and gradient descent.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/aircAruvnKk", "title": "3Blue1Brown — Neural Networks", "duration": "21min" },
+      { "type": "article", "url": "https://www.deeplearningbook.org/contents/mlp.html", "title": "Deep Learning Book — Feedforward Networks" }
+    ],
+    "contentPath": "ai/neural-networks.md"
   }
 }
