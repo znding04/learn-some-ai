@@ -108,5 +108,282 @@
     "prerequisites": ["ai-fundamentals-06", "ai-fundamentals-08"],
     "summary": "AGI, emerging trends, and the future landscape of artificial intelligence.",
     "contentPath": "ai-fundamentals/10-future-of-ai.md"
+  },
+
+  "llm-01": {
+    "id": "llm-01",
+    "title": "What are Large Language Models?",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "History, token prediction paradigm, and emergent behaviors of LLMs.",
+    "contentPath": "llm/01-what-are-llms.md"
+  },
+  "llm-02": {
+    "id": "llm-02",
+    "title": "LLM Architecture Deep Dive",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["llm-01"],
+    "summary": "Transformer backbone, multi-head attention, positional encodings, and KV cache.",
+    "contentPath": "llm/02-llm-architecture-deep-dive.md"
+  },
+  "llm-03": {
+    "id": "llm-03",
+    "title": "Training LLMs",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["llm-02"],
+    "summary": "Pre-training, scaling laws, SFT, RLHF, DPO, and GRPO.",
+    "contentPath": "llm/03-training-llms.md"
+  },
+  "llm-04": {
+    "id": "llm-04",
+    "title": "Prompt Engineering Fundamentals",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": ["llm-01"],
+    "summary": "Zero-shot, few-shot, chain-of-thought, and structured output techniques.",
+    "contentPath": "llm/04-prompt-engineering.md"
+  },
+  "llm-05": {
+    "id": "llm-05",
+    "title": "Tokenization and Embeddings",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["llm-02"],
+    "summary": "BPE, WordPiece, embedding spaces, and cosine similarity.",
+    "contentPath": "llm/05-tokenization-and-embeddings.md"
+  },
+  "llm-06": {
+    "id": "llm-06",
+    "title": "Context Windows and Attention",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["llm-02"],
+    "summary": "Sparse attention, Flash Attention, and RAG vs long-context tradeoffs.",
+    "contentPath": "llm/06-context-windows-and-attention.md"
+  },
+  "llm-07": {
+    "id": "llm-07",
+    "title": "LLM Limitations and Hallucinations",
+    "topic": "llm",
+    "topicPath": "llm",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["llm-01"],
+    "summary": "Hallucination taxonomy, root causes, and mitigation strategies.",
+    "contentPath": "llm/07-llm-limitations-and-hallucinations.md"
+  },
+
+  "ai-agents-01": {
+    "id": "ai-agents-01",
+    "title": "What are AI Agents?",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Perception-reasoning-action loop, history, and agent taxonomy.",
+    "contentPath": "ai-agents/01-what-are-ai-agents.md"
+  },
+  "ai-agents-02": {
+    "id": "ai-agents-02",
+    "title": "Agent Architectures",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-01"],
+    "summary": "ReAct, Plan-and-Execute, and Tree of Thoughts architectures.",
+    "contentPath": "ai-agents/02-agent-architectures.md"
+  },
+  "ai-agents-03": {
+    "id": "ai-agents-03",
+    "title": "Tool Use & Function Calling",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-01"],
+    "summary": "Structured function calling, tool schemas, and multi-tool orchestration.",
+    "contentPath": "ai-agents/03-tool-use-and-function-calling.md"
+  },
+  "ai-agents-04": {
+    "id": "ai-agents-04",
+    "title": "Introduction to Agent Frameworks",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-agents-01"],
+    "summary": "LangChain, LangGraph, AutoGPT, CrewAI, and framework selection.",
+    "contentPath": "ai-agents/04-intro-to-agent-frameworks.md"
+  },
+  "ai-agents-05": {
+    "id": "ai-agents-05",
+    "title": "Building Your First Simple Agent",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-agents-03"],
+    "summary": "Step-by-step agent construction with tools, prompt, and loop.",
+    "contentPath": "ai-agents/05-building-your-first-agent.md"
+  },
+  "ai-agents-06": {
+    "id": "ai-agents-06",
+    "title": "Advanced Agent Patterns",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-02", "ai-agents-05"],
+    "summary": "Multi-agent systems, hierarchical decomposition, and self-reflection.",
+    "contentPath": "ai-agents/06-advanced-agent-patterns.md"
+  },
+  "ai-agents-07": {
+    "id": "ai-agents-07",
+    "title": "Memory Systems",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-05"],
+    "summary": "Short-term and long-term memory, vector databases, and retrieval strategies.",
+    "contentPath": "ai-agents/07-memory-systems.md"
+  },
+  "ai-agents-08": {
+    "id": "ai-agents-08",
+    "title": "Tool Design & API Integration",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-03"],
+    "summary": "REST API wrapping, authentication, rate limiting, and error handling.",
+    "contentPath": "ai-agents/08-tool-design-and-api-integration.md"
+  },
+  "ai-agents-09": {
+    "id": "ai-agents-09",
+    "title": "Prompt Engineering for Agents",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-05", "llm-04"],
+    "summary": "Structured agent prompts, reasoning traces, and tool selection.",
+    "contentPath": "ai-agents/09-prompt-engineering-for-agents.md"
+  },
+  "ai-agents-10": {
+    "id": "ai-agents-10",
+    "title": "Error Handling & Robustness",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-05"],
+    "summary": "Graceful degradation, retry budgets, timeouts, and sandbox security.",
+    "contentPath": "ai-agents/10-error-handling-and-robustness.md"
+  },
+  "ai-agents-11": {
+    "id": "ai-agents-11",
+    "title": "Building Production Agents",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-10"],
+    "summary": "Deployment, cost optimization, monitoring, and observability.",
+    "contentPath": "ai-agents/11-building-production-agents.md"
+  },
+  "ai-agents-12": {
+    "id": "ai-agents-12",
+    "title": "Agent Evaluation & Testing",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-11"],
+    "summary": "Task success metrics, benchmarks, synthetic data, and A/B testing.",
+    "contentPath": "ai-agents/12-agent-evaluation-and-testing.md"
+  },
+  "ai-agents-13": {
+    "id": "ai-agents-13",
+    "title": "Security & Safety in AI Agents",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "35min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-10"],
+    "summary": "Prompt injection defense, tool hijacking, privacy, and safety guardrails.",
+    "contentPath": "ai-agents/13-security-and-safety-in-agents.md"
+  },
+  "ai-agents-project-01": {
+    "id": "ai-agents-project-01",
+    "title": "Project: Build a Q&A Agent with Tool Use",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "60min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-05", "ai-agents-08"],
+    "summary": "Build a ReAct-style Q&A agent with web search, calculator, and knowledge base.",
+    "contentPath": "ai-agents/project-01-qa-agent-with-tools.md"
+  },
+  "ai-agents-project-02": {
+    "id": "ai-agents-project-02",
+    "title": "Project: Multi-Agent Research System",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "75min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-06"],
+    "summary": "Build a planner-searcher-synthesizer multi-agent research system.",
+    "contentPath": "ai-agents/project-02-multi-agent-research-system.md"
+  },
+  "ai-agents-project-03": {
+    "id": "ai-agents-project-03",
+    "title": "Project: Implement a RAG Agent",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "60min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-agents-07", "llm-05"],
+    "summary": "End-to-end RAG pipeline with vector DB, LLM, and re-ranking.",
+    "contentPath": "ai-agents/project-03-rag-agent.md"
+  },
+  "ai-agents-project-04": {
+    "id": "ai-agents-project-04",
+    "title": "Project: Production Customer Service Agent",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "75min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-11"],
+    "summary": "Production agent with hand-off logic, escalation, and session management.",
+    "contentPath": "ai-agents/project-04-production-customer-service-agent.md"
+  },
+  "ai-agents-project-05": {
+    "id": "ai-agents-project-05",
+    "title": "Project: Fine-Tune an LLM for Agent Tasks",
+    "topic": "ai-agents",
+    "topicPath": "ai-agents",
+    "estimatedTime": "90min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-agents-12", "llm-03"],
+    "summary": "Collect agent trajectories, DPO training, and evaluation pipeline.",
+    "contentPath": "ai-agents/project-05-fine-tune-llm-for-agent.md"
   }
 }
