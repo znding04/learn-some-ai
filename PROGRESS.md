@@ -47,7 +47,7 @@
 1. ~~Add more algebra lessons (inequalities, systems, polynomials, factoring, quadratics, etc.)~~ ✓ Done — added 8 new lessons
 2. ~~Add more physics lessons to match the topic outline~~ ✓ Done — added 4 lessons: Forces, Energy, Momentum, Waves
 3. ~~Add more AI/ML lessons to match the topic outline~~ ✓ Done — added 3 lessons: Linear Algebra, Probability, Neural Networks
-4. Add YouTube video embeds from markdown frontmatter
+4. ~~Add YouTube video embeds from markdown frontmatter~~ ✓ Done — populated videoUrl field for all 19 lessons, fixed corrupted URLs
 
 ### Phase 4: Deploy & Polish
 1. Connect GitHub repo to Cloudflare Pages (user must do interactive auth)
