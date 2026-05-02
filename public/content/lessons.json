@@ -31,6 +31,134 @@
     ],
     "contentPath": "algebra/equations.md"
   },
+  "algebra-inequalities": {
+    "id": "algebra-inequalities",
+    "title": "Inequalities",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": ["algebra-equations"],
+    "summary": "Solving and graphing inequalities, including compound inequalities.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/oLakMp3-GIw", "title": "Khan Academy — Inequalities", "duration": "15min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/ineqlin.htm", "title": "Purplemath — Solving Linear Inequalities" }
+    ],
+    "contentPath": "algebra/inequalities.md"
+  },
+  "algebra-systems": {
+    "id": "algebra-systems",
+    "title": "Systems of Equations",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["algebra-equations"],
+    "summary": "Solving two equations with two unknowns using substitution, elimination, and graphing.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/yB4g代表大会9k", "title": "Khan Academy — Systems of Equations", "duration": "20min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/systrbl.htm", "title": "Purplemath — Solving Systems" }
+    ],
+    "contentPath": "algebra/systems.md"
+  },
+  "algebra-polynomials": {
+    "id": "algebra-polynomials",
+    "title": "Polynomials",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["algebra-variables", "algebra-equations"],
+    "summary": "Adding, subtracting, multiplying, and dividing polynomial expressions.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/VCsYP4T3k2A", "title": "Khan Academy — Polynomials", "duration": "18min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/polyadd.htm", "title": "Purplemath — Polynomials" }
+    ],
+    "contentPath": "algebra/polynomials.md"
+  },
+  "algebra-factoring": {
+    "id": "algebra-factoring",
+    "title": "Factoring Polynomials",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["algebra-polynomials"],
+    "summary": "Factoring using GCF, trinomials, difference of squares, and sum/difference of cubes.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/KU8fK9K1YO0", "title": "Khan Academy — Factoring", "duration": "20min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/factquad.htm", "title": "Purplemath — Factoring Quadratics" }
+    ],
+    "contentPath": "algebra/factoring.md"
+  },
+  "algebra-quadratics": {
+    "id": "algebra-quadratics",
+    "title": "Quadratic Equations",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["algebra-factoring"],
+    "summary": "Solving quadratics by factoring, completing the square, and the quadratic formula.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/5zY3ELxXkwI", "title": "Khan Academy — Quadratic Formula", "duration": "15min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/quadform.htm", "title": "Purplemath — The Quadratic Formula" }
+    ],
+    "contentPath": "algebra/quadratics.md"
+  },
+  "algebra-rational": {
+    "id": "algebra-rational",
+    "title": "Rational Expressions",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["algebra-factoring", "algebra-quadratics"],
+    "summary": "Simplifying, multiplying, dividing, adding, and subtracting rational expressions.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/Q0Vv2zKdzoo", "title": "Khan Academy — Rational Expressions", "duration": "22min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/rtnlfunc.htm", "title": "Purplemath — Rational Expressions" }
+    ],
+    "contentPath": "algebra/rational-expressions.md"
+  },
+  "algebra-exponents": {
+    "id": "algebra-exponents",
+    "title": "Exponents and Powers",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["algebra-variables"],
+    "summary": "The laws of exponents, scientific notation, and rational exponents.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/KaKGu3UBVPg", "title": "Khan Academy — Exponents", "duration": "14min" },
+      { "type": "article", "url": "https://www.mathsisfun.com/exponent.html", "title": "Math is Fun — Exponents" }
+    ],
+    "contentPath": "algebra/exponents.md"
+  },
+  "algebra-radicals": {
+    "id": "algebra-radicals",
+    "title": "Radicals and Square Roots",
+    "topic": "math-algebra",
+    "topicPath": "algebra",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["algebra-exponents"],
+    "summary": "Simplifying radicals, adding/subtracting/multiplying radicals, and solving radical equations.",
+    "videoUrl": "",
+    "resources": [
+      { "type": "video", "url": "https://www.youtube.com/embed/Vamt9AKip40", "title": "Khan Academy — Radicals", "duration": "16min" },
+      { "type": "article", "url": "https://www.purplemath.com/modules/rtnls.htm", "title": "Purplemath — Simplifying Radicals" }
+    ],
+    "contentPath": "algebra/radicals.md"
+  },
   "physics-motion": {
     "id": "physics-motion",
     "title": "Motion and Kinematics",
