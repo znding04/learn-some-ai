@@ -8,7 +8,7 @@
 # during `npm run build`. Do NOT edit dist/wrangler.json directly —
 # edit wrangler.toml or vite.config.js instead.
 
-name = "what-to-learn"
+name = "learn-some-ai"
 compatibility_date = "2026-04-30"
 pages_build_output_dir = "dist"
 
