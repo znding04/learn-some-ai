@@ -45,8 +45,8 @@
 
 ### Phase 3: Content Creation ✅ (in progress)
 1. ~~Add more algebra lessons (inequalities, systems, polynomials, factoring, quadratics, etc.)~~ ✓ Done — added 8 new lessons
-2. Add more physics lessons to match the topic outline
-3. Add more AI/ML lessons to match the topic outline
+2. ~~Add more physics lessons to match the topic outline~~ ✓ Done — added 4 lessons: Forces, Energy, Momentum, Waves
+3. ~~Add more AI/ML lessons to match the topic outline~~ ✓ Done — added 3 lessons: Linear Algebra, Probability, Neural Networks
 4. Add YouTube video embeds from markdown frontmatter
 
 ### Phase 4: Deploy & Polish
