@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai-fundamentals",
+    "title": "AI Fundamentals",
+    "icon": "🤖",
+    "description": "The foundations of artificial intelligence — from neural networks to ethics.",
+    "path": "ai-fundamentals"
+  },
+  {
+    "id": "llm",
+    "title": "Large Language Models",
+    "icon": "📝",
+    "description": "Understanding how LLMs work — architecture, training, and applications.",
+    "path": "llm"
+  },
+  {
+    "id": "ai-agents",
+    "title": "AI Agents",
+    "icon": "🧠",
+    "description": "Building autonomous AI agents that can reason, plan, and use tools.",
+    "path": "ai-agents"
+  }
+]
