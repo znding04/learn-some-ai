@@ -345,12 +345,17 @@ p { line-height: 1.7; }
   animation: fadeIn 0.3s ease forwards;
 }
 
-.fade-in-delay-1 { animation-delay: 0.05s; opacity: 0; }
-.fade-in-delay-2 { animation-delay: 0.1s; opacity: 0; }
-.fade-in-delay-3 { animation-delay: 0.15s; opacity: 0; }
-.fade-in-delay-4 { animation-delay: 0.2s; opacity: 0; }
-.fade-in-delay-5 { animation-delay: 0.25s; opacity: 0; }
-.fade-in-delay-6 { animation-delay: 0.3s; opacity: 0; }
+[class*="fade-in-delay-"] {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.fade-in-delay-1 { animation-delay: 0.05s; }
+.fade-in-delay-2 { animation-delay: 0.1s; }
+.fade-in-delay-3 { animation-delay: 0.15s; }
+.fade-in-delay-4 { animation-delay: 0.2s; }
+.fade-in-delay-5 { animation-delay: 0.25s; }
+.fade-in-delay-6 { animation-delay: 0.3s; }
 
 /* ================================================
    Utilities
