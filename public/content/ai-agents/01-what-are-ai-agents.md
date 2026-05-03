@@ -101,44 +101,31 @@ The agent continues until it reaches a terminal state $s_T$ where $T$ is the fir
 
 ## Diagrams
 
-```
-+--------------------------------------------------+
-|                AGENT LOOP                         |
-|                                                   |
-|   +----------+    +-----------+    +-----------+  |
-|   |          |    |           |    |           |  |
-|   | PERCEIVE +--->| REASON    +--->| ACT       |  |
-|   |          |    |           |    |           |  |
-|   +----^-----+    +-----------+    +-----+-----+  |
-|        |                                 |         |
-|        +---------------------------------+         |
-|              observation / feedback                |
-+--------------------------------------------------+
-                       |
-                       v
-              +--------+--------+
-              |   ENVIRONMENT   |
-              |  (tools, APIs,  |
-              |   databases)    |
-              +-----------------+
+**Agent loop**
+
+```mermaid
+flowchart LR
+    P[Perceive] --> R[Reason] --> A[Act]
+    A --> E[(Environment<br/>tools · APIs · databases)]
+    E -- observation / feedback --> P
 ```
 
-```
-TAXONOMY OF AI AGENTS
-=====================
+**Taxonomy of AI agents**
 
-AI Agents
-├── Single-Agent
-│   ├── ReAct (Reason + Act)
-│   ├── Plan-and-Execute
-│   └── Tool-augmented LLM
-├── Multi-Agent
-│   ├── Debate / Discussion
-│   ├── Division of Labor
-│   └── Voting / Consensus
-└── Hierarchical
-    ├── Manager → Workers
-    └── Recursive Delegation
+```mermaid
+flowchart TD
+    Root([AI Agents])
+    Root --> S[Single-Agent]
+    Root --> M[Multi-Agent]
+    Root --> H[Hierarchical]
+    S --> S1[ReAct<br/>Reason + Act]
+    S --> S2[Plan-and-Execute]
+    S --> S3[Tool-augmented LLM]
+    M --> M1[Debate / Discussion]
+    M --> M2[Division of Labor]
+    M --> M3[Voting / Consensus]
+    H --> H1[Manager → Workers]
+    H --> H2[Recursive Delegation]
 ```
 
 ## Exercises

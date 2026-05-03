@@ -73,6 +73,19 @@ marked.use({
   },
 })
 
+let katexPromise = null
+function ensureKatex() {
+  if (!katexPromise) {
+    katexPromise = Promise.all([
+      import('marked-katex-extension'),
+      import('katex/dist/katex.min.css'),
+    ]).then(([{ default: markedKatex }]) => {
+      marked.use(markedKatex({ throwOnError: false, output: 'html' }))
+    })
+  }
+  return katexPromise
+}
+
 let mermaidPromise = null
 let mermaidUid = 0
 function loadMermaid() {
@@ -171,7 +184,9 @@ async function loadLesson() {
   try {
     const res = await fetch(`/content/${lesson.value.contentPath}`)
     if (!res.ok) throw new Error('not found')
-    rawContent.value = await res.text()
+    const text = await res.text()
+    if (/\$[^$\n]+\$|\$\$[\s\S]+?\$\$/.test(text)) await ensureKatex()
+    rawContent.value = text
   } catch (e) {
     error.value = true
   } finally {
