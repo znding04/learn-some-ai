@@ -518,5 +518,105 @@
     "prerequisites": ["ai-agents-11"],
     "summary": "Containerization, API wrapper, monitoring, and production deployment guide.",
     "contentPath": "ai-agents/project-06-deploy-agent-to-production.md"
+  },
+
+  "ai-for-biology-01": {
+    "id": "ai-for-biology-01",
+    "title": "Introduction to AI for Biology",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Why biology needs AI, key application areas, and the landscape of computational biology.",
+    "contentPath": "ai-for-biology/01-introduction-to-ai-for-biology.md"
+  },
+  "ai-for-biology-02": {
+    "id": "ai-for-biology-02",
+    "title": "Biological Data Representations",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-biology-01"],
+    "summary": "How biological entities are encoded for machine learning — sequences, structures, and graphs.",
+    "contentPath": "ai-for-biology/02-biological-data-representations.md"
+  },
+  "ai-for-biology-03": {
+    "id": "ai-for-biology-03",
+    "title": "Key Datasets and Benchmarks in Computational Biology",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-biology-01"],
+    "summary": "PDB, UniProt, CASP, and other essential datasets and competitions.",
+    "contentPath": "ai-for-biology/03-key-datasets-and-benchmarks.md"
+  },
+  "ai-for-biology-04": {
+    "id": "ai-for-biology-04",
+    "title": "Protein Structure Prediction",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-biology-02"],
+    "summary": "The protein folding problem, Levinthal's paradox, and classical prediction methods.",
+    "contentPath": "ai-for-biology/04-protein-structure-prediction.md"
+  },
+  "ai-for-biology-05": {
+    "id": "ai-for-biology-05",
+    "title": "AlphaFold: Architecture and Impact",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-biology-04"],
+    "summary": "AlphaFold2 architecture, Evoformer, structure module, and its transformative impact.",
+    "contentPath": "ai-for-biology/05-alphafold-architecture.md"
+  },
+  "ai-for-biology-06": {
+    "id": "ai-for-biology-06",
+    "title": "Genomics and Gene Expression with Deep Learning",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-biology-02"],
+    "summary": "CNNs for DNA, single-cell analysis, variant prediction, and genomic foundation models.",
+    "contentPath": "ai-for-biology/06-genomics-and-deep-learning.md"
+  },
+  "ai-for-biology-07": {
+    "id": "ai-for-biology-07",
+    "title": "Molecular Dynamics and Machine Learning Force Fields",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-biology-04"],
+    "summary": "Classical MD, ML-learned potentials, equivariant networks, and enhanced sampling.",
+    "contentPath": "ai-for-biology/07-molecular-dynamics-and-ml.md"
+  },
+  "ai-for-biology-08": {
+    "id": "ai-for-biology-08",
+    "title": "Protein Design and Inverse Folding",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-biology-05"],
+    "summary": "Inverse folding with ProteinMPNN, diffusion-based design, and de novo protein engineering.",
+    "contentPath": "ai-for-biology/08-protein-design-and-inverse-folding.md"
+  },
+  "ai-for-biology-09": {
+    "id": "ai-for-biology-09",
+    "title": "Frontiers and Future Directions in AI for Biology",
+    "topic": "ai-for-biology",
+    "topicPath": "ai-for-biology",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-biology-05", "ai-for-biology-06"],
+    "summary": "AlphaFold3, foundation models, self-driving labs, and open challenges.",
+    "contentPath": "ai-for-biology/09-frontiers-and-future-directions.md"
   }
 }

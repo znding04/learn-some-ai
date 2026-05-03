@@ -10,7 +10,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | Large Language Models |   9 | All published         |
 | AI Agents (lessons)   |  15 | All published         |
 | AI Agents (projects)  |   6 | All published         |
-| **Total**             | **47** |                       |
+| AI for Biology        |       9 | All published         |
+| **Total**             | **56** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -71,6 +72,17 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 05 — Fine-Tune an LLM for Agent Tasks
 - [x] 06 — Deploy an Agent to Production
 
+### AI for Biology
+- [x] 01 — Introduction to AI for Biology
+- [x] 02 — Biological Data Representations
+- [x] 03 — Key Datasets and Benchmarks in Computational Biology
+- [x] 04 — Protein Structure Prediction
+- [x] 05 — AlphaFold: Architecture and Impact
+- [x] 06 — Genomics and Gene Expression with Deep Learning
+- [x] 07 — Molecular Dynamics and Machine Learning Force Fields
+- [x] 08 — Protein Design and Inverse Folding
+- [x] 09 — Frontiers and Future Directions in AI for Biology
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -80,6 +92,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-03
+- Added AI for Biology track: 9 lessons covering protein folding, AlphaFold, genomics, molecular dynamics, protein design, and future directions.
 
 ### 2026-05-02
 - Added Mermaid diagram support and converted ASCII diagrams across all 33 lessons that had them.

@@ -19,5 +19,12 @@
     "icon": "🧠",
     "description": "Building autonomous AI agents that can reason, plan, and use tools.",
     "path": "ai-agents"
+  },
+  {
+    "id": "ai-for-biology",
+    "title": "AI for Biology",
+    "icon": "🧬",
+    "description": "How AI is transforming biology — from protein folding to genomics and drug discovery.",
+    "path": "ai-for-biology"
   }
 ]
