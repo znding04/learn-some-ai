@@ -54,7 +54,10 @@
 
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
+import { marked } from 'marked'
 import { useRouter } from '../router.js'
+
+marked.setOptions({ gfm: true, breaks: false })
 
 const props = defineProps({
   lessonId: String,
@@ -98,61 +101,11 @@ const nextLesson = computed(() =>
     : null
 )
 
-// Simple markdown to HTML converter
 function renderMarkdown(md) {
   if (!md) return ''
-
-  let html = md
-    // Remove frontmatter
-    .replace(/^---[\s\S]*?---\n/, '')
-    // Headings
-    .replace(/^#### (.+)$/gm, '<h4>$1</h4>')
-    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-    // Bold & Italic
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // Inline code
-    .replace(/`([^`]+)`/g, '<code>$1</code>')
-    // Code blocks
-    .replace(/```[\s\S]*?```/g, (match) => {
-      const code = match.replace(/```\w*\n?/, '').replace(/```$/, '')
-      return `<pre><code>${code.trim()}</code></pre>`
-    })
-    // Tables
-    .replace(/\|\s*([^\n]+)\|\n\|[-:\s]+\|\n((?:\|[^\n]+\|\n?)*)/g, (match, header, body) => {
-      const headers = header.split('|').filter(h => h.trim())
-      const rows = body.trim().split('\n').map(row =>
-        row.split('|').filter(c => c.trim())
-      )
-      let table = '<table><thead><tr>'
-      headers.forEach(h => { table += `<th>${h.trim()}</th>` })
-      table += '</tr></thead><tbody>'
-      rows.forEach(row => {
-        table += '<tr>'
-        row.forEach(c => { table += `<td>${c.trim()}</td>` })
-        table += '</tr>'
-      })
-      table += '</tbody></table>'
-      return table
-    })
-    // Blockquotes
-    .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
-    // Horizontal rule
-    .replace(/^---$/gm, '<hr>')
-    // Unordered lists
-    .replace(/^[-*] (.+)$/gm, '<li>$1</li>')
-    // Ordered lists
-    .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
-    // Wrap consecutive li in ul
-    .replace(/(<li>.*<\/li>\n?)+/g, match => `<ul>${match}</ul>`)
-    // Paragraphs (lines not yet wrapped)
-    .replace(/^(?!<[a-z])(.+)$/gm, '<p>$1</p>')
-    // Clean up empty paragraphs
-    .replace(/<p>\s*<\/p>/g, '')
-
-  return html
+  // Strip YAML frontmatter; marked handles the rest.
+  const stripped = md.replace(/^---[\s\S]*?---\n/, '')
+  return marked.parse(stripped)
 }
 
 const renderedContent = computed(() => renderMarkdown(rawContent.value))

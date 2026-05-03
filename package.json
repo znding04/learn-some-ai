@@ -10,6 +10,7 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
+    "marked": "^18.0.3",
     "vue": "^3.5.0"
   },
   "devDependencies": {
