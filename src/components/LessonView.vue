@@ -181,8 +181,8 @@ function goToLesson(id) {
   router.navigate(`/lesson/${id}`)
 }
 
-watch(() => props.lessonId, () => {
-  loadLesson()
+watch(() => lesson.value?.contentPath, (path) => {
+  if (path) loadLesson()
 }, { immediate: true })
 </script>
 
