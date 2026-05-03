@@ -7,7 +7,7 @@
       </a>
 
       <nav class="navbar-nav">
-        <a href="#/" class="nav-link" :class="{ active: route === '/' }">
+        <a href="#/" class="nav-link" :class="{ active: route === '/' }" @click="goToTopics">
           Topics
         </a>
         <a
@@ -27,8 +27,20 @@
 </template>
 
 <script setup>
+import { nextTick } from 'vue'
 import { useRouter } from '../router.js'
-const { route } = useRouter()
+const { route, navigate } = useRouter()
+
+function goToTopics(e) {
+  e.preventDefault()
+  const scroll = () => document.getElementById('topics')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  if (route.value === '/') {
+    scroll()
+  } else {
+    navigate('/')
+    nextTick(scroll)
+  }
+}
 </script>
 
 <style scoped>

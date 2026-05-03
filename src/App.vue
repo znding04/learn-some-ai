@@ -12,7 +12,7 @@
           </p>
         </div>
 
-        <div class="topics-section">
+        <div id="topics" class="topics-section">
           <div class="section-label">Curriculum Tracks</div>
           <div class="topics-grid">
             <TopicCard
