@@ -288,6 +288,21 @@ p { line-height: 1.7; }
   line-height: 1.65;
 }
 
+.markdown-body pre.mermaid {
+  background: transparent;
+  padding: var(--space-2) 0;
+  margin: var(--space-5) 0;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  font-family: var(--font-sans);
+}
+
+.markdown-body pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .markdown-body blockquote {
   border-left: 3px solid var(--accent);
   padding-left: var(--space-4);

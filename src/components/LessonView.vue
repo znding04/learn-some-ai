@@ -34,7 +34,7 @@
         <p class="lesson-summary">{{ lesson.summary }}</p>
       </header>
 
-      <div class="lesson-body markdown-body" v-html="renderedContent"></div>
+      <div ref="lessonBodyRef" class="lesson-body markdown-body" v-html="renderedContent"></div>
 
       <footer class="lesson-footer">
         <div class="divider"></div>
@@ -53,11 +53,43 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted } from 'vue'
+import { ref, computed, watch, nextTick } from 'vue'
 import { marked } from 'marked'
 import { useRouter } from '../router.js'
 
 marked.setOptions({ gfm: true, breaks: false })
+
+const escapeHtml = (s) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+marked.use({
+  renderer: {
+    code({ text, lang }) {
+      if (lang === 'mermaid') {
+        return `<pre class="mermaid">${escapeHtml(text)}</pre>`
+      }
+      return false
+    },
+  },
+})
+
+let mermaidPromise = null
+let mermaidUid = 0
+function loadMermaid() {
+  if (!mermaidPromise) {
+    mermaidPromise = import('mermaid').then(({ default: mermaid }) => {
+      const dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: dark ? 'dark' : 'default',
+        securityLevel: 'strict',
+        fontFamily: 'inherit',
+      })
+      return mermaid
+    })
+  }
+  return mermaidPromise
+}
 
 const props = defineProps({
   lessonId: String,
@@ -109,6 +141,27 @@ function renderMarkdown(md) {
 }
 
 const renderedContent = computed(() => renderMarkdown(rawContent.value))
+const lessonBodyRef = ref(null)
+
+async function renderMermaid() {
+  await nextTick()
+  const root = lessonBodyRef.value
+  if (!root) return
+  const blocks = root.querySelectorAll('pre.mermaid')
+  if (!blocks.length) return
+  const mermaid = await loadMermaid()
+  blocks.forEach((el) => {
+    if (!el.dataset.mid) el.dataset.mid = `m-${++mermaidUid}`
+    el.id = el.dataset.mid
+  })
+  try {
+    await mermaid.run({ nodes: Array.from(blocks) })
+  } catch (e) {
+    console.error('Mermaid render failed:', e)
+  }
+}
+
+watch(renderedContent, () => { renderMermaid() })
 
 async function loadLesson() {
   if (!lesson.value?.contentPath) return
