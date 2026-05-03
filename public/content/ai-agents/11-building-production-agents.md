@@ -189,33 +189,29 @@ $$p_{95} = l_{\lceil 0.95 \cdot n \rceil}$$
 
 ## Diagrams
 
-```
-Production Agent Architecture:
-                                                          
-  Client ──→ [ API Gateway ] ──→ [ Agent Orchestrator ]   
-                   │                  │        │          
-                   │            ┌─────┘        └──────┐   
-                   │            ▼                     ▼   
-              [ Auth +     [ LLM API ]          [ Tool    
-               Rate Limit ]   ▲                  Router ] 
-                              │               /    |    \ 
-                         [ Prompt           Tool  Tool  Tool
-                           Cache ]          (fn)  (fn)  (fn)
-                                                          
-                   │                                      
-                   ▼                                      
-            [ Metrics / Traces ]                          
-            Prometheus + Jaeger                           
+**Production Agent Architecture**
+
+```mermaid
+flowchart LR
+    Client([Client]) --> GW[API Gateway]
+    GW --> Auth[Auth +<br/>Rate Limit]
+    GW --> Orch[Agent Orchestrator]
+    Orch --> LLM[LLM API]
+    Orch --> Router[Tool Router]
+    LLM --> Cache[(Prompt<br/>Cache)]
+    Router --> T1[Tool fn]
+    Router --> T2[Tool fn]
+    Router --> T3[Tool fn]
+    Orch --> Obs[Metrics / Traces<br/>Prometheus + Jaeger]
 ```
 
-```
-Token Budget Lifecycle:
+**Token Budget Lifecycle**
 
-  0%          50%          80%         100%
-  |────────────|────────────|───────────|
-  ▲            ▲            ▲           ▲
-  Start     Normal       Warning     Hard stop
-            operation    (wrap up)   (force end)
+```mermaid
+flowchart LR
+    S([0% - Start]) --> N[50% - Normal<br/>operation]
+    N --> W[80% - Warning<br/>wrap up]
+    W --> H([100% - Hard stop<br/>force end])
 ```
 
 ## Exercises

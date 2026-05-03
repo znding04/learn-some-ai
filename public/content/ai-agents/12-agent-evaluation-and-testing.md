@@ -212,52 +212,34 @@ This penalizes agents that achieve high success but consume disproportionate res
 
 ## Diagrams
 
-```
-Agent Evaluation Pipeline:
+**Agent Evaluation Pipeline**
 
-  [ Test Suite ]          [ Agent Under Test ]
-  (task, expected)  ──→   Run agent on task
-       │                        │
-       │                        ▼
-       │                  [ Agent Trace ]
-       │                  (steps, tools, answer)
-       │                        │
-       ▼                        ▼
-  ┌─────────────────────────────────┐
-  │        Evaluation Engine        │
-  │  ┌───────┐ ┌────────┐ ┌─────┐  │
-  │  │Success│ │Tool P/R │ │Cost │  │
-  │  │ Rate  │ │  & F1   │ │Eff. │  │
-  │  └───────┘ └────────┘ └─────┘  │
-  └─────────────┬───────────────────┘
-                │
-                ▼
-        [ Evaluation Report ]
-        JSON / Dashboard
+```mermaid
+flowchart TD
+    TS[Test Suite<br/>task, expected] --> AUT[Agent Under Test<br/>Run agent on task]
+    AUT --> Trace[Agent Trace<br/>steps, tools, answer]
+    TS --> Eng
+    Trace --> Eng
+    subgraph Eng[Evaluation Engine]
+        M1[Success<br/>Rate]
+        M2[Tool P/R<br/>and F1]
+        M3[Cost<br/>Efficiency]
+    end
+    Eng --> Report([Evaluation Report<br/>JSON / Dashboard])
 ```
 
-```
-A/B Test Flow:
+**A/B Test Flow**
 
-  Incoming tasks
-       │
-       ▼
-  ┌──────────┐
-  │ Randomize │
-  └──┬────┬──┘
-     │    │
-  50%│    │50%
-     ▼    ▼
-  [ Prompt A ]  [ Prompt B ]
-  (control)     (variant)
-     │              │
-     ▼              ▼
-  Metrics A     Metrics B
-     │              │
-     └──────┬───────┘
-            ▼
-    [ z-test / t-test ]
-    Significant? Ship it.
+```mermaid
+flowchart TD
+    In([Incoming tasks]) --> R{Randomize}
+    R -- 50% --> A[Prompt A<br/>control]
+    R -- 50% --> B[Prompt B<br/>variant]
+    A --> MA[Metrics A]
+    B --> MB[Metrics B]
+    MA --> Test[z-test / t-test]
+    MB --> Test
+    Test --> Ship([Significant? Ship it.])
 ```
 
 ## Exercises

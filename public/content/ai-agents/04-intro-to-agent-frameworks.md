@@ -146,68 +146,39 @@ where $\gamma \in [0,1]$ is a discount factor and $r(s_t, a_t)$ is the reward at
 
 ## Diagrams
 
-```
-Framework Comparison
-=====================
+**Framework Comparison (Setup Complexity vs Collaboration Level)**
 
-                    Complexity
-                    of Setup
-                        ^
-                        |
-           AutoGPT *    |    * CAMEL
-                        |
-                        |         * LangGraph
-                        |
-                        |    * CrewAI
-                        |
-            LangChain * |
-                        |
-                        +------------------------->
-                        Single-Agent         Multi-Agent
-                                Collaboration Level
+```mermaid
+quadrantChart
+    title Setup Complexity vs Multi-Agent Collaboration
+    x-axis Single-Agent --> Multi-Agent
+    y-axis Low Setup Complexity --> High Setup Complexity
+    LangChain: [0.15, 0.25]
+    AutoGPT: [0.2, 0.85]
+    CrewAI: [0.7, 0.55]
+    LangGraph: [0.55, 0.7]
+    CAMEL: [0.85, 0.85]
 ```
 
-```
-LangChain Architecture
-=======================
+**LangChain Architecture**
 
-+-------------+     +----------+     +---------+
-|   PROMPT    | --> |   LLM    | --> | OUTPUT  |
-|  TEMPLATE   |     | (OpenAI, |     | PARSER  |
-|             |     | Anthropic|     |         |
-+-------------+     | etc.)    |     +---------+
-                    +----+-----+
-                         |
-                    +----v-----+     +---------+
-                    |  AGENT   | <-> | TOOLS   |
-                    | (ReAct,  |     | (search,|
-                    | OpenAI   |     |  calc,  |
-                    | funcs)   |     |  code)  |
-                    +----+-----+     +---------+
-                         |
-                    +----v-----+
-                    |  MEMORY  |
-                    | (buffer, |
-                    |  vector) |
-                    +----------+
+```mermaid
+flowchart LR
+    P[Prompt<br/>Template] --> L[LLM<br/>OpenAI, Anthropic, etc.]
+    L --> O[Output<br/>Parser]
+    L <--> A[Agent<br/>ReAct, OpenAI funcs]
+    A <--> T[Tools<br/>search, calc, code]
+    A <--> M[(Memory<br/>buffer, vector)]
 ```
 
-```
-LangGraph: Agent as a Graph
-=============================
+**LangGraph: Agent as a Graph**
 
-     START
-       |
-       v
-  +----+----+      yes     +----------+
-  |  Agent  | -----------> | Tool     |
-  | (LLM   |              | Executor |
-  |  node)  | <----------- |          |
-  +----+----+   result     +----------+
-       |
-       | no tool calls
-       v
-      END
+```mermaid
+flowchart TD
+    Start([START]) --> Agent[Agent<br/>LLM node]
+    Agent -- tool calls --> Tool[Tool<br/>Executor]
+    Tool -- result --> Agent
+    Agent -- no tool calls --> End([END])
 ```
 
 ## Exercises

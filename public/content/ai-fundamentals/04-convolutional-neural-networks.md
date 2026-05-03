@@ -138,12 +138,16 @@ print(f"Output shape: {output.shape}")  # [4, 10]
 
 ## Diagrams
 
-```
-CNN Architecture (simplified):
+**CNN Architecture (simplified)**
 
-Input       Conv+ReLU     Pool      Conv+ReLU     Pool      FC      Output
-[32×32×3] → [32×32×16] → [16×16×16] → [16×16×32] → [8×8×32] → [128] → [10]
-  Image     Feature maps  Downsample  More features Downsample Dense   Classes
+```mermaid
+flowchart LR
+    A["Input<br/>32×32×3<br/>Image"] --> B["Conv+ReLU<br/>32×32×16<br/>Feature maps"]
+    B --> C["Pool<br/>16×16×16<br/>Downsample"]
+    C --> D["Conv+ReLU<br/>16×16×32<br/>More features"]
+    D --> E["Pool<br/>8×8×32<br/>Downsample"]
+    E --> F["FC<br/>128<br/>Dense"]
+    F --> G["Output<br/>10<br/>Classes"]
 ```
 
 ## Exercises

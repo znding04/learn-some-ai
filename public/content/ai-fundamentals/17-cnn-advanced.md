@@ -42,15 +42,24 @@ VGG (Simonyan & Zisserman) demonstrated that **depth matters**. Key insight: rep
 
 VGG-16 architecture (16 weight layers):
 
-```
-Input (224×224×3)
-→ [Conv3-64] × 2 → MaxPool
-→ [Conv3-128] × 2 → MaxPool
-→ [Conv3-256] × 3 → MaxPool
-→ [Conv3-512] × 3 → MaxPool
-→ [Conv3-512] × 3 → MaxPool
-→ FC-4096 → FC-4096 → FC-1000
-→ Softmax
+**VGG-16 Architecture**
+
+```mermaid
+flowchart TD
+    I["Input (224×224×3)"] --> C1["Conv3-64 × 2"]
+    C1 --> P1[MaxPool]
+    P1 --> C2["Conv3-128 × 2"]
+    C2 --> P2[MaxPool]
+    P2 --> C3["Conv3-256 × 3"]
+    C3 --> P3[MaxPool]
+    P3 --> C4["Conv3-512 × 3"]
+    C4 --> P4[MaxPool]
+    P4 --> C5["Conv3-512 × 3"]
+    C5 --> P5[MaxPool]
+    P5 --> F1[FC-4096]
+    F1 --> F2[FC-4096]
+    F2 --> F3[FC-1000]
+    F3 --> S([Softmax])
 ```
 
 **Impact**: VGG proved that a simple, uniform architecture of small filters can achieve excellent performance. Its 138M parameters made it expensive, but its clean design made it popular as a feature extractor.
@@ -59,12 +68,21 @@ Input (224×224×3)
 
 Szegedy et al. took a different approach: instead of choosing one filter size, use them all. The **Inception module** applies $1 \times 1$, $3 \times 3$, and $5 \times 5$ convolutions in parallel, concatenating their outputs:
 
-```
-Input
-├─ Conv 1×1 ──────────────┐
-├─ Conv 1×1 → Conv 3×3 ───┤
-├─ Conv 1×1 → Conv 5×5 ───┤  Concatenate
-└─ MaxPool 3×3 → Conv 1×1 ┘
+**Inception Module**
+
+```mermaid
+flowchart LR
+    I[Input] --> A["Conv 1×1"]
+    I --> B1["Conv 1×1"]
+    B1 --> B2["Conv 3×3"]
+    I --> C1["Conv 1×1"]
+    C1 --> C2["Conv 5×5"]
+    I --> D1["MaxPool 3×3"]
+    D1 --> D2["Conv 1×1"]
+    A --> CAT([Concatenate])
+    B2 --> CAT
+    C2 --> CAT
+    D2 --> CAT
 ```
 
 The $1 \times 1$ convolutions (called **bottleneck layers**) reduce channel dimensions before expensive operations, dramatically cutting computation:
@@ -82,15 +100,15 @@ Instead of learning a mapping $H(\mathbf{x})$, a residual block learns the *resi
 
 $$H(\mathbf{x}) = F(\mathbf{x}) + \mathbf{x}$$
 
-```
-Input x ──────────────────────┐
-  │                           │
-  ├─ Conv 3×3 → BN → ReLU    │ (skip connection)
-  ├─ Conv 3×3 → BN           │
-  │                           │
-  └──── + ←───────────────────┘
-         │
-       ReLU
+**Residual Block**
+
+```mermaid
+flowchart TD
+    X["Input x"] --> C1["Conv 3×3 → BN → ReLU"]
+    C1 --> C2["Conv 3×3 → BN"]
+    C2 --> ADD(("+"))
+    X -- skip connection --> ADD
+    ADD --> R[ReLU]
 ```
 
 **Why it works**: If the optimal transformation is close to identity, learning $F(\mathbf{x}) \approx 0$ is much easier than learning $H(\mathbf{x}) \approx \mathbf{x}$ from scratch. Skip connections also create shorter gradient paths, alleviating vanishing gradients in very deep networks.
@@ -99,12 +117,15 @@ ResNet enabled training networks with 50, 101, and even 152 layers — far deepe
 
 **Bottleneck residual block** (used in ResNet-50+):
 
-```
-Input x (256 channels)
-  ├─ Conv 1×1 (64) → BN → ReLU     ← reduce channels
-  ├─ Conv 3×3 (64) → BN → ReLU     ← spatial processing
-  ├─ Conv 1×1 (256) → BN           ← restore channels
-  └──── + x
+**Bottleneck Residual Block**
+
+```mermaid
+flowchart TD
+    X["Input x (256 channels)"] --> C1["Conv 1×1 (64) → BN → ReLU<br/><i>reduce channels</i>"]
+    C1 --> C2["Conv 3×3 (64) → BN → ReLU<br/><i>spatial processing</i>"]
+    C2 --> C3["Conv 1×1 (256) → BN<br/><i>restore channels</i>"]
+    C3 --> ADD(("+"))
+    X -- skip --> ADD
 ```
 
 ```python

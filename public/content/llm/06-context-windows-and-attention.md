@@ -118,51 +118,59 @@ $$\text{KV memory} = 2 \times n \times d_{\text{model}} \times \text{bytes per p
 
 ## Diagrams
 
+The standard vs. sliding-window attention masks (n = 8) are shown below.
+
+| Q\K | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |   | Q\K | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|-----|---|---|---|---|---|---|---|---|---|-----|---|---|---|---|---|---|---|---|
+| 1   | X | . | . | . | . | . | . | . |   | 1   | X | . | . | . | . | . | . | . |
+| 2   | X | X | . | . | . | . | . | . |   | 2   | X | X | . | . | . | . | . | . |
+| 3   | X | X | X | . | . | . | . | . |   | 3   | X | X | X | . | . | . | . | . |
+| 4   | X | X | X | X | . | . | . | . |   | 4   | . | X | X | X | . | . | . | . |
+| 5   | X | X | X | X | X | . | . | . |   | 5   | . | . | X | X | X | . | . | . |
+| 6   | X | X | X | X | X | X | . | . |   | 6   | . | . | . | X | X | X | . | . |
+| 7   | X | X | X | X | X | X | X | . |   | 7   | . | . | . | . | X | X | X | . |
+| 8   | X | X | X | X | X | X | X | X |   | 8   | . | . | . | . | . | X | X | X |
+
+Left: Standard (Dense) Attention, complexity $O(n^2)$. Right: Sliding Window (w=3), complexity $O(n \cdot w)$. X = attends, . = masked.
+
+**Flash Attention Tiling (conceptual)**
+
+```mermaid
+flowchart LR
+    subgraph HBM["GPU HBM (slow, large)"]
+      Q["Q (full matrix)"]
+      K["K (full matrix)"]
+      V["V (full matrix)"]
+      O["O (output)"]
+    end
+
+    subgraph SRAM["GPU SRAM (fast, small)"]
+      Qi["Q_i"]
+      Kj["K_j"]
+      Vj["V_j"]
+      Oi["O_i<br/>compute S_ij,<br/>P_ij, O_i"]
+    end
+
+    Q -- tile --> Qi
+    K -- tile --> Kj
+    V -- tile --> Vj
+    Oi -- accumulate --> O
+
+    Note["No full n×n matrix<br/>ever stored in HBM"]
 ```
-  Standard (Dense) Attention          Sliding Window (w=3)
-  n=8 tokens                          n=8 tokens
 
-  Q\K  1 2 3 4 5 6 7 8               Q\K  1 2 3 4 5 6 7 8
-  1   [X . . . . . . .]              1   [X . . . . . . .]
-  2   [X X . . . . . .]              2   [X X . . . . . .]
-  3   [X X X . . . . .]              3   [X X X . . . . .]
-  4   [X X X X . . . .]              4   [. X X X . . . .]
-  5   [X X X X X . . .]              5   [. . X X X . . .]
-  6   [X X X X X X . .]              6   [. . . X X X . .]
-  7   [X X X X X X X .]              7   [. . . . X X X .]
-  8   [X X X X X X X X]              8   [. . . . . X X X]
+**RAG vs Long Context**
 
-  X = attends, . = masked              Complexity: O(n*w)
-  Complexity: O(n^2)
+```mermaid
+flowchart LR
+    subgraph RAG["RAG pipeline"]
+      Q1[Query] --> R[Retriever] --> Top["Top-k chunks"] --> L1["LLM (small ctx)"]
+      VDB[("Vector DB with<br/>1M+ documents")] --> R
+    end
 
-
-  Flash Attention Tiling (conceptual)
-  ====================================
-
-  GPU HBM (slow, large)         GPU SRAM (fast, small)
-  +-------------------+         +--------+
-  | Q  (full matrix)  |--tile-->| Q_i    |
-  | K  (full matrix)  |--tile-->| K_j    |  compute S_ij,
-  | V  (full matrix)  |--tile-->| V_j    |  P_ij, O_i
-  | O  (output)       |<--acc---| O_i    |
-  +-------------------+         +--------+
-                                 ^     |
-                          no full n*n matrix
-                          ever stored in HBM
-
-
-  RAG vs Long Context
-  ====================
-
-  RAG pipeline:
-  [Query] --> [Retriever] --> [Top-k chunks] --> [LLM (small ctx)]
-                  |
-          [Vector DB with
-           1M+ documents]
-
-  Long-context pipeline:
-  [Query + Full Document(s)] ---------> [LLM (large ctx)]
-         (all tokens in context)
+    subgraph LC["Long-context pipeline"]
+      Q2["Query + Full Document(s)<br/>(all tokens in context)"] --> L2["LLM (large ctx)"]
+    end
 ```
 
 ## Exercises

@@ -331,60 +331,49 @@ For $p = 0.8$ (80% success rate) and $N = 3$: $\mathbb{E}[\text{cost}] = c \cdot
 
 ## Diagrams
 
+**Robust Tool Execution Flow**
+
+```mermaid
+flowchart TD
+    Req([Tool Call Request])
+    CB{Circuit Breaker<br/>Check}
+    FE([Fallback / Error])
+    EX[Execute Tool<br/>with timeout]
+    RR([Return Result])
+    CE{Classify Error}
+    Retry[Retry<br/>backoff]
+    Deg[Degraded<br/>Result]
+    Give[Give Up]
+    Stop([STOP<br/>log alert])
+    Budget{Retry budget<br/>exhausted?}
+    Again[Try again]
+    Fall[Fallback]
+    Req --> CB
+    CB -- OPEN --> FE
+    CB -- CLOSED / HALF-OPEN --> EX
+    EX -- Success --> RR
+    EX -- Failure --> CE
+    CE -- TRANSIENT --> Retry
+    CE -- DEGRADED --> Deg
+    CE -- PERMANENT --> Give
+    CE -- CRITICAL --> Stop
+    Retry --> Budget
+    Budget -- No --> Again
+    Budget -- Yes --> Fall
 ```
-Robust Tool Execution Flow
-============================
 
-  Tool Call Request
-       |
-       v
-  +----+---------------+
-  | Circuit Breaker     |---[OPEN]---> Fallback / Error
-  | Check               |
-  +----+---------------+
-       | [CLOSED/HALF-OPEN]
-       v
-  +----+---------------+
-  | Execute Tool        |---[Success]---> Return Result
-  | (with timeout)      |
-  +----+---------------+
-       | [Failure]
-       v
-  +----+---------------+
-  | Classify Error      |
-  +----+----+----+-----+
-       |    |    |
-  TRANSIENT |  PERMANENT  CRITICAL
-       |    |    |            |
-       v    |    v            v
-  Retry  Degraded  Give Up   STOP
-  (backoff) Result           (log alert)
-       |
-       v
-  Retry budget exhausted?
-       |          |
-      No         Yes
-       |          |
-       v          v
-  Try again    Fallback
+**Circuit Breaker States**
 
-
-Circuit Breaker States
-========================
-
-  +--------+    success     +---------+
-  | CLOSED |<--------------| HALF-   |
-  | (allow |    failure     | OPEN    |
-  | all)   |-------------->| (test   |
-  +---+----+               | one)    |
-      |                    +----+----+
-      | N failures              ^
-      v                        |
-  +---+------+   timeout      |
-  | OPEN     |----------------+
-  | (reject  |  (recovery_time elapsed)
-  | all)     |
-  +---------+
+```mermaid
+stateDiagram-v2
+    [*] --> CLOSED
+    CLOSED: CLOSED<br/>(allow all)
+    OPEN: OPEN<br/>(reject all)
+    HALF_OPEN: HALF-OPEN<br/>(test one)
+    CLOSED --> OPEN: N failures
+    OPEN --> HALF_OPEN: timeout<br/>(recovery_time elapsed)
+    HALF_OPEN --> CLOSED: success
+    HALF_OPEN --> OPEN: failure
 ```
 
 ## Exercises

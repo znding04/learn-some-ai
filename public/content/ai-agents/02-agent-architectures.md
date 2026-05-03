@@ -143,58 +143,49 @@ $$[g_i', g_{i+1}', \ldots, g_m'] = \text{Replan}(G, r_1, \ldots, r_{i-1}, \text{
 
 ## Diagrams
 
-```
-ReAct Architecture
-==================
+**ReAct Architecture**
 
-User Goal
-    |
-    v
-+---+---+     +----------+     +-----------+
-| Thought| --> | Action   | --> | Tool Call |
-| (LLM)  |    | Selection|     | Execution |
-+---+----+     +----------+     +-----+-----+
-    ^                                  |
-    |          Observation             |
-    +----------------------------------+
-    
-    Repeats until Action = "finish"
+```mermaid
+flowchart LR
+    G([User Goal]) --> T[Thought<br/>LLM]
+    T --> A[Action<br/>Selection]
+    A --> X[Tool Call<br/>Execution]
+    X -- Observation --> T
+    X -. Action = finish .-> F([Final Answer])
 ```
 
-```
-Plan-and-Execute Architecture
-==============================
+**Plan-and-Execute Architecture**
 
-User Goal
-    |
-    v
-+--------+     +------+------+------+------+
-| PLANNER| --> | Step | Step | Step | Step |
-| (LLM)  |     |  1   |  2   |  3   |  N   |
-+---+----+     +--+---+--+---+--+---+--+---+
-    ^             |      |      |      |
-    |  replan     v      v      v      v
-    +---------- EXECUTOR (ReAct sub-agent)
-                  |
-                  v
-              Final Result
+```mermaid
+flowchart TD
+    G([User Goal]) --> P[Planner<br/>LLM]
+    P --> S1[Step 1]
+    P --> S2[Step 2]
+    P --> S3[Step 3]
+    P --> SN[Step N]
+    S1 --> E[Executor<br/>ReAct sub-agent]
+    S2 --> E
+    S3 --> E
+    SN --> E
+    E --> R([Final Result])
+    E -- replan on failure --> P
 ```
 
-```
-Tree of Thoughts (BFS, beam width = 2)
-========================================
+**Tree of Thoughts (BFS, beam width = 2)**
 
-                  [Root: Goal]
-                 /      |      \
-            Thought   Thought   Thought     <- generate k=3
-             (0.9)    (0.7)     (0.3)       <- evaluate
-              /  \      |        X          <- prune, keep b=2
-           T1a   T1b   T2a
-          (0.8) (0.6) (0.85)
-            |     X     |                   <- keep top 2
-           ...         ...
-            v           v
-         Answer A    Answer B              <- select best
+```mermaid
+flowchart TD
+    Root([Root: Goal])
+    Root --> T1["Thought (0.9)"]
+    Root --> T2["Thought (0.7)"]
+    Root --> T3["Thought (0.3) — pruned"]
+    T1 --> T1a["T1a (0.8)"]
+    T1 --> T1b["T1b (0.6) — pruned"]
+    T2 --> T2a["T2a (0.85)"]
+    T1a --> A([Answer A])
+    T2a --> B([Answer B])
+    A -. select best .-> Best([Best Answer])
+    B -. select best .-> Best
 ```
 
 ## Exercises

@@ -241,63 +241,31 @@ At $\lambda = 10$ req/s, $\bar{T} = 50{,}000$ tokens, $c = \$0.00003$/token, ove
 
 ## Diagrams
 
-```
-Defense-in-Depth for AI Agents:
+**Defense-in-Depth for AI Agents**
 
-  User Input
-      │
-      ▼
- ┌──────────────┐
- │ Input Guard   │  ← Injection detection, input length limits
- │ (regex + LLM) │
- └──────┬───────┘
-        │  pass
-        ▼
- ┌──────────────┐
- │ Rate Limiter  │  ← Per-user token bucket
- └──────┬───────┘
-        │  pass
-        ▼
- ┌──────────────┐
- │  Agent Core   │  ← LLM reasoning loop
- │  (sandboxed)  │
- └──────┬───────┘
-        │  tool call
-        ▼
- ┌──────────────┐
- │ Tool Guard    │  ← Allowlist, argument validation, rate limits
- └──────┬───────┘
-        │  approved
-        ▼
- ┌──────────────┐
- │ Tool Executor │  ← Sandboxed execution environment
- └──────┬───────┘
-        │  result
-        ▼
- ┌──────────────┐
- │ Output Guard  │  ← Content filter, PII redaction
- └──────┬───────┘
-        │  safe
-        ▼
-   User Response
+```mermaid
+flowchart TD
+    U([User Input]) --> IG[Input Guard<br/>regex + LLM]
+    IG -- pass --> RL[Rate Limiter<br/>per-user token bucket]
+    RL -- pass --> AC[Agent Core<br/>sandboxed LLM loop]
+    AC -- tool call --> TG[Tool Guard<br/>allowlist, arg validation, rate limits]
+    TG -- approved --> TE[Tool Executor<br/>sandboxed environment]
+    TE -- result --> OG[Output Guard<br/>content filter, PII redaction]
+    OG -- safe --> Resp([User Response])
 ```
 
-```
-Prompt Injection Types:
+**Prompt Injection Types**
 
-  DIRECT:                      INDIRECT:
-  
-  User ──→ "Ignore all   ──→  User ──→ "Summarize    ──→
-            instructions"               this webpage"
-                │                            │
-                ▼                            ▼
-           Agent follows              Agent fetches page
-           injected command           containing hidden:
-                                      "AGENT: exfiltrate data"
-                                             │
-                                             ▼
-                                       Agent follows
-                                       injected command
+```mermaid
+flowchart TD
+    subgraph Direct[DIRECT]
+        U1([User]) -- "Ignore all instructions" --> A1[Agent follows<br/>injected command]
+    end
+    subgraph Indirect[INDIRECT]
+        U2([User]) -- "Summarize this webpage" --> A2[Agent fetches page]
+        A2 --> H["Hidden text:<br/>AGENT: exfiltrate data"]
+        H --> A3[Agent follows<br/>injected command]
+    end
 ```
 
 ## Exercises

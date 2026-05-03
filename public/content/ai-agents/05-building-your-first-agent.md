@@ -225,73 +225,35 @@ The total maximum wait before giving up is $\sum_{k=0}^{K-1} 2^k = 2^K - 1$ seco
 
 ## Diagrams
 
-```
-Agent Execution Flow
-=====================
+**Agent Execution Flow**
 
-  User Goal
-      |
-      v
-  +---+---+
-  | System |
-  | Prompt |
-  +---+---+
-      |
-      v
-  +---+---+  <-------------------------------+
-  |  LLM  |                                   |
-  | Call   | -- tool_calls? --+-- YES ---+     |
-  +---+---+                   |          |     |
-      |                       |     +----v---+ |
-      | NO (text)             |     | Parse  | |
-      |                       |     | Args   | |
-      v                       |     +----+---+ |
-  +---+------+                |          |     |
-  | RETURN   |                |     +----v---+ |
-  | answer   |                |     | Execute| |
-  +----------+                |     | Tool   | |
-                              |     +----+---+ |
-                              |          |     |
-                              |     +----v---+ |
-                              |     | Append | |
-                              |     | Result |-+
-                              |     +--------+
-                              |
-                              +-- max_steps? ---> RETURN timeout
+```mermaid
+flowchart TD
+    G([User Goal]) --> SP[System Prompt]
+    SP --> LLM["LLM Call"]
+    LLM --> Q{tool_calls?}
+    Q -- "NO (text)" --> RA([RETURN answer])
+    Q -- YES --> PA[Parse Args]
+    PA --> EX[Execute Tool]
+    EX --> AP[Append Result]
+    AP --> MS{max_steps reached?}
+    MS -- NO --> LLM
+    MS -- YES --> RT([RETURN timeout])
 ```
 
-```
-Error Handling Strategy
-========================
+**Error Handling Strategy**
 
-             +------------------+
-             |   LLM RESPONSE   |
-             +--------+---------+
-                      |
-           +----------+----------+
-           |                     |
-      Has tool_calls        Plain text
-           |                     |
-     +-----+------+         RETURN answer
-     |            |
-  Valid JSON?   Invalid JSON
-     |            |
-     YES      Return parse error
-     |        as observation
-     |
-  Tool exists?
-     |       \
-     YES      NO → Return "unknown tool"
-     |              as observation
-     |
-  Execution
-  succeeds?
-     |       \
-     YES      NO → Return exception
-     |              as observation
-     |
-  Append result
-  to messages
+```mermaid
+flowchart TD
+    R[LLM RESPONSE] --> Q1{Has tool_calls?}
+    Q1 -- "Plain text" --> RA([RETURN answer])
+    Q1 -- "Has tool_calls" --> Q2{Valid JSON?}
+    Q2 -- NO --> E1[Return parse error<br/>as observation]
+    Q2 -- YES --> Q3{Tool exists?}
+    Q3 -- NO --> E2["Return 'unknown tool'<br/>as observation"]
+    Q3 -- YES --> Q4{Execution succeeds?}
+    Q4 -- NO --> E3[Return exception<br/>as observation]
+    Q4 -- YES --> AP[Append result<br/>to messages]
 ```
 
 ## Exercises

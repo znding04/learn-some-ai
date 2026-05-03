@@ -107,61 +107,36 @@ where $\sigma$ is the sigmoid function.
 
 ## Diagrams
 
-```
-           LLM TRAINING PIPELINE
+**LLM Training Pipeline**
 
-  Phase 1: PRE-TRAINING
-  +--------------------------------------------------+
-  | Trillions of tokens (web, books, code)           |
-  | Objective: next-token prediction (CLM)           |
-  | Cost: $10M-$100M+   Duration: weeks/months       |
-  +--------------------------------------------------+
-                        |
-                        v
-  Phase 2: SUPERVISED FINE-TUNING (SFT)
-  +--------------------------------------------------+
-  | ~10K-100K high-quality prompt-response pairs      |
-  | Objective: next-token prediction on responses     |
-  | Cost: $1K-$100K   Duration: hours/days            |
-  +--------------------------------------------------+
-                        |
-                        v
-  Phase 3: ALIGNMENT (choose one or combine)
-  +------------------+  +--------+  +---------+
-  |      RLHF        |  |  DPO   |  |  GRPO   |
-  | reward model +   |  | direct |  | group   |
-  | PPO optimization |  | prefer.|  | relative|
-  +------------------+  +--------+  +---------+
-                        |
-                        v
-              Aligned, Helpful LLM
+```mermaid
+flowchart TD
+    P1["Phase 1: PRE-TRAINING<br/>Trillions of tokens (web, books, code)<br/>Objective: next-token prediction (CLM)<br/>Cost: $10M–$100M+ · Duration: weeks/months"]
+    P2["Phase 2: SUPERVISED FINE-TUNING (SFT)<br/>~10K–100K high-quality prompt-response pairs<br/>Objective: next-token prediction on responses<br/>Cost: $1K–$100K · Duration: hours/days"]
+    P3{"Phase 3: ALIGNMENT<br/>(choose one or combine)"}
+    RLHF["RLHF<br/>reward model +<br/>PPO optimization"]
+    DPO["DPO<br/>direct<br/>preference"]
+    GRPO["GRPO<br/>group<br/>relative"]
+    Final(["Aligned, Helpful LLM"])
+
+    P1 --> P2 --> P3
+    P3 --> RLHF
+    P3 --> DPO
+    P3 --> GRPO
+    RLHF --> Final
+    DPO --> Final
+    GRPO --> Final
 ```
 
-```
-     RLHF PIPELINE IN DETAIL
+**RLHF Pipeline in Detail**
 
-  Step 1: Collect preferences
-  +-------------------------------------+
-  | Prompt --> Model generates 2 outputs |
-  | Human ranks: Output A > Output B    |
-  +-------------------------------------+
-                  |
-                  v
-  Step 2: Train reward model
-  +-------------------------------------+
-  | Input: (prompt, response)           |
-  | Output: scalar reward score         |
-  | Loss: pairwise ranking loss         |
-  +-------------------------------------+
-                  |
-                  v
-  Step 3: PPO optimization
-  +-------------------------------------+
-  | Generate response with policy       |
-  | Score with reward model             |
-  | Update policy to maximize reward    |
-  | KL penalty keeps policy near SFT    |
-  +-------------------------------------+
+```mermaid
+flowchart TD
+    S1["Step 1: Collect preferences<br/>Prompt → Model generates 2 outputs<br/>Human ranks: Output A &gt; Output B"]
+    S2["Step 2: Train reward model<br/>Input: (prompt, response)<br/>Output: scalar reward score<br/>Loss: pairwise ranking loss"]
+    S3["Step 3: PPO optimization<br/>Generate response with policy<br/>Score with reward model<br/>Update policy to maximize reward<br/>KL penalty keeps policy near SFT"]
+
+    S1 --> S2 --> S3
 ```
 
 ## Exercises

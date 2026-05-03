@@ -136,19 +136,33 @@ print(f"Loss: {loss.item():.4f}")
 
 ## Diagrams
 
-```
-Neural Network Architecture:
+**Neural Network Architecture**
 
-Input Layer    Hidden Layer 1    Hidden Layer 2    Output
-  (x₁) ─────┐
-              ├──→ [h₁] ─────┐
-  (x₂) ─────┤                ├──→ [h₃] ──┐
-              ├──→ [h₂] ─────┤            ├──→ (ŷ)
-  (x₃) ─────┘                └──→ [h₄] ──┘
-
-Each arrow = weight (w)
-Each node = σ(Σ wᵢxᵢ + b)
+```mermaid
+flowchart LR
+    x1((x₁))
+    x2((x₂))
+    x3((x₃))
+    h1[h₁]
+    h2[h₂]
+    h3[h₃]
+    h4[h₄]
+    y((ŷ))
+    x1 --> h1
+    x1 --> h2
+    x2 --> h1
+    x2 --> h2
+    x3 --> h1
+    x3 --> h2
+    h1 --> h3
+    h1 --> h4
+    h2 --> h3
+    h2 --> h4
+    h3 --> y
+    h4 --> y
 ```
+
+Each arrow = weight (w). Each node computes $a = \sigma(\sum_i w_i x_i + b)$.
 
 ```
 Activation Functions:

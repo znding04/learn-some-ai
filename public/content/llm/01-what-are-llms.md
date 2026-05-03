@@ -97,51 +97,43 @@ where $V$ is the vocabulary size.
 
 ## Diagrams
 
-```
-                    AUTOREGRESSIVE GENERATION
+**Autoregressive Generation**
 
-  Input tokens:    [The]  [cat]  [sat]  [on]
-                     |      |      |      |
-                     v      v      v      v
-              +-------------------------------+
-              |                               |
-              |     TRANSFORMER MODEL         |
-              |     (billions of params)      |
-              |                               |
-              +-------------------------------+
-                              |
-                              v
-                   Probability Distribution
-                   over vocabulary (50K+ tokens)
-                              |
-                              v
-                     Sample next token
-                         [the]
-                              |
-                     Append to context
-                              |
-                     Repeat until done
+```mermaid
+flowchart TD
+    Input["Input tokens: [The] [cat] [sat] [on]"] --> Model["TRANSFORMER MODEL<br/>(billions of params)"]
+    Model --> Probs["Probability Distribution<br/>over vocabulary (50K+ tokens)"]
+    Probs --> Sample["Sample next token<br/>[the]"]
+    Sample --> Append[Append to context]
+    Append --> Repeat[Repeat until done]
+    Append -.-> Input
 ```
 
-```
-  FAMILY TREE OF MAJOR LLMs
+**Family Tree of Major LLMs**
 
-  2017  Transformer (Google)
-          |
-    +-----+--------+
-    |               |
-  2018  GPT-1     BERT
-    |     (OpenAI)  (Google)
-    |
-  2019  GPT-2
-    |
-  2020  GPT-3          T5 (Google)
-    |
-  2022  ChatGPT        LLaMA (Meta)
-    |                     |
-  2023  GPT-4           LLaMA-2     Claude (Anthropic)
-    |                     |              |
-  2024  GPT-4o          LLaMA-3     Claude 3.5
+```mermaid
+flowchart TD
+    T2017["2017: Transformer (Google)"]
+    G1["2018: GPT-1 (OpenAI)"]
+    BERT["2018: BERT (Google)"]
+    G2["2019: GPT-2"]
+    G3["2020: GPT-3"]
+    T5["2020: T5 (Google)"]
+    Chat["2022: ChatGPT"]
+    LL1["2022: LLaMA (Meta)"]
+    G4["2023: GPT-4"]
+    LL2["2023: LLaMA-2"]
+    C1["2023: Claude (Anthropic)"]
+    G4o["2024: GPT-4o"]
+    LL3["2024: LLaMA-3"]
+    C35["2024: Claude 3.5"]
+
+    T2017 --> G1
+    T2017 --> BERT
+    G1 --> G2 --> G3 --> Chat --> G4 --> G4o
+    T2017 --> T5
+    Chat --> LL1 --> LL2 --> LL3
+    LL2 --> C1 --> C35
 ```
 
 ## Exercises

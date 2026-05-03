@@ -202,68 +202,29 @@ where $p_{\text{correct}}$ is the probability of selecting the right tool and $N
 
 ## Diagrams
 
+**ReAct (Thought-Action-Observation) Loop**
+
+```mermaid
+flowchart TD
+    Q(["User Query: 'What's the population of Mars colonies?'"])
+    T1["Thought: This is about current<br/>events. I should search the web.<br/>Confidence: high"]
+    A1["Action: search_web<br/>Args: {query: 'Mars colony<br/>population 2025'}"]
+    O1["Observation: 'No permanent Mars<br/>colonies exist as of 2025...'"]
+    T2[Thought: I have enough info.<br/>No colonies exist yet. I should<br/>provide this answer with context.]
+    AN(["Answer: 'As of 2025, there are<br/>no permanent human colonies on<br/>Mars. Here's the current status<br/>of Mars exploration...'"])
+    Q --> T1 --> A1 --> O1 --> T2 --> AN
 ```
-ReAct (Thought-Action-Observation) Loop
-=========================================
 
-  User Query: "What's the population of Mars colonies?"
-       |
-       v
-  +----+-----------------------------+
-  | Thought: This is about current   |
-  | events. I should search the web. |
-  | Confidence: high                 |
-  +----+-----------------------------+
-       |
-       v
-  +----+-----------------------------+
-  | Action: search_web               |
-  | Args: {"query": "Mars colony     |
-  |         population 2025"}        |
-  +----+-----------------------------+
-       |
-       v
-  +----+-----------------------------+
-  | Observation: "No permanent Mars  |
-  | colonies exist as of 2025..."    |
-  +----+-----------------------------+
-       |
-       v
-  +----+-----------------------------+
-  | Thought: I have enough info.     |
-  | No colonies exist yet. I should  |
-  | provide this answer with context.|
-  +----+-----------------------------+
-       |
-       v
-  +----+-----------------------------+
-  | Answer: "As of 2025, there are   |
-  | no permanent human colonies on   |
-  | Mars. Here's the current status  |
-  | of Mars exploration..."          |
-  +----------------------------------+
+**Prompt Structure**
 
-
-Prompt Structure
-==================
-
-  +----------------------------------+
-  |  # Role                          |
-  |  Identity and purpose            |
-  +----------------------------------+
-  |  # Available Tools               |
-  |  Tool 1: USE when... NOT when... |
-  |  Tool 2: USE when... NOT when... |
-  +----------------------------------+
-  |  # Reasoning Protocol            |
-  |  Thought -> Confidence -> Action |
-  +----------------------------------+
-  |  # Constraints                   |
-  |  Max calls, error handling, etc. |
-  +----------------------------------+
-  |  # Output Format                 |
-  |  Markdown, JSON, plain text      |
-  +----------------------------------+
+```mermaid
+flowchart TD
+    R["# Role<br/>Identity and purpose"]
+    AT["# Available Tools<br/>Tool 1: USE when... NOT when...<br/>Tool 2: USE when... NOT when..."]
+    RP["# Reasoning Protocol<br/>Thought → Confidence → Action"]
+    C["# Constraints<br/>Max calls, error handling, etc."]
+    OF["# Output Format<br/>Markdown, JSON, plain text"]
+    R --> AT --> RP --> C --> OF
 ```
 
 ## Exercises

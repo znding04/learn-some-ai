@@ -182,37 +182,17 @@ if __name__ == "__main__":
 
 ## Diagrams
 
-```
- Documents (txt/md)
-        |
-        v
- +------+-------+
- |   Chunker    |   chunk_size=500, overlap=100
- +------+-------+
-        |
-        v
- +------+-------+
- |  Embedder    |   SentenceTransformer -> R^384
- +------+-------+
-        |
-        v
- +------+-------+
- | FAISS Index  |   IndexFlatIP (cosine similarity)
- +------+-------+
-        |
-  query |  top-k=10
-        v
- +------+-------+
- |  Re-Ranker   |   CrossEncoder rescores pairs
- +------+-------+
-        |  top-n=5
-        v
- +------+-------+
- |     LLM      |   grounded generation with citations
- +------+-------+
-        |
-        v
-   Final Answer
+**RAG pipeline: ingest, embed, retrieve, generate**
+
+```mermaid
+flowchart TD
+    D([Documents<br/>txt / md]) --> C["Chunker<br/>chunk_size=500, overlap=100"]
+    C --> E["Embedder<br/>SentenceTransformer to R^384"]
+    E --> I[(FAISS Index<br/>IndexFlatIP cosine similarity)]
+    Q([Query]) -- top-k=10 --> R["Re-Ranker<br/>CrossEncoder rescores pairs"]
+    I --> R
+    R -- top-n=5 --> L["LLM<br/>grounded generation with citations"]
+    L --> A([Final Answer])
 ```
 
 ## Exercises

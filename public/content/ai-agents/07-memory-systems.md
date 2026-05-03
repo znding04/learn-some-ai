@@ -216,63 +216,29 @@ where $L_{\text{system}}$ is the system prompt length, $L_{\text{current}}$ is t
 
 ## Diagrams
 
+**Memory Pipeline**
+
+```mermaid
+flowchart TD
+    U([User Message])
+    EM[Embedding Model]
+    QV["Query Vector<br/>v_q in R^n"]
+    DB[("Vector Database<br/>v_1 v_2 v_3 ...<br/>d_1 d_2 d_3 ...")]
+    RT["Retrieved Texts<br/>'User likes Rust'<br/>'Prefers dark UI'"]
+    CTX[LLM Context<br/>System + Memory +<br/>Conversation]
+    U --> EM --> QV --> DB
+    DB -- Top-k nearest neighbors --> RT
+    RT --> CTX
 ```
-Memory Pipeline
-================
 
-  User Message
-       |
-       v
-  +----+-----+      +------------------+
-  | Embedding |----->| Query Vector     |
-  | Model     |      | v_q in R^n       |
-  +----------+      +--------+---------+
-                              |
-                              v
-                     +--------+---------+
-                     | Vector Database   |
-                     |                   |
-                     | v_1  v_2  v_3 ... |
-                     | d_1  d_2  d_3 ... |
-                     +--------+---------+
-                              |
-                     Top-k nearest neighbors
-                              |
-                              v
-                     +--------+---------+
-                     | Retrieved Texts   |
-                     | "User likes Rust" |
-                     | "Prefers dark UI" |
-                     +--------+---------+
-                              |
-                              v
-                     +--------+---------+
-                     | LLM Context       |
-                     | System + Memory + |
-                     | Conversation      |
-                     +------------------+
+**Short-Term vs Long-Term Memory**
 
-
-Short-Term vs Long-Term Memory
-================================
-
-  +--------------------------------------+
-  |          Agent Runtime               |
-  |                                      |
-  |  STM: [turn_1, turn_2, ..., turn_k] |
-  |  (in context window, ephemeral)      |
-  |                                      |
-  +------------------+-------------------+
-                     |
-            store / retrieve
-                     |
-  +------------------v-------------------+
-  |       Long-Term Vector Store         |
-  |  (persistent across sessions)        |
-  |                                      |
-  |  Semantic: facts, preferences        |
-  |  Episodic: events, interactions      |
-  +--------------------------------------+
+```mermaid
+flowchart TD
+    AR["Agent Runtime<br/>STM: [turn_1, turn_2, ..., turn_k]<br/>(in context window, ephemeral)"]
+    LT[("Long-Term Vector Store<br/>(persistent across sessions)<br/>Semantic: facts, preferences<br/>Episodic: events, interactions")]
+    AR -- store / retrieve --> LT
+    LT -- store / retrieve --> AR
 ```
 
 ## Exercises

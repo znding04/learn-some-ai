@@ -149,52 +149,36 @@ Empirically, $\Delta Q_t$ decreases with $t$, following an approximate power law
 
 ## Diagrams
 
+**Multi-Agent Debate Architecture**
+
+```mermaid
+flowchart TD
+    A[Agent A<br/>Pro]
+    B[Agent B<br/>Con]
+    SH[("Shared History<br/>(Blackboard / Message Log)")]
+    J[Judge Agent<br/>Evaluator]
+    V([Final Verdict])
+    A --> SH
+    B --> SH
+    SH --> J
+    J --> V
 ```
-Multi-Agent Debate Architecture
-================================
 
-  +------------+       +------------+
-  |  Agent A   |       |  Agent B   |
-  |  (Pro)     |       |  (Con)     |
-  +-----+------+       +------+-----+
-        |                      |
-        v                      v
-  +------------------------------------+
-  |         Shared History             |
-  |  (Blackboard / Message Log)        |
-  +----------------+-------------------+
-                   |
-                   v
-           +-------+--------+
-           |   Judge Agent   |
-           |  (Evaluator)    |
-           +-------+--------+
-                   |
-                   v
-            Final Verdict
+**Hierarchical Task Decomposition**
 
-
-Hierarchical Task Decomposition
-================================
-
-             +-------------+
-             | Manager     |
-             | Agent       |
-             +------+------+
-                    |
-        +-----------+-----------+
-        |           |           |
-   +----+----+ +----+----+ +----+----+
-   | Worker  | | Worker  | | Worker  |
-   | Agent 1 | | Agent 2 | | Agent 3 |
-   +---------+ +----+----+ +---------+
-                    |
-              +-----+-----+
-              |           |
-         +----+----+ +----+----+
-         | Sub     | | Sub     |
-         | Worker  | | Worker  |
-         +---------+ +---------+
+```mermaid
+flowchart TD
+    M[Manager Agent]
+    W1[Worker Agent 1]
+    W2[Worker Agent 2]
+    W3[Worker Agent 3]
+    SW1[Sub Worker]
+    SW2[Sub Worker]
+    M --> W1
+    M --> W2
+    M --> W3
+    W2 --> SW1
+    W2 --> SW2
 ```
 
 ## Exercises

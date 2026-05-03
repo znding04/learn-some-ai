@@ -139,38 +139,34 @@ print(f"Output shape: {output.shape}")  # [2, 10, 256]
 
 ## Diagrams
 
-```
-Transformer Block:
+**Transformer Block**
 
-Input
-  │
-  ▼
-┌─────────────────┐
-│ Multi-Head Attn  │ ←── Q, K, V from input
-└────────┬────────┘
-         │ + Residual ←── Input
-         ▼
-    Layer Norm
-         │
-         ▼
-┌─────────────────┐
-│   Feed-Forward   │
-└────────┬────────┘
-         │ + Residual
-         ▼
-    Layer Norm
-         │
-         ▼
-      Output
+```mermaid
+flowchart TD
+    Input([Input]) --> MHA[Multi-Head Attention<br/>Q, K, V from input]
+    Input -- Residual --> Add1((+))
+    MHA --> Add1
+    Add1 --> LN1[Layer Norm]
+    LN1 --> FFN[Feed-Forward Network]
+    LN1 -- Residual --> Add2((+))
+    FFN --> Add2
+    Add2 --> LN2[Layer Norm]
+    LN2 --> Output([Output])
 ```
 
-```
-Self-Attention (for "The cat sat"):
+**Self-Attention (for "The cat sat")**
 
-         The    cat    sat
-The    [ 0.1   0.7   0.2 ]   ← attention weights
-cat    [ 0.3   0.5   0.2 ]   ← "cat" attends most to itself
-sat    [ 0.1   0.4   0.5 ]   ← "sat" attends to "cat" and itself
+```mermaid
+flowchart LR
+    The(["The"]) -- 0.1 --> The2(["The"])
+    The -- 0.7 --> Cat2(["cat"])
+    The -- 0.2 --> Sat2(["sat"])
+    Cat(["cat"]) -- 0.3 --> The2
+    Cat -- 0.5 --> Cat2
+    Cat -- 0.2 --> Sat2
+    Sat(["sat"]) -- 0.1 --> The2
+    Sat -- 0.4 --> Cat2
+    Sat -- 0.5 --> Sat2
 ```
 
 ## Exercises

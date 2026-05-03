@@ -246,38 +246,26 @@ def evaluate(test_questions: list[dict]) -> dict:
 
 ## Diagrams
 
+**Pipeline Overview**
+
+```mermaid
+flowchart LR
+    C["1. Collect<br/>Teacher model<br/>generates<br/>trajectories"]
+    U["2. Curate<br/>Build chosen /<br/>rejected pairs"]
+    T["3. Train<br/>DPO + LoRA<br/>on Mistral-7B"]
+    E["4. Evaluate<br/>Tool accuracy<br/>Answer acc."]
+    C --> U --> T --> E
 ```
-Pipeline Overview
-=================
 
- +----------------+     +----------------+     +----------------+
- | 1. Collect     |     | 2. Curate      |     | 3. Train       |
- |                |     |                |     |                |
- | Teacher model  |---->| Build chosen / |---->| DPO + LoRA     |
- | generates      |     | rejected pairs |     | on Mistral-7B  |
- | trajectories   |     |                |     |                |
- +----------------+     +----------------+     +-------+--------+
-                                                       |
-                                                       v
-                                                +------+--------+
-                                                | 4. Evaluate   |
-                                                |               |
-                                                | Tool accuracy |
-                                                | Answer acc.   |
-                                                +---------------+
+**LoRA Weight Update**
 
-LoRA Weight Update
-==================
-
-  Original weights W (frozen)
-       |
-       +---> W + B * A  (only B and A are trained)
-       |        |   |
-       |     d x r  r x d      r << d
-       |
-  Total trainable params = 2 * d * r
-  Example: d=4096, r=16 -> 131,072 params per layer
-           vs 16,777,216 for full fine-tune
+```mermaid
+flowchart LR
+    W["Original weights W<br/>(frozen)"] --> Update["W + B · A<br/>(only B and A are trained)"]
+    Update --> B["B: d x r"]
+    Update --> A["A: r x d"]
+    B --> Note["r << d<br/>Trainable params = 2 · d · r<br/>Example: d=4096, r=16 → 131,072 / layer<br/>vs 16,777,216 for full fine-tune"]
+    A --> Note
 ```
 
 ## Exercises

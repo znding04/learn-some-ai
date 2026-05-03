@@ -233,39 +233,31 @@ curl -X POST http://localhost:8000/chat \
 
 ## Diagrams
 
-```
-  User
-   |
-   v
-+--+--+        +------------+
-| API |------->|   Router    |
-|     |        | (classify)  |
-+--+--+        +-----+------+
-   ^                 |
-   |        confidence < 0.7?
-   |          /            \
-   |        YES             NO
-   |         |               |
-   |         v               v
-   |  +------+------+  +----+----------+
-   |  |  Human      |  |  Sub-Agent    |
-   |  |  Escalation |  |  (billing /   |
-   |  +-------------+  |   tech / etc) |
-   |                    +----+----------+
-   |                         |
-   +-------------------------+
-          reply
+**Request flow with confidence-gated escalation**
+
+```mermaid
+flowchart TD
+    User([User]) --> API[API]
+    API --> Router["Router<br/>(classify intent)"]
+    Router --> Decision{confidence < 0.7?}
+    Decision -- YES --> Human[Human<br/>Escalation]
+    Decision -- NO --> Sub["Sub-Agent<br/>(billing / tech / etc)"]
+    Human --> Reply[reply]
+    Sub --> Reply
+    Reply --> User
 ```
 
-```
-Session Lifecycle
-=================
+**Session Lifecycle**
 
-  create -----> route -----> converse -----> [resolve | escalate]
-    |              |              |                    |
-    v              v              v                    v
- new session   classify       multi-turn          close or
- in store      intent        messages             hand to human
+```mermaid
+flowchart LR
+    Create([create]) --> Route([route])
+    Route --> Converse([converse])
+    Converse --> Resolve{resolve or escalate}
+    Create -.-> N1[new session<br/>in store]
+    Route -.-> N2[classify<br/>intent]
+    Converse -.-> N3[multi-turn<br/>messages]
+    Resolve -.-> N4[close or<br/>hand to human]
 ```
 
 ## Exercises

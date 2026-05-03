@@ -118,31 +118,44 @@ print(f"Output shape: {output.shape}")  # [8, 2]
 
 ## Diagrams
 
-```
-RNN Unrolled:
+**RNN Unrolled**
 
-  x₁    x₂    x₃    x₄
-  │     │     │     │
-  ▼     ▼     ▼     ▼
-┌───┐ ┌───┐ ┌───┐ ┌───┐
-│ h₁│→│ h₂│→│ h₃│→│ h₄│
-└───┘ └───┘ └───┘ └───┘
-  │     │     │     │
-  ▼     ▼     ▼     ▼
-  y₁    y₂    y₃    y₄
+```mermaid
+flowchart LR
+    x1((x₁)) --> h1[h₁]
+    x2((x₂)) --> h2[h₂]
+    x3((x₃)) --> h3[h₃]
+    x4((x₄)) --> h4[h₄]
+    h1 --> h2 --> h3 --> h4
+    h1 --> y1((y₁))
+    h2 --> y2((y₂))
+    h3 --> y3((y₃))
+    h4 --> y4((y₄))
 ```
 
-```
-LSTM Cell:
-                    Cell State Cₜ₋₁ ──────[×]──────[+]────── Cₜ
-                                        ↑ forget    ↑ input
-                                        fₜ         iₜ × C̃ₜ
-                                        │           │
-                              ┌─────────┼───────────┤
-                              │   σ     │     σ   tanh
-                              │         │           │
-                    hₜ₋₁ ────┤─────────┤───────────┤
-                    xₜ   ────┘         └───────────┘
+**LSTM Cell**
+
+```mermaid
+flowchart LR
+    Cprev[Cₜ₋₁] --> Mul((×))
+    F[Forget gate<br/>fₜ = σ] --> Mul
+    Mul --> Add((+))
+    I[Input gate<br/>iₜ = σ] --> IMul((×))
+    Cand[Candidate<br/>C̃ₜ = tanh] --> IMul
+    IMul --> Add
+    Add --> Cnext[Cₜ]
+    Cnext --> TanhOut[tanh]
+    O[Output gate<br/>oₜ = σ] --> OMul((×))
+    TanhOut --> OMul
+    OMul --> Hnext[hₜ]
+    Hprev[hₜ₋₁] --> F
+    Hprev --> I
+    Hprev --> Cand
+    Hprev --> O
+    Xt[xₜ] --> F
+    Xt --> I
+    Xt --> Cand
+    Xt --> O
 ```
 
 ## Exercises

@@ -117,20 +117,15 @@ print(f"Learned slope: {model.coef_[0]:.2f}, intercept: {model.intercept_:.2f}")
 
 ## Diagrams
 
-```
-Overfitting vs Underfitting:
+**Overfitting vs Underfitting**
 
-  Error
-    │
-    │ ╲  Test Error
-    │  ╲___________╱
-    │        ╲    ╱
-    │         ╲╱   ← Sweet spot
-    │   ___________
-    │  ╱  Training Error
-    │╱
-    └──────────────────── Model Complexity
-   Underfit           Overfit
+```mermaid
+flowchart LR
+    U["Underfit<br/>(low complexity)<br/>high train error<br/>high test error"]
+    S(["Sweet spot<br/>(right complexity)<br/>low train error<br/>low test error"])
+    O["Overfit<br/>(high complexity)<br/>very low train error<br/>high test error"]
+    U -- increase complexity --> S
+    S -- increase complexity --> O
 ```
 
 ## Exercises

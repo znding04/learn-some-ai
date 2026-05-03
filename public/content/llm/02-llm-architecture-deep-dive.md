@@ -117,79 +117,52 @@ where $\gamma$ is a learned scale parameter and $\epsilon$ is a small constant f
 
 ## Diagrams
 
-```
-            TRANSFORMER DECODER BLOCK (x N layers)
+**Transformer Decoder Block (x N layers)**
 
-  Input Token Embeddings + Positional Encoding
-                    |
-                    v
-          +-------------------+
-          |    RMSNorm        |
-          +-------------------+
-                    |
-                    v
-          +-------------------+
-          | Multi-Head Self-  |----> Causal Mask applied here
-          | Attention         |
-          +-------------------+
-                    |
-              +-----+  (residual connection)
-              |     |
-              +--+--+
-                 |
-                 v
-          +-------------------+
-          |    RMSNorm        |
-          +-------------------+
-                 |
-                 v
-          +-------------------+
-          | Feed-Forward Net  |
-          | (SwiGLU + Linear) |
-          +-------------------+
-                 |
-              +--+--+  (residual connection)
-              |     |
-              +-----+
-                 |
-                 v
-             Output Embeddings
+```mermaid
+flowchart TD
+    In[Input Token Embeddings + Positional Encoding] --> N1[RMSNorm]
+    N1 --> Attn["Multi-Head Self-Attention"]
+    Attn -.-> Mask[Causal Mask applied here]
+    Attn --> R1((+))
+    In --> R1
+    R1 --> N2[RMSNorm]
+    N2 --> FFN["Feed-Forward Net<br/>(SwiGLU + Linear)"]
+    FFN --> R2((+))
+    R1 --> R2
+    R2 --> Out[Output Embeddings]
 ```
 
-```
-     MULTI-HEAD ATTENTION (h=4 heads)
+**Multi-Head Attention (h=4 heads)**
 
-  Input: X (seq_len x d_model)
-           |
-     +-----+-----+-----+-----+
-     |     |     |     |     |
-     v     v     v     v     v
-   Head1 Head2 Head3 Head4
-   Q,K,V Q,K,V Q,K,V Q,K,V
-     |     |     |     |
-     v     v     v     v
-   Attn  Attn  Attn  Attn
-     |     |     |     |
-     +-----+-----+-----+
-              |
-              v
-         Concat all heads
-              |
-              v
-        Linear projection W^O
-              |
-              v
-         Output (seq_len x d_model)
+```mermaid
+flowchart TD
+    X["Input: X (seq_len x d_model)"]
+    X --> H1["Head 1<br/>Q,K,V"]
+    X --> H2["Head 2<br/>Q,K,V"]
+    X --> H3["Head 3<br/>Q,K,V"]
+    X --> H4["Head 4<br/>Q,K,V"]
+    H1 --> A1[Attn]
+    H2 --> A2[Attn]
+    H3 --> A3[Attn]
+    H4 --> A4[Attn]
+    A1 --> Concat[Concat all heads]
+    A2 --> Concat
+    A3 --> Concat
+    A4 --> Concat
+    Concat --> Proj["Linear projection W^O"]
+    Proj --> Out["Output (seq_len x d_model)"]
 ```
 
-```
-     KV CACHE DURING GENERATION
+**KV Cache During Generation**
 
-  Step 1:  Q1 K1 V1  --> compute attention, cache K1,V1
-  Step 2:  Q2 [K1,K2] [V1,V2]  --> only compute Q2,K2,V2
-  Step 3:  Q3 [K1,K2,K3] [V1,V2,V3]  --> only compute Q3,K3,V3
-  ...
-  Step n:  Qn [K1..Kn] [V1..Vn]  --> only compute Qn,Kn,Vn
+```mermaid
+flowchart TD
+    S1["Step 1: Q1, K1, V1<br/>compute attention, cache K1,V1"]
+    S2["Step 2: Q2, [K1,K2], [V1,V2]<br/>only compute Q2,K2,V2"]
+    S3["Step 3: Q3, [K1,K2,K3], [V1,V2,V3]<br/>only compute Q3,K3,V3"]
+    Sn["Step n: Qn, [K1..Kn], [V1..Vn]<br/>only compute Qn,Kn,Vn"]
+    S1 --> S2 --> S3 --> Dots[...] --> Sn
 ```
 
 ## Exercises

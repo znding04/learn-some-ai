@@ -111,49 +111,33 @@ $$\text{merge}^* = \arg\max_{(a,b)} \; \text{count}(a, b)$$
 
 ## Diagrams
 
+**Tokenization Pipeline**
+
+```mermaid
+flowchart TD
+    Raw["Raw text:<br/>&quot;unhappiness is common&quot;"]
+    BPE["Byte-Pair Encode"]
+    Toks["Tokens: [&quot;un&quot;, &quot;happiness&quot;, &quot; is&quot;, &quot; common&quot;]<br/>IDs: [359, 47585, 374, 4279]"]
+    Emb["Embedding Lookup<br/>E[359], E[47585],<br/>E[374], E[4279]"]
+    Vecs["Vectors: [d-dim] [d-dim] [d-dim] [d-dim]"]
+    Pos["+ Positional Encode"]
+    Out(["Input to Transformer Layers"])
+
+    Raw --> BPE --> Toks --> Emb --> Vecs --> Pos --> Out
 ```
-  Tokenization Pipeline
-  =====================
 
-  Raw text:  "unhappiness is common"
-       |
-       v
-  +------------------+
-  | Byte-Pair Encode |
-  +------------------+
-       |
-       v
-  Tokens:  ["un", "happiness", " is", " common"]
-  IDs:     [ 359,   47585,      374,   4279    ]
-       |
-       v
-  +---------------------+
-  | Embedding Lookup    |
-  | E[359], E[47585],   |
-  | E[374], E[4279]     |
-  +---------------------+
-       |
-       v
-  Vectors:  [d-dim] [d-dim] [d-dim] [d-dim]
-       |
-       v
-  +---------------------+
-  | + Positional Encode |
-  +---------------------+
-       |
-       v
-  Input to Transformer Layers
+**Embedding Space (2D projection)**
 
+```mermaid
+flowchart LR
+    queen((queen))
+    king((king))
+    orange((orange))
+    apple((apple))
 
-  Embedding Space (2D projection)
-  ===============================
-
-        queen *     * king
-                 .
-                .
-               .            (large gap)
-              .
-   orange *     * apple
+    queen --- king
+    orange --- apple
+    king -. large gap .- apple
 ```
 
 ## Exercises

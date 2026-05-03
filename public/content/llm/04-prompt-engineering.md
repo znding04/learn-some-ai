@@ -131,70 +131,40 @@ At $\tau = 1$, the original model distribution is preserved. At $\tau > 1$, the 
 
 ## Diagrams
 
-```
-     PROMPTING STRATEGIES COMPARISON
+**Prompting Strategies Comparison**
 
-  ZERO-SHOT:
-  +----------------------------------+
-  | User: Classify this review as    |
-  |   positive or negative:          |
-  |   "The food was amazing!"        |
-  +----------------------------------+
-              |
-              v
-  +----------------------------------+
-  | Assistant: Positive              |
-  +----------------------------------+
+```mermaid
+flowchart TD
+    subgraph ZS[Zero-Shot]
+      ZSU["User: Classify this review as<br/>positive or negative:<br/>&quot;The food was amazing!&quot;"]
+      ZSA["Assistant: Positive"]
+      ZSU --> ZSA
+    end
 
-  FEW-SHOT:
-  +----------------------------------+
-  | User: Classify reviews:          |
-  | "Great service" -> Positive      |
-  | "Terrible wait" -> Negative      |
-  | "The food was amazing!" -> ?     |
-  +----------------------------------+
-              |
-              v
-  +----------------------------------+
-  | Assistant: Positive              |
-  +----------------------------------+
+    subgraph FS[Few-Shot]
+      FSU["User: Classify reviews:<br/>&quot;Great service&quot; → Positive<br/>&quot;Terrible wait&quot; → Negative<br/>&quot;The food was amazing!&quot; → ?"]
+      FSA["Assistant: Positive"]
+      FSU --> FSA
+    end
 
-  CHAIN-OF-THOUGHT:
-  +----------------------------------+
-  | User: Is 17 prime? Think step    |
-  |   by step.                       |
-  +----------------------------------+
-              |
-              v
-  +----------------------------------+
-  | Assistant: Let me check:         |
-  |   17 / 2 = 8.5 (not divisible)  |
-  |   17 / 3 = 5.67 (not divisible) |
-  |   sqrt(17) ~ 4.1, only need     |
-  |   to check up to 4              |
-  |   17 / 4 = 4.25 (not divisible) |
-  |   Therefore 17 is prime.        |
-  +----------------------------------+
+    subgraph COT[Chain-of-Thought]
+      COTU["User: Is 17 prime?<br/>Think step by step."]
+      COTA["Assistant: Let me check:<br/>17 / 2 = 8.5 (not divisible)<br/>17 / 3 = 5.67 (not divisible)<br/>sqrt(17) ≈ 4.1, only need<br/>to check up to 4<br/>17 / 4 = 4.25 (not divisible)<br/>Therefore 17 is prime."]
+      COTU --> COTA
+    end
 ```
 
-```
-     CONVERSATION STRUCTURE
+**Conversation Structure**
 
-  +------------------------------------------+
-  |  SYSTEM PROMPT                           |
-  |  "You are a helpful coding assistant..." |
-  |  (persists across all turns)             |
-  +------------------------------------------+
-              |
-  +------------------------------------------+
-  |  USER TURN 1: "How do I sort a list?"    |
-  +------------------------------------------+
-  |  ASSISTANT TURN 1: "Use sorted()..."     |
-  +------------------------------------------+
-  |  USER TURN 2: "What about in-place?"     |
-  +------------------------------------------+
-  |  ASSISTANT TURN 2: "Use list.sort()..."  |
-  +------------------------------------------+
+```mermaid
+flowchart TD
+    SYS["SYSTEM PROMPT<br/>&quot;You are a helpful coding assistant...&quot;<br/>(persists across all turns)"]
+    U1["USER TURN 1: &quot;How do I sort a list?&quot;"]
+    A1["ASSISTANT TURN 1: &quot;Use sorted()...&quot;"]
+    U2["USER TURN 2: &quot;What about in-place?&quot;"]
+    A2["ASSISTANT TURN 2: &quot;Use list.sort()...&quot;"]
+
+    SYS --> U1 --> A1 --> U2 --> A2
 ```
 
 ## Exercises

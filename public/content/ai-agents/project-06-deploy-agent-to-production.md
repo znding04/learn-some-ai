@@ -332,10 +332,13 @@ For production scale, consider:
 
 **Queue-based architecture**: For long-running agent tasks, use a task queue (Celery, Bull) so requests do not time out:
 
-```
-Client -> API -> Task Queue -> Worker Pool -> Result Store
-                                    |
-                            Agent Execution
+```mermaid
+flowchart LR
+    Client([Client]) --> API[API]
+    API --> Queue[(Task Queue)]
+    Queue --> Workers[Worker Pool]
+    Workers --> Store[(Result Store)]
+    Workers --> Exec[Agent Execution]
 ```
 
 **Auto-scaling rules**: Scale based on queue depth or latency percentiles:

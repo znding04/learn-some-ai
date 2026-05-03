@@ -172,53 +172,29 @@ where $A$ is the answer random variable, $H$ is entropy, and $o_{t_i}(x)$ is the
 
 ## Diagrams
 
-```
-Function Calling Flow
-======================
+**Function Calling Flow**
 
-User Message
-     |
-     v
-+----+-----+                    +----------------+
-|   LLM    | -- tool_calls -->  | YOUR APP CODE  |
-| (model)  |                    |                |
-+----+-----+                    | 1. Parse JSON  |
-     ^                          | 2. Validate    |
-     |                          | 3. Execute fn  |
-     +--- tool results -------- | 4. Return JSON |
-                                +----------------+
-                                       |
-                              +--------+--------+
-                              |    TOOLS        |
-                              | - get_weather() |
-                              | - search_web()  |
-                              | - run_code()    |
-                              | - query_db()    |
-                              +-----------------+
+```mermaid
+flowchart LR
+    U([User Message]) --> L[LLM<br/>model]
+    L -- tool_calls --> APP["Your App Code<br/>1. Parse JSON<br/>2. Validate<br/>3. Execute fn<br/>4. Return JSON"]
+    APP -- tool results --> L
+    APP --> T[("Tools<br/>get_weather()<br/>search_web()<br/>run_code()<br/>query_db()")]
 ```
 
-```
-Tool Schema Design Principles
-===============================
+**Tool Schema Design Principles**
 
-GOOD                              BAD
-+---------------------+          +---------------------+
-| name: "get_weather" |          | name: "do_stuff"    |
-| desc: "Get current  |          | desc: "Does things" |
-|  weather for a city."|          | params: anything    |
-| params:             |          +---------------------+
-|   city: string (req)|
-|   units: enum       |          +---------------------+
-+---------------------+          | name: "mega_tool"   |
-                                 | desc: "Searches,    |
-+---------------------+          |  calculates, formats|
-| name: "search_web"  |          |  emails, and more"  |
-| desc: "Search the   |          | params: 20 fields   |
-|  web for current     |          +---------------------+
-|  information."       |
-| params:             |          ^ Avoid: vague names,
-|   query: string(req)|            overloaded tools,
-+---------------------+            too many parameters
+```mermaid
+flowchart LR
+    subgraph Good["GOOD — focused, well-described"]
+        G1["name: get_weather<br/>desc: Get current weather for a city<br/>params: city (string, req), units (enum)"]
+        G2["name: search_web<br/>desc: Search the web for current information<br/>params: query (string, req)"]
+    end
+    subgraph Bad["BAD — vague, overloaded"]
+        B1["name: do_stuff<br/>desc: Does things<br/>params: anything"]
+        B2["name: mega_tool<br/>desc: Searches, calculates, formats emails, and more<br/>params: 20 fields"]
+    end
+    Good -. avoid .-> Bad
 ```
 
 ## Exercises

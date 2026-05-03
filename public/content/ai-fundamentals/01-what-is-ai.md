@@ -71,31 +71,31 @@ As of 2025, AI is dominated by **large language models** (LLMs) like GPT-4, Clau
 
 ## Diagrams
 
-```
-AI Timeline:
-1950  Turing Test proposed
-1956  Dartmouth Conference — "AI" coined
-1966  ELIZA chatbot
-1974  First AI Winter begins
-1980  Expert Systems boom
-1987  Second AI Winter begins
-1997  Deep Blue beats Kasparov
-2012  AlexNet wins ImageNet
-2017  Transformer architecture (Attention Is All You Need)
-2022  ChatGPT launches
-2024  Multimodal AI + AI Agents era
+**AI Timeline**
+
+```mermaid
+flowchart TD
+    A[1950<br/>Turing Test proposed] --> B[1956<br/>Dartmouth Conference<br/>'AI' coined]
+    B --> C[1966<br/>ELIZA chatbot]
+    C --> D[1974<br/>First AI Winter begins]
+    D --> E[1980<br/>Expert Systems boom]
+    E --> F[1987<br/>Second AI Winter begins]
+    F --> G[1997<br/>Deep Blue beats Kasparov]
+    G --> H[2012<br/>AlexNet wins ImageNet]
+    H --> I[2017<br/>Transformer architecture<br/>Attention Is All You Need]
+    I --> J[2022<br/>ChatGPT launches]
+    J --> K[2024<br/>Multimodal AI + AI Agents era]
 ```
 
-```
-            ┌──────────────────────────┐
-            │    Artificial Intelligence│
-            │  ┌────────────────────┐  │
-            │  │  Machine Learning  │  │
-            │  │  ┌──────────────┐  │  │
-            │  │  │ Deep Learning│  │  │
-            │  │  └──────────────┘  │  │
-            │  └────────────────────┘  │
-            └──────────────────────────┘
+**AI ⊃ Machine Learning ⊃ Deep Learning**
+
+```mermaid
+flowchart TD
+    AI["Artificial Intelligence"]
+    ML["Machine Learning"]
+    DL["Deep Learning"]
+    AI --> ML
+    ML --> DL
 ```
 
 ## Exercises

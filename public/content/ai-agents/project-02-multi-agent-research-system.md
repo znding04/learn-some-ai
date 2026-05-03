@@ -220,35 +220,19 @@ async def run_research(question: str) -> str:
 
 ## Diagrams
 
-```
-                    +------------+
-         question   |  Planner   |
-     +------------->|  Agent     |
-     |              +-----+------+
-     |                    |
-     |          sub_queries (fan-out)
-     |                    |
-     |         +----------+----------+
-     |         v          v          v
-     |   +-----------+ +-----------+ +-----------+
-     |   | Searcher  | | Searcher  | | Searcher  |
-     |   | (query 1) | | (query 2) | | (query 3) |
-     |   +-----+-----+ +-----+-----+ +-----+-----+
-     |         |              |              |
-     |         +------+-------+------+-------+
-     |                |  search_results (fan-in)
-     |                v
-     |         +------+-------+
-     |         | Synthesiser  |
-     |         |    Agent     |
-     |         +------+-------+
-     |                |
-     |             report
-     |                |
-     |                v
-     |         +------+-------+
-     +---------|  Orchestrator |------> Final Report
-               +--------------+
+**Multi-agent research system with fan-out / fan-in**
+
+```mermaid
+flowchart TD
+    O([Orchestrator]) -- question --> P[Planner Agent]
+    P -- "sub_queries (fan-out)" --> S1["Searcher (query 1)"]
+    P --> S2["Searcher (query 2)"]
+    P --> S3["Searcher (query 3)"]
+    S1 -- search_result --> SY[Synthesiser Agent]
+    S2 -- search_result --> SY
+    S3 -- search_result --> SY
+    SY -- report --> O
+    O --> F([Final Report])
 ```
 
 ## Exercises

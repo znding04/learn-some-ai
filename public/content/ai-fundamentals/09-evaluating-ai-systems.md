@@ -128,30 +128,25 @@ print(f"\nConfusion Matrix:\n{confusion_matrix(y_true, y_pred)}")
 
 ## Diagrams
 
-```
-ROC Curve:
+**ROC Curve**
 
-TPR │        ___________
-    │      /
-    │    /
-    │  /     ← Good classifier (AUC ≈ 0.85)
-    │ /
-    │/  . . . . . . .  ← Random (AUC = 0.5)
-    └──────────────── FPR
+```mermaid
+xychart-beta
+    title "ROC Curve: Good Classifier vs Random"
+    x-axis "False Positive Rate" 0 --> 1
+    y-axis "True Positive Rate" 0 --> 1
+    line [0, 0.55, 0.78, 0.9, 0.95, 0.98, 1.0]
+    line [0, 0.17, 0.33, 0.5, 0.67, 0.83, 1.0]
 ```
 
-```
-Precision-Recall Trade-off:
+**Precision-Recall Trade-off**
 
-         ↑ Precision
-    1.0  │╲
-         │  ╲
-         │    ╲
-    0.5  │      ╲
-         │        ╲
-    0.0  └──────────→ Recall
-                     1.0
-As threshold ↓: recall ↑, precision ↓
+```mermaid
+xychart-beta
+    title "Precision-Recall Trade-off (as threshold decreases, recall increases, precision decreases)"
+    x-axis "Recall" 0 --> 1
+    y-axis "Precision" 0 --> 1
+    line [1.0, 0.95, 0.85, 0.7, 0.5, 0.3, 0.1]
 ```
 
 ## Exercises

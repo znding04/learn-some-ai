@@ -173,29 +173,19 @@ if __name__ == "__main__":
 
 ## Diagrams
 
-```
-+--------------------+
-|   User Question    |
-+--------+-----------+
-         |
-         v
-+--------+-----------+
-|   LLM  (Thought)   |<-----------------------+
-+--------+-----------+                         |
-         |                                     |
-    action + input                        Observation
-         |                                     |
-         v                                     |
-+--------+-----------+                         |
-|  Tool Dispatcher   |                         |
-+--+------+------+---+                         |
-   |      |      |                             |
-   v      v      v                             |
- Web   Calc    KB                              |
-Search                                         |
-   |      |      |                             |
-   +------+------+-----------------------------+
-         result
+**ReAct loop with tool dispatch**
+
+```mermaid
+flowchart TD
+    Q[User Question] --> L["LLM (Thought)"]
+    L -- "action + input" --> D[Tool Dispatcher]
+    D --> W[Web Search]
+    D --> C[Calculator]
+    D --> K[Knowledge Base]
+    W -- result --> O((Observation))
+    C -- result --> O
+    K -- result --> O
+    O --> L
 ```
 
 The loop repeats until the model emits an `"answer"` key or hits `MAX_ITERATIONS`.

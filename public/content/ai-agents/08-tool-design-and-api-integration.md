@@ -247,57 +247,36 @@ where $r_i$ is the $i$-th tool response, $k$ is the number of tool calls, and $c
 
 ## Diagrams
 
+**Tool Execution Flow**
+
+```mermaid
+flowchart TD
+    U(["User: 'Weather in Tokyo?'"])
+    L[LLM decides<br/>to call tool]
+    P[Parse tool<br/>call args]
+    TR["Tool Registry<br/>get_current_weather<br/>search_web<br/>run_code"]
+    EX[WeatherTool.execute]
+    HTTP[HTTP GET with<br/>auth + retry logic]
+    PF[Parse + format<br/>response]
+    RET[Return to LLM<br/>as tool result]
+    U --> L --> P --> TR --> EX --> HTTP --> PF --> RET
 ```
-Tool Execution Flow
-====================
 
-  User: "Weather in Tokyo?"
-       |
-       v
-  +----+----------+
-  | LLM decides   |
-  | to call tool   |
-  +----+----------+
-       |
-       v
-  +----+----------+     +--------------------+
-  | Parse tool    |     | Tool Registry      |
-  | call args     |---->| get_current_weather|
-  +---------------+     | search_web         |
-                        | run_code           |
-                        +----+---------------+
-                             |
-                             v
-                   +---------+----------+
-                   | WeatherTool.execute |
-                   +---------+----------+
-                             |
-                   +---------v----------+
-                   | HTTP GET with      |
-                   | auth + retry logic |
-                   +---------+----------+
-                             |
-                   +---------v----------+
-                   | Parse + format     |
-                   | response           |
-                   +---------+----------+
-                             |
-                             v
-                   +---------+----------+
-                   | Return to LLM      |
-                   | as tool result      |
-                   +--------------------+
+**Retry with Exponential Backoff**
 
-
-Retry with Exponential Backoff
-================================
-
-  Attempt 1 ----X (429 error)
-    wait 1s
-  Attempt 2 ----X (503 error)
-    wait 2s
-  Attempt 3 ----OK (200)
-    return result
+```mermaid
+sequenceDiagram
+    participant Client
+    participant API
+    Client->>API: Attempt 1
+    API-->>Client: X 429 error
+    Note over Client: wait 1s
+    Client->>API: Attempt 2
+    API-->>Client: X 503 error
+    Note over Client: wait 2s
+    Client->>API: Attempt 3
+    API-->>Client: OK 200
+    Note over Client: return result
 ```
 
 ## Exercises

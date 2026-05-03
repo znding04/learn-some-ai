@@ -145,75 +145,44 @@ $$\mathcal{L} = -\frac{1}{N} \sum_{i=1}^{N} \log P_\theta(x_i \mid x_{<i})$$
 
 ## Diagrams
 
+**Hallucination Taxonomy**
+
+```mermaid
+flowchart TD
+    H([Hallucinations])
+    H --> C[Confabulation]
+    H --> F[Factual Errors]
+
+    C --> C1[Invented citations]
+    C --> C2[Fake URLs / DOIs]
+    C --> C3[Non-existent entities]
+    C --> C4[Fabricated statistics]
+
+    F --> F1[Wrong dates / numbers]
+    F --> F2[Entity confusion]
+    F --> F3[Overgeneralization]
+    F --> F4[Outdated information]
 ```
-  Hallucination Taxonomy
-  ======================
 
-  Hallucinations
-       |
-       +--- Confabulation
-       |       |
-       |       +-- Invented citations
-       |       +-- Fake URLs / DOIs
-       |       +-- Non-existent entities
-       |       +-- Fabricated statistics
-       |
-       +--- Factual Errors
-               |
-               +-- Wrong dates / numbers
-               +-- Entity confusion
-               +-- Overgeneralization
-               +-- Outdated information
+**Confidence vs Accuracy**
 
+|                    | High Confidence                | Low Confidence                       |
+|--------------------|--------------------------------|--------------------------------------|
+| **Actually Correct** | True Positive (reliable)       | Known-Unknown (under-confident)      |
+| **Actually Wrong**   | Unknown-Unknown (DANGEROUS)    | Flagged Uncertainty (catchable)      |
 
-  Confidence vs Accuracy
-  ======================
+**Mitigation Stack**
 
-  Model         |  High Confidence     Low Confidence
-  Confidence    |
-  ------------- | ------------------  ------------------
-  Actually      |  True Positive       Known-Unknown
-  Correct       |  (reliable)          (under-confident)
-  ------------- | ------------------  ------------------
-  Actually      |  Unknown-Unknown     Flagged Uncertainty
-  Wrong         |  (DANGEROUS)         (catchable)
+```mermaid
+flowchart TD
+    U[User Query]
+    S1["1. Retrieval (RAG)<br/>Ground the prompt in verified sources"]
+    S2["2. LLM Generation<br/>With chain-of-thought prompting"]
+    S3["3. Confidence Scoring<br/>Analyze token log-probs and entropy"]
+    S4["4. Fact-Check / Verification<br/>Cross-reference with knowledge base"]
+    V([Validated Response])
 
-
-  Mitigation Stack
-  ================
-
-  +--------------------------------------------+
-  |           User Query                       |
-  +--------------------------------------------+
-           |
-           v
-  +--------------------------------------------+
-  | 1. Retrieval (RAG)                         |
-  |    Ground the prompt in verified sources   |
-  +--------------------------------------------+
-           |
-           v
-  +--------------------------------------------+
-  | 2. LLM Generation                          |
-  |    With chain-of-thought prompting         |
-  +--------------------------------------------+
-           |
-           v
-  +--------------------------------------------+
-  | 3. Confidence Scoring                      |
-  |    Analyze token log-probs and entropy     |
-  +--------------------------------------------+
-           |
-           v
-  +--------------------------------------------+
-  | 4. Fact-Check / Verification               |
-  |    Cross-reference with knowledge base     |
-  +--------------------------------------------+
-           |
-           v
-  +--------------------------------------------+
-  |           Validated Response               |
-  +--------------------------------------------+
+    U --> S1 --> S2 --> S3 --> S4 --> V
 ```
 
 ## Exercises
