@@ -11,7 +11,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI Agents (lessons)   |  15 | All published         |
 | AI Agents (projects)  |   6 | All published         |
 | AI for Biology        |       9 | All published         |
-| **Total**             | **56** |                       |
+| AI for Physics        |      11 | All published         |
+| **Total**             | **67** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -83,6 +84,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 08 — Protein Design and Inverse Folding
 - [x] 09 — Frontiers and Future Directions in AI for Biology
 
+### AI for Physics
+- [x] 01 — Introduction to AI for Physics
+- [x] 02 — Physics-Informed Neural Networks
+- [x] 03 — Neural Differential Equations
+- [x] 04 — Classical vs Data-Driven Physics
+- [x] 05 — Solving PDEs with Deep Learning
+- [x] 06 — AI for Particle Physics
+- [x] 07 — AI for Climate Modeling
+- [x] 08 — Quantum Machine Learning
+- [x] 09 — AI for Computational Chemistry
+- [x] 10 — Neural Operators and Operator Learning
+- [x] 11 — Frontiers in AI for Fundamental Physics
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -92,6 +106,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-04
+- Added AI for Physics track: 11 lessons covering PINNs, neural differential equations, PDE solving with deep learning, particle physics AI, climate modeling, quantum ML, computational chemistry, neural operators, and frontiers in fundamental physics.
 
 ### 2026-05-03
 - Added AI for Biology track: 9 lessons covering protein folding, AlphaFold, genomics, molecular dynamics, protein design, and future directions.

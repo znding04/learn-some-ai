@@ -618,5 +618,127 @@
     "prerequisites": ["ai-for-biology-05", "ai-for-biology-06"],
     "summary": "AlphaFold3, foundation models, self-driving labs, and open challenges.",
     "contentPath": "ai-for-biology/09-frontiers-and-future-directions.md"
+  },
+
+  "ai-for-physics-01": {
+    "id": "ai-for-physics-01",
+    "title": "Introduction to AI for Physics",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Why physics needs AI, history, PDEs vs data, scale of physics simulations.",
+    "contentPath": "ai-for-physics/01-introduction-to-ai-for-physics.md"
+  },
+  "ai-for-physics-02": {
+    "id": "ai-for-physics-02",
+    "title": "Physics-Informed Neural Networks",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "PINN framework, embedding PDEs in loss, auto-differentiation for physics.",
+    "contentPath": "ai-for-physics/02-physics-informed-neural-networks.md"
+  },
+  "ai-for-physics-03": {
+    "id": "ai-for-physics-03",
+    "title": "Neural Differential Equations",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "Neural ODEs, adjoint method, continuous-depth models, PDE solving.",
+    "contentPath": "ai-for-physics/03-neural-differential-equations.md"
+  },
+  "ai-for-physics-04": {
+    "id": "ai-for-physics-04",
+    "title": "Classical vs Data-Driven Physics",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "When to use simulations vs ML, hybrid physics-ML approaches, uncertainty quantification.",
+    "contentPath": "ai-for-physics/04-classical-vs-data-driven-physics.md"
+  },
+  "ai-for-physics-05": {
+    "id": "ai-for-physics-05",
+    "title": "Solving PDEs with Deep Learning",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-physics-02"],
+    "summary": "Fourier Neural Operators, DeepONet, comparison to PINNs.",
+    "contentPath": "ai-for-physics/05-solving-pdes-with-deep-learning.md"
+  },
+  "ai-for-physics-06": {
+    "id": "ai-for-physics-06",
+    "title": "AI for Particle Physics",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "CERN/LHC, jet tagging, anomaly detection, graph neural networks for particle physics.",
+    "contentPath": "ai-for-physics/06-ai-for-particle-physics.md"
+  },
+  "ai-for-physics-07": {
+    "id": "ai-for-physics-07",
+    "title": "AI for Climate Modeling",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "Weather prediction (GraphCast, Pangu-Weather), climate simulations, FourCastNet.",
+    "contentPath": "ai-for-physics/07-ai-for-climate-modeling.md"
+  },
+  "ai-for-physics-08": {
+    "id": "ai-for-physics-08",
+    "title": "Quantum Machine Learning",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "Quantum circuits, VQE, QNNs, quantum advantage for physics simulation.",
+    "contentPath": "ai-for-physics/08-quantum-machine-learning.md"
+  },
+  "ai-for-physics-09": {
+    "id": "ai-for-physics-09",
+    "title": "AI for Computational Chemistry",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-physics-01"],
+    "summary": "DFT, molecular property prediction, drug-target interaction, GemNet, Equivariant Transformers.",
+    "contentPath": "ai-for-physics/09-ai-for-computational-chemistry.md"
+  },
+  "ai-for-physics-10": {
+    "id": "ai-for-physics-10",
+    "title": "Neural Operators and Operator Learning",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-physics-05"],
+    "summary": "FNO, DeepONet, GraphCast, operator learning theory, infinite-dimensional spaces.",
+    "contentPath": "ai-for-physics/10-neural-operators-and-operator-learning.md"
+  },
+  "ai-for-physics-11": {
+    "id": "ai-for-physics-11",
+    "title": "Frontiers in AI for Fundamental Physics",
+    "topic": "ai-for-physics",
+    "topicPath": "ai-for-physics",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-physics-10"],
+    "summary": "Dark matter detection, gravitational wave inference, causal discovery in physics, self-driving labs.",
+    "contentPath": "ai-for-physics/11-frontiers-in-ai-for-fundamental-physics.md"
   }
 }

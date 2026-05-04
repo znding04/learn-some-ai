@@ -26,5 +26,12 @@
     "icon": "🧬",
     "description": "How AI is transforming biology — from protein folding to genomics and drug discovery.",
     "path": "ai-for-biology"
+  },
+  {
+    "id": "ai-for-physics",
+    "title": "AI for Physics",
+    "icon": "⚛️",
+    "description": "AI transforming physics — from solving PDEs to particle physics and quantum computing.",
+    "path": "ai-for-physics"
   }
 ]
