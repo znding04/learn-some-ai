@@ -33,5 +33,12 @@
     "icon": "⚛️",
     "description": "AI transforming physics — from solving PDEs to particle physics and quantum computing.",
     "path": "ai-for-physics"
+  },
+  {
+    "id": "ai-for-chemistry",
+    "title": "AI for Chemistry",
+    "icon": "⚗️",
+    "description": "AI transforming chemistry — from molecular design to drug discovery and materials science.",
+    "path": "ai-for-chemistry"
   }
 ]

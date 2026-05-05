@@ -740,5 +740,126 @@
     "prerequisites": ["ai-for-physics-10"],
     "summary": "Dark matter detection, gravitational wave inference, causal discovery in physics, self-driving labs.",
     "contentPath": "ai-for-physics/11-frontiers-in-ai-for-fundamental-physics.md"
+  },
+  "ai-for-chemistry-01": {
+    "id": "ai-for-chemistry-01",
+    "title": "Introduction to AI for Chemistry",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Why chemistry needs AI, history from QSAR to AlphaFold, major application areas.",
+    "contentPath": "ai-for-chemistry/01-introduction-to-ai-for-chemistry.md"
+  },
+  "ai-for-chemistry-02": {
+    "id": "ai-for-chemistry-02",
+    "title": "Molecular Representations",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "SMILES, SELFIES, molecular graphs, fingerprints, 3D conformations, chemical vocabularies.",
+    "contentPath": "ai-for-chemistry/02-molecular-representations.md"
+  },
+  "ai-for-chemistry-03": {
+    "id": "ai-for-chemistry-03",
+    "title": "Graph Neural Networks for Molecules",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-chemistry-02"],
+    "summary": "Message passing neural networks, WeaveNet, SchNet, molecular featurization.",
+    "contentPath": "ai-for-chemistry/03-graph-neural-networks-for-molecules.md"
+  },
+  "ai-for-chemistry-04": {
+    "id": "ai-for-chemistry-04",
+    "title": "Property Prediction with ML",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-chemistry-03"],
+    "summary": "QSAR/QSPR, regression vs classification, MoleculeNet benchmarks, evaluation metrics.",
+    "contentPath": "ai-for-chemistry/04-property-prediction-with-ml.md"
+  },
+  "ai-for-chemistry-05": {
+    "id": "ai-for-chemistry-05",
+    "title": "Generative Models for Molecule Design",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-chemistry-03", "ai-for-chemistry-04"],
+    "summary": "VAE, GAN, autoregressive, and diffusion models for molecular generation.",
+    "contentPath": "ai-for-chemistry/05-generative-models-for-molecule-design.md"
+  },
+  "ai-for-chemistry-06": {
+    "id": "ai-for-chemistry-06",
+    "title": "Drug Discovery and ADMET Prediction",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-chemistry-04"],
+    "summary": "Virtual screening, lead optimization, ADMET prediction, pharmacokinetics.",
+    "contentPath": "ai-for-chemistry/06-drug-discovery-and-admet.md"
+  },
+  "ai-for-chemistry-07": {
+    "id": "ai-for-chemistry-07",
+    "title": "Catalyst Design with Machine Learning",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-chemistry-04"],
+    "summary": "Heterogeneous catalysis, volcano plots, descriptor-based ML, active site prediction.",
+    "contentPath": "ai-for-chemistry/07-catalyst-design-with-ml.md"
+  },
+  "ai-for-chemistry-08": {
+    "id": "ai-for-chemistry-08",
+    "title": "Materials Discovery and Crystal Structure Prediction",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-chemistry-03"],
+    "summary": "Band gap prediction, perovskites, Materials Project, GNoME, crystal graph networks.",
+    "contentPath": "ai-for-chemistry/08-materials-discovery-and-crystal-structure.md"
+  },
+  "ai-for-chemistry-09": {
+    "id": "ai-for-chemistry-09",
+    "title": "Molecular Dynamics with ML Force Fields",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-chemistry-03", "ai-for-chemistry-04"],
+    "summary": "Equivariant neural network potentials, SchNet, NequIP, DeePMD, MLMD.",
+    "contentPath": "ai-for-chemistry/09-molecular-dynamics-with-ml-force-fields.md"
+  },
+  "ai-for-chemistry-10": {
+    "id": "ai-for-chemistry-10",
+    "title": "Chemical Reaction Prediction and Retrosynthesis",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-chemistry-05"],
+    "summary": "Forward reaction prediction, retrosynthetic analysis, transformer-based methods.",
+    "contentPath": "ai-for-chemistry/10-chemical-reaction-prediction.md"
+  },
+  "ai-for-chemistry-11": {
+    "id": "ai-for-chemistry-11",
+    "title": "AutoML and Active Learning for Chemistry",
+    "topic": "ai-for-chemistry",
+    "topicPath": "ai-for-chemistry",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-chemistry-04", "ai-for-chemistry-05"],
+    "summary": "Bayesian optimization, multi-objective optimization, self-driving labs, autonomous discovery.",
+    "contentPath": "ai-for-chemistry/11-automl-and-active-learning-for-chemistry.md"
   }
 }

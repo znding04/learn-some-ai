@@ -12,7 +12,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI Agents (projects)  |   6 | All published         |
 | AI for Biology        |       9 | All published         |
 | AI for Physics        |      11 | All published         |
-| **Total**             | **67** |                       |
+| AI for Chemistry      |      11 | All published         |
+| **Total**             | **78** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -106,6 +107,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-05
+- Added AI for Chemistry track: 11 lessons covering molecular representations, GNNs, generative models, drug discovery, catalyst design, materials discovery, ML force fields, reaction prediction, and AutoML/self-driving labs.
 
 ### 2026-05-04
 - Added AI for Physics track: 11 lessons covering PINNs, neural differential equations, PDE solving with deep learning, particle physics AI, climate modeling, quantum ML, computational chemistry, neural operators, and frontiers in fundamental physics.
