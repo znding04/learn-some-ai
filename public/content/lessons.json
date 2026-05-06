@@ -861,5 +861,127 @@
     "prerequisites": ["ai-for-chemistry-04", "ai-for-chemistry-05"],
     "summary": "Bayesian optimization, multi-objective optimization, self-driving labs, autonomous discovery.",
     "contentPath": "ai-for-chemistry/11-automl-and-active-learning-for-chemistry.md"
+  },
+
+  "ai-for-math-01": {
+    "id": "ai-for-math-01",
+    "title": "What is AI for Mathematics?",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "25min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-fundamentals-06"],
+    "summary": "An introduction to the intersection of AI and mathematics — history, breakthroughs, and why it matters.",
+    "contentPath": "ai-for-mathematics/01-what-is-ai-for-mathematics.md"
+  },
+  "ai-for-math-02": {
+    "id": "ai-for-math-02",
+    "title": "Mathematical Representations for AI",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-math-01"],
+    "summary": "How to encode mathematical objects — numbers, symbols, graphs, equations — for neural networks.",
+    "contentPath": "ai-for-mathematics/02-mathematical-representations-for-ai.md"
+  },
+  "ai-for-math-03": {
+    "id": "ai-for-math-03",
+    "title": "Mathematical Benchmarks and Datasets",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "25min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-math-01"],
+    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam — key benchmarks for evaluating AI math.",
+    "contentPath": "ai-for-mathematics/03-mathematical-benchmarks-and-datasets.md"
+  },
+  "ai-for-math-04": {
+    "id": "ai-for-math-04",
+    "title": "Neural Symbolic AI for Mathematics",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-math-02"],
+    "summary": "Combining neural networks with symbolic reasoning — neuro-symbolic integration and symbolic regression.",
+    "contentPath": "ai-for-mathematics/04-neural-symbolic-ai-for-mathematics.md"
+  },
+  "ai-for-math-05": {
+    "id": "ai-for-math-05",
+    "title": "Introduction to Automated Theorem Proving",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-math-04"],
+    "summary": "Historical approaches, formal proof assistants (Lean, Coq, Isabelle), and proof search strategies.",
+    "contentPath": "ai-for-mathematics/05-introduction-to-automated-theorem-proving.md"
+  },
+  "ai-for-math-06": {
+    "id": "ai-for-math-06",
+    "title": "Large Language Models for Mathematical Reasoning",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-math-03", "ai-for-math-05"],
+    "summary": "Chain-of-Thought, Program-of-Thought, self-consistency, and multi-agent debate for math reasoning.",
+    "contentPath": "ai-for-mathematics/06-llms-for-mathematical-reasoning.md"
+  },
+  "ai-for-math-07": {
+    "id": "ai-for-math-07",
+    "title": "AlphaProof and Formal Theorem Proving",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-math-05", "ai-for-math-06"],
+    "summary": "Google DeepMind's AlphaProof — Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
+    "contentPath": "ai-for-mathematics/07-alphaproof-and-formal-theorem-proving.md"
+  },
+  "ai-for-math-08": {
+    "id": "ai-for-math-08",
+    "title": "AlphaGeometry: AI for Geometry Problems",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-math-06"],
+    "summary": "DeepMind's DD+LLM architecture solving olympiad geometry with 100M synthetic proofs.",
+    "contentPath": "ai-for-mathematics/08-alphageometry-ai-for-geometry.md"
+  },
+  "ai-for-math-09": {
+    "id": "ai-for-math-09",
+    "title": "FunSearch: Evolutionary AI for Combinatorial Mathematics",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-math-06"],
+    "summary": "Evolutionary algorithms + LLMs for discovering new mathematical results, including the cap set problem.",
+    "contentPath": "ai-for-mathematics/09-funsearch-evolutionary-ai-combinatorics.md"
+  },
+  "ai-for-math-10": {
+    "id": "ai-for-math-10",
+    "title": "Neural Network Approaches to Symbolic Mathematics",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-math-04", "ai-for-math-06"],
+    "summary": "Deep learning for integration, ODE solving, symbolic manipulation, and comparison with CAS.",
+    "contentPath": "ai-for-mathematics/10-neural-networks-symbolic-mathematics.md"
+  },
+  "ai-for-math-11": {
+    "id": "ai-for-math-11",
+    "title": "Frontiers and Future Directions in AI for Mathematics",
+    "topic": "ai-for-mathematics",
+    "topicPath": "ai-for-mathematics",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-math-07", "ai-for-math-09"],
+    "summary": "AIMO Prize, autonomous conjecture generation, mathematical agents, and open problems.",
+    "contentPath": "ai-for-mathematics/11-frontiers-future-directions-ai-math.md"
   }
 }

@@ -40,5 +40,12 @@
     "icon": "⚗️",
     "description": "AI transforming chemistry — from molecular design to drug discovery and materials science.",
     "path": "ai-for-chemistry"
+  },
+  {
+    "id": "ai-for-mathematics",
+    "title": "AI for Mathematics",
+    "icon": "🔢",
+    "description": "How AI is transforming mathematics — from theorem proving to combinatorial optimization.",
+    "path": "ai-for-mathematics"
   }
 ]

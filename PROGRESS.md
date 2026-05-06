@@ -13,7 +13,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Biology        |       9 | All published         |
 | AI for Physics        |      11 | All published         |
 | AI for Chemistry      |      11 | All published         |
-| **Total**             | **78** |                       |
+| AI for Mathematics    |      11 | All published         |
+| **Total**             | **89** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -98,6 +99,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Neural Operators and Operator Learning
 - [x] 11 — Frontiers in AI for Fundamental Physics
 
+### AI for Mathematics
+- [x] 01 — What is AI for Mathematics?
+- [x] 02 — Mathematical Representations for AI
+- [x] 03 — Mathematical Benchmarks and Datasets
+- [x] 04 — Neural Symbolic AI for Mathematics
+- [x] 05 — Introduction to Automated Theorem Proving
+- [x] 06 — Large Language Models for Mathematical Reasoning
+- [x] 07 — AlphaProof and Formal Theorem Proving
+- [x] 08 — AlphaGeometry: AI for Geometry Problems
+- [x] 09 — FunSearch: Evolutionary AI for Combinatorial Mathematics
+- [x] 10 — Neural Network Approaches to Symbolic Mathematics
+- [x] 11 — Frontiers and Future Directions in AI for Mathematics
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -107,6 +121,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-06
+- Added AI for Mathematics track: 11 lessons covering AI math history, representations, benchmarks, neuro-symbolic AI, theorem proving, LLM reasoning, AlphaProof, AlphaGeometry, FunSearch, neural symbolic math, and frontiers.
 
 ### 2026-05-05
 - Added AI for Chemistry track: 11 lessons covering molecular representations, GNNs, generative models, drug discovery, catalyst design, materials discovery, ML force fields, reaction prediction, and AutoML/self-driving labs.
