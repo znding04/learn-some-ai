@@ -47,5 +47,12 @@
     "icon": "🔢",
     "description": "How AI is transforming mathematics — from theorem proving to combinatorial optimization.",
     "path": "ai-for-mathematics"
+  },
+  {
+    "id": "ai-for-engineering",
+    "title": "AI for Engineering",
+    "icon": "🏗️",
+    "description": "AI transforming engineering — from structural design to robotics, control systems, and autonomous vehicles.",
+    "path": "ai-for-engineering"
   }
 ]

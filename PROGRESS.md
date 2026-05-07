@@ -14,7 +14,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Physics        |      11 | All published         |
 | AI for Chemistry      |      11 | All published         |
 | AI for Mathematics    |      11 | All published         |
-| **Total**             | **89** |                       |
+| AI for Engineering    |      11 | All published         |
+| **Total**             | **100** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -112,6 +113,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Neural Network Approaches to Symbolic Mathematics
 - [x] 11 — Frontiers and Future Directions in AI for Mathematics
 
+### AI for Engineering
+- [x] 01 — Introduction to AI for Engineering
+- [x] 02 — AI for Structural Engineering and Design Optimization
+- [x] 03 — AI for Mechanical Engineering and Simulation
+- [x] 04 — AI for Electrical and Computer Engineering
+- [x] 05 — AI for Control Systems and Robotics
+- [x] 06 — AI for Manufacturing and Additive Manufacturing
+- [x] 07 — AI for Computer-Aided Design
+- [x] 08 — AI for Civil Engineering and Infrastructure
+- [x] 09 — AI for Materials Engineering
+- [x] 10 — AI for Autonomous Systems
+- [x] 11 — Frontiers and Future Directions in AI for Engineering
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -121,6 +135,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-07
+- Added AI for Engineering track: 11 lessons covering structural engineering, mechanical simulation, electrical engineering, control systems/robotics, manufacturing, CAD, civil engineering, materials engineering, autonomous systems, and frontiers.
 
 ### 2026-05-06
 - Added AI for Mathematics track: 11 lessons covering AI math history, representations, benchmarks, neuro-symbolic AI, theorem proving, LLM reasoning, AlphaProof, AlphaGeometry, FunSearch, neural symbolic math, and frontiers.

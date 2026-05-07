@@ -983,5 +983,127 @@
     "prerequisites": ["ai-for-math-07", "ai-for-math-09"],
     "summary": "AIMO Prize, autonomous conjecture generation, mathematical agents, and open problems.",
     "contentPath": "ai-for-mathematics/11-frontiers-future-directions-ai-math.md"
+  },
+
+  "ai-for-engineering-01": {
+    "id": "ai-for-engineering-01",
+    "title": "Introduction to AI for Engineering",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "What is AI for Engineering, history from expert systems to deep learning, key application areas, and why engineering is a natural ML fit.",
+    "contentPath": "ai-for-engineering/01-introduction-to-ai-for-engineering.md"
+  },
+  "ai-for-engineering-02": {
+    "id": "ai-for-engineering-02",
+    "title": "AI for Structural Engineering and Design Optimization",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-engineering-01"],
+    "summary": "Topology optimization, generative design, structural health monitoring, and AI for seismic analysis.",
+    "contentPath": "ai-for-engineering/02-ai-for-structural-engineering.md"
+  },
+  "ai-for-engineering-03": {
+    "id": "ai-for-engineering-03",
+    "title": "AI for Mechanical Engineering and Simulation",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-engineering-01"],
+    "summary": "Surrogate models for FEA, physics-informed neural networks for mechanics, and AI-accelerated CFD.",
+    "contentPath": "ai-for-engineering/03-ai-for-mechanical-engineering.md"
+  },
+  "ai-for-engineering-04": {
+    "id": "ai-for-engineering-04",
+    "title": "AI for Electrical and Computer Engineering",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-engineering-01"],
+    "summary": "AI for chip design (EDA), circuit optimization, PCB routing, and power grid operation.",
+    "contentPath": "ai-for-engineering/04-ai-for-electrical-engineering.md"
+  },
+  "ai-for-engineering-05": {
+    "id": "ai-for-engineering-05",
+    "title": "AI for Control Systems and Robotics",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-engineering-01"],
+    "summary": "Reinforcement learning for control, model predictive control with learned models, and sim-to-real transfer.",
+    "contentPath": "ai-for-engineering/05-ai-for-control-systems-robotics.md"
+  },
+  "ai-for-engineering-06": {
+    "id": "ai-for-engineering-06",
+    "title": "AI for Manufacturing and Additive Manufacturing",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-engineering-03"],
+    "summary": "Predictive maintenance, computer vision quality control, additive manufacturing process optimization, and digital twins.",
+    "contentPath": "ai-for-engineering/06-ai-for-manufacturing.md"
+  },
+  "ai-for-engineering-07": {
+    "id": "ai-for-engineering-07",
+    "title": "AI for Computer-Aided Design",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-engineering-02"],
+    "summary": "AI for sketch understanding, parametric CAD automation, design search, and generative modeling of mechanical parts.",
+    "contentPath": "ai-for-engineering/07-ai-for-cad.md"
+  },
+  "ai-for-engineering-08": {
+    "id": "ai-for-engineering-08",
+    "title": "AI for Civil Engineering and Infrastructure",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-engineering-01"],
+    "summary": "AI for traffic flow optimization, bridge inspection with drones and CV, water network optimization, and urban planning.",
+    "contentPath": "ai-for-engineering/08-ai-for-civil-engineering.md"
+  },
+  "ai-for-engineering-09": {
+    "id": "ai-for-engineering-09",
+    "title": "AI for Materials Engineering",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-engineering-03"],
+    "summary": "Microstructure-property linkages, CGCNNs, uncertainty quantification in materials simulation, and autonomous discovery.",
+    "contentPath": "ai-for-engineering/09-ai-for-materials-engineering.md"
+  },
+  "ai-for-engineering-10": {
+    "id": "ai-for-engineering-10",
+    "title": "AI for Autonomous Systems",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-engineering-05"],
+    "summary": "End-to-end driving, NeRFs for autonomy, uncertainty-aware planning, and safety verification.",
+    "contentPath": "ai-for-engineering/10-ai-for-autonomous-systems.md"
+  },
+  "ai-for-engineering-11": {
+    "id": "ai-for-engineering-11",
+    "title": "Frontiers and Future Directions in AI for Engineering",
+    "topic": "ai-for-engineering",
+    "topicPath": "ai-for-engineering",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-engineering-06", "ai-for-engineering-10"],
+    "summary": "Foundation models for engineering, AI-augmented simulation, human-AI co-design, and self-driving labs.",
+    "contentPath": "ai-for-engineering/11-frontiers-future-directions.md"
   }
 }
