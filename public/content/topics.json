@@ -48,11 +48,18 @@
     "description": "How AI is transforming mathematics — from theorem proving to combinatorial optimization.",
     "path": "ai-for-mathematics"
   },
-  {
+    {
     "id": "ai-for-engineering",
     "title": "AI for Engineering",
     "icon": "🏗️",
     "description": "AI transforming engineering — from structural design to robotics, control systems, and autonomous vehicles.",
     "path": "ai-for-engineering"
+  },
+  {
+    "id": "ai-for-medicine",
+    "title": "AI for Medicine",
+    "icon": "🏥",
+    "description": "AI transforming medicine — from medical imaging and diagnostics to drug discovery and clinical decision support.",
+    "path": "ai-for-medicine"
   }
 ]

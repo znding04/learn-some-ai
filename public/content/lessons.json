@@ -1105,5 +1105,115 @@
     "prerequisites": ["ai-for-engineering-06", "ai-for-engineering-10"],
     "summary": "Foundation models for engineering, AI-augmented simulation, human-AI co-design, and self-driving labs.",
     "contentPath": "ai-for-engineering/11-frontiers-future-directions.md"
+  },
+  "ai-for-medicine-01": {
+    "id": "ai-for-medicine-01",
+    "title": "Introduction to AI in Medicine",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of AI applications in medicine, why healthcare needs AI, and major application areas.",
+    "contentPath": "ai-for-medicine/01-introduction-to-ai-in-medicine.md"
+  },
+  "ai-for-medicine-02": {
+    "id": "ai-for-medicine-02",
+    "title": "Medical Imaging AI",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01"],
+    "summary": "Deep learning for X-rays, CT, MRI, and pathology images — architectures, datasets, and clinical deployment.",
+    "contentPath": "ai-for-medicine/02-medical-imaging-ai.md"
+  },
+  "ai-for-medicine-03": {
+    "id": "ai-for-medicine-03",
+    "title": "Clinical Decision Support Systems",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01"],
+    "summary": "AI systems that assist clinicians with diagnosis, treatment recommendations, and risk prediction.",
+    "contentPath": "ai-for-medicine/03-clinical-decision-support-systems.md"
+  },
+  "ai-for-medicine-04": {
+    "id": "ai-for-medicine-04",
+    "title": "Natural Language Processing for Clinical Notes",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01"],
+    "summary": "NLP for extracting information from clinical notes, medical literature, and patient-generated text.",
+    "contentPath": "ai-for-medicine/04-clinical-nlp.md"
+  },
+  "ai-for-medicine-05": {
+    "id": "ai-for-medicine-05",
+    "title": "AI for Diagnostics",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-02"],
+    "summary": "AI systems for dermatology, ophthalmology, radiology, and pathology diagnostics.",
+    "contentPath": "ai-for-medicine/05-ai-for-diagnostics.md"
+  },
+  "ai-for-medicine-06": {
+    "id": "ai-for-medicine-06",
+    "title": "Electronic Health Records and Clinical Data",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01"],
+    "summary": "EHR data structures, clinical data warehouses, secondary use of EHR data for ML.",
+    "contentPath": "ai-for-medicine/06-electronic-health-records-and-clinical-data.md"
+  },
+  "ai-for-medicine-07": {
+    "id": "ai-for-medicine-07",
+    "title": "Drug Discovery and Clinical Trial AI",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01"],
+    "summary": "AI for target identification, molecule design, clinical trial optimization, and pharmacovigilance.",
+    "contentPath": "ai-for-medicine/07-drug-discovery-and-clinical-trial-ai.md"
+  },
+  "ai-for-medicine-08": {
+    "id": "ai-for-medicine-08",
+    "title": "Precision Medicine and Genomic AI",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-07"],
+    "summary": "AI for genomic analysis, personalized treatment, biomarker discovery, and population health.",
+    "contentPath": "ai-for-medicine/08-precision-medicine-and-genomic-ai.md"
+  },
+  "ai-for-medicine-09": {
+    "id": "ai-for-medicine-09",
+    "title": "Medical AI Regulations and Ethics",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-03"],
+    "summary": "FDA approval, HIPAA, GDPR, algorithmic bias, and ethical frameworks for medical AI.",
+    "contentPath": "ai-for-medicine/09-medical-ai-regulations-and-ethics.md"
+  },
+  "ai-for-medicine-10": {
+    "id": "ai-for-medicine-10",
+    "title": "Frontiers in Medical AI",
+    "topic": "ai-for-medicine",
+    "topicPath": "ai-for-medicine",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-05", "ai-for-medicine-09"],
+    "summary": "Foundation models for medicine, autonomous systems, wearables, federated learning, and future directions.",
+    "contentPath": "ai-for-medicine/10-frontiers-in-medical-ai.md"
   }
 }

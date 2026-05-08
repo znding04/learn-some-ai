@@ -15,7 +15,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Chemistry      |      11 | All published         |
 | AI for Mathematics    |      11 | All published         |
 | AI for Engineering    |      11 | All published         |
-| **Total**             | **100** |                       |
+| AI for Medicine        |      10 | All published         |
+| **Total**             | **110** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -126,6 +127,18 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI for Autonomous Systems
 - [x] 11 — Frontiers and Future Directions in AI for Engineering
 
+### AI for Medicine
+- [x] 01 — Introduction to AI in Medicine
+- [x] 02 — Medical Imaging AI
+- [x] 03 — Clinical Decision Support Systems
+- [x] 04 — Natural Language Processing for Clinical Notes
+- [x] 05 — AI for Diagnostics
+- [x] 06 — Electronic Health Records and Clinical Data
+- [x] 07 — Drug Discovery and Clinical Trial AI
+- [x] 08 — Precision Medicine and Genomic AI
+- [x] 09 — Medical AI Regulations and Ethics
+- [x] 10 — Frontiers in Medical AI
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -135,6 +148,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-08
+- Added AI for Medicine track: 10 lessons covering medical imaging AI, clinical decision support, clinical NLP, diagnostics, EHR data, drug discovery, precision medicine, regulations, and frontiers.
 
 ### 2026-05-07
 - Added AI for Engineering track: 11 lessons covering structural engineering, mechanical simulation, electrical engineering, control systems/robotics, manufacturing, CAD, civil engineering, materials engineering, autonomous systems, and frontiers.
