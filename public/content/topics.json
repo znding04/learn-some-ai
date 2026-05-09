@@ -2,64 +2,71 @@
   {
     "id": "ai-fundamentals",
     "title": "AI Fundamentals",
-    "icon": "🤖",
-    "description": "The foundations of artificial intelligence — from neural networks to ethics.",
+    "icon": "\ud83e\udd16",
+    "description": "The foundations of artificial intelligence \u2014 from neural networks to ethics.",
     "path": "ai-fundamentals"
   },
   {
     "id": "llm",
     "title": "Large Language Models",
-    "icon": "📝",
-    "description": "Understanding how LLMs work — architecture, training, and applications.",
+    "icon": "\ud83d\udcdd",
+    "description": "Understanding how LLMs work \u2014 architecture, training, and applications.",
     "path": "llm"
   },
   {
     "id": "ai-agents",
     "title": "AI Agents",
-    "icon": "🧠",
+    "icon": "\ud83e\udde0",
     "description": "Building autonomous AI agents that can reason, plan, and use tools.",
     "path": "ai-agents"
   },
   {
     "id": "ai-for-biology",
     "title": "AI for Biology",
-    "icon": "🧬",
-    "description": "How AI is transforming biology — from protein folding to genomics and drug discovery.",
+    "icon": "\ud83e\uddec",
+    "description": "How AI is transforming biology \u2014 from protein folding to genomics and drug discovery.",
     "path": "ai-for-biology"
   },
   {
     "id": "ai-for-physics",
     "title": "AI for Physics",
-    "icon": "⚛️",
-    "description": "AI transforming physics — from solving PDEs to particle physics and quantum computing.",
+    "icon": "\u269b\ufe0f",
+    "description": "AI transforming physics \u2014 from solving PDEs to particle physics and quantum computing.",
     "path": "ai-for-physics"
   },
   {
     "id": "ai-for-chemistry",
     "title": "AI for Chemistry",
-    "icon": "⚗️",
-    "description": "AI transforming chemistry — from molecular design to drug discovery and materials science.",
+    "icon": "\u2697\ufe0f",
+    "description": "AI transforming chemistry \u2014 from molecular design to drug discovery and materials science.",
     "path": "ai-for-chemistry"
   },
   {
     "id": "ai-for-mathematics",
     "title": "AI for Mathematics",
-    "icon": "🔢",
-    "description": "How AI is transforming mathematics — from theorem proving to combinatorial optimization.",
+    "icon": "\ud83d\udd22",
+    "description": "How AI is transforming mathematics \u2014 from theorem proving to combinatorial optimization.",
     "path": "ai-for-mathematics"
   },
-    {
+  {
     "id": "ai-for-engineering",
     "title": "AI for Engineering",
-    "icon": "🏗️",
-    "description": "AI transforming engineering — from structural design to robotics, control systems, and autonomous vehicles.",
+    "icon": "\ud83c\udfd7\ufe0f",
+    "description": "AI transforming engineering \u2014 from structural design to robotics, control systems, and autonomous vehicles.",
     "path": "ai-for-engineering"
   },
   {
     "id": "ai-for-medicine",
     "title": "AI for Medicine",
-    "icon": "🏥",
-    "description": "AI transforming medicine — from medical imaging and diagnostics to drug discovery and clinical decision support.",
+    "icon": "\ud83c\udfe5",
+    "description": "AI transforming medicine \u2014 from medical imaging and diagnostics to drug discovery and clinical decision support.",
     "path": "ai-for-medicine"
+  },
+  {
+    "id": "ai-for-environmental-science",
+    "title": "AI for Environmental Science",
+    "icon": "\ud83c\udf0d",
+    "description": "AI transforming environmental science \u2014 from ecological forecasting to climate adaptation and conservation.",
+    "path": "ai-for-environmental-science"
   }
 ]

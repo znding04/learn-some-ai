@@ -16,7 +16,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Mathematics    |      11 | All published         |
 | AI for Engineering    |      11 | All published         |
 | AI for Medicine        |      10 | All published         |
-| **Total**             | **110** |                       |
+| AI for Environmental Science |  11 | All published         |
+| **Total**             | **121** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -139,6 +140,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 09 — Medical AI Regulations and Ethics
 - [x] 10 — Frontiers in Medical AI
 
+### AI for Environmental Science
+- [x] 01 — Introduction to AI for Environmental Science
+- [x] 02 — Ecological Forecasting with Machine Learning
+- [x] 03 — AI for Biodiversity and Conservation
+- [x] 04 — AI for Extreme Weather and Natural Disasters
+- [x] 05 — AI for Earth System Modeling
+- [x] 06 — AI for Water Resource Management
+- [x] 07 — AI for Deforestation and Land Use Monitoring
+- [x] 08 — AI for Ocean and Marine Systems
+- [x] 09 — AI for Sustainable Cities and Infrastructure
+- [x] 10 — Causal AI for Environmental Science
+- [x] 11 — Frontiers in AI for Environmental Science
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -148,6 +162,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-09
+- Added AI for Environmental Science track: 11 lessons covering ecological forecasting, biodiversity/conservation, extreme weather prediction, Earth system modeling, water resources, deforestation monitoring, ocean/marine systems, sustainable cities, causal environmental AI, and frontiers.
 
 ### 2026-05-08
 - Added AI for Medicine track: 10 lessons covering medical imaging AI, clinical decision support, clinical NLP, diagnostics, EHR data, drug discovery, precision medicine, regulations, and frontiers.

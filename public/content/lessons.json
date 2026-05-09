@@ -17,7 +17,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-fundamentals-01"],
+    "prerequisites": [
+      "ai-fundamentals-01"
+    ],
     "summary": "Supervised, unsupervised, and reinforcement learning fundamentals.",
     "contentPath": "ai-fundamentals/02-machine-learning-basics.md"
   },
@@ -28,7 +30,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-02"],
+    "prerequisites": [
+      "ai-fundamentals-02"
+    ],
     "summary": "Neural network basics, activation functions, and backpropagation.",
     "contentPath": "ai-fundamentals/03-deep-learning-foundations.md"
   },
@@ -39,7 +43,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-03"],
+    "prerequisites": [
+      "ai-fundamentals-03"
+    ],
     "summary": "Convolutional neural networks for computer vision tasks.",
     "contentPath": "ai-fundamentals/04-convolutional-neural-networks.md"
   },
@@ -50,7 +56,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-03"],
+    "prerequisites": [
+      "ai-fundamentals-03"
+    ],
     "summary": "Recurrent neural networks and LSTMs for sequential data processing.",
     "contentPath": "ai-fundamentals/05-rnns-and-lstms.md"
   },
@@ -61,7 +69,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "50min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-05"],
+    "prerequisites": [
+      "ai-fundamentals-05"
+    ],
     "summary": "Self-attention, encoder-decoder architecture, and modern transformer models.",
     "contentPath": "ai-fundamentals/06-transformers-architecture.md"
   },
@@ -72,7 +82,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "30min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-fundamentals-01"],
+    "prerequisites": [
+      "ai-fundamentals-01"
+    ],
     "summary": "Fairness, accountability, transparency, and bias in AI systems.",
     "contentPath": "ai-fundamentals/07-ai-ethics-and-bias.md"
   },
@@ -83,7 +95,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-07"],
+    "prerequisites": [
+      "ai-fundamentals-07"
+    ],
     "summary": "Alignment problem, value alignment, and AI safety research.",
     "contentPath": "ai-fundamentals/08-ai-safety-and-alignment.md"
   },
@@ -94,7 +108,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-02"],
+    "prerequisites": [
+      "ai-fundamentals-02"
+    ],
     "summary": "Metrics, benchmarks, and evaluation methodologies for AI models.",
     "contentPath": "ai-fundamentals/09-evaluating-ai-systems.md"
   },
@@ -105,7 +121,10 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "30min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-fundamentals-06", "ai-fundamentals-08"],
+    "prerequisites": [
+      "ai-fundamentals-06",
+      "ai-fundamentals-08"
+    ],
     "summary": "AGI, emerging trends, and the future landscape of artificial intelligence.",
     "contentPath": "ai-fundamentals/10-future-of-ai.md"
   },
@@ -116,7 +135,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-fundamentals-01"],
+    "prerequisites": [
+      "ai-fundamentals-01"
+    ],
     "summary": "AI applications across healthcare, finance, transportation, and creative industries.",
     "contentPath": "ai-fundamentals/11-applications-of-ai.md"
   },
@@ -131,7 +152,6 @@
     "summary": "Comprehensive glossary of essential AI terms, formulas, and concepts.",
     "contentPath": "ai-fundamentals/12-ai-glossary.md"
   },
-
   "ai-fundamentals-13": {
     "id": "ai-fundamentals-13",
     "title": "Neural Networks: A Mathematical Perspective",
@@ -139,7 +159,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-03"],
+    "prerequisites": [
+      "ai-fundamentals-03"
+    ],
     "summary": "McCulloch-Pitts neurons, perceptrons, XOR problem, gradient descent, and backpropagation derivation.",
     "contentPath": "ai-fundamentals/13-neural-networks-math.md"
   },
@@ -150,8 +172,10 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-13"],
-    "summary": "Sigmoid, tanh, ReLU, GELU, Swish — vanishing gradients and initialization strategies.",
+    "prerequisites": [
+      "ai-fundamentals-13"
+    ],
+    "summary": "Sigmoid, tanh, ReLU, GELU, Swish \u2014 vanishing gradients and initialization strategies.",
     "contentPath": "ai-fundamentals/14-activation-functions.md"
   },
   "ai-fundamentals-15": {
@@ -161,7 +185,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-13"],
+    "prerequisites": [
+      "ai-fundamentals-13"
+    ],
     "summary": "L1/L2 regularization, dropout, batch normalization, early stopping, and data augmentation.",
     "contentPath": "ai-fundamentals/15-regularization.md"
   },
@@ -172,7 +198,9 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-fundamentals-13"],
+    "prerequisites": [
+      "ai-fundamentals-13"
+    ],
     "summary": "SGD, momentum, Adam, AdamW, learning rate schedules, and cosine annealing.",
     "contentPath": "ai-fundamentals/16-optimizers.md"
   },
@@ -183,11 +211,13 @@
     "topicPath": "ai-fundamentals",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-fundamentals-04", "ai-fundamentals-13"],
+    "prerequisites": [
+      "ai-fundamentals-04",
+      "ai-fundamentals-13"
+    ],
     "summary": "VGG, ResNet, Inception architectures, transfer learning, and object detection basics.",
     "contentPath": "ai-fundamentals/17-cnn-advanced.md"
   },
-
   "llm-01": {
     "id": "llm-01",
     "title": "What are Large Language Models?",
@@ -206,7 +236,9 @@
     "topicPath": "llm",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-01"],
+    "prerequisites": [
+      "llm-01"
+    ],
     "summary": "Transformer backbone, multi-head attention, positional encodings, and KV cache.",
     "contentPath": "llm/02-llm-architecture-deep-dive.md"
   },
@@ -217,7 +249,9 @@
     "topicPath": "llm",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-02"],
+    "prerequisites": [
+      "llm-02"
+    ],
     "summary": "Pre-training, scaling laws, SFT, RLHF, DPO, and GRPO.",
     "contentPath": "llm/03-training-llms.md"
   },
@@ -228,7 +262,9 @@
     "topicPath": "llm",
     "estimatedTime": "30min",
     "difficulty": "beginner",
-    "prerequisites": ["llm-01"],
+    "prerequisites": [
+      "llm-01"
+    ],
     "summary": "Zero-shot, few-shot, chain-of-thought, and structured output techniques.",
     "contentPath": "llm/04-prompt-engineering.md"
   },
@@ -239,7 +275,9 @@
     "topicPath": "llm",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-02"],
+    "prerequisites": [
+      "llm-02"
+    ],
     "summary": "BPE, WordPiece, embedding spaces, and cosine similarity.",
     "contentPath": "llm/05-tokenization-and-embeddings.md"
   },
@@ -250,7 +288,9 @@
     "topicPath": "llm",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-02"],
+    "prerequisites": [
+      "llm-02"
+    ],
     "summary": "Sparse attention, Flash Attention, and RAG vs long-context tradeoffs.",
     "contentPath": "llm/06-context-windows-and-attention.md"
   },
@@ -261,7 +301,9 @@
     "topicPath": "llm",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-01"],
+    "prerequisites": [
+      "llm-01"
+    ],
     "summary": "Hallucination taxonomy, root causes, and mitigation strategies.",
     "contentPath": "llm/07-llm-limitations-and-hallucinations.md"
   },
@@ -272,7 +314,9 @@
     "topicPath": "llm",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-03"],
+    "prerequisites": [
+      "llm-03"
+    ],
     "summary": "Full fine-tuning, LoRA, QLoRA, and parameter-efficient training methods.",
     "contentPath": "llm/08-llm-fine-tuning-intro.md"
   },
@@ -283,11 +327,12 @@
     "topicPath": "llm",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["llm-05"],
+    "prerequisites": [
+      "llm-05"
+    ],
     "summary": "RAG pipeline, chunking, vector databases, retrieval methods, and re-ranking.",
     "contentPath": "llm/09-rag-for-llms.md"
   },
-
   "ai-agents-01": {
     "id": "ai-agents-01",
     "title": "What are AI Agents?",
@@ -306,7 +351,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-01"],
+    "prerequisites": [
+      "ai-agents-01"
+    ],
     "summary": "ReAct, Plan-and-Execute, and Tree of Thoughts architectures.",
     "contentPath": "ai-agents/02-agent-architectures.md"
   },
@@ -317,7 +364,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-01"],
+    "prerequisites": [
+      "ai-agents-01"
+    ],
     "summary": "Structured function calling, tool schemas, and multi-tool orchestration.",
     "contentPath": "ai-agents/03-tool-use-and-function-calling.md"
   },
@@ -328,7 +377,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-agents-01"],
+    "prerequisites": [
+      "ai-agents-01"
+    ],
     "summary": "LangChain, LangGraph, AutoGPT, CrewAI, and framework selection.",
     "contentPath": "ai-agents/04-intro-to-agent-frameworks.md"
   },
@@ -339,7 +390,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "45min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-agents-03"],
+    "prerequisites": [
+      "ai-agents-03"
+    ],
     "summary": "Step-by-step agent construction with tools, prompt, and loop.",
     "contentPath": "ai-agents/05-building-your-first-agent.md"
   },
@@ -350,7 +403,10 @@
     "topicPath": "ai-agents",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-02", "ai-agents-05"],
+    "prerequisites": [
+      "ai-agents-02",
+      "ai-agents-05"
+    ],
     "summary": "Multi-agent systems, hierarchical decomposition, and self-reflection.",
     "contentPath": "ai-agents/06-advanced-agent-patterns.md"
   },
@@ -361,7 +417,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-05"],
+    "prerequisites": [
+      "ai-agents-05"
+    ],
     "summary": "Short-term and long-term memory, vector databases, and retrieval strategies.",
     "contentPath": "ai-agents/07-memory-systems.md"
   },
@@ -372,7 +430,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-03"],
+    "prerequisites": [
+      "ai-agents-03"
+    ],
     "summary": "REST API wrapping, authentication, rate limiting, and error handling.",
     "contentPath": "ai-agents/08-tool-design-and-api-integration.md"
   },
@@ -383,7 +443,10 @@
     "topicPath": "ai-agents",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-05", "llm-04"],
+    "prerequisites": [
+      "ai-agents-05",
+      "llm-04"
+    ],
     "summary": "Structured agent prompts, reasoning traces, and tool selection.",
     "contentPath": "ai-agents/09-prompt-engineering-for-agents.md"
   },
@@ -394,7 +457,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-05"],
+    "prerequisites": [
+      "ai-agents-05"
+    ],
     "summary": "Graceful degradation, retry budgets, timeouts, and sandbox security.",
     "contentPath": "ai-agents/10-error-handling-and-robustness.md"
   },
@@ -405,7 +470,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-10"],
+    "prerequisites": [
+      "ai-agents-10"
+    ],
     "summary": "Deployment, cost optimization, monitoring, and observability.",
     "contentPath": "ai-agents/11-building-production-agents.md"
   },
@@ -416,7 +483,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-11"],
+    "prerequisites": [
+      "ai-agents-11"
+    ],
     "summary": "Task success metrics, benchmarks, synthetic data, and A/B testing.",
     "contentPath": "ai-agents/12-agent-evaluation-and-testing.md"
   },
@@ -427,7 +496,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "35min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-10"],
+    "prerequisites": [
+      "ai-agents-10"
+    ],
     "summary": "Prompt injection defense, tool hijacking, privacy, and safety guardrails.",
     "contentPath": "ai-agents/13-security-and-safety-in-agents.md"
   },
@@ -438,7 +509,10 @@
     "topicPath": "ai-agents",
     "estimatedTime": "60min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-05", "ai-agents-08"],
+    "prerequisites": [
+      "ai-agents-05",
+      "ai-agents-08"
+    ],
     "summary": "Build a ReAct-style Q&A agent with web search, calculator, and knowledge base.",
     "contentPath": "ai-agents/project-01-qa-agent-with-tools.md"
   },
@@ -449,7 +523,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "75min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-06"],
+    "prerequisites": [
+      "ai-agents-06"
+    ],
     "summary": "Build a planner-searcher-synthesizer multi-agent research system.",
     "contentPath": "ai-agents/project-02-multi-agent-research-system.md"
   },
@@ -460,7 +536,10 @@
     "topicPath": "ai-agents",
     "estimatedTime": "60min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-agents-07", "llm-05"],
+    "prerequisites": [
+      "ai-agents-07",
+      "llm-05"
+    ],
     "summary": "End-to-end RAG pipeline with vector DB, LLM, and re-ranking.",
     "contentPath": "ai-agents/project-03-rag-agent.md"
   },
@@ -471,7 +550,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "75min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-11"],
+    "prerequisites": [
+      "ai-agents-11"
+    ],
     "summary": "Production agent with hand-off logic, escalation, and session management.",
     "contentPath": "ai-agents/project-04-production-customer-service-agent.md"
   },
@@ -482,7 +563,10 @@
     "topicPath": "ai-agents",
     "estimatedTime": "90min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-12", "llm-03"],
+    "prerequisites": [
+      "ai-agents-12",
+      "llm-03"
+    ],
     "summary": "Collect agent trajectories, DPO training, and evaluation pipeline.",
     "contentPath": "ai-agents/project-05-fine-tune-llm-for-agent.md"
   },
@@ -493,7 +577,9 @@
     "topicPath": "ai-agents",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-06"],
+    "prerequisites": [
+      "ai-agents-06"
+    ],
     "summary": "Communication protocols, task delegation, consensus, and coordination strategies.",
     "contentPath": "ai-agents/14-multi-agent-collaboration.md"
   },
@@ -504,7 +590,10 @@
     "topicPath": "ai-agents",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-07", "llm-05"],
+    "prerequisites": [
+      "ai-agents-07",
+      "llm-05"
+    ],
     "summary": "Query planning, iterative retrieval, self-evaluation, and multi-hop reasoning.",
     "contentPath": "ai-agents/15-agentic-rag-systems.md"
   },
@@ -515,11 +604,12 @@
     "topicPath": "ai-agents",
     "estimatedTime": "75min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-agents-11"],
+    "prerequisites": [
+      "ai-agents-11"
+    ],
     "summary": "Containerization, API wrapper, monitoring, and production deployment guide.",
     "contentPath": "ai-agents/project-06-deploy-agent-to-production.md"
   },
-
   "ai-for-biology-01": {
     "id": "ai-for-biology-01",
     "title": "Introduction to AI for Biology",
@@ -538,8 +628,10 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-biology-01"],
-    "summary": "How biological entities are encoded for machine learning — sequences, structures, and graphs.",
+    "prerequisites": [
+      "ai-for-biology-01"
+    ],
+    "summary": "How biological entities are encoded for machine learning \u2014 sequences, structures, and graphs.",
     "contentPath": "ai-for-biology/02-biological-data-representations.md"
   },
   "ai-for-biology-03": {
@@ -549,7 +641,9 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-biology-01"],
+    "prerequisites": [
+      "ai-for-biology-01"
+    ],
     "summary": "PDB, UniProt, CASP, and other essential datasets and competitions.",
     "contentPath": "ai-for-biology/03-key-datasets-and-benchmarks.md"
   },
@@ -560,7 +654,9 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-biology-02"],
+    "prerequisites": [
+      "ai-for-biology-02"
+    ],
     "summary": "The protein folding problem, Levinthal's paradox, and classical prediction methods.",
     "contentPath": "ai-for-biology/04-protein-structure-prediction.md"
   },
@@ -571,7 +667,9 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "50min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-biology-04"],
+    "prerequisites": [
+      "ai-for-biology-04"
+    ],
     "summary": "AlphaFold2 architecture, Evoformer, structure module, and its transformative impact.",
     "contentPath": "ai-for-biology/05-alphafold-architecture.md"
   },
@@ -582,7 +680,9 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-biology-02"],
+    "prerequisites": [
+      "ai-for-biology-02"
+    ],
     "summary": "CNNs for DNA, single-cell analysis, variant prediction, and genomic foundation models.",
     "contentPath": "ai-for-biology/06-genomics-and-deep-learning.md"
   },
@@ -593,7 +693,9 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-biology-04"],
+    "prerequisites": [
+      "ai-for-biology-04"
+    ],
     "summary": "Classical MD, ML-learned potentials, equivariant networks, and enhanced sampling.",
     "contentPath": "ai-for-biology/07-molecular-dynamics-and-ml.md"
   },
@@ -604,7 +706,9 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-biology-05"],
+    "prerequisites": [
+      "ai-for-biology-05"
+    ],
     "summary": "Inverse folding with ProteinMPNN, diffusion-based design, and de novo protein engineering.",
     "contentPath": "ai-for-biology/08-protein-design-and-inverse-folding.md"
   },
@@ -615,11 +719,13 @@
     "topicPath": "ai-for-biology",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-biology-05", "ai-for-biology-06"],
+    "prerequisites": [
+      "ai-for-biology-05",
+      "ai-for-biology-06"
+    ],
     "summary": "AlphaFold3, foundation models, self-driving labs, and open challenges.",
     "contentPath": "ai-for-biology/09-frontiers-and-future-directions.md"
   },
-
   "ai-for-physics-01": {
     "id": "ai-for-physics-01",
     "title": "Introduction to AI for Physics",
@@ -638,7 +744,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "PINN framework, embedding PDEs in loss, auto-differentiation for physics.",
     "contentPath": "ai-for-physics/02-physics-informed-neural-networks.md"
   },
@@ -649,7 +757,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "Neural ODEs, adjoint method, continuous-depth models, PDE solving.",
     "contentPath": "ai-for-physics/03-neural-differential-equations.md"
   },
@@ -660,7 +770,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "When to use simulations vs ML, hybrid physics-ML approaches, uncertainty quantification.",
     "contentPath": "ai-for-physics/04-classical-vs-data-driven-physics.md"
   },
@@ -671,7 +783,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-physics-02"],
+    "prerequisites": [
+      "ai-for-physics-02"
+    ],
     "summary": "Fourier Neural Operators, DeepONet, comparison to PINNs.",
     "contentPath": "ai-for-physics/05-solving-pdes-with-deep-learning.md"
   },
@@ -682,7 +796,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "CERN/LHC, jet tagging, anomaly detection, graph neural networks for particle physics.",
     "contentPath": "ai-for-physics/06-ai-for-particle-physics.md"
   },
@@ -693,7 +809,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "Weather prediction (GraphCast, Pangu-Weather), climate simulations, FourCastNet.",
     "contentPath": "ai-for-physics/07-ai-for-climate-modeling.md"
   },
@@ -704,7 +822,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "Quantum circuits, VQE, QNNs, quantum advantage for physics simulation.",
     "contentPath": "ai-for-physics/08-quantum-machine-learning.md"
   },
@@ -715,7 +835,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-physics-01"],
+    "prerequisites": [
+      "ai-for-physics-01"
+    ],
     "summary": "DFT, molecular property prediction, drug-target interaction, GemNet, Equivariant Transformers.",
     "contentPath": "ai-for-physics/09-ai-for-computational-chemistry.md"
   },
@@ -726,7 +848,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-physics-05"],
+    "prerequisites": [
+      "ai-for-physics-05"
+    ],
     "summary": "FNO, DeepONet, GraphCast, operator learning theory, infinite-dimensional spaces.",
     "contentPath": "ai-for-physics/10-neural-operators-and-operator-learning.md"
   },
@@ -737,7 +861,9 @@
     "topicPath": "ai-for-physics",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-physics-10"],
+    "prerequisites": [
+      "ai-for-physics-10"
+    ],
     "summary": "Dark matter detection, gravitational wave inference, causal discovery in physics, self-driving labs.",
     "contentPath": "ai-for-physics/11-frontiers-in-ai-for-fundamental-physics.md"
   },
@@ -770,7 +896,9 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "45min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-chemistry-02"],
+    "prerequisites": [
+      "ai-for-chemistry-02"
+    ],
     "summary": "Message passing neural networks, WeaveNet, SchNet, molecular featurization.",
     "contentPath": "ai-for-chemistry/03-graph-neural-networks-for-molecules.md"
   },
@@ -781,7 +909,9 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-chemistry-03"],
+    "prerequisites": [
+      "ai-for-chemistry-03"
+    ],
     "summary": "QSAR/QSPR, regression vs classification, MoleculeNet benchmarks, evaluation metrics.",
     "contentPath": "ai-for-chemistry/04-property-prediction-with-ml.md"
   },
@@ -792,7 +922,10 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "50min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-chemistry-03", "ai-for-chemistry-04"],
+    "prerequisites": [
+      "ai-for-chemistry-03",
+      "ai-for-chemistry-04"
+    ],
     "summary": "VAE, GAN, autoregressive, and diffusion models for molecular generation.",
     "contentPath": "ai-for-chemistry/05-generative-models-for-molecule-design.md"
   },
@@ -803,7 +936,9 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-chemistry-04"],
+    "prerequisites": [
+      "ai-for-chemistry-04"
+    ],
     "summary": "Virtual screening, lead optimization, ADMET prediction, pharmacokinetics.",
     "contentPath": "ai-for-chemistry/06-drug-discovery-and-admet.md"
   },
@@ -814,7 +949,9 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-chemistry-04"],
+    "prerequisites": [
+      "ai-for-chemistry-04"
+    ],
     "summary": "Heterogeneous catalysis, volcano plots, descriptor-based ML, active site prediction.",
     "contentPath": "ai-for-chemistry/07-catalyst-design-with-ml.md"
   },
@@ -825,7 +962,9 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-chemistry-03"],
+    "prerequisites": [
+      "ai-for-chemistry-03"
+    ],
     "summary": "Band gap prediction, perovskites, Materials Project, GNoME, crystal graph networks.",
     "contentPath": "ai-for-chemistry/08-materials-discovery-and-crystal-structure.md"
   },
@@ -836,7 +975,10 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-chemistry-03", "ai-for-chemistry-04"],
+    "prerequisites": [
+      "ai-for-chemistry-03",
+      "ai-for-chemistry-04"
+    ],
     "summary": "Equivariant neural network potentials, SchNet, NequIP, DeePMD, MLMD.",
     "contentPath": "ai-for-chemistry/09-molecular-dynamics-with-ml-force-fields.md"
   },
@@ -847,7 +989,9 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-chemistry-05"],
+    "prerequisites": [
+      "ai-for-chemistry-05"
+    ],
     "summary": "Forward reaction prediction, retrosynthetic analysis, transformer-based methods.",
     "contentPath": "ai-for-chemistry/10-chemical-reaction-prediction.md"
   },
@@ -858,11 +1002,13 @@
     "topicPath": "ai-for-chemistry",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-chemistry-04", "ai-for-chemistry-05"],
+    "prerequisites": [
+      "ai-for-chemistry-04",
+      "ai-for-chemistry-05"
+    ],
     "summary": "Bayesian optimization, multi-objective optimization, self-driving labs, autonomous discovery.",
     "contentPath": "ai-for-chemistry/11-automl-and-active-learning-for-chemistry.md"
   },
-
   "ai-for-math-01": {
     "id": "ai-for-math-01",
     "title": "What is AI for Mathematics?",
@@ -870,8 +1016,10 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "25min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-fundamentals-06"],
-    "summary": "An introduction to the intersection of AI and mathematics — history, breakthroughs, and why it matters.",
+    "prerequisites": [
+      "ai-fundamentals-06"
+    ],
+    "summary": "An introduction to the intersection of AI and mathematics \u2014 history, breakthroughs, and why it matters.",
     "contentPath": "ai-for-mathematics/01-what-is-ai-for-mathematics.md"
   },
   "ai-for-math-02": {
@@ -881,8 +1029,10 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "30min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-math-01"],
-    "summary": "How to encode mathematical objects — numbers, symbols, graphs, equations — for neural networks.",
+    "prerequisites": [
+      "ai-for-math-01"
+    ],
+    "summary": "How to encode mathematical objects \u2014 numbers, symbols, graphs, equations \u2014 for neural networks.",
     "contentPath": "ai-for-mathematics/02-mathematical-representations-for-ai.md"
   },
   "ai-for-math-03": {
@@ -892,8 +1042,10 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "25min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-math-01"],
-    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam — key benchmarks for evaluating AI math.",
+    "prerequisites": [
+      "ai-for-math-01"
+    ],
+    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam \u2014 key benchmarks for evaluating AI math.",
     "contentPath": "ai-for-mathematics/03-mathematical-benchmarks-and-datasets.md"
   },
   "ai-for-math-04": {
@@ -903,8 +1055,10 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "30min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-math-02"],
-    "summary": "Combining neural networks with symbolic reasoning — neuro-symbolic integration and symbolic regression.",
+    "prerequisites": [
+      "ai-for-math-02"
+    ],
+    "summary": "Combining neural networks with symbolic reasoning \u2014 neuro-symbolic integration and symbolic regression.",
     "contentPath": "ai-for-mathematics/04-neural-symbolic-ai-for-mathematics.md"
   },
   "ai-for-math-05": {
@@ -914,7 +1068,9 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-math-04"],
+    "prerequisites": [
+      "ai-for-math-04"
+    ],
     "summary": "Historical approaches, formal proof assistants (Lean, Coq, Isabelle), and proof search strategies.",
     "contentPath": "ai-for-mathematics/05-introduction-to-automated-theorem-proving.md"
   },
@@ -925,7 +1081,10 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-math-03", "ai-for-math-05"],
+    "prerequisites": [
+      "ai-for-math-03",
+      "ai-for-math-05"
+    ],
     "summary": "Chain-of-Thought, Program-of-Thought, self-consistency, and multi-agent debate for math reasoning.",
     "contentPath": "ai-for-mathematics/06-llms-for-mathematical-reasoning.md"
   },
@@ -936,8 +1095,11 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-math-05", "ai-for-math-06"],
-    "summary": "Google DeepMind's AlphaProof — Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
+    "prerequisites": [
+      "ai-for-math-05",
+      "ai-for-math-06"
+    ],
+    "summary": "Google DeepMind's AlphaProof \u2014 Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
     "contentPath": "ai-for-mathematics/07-alphaproof-and-formal-theorem-proving.md"
   },
   "ai-for-math-08": {
@@ -947,7 +1109,9 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-math-06"],
+    "prerequisites": [
+      "ai-for-math-06"
+    ],
     "summary": "DeepMind's DD+LLM architecture solving olympiad geometry with 100M synthetic proofs.",
     "contentPath": "ai-for-mathematics/08-alphageometry-ai-for-geometry.md"
   },
@@ -958,7 +1122,9 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-math-06"],
+    "prerequisites": [
+      "ai-for-math-06"
+    ],
     "summary": "Evolutionary algorithms + LLMs for discovering new mathematical results, including the cap set problem.",
     "contentPath": "ai-for-mathematics/09-funsearch-evolutionary-ai-combinatorics.md"
   },
@@ -969,7 +1135,10 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "35min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-math-04", "ai-for-math-06"],
+    "prerequisites": [
+      "ai-for-math-04",
+      "ai-for-math-06"
+    ],
     "summary": "Deep learning for integration, ODE solving, symbolic manipulation, and comparison with CAS.",
     "contentPath": "ai-for-mathematics/10-neural-networks-symbolic-mathematics.md"
   },
@@ -980,11 +1149,13 @@
     "topicPath": "ai-for-mathematics",
     "estimatedTime": "30min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-math-07", "ai-for-math-09"],
+    "prerequisites": [
+      "ai-for-math-07",
+      "ai-for-math-09"
+    ],
     "summary": "AIMO Prize, autonomous conjecture generation, mathematical agents, and open problems.",
     "contentPath": "ai-for-mathematics/11-frontiers-future-directions-ai-math.md"
   },
-
   "ai-for-engineering-01": {
     "id": "ai-for-engineering-01",
     "title": "Introduction to AI for Engineering",
@@ -1003,7 +1174,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-engineering-01"],
+    "prerequisites": [
+      "ai-for-engineering-01"
+    ],
     "summary": "Topology optimization, generative design, structural health monitoring, and AI for seismic analysis.",
     "contentPath": "ai-for-engineering/02-ai-for-structural-engineering.md"
   },
@@ -1014,7 +1187,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-engineering-01"],
+    "prerequisites": [
+      "ai-for-engineering-01"
+    ],
     "summary": "Surrogate models for FEA, physics-informed neural networks for mechanics, and AI-accelerated CFD.",
     "contentPath": "ai-for-engineering/03-ai-for-mechanical-engineering.md"
   },
@@ -1025,7 +1200,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-engineering-01"],
+    "prerequisites": [
+      "ai-for-engineering-01"
+    ],
     "summary": "AI for chip design (EDA), circuit optimization, PCB routing, and power grid operation.",
     "contentPath": "ai-for-engineering/04-ai-for-electrical-engineering.md"
   },
@@ -1036,7 +1213,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-engineering-01"],
+    "prerequisites": [
+      "ai-for-engineering-01"
+    ],
     "summary": "Reinforcement learning for control, model predictive control with learned models, and sim-to-real transfer.",
     "contentPath": "ai-for-engineering/05-ai-for-control-systems-robotics.md"
   },
@@ -1047,7 +1226,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-engineering-03"],
+    "prerequisites": [
+      "ai-for-engineering-03"
+    ],
     "summary": "Predictive maintenance, computer vision quality control, additive manufacturing process optimization, and digital twins.",
     "contentPath": "ai-for-engineering/06-ai-for-manufacturing.md"
   },
@@ -1058,7 +1239,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-engineering-02"],
+    "prerequisites": [
+      "ai-for-engineering-02"
+    ],
     "summary": "AI for sketch understanding, parametric CAD automation, design search, and generative modeling of mechanical parts.",
     "contentPath": "ai-for-engineering/07-ai-for-cad.md"
   },
@@ -1069,7 +1252,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-engineering-01"],
+    "prerequisites": [
+      "ai-for-engineering-01"
+    ],
     "summary": "AI for traffic flow optimization, bridge inspection with drones and CV, water network optimization, and urban planning.",
     "contentPath": "ai-for-engineering/08-ai-for-civil-engineering.md"
   },
@@ -1080,7 +1265,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-engineering-03"],
+    "prerequisites": [
+      "ai-for-engineering-03"
+    ],
     "summary": "Microstructure-property linkages, CGCNNs, uncertainty quantification in materials simulation, and autonomous discovery.",
     "contentPath": "ai-for-engineering/09-ai-for-materials-engineering.md"
   },
@@ -1091,7 +1278,9 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-engineering-05"],
+    "prerequisites": [
+      "ai-for-engineering-05"
+    ],
     "summary": "End-to-end driving, NeRFs for autonomy, uncertainty-aware planning, and safety verification.",
     "contentPath": "ai-for-engineering/10-ai-for-autonomous-systems.md"
   },
@@ -1102,7 +1291,10 @@
     "topicPath": "ai-for-engineering",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-engineering-06", "ai-for-engineering-10"],
+    "prerequisites": [
+      "ai-for-engineering-06",
+      "ai-for-engineering-10"
+    ],
     "summary": "Foundation models for engineering, AI-augmented simulation, human-AI co-design, and self-driving labs.",
     "contentPath": "ai-for-engineering/11-frontiers-future-directions.md"
   },
@@ -1124,8 +1316,10 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01"],
-    "summary": "Deep learning for X-rays, CT, MRI, and pathology images — architectures, datasets, and clinical deployment.",
+    "prerequisites": [
+      "ai-for-medicine-01"
+    ],
+    "summary": "Deep learning for X-rays, CT, MRI, and pathology images \u2014 architectures, datasets, and clinical deployment.",
     "contentPath": "ai-for-medicine/02-medical-imaging-ai.md"
   },
   "ai-for-medicine-03": {
@@ -1135,7 +1329,9 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01"],
+    "prerequisites": [
+      "ai-for-medicine-01"
+    ],
     "summary": "AI systems that assist clinicians with diagnosis, treatment recommendations, and risk prediction.",
     "contentPath": "ai-for-medicine/03-clinical-decision-support-systems.md"
   },
@@ -1146,7 +1342,9 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01"],
+    "prerequisites": [
+      "ai-for-medicine-01"
+    ],
     "summary": "NLP for extracting information from clinical notes, medical literature, and patient-generated text.",
     "contentPath": "ai-for-medicine/04-clinical-nlp.md"
   },
@@ -1157,7 +1355,10 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-02"],
+    "prerequisites": [
+      "ai-for-medicine-01",
+      "ai-for-medicine-02"
+    ],
     "summary": "AI systems for dermatology, ophthalmology, radiology, and pathology diagnostics.",
     "contentPath": "ai-for-medicine/05-ai-for-diagnostics.md"
   },
@@ -1168,7 +1369,9 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01"],
+    "prerequisites": [
+      "ai-for-medicine-01"
+    ],
     "summary": "EHR data structures, clinical data warehouses, secondary use of EHR data for ML.",
     "contentPath": "ai-for-medicine/06-electronic-health-records-and-clinical-data.md"
   },
@@ -1179,7 +1382,9 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01"],
+    "prerequisites": [
+      "ai-for-medicine-01"
+    ],
     "summary": "AI for target identification, molecule design, clinical trial optimization, and pharmacovigilance.",
     "contentPath": "ai-for-medicine/07-drug-discovery-and-clinical-trial-ai.md"
   },
@@ -1190,7 +1395,10 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-07"],
+    "prerequisites": [
+      "ai-for-medicine-01",
+      "ai-for-medicine-07"
+    ],
     "summary": "AI for genomic analysis, personalized treatment, biomarker discovery, and population health.",
     "contentPath": "ai-for-medicine/08-precision-medicine-and-genomic-ai.md"
   },
@@ -1201,7 +1409,10 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-03"],
+    "prerequisites": [
+      "ai-for-medicine-01",
+      "ai-for-medicine-03"
+    ],
     "summary": "FDA approval, HIPAA, GDPR, algorithmic bias, and ethical frameworks for medical AI.",
     "contentPath": "ai-for-medicine/09-medical-ai-regulations-and-ethics.md"
   },
@@ -1212,8 +1423,133 @@
     "topicPath": "ai-for-medicine",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-medicine-01", "ai-for-medicine-05", "ai-for-medicine-09"],
+    "prerequisites": [
+      "ai-for-medicine-01",
+      "ai-for-medicine-05",
+      "ai-for-medicine-09"
+    ],
     "summary": "Foundation models for medicine, autonomous systems, wearables, federated learning, and future directions.",
     "contentPath": "ai-for-medicine/10-frontiers-in-medical-ai.md"
+  },
+  "ai-for-environmental-science-01": {
+    "id": "ai-for-environmental-science-01",
+    "title": "Introduction to AI for Environmental Science",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Introduction to AI applications in environmental science, key challenges, and the ecological forecasting revolution.",
+    "contentPath": "ai-for-environmental-science/01-introduction-to-ai-for-environmental-science.md"
+  },
+  "ai-for-environmental-science-02": {
+    "id": "ai-for-environmental-science-02",
+    "title": "Ecological Forecasting with Machine Learning",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Machine learning for ecological time-series forecasting, ensemble methods, and uncertainty quantification.",
+    "contentPath": "ai-for-environmental-science/02-ecological-forecasting-with-machine-learning.md"
+  },
+  "ai-for-environmental-science-03": {
+    "id": "ai-for-environmental-science-03",
+    "title": "AI for Biodiversity and Conservation",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Species distribution models, biodiversity indices, camera trap classification, and extinction risk prediction.",
+    "contentPath": "ai-for-environmental-science/03-ai-for-biodiversity-and-conservation.md"
+  },
+  "ai-for-environmental-science-04": {
+    "id": "ai-for-environmental-science-04",
+    "title": "AI for Extreme Weather and Natural Disasters",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Deep learning for floods, heatwaves, droughts, and the architecture of early warning systems.",
+    "contentPath": "ai-for-environmental-science/04-ai-for-extreme-weather-and-natural-disasters.md"
+  },
+  "ai-for-environmental-science-05": {
+    "id": "ai-for-environmental-science-05",
+    "title": "AI for Earth System Modeling",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Coupling neural networks with process-based Earth system models and neural operator methods.",
+    "contentPath": "ai-for-environmental-science/05-ai-for-earth-system-modeling.md"
+  },
+  "ai-for-environmental-science-06": {
+    "id": "ai-for-environmental-science-06",
+    "title": "AI for Water Resource Management",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Hydrological deep learning models for streamflow, groundwater, flood prediction, and water quality.",
+    "contentPath": "ai-for-environmental-science/06-ai-for-water-resource-management.md"
+  },
+  "ai-for-environmental-science-07": {
+    "id": "ai-for-environmental-science-07",
+    "title": "AI for Deforestation and Land Use Monitoring",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Satellite image analysis with CNNs and U-Net for deforestation alerts and land cover classification.",
+    "contentPath": "ai-for-environmental-science/07-ai-for-deforestation-and-land-use-monitoring.md"
+  },
+  "ai-for-environmental-science-08": {
+    "id": "ai-for-environmental-science-08",
+    "title": "AI for Ocean and Marine Systems",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "AI for marine ecosystems, fisheries management, ocean parameterization, and coral reef monitoring.",
+    "contentPath": "ai-for-environmental-science/08-ai-for-ocean-and-marine-systems.md"
+  },
+  "ai-for-environmental-science-09": {
+    "id": "ai-for-environmental-science-09",
+    "title": "AI for Sustainable Cities and Infrastructure",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Urban AI for heat islands, energy forecasting, emissions modeling, smart grids, and green infrastructure.",
+    "contentPath": "ai-for-environmental-science/09-ai-for-sustainable-cities-and-infrastructure.md"
+  },
+  "ai-for-environmental-science-10": {
+    "id": "ai-for-environmental-science-10",
+    "title": "Causal AI for Environmental Science",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Causal inference in ecology, counterfactual analysis, and AI for environmental policy evaluation.",
+    "contentPath": "ai-for-environmental-science/10-causal-ai-for-environmental-science.md"
+  },
+  "ai-for-environmental-science-11": {
+    "id": "ai-for-environmental-science-11",
+    "title": "Frontiers in AI for Environmental Science",
+    "topic": "ai-for-environmental-science",
+    "topicPath": "ai-for-environmental-science",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Digital twins for Earth, foundation models, climate mitigation AI, and ethical considerations.",
+    "contentPath": "ai-for-environmental-science/11-frontiers-in-ai-for-environmental-science.md"
   }
 }
