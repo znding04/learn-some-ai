@@ -17,7 +17,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Engineering    |      11 | All published         |
 | AI for Medicine        |      10 | All published         |
 | AI for Environmental Science |  11 | All published         |
-| **Total**             | **121** |                       |
+| AI for Neuroscience        |      11 | All published         |
+| **Total**             | **132** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -153,6 +154,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Causal AI for Environmental Science
 - [x] 11 — Frontiers in AI for Environmental Science
 
+### AI for Neuroscience
+- [x] 01 — Introduction to AI for Neuroscience
+- [x] 02 — Brain Imaging Modalities and AI
+- [x] 03 — Neural Decoding and Brain-Computer Interfaces
+- [x] 04 — Computational Neuroscience and Neural Modeling
+- [x] 05 — Connectomics: Mapping the Brain with AI
+- [x] 06 — Deep Learning for Neuroscience
+- [x] 07 — AI for Cognitive Modeling
+- [x] 08 — Neuroimaging Analysis with Machine Learning
+- [x] 09 — AI for Neurological Disorder Diagnosis
+- [x] 10 — Brain Age Estimation and Biomarkers
+- [x] 11 — Frontiers: AI-Native Brain Science
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -162,6 +176,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-10
+- Added AI for Neuroscience track: 11 lessons covering brain imaging AI, neural decoding/BCI, computational neuroscience, connectomics, deep learning for neuroimaging, cognitive modeling, neuroimaging ML, neurological diagnosis, brain age estimation, and AI-native brain science frontiers.
 
 ### 2026-05-09
 - Added AI for Environmental Science track: 11 lessons covering ecological forecasting, biodiversity/conservation, extreme weather prediction, Earth system modeling, water resources, deforestation monitoring, ocean/marine systems, sustainable cities, causal environmental AI, and frontiers.

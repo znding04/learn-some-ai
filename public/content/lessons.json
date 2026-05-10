@@ -1551,5 +1551,126 @@
     "prerequisites": [],
     "summary": "Digital twins for Earth, foundation models, climate mitigation AI, and ethical considerations.",
     "contentPath": "ai-for-environmental-science/11-frontiers-in-ai-for-environmental-science.md"
+  },
+  "ai-for-neuroscience-01": {
+    "id": "ai-for-neuroscience-01",
+    "title": "Introduction to AI for Neuroscience",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of how AI intersects with neuroscience — history, modalities, applications, and the unique challenges of neural data.",
+    "contentPath": "ai-for-neuroscience/01-introduction-to-ai-for-neuroscience.md"
+  },
+  "ai-for-neuroscience-02": {
+    "id": "ai-for-neuroscience-02",
+    "title": "Brain Imaging Modalities and AI",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-neuroscience-01"],
+    "summary": "MRI, fMRI, EEG, MEG, and PET imaging — their physical basis, resolution tradeoffs, and AI applications for each modality.",
+    "contentPath": "ai-for-neuroscience/02-brain-imaging-modalities-and-ai.md"
+  },
+  "ai-for-neuroscience-03": {
+    "id": "ai-for-neuroscience-03",
+    "title": "Neural Decoding and Brain-Computer Interfaces",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-neuroscience-02"],
+    "summary": "Reconstructing sensory experiences and motor intentions from brain activity — decoding algorithms, BCIs, and neural interfaces.",
+    "contentPath": "ai-for-neuroscience/03-neural-decoding-and-brain-computer-interfaces.md"
+  },
+  "ai-for-neuroscience-04": {
+    "id": "ai-for-neuroscience-04",
+    "title": "Computational Neuroscience and Neural Modeling",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-neuroscience-03"],
+    "summary": "Hodgkin-Huxley model, integrate-and-fire neurons, mean field models, neural dynamics, and AI optimization for model fitting.",
+    "contentPath": "ai-for-neuroscience/04-computational-neuroscience-and-neural-modeling.md"
+  },
+  "ai-for-neuroscience-05": {
+    "id": "ai-for-neuroscience-05",
+    "title": "Connectomics: Mapping the Brain with AI",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-neuroscience-04"],
+    "summary": "Electron microscopy reconstruction, U-Net segmentation, graph neural networks for brain connectivity, and the fly/worm connectome projects.",
+    "contentPath": "ai-for-neuroscience/05-connectomics-mapping-the-brain-with-ai.md"
+  },
+  "ai-for-neuroscience-06": {
+    "id": "ai-for-neuroscience-06",
+    "title": "Deep Learning for Neuroscience",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-neuroscience-02", "ai-for-neuroscience-03"],
+    "summary": "3D CNNs on neuroimaging data, recurrent models for neural dynamics, GNNs on brain graphs, transfer learning from BrainLM.",
+    "contentPath": "ai-for-neuroscience/06-deep-learning-for-neuroscience.md"
+  },
+  "ai-for-neuroscience-07": {
+    "id": "ai-for-neuroscience-07",
+    "title": "AI for Cognitive Modeling",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-neuroscience-06"],
+    "summary": "Drift diffusion models, Bayesian cognitive models, neural networks for attention/memory, and representational similarity analysis.",
+    "contentPath": "ai-for-neuroscience/07-ai-for-cognitive-modeling.md"
+  },
+  "ai-for-neuroscience-08": {
+    "id": "ai-for-neuroscience-08",
+    "title": "Neuroimaging Analysis with Machine Learning",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-neuroscience-02", "ai-for-neuroscience-06"],
+    "summary": "MVPA, searchlight decoding, RSA, ICA preprocessing, feature extraction, and nested cross-validation for neuroimaging ML.",
+    "contentPath": "ai-for-neuroscience/08-neuroimaging-analysis-with-ml.md"
+  },
+  "ai-for-neuroscience-09": {
+    "id": "ai-for-neuroscience-09",
+    "title": "AI for Neurological Disorder Diagnosis",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-neuroscience-08"],
+    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data — challenges of class imbalance and data harmonization.",
+    "contentPath": "ai-for-neuroscience/09-ai-for-neurological-disorder-diagnosis.md"
+  },
+  "ai-for-neuroscience-10": {
+    "id": "ai-for-neuroscience-10",
+    "title": "Brain Age Estimation and Biomarkers",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-neuroscience-08"],
+    "summary": "Brain age prediction from structural MRI using GPR and 3D CNNs, brain age delta as a biomarker for neurodegeneration.",
+    "contentPath": "ai-for-neuroscience/10-brain-age-estimation-and-biomarkers.md"
+  },
+  "ai-for-neuroscience-11": {
+    "id": "ai-for-neuroscience-11",
+    "title": "Frontiers: AI-Native Brain Science",
+    "topic": "ai-for-neuroscience",
+    "topicPath": "ai-for-neuroscience",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-neuroscience-09", "ai-for-neuroscience-10"],
+    "summary": "Foundation models for brain data, neural architecture search, closed-loop experiments, digital twins, and cognitive BCI.",
+    "contentPath": "ai-for-neuroscience/11-frontiers-in-ai-for-neuroscience.md"
   }
 }

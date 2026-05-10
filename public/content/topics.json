@@ -65,8 +65,15 @@
   {
     "id": "ai-for-environmental-science",
     "title": "AI for Environmental Science",
-    "icon": "\ud83c\udf0d",
-    "description": "AI transforming environmental science \u2014 from ecological forecasting to climate adaptation and conservation.",
+    "icon": "🌍",
+    "description": "AI transforming environmental science — from ecological forecasting to climate adaptation and conservation.",
     "path": "ai-for-environmental-science"
+  },
+  {
+    "id": "ai-for-neuroscience",
+    "title": "AI for Neuroscience",
+    "icon": "🧠",
+    "description": "AI transforming neuroscience — from brain imaging and neural decoding to computational neuroscience and cognitive modeling.",
+    "path": "ai-for-neuroscience"
   }
 ]
