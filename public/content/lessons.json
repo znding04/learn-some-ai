@@ -1672,5 +1672,126 @@
     "prerequisites": ["ai-for-neuroscience-09", "ai-for-neuroscience-10"],
     "summary": "Foundation models for brain data, neural architecture search, closed-loop experiments, digital twins, and cognitive BCI.",
     "contentPath": "ai-for-neuroscience/11-frontiers-in-ai-for-neuroscience.md"
+  },
+  "ai-for-finance-01": {
+    "id": "ai-for-finance-01",
+    "title": "Introduction to AI for Finance",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of AI applications in finance — from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
+    "contentPath": "ai-for-finance/01-introduction-to-ai-for-finance.md"
+  },
+  "ai-for-finance-02": {
+    "id": "ai-for-finance-02",
+    "title": "Financial Data and Representations",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-finance-01"],
+    "summary": "How financial data (OHLCV, order books, SEC filings) is represented and engineered for machine learning.",
+    "contentPath": "ai-for-finance/02-financial-data-and-representations.md"
+  },
+  "ai-for-finance-03": {
+    "id": "ai-for-finance-03",
+    "title": "Time Series Analysis for Financial Markets",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-finance-02"],
+    "summary": "Stationarity, ARIMA, GARCH for volatility modeling, and modern foundation models for financial time series.",
+    "contentPath": "ai-for-finance/03-time-series-analysis-for-financial-markets.md"
+  },
+  "ai-for-finance-04": {
+    "id": "ai-for-finance-04",
+    "title": "Machine Learning for Stock Prediction",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-finance-03"],
+    "summary": "From regression to deep learning for price prediction — walk-forward validation, look-ahead bias, and ensemble methods.",
+    "contentPath": "ai-for-finance/04-machine-learning-for-stock-prediction.md"
+  },
+  "ai-for-finance-05": {
+    "id": "ai-for-finance-05",
+    "title": "Reinforcement Learning for Trading",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-finance-04"],
+    "summary": "MDP formulation for trading, DQN and PPO agents, reward shaping, transaction costs, and the sim-to-real gap.",
+    "contentPath": "ai-for-finance/05-reinforcement-learning-for-trading.md"
+  },
+  "ai-for-finance-06": {
+    "id": "ai-for-finance-06",
+    "title": "Large Language Models for Finance (FinLLMs)",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-finance-05"],
+    "summary": "BloombergGPT, FinGPT, financial NLP tasks, fine-tuning on financial corpora, and RAG for SEC filing analysis.",
+    "contentPath": "ai-for-finance/06-large-language-models-for-finance.md"
+  },
+  "ai-for-finance-07": {
+    "id": "ai-for-finance-07",
+    "title": "Portfolio Optimization with AI",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-finance-06"],
+    "summary": "Markowitz mean-variance, Black-Litterman, risk parity, hierarchical risk parity, and ML-enhanced covariance estimation.",
+    "contentPath": "ai-for-finance/07-portfolio-optimization-with-ai.md"
+  },
+  "ai-for-finance-08": {
+    "id": "ai-for-finance-08",
+    "title": "Risk Management and Fraud Detection",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-finance-07"],
+    "summary": "Credit scoring with XGBoost, Value-at-Risk, anomaly detection, GNNs for transaction networks, class imbalance, and fraud detection.",
+    "contentPath": "ai-for-finance/08-risk-management-and-fraud-detection.md"
+  },
+  "ai-for-finance-09": {
+    "id": "ai-for-finance-09",
+    "title": "AI Agents in Financial Markets",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-finance-05", "ai-for-finance-08"],
+    "summary": "Autonomous trading agents, multi-agent market simulation, LLM-powered agents, and emergent market dynamics.",
+    "contentPath": "ai-for-finance/09-ai-agents-in-financial-markets.md"
+  },
+  "ai-for-finance-10": {
+    "id": "ai-for-finance-10",
+    "title": "Algorithmic Trading Systems",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-finance-09"],
+    "summary": "Production trading system architecture, backtesting, TWAP/VWAP execution, slippage modeling, and ML deployment.",
+    "contentPath": "ai-for-finance/10-algorithmic-trading-systems.md"
+  },
+  "ai-for-finance-11": {
+    "id": "ai-for-finance-11",
+    "title": "Frontiers: AI and Financial Stability",
+    "topic": "ai-for-finance",
+    "topicPath": "ai-for-finance",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-finance-09", "ai-for-finance-10"],
+    "summary": "Systemic risk from AI, regulatory challenges, model monoculture, DeFi, and future directions in AI for finance.",
+    "contentPath": "ai-for-finance/11-frontiers-ai-and-financial-stability.md"
   }
 }

@@ -75,5 +75,12 @@
     "icon": "🧠",
     "description": "AI transforming neuroscience — from brain imaging and neural decoding to computational neuroscience and cognitive modeling.",
     "path": "ai-for-neuroscience"
+  },
+  {
+    "id": "ai-for-finance",
+    "title": "AI for Finance",
+    "icon": "💰",
+    "description": "AI transforming finance — from algorithmic trading and portfolio optimization to risk management and financial stability.",
+    "path": "ai-for-finance"
   }
 ]

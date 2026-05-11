@@ -18,7 +18,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Medicine        |      10 | All published         |
 | AI for Environmental Science |  11 | All published         |
 | AI for Neuroscience        |      11 | All published         |
-| **Total**             | **132** |                       |
+| AI for Finance             |      11 | All published         |
+| **Total**             | **143** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -167,6 +168,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Brain Age Estimation and Biomarkers
 - [x] 11 — Frontiers: AI-Native Brain Science
 
+### AI for Finance
+- [x] 01 — Introduction to AI for Finance
+- [x] 02 — Financial Data and Representations
+- [x] 03 — Time Series Analysis for Financial Markets
+- [x] 04 — Machine Learning for Stock Prediction
+- [x] 05 — Reinforcement Learning for Trading
+- [x] 06 — Large Language Models for Finance (FinLLMs)
+- [x] 07 — Portfolio Optimization with AI
+- [x] 08 — Risk Management and Fraud Detection
+- [x] 09 — AI Agents in Financial Markets
+- [x] 10 — Algorithmic Trading Systems
+- [x] 11 — Frontiers: AI and Financial Stability
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -176,6 +190,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-11
+- Added AI for Finance track: 11 lessons covering intro to AI in finance, financial data representations, time series analysis, ML for stock prediction, RL for trading, FinLLMs, portfolio optimization, risk management/fraud detection, AI agents in markets, algorithmic trading systems, and AI financial stability frontiers.
 
 ### 2026-05-10
 - Added AI for Neuroscience track: 11 lessons covering brain imaging AI, neural decoding/BCI, computational neuroscience, connectomics, deep learning for neuroimaging, cognitive modeling, neuroimaging ML, neurological diagnosis, brain age estimation, and AI-native brain science frontiers.
