@@ -82,5 +82,12 @@
     "icon": "💰",
     "description": "AI transforming finance — from algorithmic trading and portfolio optimization to risk management and financial stability.",
     "path": "ai-for-finance"
+  },
+  {
+    "id": "ai-for-materials-science",
+    "title": "AI for Materials Science",
+    "icon": "🧪",
+    "description": "AI transforming materials science — from crystal structure prediction and materials informatics to self-driving laboratories and autonomous materials discovery.",
+    "path": "ai-for-materials-science"
   }
 ]

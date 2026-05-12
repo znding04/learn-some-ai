@@ -1,0 +1,107 @@
+## AI for Finance — Create Comprehensive Learning Materials
+
+### Context
+You are working on learn.ljding.app, a learning platform with 132+ AI lessons across 11 topics.
+The project is at /Users/znding04/Work/learn-some-ai
+
+### Domain: AI for Finance
+This is a NEW topic track to add. The platform already has:
+- AI Fundamentals, LLMs, AI Agents
+- AI for Biology, Physics, Chemistry, Mathematics, Engineering, Medicine, Environmental Science, Neuroscience
+
+### Research Insights (from arxiv and Google News)
+1. **FinLLMs** - Large language models specialized for finance
+2. **AI Forecasting Agents** - Foresight Arena benchmark for on-chain forecasting
+3. **Time Series Foundation Models** - ProbFM with uncertainty decomposition
+4. **RL for Portfolio Optimization** - Behaviorally informed deep RL with loss aversion
+5. **Stock Manipulation Detection** - AI for detecting social-media-influenced manipulation
+6. **Risk Assessment** - How AI can undermine or enhance financial stability
+
+---
+
+## Create 11 Lessons in `public/content/ai-for-finance/`
+
+### Beginner Level (Lessons 1-4)
+1. **Introduction to AI for Finance** - Overview of AI applications in finance, from algorithmic trading to risk management
+2. **Financial Data and Representations** - How financial data (prices, order books, SEC filings) is represented for ML
+3. **Time Series Analysis for Financial Markets** - Traditional and modern approaches to financial time series
+4. **Machine Learning for Stock Prediction** - From regression to deep learning for price prediction
+
+### Intermediate Level (Lessons 5-8)
+5. **Reinforcement Learning for Trading** - RL agents that learn to trade, portfolio optimization with RL
+6. **Large Language Models for Finance (FinLLMs)** - Specialized LLMs like FinGPT, BloombergGPT, FinLLM evolution
+7. **Portfolio Optimization with AI** - Modern portfolio theory meets machine learning, behavioral finance AI
+8. **Risk Management and Fraud Detection** - AI for credit scoring, anomaly detection, fraud detection
+
+### Advanced Level (Lessons 9-11)
+9. **AI Agents in Financial Markets** - Autonomous trading agents, agent-based market simulation
+10. **Algorithmic Trading Systems** - Building production trading systems, backtesting, execution
+11. **Frontiers: AI and Financial Stability** - AI systemic risk, regulatory considerations, future directions
+
+---
+
+## Lesson Structure (MUST follow exactly)
+
+Each lesson = self-contained Markdown file:
+
+```markdown
+---
+title: "Lesson Title"
+level: beginner|intermediate|advanced
+topic: ai-for-finance
+order: N
+---
+
+# Lesson Title
+
+## Overview
+[500-800 words of text-based explanation]
+
+## Key Concepts
+[Bullet points with detailed explanations]
+
+## Code Examples
+[Working code snippets with explanations]
+
+## Math/Formulas (KaTeX)
+$$formula$$ for block equations
+$inline$ for inline math
+
+## Diagrams
+[Use ```mermaid fenced blocks]
+
+## Exercises/Projects
+[Practical tasks]
+
+## Further Reading
+- [Optional video links at bottom ONLY]
+```
+
+---
+
+## Rules
+1. **Text-first**: Primary content = text explanations, code examples, math. Videos = supplementary ONLY.
+2. **Target**: 500-800 words per lesson
+3. **Math**: Use $inline$ and $$display$$ KaTeX notation
+4. **Diagrams**: Use ```mermaid fenced blocks with bold **Title** above
+5. **Code**: Working examples with explanations
+6. **Directory**: Create `public/content/ai-for-finance/` with lessons `01-`, `02-`, etc.
+7. **Register in lessons.json**: Add all 11 lessons to `public/content/lessons.json`
+8. **Register in topics.json**: Add `ai-for-finance` topic
+
+---
+
+## Implementation Steps
+
+1. Create directory: `public/content/ai-for-finance/`
+2. Write all 11 lesson .md files
+3. Update `public/content/lessons.json` to add all 11 lessons (follow existing format)
+4. Update `public/content/topics.json` to add the new topic
+5. Update `PROGRESS.md` to mark the new track
+
+---
+
+## Critical Rules
+- **ALWAYS `git pull origin main` BEFORE making any edits**
+- **Push changes when done**
+- **Report**: List all created lessons and confirm the track is complete

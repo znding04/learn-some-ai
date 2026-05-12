@@ -1793,5 +1793,126 @@
     "prerequisites": ["ai-for-finance-09", "ai-for-finance-10"],
     "summary": "Systemic risk from AI, regulatory challenges, model monoculture, DeFi, and future directions in AI for finance.",
     "contentPath": "ai-for-finance/11-frontiers-ai-and-financial-stability.md"
+  },
+  "ai-for-materials-science-01": {
+    "id": "ai-for-materials-science-01",
+    "title": "Introduction to AI for Materials Science",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "What is materials informatics, why ML for materials, length scales overview.",
+    "contentPath": "ai-for-materials-science/01-introduction-to-ai-for-materials-science.md"
+  },
+  "ai-for-materials-science-02": {
+    "id": "ai-for-materials-science-02",
+    "title": "Materials Representations and Descriptors",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-materials-science-01"],
+    "summary": "Composition-based features, structure-based features (crystal graphs, SOAP, Voronoi), fingerprinting methods.",
+    "contentPath": "ai-for-materials-science/02-materials-representations-and-descriptors.md"
+  },
+  "ai-for-materials-science-03": {
+    "id": "ai-for-materials-science-03",
+    "title": "Machine Learning for Materials Property Prediction",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-materials-science-01"],
+    "summary": "Supervised learning for bandgaps, formation energy, elastic moduli; key datasets (Materials Project, AFLOW, OQMD).",
+    "contentPath": "ai-for-materials-science/03-ml-for-materials-property-prediction.md"
+  },
+  "ai-for-materials-science-04": {
+    "id": "ai-for-materials-science-04",
+    "title": "Graph Neural Networks for Crystal Materials",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-materials-science-03"],
+    "summary": "Crystal graph convolutional networks, GNN architectures for periodic structures, CGCNN and beyond.",
+    "contentPath": "ai-for-materials-science/04-graph-neural-networks-for-crystal-materials.md"
+  },
+  "ai-for-materials-science-05": {
+    "id": "ai-for-materials-science-05",
+    "title": "Crystal Structure Prediction with ML",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-materials-science-04"],
+    "summary": "Energy landscape navigation, structure generation models, COMof and GNoME.",
+    "contentPath": "ai-for-materials-science/05-crystal-structure-prediction-with-ml.md"
+  },
+  "ai-for-materials-science-06": {
+    "id": "ai-for-materials-science-06",
+    "title": "Machine Learning Force Fields for Molecular Dynamics",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-materials-science-03"],
+    "summary": "MLIPs vs DFT accuracy, NequIP, MACE, equivariant models, fitting protocols.",
+    "contentPath": "ai-for-materials-science/06-ml-force-fields-for-molecular-dynamics.md"
+  },
+  "ai-for-materials-science-07": {
+    "id": "ai-for-materials-science-07",
+    "title": "Microstructure Analysis and Phase Mapping",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-materials-science-02"],
+    "summary": "ML for XRD patterns, phase identification, microstructure image analysis, orientation mapping.",
+    "contentPath": "ai-for-materials-science/07-microstructure-analysis-and-phase-mapping.md"
+  },
+  "ai-for-materials-science-08": {
+    "id": "ai-for-materials-science-08",
+    "title": "Multi-Scale Modeling in Materials Science",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-materials-science-03"],
+    "summary": "Connecting DFT, molecular dynamics, and phase field; hierarchical ML approaches bridging atomic to macroscopic scales.",
+    "contentPath": "ai-for-materials-science/08-multi-scale-modeling-in-materials-science.md"
+  },
+  "ai-for-materials-science-09": {
+    "id": "ai-for-materials-science-09",
+    "title": "High-Throughput Computational Screening",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-materials-science-08"],
+    "summary": "DFT plus ML screening workflows, descriptors for virtual screening, inverse design frameworks.",
+    "contentPath": "ai-for-materials-science/09-high-throughput-computational-screening.md"
+  },
+  "ai-for-materials-science-10": {
+    "id": "ai-for-materials-science-10",
+    "title": "Self-Driving Laboratories for Materials Discovery",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-materials-science-09"],
+    "summary": "Closed-loop autonomous experimentation, Bayesian optimization for materials, integration with automated labs.",
+    "contentPath": "ai-for-materials-science/10-self-driving-laboratories-for-materials-discovery.md"
+  },
+  "ai-for-materials-science-11": {
+    "id": "ai-for-materials-science-11",
+    "title": "Frontiers in AI for Materials Science",
+    "topic": "ai-for-materials-science",
+    "topicPath": "ai-for-materials-science",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-materials-science-10"],
+    "summary": "Foundation models for materials, generative metamaterial design, uncertainty-aware decision-making, sustainability.",
+    "contentPath": "ai-for-materials-science/11-frontiers-in-ai-for-materials-science.md"
   }
 }
