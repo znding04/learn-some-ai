@@ -19,7 +19,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Environmental Science |  11 | All published         |
 | AI for Neuroscience        |      11 | All published         |
 | AI for Finance             |      11 | All published         |
-| **Total**             | **143** |                       |
+| AI for Materials Science   |      11 | All published         |
+| **Total**             | **154** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -181,6 +182,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Algorithmic Trading Systems
 - [x] 11 — Frontiers: AI and Financial Stability
 
+### AI for Materials Science
+- [x] 01 — Introduction to AI for Materials Science
+- [x] 02 — Materials Representations and Descriptors
+- [x] 03 — Machine Learning for Materials Property Prediction
+- [x] 04 — Graph Neural Networks for Crystal Materials
+- [x] 05 — Crystal Structure Prediction with ML
+- [x] 06 — Machine Learning Force Fields for Molecular Dynamics
+- [x] 07 — Microstructure Analysis and Phase Mapping
+- [x] 08 — Multi-Scale Modeling in Materials Science
+- [x] 09 — High-Throughput Computational Screening
+- [x] 10 — Self-Driving Laboratories for Materials Discovery
+- [x] 11 — Frontiers in AI for Materials Science
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -190,6 +204,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-12
+- Added AI for Materials Science track: 11 lessons covering intro to materials informatics, representations and descriptors, property prediction, GNNs for crystals, crystal structure prediction, ML force fields, microstructure analysis, multi-scale modeling, high-throughput screening, self-driving laboratories, and frontiers.
 
 ### 2026-05-11
 - Added AI for Finance track: 11 lessons covering intro to AI in finance, financial data representations, time series analysis, ML for stock prediction, RL for trading, FinLLMs, portfolio optimization, risk management/fraud detection, AI agents in markets, algorithmic trading systems, and AI financial stability frontiers.
