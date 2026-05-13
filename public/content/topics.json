@@ -21,6 +21,13 @@
     "path": "ai-agents"
   },
   {
+    "id": "ai-for-astronomy",
+    "title": "AI for Astronomy",
+    "icon": "\ud83d\udd2d",
+    "description": "AI transforming astronomy \u2014 from galaxy classification and gravitational wave detection to exoplanet discovery and autonomous science agents.",
+    "path": "ai-for-astronomy"
+  },
+  {
     "id": "ai-for-biology",
     "title": "AI for Biology",
     "icon": "\ud83e\uddec",

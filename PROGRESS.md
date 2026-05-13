@@ -20,7 +20,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Neuroscience        |      11 | All published         |
 | AI for Finance             |      11 | All published         |
 | AI for Materials Science   |      11 | All published         |
-| **Total**             | **154** |                       |
+| AI for Astronomy           |      11 | All published         |
+| **Total**             | **165** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -195,6 +196,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Self-Driving Laboratories for Materials Discovery
 - [x] 11 — Frontiers in AI for Materials Science
 
+### AI for Astronomy
+- [x] 01 — Introduction to AI for Astronomy
+- [x] 02 — Galaxy Morphology and Classification with CNNs
+- [x] 03 — Gravitational Wave Detection with Deep Learning
+- [x] 04 — Exoplanet Detection: ML for Transit and Radial Velocity Data
+- [x] 05 — JWST Data Analysis: From Images to Discoveries
+- [x] 06 — Cosmological Simulations and AI Emulators
+- [x] 07 — Time-Domain Astronomy and Anomaly Detection
+- [x] 08 — AI for Radio Astronomy: Pulsars and Fast Radio Bursts
+- [x] 09 — Photometric Redshifts and Large Sky Surveys
+- [x] 10 — AI Cosmologists: Autonomous Science Agents for Astrophysics
+- [x] 11 — Frontiers in AI for Space Science
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -204,6 +218,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-13
+- Added AI for Astronomy track: 11 lessons covering intro to AI in astronomy, galaxy morphology with CNNs, gravitational wave detection, exoplanet detection, JWST data analysis, cosmological simulations and emulators, time-domain astronomy and anomaly detection, radio astronomy (pulsars/FRBs), photometric redshifts, autonomous AI cosmologists, and frontiers in AI for space science.
 
 ### 2026-05-12
 - Added AI for Materials Science track: 11 lessons covering intro to materials informatics, representations and descriptors, property prediction, GNNs for crystals, crystal structure prediction, ML force fields, microstructure analysis, multi-scale modeling, high-throughput screening, self-driving laboratories, and frontiers.

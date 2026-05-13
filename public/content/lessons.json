@@ -1914,5 +1914,126 @@
     "prerequisites": ["ai-for-materials-science-10"],
     "summary": "Foundation models for materials, generative metamaterial design, uncertainty-aware decision-making, sustainability.",
     "contentPath": "ai-for-materials-science/11-frontiers-in-ai-for-materials-science.md"
+  },
+  "ai-for-astronomy-01": {
+    "id": "ai-for-astronomy-01",
+    "title": "Introduction to AI for Astronomy",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "The astronomical data flood, why AI is essential, key domains from galaxy classification to exoplanets, and a brief history.",
+    "contentPath": "ai-for-astronomy/01-introduction-to-ai-for-astronomy.md"
+  },
+  "ai-for-astronomy-02": {
+    "id": "ai-for-astronomy-02",
+    "title": "Galaxy Morphology and Classification with CNNs",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "Galaxy Zoo, CNNs for morphological classification, transfer learning, rotation equivariance, and imbalanced datasets.",
+    "contentPath": "ai-for-astronomy/02-galaxy-morphology-classification-with-cnns.md"
+  },
+  "ai-for-astronomy-03": {
+    "id": "ai-for-astronomy-03",
+    "title": "Gravitational Wave Detection with Deep Learning",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "LIGO/Virgo data, matched filtering vs deep learning, CNN/RNN architectures for time-series GW detection.",
+    "contentPath": "ai-for-astronomy/03-gravitational-wave-detection-with-deep-learning.md"
+  },
+  "ai-for-astronomy-04": {
+    "id": "ai-for-astronomy-04",
+    "title": "Exoplanet Detection: ML for Transit and Radial Velocity Data",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "Transit photometry, radial velocity, light curve detrending, false positive classification, and phase folding.",
+    "contentPath": "ai-for-astronomy/04-exoplanet-detection-ml.md"
+  },
+  "ai-for-astronomy-05": {
+    "id": "ai-for-astronomy-05",
+    "title": "JWST Data Analysis: From Images to Discoveries",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-04"],
+    "summary": "JWST instruments, spectroscopic data processing, exoplanet atmospheres, high-redshift galaxies, and neural denoising.",
+    "contentPath": "ai-for-astronomy/05-jwst-data-analysis.md"
+  },
+  "ai-for-astronomy-06": {
+    "id": "ai-for-astronomy-06",
+    "title": "Cosmological Simulations and AI Emulators",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "N-body simulations, neural network emulators for dark matter power spectra, uncertainty quantification, and Bayesian inference.",
+    "contentPath": "ai-for-astronomy/06-cosmological-simulations-and-ai-emulators.md"
+  },
+  "ai-for-astronomy-07": {
+    "id": "ai-for-astronomy-07",
+    "title": "Time-Domain Astronomy and Anomaly Detection",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "LSST/Rubin alert streams, transient classifiers for supernovae and kilonovae, novelty detection, and alert brokers.",
+    "contentPath": "ai-for-astronomy/07-time-domain-astronomy-and-anomaly-detection.md"
+  },
+  "ai-for-astronomy-08": {
+    "id": "ai-for-astronomy-08",
+    "title": "AI for Radio Astronomy: Pulsars and Fast Radio Bursts",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "Pulsar timing, FRB detection, CNNs on spectrograms, RFI mitigation, and gravitational lensing with radio data.",
+    "contentPath": "ai-for-astronomy/08-ai-for-radio-astronomy.md"
+  },
+  "ai-for-astronomy-09": {
+    "id": "ai-for-astronomy-09",
+    "title": "Photometric Redshifts and Large Sky Surveys",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-astronomy-01"],
+    "summary": "Spectroscopic vs photometric redshifts, random forests and neural networks, self-organizing maps, and survey data from SDSS to Gaia.",
+    "contentPath": "ai-for-astronomy/09-photometric-redshifts-and-large-sky-surveys.md"
+  },
+  "ai-for-astronomy-10": {
+    "id": "ai-for-astronomy-10",
+    "title": "AI Cosmologists: Autonomous Science Agents for Astrophysics",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-astronomy-06", "ai-for-astronomy-09"],
+    "summary": "AI-driven hypothesis generation, symbolic regression, self-driving telescopes, and LLM-based science agents.",
+    "contentPath": "ai-for-astronomy/10-ai-cosmologists-autonomous-science-agents.md"
+  },
+  "ai-for-astronomy-11": {
+    "id": "ai-for-astronomy-11",
+    "title": "Frontiers in AI for Space Science",
+    "topic": "ai-for-astronomy",
+    "topicPath": "ai-for-astronomy",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-astronomy-10"],
+    "summary": "Foundation models for astronomy, uncertainty-aware AI, explainable AI, multi-messenger astronomy, and future telescopes.",
+    "contentPath": "ai-for-astronomy/11-frontiers-in-ai-for-space-science.md"
   }
 }
