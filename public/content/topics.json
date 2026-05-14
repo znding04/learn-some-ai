@@ -72,29 +72,36 @@
   {
     "id": "ai-for-environmental-science",
     "title": "AI for Environmental Science",
-    "icon": "🌍",
-    "description": "AI transforming environmental science — from ecological forecasting to climate adaptation and conservation.",
+    "icon": "\ud83c\udf0d",
+    "description": "AI transforming environmental science \u2014 from ecological forecasting to climate adaptation and conservation.",
     "path": "ai-for-environmental-science"
   },
   {
     "id": "ai-for-neuroscience",
     "title": "AI for Neuroscience",
-    "icon": "🧠",
-    "description": "AI transforming neuroscience — from brain imaging and neural decoding to computational neuroscience and cognitive modeling.",
+    "icon": "\ud83e\udde0",
+    "description": "AI transforming neuroscience \u2014 from brain imaging and neural decoding to computational neuroscience and cognitive modeling.",
     "path": "ai-for-neuroscience"
   },
   {
     "id": "ai-for-finance",
     "title": "AI for Finance",
-    "icon": "💰",
-    "description": "AI transforming finance — from algorithmic trading and portfolio optimization to risk management and financial stability.",
+    "icon": "\ud83d\udcb0",
+    "description": "AI transforming finance \u2014 from algorithmic trading and portfolio optimization to risk management and financial stability.",
     "path": "ai-for-finance"
   },
   {
     "id": "ai-for-materials-science",
     "title": "AI for Materials Science",
-    "icon": "🧪",
-    "description": "AI transforming materials science — from crystal structure prediction and materials informatics to self-driving laboratories and autonomous materials discovery.",
+    "icon": "\ud83e\uddea",
+    "description": "AI transforming materials science \u2014 from crystal structure prediction and materials informatics to self-driving laboratories and autonomous materials discovery.",
     "path": "ai-for-materials-science"
+  },
+  {
+    "id": "ai-for-computer-science",
+    "title": "AI for Computer Science",
+    "icon": "\ud83e\udd16",
+    "description": "AI transforming computer science \u2014 from code generation and bug detection to formal verification, autonomous coding agents, and AI-native programming language design.",
+    "path": "ai-for-computer-science"
   }
 ]

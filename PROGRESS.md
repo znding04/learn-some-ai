@@ -21,7 +21,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Finance             |      11 | All published         |
 | AI for Materials Science   |      11 | All published         |
 | AI for Astronomy           |      11 | All published         |
-| **Total**             | **165** |                       |
+| AI for Computer Science     |      11 | All published         |
+| **Total**             | **176** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -209,6 +210,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI Cosmologists: Autonomous Science Agents for Astrophysics
 - [x] 11 — Frontiers in AI for Space Science
 
+### AI for Computer Science
+- [x] 01 — Introduction to AI for Computer Science
+- [x] 02 — AI-Assisted Programming and Code Generation
+- [x] 03 — Code Search and Retrieval-Augmented Code Generation
+- [x] 04 — Automated Bug Detection and Code Repair
+- [x] 05 — AI for Code Review and Quality Analysis
+- [x] 06 — Algorithm Optimization and AI for HPC
+- [x] 07 — Automated Testing and Test Generation
+- [x] 08 — Formal Verification and AI
+- [x] 09 — AI for Software Engineering Research
+- [x] 10 — AI-Native Development: Autonomous Coding Agents
+- [x] 11 — Frontiers and Future Directions
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -218,6 +232,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-14
+- Added AI for Computer Science track: 11 lessons covering intro to AI in CS, AI-assisted programming, code search/RAG, bug detection/repair, code review/quality, algorithm optimization/HPC, automated testing, formal verification, software engineering research, autonomous coding agents, and frontiers.
 
 ### 2026-05-13
 - Added AI for Astronomy track: 11 lessons covering intro to AI in astronomy, galaxy morphology with CNNs, gravitational wave detection, exoplanet detection, JWST data analysis, cosmological simulations and emulators, time-domain astronomy and anomaly detection, radio astronomy (pulsars/FRBs), photometric redshifts, autonomous AI cosmologists, and frontiers in AI for space science.

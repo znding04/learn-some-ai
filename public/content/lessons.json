@@ -1560,7 +1560,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of how AI intersects with neuroscience — history, modalities, applications, and the unique challenges of neural data.",
+    "summary": "Overview of how AI intersects with neuroscience \u2014 history, modalities, applications, and the unique challenges of neural data.",
     "contentPath": "ai-for-neuroscience/01-introduction-to-ai-for-neuroscience.md"
   },
   "ai-for-neuroscience-02": {
@@ -1570,8 +1570,10 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-neuroscience-01"],
-    "summary": "MRI, fMRI, EEG, MEG, and PET imaging — their physical basis, resolution tradeoffs, and AI applications for each modality.",
+    "prerequisites": [
+      "ai-for-neuroscience-01"
+    ],
+    "summary": "MRI, fMRI, EEG, MEG, and PET imaging \u2014 their physical basis, resolution tradeoffs, and AI applications for each modality.",
     "contentPath": "ai-for-neuroscience/02-brain-imaging-modalities-and-ai.md"
   },
   "ai-for-neuroscience-03": {
@@ -1581,8 +1583,10 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-neuroscience-02"],
-    "summary": "Reconstructing sensory experiences and motor intentions from brain activity — decoding algorithms, BCIs, and neural interfaces.",
+    "prerequisites": [
+      "ai-for-neuroscience-02"
+    ],
+    "summary": "Reconstructing sensory experiences and motor intentions from brain activity \u2014 decoding algorithms, BCIs, and neural interfaces.",
     "contentPath": "ai-for-neuroscience/03-neural-decoding-and-brain-computer-interfaces.md"
   },
   "ai-for-neuroscience-04": {
@@ -1592,7 +1596,9 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "50min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-neuroscience-03"],
+    "prerequisites": [
+      "ai-for-neuroscience-03"
+    ],
     "summary": "Hodgkin-Huxley model, integrate-and-fire neurons, mean field models, neural dynamics, and AI optimization for model fitting.",
     "contentPath": "ai-for-neuroscience/04-computational-neuroscience-and-neural-modeling.md"
   },
@@ -1603,7 +1609,9 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-neuroscience-04"],
+    "prerequisites": [
+      "ai-for-neuroscience-04"
+    ],
     "summary": "Electron microscopy reconstruction, U-Net segmentation, graph neural networks for brain connectivity, and the fly/worm connectome projects.",
     "contentPath": "ai-for-neuroscience/05-connectomics-mapping-the-brain-with-ai.md"
   },
@@ -1614,7 +1622,10 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-neuroscience-02", "ai-for-neuroscience-03"],
+    "prerequisites": [
+      "ai-for-neuroscience-02",
+      "ai-for-neuroscience-03"
+    ],
     "summary": "3D CNNs on neuroimaging data, recurrent models for neural dynamics, GNNs on brain graphs, transfer learning from BrainLM.",
     "contentPath": "ai-for-neuroscience/06-deep-learning-for-neuroscience.md"
   },
@@ -1625,7 +1636,9 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-neuroscience-06"],
+    "prerequisites": [
+      "ai-for-neuroscience-06"
+    ],
     "summary": "Drift diffusion models, Bayesian cognitive models, neural networks for attention/memory, and representational similarity analysis.",
     "contentPath": "ai-for-neuroscience/07-ai-for-cognitive-modeling.md"
   },
@@ -1636,7 +1649,10 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-neuroscience-02", "ai-for-neuroscience-06"],
+    "prerequisites": [
+      "ai-for-neuroscience-02",
+      "ai-for-neuroscience-06"
+    ],
     "summary": "MVPA, searchlight decoding, RSA, ICA preprocessing, feature extraction, and nested cross-validation for neuroimaging ML.",
     "contentPath": "ai-for-neuroscience/08-neuroimaging-analysis-with-ml.md"
   },
@@ -1647,8 +1663,10 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-neuroscience-08"],
-    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data — challenges of class imbalance and data harmonization.",
+    "prerequisites": [
+      "ai-for-neuroscience-08"
+    ],
+    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data \u2014 challenges of class imbalance and data harmonization.",
     "contentPath": "ai-for-neuroscience/09-ai-for-neurological-disorder-diagnosis.md"
   },
   "ai-for-neuroscience-10": {
@@ -1658,7 +1676,9 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-neuroscience-08"],
+    "prerequisites": [
+      "ai-for-neuroscience-08"
+    ],
     "summary": "Brain age prediction from structural MRI using GPR and 3D CNNs, brain age delta as a biomarker for neurodegeneration.",
     "contentPath": "ai-for-neuroscience/10-brain-age-estimation-and-biomarkers.md"
   },
@@ -1669,7 +1689,10 @@
     "topicPath": "ai-for-neuroscience",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-neuroscience-09", "ai-for-neuroscience-10"],
+    "prerequisites": [
+      "ai-for-neuroscience-09",
+      "ai-for-neuroscience-10"
+    ],
     "summary": "Foundation models for brain data, neural architecture search, closed-loop experiments, digital twins, and cognitive BCI.",
     "contentPath": "ai-for-neuroscience/11-frontiers-in-ai-for-neuroscience.md"
   },
@@ -1681,7 +1704,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of AI applications in finance — from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
+    "summary": "Overview of AI applications in finance \u2014 from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
     "contentPath": "ai-for-finance/01-introduction-to-ai-for-finance.md"
   },
   "ai-for-finance-02": {
@@ -1691,7 +1714,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-finance-01"],
+    "prerequisites": [
+      "ai-for-finance-01"
+    ],
     "summary": "How financial data (OHLCV, order books, SEC filings) is represented and engineered for machine learning.",
     "contentPath": "ai-for-finance/02-financial-data-and-representations.md"
   },
@@ -1702,7 +1727,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-finance-02"],
+    "prerequisites": [
+      "ai-for-finance-02"
+    ],
     "summary": "Stationarity, ARIMA, GARCH for volatility modeling, and modern foundation models for financial time series.",
     "contentPath": "ai-for-finance/03-time-series-analysis-for-financial-markets.md"
   },
@@ -1713,8 +1740,10 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-finance-03"],
-    "summary": "From regression to deep learning for price prediction — walk-forward validation, look-ahead bias, and ensemble methods.",
+    "prerequisites": [
+      "ai-for-finance-03"
+    ],
+    "summary": "From regression to deep learning for price prediction \u2014 walk-forward validation, look-ahead bias, and ensemble methods.",
     "contentPath": "ai-for-finance/04-machine-learning-for-stock-prediction.md"
   },
   "ai-for-finance-05": {
@@ -1724,7 +1753,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-finance-04"],
+    "prerequisites": [
+      "ai-for-finance-04"
+    ],
     "summary": "MDP formulation for trading, DQN and PPO agents, reward shaping, transaction costs, and the sim-to-real gap.",
     "contentPath": "ai-for-finance/05-reinforcement-learning-for-trading.md"
   },
@@ -1735,7 +1766,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-finance-05"],
+    "prerequisites": [
+      "ai-for-finance-05"
+    ],
     "summary": "BloombergGPT, FinGPT, financial NLP tasks, fine-tuning on financial corpora, and RAG for SEC filing analysis.",
     "contentPath": "ai-for-finance/06-large-language-models-for-finance.md"
   },
@@ -1746,7 +1779,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-finance-06"],
+    "prerequisites": [
+      "ai-for-finance-06"
+    ],
     "summary": "Markowitz mean-variance, Black-Litterman, risk parity, hierarchical risk parity, and ML-enhanced covariance estimation.",
     "contentPath": "ai-for-finance/07-portfolio-optimization-with-ai.md"
   },
@@ -1757,7 +1792,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-finance-07"],
+    "prerequisites": [
+      "ai-for-finance-07"
+    ],
     "summary": "Credit scoring with XGBoost, Value-at-Risk, anomaly detection, GNNs for transaction networks, class imbalance, and fraud detection.",
     "contentPath": "ai-for-finance/08-risk-management-and-fraud-detection.md"
   },
@@ -1768,7 +1805,10 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-finance-05", "ai-for-finance-08"],
+    "prerequisites": [
+      "ai-for-finance-05",
+      "ai-for-finance-08"
+    ],
     "summary": "Autonomous trading agents, multi-agent market simulation, LLM-powered agents, and emergent market dynamics.",
     "contentPath": "ai-for-finance/09-ai-agents-in-financial-markets.md"
   },
@@ -1779,7 +1819,9 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-finance-09"],
+    "prerequisites": [
+      "ai-for-finance-09"
+    ],
     "summary": "Production trading system architecture, backtesting, TWAP/VWAP execution, slippage modeling, and ML deployment.",
     "contentPath": "ai-for-finance/10-algorithmic-trading-systems.md"
   },
@@ -1790,7 +1832,10 @@
     "topicPath": "ai-for-finance",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-finance-09", "ai-for-finance-10"],
+    "prerequisites": [
+      "ai-for-finance-09",
+      "ai-for-finance-10"
+    ],
     "summary": "Systemic risk from AI, regulatory challenges, model monoculture, DeFi, and future directions in AI for finance.",
     "contentPath": "ai-for-finance/11-frontiers-ai-and-financial-stability.md"
   },
@@ -1812,7 +1857,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "35min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-materials-science-01"],
+    "prerequisites": [
+      "ai-for-materials-science-01"
+    ],
     "summary": "Composition-based features, structure-based features (crystal graphs, SOAP, Voronoi), fingerprinting methods.",
     "contentPath": "ai-for-materials-science/02-materials-representations-and-descriptors.md"
   },
@@ -1823,7 +1870,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "40min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-materials-science-01"],
+    "prerequisites": [
+      "ai-for-materials-science-01"
+    ],
     "summary": "Supervised learning for bandgaps, formation energy, elastic moduli; key datasets (Materials Project, AFLOW, OQMD).",
     "contentPath": "ai-for-materials-science/03-ml-for-materials-property-prediction.md"
   },
@@ -1834,7 +1883,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-materials-science-03"],
+    "prerequisites": [
+      "ai-for-materials-science-03"
+    ],
     "summary": "Crystal graph convolutional networks, GNN architectures for periodic structures, CGCNN and beyond.",
     "contentPath": "ai-for-materials-science/04-graph-neural-networks-for-crystal-materials.md"
   },
@@ -1845,7 +1896,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-materials-science-04"],
+    "prerequisites": [
+      "ai-for-materials-science-04"
+    ],
     "summary": "Energy landscape navigation, structure generation models, COMof and GNoME.",
     "contentPath": "ai-for-materials-science/05-crystal-structure-prediction-with-ml.md"
   },
@@ -1856,7 +1909,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-materials-science-03"],
+    "prerequisites": [
+      "ai-for-materials-science-03"
+    ],
     "summary": "MLIPs vs DFT accuracy, NequIP, MACE, equivariant models, fitting protocols.",
     "contentPath": "ai-for-materials-science/06-ml-force-fields-for-molecular-dynamics.md"
   },
@@ -1867,7 +1922,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-materials-science-02"],
+    "prerequisites": [
+      "ai-for-materials-science-02"
+    ],
     "summary": "ML for XRD patterns, phase identification, microstructure image analysis, orientation mapping.",
     "contentPath": "ai-for-materials-science/07-microstructure-analysis-and-phase-mapping.md"
   },
@@ -1878,7 +1935,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "50min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-materials-science-03"],
+    "prerequisites": [
+      "ai-for-materials-science-03"
+    ],
     "summary": "Connecting DFT, molecular dynamics, and phase field; hierarchical ML approaches bridging atomic to macroscopic scales.",
     "contentPath": "ai-for-materials-science/08-multi-scale-modeling-in-materials-science.md"
   },
@@ -1889,7 +1948,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-materials-science-08"],
+    "prerequisites": [
+      "ai-for-materials-science-08"
+    ],
     "summary": "DFT plus ML screening workflows, descriptors for virtual screening, inverse design frameworks.",
     "contentPath": "ai-for-materials-science/09-high-throughput-computational-screening.md"
   },
@@ -1900,7 +1961,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-materials-science-09"],
+    "prerequisites": [
+      "ai-for-materials-science-09"
+    ],
     "summary": "Closed-loop autonomous experimentation, Bayesian optimization for materials, integration with automated labs.",
     "contentPath": "ai-for-materials-science/10-self-driving-laboratories-for-materials-discovery.md"
   },
@@ -1911,7 +1974,9 @@
     "topicPath": "ai-for-materials-science",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-materials-science-10"],
+    "prerequisites": [
+      "ai-for-materials-science-10"
+    ],
     "summary": "Foundation models for materials, generative metamaterial design, uncertainty-aware decision-making, sustainability.",
     "contentPath": "ai-for-materials-science/11-frontiers-in-ai-for-materials-science.md"
   },
@@ -1933,7 +1998,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "Galaxy Zoo, CNNs for morphological classification, transfer learning, rotation equivariance, and imbalanced datasets.",
     "contentPath": "ai-for-astronomy/02-galaxy-morphology-classification-with-cnns.md"
   },
@@ -1944,7 +2011,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "LIGO/Virgo data, matched filtering vs deep learning, CNN/RNN architectures for time-series GW detection.",
     "contentPath": "ai-for-astronomy/03-gravitational-wave-detection-with-deep-learning.md"
   },
@@ -1955,7 +2024,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "Transit photometry, radial velocity, light curve detrending, false positive classification, and phase folding.",
     "contentPath": "ai-for-astronomy/04-exoplanet-detection-ml.md"
   },
@@ -1966,7 +2037,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-04"],
+    "prerequisites": [
+      "ai-for-astronomy-04"
+    ],
     "summary": "JWST instruments, spectroscopic data processing, exoplanet atmospheres, high-redshift galaxies, and neural denoising.",
     "contentPath": "ai-for-astronomy/05-jwst-data-analysis.md"
   },
@@ -1977,7 +2050,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "50min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "N-body simulations, neural network emulators for dark matter power spectra, uncertainty quantification, and Bayesian inference.",
     "contentPath": "ai-for-astronomy/06-cosmological-simulations-and-ai-emulators.md"
   },
@@ -1988,7 +2063,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "LSST/Rubin alert streams, transient classifiers for supernovae and kilonovae, novelty detection, and alert brokers.",
     "contentPath": "ai-for-astronomy/07-time-domain-astronomy-and-anomaly-detection.md"
   },
@@ -1999,7 +2076,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "45min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "Pulsar timing, FRB detection, CNNs on spectrograms, RFI mitigation, and gravitational lensing with radio data.",
     "contentPath": "ai-for-astronomy/08-ai-for-radio-astronomy.md"
   },
@@ -2010,7 +2089,9 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "40min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-astronomy-01"],
+    "prerequisites": [
+      "ai-for-astronomy-01"
+    ],
     "summary": "Spectroscopic vs photometric redshifts, random forests and neural networks, self-organizing maps, and survey data from SDSS to Gaia.",
     "contentPath": "ai-for-astronomy/09-photometric-redshifts-and-large-sky-surveys.md"
   },
@@ -2021,7 +2102,10 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "45min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-astronomy-06", "ai-for-astronomy-09"],
+    "prerequisites": [
+      "ai-for-astronomy-06",
+      "ai-for-astronomy-09"
+    ],
     "summary": "AI-driven hypothesis generation, symbolic regression, self-driving telescopes, and LLM-based science agents.",
     "contentPath": "ai-for-astronomy/10-ai-cosmologists-autonomous-science-agents.md"
   },
@@ -2032,8 +2116,155 @@
     "topicPath": "ai-for-astronomy",
     "estimatedTime": "40min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-astronomy-10"],
+    "prerequisites": [
+      "ai-for-astronomy-10"
+    ],
     "summary": "Foundation models for astronomy, uncertainty-aware AI, explainable AI, multi-messenger astronomy, and future telescopes.",
     "contentPath": "ai-for-astronomy/11-frontiers-in-ai-for-space-science.md"
+  },
+  "ai-for-computer-science-01": {
+    "id": "ai-for-computer-science-01",
+    "title": "Introduction to AI for Computer Science",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "AI's transforming role in software development \u2014 from code generation to autonomous coding agents.",
+    "contentPath": "ai-for-computer-science/01-introduction-to-ai-for-computer-science.md"
+  },
+  "ai-for-computer-science-02": {
+    "id": "ai-for-computer-science-02",
+    "title": "AI-Assisted Programming and Code Generation",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-computer-science-01"
+    ],
+    "summary": "GitHub Copilot, Codeium, and LLM-based code completion \u2014 how they work and their limitations.",
+    "contentPath": "ai-for-computer-science/02-ai-assisted-programming-and-code-generation.md"
+  },
+  "ai-for-computer-science-03": {
+    "id": "ai-for-computer-science-03",
+    "title": "Code Search and Retrieval-Augmented Code Generation",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-computer-science-01",
+      "ai-for-computer-science-02"
+    ],
+    "summary": "RAG for code, semantic code search, and tools like Sourcegraph and CodeQL.",
+    "contentPath": "ai-for-computer-science/03-code-search-and-retrieval-augmented-code-generation.md"
+  },
+  "ai-for-computer-science-04": {
+    "id": "ai-for-computer-science-04",
+    "title": "Automated Bug Detection and Code Repair",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-computer-science-01"
+    ],
+    "summary": "AI for bug detection, self-healing code systems, and automated repair and refactoring.",
+    "contentPath": "ai-for-computer-science/04-automated-bug-detection-and-code-repair.md"
+  },
+  "ai-for-computer-science-05": {
+    "id": "ai-for-computer-science-05",
+    "title": "AI for Code Review and Quality Analysis",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-computer-science-01",
+      "ai-for-computer-science-04"
+    ],
+    "summary": "Automated code review, technical debt detection, and code smell analysis with LLMs.",
+    "contentPath": "ai-for-computer-science/05-ai-for-code-review-and-quality-analysis.md"
+  },
+  "ai-for-computer-science-06": {
+    "id": "ai-for-computer-science-06",
+    "title": "Algorithm Optimization and AI for HPC",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-computer-science-01",
+      "ai-fundamentals-03"
+    ],
+    "summary": "AI for algorithm discovery, AlphaDev-style optimization, and AI-driven HPC.",
+    "contentPath": "ai-for-computer-science/06-algorithm-optimization-and-ai-for-hpc.md"
+  },
+  "ai-for-computer-science-07": {
+    "id": "ai-for-computer-science-07",
+    "title": "Automated Testing and Test Generation",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-computer-science-01"
+    ],
+    "summary": "AI-generated unit tests, property-based testing, and AI-guided fuzzing.",
+    "contentPath": "ai-for-computer-science/07-automated-testing-and-test-generation.md"
+  },
+  "ai-for-computer-science-08": {
+    "id": "ai-for-computer-science-08",
+    "title": "Formal Verification and AI",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-computer-science-01"
+    ],
+    "summary": "AI-assisted theorem proving, LLM-based formal verification, and program synthesis.",
+    "contentPath": "ai-for-computer-science/08-formal-verification-and-ai.md"
+  },
+  "ai-for-computer-science-09": {
+    "id": "ai-for-computer-science-09",
+    "title": "AI for Software Engineering Research",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "35min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-computer-science-01"
+    ],
+    "summary": "Mining software repositories, defect prediction, and AI for documentation.",
+    "contentPath": "ai-for-computer-science/09-ai-for-software-engineering-research.md"
+  },
+  "ai-for-computer-science-10": {
+    "id": "ai-for-computer-science-10",
+    "title": "AI-Native Development: Autonomous Coding Agents",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-computer-science-01",
+      "ai-for-computer-science-02"
+    ],
+    "summary": "Devin, Claude Code, and autonomous coding agents for end-to-end software development.",
+    "contentPath": "ai-for-computer-science/10-ai-native-development-autonomous-coding-agents.md"
+  },
+  "ai-for-computer-science-11": {
+    "id": "ai-for-computer-science-11",
+    "title": "Frontiers and Future Directions",
+    "topic": "ai-for-computer-science",
+    "topicPath": "ai-for-computer-science",
+    "estimatedTime": "35min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-computer-science-01"
+    ],
+    "summary": "AI-native programming languages, compiler optimization, IP concerns, and the future of software engineering.",
+    "contentPath": "ai-for-computer-science/11-frontiers-and-future-directions.md"
   }
 }
