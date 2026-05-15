@@ -22,7 +22,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Materials Science   |      11 | All published         |
 | AI for Astronomy           |      11 | All published         |
 | AI for Computer Science     |      11 | All published         |
-| **Total**             | **176** |                       |
+| AI for Agriculture          |      11 | All published         |
+| **Total**             | **187** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -223,6 +224,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI-Native Development: Autonomous Coding Agents
 - [x] 11 — Frontiers and Future Directions
 
+### AI for Agriculture
+- [x] 01 — Introduction to AI for Agriculture
+- [x] 02 — Agricultural Data and Remote Sensing
+- [x] 03 — Key Datasets and Benchmarks in Agricultural AI
+- [x] 04 — Crop Health Monitoring with Deep Learning
+- [x] 05 — Yield Prediction and Crop Forecasting
+- [x] 06 — Weed Detection and Integrated Pest Management
+- [x] 07 — Autonomous Farm Machinery and Robotics
+- [x] 08 — Soil Health, Water Management, and Precision Irrigation
+- [x] 09 — Livestock Monitoring and Precision Animal Husbandry
+- [x] 10 — Self-Driving Farms and Agricultural Agents
+- [x] 11 — Frontiers in AI for Agriculture
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -232,6 +246,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-15
+- Added AI for Agriculture track: 11 lessons covering intro to AI in agriculture, agricultural data and remote sensing, key datasets/benchmarks, crop health monitoring with deep learning, yield prediction, weed detection and pest management, autonomous farm machinery and robotics, soil health and precision irrigation, livestock monitoring, self-driving farms and agricultural agents, and frontiers in AI for agriculture.
 
 ### 2026-05-14
 - Added AI for Computer Science track: 11 lessons covering intro to AI in CS, AI-assisted programming, code search/RAG, bug detection/repair, code review/quality, algorithm optimization/HPC, automated testing, formal verification, software engineering research, autonomous coding agents, and frontiers.

@@ -2266,5 +2266,151 @@
     ],
     "summary": "AI-native programming languages, compiler optimization, IP concerns, and the future of software engineering.",
     "contentPath": "ai-for-computer-science/11-frontiers-and-future-directions.md"
+  },
+  "ai-for-agriculture-01": {
+    "id": "ai-for-agriculture-01",
+    "title": "Introduction to AI for Agriculture",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "What is AI in agriculture? History, global food security challenges, the precision agriculture revolution, and key applications overview.",
+    "contentPath": "ai-for-agriculture/01-introduction-to-ai-for-agriculture.md"
+  },
+  "ai-for-agriculture-02": {
+    "id": "ai-for-agriculture-02",
+    "title": "Agricultural Data and Remote Sensing",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-agriculture-01"
+    ],
+    "summary": "Data sources in agriculture: UAV/drone imagery, satellite imagery, multispectral sensors, IoT soil sensors, weather data, and GPS guidance.",
+    "contentPath": "ai-for-agriculture/02-agricultural-data-and-remote-sensing.md"
+  },
+  "ai-for-agriculture-03": {
+    "id": "ai-for-agriculture-03",
+    "title": "Key Datasets and Benchmarks in Agricultural AI",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-agriculture-01"
+    ],
+    "summary": "Major datasets and benchmarks for crop health, yield prediction, weed detection, and land cover classification.",
+    "contentPath": "ai-for-agriculture/03-key-datasets-and-benchmarks-in-agricultural-ai.md"
+  },
+  "ai-for-agriculture-04": {
+    "id": "ai-for-agriculture-04",
+    "title": "Crop Health Monitoring with Deep Learning",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-agriculture-01",
+      "ai-for-agriculture-02"
+    ],
+    "summary": "CNNs and Vision Transformers for crop disease identification, nutrient deficiency detection, and pest damage assessment.",
+    "contentPath": "ai-for-agriculture/04-crop-health-monitoring-with-deep-learning.md"
+  },
+  "ai-for-agriculture-05": {
+    "id": "ai-for-agriculture-05",
+    "title": "Yield Prediction and Crop Forecasting",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-agriculture-01",
+      "ai-for-agriculture-02"
+    ],
+    "summary": "Predicting crop yields from satellite imagery, weather data, and soil sensors using regression, random forests, and neural networks.",
+    "contentPath": "ai-for-agriculture/05-yield-prediction-and-crop-forecasting.md"
+  },
+  "ai-for-agriculture-06": {
+    "id": "ai-for-agriculture-06",
+    "title": "Weed Detection and Integrated Pest Management",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-agriculture-01",
+      "ai-for-agriculture-04"
+    ],
+    "summary": "Object detection models (YOLO, Faster R-CNN) for weed identification and autonomous precision spraying systems.",
+    "contentPath": "ai-for-agriculture/06-weed-detection-and-integrated-pest-management.md"
+  },
+  "ai-for-agriculture-07": {
+    "id": "ai-for-agriculture-07",
+    "title": "Autonomous Farm Machinery and Robotics",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-agriculture-01"
+    ],
+    "summary": "AI for autonomous tractors, robotic pickers, path planning, SLAM, and real-world agricultural robotics deployments.",
+    "contentPath": "ai-for-agriculture/07-autonomous-farm-machinery-and-robotics.md"
+  },
+  "ai-for-agriculture-08": {
+    "id": "ai-for-agriculture-08",
+    "title": "Soil Health, Water Management, and Precision Irrigation",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-agriculture-01",
+      "ai-for-agriculture-02"
+    ],
+    "summary": "ML for soil moisture prediction, nutrient estimation, precision irrigation scheduling, and sustainable water use optimization.",
+    "contentPath": "ai-for-agriculture/08-soil-health-water-management-and-precision-irrigation.md"
+  },
+  "ai-for-agriculture-09": {
+    "id": "ai-for-agriculture-09",
+    "title": "Livestock Monitoring and Precision Animal Husbandry",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-agriculture-01"
+    ],
+    "summary": "Computer vision for animal welfare monitoring, behavior recognition, weight estimation, and precision livestock farming with sensor fusion.",
+    "contentPath": "ai-for-agriculture/09-livestock-monitoring-and-precision-animal-husbandry.md"
+  },
+  "ai-for-agriculture-10": {
+    "id": "ai-for-agriculture-10",
+    "title": "Self-Driving Farms and Agricultural Agents",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "45-60 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-agriculture-01",
+      "ai-for-agriculture-07"
+    ],
+    "summary": "Multi-agent systems for farm management, LLM-powered agricultural advisors, and real-time decision making for planting, irrigation, and harvesting.",
+    "contentPath": "ai-for-agriculture/10-self-driving-farms-and-agricultural-agents.md"
+  },
+  "ai-for-agriculture-11": {
+    "id": "ai-for-agriculture-11",
+    "title": "Frontiers in AI for Agriculture",
+    "topic": "ai-for-agriculture",
+    "topicPath": "ai-for-agriculture",
+    "estimatedTime": "45-60 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-agriculture-01"
+    ],
+    "summary": "Generative AI for crop design, vertical farming, blockchain + AI for supply chain traceability, climate adaptation, and autonomous greenhouses.",
+    "contentPath": "ai-for-agriculture/11-frontiers-in-ai-for-agriculture.md"
   }
 }
