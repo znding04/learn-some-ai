@@ -237,6 +237,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Self-Driving Farms and Agricultural Agents
 - [x] 11 — Frontiers in AI for Agriculture
 
+### AI for Education
+- [x] 01 — Introduction to AI for Education
+- [x] 02 — Intelligent Tutoring Systems
+- [x] 03 — Adaptive Learning Platforms
+- [x] 04 — NLP for Education
+- [x] 05 — AI for STEM Education
+- [x] 06 — AI for Code Education
+- [x] 07 — Large Language Models as Tutors
+- [x] 08 — AI for Educational Assessment
+- [x] 09 — Educational Data Mining
+- [x] 10 — Ethics and Equity in AI Education
+- [x] 11 — Frontiers: AI-Native Education
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -246,6 +259,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-16
+- Added AI for Education track: 11 lessons covering intro to AIED, intelligent tutoring systems, adaptive learning platforms, NLP for education, AI for STEM education, AI for code education, LLMs as tutors, educational assessment, educational data mining, ethics and equity, and frontiers in AI-native education.
 
 ### 2026-05-15
 - Added AI for Agriculture track: 11 lessons covering intro to AI in agriculture, agricultural data and remote sensing, key datasets/benchmarks, crop health monitoring with deep learning, yield prediction, weed detection and pest management, autonomous farm machinery and robotics, soil health and precision irrigation, livestock monitoring, self-driving farms and agricultural agents, and frontiers in AI for agriculture.
