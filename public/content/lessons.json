@@ -2412,5 +2412,148 @@
     ],
     "summary": "Generative AI for crop design, vertical farming, blockchain + AI for supply chain traceability, climate adaptation, and autonomous greenhouses.",
     "contentPath": "ai-for-agriculture/11-frontiers-in-ai-for-agriculture.md"
+  },
+  "ai-for-education-01": {
+    "id": "ai-for-education-01",
+    "title": "Introduction to AI for Education",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "History of AI in education, taxonomy of AIED systems (ITS, adaptive learning, conversational tutors), key challenges, and current state.",
+    "contentPath": "ai-for-education/01-introduction-to-ai-for-education.md"
+  },
+  "ai-for-education-02": {
+    "id": "ai-for-education-02",
+    "title": "Intelligent Tutoring Systems",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-education-01"
+    ],
+    "summary": "Architecture of ITS — expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
+    "contentPath": "ai-for-education/02-intelligent-tutoring-systems.md"
+  },
+  "ai-for-education-03": {
+    "id": "ai-for-education-03",
+    "title": "Adaptive Learning Platforms",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-education-01",
+      "ai-for-education-02"
+    ],
+    "summary": "Learner modeling, knowledge tracing (BKT, DKT), Item Response Theory, and personalized learning path optimization.",
+    "contentPath": "ai-for-education/03-adaptive-learning-platforms.md"
+  },
+  "ai-for-education-04": {
+    "id": "ai-for-education-04",
+    "title": "NLP for Education",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-education-01"
+    ],
+    "summary": "Automated essay scoring, conversational tutoring agents, grammar error correction, and reading comprehension assistance.",
+    "contentPath": "ai-for-education/04-nlp-for-education.md"
+  },
+  "ai-for-education-05": {
+    "id": "ai-for-education-05",
+    "title": "AI for STEM Education",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-education-01"
+    ],
+    "summary": "AI-powered math solvers, virtual science labs, physics simulations with AI feedback, and AI-generated lab report analysis.",
+    "contentPath": "ai-for-education/05-ai-for-stem-education.md"
+  },
+  "ai-for-education-06": {
+    "id": "ai-for-education-06",
+    "title": "AI for Code Education",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-education-01"
+    ],
+    "summary": "AI teaching assistants for programming, auto-grading, bug explanation, and personalized hint generation.",
+    "contentPath": "ai-for-education/06-ai-for-code-education.md"
+  },
+  "ai-for-education-07": {
+    "id": "ai-for-education-07",
+    "title": "Large Language Models as Tutors",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-education-01",
+      "ai-for-education-02"
+    ],
+    "summary": "Socratic tutoring with LLMs, prompt engineering for education, limitations, safety concerns, and systems like Khanmigo.",
+    "contentPath": "ai-for-education/07-llms-as-tutors.md"
+  },
+  "ai-for-education-08": {
+    "id": "ai-for-education-08",
+    "title": "AI for Educational Assessment",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-education-01"
+    ],
+    "summary": "Formative and summative assessment, IRT, Q-matrix, multimodal assessment, game-based stealth assessment, and psychometrics.",
+    "contentPath": "ai-for-education/08-ai-for-educational-assessment.md"
+  },
+  "ai-for-education-09": {
+    "id": "ai-for-education-09",
+    "title": "Educational Data Mining",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-education-03",
+      "ai-for-education-08"
+    ],
+    "summary": "Learning analytics, behavioral pattern mining, early warning systems, predictive modeling for student success, and ethical considerations.",
+    "contentPath": "ai-for-education/09-educational-data-mining.md"
+  },
+  "ai-for-education-10": {
+    "id": "ai-for-education-10",
+    "title": "Ethics and Equity in AI Education",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Data privacy (COPPA, FERPA, GDPR), algorithmic bias and fairness, accessibility, the digital divide, and governance frameworks.",
+    "contentPath": "ai-for-education/10-ethics-and-equity-in-ai-education.md"
+  },
+  "ai-for-education-11": {
+    "id": "ai-for-education-11",
+    "title": "Frontiers: AI-Native Education",
+    "topic": "ai-for-education",
+    "topicPath": "ai-for-education",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-education-01",
+      "ai-for-education-07"
+    ],
+    "summary": "Agentic learning companions, AI-native curricula, emotional AI, multimodal learning, VR/AR + AI, and self-driving learning systems.",
+    "contentPath": "ai-for-education/11-frontiers-ai-native-education.md"
   }
 }

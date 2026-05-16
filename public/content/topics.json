@@ -110,5 +110,12 @@
     "icon": "\ud83c\udf3e",
     "description": "AI transforming agriculture \u2014 from precision farming and crop health monitoring to autonomous farm robots and sustainable food production.",
     "path": "ai-for-agriculture"
+  },
+  {
+    "id": "ai-for-education",
+    "title": "AI for Education",
+    "icon": "\ud83c\udf93",
+    "description": "AI transforming education \u2014 from intelligent tutoring systems and adaptive learning to educational data mining, LLM tutors, and AI-native curricula.",
+    "path": "ai-for-education"
   }
 ]
