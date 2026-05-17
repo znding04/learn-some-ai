@@ -23,7 +23,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Astronomy           |      11 | All published         |
 | AI for Computer Science     |      11 | All published         |
 | AI for Agriculture          |      11 | All published         |
-| **Total**             | **187** |                       |
+| AI for Law                 |      11 | All published         |
+| **Total**             | **198** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -250,6 +251,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Ethics and Equity in AI Education
 - [x] 11 — Frontiers: AI-Native Education
 
+### AI for Law
+- [x] 01 — Introduction to AI for Law
+- [x] 02 — Legal Text Representation and Embeddings
+- [x] 03 — Case Law Retrieval and Precedent Research
+- [x] 04 — Contract Analysis and Clause Classification
+- [x] 05 — Statutory Reasoning and Legal Rule Extraction
+- [x] 06 — Large Language Models for Legal Tasks (LegalLLMs)
+- [x] 07 — AI for E-Discovery and Litigation Support
+- [x] 08 — Computational Legal Argumentation
+- [x] 09 — AI for Law Enforcement and Criminal Justice
+- [x] 10 — AI for Governance, Regulation, and Compliance
+- [x] 11 — Frontiers: AI and the Future of Legal Systems
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -259,6 +273,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-17
+- Added AI for Law track: 11 lessons covering intro to legal AI, legal text embeddings, case law retrieval, contract analysis, statutory reasoning, legal LLMs, e-discovery, computational argumentation, criminal justice AI, regulatory compliance, and future frontiers.
 
 ### 2026-05-16
 - Added AI for Education track: 11 lessons covering intro to AIED, intelligent tutoring systems, adaptive learning platforms, NLP for education, AI for STEM education, AI for code education, LLMs as tutors, educational assessment, educational data mining, ethics and equity, and frontiers in AI-native education.

@@ -114,8 +114,15 @@
   {
     "id": "ai-for-education",
     "title": "AI for Education",
-    "icon": "\ud83c\udf93",
+    "icon": "📓",
     "description": "AI transforming education \u2014 from intelligent tutoring systems and adaptive learning to educational data mining, LLM tutors, and AI-native curricula.",
     "path": "ai-for-education"
+  },
+  {
+    "id": "ai-for-law",
+    "title": "AI for Law",
+    "icon": "📄",
+    "description": "AI transforming law \u2014 from contract analysis and case retrieval to legal reasoning, e-discovery, and the future of justice systems.",
+    "path": "ai-for-law"
   }
 ]

@@ -2555,5 +2555,146 @@
     ],
     "summary": "Agentic learning companions, AI-native curricula, emotional AI, multimodal learning, VR/AR + AI, and self-driving learning systems.",
     "contentPath": "ai-for-education/11-frontiers-ai-native-education.md"
+  },
+  "ai-for-law-01": {
+    "id": "ai-for-law-01",
+    "title": "Introduction to AI for Law",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Introduction to Legal AI: what it is, why it matters, and how AI assists legal tasks.",
+    "contentPath": "ai-for-law/01-introduction-to-ai-for-law.md"
+  },
+  "ai-for-law-02": {
+    "id": "ai-for-law-02",
+    "title": "Legal Text Representation and Embeddings",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-01"
+    ],
+    "summary": "Domain-specific embeddings, LegalBERT, case encoding, and vector databases for legal retrieval.",
+    "contentPath": "ai-for-law/02-legal-text-representation-and-embeddings.md"
+  },
+  "ai-for-law-03": {
+    "id": "ai-for-law-03",
+    "title": "Case Law Retrieval and Precedent Research",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-02"
+    ],
+    "summary": "Semantic search over case databases, Shepard's analysis, hybrid retrieval, and reranking.",
+    "contentPath": "ai-for-law/03-case-law-retrieval-and-precedent-research.md"
+  },
+  "ai-for-law-04": {
+    "id": "ai-for-law-04",
+    "title": "Contract Analysis and Clause Classification",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-03"
+    ],
+    "summary": "NLP for contracts: clause identification, NER, obligation extraction, and anomaly detection.",
+    "contentPath": "ai-for-law/04-contract-analysis-and-clause-classification.md"
+  },
+  "ai-for-law-05": {
+    "id": "ai-for-law-05",
+    "title": "Statutory Reasoning and Legal Rule Extraction",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-04"
+    ],
+    "summary": "Reading comprehension for statutes, rule extraction to Horn clauses, statute classification, and multi-task learning.",
+    "contentPath": "ai-for-law/05-statutory-reasoning-and-legal-rule-extraction.md"
+  },
+  "ai-for-law-06": {
+    "id": "ai-for-law-06",
+    "title": "Large Language Models for Legal Tasks (LegalLLMs)",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-law-05"
+    ],
+    "summary": "Domain-adapted LLMs for law, chain-of-thought prompting, hallucination risks, citation accuracy, and RAG.",
+    "contentPath": "ai-for-law/06-large-language-models-for-legal-tasks.md"
+  },
+  "ai-for-law-07": {
+    "id": "ai-for-law-07",
+    "title": "AI for E-Discovery and Litigation Support",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-06"
+    ],
+    "summary": "Predictive coding, active learning for document review, privilege detection, and cost estimation.",
+    "contentPath": "ai-for-law/07-ai-for-e-discovery-and-litigation-support.md"
+  },
+  "ai-for-law-08": {
+    "id": "ai-for-law-08",
+    "title": "Computational Legal Argumentation",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-law-07"
+    ],
+    "summary": "Formal argumentation frameworks, case-based reasoning, defeasible logic, ASP for legal norms.",
+    "contentPath": "ai-for-law/08-computational-legal-argumentation.md"
+  },
+  "ai-for-law-09": {
+    "id": "ai-for-law-09",
+    "title": "AI for Law Enforcement and Criminal Justice",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-08"
+    ],
+    "summary": "Risk assessment tools, COMPAS bias, fairness definitions, facial recognition, and due process.",
+    "contentPath": "ai-for-law/09-ai-for-law-enforcement-and-criminal-justice.md"
+  },
+  "ai-for-law-10": {
+    "id": "ai-for-law-10",
+    "title": "AI for Governance, Regulation, and Compliance",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-law-09"
+    ],
+    "summary": "Regulatory text understanding, compliance monitoring, GDPR and EU AI Act obligations, multi-jurisdiction challenges.",
+    "contentPath": "ai-for-law/10-ai-for-governance-regulation-and-compliance.md"
+  },
+  "ai-for-law-11": {
+    "id": "ai-for-law-11",
+    "title": "Frontiers: AI and the Future of Legal Systems",
+    "topic": "ai-for-law",
+    "topicPath": "ai-for-law",
+    "estimatedTime": "50min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-law-10"
+    ],
+    "summary": "AI judges, access to justice, autonomous legal agents, liability, international perspectives, and emerging research.",
+    "contentPath": "ai-for-law/11-frontiers-ai-and-future-of-legal-systems.md"
   }
 }
