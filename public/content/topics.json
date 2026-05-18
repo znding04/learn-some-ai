@@ -124,5 +124,12 @@
     "icon": "📄",
     "description": "AI transforming law \u2014 from contract analysis and case retrieval to legal reasoning, e-discovery, and the future of justice systems.",
     "path": "ai-for-law"
+  },
+  {
+    "id": "ai-for-earth-science",
+    "title": "AI for Earth Science",
+    "icon": "🌍",
+    "description": "AI transforming Earth science — from mineral exploration and seismic analysis to volcano hazard prediction and geodynamic modeling.",
+    "path": "ai-for-earth-science"
   }
 ]

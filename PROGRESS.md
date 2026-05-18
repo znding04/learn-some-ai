@@ -24,7 +24,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Computer Science     |      11 | All published         |
 | AI for Agriculture          |      11 | All published         |
 | AI for Law                 |      11 | All published         |
-| **Total**             | **198** |                       |
+| AI for Earth Science       |      11 | All published         |
+| **Total**             | **209** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -264,6 +265,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI for Governance, Regulation, and Compliance
 - [x] 11 — Frontiers: AI and the Future of Legal Systems
 
+### AI for Earth Science
+- [x] 01 — Introduction to AI for Earth Science
+- [x] 02 — Geological Data Types and Representations
+- [x] 03 — Machine Learning for Mineral Exploration
+- [x] 04 — Seismic Data Analysis with Deep Learning
+- [x] 05 — AI for Volcano Monitoring and Hazard Prediction
+- [x] 06 — Machine Learning for Geochemical Modeling
+- [x] 07 — AI for Structural Geology and Fault Analysis
+- [x] 08 — Geospatial AI and Remote Sensing for Geology
+- [x] 09 — AI for Subsurface Characterization and Reservoir Modeling
+- [x] 10 — Physics-Informed Machine Learning for Geodynamics
+- [x] 11 — Frontiers: AI for Earth's Past and Future
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -273,6 +287,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-18
+- Added AI for Earth Science track: 11 lessons covering intro to AI for Earth science, geological data types, mineral exploration with ML, seismic data analysis with deep learning, volcano monitoring and hazard prediction, geochemical modeling, structural geology and fault analysis, geospatial AI and remote sensing, subsurface characterization and reservoir modeling, physics-informed ML for geodynamics, and frontiers in paleoclimate, paleontology, and planetary geology.
 
 ### 2026-05-17
 - Added AI for Law track: 11 lessons covering intro to legal AI, legal text embeddings, case law retrieval, contract analysis, statutory reasoning, legal LLMs, e-discovery, computational argumentation, criminal justice AI, regulatory compliance, and future frontiers.

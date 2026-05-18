@@ -2696,5 +2696,146 @@
     ],
     "summary": "AI judges, access to justice, autonomous legal agents, liability, international perspectives, and emerging research.",
     "contentPath": "ai-for-law/11-frontiers-ai-and-future-of-legal-systems.md"
+  },
+  "ai-for-earth-science-01": {
+    "id": "ai-for-earth-science-01",
+    "title": "Introduction to AI for Earth Science",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of how AI is transforming geology, seismology, volcanology, and mineral exploration.",
+    "contentPath": "ai-for-earth-science/01-introduction-to-ai-for-earth-science.md"
+  },
+  "ai-for-earth-science-02": {
+    "id": "ai-for-earth-science-02",
+    "title": "Geological Data Types and Representations",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-earth-science-01"
+    ],
+    "summary": "How to represent rock types, mineral compositions, borehole logs, and remote sensing data for machine learning.",
+    "contentPath": "ai-for-earth-science/02-geological-data-types-and-representations.md"
+  },
+  "ai-for-earth-science-03": {
+    "id": "ai-for-earth-science-03",
+    "title": "Machine Learning for Mineral Exploration",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-earth-science-02"
+    ],
+    "summary": "Predicting ore deposits using geochemical and geophysical data with ensemble methods and anomaly detection.",
+    "contentPath": "ai-for-earth-science/03-machine-learning-for-mineral-exploration.md"
+  },
+  "ai-for-earth-science-04": {
+    "id": "ai-for-earth-science-04",
+    "title": "Seismic Data Analysis with Deep Learning",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-earth-science-03"
+    ],
+    "summary": "Using CNNs and neural networks for fault detection, horizon picking, and seismic inversion.",
+    "contentPath": "ai-for-earth-science/04-seismic-data-analysis-with-deep-learning.md"
+  },
+  "ai-for-earth-science-05": {
+    "id": "ai-for-earth-science-05",
+    "title": "AI for Volcano Monitoring and Hazard Prediction",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-earth-science-04"
+    ],
+    "summary": "Time-series analysis and multi-modal data fusion for eruption forecasting and volcanic hazard assessment.",
+    "contentPath": "ai-for-earth-science/05-ai-for-volcano-monitoring-and-hazard-prediction.md"
+  },
+  "ai-for-earth-science-06": {
+    "id": "ai-for-earth-science-06",
+    "title": "Machine Learning for Geochemical Modeling",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-earth-science-05"
+    ],
+    "summary": "Compositional data analysis, petrological clustering, and anomaly detection in geochemical surveys.",
+    "contentPath": "ai-for-earth-science/06-machine-learning-for-geochemical-modeling.md"
+  },
+  "ai-for-earth-science-07": {
+    "id": "ai-for-earth-science-07",
+    "title": "AI for Structural Geology and Fault Analysis",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-earth-science-06"
+    ],
+    "summary": "Automatic fault detection, fold classification, stress field modeling, and fracture network prediction.",
+    "contentPath": "ai-for-earth-science/07-ai-for-structural-geology-and-fault-analysis.md"
+  },
+  "ai-for-earth-science-08": {
+    "id": "ai-for-earth-science-08",
+    "title": "Geospatial AI and Remote Sensing for Geology",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-earth-science-07"
+    ],
+    "summary": "Hyperspectral mineral mapping, InSAR deformation analysis, LiDAR geological mapping, and landslide monitoring.",
+    "contentPath": "ai-for-earth-science/08-geospatial-ai-and-remote-sensing-for-geology.md"
+  },
+  "ai-for-earth-science-09": {
+    "id": "ai-for-earth-science-09",
+    "title": "AI for Subsurface Characterization and Reservoir Modeling",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-earth-science-08"
+    ],
+    "summary": "Well log interpretation, facies classification, porosity prediction, and neural reservoir emulators.",
+    "contentPath": "ai-for-earth-science/09-ai-for-subsurface-characterization-and-reservoir-modeling.md"
+  },
+  "ai-for-earth-science-10": {
+    "id": "ai-for-earth-science-10",
+    "title": "Physics-Informed Machine Learning for Geodynamics",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-earth-science-09"
+    ],
+    "summary": "Combining physics constraints with ML for mantle convection, plate tectonics, and geophysical inverse problems.",
+    "contentPath": "ai-for-earth-science/10-physics-informed-machine-learning-for-geodynamics.md"
+  },
+  "ai-for-earth-science-11": {
+    "id": "ai-for-earth-science-11",
+    "title": "Frontiers: AI for Earth's Past and Future",
+    "topic": "ai-for-earth-science",
+    "topicPath": "ai-for-earth-science",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-earth-science-10"
+    ],
+    "summary": "Paleoclimate reconstruction, AI for paleontology, critical mineral prediction, geohazard networks, and planetary geology.",
+    "contentPath": "ai-for-earth-science/11-frontiers-ai-for-earths-past-and-future.md"
   }
 }
