@@ -25,7 +25,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Agriculture          |      11 | All published         |
 | AI for Law                 |      11 | All published         |
 | AI for Earth Science       |      11 | All published         |
-| **Total**             | **209** |                       |
+| AI for Psychology          |      11 | All published         |
+| **Total**             | **220** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -278,6 +279,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Physics-Informed Machine Learning for Geodynamics
 - [x] 11 — Frontiers: AI for Earth's Past and Future
 
+### AI for Psychology
+- [x] 01 — Introduction to AI for Psychology
+- [x] 02 — Mental Health Data and Representations
+- [x] 03 — NLP for Clinical Psychology
+- [x] 04 — Emotion Recognition and Affective Computing
+- [x] 05 — AI for Suicide Prevention and Crisis Intervention
+- [x] 06 — Chatbots and Virtual Therapists
+- [x] 07 — AI-Assisted Diagnosis of Mental Health Conditions
+- [x] 08 — Cognitive Behavioral Therapy and AI
+- [x] 09 — AI for Developmental and Educational Psychology
+- [x] 10 — Psychology Research Automation with AI
+- [x] 11 — Ethics, Privacy, and Limits in AI for Psychology
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -287,6 +301,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-19
+- Added AI for Psychology track: 11 lessons covering intro to AI for psychology, mental health data and representations, NLP for clinical psychology, emotion recognition and affective computing, suicide prevention and crisis intervention, chatbots and virtual therapists, AI-assisted diagnosis of mental health conditions, CBT and AI, developmental and educational psychology, research automation, and ethics/privacy/limits.
 
 ### 2026-05-18
 - Added AI for Earth Science track: 11 lessons covering intro to AI for Earth science, geological data types, mineral exploration with ML, seismic data analysis with deep learning, volcano monitoring and hazard prediction, geochemical modeling, structural geology and fault analysis, geospatial AI and remote sensing, subsurface characterization and reservoir modeling, physics-informed ML for geodynamics, and frontiers in paleoclimate, paleontology, and planetary geology.

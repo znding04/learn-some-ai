@@ -131,5 +131,12 @@
     "icon": "🌍",
     "description": "AI transforming Earth science — from mineral exploration and seismic analysis to volcano hazard prediction and geodynamic modeling.",
     "path": "ai-for-earth-science"
+  },
+  {
+    "id": "ai-for-psychology",
+    "title": "AI for Psychology",
+    "icon": "🧠",
+    "description": "AI transforming psychology — from mental health chatbots and emotion recognition to suicide prevention, clinical diagnosis, and therapy augmentation.",
+    "path": "ai-for-psychology"
   }
 ]

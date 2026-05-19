@@ -2837,5 +2837,146 @@
     ],
     "summary": "Paleoclimate reconstruction, AI for paleontology, critical mineral prediction, geohazard networks, and planetary geology.",
     "contentPath": "ai-for-earth-science/11-frontiers-ai-for-earths-past-and-future.md"
+  },
+  "ai-for-psychology-01": {
+    "id": "ai-for-psychology-01",
+    "title": "Introduction to AI for Psychology",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of how AI is transforming psychology from ELIZA to modern LLMs, including ethical considerations.",
+    "contentPath": "ai-for-psychology/01-introduction-to-ai-for-psychology.md"
+  },
+  "ai-for-psychology-02": {
+    "id": "ai-for-psychology-02",
+    "title": "Mental Health Data and Representations",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-psychology-01"
+    ],
+    "summary": "Types of psychological data including clinical notes, scales, wearables, and multimodal signals for AI processing.",
+    "contentPath": "ai-for-psychology/02-mental-health-data-and-representations.md"
+  },
+  "ai-for-psychology-03": {
+    "id": "ai-for-psychology-03",
+    "title": "NLP for Clinical Psychology",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-02"
+    ],
+    "summary": "Applying NLP to clinical notes, mood tracking, text-based assessment, and chatbot-based intake.",
+    "contentPath": "ai-for-psychology/03-natural-language-processing-for-clinical-psychology.md"
+  },
+  "ai-for-psychology-04": {
+    "id": "ai-for-psychology-04",
+    "title": "Emotion Recognition and Affective Computing",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-03"
+    ],
+    "summary": "Facial expression recognition, voice prosody analysis, multimodal emotion detection, and physiological signals for therapy.",
+    "contentPath": "ai-for-psychology/04-emotion-recognition-and-affective-computing.md"
+  },
+  "ai-for-psychology-05": {
+    "id": "ai-for-psychology-05",
+    "title": "AI for Suicide Prevention and Crisis Intervention",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-04"
+    ],
+    "summary": "NLP for suicidal ideation detection, risk stratification models, and crisis helpline AI assistants.",
+    "contentPath": "ai-for-psychology/05-ai-for-suicide-prevention-and-crisis-intervention.md"
+  },
+  "ai-for-psychology-06": {
+    "id": "ai-for-psychology-06",
+    "title": "Chatbots and Virtual Therapists",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-05"
+    ],
+    "summary": "History from ELIZA to modern therapy bots like Woebot and Wysa, CBT-based agents, efficacy evidence, and risks.",
+    "contentPath": "ai-for-psychology/06-chatbots-and-virtual-therapists.md"
+  },
+  "ai-for-psychology-07": {
+    "id": "ai-for-psychology-07",
+    "title": "AI-Assisted Diagnosis of Mental Health Conditions",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-06"
+    ],
+    "summary": "ML for depression, anxiety, and PTSD diagnosis with interpretability and clinical validation.",
+    "contentPath": "ai-for-psychology/07-ai-assisted-diagnosis-of-mental-health-conditions.md"
+  },
+  "ai-for-psychology-08": {
+    "id": "ai-for-psychology-08",
+    "title": "Cognitive Behavioral Therapy and AI",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-07"
+    ],
+    "summary": "How CBT works and how AI assists with session analysis, homework tracking, and personalized adaptations.",
+    "contentPath": "ai-for-psychology/08-cognitive-behavioral-therapy-and-ai.md"
+  },
+  "ai-for-psychology-09": {
+    "id": "ai-for-psychology-09",
+    "title": "AI for Developmental and Educational Psychology",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-08"
+    ],
+    "summary": "AI tutors, developmental milestone tracking, autism screening tools, and personalized educational interventions.",
+    "contentPath": "ai-for-psychology/09-ai-for-developmental-and-educational-psychology.md"
+  },
+  "ai-for-psychology-10": {
+    "id": "ai-for-psychology-10",
+    "title": "Psychology Research Automation with AI",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-09"
+    ],
+    "summary": "Automated literature review, experiment design, survey analysis, and hypothesis generation with LLMs.",
+    "contentPath": "ai-for-psychology/10-psychology-research-automation-with-ai.md"
+  },
+  "ai-for-psychology-11": {
+    "id": "ai-for-psychology-11",
+    "title": "Ethics, Privacy, and Limits in AI for Psychology",
+    "topic": "ai-for-psychology",
+    "topicPath": "ai-for-psychology",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-psychology-10"
+    ],
+    "summary": "Informed consent, data privacy, algorithm aversion, depersonalization risks, and regulation landscape.",
+    "contentPath": "ai-for-psychology/11-ethics-privacy-and-limits-in-ai-for-psychology.md"
   }
 }
