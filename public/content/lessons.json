@@ -2978,5 +2978,146 @@
     ],
     "summary": "Informed consent, data privacy, algorithm aversion, depersonalization risks, and regulation landscape.",
     "contentPath": "ai-for-psychology/11-ethics-privacy-and-limits-in-ai-for-psychology.md"
+  },
+  "ai-for-transportation-01": {
+    "id": "ai-for-transportation-01",
+    "title": "Introduction to AI for Transportation",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of how AI is transforming transportation across autonomous vehicles, traffic management, logistics, and aerial mobility.",
+    "contentPath": "ai-for-transportation/01-introduction-to-ai-for-transportation.md"
+  },
+  "ai-for-transportation-02": {
+    "id": "ai-for-transportation-02",
+    "title": "Autonomous Vehicles: Levels, History, and Architecture",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "SAE automation levels, DARPA Challenge history, and the perception-prediction-planning-control AV software stack.",
+    "contentPath": "ai-for-transportation/02-autonomous-vehicles-levels-history-architecture.md"
+  },
+  "ai-for-transportation-03": {
+    "id": "ai-for-transportation-03",
+    "title": "Computer Vision for Driving: Cameras, LiDAR, and Perception",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "Object detection, semantic segmentation, LiDAR point cloud processing, and key perception datasets for autonomous driving.",
+    "contentPath": "ai-for-transportation/03-computer-vision-for-driving.md"
+  },
+  "ai-for-transportation-04": {
+    "id": "ai-for-transportation-04",
+    "title": "AI for Traffic Management and Smart Cities",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "Adaptive traffic signals, traffic flow prediction with GNNs and LSTMs, smart parking, and digital twins for urban mobility.",
+    "contentPath": "ai-for-transportation/04-ai-for-traffic-management-and-smart-cities.md"
+  },
+  "ai-for-transportation-05": {
+    "id": "ai-for-transportation-05",
+    "title": "Sensor Fusion and Localization for Self-Driving",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "Kalman filters, multi-sensor fusion architectures, SLAM, and transformer-based fusion for autonomous vehicle localization.",
+    "contentPath": "ai-for-transportation/05-sensor-fusion-and-localization.md"
+  },
+  "ai-for-transportation-06": {
+    "id": "ai-for-transportation-06",
+    "title": "Path Planning and Motion Planning Algorithms",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "A*, RRT, model predictive control, behavioral planning, and trajectory optimization for autonomous navigation.",
+    "contentPath": "ai-for-transportation/06-path-planning-and-motion-planning.md"
+  },
+  "ai-for-transportation-07": {
+    "id": "ai-for-transportation-07",
+    "title": "Reinforcement Learning for Autonomous Driving",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "MDP formulation for driving, DQN/PPO/SAC policies, imitation learning, reward shaping, and sim-to-real transfer.",
+    "contentPath": "ai-for-transportation/07-reinforcement-learning-for-autonomous-driving.md"
+  },
+  "ai-for-transportation-08": {
+    "id": "ai-for-transportation-08",
+    "title": "AI for Public Transit and Mobility-as-a-Service (MaaS)",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "Demand prediction, dynamic pricing, route optimization, fleet management, and multi-modal trip planning with AI.",
+    "contentPath": "ai-for-transportation/08-ai-for-public-transit-and-maas.md"
+  },
+  "ai-for-transportation-09": {
+    "id": "ai-for-transportation-09",
+    "title": "Simulation Platforms for Autonomous Vehicle Testing",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "CARLA, SUMO, and NVIDIA DRIVE Sim for AV testing, scenario generation, domain randomization, and safety validation.",
+    "contentPath": "ai-for-transportation/09-simulation-platforms-for-av-testing.md"
+  },
+  "ai-for-transportation-10": {
+    "id": "ai-for-transportation-10",
+    "title": "AI for Drone Navigation and Air Mobility",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "UAV autonomy, visual-inertial odometry, urban air mobility, swarm intelligence, and drone delivery systems.",
+    "contentPath": "ai-for-transportation/10-ai-for-drone-navigation-and-air-mobility.md"
+  },
+  "ai-for-transportation-11": {
+    "id": "ai-for-transportation-11",
+    "title": "Frontiers: V2X Communication, Ethics, and the Future of Mobility",
+    "topic": "ai-for-transportation",
+    "topicPath": "ai-for-transportation",
+    "estimatedTime": "30min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-transportation-01"
+    ],
+    "summary": "V2X communication, cooperative perception, ethical dilemmas, foundation models for driving, and the future of human-AI shared roads.",
+    "contentPath": "ai-for-transportation/11-frontiers-v2x-ethics-future-of-mobility.md"
   }
 }

@@ -26,7 +26,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Law                 |      11 | All published         |
 | AI for Earth Science       |      11 | All published         |
 | AI for Psychology          |      11 | All published         |
-| **Total**             | **220** |                       |
+| AI for Transportation      |      11 | All published         |
+| **Total**             | **231** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -292,6 +293,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Psychology Research Automation with AI
 - [x] 11 — Ethics, Privacy, and Limits in AI for Psychology
 
+### AI for Transportation
+- [x] 01 — Introduction to AI for Transportation
+- [x] 02 — Autonomous Vehicles: Levels, History, and Architecture
+- [x] 03 — Computer Vision for Driving: Cameras, LiDAR, and Perception
+- [x] 04 — AI for Traffic Management and Smart Cities
+- [x] 05 — Sensor Fusion and Localization for Self-Driving
+- [x] 06 — Path Planning and Motion Planning Algorithms
+- [x] 07 — Reinforcement Learning for Autonomous Driving
+- [x] 08 — AI for Public Transit and Mobility-as-a-Service (MaaS)
+- [x] 09 — Simulation Platforms for Autonomous Vehicle Testing
+- [x] 10 — AI for Drone Navigation and Air Mobility
+- [x] 11 — Frontiers: V2X Communication, Ethics, and the Future of Mobility
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -301,6 +315,9 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-21
+- Added AI for Transportation track: 11 lessons covering intro to AI for transportation, autonomous vehicle levels/history/architecture, computer vision for driving, traffic management and smart cities, sensor fusion and localization, path planning and motion planning, reinforcement learning for autonomous driving, public transit and MaaS, simulation platforms for AV testing, drone navigation and air mobility, and V2X/ethics/future frontiers.
 
 ### 2026-05-19
 - Added AI for Psychology track: 11 lessons covering intro to AI for psychology, mental health data and representations, NLP for clinical psychology, emotion recognition and affective computing, suicide prevention and crisis intervention, chatbots and virtual therapists, AI-assisted diagnosis of mental health conditions, CBT and AI, developmental and educational psychology, research automation, and ethics/privacy/limits.

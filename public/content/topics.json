@@ -138,5 +138,12 @@
     "icon": "🧠",
     "description": "AI transforming psychology — from mental health chatbots and emotion recognition to suicide prevention, clinical diagnosis, and therapy augmentation.",
     "path": "ai-for-psychology"
+  },
+  {
+    "id": "ai-for-transportation",
+    "title": "AI for Transportation",
+    "icon": "🚗",
+    "description": "AI transforming transportation — from self-driving cars and traffic systems to drone navigation and mobility-as-a-service.",
+    "path": "ai-for-transportation"
   }
 ]
