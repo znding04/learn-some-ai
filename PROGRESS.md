@@ -316,6 +316,27 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 
 Newest first. Use `YYYY-MM-DD` headers.
 
+### 2026-05-22
+- Researched new domain: **AI for Sports Science**
+- Domain covers: computer vision for player tracking, AI-driven performance analysis, injury prediction/prevention, broadcast analytics, digital twins for athletes, VR training, game strategy optimization
+- Found active research: NeuroPlayNet (Nature) for basketball strategy, BoxMind AI for Olympic boxing, AI-driven soccer analysis with YOLO/SAM2, athlete fatigue assessment from videos, win probability models in team sports
+- Proposed 11-lesson track below
+
+**Proposed: AI for Sports Science** (11 lessons)
+1. Introduction to AI for Sports Science
+2. Computer Vision for Player Tracking and Pose Estimation
+3. AI for Performance Analysis and Game Tactics
+4. Machine Learning for Injury Prediction and Prevention
+5. Broadcast Analytics and Virtual Replay Enhancement
+6. Digital Twins and Simulation for Athlete Training
+7. AI for Scouting, Recruitment, and Team Building
+8. Reinforcement Learning for Game Strategy Optimization
+9. Natural Language Processing for Sports Commentary and Reporting
+10. AI in Sports Broadcasting and Fan Engagement
+11. Frontiers: Ethical Considerations, Anti-Doping, and the Future of AI-Native Sports
+
+Implementation: Delegate lesson creation to Claude Code once plan is approved.
+
 ### 2026-05-21
 - Added AI for Transportation track: 11 lessons covering intro to AI for transportation, autonomous vehicle levels/history/architecture, computer vision for driving, traffic management and smart cities, sensor fusion and localization, path planning and motion planning, reinforcement learning for autonomous driving, public transit and MaaS, simulation platforms for AV testing, drone navigation and air mobility, and V2X/ethics/future frontiers.
 
