@@ -10,24 +10,25 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | Large Language Models |   9 | All published         |
 | AI Agents (lessons)   |  15 | All published         |
 | AI Agents (projects)  |   6 | All published         |
-| AI for Biology        |       9 | All published         |
-| AI for Physics        |      11 | All published         |
-| AI for Chemistry      |      11 | All published         |
-| AI for Mathematics    |      11 | All published         |
-| AI for Engineering    |      11 | All published         |
-| AI for Medicine        |      10 | All published         |
+| AI for Biology        |   9 | All published         |
+| AI for Physics        |     11 | All published         |
+| AI for Chemistry      |     11 | All published         |
+| AI for Mathematics    |     11 | All published         |
+| AI for Engineering    |     11 | All published         |
+| AI for Medicine        |     10 | All published         |
 | AI for Environmental Science |  11 | All published         |
-| AI for Neuroscience        |      11 | All published         |
-| AI for Finance             |      11 | All published         |
-| AI for Materials Science   |      11 | All published         |
-| AI for Astronomy           |      11 | All published         |
-| AI for Computer Science     |      11 | All published         |
-| AI for Agriculture          |      11 | All published         |
-| AI for Law                 |      11 | All published         |
-| AI for Earth Science       |      11 | All published         |
-| AI for Psychology          |      11 | All published         |
-| AI for Transportation      |      11 | All published         |
-| **Total**             | **231** |                       |
+| AI for Neuroscience        |     11 | All published         |
+| AI for Finance             |     11 | All published         |
+| AI for Materials Science   |     11 | All published         |
+| AI for Astronomy           |     11 | All published         |
+| AI for Computer Science     |     11 | All published         |
+| AI for Agriculture          |     11 | All published         |
+| AI for Law                 |     11 | All published         |
+| AI for Earth Science       |     11 | All published         |
+| AI for Psychology          |     11 | All published         |
+| AI for Transportation      |     11 | All published         |
+| AI for Sports Science      |     11 | All published         |
+| **Total**             | **242** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -306,6 +307,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI for Drone Navigation and Air Mobility
 - [x] 11 — Frontiers: V2X Communication, Ethics, and the Future of Mobility
 
+### AI for Sports Science
+- [x] 01 — Introduction to AI for Sports Science
+- [x] 02 — Computer Vision for Player Tracking and Pose Estimation
+- [x] 03 — AI for Performance Analysis and Game Tactics
+- [x] 04 — Machine Learning for Injury Prediction and Prevention
+- [x] 05 — Broadcast Analytics and Virtual Replay Enhancement
+- [x] 06 — Digital Twins and Simulation for Athlete Training
+- [x] 07 — AI for Scouting, Recruitment, and Team Building
+- [x] 08 — Reinforcement Learning for Game Strategy Optimization
+- [x] 09 — Natural Language Processing for Sports Commentary and Reporting
+- [x] 10 — AI in Sports Broadcasting and Fan Engagement
+- [x] 11 — Frontiers: Ethical Considerations, Anti-Doping, and the Future of AI-Native Sports
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -315,6 +329,11 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 ## Recent updates
 
 Newest first. Use `YYYY-MM-DD` headers.
+
+### 2026-05-23
+- Implemented full AI for Sports Science track: 11 lessons covering player tracking, performance analysis, injury prediction, broadcast analytics, digital twins, scouting/recruitment, RL game strategy, NLP commentary, fan engagement, and ethical frontiers.
+- Registered all 11 lessons in lessons.json and topics.json.
+- Updated PROGRESS.md with new track and total lesson count (242).
 
 ### 2026-05-22
 - Researched new domain: **AI for Sports Science**
@@ -340,62 +359,8 @@ Implementation: Delegate lesson creation to Claude Code once plan is approved.
 ### 2026-05-21
 - Added AI for Transportation track: 11 lessons covering intro to AI for transportation, autonomous vehicle levels/history/architecture, computer vision for driving, traffic management and smart cities, sensor fusion and localization, path planning and motion planning, reinforcement learning for autonomous driving, public transit and MaaS, simulation platforms for AV testing, drone navigation and air mobility, and V2X/ethics/future frontiers.
 
-### 2026-05-19
+### 2026-05-20
 - Added AI for Psychology track: 11 lessons covering intro to AI for psychology, mental health data and representations, NLP for clinical psychology, emotion recognition and affective computing, suicide prevention and crisis intervention, chatbots and virtual therapists, AI-assisted diagnosis of mental health conditions, CBT and AI, developmental and educational psychology, research automation, and ethics/privacy/limits.
-
-### 2026-05-18
-- Added AI for Earth Science track: 11 lessons covering intro to AI for Earth science, geological data types, mineral exploration with ML, seismic data analysis with deep learning, volcano monitoring and hazard prediction, geochemical modeling, structural geology and fault analysis, geospatial AI and remote sensing, subsurface characterization and reservoir modeling, physics-informed ML for geodynamics, and frontiers in paleoclimate, paleontology, and planetary geology.
-
-### 2026-05-17
-- Added AI for Law track: 11 lessons covering intro to legal AI, legal text embeddings, case law retrieval, contract analysis, statutory reasoning, legal LLMs, e-discovery, computational argumentation, criminal justice AI, regulatory compliance, and future frontiers.
-
-### 2026-05-16
-- Added AI for Education track: 11 lessons covering intro to AIED, intelligent tutoring systems, adaptive learning platforms, NLP for education, AI for STEM education, AI for code education, LLMs as tutors, educational assessment, educational data mining, ethics and equity, and frontiers in AI-native education.
-
-### 2026-05-15
-- Added AI for Agriculture track: 11 lessons covering intro to AI in agriculture, agricultural data and remote sensing, key datasets/benchmarks, crop health monitoring with deep learning, yield prediction, weed detection and pest management, autonomous farm machinery and robotics, soil health and precision irrigation, livestock monitoring, self-driving farms and agricultural agents, and frontiers in AI for agriculture.
-
-### 2026-05-14
-- Added AI for Computer Science track: 11 lessons covering intro to AI in CS, AI-assisted programming, code search/RAG, bug detection/repair, code review/quality, algorithm optimization/HPC, automated testing, formal verification, software engineering research, autonomous coding agents, and frontiers.
-
-### 2026-05-13
-- Added AI for Astronomy track: 11 lessons covering intro to AI in astronomy, galaxy morphology with CNNs, gravitational wave detection, exoplanet detection, JWST data analysis, cosmological simulations and emulators, time-domain astronomy and anomaly detection, radio astronomy (pulsars/FRBs), photometric redshifts, autonomous AI cosmologists, and frontiers in AI for space science.
-
-### 2026-05-12
-- Added AI for Materials Science track: 11 lessons covering intro to materials informatics, representations and descriptors, property prediction, GNNs for crystals, crystal structure prediction, ML force fields, microstructure analysis, multi-scale modeling, high-throughput screening, self-driving laboratories, and frontiers.
-
-### 2026-05-11
-- Added AI for Finance track: 11 lessons covering intro to AI in finance, financial data representations, time series analysis, ML for stock prediction, RL for trading, FinLLMs, portfolio optimization, risk management/fraud detection, AI agents in markets, algorithmic trading systems, and AI financial stability frontiers.
-
-### 2026-05-10
-- Added AI for Neuroscience track: 11 lessons covering brain imaging AI, neural decoding/BCI, computational neuroscience, connectomics, deep learning for neuroimaging, cognitive modeling, neuroimaging ML, neurological diagnosis, brain age estimation, and AI-native brain science frontiers.
-
-### 2026-05-09
-- Added AI for Environmental Science track: 11 lessons covering ecological forecasting, biodiversity/conservation, extreme weather prediction, Earth system modeling, water resources, deforestation monitoring, ocean/marine systems, sustainable cities, causal environmental AI, and frontiers.
-
-### 2026-05-08
-- Added AI for Medicine track: 10 lessons covering medical imaging AI, clinical decision support, clinical NLP, diagnostics, EHR data, drug discovery, precision medicine, regulations, and frontiers.
-
-### 2026-05-07
-- Added AI for Engineering track: 11 lessons covering structural engineering, mechanical simulation, electrical engineering, control systems/robotics, manufacturing, CAD, civil engineering, materials engineering, autonomous systems, and frontiers.
-
-### 2026-05-06
-- Added AI for Mathematics track: 11 lessons covering AI math history, representations, benchmarks, neuro-symbolic AI, theorem proving, LLM reasoning, AlphaProof, AlphaGeometry, FunSearch, neural symbolic math, and frontiers.
-
-### 2026-05-05
-- Added AI for Chemistry track: 11 lessons covering molecular representations, GNNs, generative models, drug discovery, catalyst design, materials discovery, ML force fields, reaction prediction, and AutoML/self-driving labs.
-
-### 2026-05-04
-- Added AI for Physics track: 11 lessons covering PINNs, neural differential equations, PDE solving with deep learning, particle physics AI, climate modeling, quantum ML, computational chemistry, neural operators, and frontiers in fundamental physics.
-
-### 2026-05-03
-- Added AI for Biology track: 9 lessons covering protein folding, AlphaFold, genomics, molecular dynamics, protein design, and future directions.
-
-### 2026-05-02
-- Added Mermaid diagram support and converted ASCII diagrams across all 33 lessons that had them.
-- Added KaTeX math rendering (lazy-loaded).
-- Switched markdown rendering from a homemade regex pass to `marked`.
-- Fixed a few bugs: invisible cards on home page, lesson body not loading on hard refresh.
 
 ## Conventions for new lessons
 

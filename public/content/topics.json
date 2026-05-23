@@ -114,36 +114,43 @@
   {
     "id": "ai-for-education",
     "title": "AI for Education",
-    "icon": "📓",
+    "icon": "\ud83d\udcd3",
     "description": "AI transforming education \u2014 from intelligent tutoring systems and adaptive learning to educational data mining, LLM tutors, and AI-native curricula.",
     "path": "ai-for-education"
   },
   {
     "id": "ai-for-law",
     "title": "AI for Law",
-    "icon": "📄",
+    "icon": "\ud83d\udcc4",
     "description": "AI transforming law \u2014 from contract analysis and case retrieval to legal reasoning, e-discovery, and the future of justice systems.",
     "path": "ai-for-law"
   },
   {
     "id": "ai-for-earth-science",
     "title": "AI for Earth Science",
-    "icon": "🌍",
-    "description": "AI transforming Earth science — from mineral exploration and seismic analysis to volcano hazard prediction and geodynamic modeling.",
+    "icon": "\ud83c\udf0d",
+    "description": "AI transforming Earth science \u2014 from mineral exploration and seismic analysis to volcano hazard prediction and geodynamic modeling.",
     "path": "ai-for-earth-science"
   },
   {
     "id": "ai-for-psychology",
     "title": "AI for Psychology",
-    "icon": "🧠",
-    "description": "AI transforming psychology — from mental health chatbots and emotion recognition to suicide prevention, clinical diagnosis, and therapy augmentation.",
+    "icon": "\ud83e\udde0",
+    "description": "AI transforming psychology \u2014 from mental health chatbots and emotion recognition to suicide prevention, clinical diagnosis, and therapy augmentation.",
     "path": "ai-for-psychology"
   },
   {
     "id": "ai-for-transportation",
     "title": "AI for Transportation",
-    "icon": "🚗",
-    "description": "AI transforming transportation — from self-driving cars and traffic systems to drone navigation and mobility-as-a-service.",
+    "icon": "\ud83d\ude97",
+    "description": "AI transforming transportation \u2014 from self-driving cars and traffic systems to drone navigation and mobility-as-a-service.",
     "path": "ai-for-transportation"
+  },
+  {
+    "id": "ai-for-sports-science",
+    "title": "AI for Sports Science",
+    "icon": "\u26bd",
+    "description": "AI transforming sports science \u2014 from player tracking and performance analysis to injury prediction, game strategy optimization, and fan engagement.",
+    "path": "ai-for-sports-science"
   }
 ]

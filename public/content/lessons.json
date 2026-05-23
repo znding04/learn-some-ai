@@ -2434,7 +2434,7 @@
     "prerequisites": [
       "ai-for-education-01"
     ],
-    "summary": "Architecture of ITS — expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
+    "summary": "Architecture of ITS \u2014 expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
     "contentPath": "ai-for-education/02-intelligent-tutoring-systems.md"
   },
   "ai-for-education-03": {
@@ -3119,5 +3119,149 @@
     ],
     "summary": "V2X communication, cooperative perception, ethical dilemmas, foundation models for driving, and the future of human-AI shared roads.",
     "contentPath": "ai-for-transportation/11-frontiers-v2x-ethics-future-of-mobility.md"
+  },
+  "ai-for-sports-science-01": {
+    "id": "ai-for-sports-science-01",
+    "title": "Introduction to AI for Sports Science",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Overview of AI applications in sports science, from player tracking to performance optimization.",
+    "contentPath": "ai-for-sports-science/01-intro.md"
+  },
+  "ai-for-sports-science-02": {
+    "id": "ai-for-sports-science-02",
+    "title": "Computer Vision for Player Tracking and Pose Estimation",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "Using deep learning for multi-object tracking, pose estimation, and activity recognition in sports video.",
+    "contentPath": "ai-for-sports-science/02-player-tracking-pose-estimation.md"
+  },
+  "ai-for-sports-science-03": {
+    "id": "ai-for-sports-science-03",
+    "title": "AI for Performance Analysis and Game Tactics",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "Applying AI to analyze team tactics, player performance metrics, and game strategy.",
+    "contentPath": "ai-for-sports-science/03-performance-analysis-game-tactics.md"
+  },
+  "ai-for-sports-science-04": {
+    "id": "ai-for-sports-science-04",
+    "title": "Machine Learning for Injury Prediction and Prevention",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "Predicting athlete injury risk using wearable sensor data, biomechanics, and machine learning.",
+    "contentPath": "ai-for-sports-science/04-injury-prediction-prevention.md"
+  },
+  "ai-for-sports-science-05": {
+    "id": "ai-for-sports-science-05",
+    "title": "Broadcast Analytics and Virtual Replay Enhancement",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-sports-science-01",
+      "ai-for-sports-science-02"
+    ],
+    "summary": "AI for automated highlight generation, virtual replays, and broadcast analytics.",
+    "contentPath": "ai-for-sports-science/05-broadcast-analytics-virtual-replay.md"
+  },
+  "ai-for-sports-science-06": {
+    "id": "ai-for-sports-science-06",
+    "title": "Digital Twins and Simulation for Athlete Training",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "Creating digital twin models of athletes for simulation-based training and performance optimization.",
+    "contentPath": "ai-for-sports-science/06-digital-twins-simulation-athlete-training.md"
+  },
+  "ai-for-sports-science-07": {
+    "id": "ai-for-sports-science-07",
+    "title": "AI for Scouting, Recruitment, and Team Building",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "35min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-sports-science-01",
+      "ai-for-sports-science-02"
+    ],
+    "summary": "Using AI to evaluate player potential, predict transfer value, and optimize roster construction.",
+    "contentPath": "ai-for-sports-science/07-ai-for-scout-recruitment-team-building.md"
+  },
+  "ai-for-sports-science-08": {
+    "id": "ai-for-sports-science-08",
+    "title": "Reinforcement Learning for Game Strategy Optimization",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-sports-science-01",
+      "ai-for-sports-science-03"
+    ],
+    "summary": "Applying reinforcement learning and game theory to optimize in-game decisions and team strategy.",
+    "contentPath": "ai-for-sports-science/08-reinforcement-learning-game-strategy.md"
+  },
+  "ai-for-sports-science-09": {
+    "id": "ai-for-sports-science-09",
+    "title": "Natural Language Processing for Sports Commentary and Reporting",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "30min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "NLP for live sports commentary generation, match report writing, and press conference analysis.",
+    "contentPath": "ai-for-sports-science/09-nlp-sports-commentary-reporting.md"
+  },
+  "ai-for-sports-science-10": {
+    "id": "ai-for-sports-science-10",
+    "title": "AI in Sports Broadcasting and Fan Engagement",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "AI for automated camera direction, personalized viewing, and fan engagement experiences.",
+    "contentPath": "ai-for-sports-science/10-ai-sports-broadcasting-fan-engagement.md"
+  },
+  "ai-for-sports-science-11": {
+    "id": "ai-for-sports-science-11",
+    "title": "Frontiers: Ethical Considerations, Anti-Doping, and the Future of AI-Native Sports",
+    "topic": "ai-for-sports-science",
+    "topicPath": "ai-for-sports-science",
+    "estimatedTime": "35min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-sports-science-01"
+    ],
+    "summary": "Ethical tensions, anti-doping AI, surveillance concerns, and the future of AI-native sports.",
+    "contentPath": "ai-for-sports-science/11-frontiers-ethics-anti-doping-future.md"
   }
 }
