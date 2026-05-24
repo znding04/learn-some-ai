@@ -28,7 +28,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Psychology          |     11 | All published         |
 | AI for Transportation      |     11 | All published         |
 | AI for Sports Science      |     11 | All published         |
-| **Total**             | **242** |                       |
+| AI for Music and Creative Arts |     11 | All published         |
+| **Total**             | **253** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -326,9 +327,41 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 
 - _(empty — add ideas)_
 
+### AI for Music and Creative Arts
+- [x] 01 — Introduction to AI for Music and Creative Arts
+- [x] 02 — How Computers Represent Music
+- [x] 03 — Audio Generation Fundamentals
+- [x] 04 — Transformers for Music Generation
+- [x] 05 — Building Your First AI Music Generator
+- [x] 06 — Diffusion Models for Audio Deep Dive
+- [x] 07 — Stem Separation, Remixing, and Inpainting
+- [x] 08 — Voice Synthesis and Music with AI
+- [x] 09 — Adaptive Music for Games and Interactive Media
+- [x] 10 — Production Pipeline: From Prompt to Publish
+- [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
+
 ## Recent updates
 
-Newest first. Use `YYYY-MM-DD` headers.
+### 2026-05-24
+- Researched new domain: **AI for Music and Creative Arts**
+- Domain covers: generative AI for music (Suno, Udio, Stability AI, Lyria), diffusion models for audio, transformers (MusicLM, MusicGen), audio tokenization, stem separation, voice synthesis, adaptive game music, production pipelines, and ethical frontiers
+- Found active research: Live Music Diffusion Models (UCSD/Johns Hopkins), Musical Attention Transformer (Sony), culturally situated AI music (ICMC 2026)
+- Implemented full track: 11 lessons across beginner → intermediate → advanced
+- Registered all 11 lessons in lessons.json (total now 264) and topics.json (total now 23)
+- Updated PROGRESS.md with new track and total lesson count (253)
+
+**Proposed: AI for Music and Creative Arts** (11 lessons)
+1. Introduction to AI for Music and Creative Arts
+2. How Computers Represent Music
+3. Audio Generation Fundamentals
+4. Transformers for Music Generation
+5. Building Your First AI Music Generator
+6. Diffusion Models for Audio Deep Dive
+7. Stem Separation, Remixing, and Inpainting
+8. Voice Synthesis and Music with AI
+9. Adaptive Music for Games and Interactive Media
+10. Production Pipeline: From Prompt to Publish
+11. Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ### 2026-05-23
 - Implemented full AI for Sports Science track: 11 lessons covering player tracking, performance analysis, injury prediction, broadcast analytics, digital twins, scouting/recruitment, RL game strategy, NLP commentary, fan engagement, and ethical frontiers.
