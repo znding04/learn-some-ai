@@ -3263,5 +3263,126 @@
     ],
     "summary": "Ethical tensions, anti-doping AI, surveillance concerns, and the future of AI-native sports.",
     "contentPath": "ai-for-sports-science/11-frontiers-ethics-anti-doping-future.md"
+  },
+  "ai-for-music-and-creative-arts-01": {
+    "id": "ai-for-music-and-creative-arts-01",
+    "title": "Introduction to AI for Music and Creative Arts",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "25 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Explore the history and current landscape of AI music generation, from algorithmic composition to modern diffusion models and platforms like Suno, Udio, and Lyria.",
+    "contentPath": "ai-for-music-and-creative-arts/01-introduction-to-ai-for-music-and-creative-arts.md"
+  },
+  "ai-for-music-and-creative-arts-02": {
+    "id": "ai-for-music-and-creative-arts-02",
+    "title": "How Computers Represent Music",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Learn how computers encode music \u2014 MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
+    "contentPath": "ai-for-music-and-creative-arts/02-how-computers-represent-music.md"
+  },
+  "ai-for-music-and-creative-arts-03": {
+    "id": "ai-for-music-and-creative-arts-03",
+    "title": "Audio Generation Fundamentals",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Understand waveform synthesis, sampling, and how diffusion models generate audio. Learn about vocoders like Griffin-Lim, HiFi-GAN, and Encodec.",
+    "contentPath": "ai-for-music-and-creative-arts/03-audio-generation-fundamentals.md"
+  },
+  "ai-for-music-and-creative-arts-04": {
+    "id": "ai-for-music-and-creative-arts-04",
+    "title": "Transformers for Music Generation",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Deep dive into MusicLM, MusicGen, and transformer architectures for music. Understand self-attention over music sequences and conditioning techniques.",
+    "contentPath": "ai-for-music-and-creative-arts/04-transformers-for-music-generation.md"
+  },
+  "ai-for-music-and-creative-arts-05": {
+    "id": "ai-for-music-and-creative-arts-05",
+    "title": "Building Your First AI Music Generator",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "40 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Hands-on guide to creating AI music with pre-trained models and APIs. Write code using Suno, Udio, or Stability AI SDKs with prompt engineering techniques.",
+    "contentPath": "ai-for-music-and-creative-arts/05-building-your-first-ai-music-generator.md"
+  },
+  "ai-for-music-and-creative-arts-06": {
+    "id": "ai-for-music-and-creative-arts-06",
+    "title": "Diffusion Models for Audio Deep Dive",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Comprehensive technical exploration of denoising diffusion for audio. Covers Stable Audio architecture, classifier-free guidance, and music-specific conditioning.",
+    "contentPath": "ai-for-music-and-creative-arts/06-diffusion-models-for-audio-deep-dive.md"
+  },
+  "ai-for-music-and-creative-arts-07": {
+    "id": "ai-for-music-and-creative-arts-07",
+    "title": "Stem Separation, Remixing, and Inpainting",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Learn AI-powered source separation with Spleeter and Demucs. Explore music inpainting, cross-modal editing, and practical tools for stem manipulation.",
+    "contentPath": "ai-for-music-and-creative-arts/07-stem-separation-remixing-and-inpainting.md"
+  },
+  "ai-for-music-and-creative-arts-08": {
+    "id": "ai-for-music-and-creative-arts-08",
+    "title": "Voice Synthesis and Music with AI",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Explore singing voice synthesis, vocal cloning, and the ethics of AI-generated voices. Covers diffsv, DiffWave, expression modeling, and copyright considerations.",
+    "contentPath": "ai-for-music-and-creative-arts/08-voice-synthesis-and-music-with-ai.md"
+  },
+  "ai-for-music-and-creative-arts-09": {
+    "id": "ai-for-music-and-creative-arts-09",
+    "title": "Adaptive Music for Games and Interactive Media",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Understand procedural music generation for games, real-time AI composition, and adaptive soundtracks. Case studies in interactive storytelling and dynamic game AI.",
+    "contentPath": "ai-for-music-and-creative-arts/09-adaptive-music-for-games-and-interactive-media.md"
+  },
+  "ai-for-music-and-creative-arts-10": {
+    "id": "ai-for-music-and-creative-arts-10",
+    "title": "Production Pipeline: From Prompt to Publish",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "End-to-end AI music production: stem export, mixing, AI mastering, publishing to streaming platforms, and navigating legal frameworks for AI-generated music.",
+    "contentPath": "ai-for-music-and-creative-arts/10-production-pipeline-from-prompt-to-publish.md"
+  },
+  "ai-for-music-and-creative-arts-11": {
+    "id": "ai-for-music-and-creative-arts-11",
+    "title": "Frontiers: Multi-Agent Creative Systems and the Future of AI Music",
+    "topic": "AI for Music and Creative Arts",
+    "topicPath": "ai-for-music-and-creative-arts",
+    "estimatedTime": "45 min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Explore cutting-edge research: multi-agent AI music systems, co-composition frameworks, real-time generation, emotional AI, and the ethics of AI creativity.",
+    "contentPath": "ai-for-music-and-creative-arts/11-frontiers-multi-agent-creative-systems.md"
   }
 }
