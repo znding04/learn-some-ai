@@ -3384,5 +3384,126 @@
     "prerequisites": [],
     "summary": "Explore cutting-edge research: multi-agent AI music systems, co-composition frameworks, real-time generation, emotional AI, and the ethics of AI creativity.",
     "contentPath": "ai-for-music-and-creative-arts/11-frontiers-multi-agent-creative-systems.md"
+  },
+  "ai-for-cybersecurity-01": {
+    "id": "ai-for-cybersecurity-01",
+    "title": "Introduction to AI for Cybersecurity",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-fundamentals"],
+    "summary": "Overview of the cyber threat landscape, why AI-native security matters, and how ML categories (supervised, unsupervised, RL) map to security problems.",
+    "contentPath": "ai-for-cybersecurity/01-introduction-to-ai-for-cybersecurity.md"
+  },
+  "ai-for-cybersecurity-02": {
+    "id": "ai-for-cybersecurity-02",
+    "title": "Malware Detection with Machine Learning",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-cybersecurity-01"],
+    "summary": "Static and dynamic malware analysis features, gradient boosting and deep learning classifiers, YARA rules, and concept drift in malware detection.",
+    "contentPath": "ai-for-cybersecurity/02-malware-detection-with-machine-learning.md"
+  },
+  "ai-for-cybersecurity-03": {
+    "id": "ai-for-cybersecurity-03",
+    "title": "Network Intrusion Detection",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-cybersecurity-01"],
+    "summary": "Network traffic analysis, signature-based vs anomaly-based IDS, autoencoders and isolation forests, and Graph Neural Networks for network-aware detection.",
+    "contentPath": "ai-for-cybersecurity/03-network-intrusion-detection.md"
+  },
+  "ai-for-cybersecurity-04": {
+    "id": "ai-for-cybersecurity-04",
+    "title": "Phishing and Spam Detection",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-cybersecurity-01"],
+    "summary": "Email and URL classification with NLP, social engineering detection, BERT-based phishing classifiers, and spear-phishing detection with LLMs.",
+    "contentPath": "ai-for-cybersecurity/04-phishing-and-spam-detection.md"
+  },
+  "ai-for-cybersecurity-05": {
+    "id": "ai-for-cybersecurity-05",
+    "title": "Vulnerability Assessment with AI",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-cybersecurity-01"],
+    "summary": "Automated vulnerability scanning, CVE analysis with CVSS scoring, AI-guided fuzzing, and ML-based code vulnerability detection.",
+    "contentPath": "ai-for-cybersecurity/05-vulnerability-assessment-with-ai.md"
+  },
+  "ai-for-cybersecurity-06": {
+    "id": "ai-for-cybersecurity-06",
+    "title": "Adversarial Machine Learning",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-cybersecurity-02"],
+    "summary": "Adversarial examples, FGSM and PGD attacks, evasion attacks on security classifiers, adversarial training, and certified robustness.",
+    "contentPath": "ai-for-cybersecurity/06-adversarial-machine-learning.md"
+  },
+  "ai-for-cybersecurity-07": {
+    "id": "ai-for-cybersecurity-07",
+    "title": "Privacy-Preserving ML for Security",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-cybersecurity-01"],
+    "summary": "Federated learning for collaborative threat detection, differential privacy, homomorphic encryption for ML, and secure multi-party computation.",
+    "contentPath": "ai-for-cybersecurity/07-privacy-preserving-ml-for-security.md"
+  },
+  "ai-for-cybersecurity-08": {
+    "id": "ai-for-cybersecurity-08",
+    "title": "AI for Threat Intelligence",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-cybersecurity-01"],
+    "summary": "MITRE ATT&CK mapping, automated IOC extraction with NLP, threat hunting with AI, knowledge graphs, and parser-free log querying.",
+    "contentPath": "ai-for-cybersecurity/08-ai-for-threat-intelligence.md"
+  },
+  "ai-for-cybersecurity-09": {
+    "id": "ai-for-cybersecurity-09",
+    "title": "LLM Security and Red Teaming",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "45 min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-cybersecurity-06"],
+    "summary": "Prompt injection attacks, jailbreaks, domain-camouflaged injection in multi-agent systems, RAG corruption defense, and AI-powered red teaming.",
+    "contentPath": "ai-for-cybersecurity/09-llm-security-and-red-teaming.md"
+  },
+  "ai-for-cybersecurity-10": {
+    "id": "ai-for-cybersecurity-10",
+    "title": "Autonomous Security Agents",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "45 min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-cybersecurity-08"],
+    "summary": "AI agents for SOC automation, LLM-powered incident response, RL for penetration testing, and security protocol analysis with Tamarin.",
+    "contentPath": "ai-for-cybersecurity/10-autonomous-security-agents.md"
+  },
+  "ai-for-cybersecurity-11": {
+    "id": "ai-for-cybersecurity-11",
+    "title": "Frontiers: AI-Native Cybersecurity",
+    "topic": "ai-for-cybersecurity",
+    "topicPath": "ai-for-cybersecurity",
+    "estimatedTime": "45 min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "AI security co-evolution, moving target defense, AI-generated honeypots, API watermarking, quantum implications, and the future of AI-native security.",
+    "contentPath": "ai-for-cybersecurity/11-frontiers-ai-native-cybersecurity.md"
   }
 }

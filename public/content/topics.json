@@ -159,5 +159,12 @@
     "icon": "\ud83c\udfb5",
     "description": "AI transforming music and creative arts \u2014 from generative models and music synthesis to stem separation, adaptive soundtracks, and the ethics of AI creativity.",
     "path": "ai-for-music-and-creative-arts"
+  },
+  {
+    "id": "ai-for-cybersecurity",
+    "title": "AI for Cybersecurity",
+    "icon": "🛡️",
+    "description": "AI transforming cybersecurity — from threat detection and malware analysis to privacy-preserving ML and autonomous security agents.",
+    "path": "ai-for-cybersecurity"
   }
 ]

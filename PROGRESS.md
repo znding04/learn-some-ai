@@ -29,7 +29,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Transportation      |     11 | All published         |
 | AI for Sports Science      |     11 | All published         |
 | AI for Music and Creative Arts |     11 | All published         |
-| **Total**             | **253** |                       |
+| AI for Cybersecurity           |     11 | All published         |
+| **Total**             | **264** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -321,6 +322,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI in Sports Broadcasting and Fan Engagement
 - [x] 11 — Frontiers: Ethical Considerations, Anti-Doping, and the Future of AI-Native Sports
 
+### AI for Cybersecurity
+- [x] 01 — Introduction to AI for Cybersecurity
+- [x] 02 — Malware Detection with Machine Learning
+- [x] 03 — Network Intrusion Detection
+- [x] 04 — Phishing and Spam Detection
+- [x] 05 — Vulnerability Assessment with AI
+- [x] 06 — Adversarial Machine Learning
+- [x] 07 — Privacy-Preserving ML for Security
+- [x] 08 — AI for Threat Intelligence
+- [x] 09 — LLM Security and Red Teaming
+- [x] 10 — Autonomous Security Agents
+- [x] 11 — Frontiers: AI-Native Cybersecurity
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -341,6 +355,14 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-25
+- Researched new domain: **AI for Cybersecurity**
+- Domain covers: malware detection with ML, network IDS, phishing detection, vulnerability assessment, adversarial ML, privacy-preserving ML, threat intelligence, LLM security, autonomous security agents, and frontiers
+- Found active research: RL for security protocol analysis (Tamarin), RAG retrieval corruption defense, domain-camouflaged LLM injection attacks, adversarial congestion controller testing, API watermarking, homomorphic encryption for privacy-preserving DL
+- Implemented full track: 11 lessons across beginner → intermediate → advanced
+- Registered all 11 lessons in lessons.json (total now 275) and topics.json (total now 24)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-24
 - Researched new domain: **AI for Music and Creative Arts**
