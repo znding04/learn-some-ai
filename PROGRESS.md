@@ -30,7 +30,7 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Sports Science      |     11 | All published         |
 | AI for Music and Creative Arts |     11 | All published         |
 | AI for Cybersecurity           |     11 | All published         |
-| **Total**             | **264** |                       |
+| **Total**             | **275** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
