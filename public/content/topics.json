@@ -166,5 +166,12 @@
     "icon": "🛡️",
     "description": "AI transforming cybersecurity — from threat detection and malware analysis to privacy-preserving ML and autonomous security agents.",
     "path": "ai-for-cybersecurity"
+  },
+  {
+    "id": "ai-for-food-science",
+    "title": "AI for Food Science",
+    "icon": "🍲",
+    "description": "AI transforming food science — from molecular taste prediction and spectroscopic analysis to food safety inspection, fermentation optimization, and smart packaging.",
+    "path": "ai-for-food-science"
   }
 ]

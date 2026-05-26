@@ -30,7 +30,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Sports Science      |     11 | All published         |
 | AI for Music and Creative Arts |     11 | All published         |
 | AI for Cybersecurity           |     11 | All published         |
-| **Total**             | **275** |                       |
+| AI for Food Science            |     11 | All published         |
+| **Total**             | **286** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -335,6 +336,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Autonomous Security Agents
 - [x] 11 — Frontiers: AI-Native Cybersecurity
 
+### AI for Food Science
+- [x] 01 — Introduction to AI for Food Science
+- [x] 02 — Food Science Data: Types, Representations, and Quality
+- [x] 03 — Machine Learning for Food Chemistry
+- [x] 04 — Computer Vision for Food Quality Inspection
+- [x] 05 — Spectroscopic Analysis with Deep Learning
+- [x] 06 — AI for Food Safety Inspection and Contamination Detection
+- [x] 07 — AI for Fermentation Science and Process Optimization
+- [x] 08 — AI for Nutrition Science and Personalized Diet
+- [x] 09 — AI for Shelf Life Prediction and Food Freshness
+- [x] 10 — AI for Food Fraud Detection and Supply Chain Traceability
+- [x] 11 — Frontiers: AI-Native Food Science
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -355,6 +369,14 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-26
+- Researched new domain: **AI for Food Science**
+- Domain covers: molecular taste prediction, food chemistry with GNNs, computer vision for quality inspection, spectroscopic analysis (NIR/MIR/Raman) with deep learning, food safety and contamination detection, fermentation optimization, nutrition science, shelf life prediction, food fraud detection, and smart packaging frontiers
+- Found active research: chemical language models for taste prediction (Nature 2026), real-time mycotoxin detection with AI, AI-enhanced optical spectroscopy for food monitoring, smart AI-based food packaging, bioactive peptide discovery
+- Implemented full track: 11 lessons across beginner -> intermediate -> advanced
+- Registered all 11 lessons in lessons.json (total now 286) and topics.json (total now 25)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-25
 - Researched new domain: **AI for Cybersecurity**

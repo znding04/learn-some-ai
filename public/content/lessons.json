@@ -3505,5 +3505,126 @@
     "prerequisites": [],
     "summary": "AI security co-evolution, moving target defense, AI-generated honeypots, API watermarking, quantum implications, and the future of AI-native security.",
     "contentPath": "ai-for-cybersecurity/11-frontiers-ai-native-cybersecurity.md"
+  },
+  "ai-for-food-science-01": {
+    "id": "ai-for-food-science-01",
+    "title": "Introduction to AI for Food Science",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Food science fundamentals, global food challenges, history of AI in food science, and the sensing-to-decision pipeline.",
+    "contentPath": "ai-for-food-science/01-introduction-to-ai-for-food-science.md"
+  },
+  "ai-for-food-science-02": {
+    "id": "ai-for-food-science-02",
+    "title": "Food Science Data: Types, Representations, and Quality",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-food-science-01"],
+    "summary": "Spectral, image, chemical, and sensor data types in food science, molecular representations, data quality challenges, and public datasets.",
+    "contentPath": "ai-for-food-science/02-food-science-data-types-representations-and-quality.md"
+  },
+  "ai-for-food-science-03": {
+    "id": "ai-for-food-science-03",
+    "title": "Machine Learning for Food Chemistry",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-02"],
+    "summary": "Molecular representations (SMILES, fingerprints, GNNs), QSAR for food properties, taste prediction, and bioactive peptide discovery.",
+    "contentPath": "ai-for-food-science/03-machine-learning-for-food-chemistry.md"
+  },
+  "ai-for-food-science-04": {
+    "id": "ai-for-food-science-04",
+    "title": "Computer Vision for Food Quality Inspection",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-03"],
+    "summary": "CNN architectures for food images, YOLO for real-time inspection, hyperspectral imaging, and edge deployment for quality grading.",
+    "contentPath": "ai-for-food-science/04-computer-vision-for-food-quality-inspection.md"
+  },
+  "ai-for-food-science-05": {
+    "id": "ai-for-food-science-05",
+    "title": "Spectroscopic Analysis with Deep Learning",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-04"],
+    "summary": "NIR/MIR/Raman spectroscopy, chemometrics with PCA and PLSR, 1D-CNNs for spectral classification, and real-time on-line monitoring.",
+    "contentPath": "ai-for-food-science/05-spectroscopic-analysis-with-deep-learning.md"
+  },
+  "ai-for-food-science-06": {
+    "id": "ai-for-food-science-06",
+    "title": "AI for Food Safety Inspection and Contamination Detection",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-05"],
+    "summary": "ML for pathogen and mycotoxin detection, foreign object detection with X-ray imaging, transfer learning for food safety, and regulatory context.",
+    "contentPath": "ai-for-food-science/06-ai-for-food-safety-inspection-and-contamination-detection.md"
+  },
+  "ai-for-food-science-07": {
+    "id": "ai-for-food-science-07",
+    "title": "AI for Fermentation Science and Process Optimization",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-06"],
+    "summary": "ML for fermentation monitoring, reinforcement learning for process control, digital twins, and applications in wine, cheese, and industrial enzymes.",
+    "contentPath": "ai-for-food-science/07-ai-for-fermentation-science-and-process-optimization.md"
+  },
+  "ai-for-food-science-08": {
+    "id": "ai-for-food-science-08",
+    "title": "AI for Nutrition Science and Personalized Diet",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-07"],
+    "summary": "Nutritional databases, food composition prediction, personalized nutrition via biomarkers and gut microbiome, and multi-modal food AI.",
+    "contentPath": "ai-for-food-science/08-ai-for-nutrition-science-and-personalized-diet.md"
+  },
+  "ai-for-food-science-09": {
+    "id": "ai-for-food-science-09",
+    "title": "AI for Shelf Life Prediction and Food Freshness",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "35 min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-food-science-08"],
+    "summary": "Accelerated shelf life testing, sensor fusion for freshness detection, cold chain monitoring, and LSTM for time-series freshness prediction.",
+    "contentPath": "ai-for-food-science/09-ai-for-shelf-life-prediction-and-food-freshness.md"
+  },
+  "ai-for-food-science-10": {
+    "id": "ai-for-food-science-10",
+    "title": "AI for Food Fraud Detection and Supply Chain Traceability",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-food-science-09"],
+    "summary": "Food fraud types, ML for authentication via isotope and elemental profiling, blockchain + AI traceability, and regulatory frameworks.",
+    "contentPath": "ai-for-food-science/10-ai-for-food-fraud-detection-and-supply-chain-traceability.md"
+  },
+  "ai-for-food-science-11": {
+    "id": "ai-for-food-science-11",
+    "title": "Frontiers: AI-Native Food Science",
+    "topic": "ai-for-food-science",
+    "topicPath": "ai-for-food-science",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Chemical language models for taste prediction, AI-generated food formulations, smart packaging, self-driving food labs, and ethical frontiers.",
+    "contentPath": "ai-for-food-science/11-frontiers-ai-native-food-science.md"
   }
 }
