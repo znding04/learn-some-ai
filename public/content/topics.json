@@ -173,5 +173,12 @@
     "icon": "🍲",
     "description": "AI transforming food science — from molecular taste prediction and spectroscopic analysis to food safety inspection, fermentation optimization, and smart packaging.",
     "path": "ai-for-food-science"
+  },
+  {
+    "id": "ai-for-operations-research",
+    "title": "AI for Operations Research",
+    "icon": "📦",
+    "description": "AI transforming operations research and supply chain — from combinatorial optimization and vehicle routing to reinforcement learning for logistics, warehouse robotics, and autonomous supply chains.",
+    "path": "ai-for-operations-research"
   }
 ]

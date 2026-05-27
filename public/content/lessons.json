@@ -175,7 +175,7 @@
     "prerequisites": [
       "ai-fundamentals-13"
     ],
-    "summary": "Sigmoid, tanh, ReLU, GELU, Swish \u2014 vanishing gradients and initialization strategies.",
+    "summary": "Sigmoid, tanh, ReLU, GELU, Swish — vanishing gradients and initialization strategies.",
     "contentPath": "ai-fundamentals/14-activation-functions.md"
   },
   "ai-fundamentals-15": {
@@ -631,7 +631,7 @@
     "prerequisites": [
       "ai-for-biology-01"
     ],
-    "summary": "How biological entities are encoded for machine learning \u2014 sequences, structures, and graphs.",
+    "summary": "How biological entities are encoded for machine learning — sequences, structures, and graphs.",
     "contentPath": "ai-for-biology/02-biological-data-representations.md"
   },
   "ai-for-biology-03": {
@@ -1019,7 +1019,7 @@
     "prerequisites": [
       "ai-fundamentals-06"
     ],
-    "summary": "An introduction to the intersection of AI and mathematics \u2014 history, breakthroughs, and why it matters.",
+    "summary": "An introduction to the intersection of AI and mathematics — history, breakthroughs, and why it matters.",
     "contentPath": "ai-for-mathematics/01-what-is-ai-for-mathematics.md"
   },
   "ai-for-math-02": {
@@ -1032,7 +1032,7 @@
     "prerequisites": [
       "ai-for-math-01"
     ],
-    "summary": "How to encode mathematical objects \u2014 numbers, symbols, graphs, equations \u2014 for neural networks.",
+    "summary": "How to encode mathematical objects — numbers, symbols, graphs, equations — for neural networks.",
     "contentPath": "ai-for-mathematics/02-mathematical-representations-for-ai.md"
   },
   "ai-for-math-03": {
@@ -1045,7 +1045,7 @@
     "prerequisites": [
       "ai-for-math-01"
     ],
-    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam \u2014 key benchmarks for evaluating AI math.",
+    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam — key benchmarks for evaluating AI math.",
     "contentPath": "ai-for-mathematics/03-mathematical-benchmarks-and-datasets.md"
   },
   "ai-for-math-04": {
@@ -1058,7 +1058,7 @@
     "prerequisites": [
       "ai-for-math-02"
     ],
-    "summary": "Combining neural networks with symbolic reasoning \u2014 neuro-symbolic integration and symbolic regression.",
+    "summary": "Combining neural networks with symbolic reasoning — neuro-symbolic integration and symbolic regression.",
     "contentPath": "ai-for-mathematics/04-neural-symbolic-ai-for-mathematics.md"
   },
   "ai-for-math-05": {
@@ -1099,7 +1099,7 @@
       "ai-for-math-05",
       "ai-for-math-06"
     ],
-    "summary": "Google DeepMind's AlphaProof \u2014 Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
+    "summary": "Google DeepMind's AlphaProof — Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
     "contentPath": "ai-for-mathematics/07-alphaproof-and-formal-theorem-proving.md"
   },
   "ai-for-math-08": {
@@ -1319,7 +1319,7 @@
     "prerequisites": [
       "ai-for-medicine-01"
     ],
-    "summary": "Deep learning for X-rays, CT, MRI, and pathology images \u2014 architectures, datasets, and clinical deployment.",
+    "summary": "Deep learning for X-rays, CT, MRI, and pathology images — architectures, datasets, and clinical deployment.",
     "contentPath": "ai-for-medicine/02-medical-imaging-ai.md"
   },
   "ai-for-medicine-03": {
@@ -1560,7 +1560,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of how AI intersects with neuroscience \u2014 history, modalities, applications, and the unique challenges of neural data.",
+    "summary": "Overview of how AI intersects with neuroscience — history, modalities, applications, and the unique challenges of neural data.",
     "contentPath": "ai-for-neuroscience/01-introduction-to-ai-for-neuroscience.md"
   },
   "ai-for-neuroscience-02": {
@@ -1573,7 +1573,7 @@
     "prerequisites": [
       "ai-for-neuroscience-01"
     ],
-    "summary": "MRI, fMRI, EEG, MEG, and PET imaging \u2014 their physical basis, resolution tradeoffs, and AI applications for each modality.",
+    "summary": "MRI, fMRI, EEG, MEG, and PET imaging — their physical basis, resolution tradeoffs, and AI applications for each modality.",
     "contentPath": "ai-for-neuroscience/02-brain-imaging-modalities-and-ai.md"
   },
   "ai-for-neuroscience-03": {
@@ -1586,7 +1586,7 @@
     "prerequisites": [
       "ai-for-neuroscience-02"
     ],
-    "summary": "Reconstructing sensory experiences and motor intentions from brain activity \u2014 decoding algorithms, BCIs, and neural interfaces.",
+    "summary": "Reconstructing sensory experiences and motor intentions from brain activity — decoding algorithms, BCIs, and neural interfaces.",
     "contentPath": "ai-for-neuroscience/03-neural-decoding-and-brain-computer-interfaces.md"
   },
   "ai-for-neuroscience-04": {
@@ -1666,7 +1666,7 @@
     "prerequisites": [
       "ai-for-neuroscience-08"
     ],
-    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data \u2014 challenges of class imbalance and data harmonization.",
+    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data — challenges of class imbalance and data harmonization.",
     "contentPath": "ai-for-neuroscience/09-ai-for-neurological-disorder-diagnosis.md"
   },
   "ai-for-neuroscience-10": {
@@ -1704,7 +1704,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of AI applications in finance \u2014 from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
+    "summary": "Overview of AI applications in finance — from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
     "contentPath": "ai-for-finance/01-introduction-to-ai-for-finance.md"
   },
   "ai-for-finance-02": {
@@ -1743,7 +1743,7 @@
     "prerequisites": [
       "ai-for-finance-03"
     ],
-    "summary": "From regression to deep learning for price prediction \u2014 walk-forward validation, look-ahead bias, and ensemble methods.",
+    "summary": "From regression to deep learning for price prediction — walk-forward validation, look-ahead bias, and ensemble methods.",
     "contentPath": "ai-for-finance/04-machine-learning-for-stock-prediction.md"
   },
   "ai-for-finance-05": {
@@ -2130,7 +2130,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "AI's transforming role in software development \u2014 from code generation to autonomous coding agents.",
+    "summary": "AI's transforming role in software development — from code generation to autonomous coding agents.",
     "contentPath": "ai-for-computer-science/01-introduction-to-ai-for-computer-science.md"
   },
   "ai-for-computer-science-02": {
@@ -2143,7 +2143,7 @@
     "prerequisites": [
       "ai-for-computer-science-01"
     ],
-    "summary": "GitHub Copilot, Codeium, and LLM-based code completion \u2014 how they work and their limitations.",
+    "summary": "GitHub Copilot, Codeium, and LLM-based code completion — how they work and their limitations.",
     "contentPath": "ai-for-computer-science/02-ai-assisted-programming-and-code-generation.md"
   },
   "ai-for-computer-science-03": {
@@ -2434,7 +2434,7 @@
     "prerequisites": [
       "ai-for-education-01"
     ],
-    "summary": "Architecture of ITS \u2014 expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
+    "summary": "Architecture of ITS — expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
     "contentPath": "ai-for-education/02-intelligent-tutoring-systems.md"
   },
   "ai-for-education-03": {
@@ -3283,7 +3283,7 @@
     "estimatedTime": "30 min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Learn how computers encode music \u2014 MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
+    "summary": "Learn how computers encode music — MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
     "contentPath": "ai-for-music-and-creative-arts/02-how-computers-represent-music.md"
   },
   "ai-for-music-and-creative-arts-03": {
@@ -3392,7 +3392,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "30 min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-fundamentals"],
+    "prerequisites": [
+      "ai-fundamentals"
+    ],
     "summary": "Overview of the cyber threat landscape, why AI-native security matters, and how ML categories (supervised, unsupervised, RL) map to security problems.",
     "contentPath": "ai-for-cybersecurity/01-introduction-to-ai-for-cybersecurity.md"
   },
@@ -3403,7 +3405,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "35 min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-cybersecurity-01"],
+    "prerequisites": [
+      "ai-for-cybersecurity-01"
+    ],
     "summary": "Static and dynamic malware analysis features, gradient boosting and deep learning classifiers, YARA rules, and concept drift in malware detection.",
     "contentPath": "ai-for-cybersecurity/02-malware-detection-with-machine-learning.md"
   },
@@ -3414,7 +3418,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "35 min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-cybersecurity-01"],
+    "prerequisites": [
+      "ai-for-cybersecurity-01"
+    ],
     "summary": "Network traffic analysis, signature-based vs anomaly-based IDS, autoencoders and isolation forests, and Graph Neural Networks for network-aware detection.",
     "contentPath": "ai-for-cybersecurity/03-network-intrusion-detection.md"
   },
@@ -3425,7 +3431,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "30 min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-cybersecurity-01"],
+    "prerequisites": [
+      "ai-for-cybersecurity-01"
+    ],
     "summary": "Email and URL classification with NLP, social engineering detection, BERT-based phishing classifiers, and spear-phishing detection with LLMs.",
     "contentPath": "ai-for-cybersecurity/04-phishing-and-spam-detection.md"
   },
@@ -3436,7 +3444,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "35 min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-cybersecurity-01"],
+    "prerequisites": [
+      "ai-for-cybersecurity-01"
+    ],
     "summary": "Automated vulnerability scanning, CVE analysis with CVSS scoring, AI-guided fuzzing, and ML-based code vulnerability detection.",
     "contentPath": "ai-for-cybersecurity/05-vulnerability-assessment-with-ai.md"
   },
@@ -3447,7 +3457,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "40 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-cybersecurity-02"],
+    "prerequisites": [
+      "ai-for-cybersecurity-02"
+    ],
     "summary": "Adversarial examples, FGSM and PGD attacks, evasion attacks on security classifiers, adversarial training, and certified robustness.",
     "contentPath": "ai-for-cybersecurity/06-adversarial-machine-learning.md"
   },
@@ -3458,7 +3470,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "40 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-cybersecurity-01"],
+    "prerequisites": [
+      "ai-for-cybersecurity-01"
+    ],
     "summary": "Federated learning for collaborative threat detection, differential privacy, homomorphic encryption for ML, and secure multi-party computation.",
     "contentPath": "ai-for-cybersecurity/07-privacy-preserving-ml-for-security.md"
   },
@@ -3469,7 +3483,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "40 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-cybersecurity-01"],
+    "prerequisites": [
+      "ai-for-cybersecurity-01"
+    ],
     "summary": "MITRE ATT&CK mapping, automated IOC extraction with NLP, threat hunting with AI, knowledge graphs, and parser-free log querying.",
     "contentPath": "ai-for-cybersecurity/08-ai-for-threat-intelligence.md"
   },
@@ -3480,7 +3496,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "45 min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-cybersecurity-06"],
+    "prerequisites": [
+      "ai-for-cybersecurity-06"
+    ],
     "summary": "Prompt injection attacks, jailbreaks, domain-camouflaged injection in multi-agent systems, RAG corruption defense, and AI-powered red teaming.",
     "contentPath": "ai-for-cybersecurity/09-llm-security-and-red-teaming.md"
   },
@@ -3491,7 +3509,9 @@
     "topicPath": "ai-for-cybersecurity",
     "estimatedTime": "45 min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-cybersecurity-08"],
+    "prerequisites": [
+      "ai-for-cybersecurity-08"
+    ],
     "summary": "AI agents for SOC automation, LLM-powered incident response, RL for penetration testing, and security protocol analysis with Tamarin.",
     "contentPath": "ai-for-cybersecurity/10-autonomous-security-agents.md"
   },
@@ -3524,7 +3544,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "30 min",
     "difficulty": "beginner",
-    "prerequisites": ["ai-for-food-science-01"],
+    "prerequisites": [
+      "ai-for-food-science-01"
+    ],
     "summary": "Spectral, image, chemical, and sensor data types in food science, molecular representations, data quality challenges, and public datasets.",
     "contentPath": "ai-for-food-science/02-food-science-data-types-representations-and-quality.md"
   },
@@ -3535,7 +3557,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "35 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-02"],
+    "prerequisites": [
+      "ai-for-food-science-02"
+    ],
     "summary": "Molecular representations (SMILES, fingerprints, GNNs), QSAR for food properties, taste prediction, and bioactive peptide discovery.",
     "contentPath": "ai-for-food-science/03-machine-learning-for-food-chemistry.md"
   },
@@ -3546,7 +3570,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "35 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-03"],
+    "prerequisites": [
+      "ai-for-food-science-03"
+    ],
     "summary": "CNN architectures for food images, YOLO for real-time inspection, hyperspectral imaging, and edge deployment for quality grading.",
     "contentPath": "ai-for-food-science/04-computer-vision-for-food-quality-inspection.md"
   },
@@ -3557,7 +3583,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "40 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-04"],
+    "prerequisites": [
+      "ai-for-food-science-04"
+    ],
     "summary": "NIR/MIR/Raman spectroscopy, chemometrics with PCA and PLSR, 1D-CNNs for spectral classification, and real-time on-line monitoring.",
     "contentPath": "ai-for-food-science/05-spectroscopic-analysis-with-deep-learning.md"
   },
@@ -3568,7 +3596,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "35 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-05"],
+    "prerequisites": [
+      "ai-for-food-science-05"
+    ],
     "summary": "ML for pathogen and mycotoxin detection, foreign object detection with X-ray imaging, transfer learning for food safety, and regulatory context.",
     "contentPath": "ai-for-food-science/06-ai-for-food-safety-inspection-and-contamination-detection.md"
   },
@@ -3579,7 +3609,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "35 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-06"],
+    "prerequisites": [
+      "ai-for-food-science-06"
+    ],
     "summary": "ML for fermentation monitoring, reinforcement learning for process control, digital twins, and applications in wine, cheese, and industrial enzymes.",
     "contentPath": "ai-for-food-science/07-ai-for-fermentation-science-and-process-optimization.md"
   },
@@ -3590,7 +3622,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "35 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-07"],
+    "prerequisites": [
+      "ai-for-food-science-07"
+    ],
     "summary": "Nutritional databases, food composition prediction, personalized nutrition via biomarkers and gut microbiome, and multi-modal food AI.",
     "contentPath": "ai-for-food-science/08-ai-for-nutrition-science-and-personalized-diet.md"
   },
@@ -3601,7 +3635,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "35 min",
     "difficulty": "intermediate",
-    "prerequisites": ["ai-for-food-science-08"],
+    "prerequisites": [
+      "ai-for-food-science-08"
+    ],
     "summary": "Accelerated shelf life testing, sensor fusion for freshness detection, cold chain monitoring, and LSTM for time-series freshness prediction.",
     "contentPath": "ai-for-food-science/09-ai-for-shelf-life-prediction-and-food-freshness.md"
   },
@@ -3612,7 +3648,9 @@
     "topicPath": "ai-for-food-science",
     "estimatedTime": "40 min",
     "difficulty": "advanced",
-    "prerequisites": ["ai-for-food-science-09"],
+    "prerequisites": [
+      "ai-for-food-science-09"
+    ],
     "summary": "Food fraud types, ML for authentication via isotope and elemental profiling, blockchain + AI traceability, and regulatory frameworks.",
     "contentPath": "ai-for-food-science/10-ai-for-food-fraud-detection-and-supply-chain-traceability.md"
   },
@@ -3626,5 +3664,146 @@
     "prerequisites": [],
     "summary": "Chemical language models for taste prediction, AI-generated food formulations, smart packaging, self-driving food labs, and ethical frontiers.",
     "contentPath": "ai-for-food-science/11-frontiers-ai-native-food-science.md"
+  },
+  "ai-for-operations-research-01": {
+    "id": "ai-for-operations-research-01",
+    "title": "Introduction to AI for Operations Research and Supply Chain",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Survey of OR, supply chain fundamentals, AI applications, historical context from Dantzig to deep reinforcement learning.",
+    "contentPath": "ai-for-operations-research/01-introduction-to-ai-for-operations-research-and-supply-chain.md"
+  },
+  "ai-for-operations-research-02": {
+    "id": "ai-for-operations-research-02",
+    "title": "Optimization Fundamentals: From Linear Programming to Combinatorial Optimization",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-operations-research-01"
+    ],
+    "summary": "LP, IP, MILP, branch-and-bound, cutting planes, simplex method, and how neural networks learn to solve combinatorial problems.",
+    "contentPath": "ai-for-operations-research/02-optimization-fundamentals-from-linear-programming-to-combinatorial-optimization.md"
+  },
+  "ai-for-operations-research-03": {
+    "id": "ai-for-operations-research-03",
+    "title": "Vehicle Routing Problems and Neural Solvers",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "40 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-operations-research-02"
+    ],
+    "summary": "VRP taxonomy (CVRP, VRPTW, VRPPD), graph neural network solvers, attention-based meta-learning for routing, and Google OR-Tools comparison.",
+    "contentPath": "ai-for-operations-research/03-vehicle-routing-problems-and-neural-solvers.md"
+  },
+  "ai-for-operations-research-04": {
+    "id": "ai-for-operations-research-04",
+    "title": "Inventory Management and Demand Forecasting with ML",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-operations-research-01"
+    ],
+    "summary": "Classical inventory models (EOQ, newsvendor, (s,S)), LSTM and Transformer for demand forecasting, uncertainty quantification.",
+    "contentPath": "ai-for-operations-research/04-inventory-management-and-demand-forecasting-with-ml.md"
+  },
+  "ai-for-operations-research-05": {
+    "id": "ai-for-operations-research-05",
+    "title": "Production Planning, Scheduling, and Process Optimization",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-operations-research-02"
+    ],
+    "summary": "Job shop scheduling, genetic algorithms, constraint programming, GNN-based schedulers, digital twins for manufacturing.",
+    "contentPath": "ai-for-operations-research/05-production-planning-scheduling-and-process-optimization.md"
+  },
+  "ai-for-operations-research-06": {
+    "id": "ai-for-operations-research-06",
+    "title": "Reinforcement Learning for Dynamic Supply Chain Decisions",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-operations-research-04"
+    ],
+    "summary": "Multi-agent RL for inventory replenishment, policy gradient methods for pricing, attention-based order fulfillment, sim-to-real transfer.",
+    "contentPath": "ai-for-operations-research/06-reinforcement-learning-for-dynamic-supply-chain-decisions.md"
+  },
+  "ai-for-operations-research-07": {
+    "id": "ai-for-operations-research-07",
+    "title": "Queueing Networks and Stochastic Optimization with Deep Learning",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-operations-research-05"
+    ],
+    "summary": "Jackson networks, G/G/1 queues, mean-field approximations, deep learning for wait time prediction, and real-time dispatch.",
+    "contentPath": "ai-for-operations-research/07-queueing-networks-and-stochastic-optimization-with-deep-learning.md"
+  },
+  "ai-for-operations-research-08": {
+    "id": "ai-for-operations-research-08",
+    "title": "Multi-Echelon Inventory Models and AI",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-operations-research-04"
+    ],
+    "summary": "Multi-echelon service models, risk pooling, base stock and pull policies, GNN for optimal echelon configuration, and stochastic inventory control.",
+    "contentPath": "ai-for-operations-research/08-multi-echelon-inventory-models-and-ai.md"
+  },
+  "ai-for-operations-research-09": {
+    "id": "ai-for-operations-research-09",
+    "title": "Warehouse Robotics and Automated Fulfillment",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "35 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-operations-research-05"
+    ],
+    "summary": "Automated storage and retrieval systems (AS/RS), mobile robots (Amazon Kiva), bin-packing with RL, task scheduling for pick-and-pack.",
+    "contentPath": "ai-for-operations-research/09-warehouse-robotics-and-automated-fulfillment.md"
+  },
+  "ai-for-operations-research-10": {
+    "id": "ai-for-operations-research-10",
+    "title": "AI for Logistics Network Design and Last-Mile Delivery",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-operations-research-03"
+    ],
+    "summary": "Facility location models, network design with GNN, real-time routing with RL, drone delivery optimization, and Uber Eats/Amazon case studies.",
+    "contentPath": "ai-for-operations-research/10-ai-for-logistics-network-design-and-last-mile-delivery.md"
+  },
+  "ai-for-operations-research-11": {
+    "id": "ai-for-operations-research-11",
+    "title": "Frontiers: Autonomous Supply Chain and AI-Native Operations",
+    "topic": "ai-for-operations-research",
+    "topicPath": "ai-for-operations-research",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-operations-research-06"
+    ],
+    "summary": "Self-driving supply chains, fully autonomous warehouses, LLM for supply chain reasoning, agent-based simulation, and ethical labor implications.",
+    "contentPath": "ai-for-operations-research/11-frontiers-autonomous-supply-chain-and-ai-native-operations.md"
   }
 }

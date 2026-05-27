@@ -31,7 +31,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Music and Creative Arts |     11 | All published         |
 | AI for Cybersecurity           |     11 | All published         |
 | AI for Food Science            |     11 | All published         |
-| **Total**             | **286** |                       |
+| AI for Operations Research     |     11 | All published         |
+| **Total**             | **297** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -349,6 +350,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI for Food Fraud Detection and Supply Chain Traceability
 - [x] 11 — Frontiers: AI-Native Food Science
 
+### AI for Operations Research
+- [x] 01 — Introduction to AI for Operations Research and Supply Chain
+- [x] 02 — Optimization Fundamentals: From Linear Programming to Combinatorial Optimization
+- [x] 03 — Vehicle Routing Problems and Neural Solvers
+- [x] 04 — Inventory Management and Demand Forecasting with ML
+- [x] 05 — Production Planning, Scheduling, and Process Optimization
+- [x] 06 — Reinforcement Learning for Dynamic Supply Chain Decisions
+- [x] 07 — Queueing Networks and Stochastic Optimization with Deep Learning
+- [x] 08 — Multi-Echelon Inventory Models and AI
+- [x] 09 — Warehouse Robotics and Automated Fulfillment
+- [x] 10 — AI for Logistics Network Design and Last-Mile Delivery
+- [x] 11 — Frontiers: Autonomous Supply Chain and AI-Native Operations
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -369,6 +383,14 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-27
+- Researched new domain: **AI for Operations Research and Supply Chain**
+- Domain covers: combinatorial optimization, vehicle routing problems, neural network solvers (GNN, attention-based), inventory management, production planning, RL for supply chain, queueing networks, multi-echelon inventory models, warehouse robotics, last-mile delivery optimization, and autonomous supply chain frontiers
+- Found active research: neural combinatorial optimization (Nature 2024-2026), attention-based routing solvers (NeurIPS/ICML 2023-2025), RL for inventory replenishment (DeepMind/Google), Amazon Kiva warehouse robotics, LLM for supply chain reasoning, self-driving supply chain labs
+- Implemented full track: 11 lessons across beginner → intermediate → advanced
+- Registered all 11 lessons in lessons.json (total now 297) and topics.json (total now 26)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-26
 - Researched new domain: **AI for Food Science**
