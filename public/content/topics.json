@@ -180,5 +180,12 @@
     "icon": "📦",
     "description": "AI transforming operations research and supply chain — from combinatorial optimization and vehicle routing to reinforcement learning for logistics, warehouse robotics, and autonomous supply chains.",
     "path": "ai-for-operations-research"
+  },
+  {
+    "id": "ai-for-energy",
+    "title": "AI for Energy",
+    "icon": "⚡",
+    "description": "AI transforming energy systems — from smart grids and renewable forecasting to nuclear fusion control, EV charging optimization, and autonomous energy infrastructure.",
+    "path": "ai-for-energy"
   }
 ]

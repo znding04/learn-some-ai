@@ -32,7 +32,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Cybersecurity           |     11 | All published         |
 | AI for Food Science            |     11 | All published         |
 | AI for Operations Research     |     11 | All published         |
-| **Total**             | **297** |                       |
+| AI for Energy              |     11 | All published         |
+| **Total**             | **308** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -363,6 +364,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — AI for Logistics Network Design and Last-Mile Delivery
 - [x] 11 — Frontiers: Autonomous Supply Chain and AI-Native Operations
 
+### AI for Energy
+- [x] 01 — Introduction to AI for Energy
+- [x] 02 — Smart Grids: Architecture, Data, and AI Applications
+- [x] 03 — Renewable Energy Forecasting with Deep Learning
+- [x] 04 — AI for Power Grid Operations and Stability
+- [x] 05 — Nuclear Fusion Plasma Control with Reinforcement Learning
+- [x] 06 — Demand Response and Energy Demand Forecasting
+- [x] 07 — Electric Vehicle Charging Networks and Optimization
+- [x] 08 — AI for Energy Storage and Battery Management Systems
+- [x] 09 — Building Energy Management and Smart Buildings
+- [x] 10 — Industrial Energy Efficiency and Process Optimization
+- [x] 11 — Frontiers: Autonomous Energy Systems and the Future of Grid AI
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -383,6 +397,14 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-28
+- Researched new domain: **AI for Energy**
+- Domain covers: smart grids, renewable energy forecasting (solar/wind), nuclear fusion plasma control with RL (DeepMind), power grid stability, demand response, EV charging optimization, V2G, battery storage, building energy management, industrial efficiency, and autonomous energy system frontiers
+- Found active research: DeepMind's RL for tokamak plasma control (Nature 2022), neural network-based solar/wind forecasting (NeurIPS/ICML 2023-2025), Tesla Powerwall grid-scale applications, Google DeepMind's weather prediction model for renewable integration, AI for nuclear fission monitoring
+- Implemented full track: 11 lessons across beginner → intermediate → advanced
+- Registered all 11 lessons in lessons.json (total now 308) and topics.json (total now 27)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-27
 - Researched new domain: **AI for Operations Research and Supply Chain**

@@ -175,7 +175,7 @@
     "prerequisites": [
       "ai-fundamentals-13"
     ],
-    "summary": "Sigmoid, tanh, ReLU, GELU, Swish — vanishing gradients and initialization strategies.",
+    "summary": "Sigmoid, tanh, ReLU, GELU, Swish \u2014 vanishing gradients and initialization strategies.",
     "contentPath": "ai-fundamentals/14-activation-functions.md"
   },
   "ai-fundamentals-15": {
@@ -631,7 +631,7 @@
     "prerequisites": [
       "ai-for-biology-01"
     ],
-    "summary": "How biological entities are encoded for machine learning — sequences, structures, and graphs.",
+    "summary": "How biological entities are encoded for machine learning \u2014 sequences, structures, and graphs.",
     "contentPath": "ai-for-biology/02-biological-data-representations.md"
   },
   "ai-for-biology-03": {
@@ -1019,7 +1019,7 @@
     "prerequisites": [
       "ai-fundamentals-06"
     ],
-    "summary": "An introduction to the intersection of AI and mathematics — history, breakthroughs, and why it matters.",
+    "summary": "An introduction to the intersection of AI and mathematics \u2014 history, breakthroughs, and why it matters.",
     "contentPath": "ai-for-mathematics/01-what-is-ai-for-mathematics.md"
   },
   "ai-for-math-02": {
@@ -1032,7 +1032,7 @@
     "prerequisites": [
       "ai-for-math-01"
     ],
-    "summary": "How to encode mathematical objects — numbers, symbols, graphs, equations — for neural networks.",
+    "summary": "How to encode mathematical objects \u2014 numbers, symbols, graphs, equations \u2014 for neural networks.",
     "contentPath": "ai-for-mathematics/02-mathematical-representations-for-ai.md"
   },
   "ai-for-math-03": {
@@ -1045,7 +1045,7 @@
     "prerequisites": [
       "ai-for-math-01"
     ],
-    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam — key benchmarks for evaluating AI math.",
+    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam \u2014 key benchmarks for evaluating AI math.",
     "contentPath": "ai-for-mathematics/03-mathematical-benchmarks-and-datasets.md"
   },
   "ai-for-math-04": {
@@ -1058,7 +1058,7 @@
     "prerequisites": [
       "ai-for-math-02"
     ],
-    "summary": "Combining neural networks with symbolic reasoning — neuro-symbolic integration and symbolic regression.",
+    "summary": "Combining neural networks with symbolic reasoning \u2014 neuro-symbolic integration and symbolic regression.",
     "contentPath": "ai-for-mathematics/04-neural-symbolic-ai-for-mathematics.md"
   },
   "ai-for-math-05": {
@@ -1099,7 +1099,7 @@
       "ai-for-math-05",
       "ai-for-math-06"
     ],
-    "summary": "Google DeepMind's AlphaProof — Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
+    "summary": "Google DeepMind's AlphaProof \u2014 Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
     "contentPath": "ai-for-mathematics/07-alphaproof-and-formal-theorem-proving.md"
   },
   "ai-for-math-08": {
@@ -1319,7 +1319,7 @@
     "prerequisites": [
       "ai-for-medicine-01"
     ],
-    "summary": "Deep learning for X-rays, CT, MRI, and pathology images — architectures, datasets, and clinical deployment.",
+    "summary": "Deep learning for X-rays, CT, MRI, and pathology images \u2014 architectures, datasets, and clinical deployment.",
     "contentPath": "ai-for-medicine/02-medical-imaging-ai.md"
   },
   "ai-for-medicine-03": {
@@ -1560,7 +1560,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of how AI intersects with neuroscience — history, modalities, applications, and the unique challenges of neural data.",
+    "summary": "Overview of how AI intersects with neuroscience \u2014 history, modalities, applications, and the unique challenges of neural data.",
     "contentPath": "ai-for-neuroscience/01-introduction-to-ai-for-neuroscience.md"
   },
   "ai-for-neuroscience-02": {
@@ -1573,7 +1573,7 @@
     "prerequisites": [
       "ai-for-neuroscience-01"
     ],
-    "summary": "MRI, fMRI, EEG, MEG, and PET imaging — their physical basis, resolution tradeoffs, and AI applications for each modality.",
+    "summary": "MRI, fMRI, EEG, MEG, and PET imaging \u2014 their physical basis, resolution tradeoffs, and AI applications for each modality.",
     "contentPath": "ai-for-neuroscience/02-brain-imaging-modalities-and-ai.md"
   },
   "ai-for-neuroscience-03": {
@@ -1586,7 +1586,7 @@
     "prerequisites": [
       "ai-for-neuroscience-02"
     ],
-    "summary": "Reconstructing sensory experiences and motor intentions from brain activity — decoding algorithms, BCIs, and neural interfaces.",
+    "summary": "Reconstructing sensory experiences and motor intentions from brain activity \u2014 decoding algorithms, BCIs, and neural interfaces.",
     "contentPath": "ai-for-neuroscience/03-neural-decoding-and-brain-computer-interfaces.md"
   },
   "ai-for-neuroscience-04": {
@@ -1666,7 +1666,7 @@
     "prerequisites": [
       "ai-for-neuroscience-08"
     ],
-    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data — challenges of class imbalance and data harmonization.",
+    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data \u2014 challenges of class imbalance and data harmonization.",
     "contentPath": "ai-for-neuroscience/09-ai-for-neurological-disorder-diagnosis.md"
   },
   "ai-for-neuroscience-10": {
@@ -1704,7 +1704,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of AI applications in finance — from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
+    "summary": "Overview of AI applications in finance \u2014 from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
     "contentPath": "ai-for-finance/01-introduction-to-ai-for-finance.md"
   },
   "ai-for-finance-02": {
@@ -1743,7 +1743,7 @@
     "prerequisites": [
       "ai-for-finance-03"
     ],
-    "summary": "From regression to deep learning for price prediction — walk-forward validation, look-ahead bias, and ensemble methods.",
+    "summary": "From regression to deep learning for price prediction \u2014 walk-forward validation, look-ahead bias, and ensemble methods.",
     "contentPath": "ai-for-finance/04-machine-learning-for-stock-prediction.md"
   },
   "ai-for-finance-05": {
@@ -2130,7 +2130,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "AI's transforming role in software development — from code generation to autonomous coding agents.",
+    "summary": "AI's transforming role in software development \u2014 from code generation to autonomous coding agents.",
     "contentPath": "ai-for-computer-science/01-introduction-to-ai-for-computer-science.md"
   },
   "ai-for-computer-science-02": {
@@ -2143,7 +2143,7 @@
     "prerequisites": [
       "ai-for-computer-science-01"
     ],
-    "summary": "GitHub Copilot, Codeium, and LLM-based code completion — how they work and their limitations.",
+    "summary": "GitHub Copilot, Codeium, and LLM-based code completion \u2014 how they work and their limitations.",
     "contentPath": "ai-for-computer-science/02-ai-assisted-programming-and-code-generation.md"
   },
   "ai-for-computer-science-03": {
@@ -2434,7 +2434,7 @@
     "prerequisites": [
       "ai-for-education-01"
     ],
-    "summary": "Architecture of ITS — expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
+    "summary": "Architecture of ITS \u2014 expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
     "contentPath": "ai-for-education/02-intelligent-tutoring-systems.md"
   },
   "ai-for-education-03": {
@@ -3283,7 +3283,7 @@
     "estimatedTime": "30 min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Learn how computers encode music — MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
+    "summary": "Learn how computers encode music \u2014 MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
     "contentPath": "ai-for-music-and-creative-arts/02-how-computers-represent-music.md"
   },
   "ai-for-music-and-creative-arts-03": {
@@ -3805,5 +3805,146 @@
     ],
     "summary": "Self-driving supply chains, fully autonomous warehouses, LLM for supply chain reasoning, agent-based simulation, and ethical labor implications.",
     "contentPath": "ai-for-operations-research/11-frontiers-autonomous-supply-chain-and-ai-native-operations.md"
+  },
+  "ai-for-energy-01": {
+    "id": "ai-for-energy-01",
+    "title": "Introduction to AI for Energy",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "History of power systems, why AI for energy, major application areas, and the AI-for-energy pipeline.",
+    "contentPath": "ai-for-energy/01-introduction-to-ai-for-energy.md"
+  },
+  "ai-for-energy-02": {
+    "id": "ai-for-energy-02",
+    "title": "Smart Grids: Architecture, Data, and AI Applications",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-energy-01"
+    ],
+    "summary": "Smart grid architecture, SCADA systems, sensor networks, grid topology, and ML for grid monitoring and fault detection.",
+    "contentPath": "ai-for-energy/02-smart-grids-architecture-data-and-ai.md"
+  },
+  "ai-for-energy-03": {
+    "id": "ai-for-energy-03",
+    "title": "Renewable Energy Forecasting with Deep Learning",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-energy-01"
+    ],
+    "summary": "Solar and wind power prediction using LSTM, Transformer, and CNN-based time series models, with uncertainty quantification.",
+    "contentPath": "ai-for-energy/03-renewable-energy-forecasting-with-deep-learning.md"
+  },
+  "ai-for-energy-04": {
+    "id": "ai-for-energy-04",
+    "title": "AI for Power Grid Operations and Stability",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-energy-02"
+    ],
+    "summary": "Voltage and frequency regulation, load balancing, contingency analysis, and ML for power system stability.",
+    "contentPath": "ai-for-energy/04-ai-for-power-grid-operations-and-stability.md"
+  },
+  "ai-for-energy-05": {
+    "id": "ai-for-energy-05",
+    "title": "Nuclear Fusion Plasma Control with Reinforcement Learning",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-energy-04"
+    ],
+    "summary": "Tokamak physics, magnetic confinement, RL for plasma control, and DeepMind's landmark fusion control research.",
+    "contentPath": "ai-for-energy/05-nuclear-fusion-plasma-control-with-reinforcement-learning.md"
+  },
+  "ai-for-energy-06": {
+    "id": "ai-for-energy-06",
+    "title": "Demand Response and Energy Demand Forecasting",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-energy-04"
+    ],
+    "summary": "Demand-side management, load shifting, behavioral ML, elastic demand modeling, and incentive-based demand response.",
+    "contentPath": "ai-for-energy/06-demand-response-and-energy-demand-forecasting.md"
+  },
+  "ai-for-energy-07": {
+    "id": "ai-for-energy-07",
+    "title": "Electric Vehicle Charging Networks and Optimization",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "40min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-energy-06"
+    ],
+    "summary": "EV grid impact, smart charging scheduling, V2G (vehicle-to-grid), and route-aware charging optimization.",
+    "contentPath": "ai-for-energy/07-electric-vehicle-charging-networks-and-optimization.md"
+  },
+  "ai-for-energy-08": {
+    "id": "ai-for-energy-08",
+    "title": "AI for Energy Storage and Battery Management Systems",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-energy-07"
+    ],
+    "summary": "Battery modeling, state-of-charge estimation, degradation prediction, optimization for grid-scale storage.",
+    "contentPath": "ai-for-energy/08-ai-for-energy-storage-and-battery-management.md"
+  },
+  "ai-for-energy-09": {
+    "id": "ai-for-energy-09",
+    "title": "Building Energy Management and Smart Buildings",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "40min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-energy-08"
+    ],
+    "summary": "HVAC optimization, occupancy-based control, building digital twins, predictive maintenance, and whole-building energy optimization.",
+    "contentPath": "ai-for-energy/09-building-energy-management-and-smart-buildings.md"
+  },
+  "ai-for-energy-10": {
+    "id": "ai-for-energy-10",
+    "title": "Industrial Energy Efficiency and Process Optimization",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-energy-09"
+    ],
+    "summary": "AI for cement, steel, and chemical process optimization, emissions monitoring, and industrial energy management.",
+    "contentPath": "ai-for-energy/10-industrial-energy-efficiency-and-process-optimization.md"
+  },
+  "ai-for-energy-11": {
+    "id": "ai-for-energy-11",
+    "title": "Frontiers: Autonomous Energy Systems and the Future of Grid AI",
+    "topic": "ai-for-energy",
+    "topicPath": "ai-for-energy",
+    "estimatedTime": "45min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-energy-10"
+    ],
+    "summary": "Self-healing grids, multi-agent grid management, carbon-aware computing, fully autonomous energy systems, and future research directions.",
+    "contentPath": "ai-for-energy/11-frontiers-autonomous-energy-systems-and-future-of-grid-ai.md"
   }
 }
