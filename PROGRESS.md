@@ -33,7 +33,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Food Science            |     11 | All published         |
 | AI for Operations Research     |     11 | All published         |
 | AI for Energy              |     11 | All published         |
-| **Total**             | **308** |                       |
+| AI for History and Archaeology |     11 | All published         |
+| **Total**             | **319** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -377,6 +378,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Industrial Energy Efficiency and Process Optimization
 - [x] 11 — Frontiers: Autonomous Energy Systems and the Future of Grid AI
 
+### AI for History and Archaeology
+- [x] 01 — Introduction to AI for History and Archaeology
+- [x] 02 — Historical Data Representations
+- [x] 03 — Artifact Dating and Classification with ML
+- [x] 04 — NLP for Historical Documents
+- [x] 05 — Computer Vision for Artifact Analysis
+- [x] 06 — Spatial Analysis and GIS with AI
+- [x] 07 — Simulations and Digital Twins for History
+- [x] 08 — Paleography and Text Analysis
+- [x] 09 — Autonomous Archaeology and AI-Native Research
+- [x] 10 — Ethics, Bias, and Interpretability
+- [x] 11 — Frontiers: AI-Native History and Archaeology
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -397,6 +411,13 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-29
+- Researched new domain: **AI for History and Archaeology**
+- Domain covers: artifact analysis, historical text digitization (OCR, NER), site detection from satellite imagery, radiocarbon dating with ML, knowledge graphs for historical relationships, agent-based models of ancient societies, paleography and script recognition, autonomous archaeology, ethics/bias in historical AI, and AI-native digital humanities frontiers
+- Implemented full track: 11 lessons across beginner → intermediate → advanced
+- Registered all 11 lessons in lessons.json (total now 319) and topics.json (total now 28)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-28
 - Researched new domain: **AI for Energy**

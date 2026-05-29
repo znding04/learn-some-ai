@@ -3946,5 +3946,146 @@
     ],
     "summary": "Self-healing grids, multi-agent grid management, carbon-aware computing, fully autonomous energy systems, and future research directions.",
     "contentPath": "ai-for-energy/11-frontiers-autonomous-energy-systems-and-future-of-grid-ai.md"
+  },
+  "ai-for-history-01": {
+    "id": "ai-for-history-01",
+    "title": "Introduction to AI for History and Archaeology",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "30 min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Scope of AI in history and archaeology, history of computational archaeology, key ML/NLP/CV methods, and ethical considerations.",
+    "contentPath": "ai-for-history/01-introduction-to-ai-for-history-and-archaeology.md"
+  },
+  "ai-for-history-02": {
+    "id": "ai-for-history-02",
+    "title": "Historical Data Representations",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "35 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-history-01"
+    ],
+    "summary": "Time periods as features, event graphs, knowledge graphs, GIS with temporal data, and challenges with sparse/incomplete historical data.",
+    "contentPath": "ai-for-history/02-historical-data-representations.md"
+  },
+  "ai-for-history-03": {
+    "id": "ai-for-history-03",
+    "title": "Artifact Dating and Classification with ML",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "40 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-history-02"
+    ],
+    "summary": "Radiocarbon dating with regression, stylistic analysis of pottery/coins/textiles, feature extraction, and cross-validation with limited labeled data.",
+    "contentPath": "ai-for-history/03-artifact-dating-and-classification-with-ml.md"
+  },
+  "ai-for-history-04": {
+    "id": "ai-for-history-04",
+    "title": "NLP for Historical Documents",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "40 min",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "ai-for-history-01"
+    ],
+    "summary": "OCR for old manuscripts, named entity recognition for historical texts, language modeling for extinct languages, and cultural signal extraction.",
+    "contentPath": "ai-for-history/04-nlp-for-historical-documents.md"
+  },
+  "ai-for-history-05": {
+    "id": "ai-for-history-05",
+    "title": "Computer Vision for Artifact Analysis",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-history-03"
+    ],
+    "summary": "Object detection in excavation photos, semantic segmentation of stratigraphy, 3D reconstruction with photogrammetry, and automated style classification.",
+    "contentPath": "ai-for-history/05-computer-vision-for-artifact-analysis.md"
+  },
+  "ai-for-history-06": {
+    "id": "ai-for-history-06",
+    "title": "Spatial Analysis and GIS with AI",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-history-05"
+    ],
+    "summary": "Site location prediction with gradient boosting/GNNs, terrain analysis, trade route reconstruction, and remote sensing site detection from satellite imagery.",
+    "contentPath": "ai-for-history/06-spatial-analysis-and-gis-with-ai.md"
+  },
+  "ai-for-history-07": {
+    "id": "ai-for-history-07",
+    "title": "Simulations and Digital Twins for History",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "40 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-history-06"
+    ],
+    "summary": "Agent-based models of historical societies, digital twin city reconstructions, simulation validation, and emergent complexity from simple rules.",
+    "contentPath": "ai-for-history/07-simulations-and-digital-twins-for-history.md"
+  },
+  "ai-for-history-08": {
+    "id": "ai-for-history-08",
+    "title": "Paleography and Text Analysis",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "45 min",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "ai-for-history-04"
+    ],
+    "summary": "Ancient script recognition (Mayan, cuneiform, medieval), handwriting synthesis, automated translation for low-resource languages, and script dating.",
+    "contentPath": "ai-for-history/08-paleography-and-text-analysis.md"
+  },
+  "ai-for-history-09": {
+    "id": "ai-for-history-09",
+    "title": "Autonomous Archaeology and AI-Native Research",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-history-07"
+    ],
+    "summary": "Autonomous survey robots, ML-driven hypothesis generation, AI for literature synthesis, and agentic workflows for archival research.",
+    "contentPath": "ai-for-history/09-autonomous-archaeology-and-ai-native-research.md"
+  },
+  "ai-for-history-10": {
+    "id": "ai-for-history-10",
+    "title": "Ethics, Bias, and Interpretability",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "35 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-history-09"
+    ],
+    "summary": "Algorithmic bias in historical interpretation, Eurocentric training data, AI as interpretive tool vs. authority, and interpretable models for historiography.",
+    "contentPath": "ai-for-history/10-ethics-bias-and-interpretability.md"
+  },
+  "ai-for-history-11": {
+    "id": "ai-for-history-11",
+    "title": "Frontiers: AI-Native History and Archaeology",
+    "topic": "ai-for-history",
+    "topicPath": "ai-for-history",
+    "estimatedTime": "40 min",
+    "difficulty": "advanced",
+    "prerequisites": [
+      "ai-for-history-10"
+    ],
+    "summary": "Foundation models for historical reasoning, causal inference for counterfactual history, AI-generated narratives, and future of AI in museums and public history.",
+    "contentPath": "ai-for-history/11-frontiers-ai-native-history-and-archaeology.md"
   }
 }

@@ -187,5 +187,12 @@
     "icon": "⚡",
     "description": "AI transforming energy systems — from smart grids and renewable forecasting to nuclear fusion control, EV charging optimization, and autonomous energy infrastructure.",
     "path": "ai-for-energy"
+  },
+  {
+    "id": "ai-for-history",
+    "title": "AI for History and Archaeology",
+    "icon": "🏛️",
+    "description": "AI transforming history and archaeology — from artifact analysis and historical text digitization to site detection, cultural pattern recognition, and AI-native digital humanities workflows.",
+    "path": "ai-for-history"
   }
 ]
