@@ -2,162 +2,162 @@
   {
     "id": "ai-fundamentals",
     "title": "AI Fundamentals",
-    "icon": "\ud83e\udd16",
-    "description": "The foundations of artificial intelligence \u2014 from neural networks to ethics.",
+    "icon": "🤖",
+    "description": "The foundations of artificial intelligence — from neural networks to ethics.",
     "path": "ai-fundamentals"
   },
   {
     "id": "llm",
     "title": "Large Language Models",
-    "icon": "\ud83d\udcdd",
-    "description": "Understanding how LLMs work \u2014 architecture, training, and applications.",
+    "icon": "📝",
+    "description": "Understanding how LLMs work — architecture, training, and applications.",
     "path": "llm"
   },
   {
     "id": "ai-agents",
     "title": "AI Agents",
-    "icon": "\ud83e\udde0",
+    "icon": "🧠",
     "description": "Building autonomous AI agents that can reason, plan, and use tools.",
     "path": "ai-agents"
   },
   {
     "id": "ai-for-astronomy",
     "title": "AI for Astronomy",
-    "icon": "\ud83d\udd2d",
-    "description": "AI transforming astronomy \u2014 from galaxy classification and gravitational wave detection to exoplanet discovery and autonomous science agents.",
+    "icon": "🔭",
+    "description": "AI transforming astronomy — from galaxy classification and gravitational wave detection to exoplanet discovery and autonomous science agents.",
     "path": "ai-for-astronomy"
   },
   {
     "id": "ai-for-biology",
     "title": "AI for Biology",
-    "icon": "\ud83e\uddec",
-    "description": "How AI is transforming biology \u2014 from protein folding to genomics and drug discovery.",
+    "icon": "🧬",
+    "description": "How AI is transforming biology — from protein folding to genomics and drug discovery.",
     "path": "ai-for-biology"
   },
   {
     "id": "ai-for-physics",
     "title": "AI for Physics",
-    "icon": "\u269b\ufe0f",
-    "description": "AI transforming physics \u2014 from solving PDEs to particle physics and quantum computing.",
+    "icon": "⚛️",
+    "description": "AI transforming physics — from solving PDEs to particle physics and quantum computing.",
     "path": "ai-for-physics"
   },
   {
     "id": "ai-for-chemistry",
     "title": "AI for Chemistry",
-    "icon": "\u2697\ufe0f",
-    "description": "AI transforming chemistry \u2014 from molecular design to drug discovery and materials science.",
+    "icon": "⚗️",
+    "description": "AI transforming chemistry — from molecular design to drug discovery and materials science.",
     "path": "ai-for-chemistry"
   },
   {
     "id": "ai-for-mathematics",
     "title": "AI for Mathematics",
-    "icon": "\ud83d\udd22",
-    "description": "How AI is transforming mathematics \u2014 from theorem proving to combinatorial optimization.",
+    "icon": "🔢",
+    "description": "How AI is transforming mathematics — from theorem proving to combinatorial optimization.",
     "path": "ai-for-mathematics"
   },
   {
     "id": "ai-for-engineering",
     "title": "AI for Engineering",
-    "icon": "\ud83c\udfd7\ufe0f",
-    "description": "AI transforming engineering \u2014 from structural design to robotics, control systems, and autonomous vehicles.",
+    "icon": "🏗️",
+    "description": "AI transforming engineering — from structural design to robotics, control systems, and autonomous vehicles.",
     "path": "ai-for-engineering"
   },
   {
     "id": "ai-for-medicine",
     "title": "AI for Medicine",
-    "icon": "\ud83c\udfe5",
-    "description": "AI transforming medicine \u2014 from medical imaging and diagnostics to drug discovery and clinical decision support.",
+    "icon": "🏥",
+    "description": "AI transforming medicine — from medical imaging and diagnostics to drug discovery and clinical decision support.",
     "path": "ai-for-medicine"
   },
   {
     "id": "ai-for-environmental-science",
     "title": "AI for Environmental Science",
-    "icon": "\ud83c\udf0d",
-    "description": "AI transforming environmental science \u2014 from ecological forecasting to climate adaptation and conservation.",
+    "icon": "🌍",
+    "description": "AI transforming environmental science — from ecological forecasting to climate adaptation and conservation.",
     "path": "ai-for-environmental-science"
   },
   {
     "id": "ai-for-neuroscience",
     "title": "AI for Neuroscience",
-    "icon": "\ud83e\udde0",
-    "description": "AI transforming neuroscience \u2014 from brain imaging and neural decoding to computational neuroscience and cognitive modeling.",
+    "icon": "🧠",
+    "description": "AI transforming neuroscience — from brain imaging and neural decoding to computational neuroscience and cognitive modeling.",
     "path": "ai-for-neuroscience"
   },
   {
     "id": "ai-for-finance",
     "title": "AI for Finance",
-    "icon": "\ud83d\udcb0",
-    "description": "AI transforming finance \u2014 from algorithmic trading and portfolio optimization to risk management and financial stability.",
+    "icon": "💰",
+    "description": "AI transforming finance — from algorithmic trading and portfolio optimization to risk management and financial stability.",
     "path": "ai-for-finance"
   },
   {
     "id": "ai-for-materials-science",
     "title": "AI for Materials Science",
-    "icon": "\ud83e\uddea",
-    "description": "AI transforming materials science \u2014 from crystal structure prediction and materials informatics to self-driving laboratories and autonomous materials discovery.",
+    "icon": "🧪",
+    "description": "AI transforming materials science — from crystal structure prediction and materials informatics to self-driving laboratories and autonomous materials discovery.",
     "path": "ai-for-materials-science"
   },
   {
     "id": "ai-for-computer-science",
     "title": "AI for Computer Science",
-    "icon": "\ud83e\udd16",
-    "description": "AI transforming computer science \u2014 from code generation and bug detection to formal verification, autonomous coding agents, and AI-native programming language design.",
+    "icon": "🤖",
+    "description": "AI transforming computer science — from code generation and bug detection to formal verification, autonomous coding agents, and AI-native programming language design.",
     "path": "ai-for-computer-science"
   },
   {
     "id": "ai-for-agriculture",
     "title": "AI for Agriculture",
-    "icon": "\ud83c\udf3e",
-    "description": "AI transforming agriculture \u2014 from precision farming and crop health monitoring to autonomous farm robots and sustainable food production.",
+    "icon": "🌾",
+    "description": "AI transforming agriculture — from precision farming and crop health monitoring to autonomous farm robots and sustainable food production.",
     "path": "ai-for-agriculture"
   },
   {
     "id": "ai-for-education",
     "title": "AI for Education",
-    "icon": "\ud83d\udcd3",
-    "description": "AI transforming education \u2014 from intelligent tutoring systems and adaptive learning to educational data mining, LLM tutors, and AI-native curricula.",
+    "icon": "📓",
+    "description": "AI transforming education — from intelligent tutoring systems and adaptive learning to educational data mining, LLM tutors, and AI-native curricula.",
     "path": "ai-for-education"
   },
   {
     "id": "ai-for-law",
     "title": "AI for Law",
-    "icon": "\ud83d\udcc4",
-    "description": "AI transforming law \u2014 from contract analysis and case retrieval to legal reasoning, e-discovery, and the future of justice systems.",
+    "icon": "📄",
+    "description": "AI transforming law — from contract analysis and case retrieval to legal reasoning, e-discovery, and the future of justice systems.",
     "path": "ai-for-law"
   },
   {
     "id": "ai-for-earth-science",
     "title": "AI for Earth Science",
-    "icon": "\ud83c\udf0d",
-    "description": "AI transforming Earth science \u2014 from mineral exploration and seismic analysis to volcano hazard prediction and geodynamic modeling.",
+    "icon": "🌍",
+    "description": "AI transforming Earth science — from mineral exploration and seismic analysis to volcano hazard prediction and geodynamic modeling.",
     "path": "ai-for-earth-science"
   },
   {
     "id": "ai-for-psychology",
     "title": "AI for Psychology",
-    "icon": "\ud83e\udde0",
-    "description": "AI transforming psychology \u2014 from mental health chatbots and emotion recognition to suicide prevention, clinical diagnosis, and therapy augmentation.",
+    "icon": "🧠",
+    "description": "AI transforming psychology — from mental health chatbots and emotion recognition to suicide prevention, clinical diagnosis, and therapy augmentation.",
     "path": "ai-for-psychology"
   },
   {
     "id": "ai-for-transportation",
     "title": "AI for Transportation",
-    "icon": "\ud83d\ude97",
-    "description": "AI transforming transportation \u2014 from self-driving cars and traffic systems to drone navigation and mobility-as-a-service.",
+    "icon": "🚗",
+    "description": "AI transforming transportation — from self-driving cars and traffic systems to drone navigation and mobility-as-a-service.",
     "path": "ai-for-transportation"
   },
   {
     "id": "ai-for-sports-science",
     "title": "AI for Sports Science",
-    "icon": "\u26bd",
-    "description": "AI transforming sports science \u2014 from player tracking and performance analysis to injury prediction, game strategy optimization, and fan engagement.",
+    "icon": "⚽",
+    "description": "AI transforming sports science — from player tracking and performance analysis to injury prediction, game strategy optimization, and fan engagement.",
     "path": "ai-for-sports-science"
   },
   {
     "id": "ai-for-music-and-creative-arts",
     "title": "AI for Music and Creative Arts",
-    "icon": "\ud83c\udfb5",
-    "description": "AI transforming music and creative arts \u2014 from generative models and music synthesis to stem separation, adaptive soundtracks, and the ethics of AI creativity.",
+    "icon": "🎵",
+    "description": "AI transforming music and creative arts — from generative models and music synthesis to stem separation, adaptive soundtracks, and the ethics of AI creativity.",
     "path": "ai-for-music-and-creative-arts"
   },
   {
@@ -194,5 +194,12 @@
     "icon": "🏛️",
     "description": "AI transforming history and archaeology — from artifact analysis and historical text digitization to site detection, cultural pattern recognition, and AI-native digital humanities workflows.",
     "path": "ai-for-history"
+  },
+  {
+    "id": "ai-for-linguistics",
+    "title": "AI for Linguistics",
+    "icon": "🔤",
+    "description": "AI transforming linguistics and computational linguistics — from morphological analysis and syntactic parsing to cross-lingual transfer, formal semantics, and AI-native linguistic discovery.",
+    "path": "ai-for-linguistics"
   }
 ]

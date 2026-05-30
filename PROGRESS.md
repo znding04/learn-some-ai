@@ -34,7 +34,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Operations Research     |     11 | All published         |
 | AI for Energy              |     11 | All published         |
 | AI for History and Archaeology |     11 | All published         |
-| **Total**             | **319** |                       |
+| AI for Linguistics             |     11 | All published         |
+| **Total**             | **330** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -391,6 +392,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Ethics, Bias, and Interpretability
 - [x] 11 — Frontiers: AI-Native History and Archaeology
 
+### AI for Linguistics
+- [x] 01 — Introduction to AI for Linguistics
+- [x] 02 — Computational Morphology
+- [x] 03 — Syntactic Parsing
+- [x] 04 — Dependency Parsing and Semantic Role Labeling
+- [x] 05 — Word Embeddings and Beyond
+- [x] 06 — Language Modeling as Linguistic Knowledge Acquisition
+- [x] 07 — Cross-Linguistic NLP
+- [x] 08 — Discourse Analysis and Coherence
+- [x] 09 — Formal Semantics and Logical Reasoning with LLMs
+- [x] 10 — Linguistic Diversity and Low-Resource NLP
+- [x] 11 — Frontiers: Compositional Generalization and AI-Native Linguistics
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -411,6 +425,14 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-30
+- Researched new domain: **AI for Linguistics**
+- Domain covers: computational morphology, syntactic parsing (constituency and dependency), semantic role labeling, word embeddings and contextual representations, cross-linguistic NLP (mBERT, XLM-R), discourse analysis, formal semantics with LLMs, low-resource NLP and endangered language preservation, and frontiers in compositional generalization
+- Found active research: compositional generalization failures (SCAN/gSCAN benchmarks), emergent syntax in transformer models, cross-lingual transfer with multilingual LLMs, autoformalization for theorem proving, AI-assisted language documentation
+- Implemented full track: 11 lessons across beginner → intermediate → advanced
+- Registered all 11 lessons in lessons.json (total now 330) and topics.json (total now 29)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-29
 - Researched new domain: **AI for History and Archaeology**

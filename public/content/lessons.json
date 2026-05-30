@@ -175,7 +175,7 @@
     "prerequisites": [
       "ai-fundamentals-13"
     ],
-    "summary": "Sigmoid, tanh, ReLU, GELU, Swish \u2014 vanishing gradients and initialization strategies.",
+    "summary": "Sigmoid, tanh, ReLU, GELU, Swish — vanishing gradients and initialization strategies.",
     "contentPath": "ai-fundamentals/14-activation-functions.md"
   },
   "ai-fundamentals-15": {
@@ -631,7 +631,7 @@
     "prerequisites": [
       "ai-for-biology-01"
     ],
-    "summary": "How biological entities are encoded for machine learning \u2014 sequences, structures, and graphs.",
+    "summary": "How biological entities are encoded for machine learning — sequences, structures, and graphs.",
     "contentPath": "ai-for-biology/02-biological-data-representations.md"
   },
   "ai-for-biology-03": {
@@ -1019,7 +1019,7 @@
     "prerequisites": [
       "ai-fundamentals-06"
     ],
-    "summary": "An introduction to the intersection of AI and mathematics \u2014 history, breakthroughs, and why it matters.",
+    "summary": "An introduction to the intersection of AI and mathematics — history, breakthroughs, and why it matters.",
     "contentPath": "ai-for-mathematics/01-what-is-ai-for-mathematics.md"
   },
   "ai-for-math-02": {
@@ -1032,7 +1032,7 @@
     "prerequisites": [
       "ai-for-math-01"
     ],
-    "summary": "How to encode mathematical objects \u2014 numbers, symbols, graphs, equations \u2014 for neural networks.",
+    "summary": "How to encode mathematical objects — numbers, symbols, graphs, equations — for neural networks.",
     "contentPath": "ai-for-mathematics/02-mathematical-representations-for-ai.md"
   },
   "ai-for-math-03": {
@@ -1045,7 +1045,7 @@
     "prerequisites": [
       "ai-for-math-01"
     ],
-    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam \u2014 key benchmarks for evaluating AI math.",
+    "summary": "MATH, GSM8K, MMLU-Math, MiniF2F, and the Hungarian Exam — key benchmarks for evaluating AI math.",
     "contentPath": "ai-for-mathematics/03-mathematical-benchmarks-and-datasets.md"
   },
   "ai-for-math-04": {
@@ -1058,7 +1058,7 @@
     "prerequisites": [
       "ai-for-math-02"
     ],
-    "summary": "Combining neural networks with symbolic reasoning \u2014 neuro-symbolic integration and symbolic regression.",
+    "summary": "Combining neural networks with symbolic reasoning — neuro-symbolic integration and symbolic regression.",
     "contentPath": "ai-for-mathematics/04-neural-symbolic-ai-for-mathematics.md"
   },
   "ai-for-math-05": {
@@ -1099,7 +1099,7 @@
       "ai-for-math-05",
       "ai-for-math-06"
     ],
-    "summary": "Google DeepMind's AlphaProof \u2014 Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
+    "summary": "Google DeepMind's AlphaProof — Gemini + Lean 4 + RL for IMO silver medal theorem proving.",
     "contentPath": "ai-for-mathematics/07-alphaproof-and-formal-theorem-proving.md"
   },
   "ai-for-math-08": {
@@ -1319,7 +1319,7 @@
     "prerequisites": [
       "ai-for-medicine-01"
     ],
-    "summary": "Deep learning for X-rays, CT, MRI, and pathology images \u2014 architectures, datasets, and clinical deployment.",
+    "summary": "Deep learning for X-rays, CT, MRI, and pathology images — architectures, datasets, and clinical deployment.",
     "contentPath": "ai-for-medicine/02-medical-imaging-ai.md"
   },
   "ai-for-medicine-03": {
@@ -1560,7 +1560,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of how AI intersects with neuroscience \u2014 history, modalities, applications, and the unique challenges of neural data.",
+    "summary": "Overview of how AI intersects with neuroscience — history, modalities, applications, and the unique challenges of neural data.",
     "contentPath": "ai-for-neuroscience/01-introduction-to-ai-for-neuroscience.md"
   },
   "ai-for-neuroscience-02": {
@@ -1573,7 +1573,7 @@
     "prerequisites": [
       "ai-for-neuroscience-01"
     ],
-    "summary": "MRI, fMRI, EEG, MEG, and PET imaging \u2014 their physical basis, resolution tradeoffs, and AI applications for each modality.",
+    "summary": "MRI, fMRI, EEG, MEG, and PET imaging — their physical basis, resolution tradeoffs, and AI applications for each modality.",
     "contentPath": "ai-for-neuroscience/02-brain-imaging-modalities-and-ai.md"
   },
   "ai-for-neuroscience-03": {
@@ -1586,7 +1586,7 @@
     "prerequisites": [
       "ai-for-neuroscience-02"
     ],
-    "summary": "Reconstructing sensory experiences and motor intentions from brain activity \u2014 decoding algorithms, BCIs, and neural interfaces.",
+    "summary": "Reconstructing sensory experiences and motor intentions from brain activity — decoding algorithms, BCIs, and neural interfaces.",
     "contentPath": "ai-for-neuroscience/03-neural-decoding-and-brain-computer-interfaces.md"
   },
   "ai-for-neuroscience-04": {
@@ -1666,7 +1666,7 @@
     "prerequisites": [
       "ai-for-neuroscience-08"
     ],
-    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data \u2014 challenges of class imbalance and data harmonization.",
+    "summary": "Diagnosing Alzheimer's, Parkinson's, epilepsy, and MS using AI on MRI, PET, and EEG data — challenges of class imbalance and data harmonization.",
     "contentPath": "ai-for-neuroscience/09-ai-for-neurological-disorder-diagnosis.md"
   },
   "ai-for-neuroscience-10": {
@@ -1704,7 +1704,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Overview of AI applications in finance \u2014 from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
+    "summary": "Overview of AI applications in finance — from algorithmic trading and robo-advisors to fraud detection and NLP for sentiment.",
     "contentPath": "ai-for-finance/01-introduction-to-ai-for-finance.md"
   },
   "ai-for-finance-02": {
@@ -1743,7 +1743,7 @@
     "prerequisites": [
       "ai-for-finance-03"
     ],
-    "summary": "From regression to deep learning for price prediction \u2014 walk-forward validation, look-ahead bias, and ensemble methods.",
+    "summary": "From regression to deep learning for price prediction — walk-forward validation, look-ahead bias, and ensemble methods.",
     "contentPath": "ai-for-finance/04-machine-learning-for-stock-prediction.md"
   },
   "ai-for-finance-05": {
@@ -2130,7 +2130,7 @@
     "estimatedTime": "30min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "AI's transforming role in software development \u2014 from code generation to autonomous coding agents.",
+    "summary": "AI's transforming role in software development — from code generation to autonomous coding agents.",
     "contentPath": "ai-for-computer-science/01-introduction-to-ai-for-computer-science.md"
   },
   "ai-for-computer-science-02": {
@@ -2143,7 +2143,7 @@
     "prerequisites": [
       "ai-for-computer-science-01"
     ],
-    "summary": "GitHub Copilot, Codeium, and LLM-based code completion \u2014 how they work and their limitations.",
+    "summary": "GitHub Copilot, Codeium, and LLM-based code completion — how they work and their limitations.",
     "contentPath": "ai-for-computer-science/02-ai-assisted-programming-and-code-generation.md"
   },
   "ai-for-computer-science-03": {
@@ -2434,7 +2434,7 @@
     "prerequisites": [
       "ai-for-education-01"
     ],
-    "summary": "Architecture of ITS \u2014 expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
+    "summary": "Architecture of ITS — expert model, student model, pedagogical model, and interface. Bayesian Knowledge Tracing and cognitive tutors.",
     "contentPath": "ai-for-education/02-intelligent-tutoring-systems.md"
   },
   "ai-for-education-03": {
@@ -3283,7 +3283,7 @@
     "estimatedTime": "30 min",
     "difficulty": "beginner",
     "prerequisites": [],
-    "summary": "Learn how computers encode music \u2014 MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
+    "summary": "Learn how computers encode music — MIDI, audio waveforms, spectrograms, and audio tokenization with Encodec and SoundStream. Understand symbolic vs audio generation.",
     "contentPath": "ai-for-music-and-creative-arts/02-how-computers-represent-music.md"
   },
   "ai-for-music-and-creative-arts-03": {
@@ -4087,5 +4087,126 @@
     ],
     "summary": "Foundation models for historical reasoning, causal inference for counterfactual history, AI-generated narratives, and future of AI in museums and public history.",
     "contentPath": "ai-for-history/11-frontiers-ai-native-history-and-archaeology.md"
+  },
+  "ai-for-linguistics-01": {
+    "id": "ai-for-linguistics-01",
+    "title": "Introduction to AI for Linguistics",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Introduction to linguistics as a discipline, its connection to AI, and the major themes explored in this track.",
+    "contentPath": "ai-for-linguistics/01-introduction-to-ai-for-linguistics.md"
+  },
+  "ai-for-linguistics-02": {
+    "id": "ai-for-linguistics-02",
+    "title": "Computational Morphology",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Morphological analysis, word formation rules, morpheme segmentation, and inflection patterns with ML.",
+    "contentPath": "ai-for-linguistics/02-computational-morphology.md"
+  },
+  "ai-for-linguistics-03": {
+    "id": "ai-for-linguistics-03",
+    "title": "Syntactic Parsing",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Context-free grammars, CYK algorithm, shift-reduce parsing, and neural constituency parsers.",
+    "contentPath": "ai-for-linguistics/03-syntactic-parsing.md"
+  },
+  "ai-for-linguistics-04": {
+    "id": "ai-for-linguistics-04",
+    "title": "Dependency Parsing and Semantic Role Labeling",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "Graph-based and transition-based dependency parsers, PropBank, FrameNet, and semantic role labeling.",
+    "contentPath": "ai-for-linguistics/04-dependency-parsing-and-semantic-role-labeling.md"
+  },
+  "ai-for-linguistics-05": {
+    "id": "ai-for-linguistics-05",
+    "title": "Word Embeddings and Beyond",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Word2Vec, GloVe, fastText, contextual embeddings, ELMo, BERT, and what representations capture.",
+    "contentPath": "ai-for-linguistics/05-word-embeddings-and-beyond.md"
+  },
+  "ai-for-linguistics-06": {
+    "id": "ai-for-linguistics-06",
+    "title": "Language Modeling as Linguistic Knowledge Acquisition",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "How neural language models implicitly learn grammar, semantics, and world knowledge from text.",
+    "contentPath": "ai-for-linguistics/06-language-modeling-as-linguistic-knowledge-acquisition.md"
+  },
+  "ai-for-linguistics-07": {
+    "id": "ai-for-linguistics-07",
+    "title": "Cross-Linguistic NLP",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Language typology, multilingual models (mBERT, XLM-R), code-switching, and cross-lingual transfer.",
+    "contentPath": "ai-for-linguistics/07-cross-linguistic-nlp.md"
+  },
+  "ai-for-linguistics-08": {
+    "id": "ai-for-linguistics-08",
+    "title": "Discourse Analysis and Coherence",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "45min",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "summary": "Rhetorical Structure Theory, entity tracking, coherence models, and conversational AI.",
+    "contentPath": "ai-for-linguistics/08-discourse-analysis-and-coherence.md"
+  },
+  "ai-for-linguistics-09": {
+    "id": "ai-for-linguistics-09",
+    "title": "Formal Semantics and Logical Reasoning with LLMs",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Lambda calculus, FOL, semantic parsing, and LLM performance on formal reasoning tasks.",
+    "contentPath": "ai-for-linguistics/09-formal-semantics-and-logical-reasoning-with-llms.md"
+  },
+  "ai-for-linguistics-10": {
+    "id": "ai-for-linguistics-10",
+    "title": "Linguistic Diversity and Low-Resource NLP",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Cross-lingual transfer, few-shot learning, endangered language preservation, and AI for documentation.",
+    "contentPath": "ai-for-linguistics/10-linguistic-diversity-and-low-resource-nlp.md"
+  },
+  "ai-for-linguistics-11": {
+    "id": "ai-for-linguistics-11",
+    "title": "Frontiers: Compositional Generalization and AI-Native Linguistics",
+    "topic": "ai-for-linguistics",
+    "topicPath": "ai-for-linguistics",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": [],
+    "summary": "Systematic generalization failures, emergent syntax, AI for linguistic discovery, and the future of AI-native linguistics.",
+    "contentPath": "ai-for-linguistics/11-frontiers-compositional-generalization-and-ai-native-linguistics.md"
   }
 }
