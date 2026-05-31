@@ -201,5 +201,12 @@
     "icon": "🔤",
     "description": "AI transforming linguistics and computational linguistics — from morphological analysis and syntactic parsing to cross-lingual transfer, formal semantics, and AI-native linguistic discovery.",
     "path": "ai-for-linguistics"
+  },
+  {
+    "id": "ai-for-game-development",
+    "title": "AI for Game Development",
+    "icon": "🎮",
+    "description": "AI transforming game development — from NPC intelligence and procedural generation to RL agents, automated playtesting, AI directors, and AI-native game design.",
+    "path": "ai-for-game-development"
   }
 ]

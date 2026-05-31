@@ -4208,5 +4208,126 @@
     "prerequisites": [],
     "summary": "Systematic generalization failures, emergent syntax, AI for linguistic discovery, and the future of AI-native linguistics.",
     "contentPath": "ai-for-linguistics/11-frontiers-compositional-generalization-and-ai-native-linguistics.md"
+  },
+  "ai-for-game-development-01": {
+    "id": "ai-for-game-development-01",
+    "title": "Introduction to AI for Game Development",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "30min",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "summary": "History of AI in games, why games matter for AI research, and a survey of key application areas.",
+    "contentPath": "ai-for-game-development/01-introduction-to-ai-for-game-development.md"
+  },
+  "ai-for-game-development-02": {
+    "id": "ai-for-game-development-02",
+    "title": "Game AI Fundamentals: From Rule-Based Systems to Modern Approaches",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "35min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-game-development-01"],
+    "summary": "Finite state machines, utility-based AI, decision trees, and the evolution from scripted to adaptive game AI.",
+    "contentPath": "ai-for-game-development/02-game-ai-fundamentals.md"
+  },
+  "ai-for-game-development-03": {
+    "id": "ai-for-game-development-03",
+    "title": "Pathfinding and Navigation in Games",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-game-development-01"],
+    "summary": "Graph search algorithms, A*, Dijkstra, NavMesh generation, dynamic obstacles, flow fields, and crowd simulation.",
+    "contentPath": "ai-for-game-development/03-pathfinding-and-navigation.md"
+  },
+  "ai-for-game-development-04": {
+    "id": "ai-for-game-development-04",
+    "title": "Player Modeling and Behavior Prediction",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "40min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02"],
+    "summary": "Modeling player types, intent prediction, adaptive difficulty, and personalization using machine learning.",
+    "contentPath": "ai-for-game-development/04-player-modeling-and-behavior-prediction.md"
+  },
+  "ai-for-game-development-05": {
+    "id": "ai-for-game-development-05",
+    "title": "Procedural Content Generation with Machine Learning",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "45min",
+    "difficulty": "beginner",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02"],
+    "summary": "Wave function collapse, ML-based PCG, level generation, asset synthesis, and the constraints of playable content.",
+    "contentPath": "ai-for-game-development/05-procedural-content-generation.md"
+  },
+  "ai-for-game-development-06": {
+    "id": "ai-for-game-development-06",
+    "title": "Reinforcement Learning for Game AI",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "60min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02", "ai-for-game-development-03", "ai-for-game-development-04", "ai-for-game-development-05"],
+    "summary": "Training game agents with RL — DeepMind Atari, OpenAI Five, AlphaStar, reward shaping, and sim-to-real transfer.",
+    "contentPath": "ai-for-game-development/06-reinforcement-learning-for-game-ai.md"
+  },
+  "ai-for-game-development-07": {
+    "id": "ai-for-game-development-07",
+    "title": "Tree Search Algorithms: Minimax and MCTS in Strategy Games",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "60min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02", "ai-for-game-development-03"],
+    "summary": "Game theory, minimax, alpha-beta pruning, Monte Carlo tree search, and their applications in chess, Go, and poker.",
+    "contentPath": "ai-for-game-development/07-tree-search-algorithms.md"
+  },
+  "ai-for-game-development-08": {
+    "id": "ai-for-game-development-08",
+    "title": "NPC Behavior Systems: Behavior Trees and Goal-Oriented Action Planning",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "55min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02", "ai-for-game-development-03"],
+    "summary": "Behavior tree architectures, utility-based decision making, GOAP, hierarchical task networks, and scalable NPC AI.",
+    "contentPath": "ai-for-game-development/08-npc-behavior-systems.md"
+  },
+  "ai-for-game-development-09": {
+    "id": "ai-for-game-development-09",
+    "title": "Generative Models for Game Design: GANs, Diffusion, and Transformers",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "60min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02", "ai-for-game-development-05"],
+    "summary": "GANs, VAEs, diffusion models, and transformers for generating textures, levels, quests, dialogue, and full game content.",
+    "contentPath": "ai-for-game-development/09-generative-models-for-game-design.md"
+  },
+  "ai-for-game-development-10": {
+    "id": "ai-for-game-development-10",
+    "title": "AI for Game Testing, Balancing, and Automated Playtesting",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "50min",
+    "difficulty": "intermediate",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02", "ai-for-game-development-06"],
+    "summary": "Automated QA, game balance detection, difficulty calibration, automated playtesting agents, and bug discovery.",
+    "contentPath": "ai-for-game-development/10-ai-for-game-testing-and-balancing.md"
+  },
+  "ai-for-game-development-11": {
+    "id": "ai-for-game-development-11",
+    "title": "Frontiers: Multi-Agent Game Systems, AI Game Directors, and the Future",
+    "topic": "ai-for-game-development",
+    "topicPath": "ai-for-game-development",
+    "estimatedTime": "60min",
+    "difficulty": "advanced",
+    "prerequisites": ["ai-for-game-development-01", "ai-for-game-development-02", "ai-for-game-development-03", "ai-for-game-development-06", "ai-for-game-development-07", "ai-for-game-development-08", "ai-for-game-development-09"],
+    "summary": "MARL for games, AI game directors, affect-aware systems, procedural personas, AI-native game design, and the future.",
+    "contentPath": "ai-for-game-development/11-frontiers-ai-game-directors-future.md"
   }
 }

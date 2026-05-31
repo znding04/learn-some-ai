@@ -35,7 +35,8 @@ A running log of what's done and what's next on **学点AI**. Update at the end 
 | AI for Energy              |     11 | All published         |
 | AI for History and Archaeology |     11 | All published         |
 | AI for Linguistics             |     11 | All published         |
-| **Total**             | **330** |                       |
+| AI for Game Development        |     11 | All published         |
+| **Total**             | **341** |                       |
 
 All lessons currently render with KaTeX math and Mermaid diagrams.
 
@@ -405,6 +406,19 @@ All lessons currently render with KaTeX math and Mermaid diagrams.
 - [x] 10 — Linguistic Diversity and Low-Resource NLP
 - [x] 11 — Frontiers: Compositional Generalization and AI-Native Linguistics
 
+### AI for Game Development
+- [x] 01 — Introduction to AI for Game Development
+- [x] 02 — Game AI Fundamentals: From Rule-Based Systems to Modern Approaches
+- [x] 03 — Pathfinding and Navigation in Games
+- [x] 04 — Player Modeling and Behavior Prediction
+- [x] 05 — Procedural Content Generation with Machine Learning
+- [x] 06 — Reinforcement Learning for Game AI
+- [x] 07 — Tree Search Algorithms: Minimax and MCTS in Strategy Games
+- [x] 08 — NPC Behavior Systems: Behavior Trees and Goal-Oriented Action Planning
+- [x] 09 — Generative Models for Game Design: GANs, Diffusion, and Transformers
+- [x] 10 — AI for Game Testing, Balancing, and Automated Playtesting
+- [x] 11 — Frontiers: Multi-Agent Game Systems, AI Game Directors, and the Future
+
 ## Backlog / Ideas
 
 Drop new lesson ideas here as they come up. Promote them into the lesson lists above when started.
@@ -425,6 +439,14 @@ Drop new lesson ideas here as they come up. Promote them into the lesson lists a
 - [x] 11 — Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Recent updates
+
+### 2026-05-31
+- Researched new domain: **AI for Game Development**
+- Domain covers: game AI fundamentals (FSMs, utility systems), pathfinding (A*, NavMesh), player modeling, procedural content generation (WFC, ML-based PCG), reinforcement learning (Atari, OpenAI Five, AlphaStar), tree search (minimax, MCTS), NPC behavior systems (BTs, GOAP, HTNs), generative models (GANs, diffusion, transformers), automated game testing/balancing, multi-agent game systems, AI game directors, affect-aware systems, procedural personas, and AI-native game design frontiers
+- Found active research: DeepMind's procedural persona modeling, MARL for emergent gameplay (Neural MMO, Project Malmo), PCGRL for level generation, affect-aware game systems (Yannakakis/Togelius), Angelina AI game designer, GameGPT for end-to-end game generation, sim-to-real transfer for game AI
+- Implemented full track: 11 lessons across beginner (5) -> intermediate (4) -> advanced (2)
+- Registered all 11 lessons in lessons.json (total now 341) and topics.json (total now 30)
+- Updated PROGRESS.md with new track and total lesson count
 
 ### 2026-05-30
 - Researched new domain: **AI for Linguistics**
