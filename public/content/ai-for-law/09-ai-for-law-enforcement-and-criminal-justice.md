@@ -9,11 +9,35 @@ order: 9
 
 ## Overview
 
-The intersection of AI and criminal justice is among the most consequential—and controversial—in the field. AI tools are deployed at multiple stages of the justice pipeline: predictive policing to allocate patrol resources, risk assessment to inform bail and sentencing, facial recognition to identify suspects, and automated transcription to speed up case processing. Each application raises distinct concerns about fairness, accuracy, and due process.
+The intersection of AI and criminal justice is among the most consequential—and controversial—in the field.
+AI tools are deployed at multiple stages of the justice pipeline:
 
-**Risk assessment tools** like **COMPAS** (Correctional Offender Management Profiling for Alternative Sanctions) and the **PSA equivant** (Public Safety Assessment) attempt to量化 the likelihood that a defendant will reoffend if released pre-trial or post-sentencing. COMPAS uses 137 features including criminal history, age, and geography to generate a risk score from 1 to 10. The PSA provides three scores: new criminal activity, new violent criminal activity, and failure to appear.
+- **Predictive policing** to allocate patrol resources
+- **Risk assessment** to inform bail and sentencing
+- **Facial recognition** to identify suspects
+- **Automated transcription** to speed up case processing
 
-The core critique of risk assessment tools centers on **bias**. ProPublica's seminal 2016 analysis of COMPAS found that Black defendants were nearly twice as likely as white defendants to be incorrectly flagged as high risk (false positives). This disparity arises because the model learns correlations between race-correlated features (like zip code or arrest history) and outcomes, embedding historical discrimination into predictions. The debate touches on fundamental questions: Is it legitimate to use features correlated with protected characteristics? How should we define and measure fairness?
+Each application raises distinct concerns about fairness, accuracy, and due process.
+
+### Risk Assessment Tools
+
+**COMPAS** (Correctional Offender Management Profiling for Alternative Sanctions) and the **PSA** (Public Safety Assessment) attempt to quantify the likelihood that a defendant will reoffend if released pre-trial or post-sentencing.
+
+- **COMPAS** uses 137 features including criminal history, age, and geography to generate a risk score from 1 to 10.
+- **PSA** provides three scores: new criminal activity, new violent criminal activity, and failure to appear.
+
+### The Bias Critique
+
+The core critique of risk assessment tools centers on **bias**.
+ProPublica's seminal 2016 analysis of COMPAS found that Black defendants were nearly twice as likely as white defendants to be incorrectly flagged as high risk (false positives).
+
+This disparity arises because the model learns correlations between race-correlated features (like zip code or arrest history) and outcomes, embedding historical discrimination into predictions.
+
+The debate touches on fundamental questions:
+- Is it legitimate to use features correlated with protected characteristics?
+- How should we define and measure fairness?
+
+### Fairness Definitions and the Impossibility Theorem
 
 Different definitions of fairness are mathematically incompatible—a result known as the **impossibility theorem** for group fairness. Three common definitions:
 
@@ -23,11 +47,28 @@ Different definitions of fairness are mathematically incompatible—a result kno
 
 No tool can satisfy all three simultaneously when base rates differ across groups, as they often do due to unequal policing patterns.
 
-**Bail and sentencing recommendation systems** formalize thejudicial discretion that historically resided with judges. These tools provide recommendations that judges are free to ignore, but research shows anchoring effects: even advisory recommendations influence decisions. Due process requires that defendants have the opportunity to contest the inputs to these systems—a process called "meaningful audit."
+### Bail, Sentencing, and Anchoring
 
-**Facial recognition** in law enforcement raises distinct concerns. Studies show that commercial facial recognition systems have higher error rates on darker-skinned individuals, creating disparate impact in suspect identification. Several states and municipalities have banned or restricted law enforcement use of facial recognition.
+**Bail and sentencing recommendation systems** formalize the judicial discretion that historically resided with judges.
+These tools provide recommendations that judges are free to ignore, but research shows anchoring effects: even advisory recommendations influence decisions.
 
-The ethical framework for AI in criminal justice is grounded in **due process** (procedural fairness in legal proceedings) and **equal protection** (equal treatment under law regardless of protected characteristics). These constitutional principles create hard constraints on how AI can be deployed: predictions must be explainable to defendants, must not discriminate on the basis of race, and must be subject to meaningful human review.
+Due process requires that defendants have the opportunity to contest the inputs to these systems—a process called "meaningful audit."
+
+### Facial Recognition
+
+**Facial recognition** in law enforcement raises distinct concerns.
+Studies show that commercial facial recognition systems have higher error rates on darker-skinned individuals, creating disparate impact in suspect identification.
+Several states and municipalities have banned or restricted law enforcement use of facial recognition.
+
+### Ethical and Constitutional Framework
+
+The ethical framework for AI in criminal justice is grounded in two constitutional principles:
+
+- **Due process** — procedural fairness in legal proceedings
+- **Equal protection** — equal treatment under law regardless of protected characteristics
+
+These principles create hard constraints on how AI can be deployed:
+predictions must be explainable to defendants, must not discriminate on the basis of race, and must be subject to meaningful human review.
 
 ## Key Concepts
 
@@ -37,7 +78,7 @@ The ethical framework for AI in criminal justice is grounded in **due process** 
 - **Fairness definitions**: Equalized odds, predictive parity, calibration, and the impossibility theorem showing they cannot all be satisfied simultaneously
 - **Due process**: Constitutional guarantee requiring fair legal procedures; for AI, requires explainability and the right to contest algorithmic decisions
 - **Equal protection**: Constitutional principle requiring equal treatment; constrains AI use to avoid discriminatory outcomes
-- **Anchoring effect**: Psychological tendency to过度 rely on the first piece of information (the AI recommendation) when making decisions
+- **Anchoring effect**: Psychological tendency to over-rely on the first piece of information (the AI recommendation) when making decisions
 
 ## Code Examples
 
@@ -117,7 +158,7 @@ flowchart TD
 
 ## Further Reading
 
-- ProPublica (2016). "Machine Bias: There's a computer algorithm thatpredicts future criminals." — seminal COMPAS analysis.
+- ProPublica (2016). "Machine Bias: There's a computer algorithm that predicts future criminals." — seminal COMPAS analysis.
 - Angwin, J., et al. (2016). "Machine Bias." *ProPublica*.
 - Kleinberg, J., et al. (2016). "Inherent Trade-Offs in the Fair Determination of Risk Scores." *ITCS* — proof of impossibility theorem for fairness.
 - Richardson, R., et al. (2019). "Confronting Black-Box Algorithms." *NYU Law Review*.
