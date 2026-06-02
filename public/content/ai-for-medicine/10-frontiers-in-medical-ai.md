@@ -79,7 +79,7 @@ stateDiagram-v2
     Postoperative --> [*]
 ```
 
-**Caption: Phases of AI-assisted surgical workflow**
+**Phases of AI-assisted surgical workflow**
 
 ### Autonomous Screening
 
@@ -175,7 +175,7 @@ flowchart LR
     F -->|Updated model| C
 ```
 
-**Caption: Federated learning architecture across hospitals**
+**Federated learning architecture across hospitals**
 
 Instead of sharing patient data, each hospital trains a local model and shares only the **gradient updates** (or model weights). The central server aggregates these updates to improve the global model.
 
@@ -203,7 +203,7 @@ Real-world deployment: An AI system in a hospital could simultaneously analyze a
 
 ---
 
-## Exercises/Projects
+## Exercises
 
 1. **Medical VLM Evaluation**: Use a vision-language model (e.g., via API) to analyze a medical image (chest X-ray or skin lesion). Compare its interpretation to published clinical guidelines. Document edge cases where the model struggles.
 
@@ -217,7 +217,7 @@ Real-world deployment: An AI system in a hospital could simultaneously analyze a
 
 ## Further Reading
 
-- [Med-PaLM 2 paper](https://arxiv.org/abs/2305.09617) — Med-PaLM 2 performance on medical benchmarks
-- [AlphaFold2 Nature paper](https://www.nature.com/articles/s41586-021-03819-2) — Protein folding breakthrough
-- [Federated Learning in Healthcare](https://www.nature.com/articles/s41746-021-00431-8) — Review of FL applications in medicine
-- [FDA AI/ML Action Plan](https://www.fda.gov/media/145022/download) — Regulatory framework for medical AI
+- Singhal, K. et al. (2023). "Towards Expert-Level Medical Question Answering with Large Language Models." — Med-PaLM 2 performance on medical benchmarks
+- Jumper, J. et al. (2021). "Highly accurate protein structure prediction with AlphaFold." *Nature* — protein folding breakthrough
+- Rieke, N. et al. (2020). "The future of digital health with federated learning." *npj Digital Medicine* — review of FL applications in medicine
+- FDA (2021). "Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan" — regulatory framework for medical AI
