@@ -3,6 +3,7 @@ title: "Prompt Engineering Fundamentals"
 level: beginner
 topic: llm
 order: 4
+estimatedTime: "30 minutes"
 ---
 
 # Prompt Engineering Fundamentals

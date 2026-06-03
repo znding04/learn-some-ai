@@ -3,6 +3,7 @@ title: "Building Your First Simple Agent"
 level: beginner
 topic: ai-agents
 order: 5
+estimatedTime: "30 minutes"
 ---
 
 # Building Your First Simple Agent

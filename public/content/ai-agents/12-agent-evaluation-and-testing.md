@@ -3,6 +3,7 @@ title: "Agent Evaluation & Testing"
 level: advanced
 topic: ai-agents
 order: 12
+estimatedTime: "60 minutes"
 ---
 
 # Agent Evaluation & Testing

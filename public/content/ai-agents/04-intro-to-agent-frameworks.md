@@ -3,6 +3,7 @@ title: "Introduction to Agent Frameworks"
 level: beginner
 topic: ai-agents
 order: 4
+estimatedTime: "30 minutes"
 ---
 
 # Introduction to Agent Frameworks

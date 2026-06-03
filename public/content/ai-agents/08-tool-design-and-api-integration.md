@@ -3,6 +3,7 @@ title: "Tool Design & API Integration"
 level: intermediate
 topic: ai-agents
 order: 8
+estimatedTime: "45 minutes"
 ---
 
 # Tool Design & API Integration

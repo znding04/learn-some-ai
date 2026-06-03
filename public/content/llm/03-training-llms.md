@@ -3,6 +3,7 @@ title: "Training LLMs"
 level: intermediate
 topic: llm
 order: 3
+estimatedTime: "45 minutes"
 ---
 
 # Training LLMs

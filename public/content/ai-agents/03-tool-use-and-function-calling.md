@@ -3,6 +3,7 @@ title: "Tool Use & Function Calling"
 level: intermediate
 topic: ai-agents
 order: 3
+estimatedTime: "45 minutes"
 ---
 
 # Tool Use & Function Calling

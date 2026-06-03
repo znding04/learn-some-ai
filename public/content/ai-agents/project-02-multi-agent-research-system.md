@@ -3,6 +3,7 @@ title: "Project: Multi-Agent Research System"
 level: advanced
 topic: ai-agents
 order: 15
+estimatedTime: "90 minutes"
 ---
 
 # Project: Multi-Agent Research System

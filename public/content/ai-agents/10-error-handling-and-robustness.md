@@ -3,6 +3,7 @@ title: "Error Handling & Robustness"
 level: intermediate
 topic: ai-agents
 order: 10
+estimatedTime: "45 minutes"
 ---
 
 # Error Handling & Robustness

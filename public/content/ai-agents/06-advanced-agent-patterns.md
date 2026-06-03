@@ -3,6 +3,7 @@ title: "Advanced Agent Patterns"
 level: advanced
 topic: ai-agents
 order: 6
+estimatedTime: "60 minutes"
 ---
 
 # Advanced Agent Patterns

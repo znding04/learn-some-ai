@@ -3,6 +3,7 @@ title: "Building Production Agents"
 level: advanced
 topic: ai-agents
 order: 11
+estimatedTime: "60 minutes"
 ---
 
 # Building Production Agents

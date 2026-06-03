@@ -3,6 +3,7 @@ title: "Memory Systems"
 level: intermediate
 topic: ai-agents
 order: 7
+estimatedTime: "45 minutes"
 ---
 
 # Memory Systems

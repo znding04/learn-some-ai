@@ -3,6 +3,7 @@ title: "Project: Production Customer Service Agent"
 level: advanced
 topic: ai-agents
 order: 17
+estimatedTime: "90 minutes"
 ---
 
 # Project: Production Customer Service Agent

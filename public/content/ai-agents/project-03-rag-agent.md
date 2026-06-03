@@ -3,6 +3,7 @@ title: "Project: Implement a RAG Agent"
 level: intermediate
 topic: ai-agents
 order: 16
+estimatedTime: "90 minutes"
 ---
 
 # Project: Implement a RAG Agent

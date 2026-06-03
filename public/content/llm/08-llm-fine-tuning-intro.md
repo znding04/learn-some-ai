@@ -3,6 +3,7 @@ title: "Introduction to LLM Fine-Tuning"
 level: intermediate
 topic: llm
 order: 8
+estimatedTime: "45 minutes"
 ---
 
 # Introduction to LLM Fine-Tuning

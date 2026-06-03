@@ -3,6 +3,7 @@ title: "Agent Architectures"
 level: intermediate
 topic: ai-agents
 order: 2
+estimatedTime: "45 minutes"
 ---
 
 # Agent Architectures

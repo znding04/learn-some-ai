@@ -162,19 +162,12 @@ flowchart LR
     h4 --> y
 ```
 
-Each arrow = weight (w). Each node computes $a = \sigma(\sum_i w_i x_i + b)$.
+Each arrow represents a weight. Each node computes $a = \sigma(\sum_i w_i x_i + b)$.
 
-```
-Activation Functions:
-
-ReLU:          Sigmoid:         Tanh:
- y│    /       y│   ___         y│   ___
-  │   /         │  /   1         │  /   1
-  │  /          │ /              │ /
-──┼──── x    ──┼──── x       ──┼──── x
-  │             │\              │\
-  │             │ \___ 0         │ \___ -1
-```
+**Activation Function Shapes** — Visual description:
+- **ReLU**: Linear for positive values ($f(x) = x$ for $x > 0$), zero for negative values
+- **Sigmoid**: S-shaped curve, maps any input to $(0, 1)$ — steepest in the middle
+- **Tanh**: S-shaped curve, maps any input to $(-1, 1)$ — zero-centered
 
 ## Exercises
 

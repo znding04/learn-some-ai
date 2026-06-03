@@ -3,6 +3,7 @@ title: "Prompt Engineering for Agents"
 level: intermediate
 topic: ai-agents
 order: 9
+estimatedTime: "45 minutes"
 ---
 
 # Prompt Engineering for Agents

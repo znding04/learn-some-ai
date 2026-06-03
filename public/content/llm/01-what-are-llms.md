@@ -3,6 +3,7 @@ title: "What are Large Language Models?"
 level: beginner
 topic: llm
 order: 1
+estimatedTime: "30 minutes"
 ---
 
 # What are Large Language Models?

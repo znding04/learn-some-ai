@@ -3,6 +3,7 @@ title: "Security & Safety in AI Agents"
 level: advanced
 topic: ai-agents
 order: 13
+estimatedTime: "60 minutes"
 ---
 
 # Security & Safety in AI Agents

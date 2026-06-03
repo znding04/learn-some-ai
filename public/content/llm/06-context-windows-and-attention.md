@@ -3,6 +3,7 @@ title: "Context Windows and Attention"
 level: intermediate
 topic: llm
 order: 6
+estimatedTime: "45 minutes"
 ---
 
 # Context Windows and Attention

@@ -3,6 +3,7 @@ title: "Tokenization and Embeddings"
 level: intermediate
 topic: llm
 order: 5
+estimatedTime: "45 minutes"
 ---
 
 # Tokenization and Embeddings

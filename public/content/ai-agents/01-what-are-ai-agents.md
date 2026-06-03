@@ -3,6 +3,7 @@ title: "What are AI Agents?"
 level: beginner
 topic: ai-agents
 order: 1
+estimatedTime: "30 minutes"
 ---
 
 # What are AI Agents?

@@ -3,6 +3,7 @@ title: "Retrieval Augmented Generation"
 level: intermediate
 topic: llm
 order: 9
+estimatedTime: "45 minutes"
 ---
 
 # Retrieval Augmented Generation (RAG)

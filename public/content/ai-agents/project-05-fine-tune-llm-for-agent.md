@@ -3,6 +3,7 @@ title: "Project: Fine-Tune an LLM for Agent Tasks"
 level: advanced
 topic: ai-agents
 order: 18
+estimatedTime: "90 minutes"
 ---
 
 # Project: Fine-Tune an LLM for Agent Tasks

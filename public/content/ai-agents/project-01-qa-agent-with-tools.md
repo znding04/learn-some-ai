@@ -3,6 +3,7 @@ title: "Project: Build a Q&A Agent with Tool Use"
 level: intermediate
 topic: ai-agents
 order: 14
+estimatedTime: "90 minutes"
 ---
 
 # Project: Build a Q&A Agent with Tool Use
