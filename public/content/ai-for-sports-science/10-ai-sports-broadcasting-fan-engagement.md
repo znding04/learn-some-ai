@@ -7,11 +7,26 @@ order: 10
 
 # AI for Sports Broadcasting and Fan Engagement
 
+## Table of Contents
+- [Overview](#overview)
+- [Automated Production Pipeline](#automated-production-pipeline)
+- [Real-Time Graphics and Statistics](#real-time-graphics-and-statistics)
+- [Personalized Fan Experiences](#personalized-fan-experiences)
+- [Conversational Sports Interaction](#conversational-sports-interaction)
+- [Infrastructure for AI Broadcasting](#infrastructure-for-ai-broadcasting)
+- [Summary](#summary)
+- [What's Next](#whats-next)
+
+---
+
 ## Overview
 
-Sports broadcasting has evolved from simple live transmission to an immersive, data-rich experience. AI enables automated camera control, real-time statistics overlays, personalized content delivery, and interactive fan experiences that transform passive viewers into active participants.
+Sports broadcasting has evolved from simple live transmission to an immersive, data-rich experience.
+AI enables automated camera control, real-time statistics overlays, personalized content delivery,
+and interactive fan experiences that transform passive viewers into active participants.
 
-This lesson covers automated production pipelines, real-time graphics and statistics, personalized fan experiences, and the infrastructure that powers modern AI-enhanced broadcasting.
+This lesson covers automated production pipelines, real-time graphics and statistics,
+personalized fan experiences, and the infrastructure that powers modern AI-enhanced broadcasting.
 
 ---
 
@@ -19,7 +34,9 @@ This lesson covers automated production pipelines, real-time graphics and statis
 
 ### AI-Directed Camera Systems
 
-Traditional sports broadcasting requires a team of human camera operators. AI enables semi-automated or fully automated camera systems that intelligently track the action:
+Traditional sports broadcasting requires a team of human camera operators.
+AI enables semi-automated or fully automated camera systems
+that intelligently track the action:
 
 ```python
 import torch
@@ -551,4 +568,7 @@ class LatencyMonitor:
 
 ## What's Next
 
-Lesson 11 explores **frontiers, ethics, and anti-doping** — the future directions of AI in sports including emerging technologies, ethical considerations around surveillance and fairness, and AI's role in anti-doping efforts.
+Lesson 11 explores **frontiers, ethics, and anti-doping** —
+the future directions of AI in sports including emerging technologies,
+ethical considerations around surveillance and fairness,
+and AI's role in anti-doping efforts.
