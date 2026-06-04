@@ -7,9 +7,25 @@ order: 9
 
 # NLP for Sports Commentary and Reporting
 
+## Table of Contents
+- [Overview](#overview)
+- [Live Sports Commentary Generation](#live-sports-commentary-generation)
+- [Sentiment Analysis for Fan Reactions](#sentiment-analysis-for-fan-reactions)
+- [Automated Match Report Writing](#automated-match-report-writing)
+- [Player Interview Analysis](#player-interview-analysis)
+- [Practical Applications](#practical-applications)
+- [Summary](#summary)
+- [What's Next](#whats-next)
+
+---
+
 ## Overview
 
-Sports generate enormous quantities of text: live commentary, match reports, player interviews, social media reactions, statistical summaries, and fantasy sports analysis. Natural Language Processing (NLP) transforms this unstructured text into structured insights, automated content generation, and real-time fan engagement at scale.
+Sports generate enormous quantities of text: live commentary, match reports,
+player interviews, social media reactions, statistical summaries,
+and fantasy sports analysis.
+Natural Language Processing (NLP) transforms this unstructured text into structured insights,
+automated content generation, and real-time fan engagement at scale.
 
 This lesson covers text generation for live sports commentary, sentiment analysis for fan reactions, automated match report writing, and the architecture of sports-specific language models.
 
