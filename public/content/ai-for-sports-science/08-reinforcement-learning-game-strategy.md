@@ -7,11 +7,30 @@ order: 8
 
 # Reinforcement Learning for Game Strategy
 
+## Table of Contents
+- [Overview](#overview)
+- [Foundations: Markov Decision Processes for Sports](#foundations-markov-decision-processes-for-sports)
+- [Multi-Agent Game Theory](#multi-agent-game-theory)
+- [Self-Play Training for Tactics](#self-play-training-for-tactics)
+- [Practical Deployment: AI Coaching Assistants](#practical-deployment-ai-coaching-assistants)
+- [Case Study: AI Call in American Football](#case-study-ai-call-in-american-football)
+- [Summary](#summary)
+- [What's Next](#whats-next)
+
+---
+
 ## Overview
 
-In-game decision-making is a sequential process under uncertainty — coaches and players choose actions based on imperfect information about the current state, with outcomes that unfold over minutes or hours. Reinforcement learning (RL) provides the mathematical framework for training AI agents to make optimal decisions in these dynamic environments: when to foul, when to substitute, how to adjust defensive coverage, which play to call in the final seconds.
+In-game decision-making is a sequential process under uncertainty —
+coaches and players choose actions based on imperfect information about the current state,
+with outcomes that unfold over minutes or hours.
+Reinforcement learning (RL) provides the mathematical framework for training AI agents
+to make optimal decisions in these dynamic environments:
+when to foul, when to substitute, how to adjust defensive coverage,
+which play to call in the final seconds.
 
-This lesson covers Markov decision processes for sports strategy, multi-agent game theory, self-play training for tactics, and practical deployment considerations for AI coaching assistants.
+This lesson covers Markov decision processes for sports strategy, multi-agent game theory,
+self-play training for tactics, and practical deployment considerations for AI coaching assistants.
 
 ---
 
@@ -154,7 +173,9 @@ def potential_based_reward(state, next_state):
 
 ### Simultaneous Decision-Making
 
-In team sports, both teams make decisions simultaneously. This creates a game-theoretic environment where the optimal strategy depends on the opponent's strategy:
+In team sports, both teams make decisions simultaneously.
+This creates a game-theoretic environment where the optimal strategy
+depends on the opponent's strategy:
 
 $$\text{Nash Equilibrium: } \pi^* \text{ such that no player can improve by unilaterally deviating}$$
 
@@ -559,4 +580,7 @@ The model computed that going for it on 4th-and-1 from their own 30 was worth +0
 
 ## What's Next
 
-Lesson 09 explores **NLP for sports commentary and reporting** — how AI generates live commentary, summarizes matches, and processes the vast textual ecosystem around sports from news articles to social media fan reactions.
+Lesson 09 explores **NLP for sports commentary and reporting** —
+how AI generates live commentary, summarizes matches,
+and processes the vast textual ecosystem around sports
+from news articles to social media fan reactions.
