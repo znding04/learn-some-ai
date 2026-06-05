@@ -347,6 +347,38 @@ p { line-height: 1.7; }
   margin: var(--space-8) 0;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .markdown-body h1 {
+    font-size: 1.5rem;
+  }
+  
+  .markdown-body h2 {
+    font-size: 1.2rem;
+    margin-top: var(--space-6) 0 var(--space-3);
+  }
+  
+  .markdown-body h3 {
+    font-size: 1.05rem;
+    margin-top: var(--space-5) 0 var(--space-2);
+  }
+  
+  .markdown-body pre {
+    padding: var(--space-3);
+    margin-left: calc(var(--space-4) * -1);
+    margin-right: calc(var(--space-4) * -1);
+    border-radius: 0;
+  }
+  
+  .markdown-body table {
+    font-size: 0.875rem;
+  }
+  
+  .markdown-body th, .markdown-body td {
+    padding: var(--space-2) var(--space-3);
+  }
+}
+
 /* ================================================
    Animations
    ================================================ */

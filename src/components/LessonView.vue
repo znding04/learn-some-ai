@@ -354,4 +354,17 @@ watch(() => lesson.value?.contentPath, (path) => {
   background: var(--accent-bg);
   border-color: var(--accent);
 }
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .lesson-title {
+    font-size: 1.5rem;
+  }
+  
+  .nav-btn {
+    max-width: 48%;
+    padding: var(--space-2) var(--space-3);
+    font-size: 0.8rem;
+  }
+}
 </style>
