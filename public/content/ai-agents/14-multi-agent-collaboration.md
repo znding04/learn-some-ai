@@ -1,5 +1,6 @@
 ---
 title: "Multi-Agent Collaboration"
+level: intermediate
 topic: ai-agents
 order: 14
 estimatedTime: "45 minutes"

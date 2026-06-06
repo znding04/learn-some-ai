@@ -1,7 +1,8 @@
 ---
 title: "Project: Deploy an Agent to Production"
+level: advanced
 topic: ai-agents
-order: 16
+order: 17
 estimatedTime: "90 minutes"
 difficulty: advanced
 prerequisites:

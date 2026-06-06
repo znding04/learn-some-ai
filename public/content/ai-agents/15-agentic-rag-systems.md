@@ -1,5 +1,6 @@
 ---
 title: "Agentic RAG Systems"
+level: intermediate
 topic: ai-agents
 order: 15
 estimatedTime: "45 minutes"
