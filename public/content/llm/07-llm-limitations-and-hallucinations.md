@@ -1,6 +1,6 @@
 ---
 title: "LLM Limitations and Hallucinations"
-level: intermediate
+difficulty: intermediate
 topic: llm
 order: 7
 estimatedTime: "45 minutes"

@@ -1,6 +1,6 @@
 ---
 title: "LLM Architecture Deep Dive"
-level: intermediate
+difficulty: intermediate
 topic: llm
 order: 2
 estimatedTime: "45 minutes"
