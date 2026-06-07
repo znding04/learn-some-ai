@@ -1,6 +1,8 @@
 ---
 title: "Prompt Engineering for Agents"
 level: intermediate
+difficulty: intermediate
+summary: "Crafting structured system prompts, chain-of-thought reasoning protocols, and tool selection strategies that make AI agents reliable and predictable."
 topic: ai-agents
 order: 9
 estimatedTime: "45 minutes"
@@ -86,6 +88,8 @@ Avoid these pitfalls in agent prompts:
 - **Missing error guidance**: Without explicit error handling instructions, agents often retry the same failed action indefinitely.
 - **No termination condition**: Always specify when the agent should stop. "If you cannot solve the task in 5 tool calls, summarize what you've found and ask the user for guidance."
 
+---
+
 ## Key Concepts
 
 - **Structured prompting**: Using headers, sections, and bullet points to reduce ambiguity in agent instructions
@@ -95,6 +99,8 @@ Avoid these pitfalls in agent prompts:
 - **Negative examples**: Specifying what the agent should NOT do in specific situations
 - **Termination conditions**: Explicit rules for when the agent should stop and return a response
 - **Modality-aware routing**: Identifying input type before applying modality-specific reasoning
+
+---
 
 ## Code Examples
 
@@ -187,6 +193,8 @@ demonstrate_prompt_impact("What were the key AI breakthroughs in 2025?")
 - `temperature=0.3` reduces randomness in the agent's behavior, making it more predictable.
 - The comparison function demonstrates the measurable impact of structured vs. unstructured prompts.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The probability of correct tool selection given a prompt can be modeled as:
@@ -200,6 +208,8 @@ The expected number of tool calls before task completion:
 $$\mathbb{E}[N] = \frac{1}{p_{\text{correct}}} + \frac{(1 - p_{\text{correct}})}{p_{\text{correct}}} \cdot \mathbb{E}[N_{\text{recovery}}]$$
 
 where $p_{\text{correct}}$ is the probability of selecting the right tool and $N_{\text{recovery}}$ is the number of additional calls needed to recover from a wrong selection.
+
+---
 
 ## Diagrams
 
@@ -228,6 +238,8 @@ flowchart TD
     R --> AT --> RP --> C --> OF
 ```
 
+---
+
 ## Exercises
 
 1. **A/B test prompt structures**: Take a simple agent with 3 tools. Write two versions of the system prompt -- one structured and one unstructured. Run 20 test queries through each and measure the rate of correct tool selection.
@@ -239,6 +251,8 @@ flowchart TD
 4. **Negative example engineering**: For each tool in your agent, write 2-3 "DO NOT use when" examples. Test whether adding these negative examples reduces tool misuse.
 
 5. **Termination tuning**: Run an agent on a deliberately impossible task (e.g., "Find the email of a fictional character"). Adjust the termination conditions in the prompt until the agent reliably stops within 3 tool calls and explains why it cannot complete the task.
+
+---
 
 ## Further Reading
 
