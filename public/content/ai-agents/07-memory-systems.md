@@ -1,6 +1,8 @@
 ---
 title: "Memory Systems"
 level: intermediate
+difficulty: intermediate
+summary: "How AI agents retain, organize, and retrieve information across interactions using short-term and long-term memory systems."
 topic: ai-agents
 order: 7
 estimatedTime: "45 minutes"
@@ -63,6 +65,8 @@ Naive nearest-neighbor retrieval often returns irrelevant results. Better strate
 - **Importance scoring**: Assign an importance weight $w_i$ to each memory at storage time. The retrieval score becomes $\text{score} = \alpha \cdot \text{sim} + \beta \cdot w_i + \gamma \cdot \text{recency}$.
 - **Maximum marginal relevance (MMR)**: Penalize retrieved items that are too similar to each other, ensuring diversity in recalled memories.
 
+---
+
 ## Key Concepts
 
 - **Short-term memory (STM)**: Conversation history within a session, limited by context window size $L$
@@ -73,6 +77,8 @@ Naive nearest-neighbor retrieval often returns irrelevant results. Better strate
 - **Episodic memory**: Time-stamped event records (what the agent experienced)
 - **Hybrid retrieval**: Combining vector similarity with keyword search for better recall
 - **Recency weighting**: Preferring recent memories via exponential time decay
+
+---
 
 ## Code Examples
 
@@ -197,6 +203,8 @@ print(agent.chat("What do I like to code in?"))  # Should recall Rust
 - `MemoryAgent` integrates the store into a conversational agent. Before each response, it retrieves relevant memories and injects them into the system prompt.
 - The conversation is trimmed to the last 10 turns (`[-10:]`) to manage short-term memory within the context window.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The combined retrieval score for a memory $m$ given query $q$ is:
@@ -214,6 +222,8 @@ The context window budget can be expressed as:
 $$L_{\text{available}} = L_{\text{max}} - L_{\text{system}} - L_{\text{current}} - L_{\text{reserved}}$$
 
 where $L_{\text{system}}$ is the system prompt length, $L_{\text{current}}$ is the current user message, and $L_{\text{reserved}}$ is space kept for the model's response.
+
+---
 
 ## Diagrams
 
@@ -242,6 +252,8 @@ flowchart TD
     LT -- store / retrieve --> AR
 ```
 
+---
+
 ## Exercises
 
 1. **Implement summarization**: Write a function that takes the last 20 conversation turns and produces a 3-sentence summary using an LLM. Replace the oldest 15 turns with this summary in the agent's history.
@@ -253,6 +265,8 @@ flowchart TD
 4. **Memory importance**: Design a heuristic or LLM-based system that automatically assigns importance scores when storing memories. Test whether high-importance memories are retrieved more often when relevant.
 
 5. **Episodic vs. semantic separation**: Modify the `VectorMemoryStore` to maintain two separate collections -- one for facts and one for events. Implement logic that routes memories to the correct collection based on content analysis.
+
+---
 
 ## Further Reading
 
