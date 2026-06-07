@@ -359,6 +359,8 @@ $$\text{desired\_replicas} = \left\lceil \frac{\text{queue\_depth}}{\text{target
 - [ ] Resource limits set (memory, CPU)
 - [ ] Auto-scaling rules defined
 
+---
+
 ## Key Takeaways
 
 - Wrap agents in async APIs (FastAPI) for concurrent request handling
