@@ -17,6 +17,8 @@ summary: "Explore how Retrieval-Augmented Generation becomes agentic through que
 
 Standard RAG follows a simple pipeline: embed the query, retrieve top-k documents, stuff them into the context, and generate an answer. This works for straightforward factual questions but fails on complex queries requiring synthesis across multiple documents, disambiguation, or reasoning chains. Agentic RAG transforms retrieval into an iterative, self-directed process where an agent decides what to retrieve, evaluates whether retrieved information is sufficient, and adaptively refines its search strategy.
 
+---
+
 ## From Passive to Agentic Retrieval
 
 Traditional RAG is a single-shot pipeline:
@@ -33,6 +35,8 @@ Agentic RAG adds decision-making loops:
 4. Agent **decides** whether to retrieve more, reformulate queries, or answer
 5. Agent **synthesizes** across multiple retrieval rounds
 
+---
+
 ## Relevance Scoring
 
 The foundation of retrieval is measuring similarity between a query and documents. Cosine similarity between embedding vectors $\mathbf{q}$ (query) and $\mathbf{d}$ (document) is the standard metric:
@@ -44,6 +48,8 @@ In agentic RAG, the agent also applies a learned relevance threshold $\tau$. A d
 $$\text{sim}(\mathbf{q}, \mathbf{d}) > \tau$$
 
 The agent can dynamically adjust $\tau$ based on the task -- lowering it when information is scarce, raising it when precision matters.
+
+---
 
 ## Query Planning
 
@@ -76,6 +82,8 @@ def plan_queries(llm, question: str) -> RetrievalPlan:
         strategy=plan["strategy"]
     )
 ```
+
+---
 
 ## The Agentic RAG Loop
 
@@ -165,6 +173,8 @@ Respond with JSON:
         )
 ```
 
+---
+
 ## Multi-Hop Reasoning
 
 Some questions require chaining information across documents. For example: "What university did the CEO of the company that acquired Instagram attend?" requires:
@@ -179,6 +189,8 @@ $$\text{answer} = f(d_1, d_2, \ldots, d_k)$$
 
 where each document $d_{i+1}$ is retrieved using information extracted from $d_i$.
 
+---
+
 ## Adaptive Retrieval Strategies
 
 An agentic RAG system selects its retrieval approach based on question characteristics:
@@ -191,6 +203,8 @@ An agentic RAG system selects its retrieval approach based on question character
 | Aggregation | Exhaustive retrieval | "List all products launched in 2024" |
 | Ambiguous | Clarify then retrieve | "Tell me about Mercury" (planet? element?) |
 
+---
+
 ## Self-Correction and Hallucination Detection
 
 The agent can verify its own answer against retrieved evidence:
@@ -198,6 +212,8 @@ The agent can verify its own answer against retrieved evidence:
 $$\text{grounding\_score} = \frac{|\text{claims supported by context}|}{|\text{total claims in answer}|}$$
 
 If the grounding score falls below a threshold, the agent retrieves additional evidence or qualifies uncertain claims.
+
+---
 
 ## Key Takeaways
 
