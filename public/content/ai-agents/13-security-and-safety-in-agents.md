@@ -1,6 +1,8 @@
 ---
 title: "Security & Safety in AI Agents"
 level: advanced
+difficulty: advanced
+summary: "Defending AI agents against prompt injection, tool hijacking, and data leakage with layered guardrails, rate limiting, and content filtering."
 topic: ai-agents
 order: 13
 estimatedTime: "60 minutes"
@@ -62,6 +64,8 @@ Even without adversarial attacks, agents can produce harmful outputs: generating
 
 **Action guardrails** restrict what the agent can do, independent of what it says. Even if an injection attack tricks the agent's reasoning, action guardrails enforce hard limits: no more than 5 API calls per step, no file writes outside a sandbox directory, no network requests to unapproved domains.
 
+---
+
 ## Key Concepts
 
 - **Prompt injection**: Untrusted input that overrides the agent's intended instructions, either directly from the user or indirectly from retrieved data
@@ -70,6 +74,8 @@ Even without adversarial attacks, agents can produce harmful outputs: generating
 - **Human-in-the-loop**: Requiring user confirmation for high-stakes or irreversible actions
 - **Rate limiting**: Capping resource consumption per user to prevent financial denial-of-service
 - **Layered guardrails**: Applying input, output, and action filtering at multiple points in the agent pipeline
+
+---
 
 ## Code Examples
 
@@ -220,6 +226,8 @@ print(f"Injection detected: {suspicious}, pattern: {pattern}")
 - `ToolGuard.validate` checks every tool call against policies before execution. It tracks call counts to enforce per-session limits.
 - `TokenBucketRateLimiter` implements the token bucket algorithm: tokens refill at a fixed rate, and each request consumes tokens. When the bucket is empty, requests are rejected.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 **Token bucket rate limiter** -- tokens available at time $t$:
@@ -239,6 +247,8 @@ As you add more patterns, false positives compound. This is why pattern-based de
 $$C_{\text{attack}} = \lambda \cdot \bar{T} \cdot c \cdot D$$
 
 At $\lambda = 10$ req/s, $\bar{T} = 50{,}000$ tokens, $c = \$0.00003$/token, over $D = 3{,}600$s (1 hour): $C_{\text{attack}} = 10 \times 50{,}000 \times 0.00003 \times 3{,}600 = \$54{,}000$.
+
+---
 
 ## Diagrams
 
@@ -269,6 +279,8 @@ flowchart TD
     end
 ```
 
+---
+
 ## Exercises
 
 1. **Injection detection**: Write 5 prompt injection attempts that would bypass the regex patterns in the code example (e.g., using synonyms, encoding, or multi-turn strategies). Then update the `INJECTION_PATTERNS` list to catch them.
@@ -278,6 +290,8 @@ flowchart TD
 3. **Tool policy design**: You are building an agent for a customer support team. The agent has tools: `search_knowledge_base`, `read_ticket`, `update_ticket`, `send_email`, `run_sql_query`. Design a `TOOL_POLICIES` configuration that implements least privilege and appropriate safeguards for each tool.
 
 4. **Build an output filter**: Write a Python function that takes an agent's response string and redacts: (a) credit card numbers (16 digits, possibly with dashes/spaces), (b) email addresses, (c) AWS access key IDs (starting with AKIA, 20 characters). Return the redacted string with matches replaced by `[REDACTED]`.
+
+---
 
 ## Further Reading
 
