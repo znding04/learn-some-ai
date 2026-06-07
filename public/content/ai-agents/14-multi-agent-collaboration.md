@@ -16,6 +16,8 @@ summary: "Learn how multiple AI agents communicate, delegate tasks, reach consen
 
 A single agent can handle many tasks, but complex problems often benefit from decomposition across multiple specialized agents. Multi-agent systems divide work among agents that communicate, negotiate, and collaborate -- much like teams of humans. This lesson covers the core communication protocols, delegation patterns, consensus mechanisms, and coordination architectures that make multi-agent collaboration effective.
 
+---
+
 ## Communication Protocols
 
 Agents need a shared language for exchanging information. The simplest approach is structured message passing where each message has a sender, receiver, performative (intent), and content.
@@ -73,6 +75,8 @@ class Agent:
         raise NotImplementedError
 ```
 
+---
+
 ## Task Delegation Patterns
 
 ### Manager-Worker Pattern
@@ -118,6 +122,8 @@ $$\text{allocation}^* = \arg\min_{\mathbf{a}} \sum_{i=1}^{n} c_i(a_i)$$
 
 where $c_i(a_i)$ is the cost for agent $i$ to perform its assigned task $a_i$.
 
+---
+
 ## Consensus Mechanisms
 
 When agents must agree on a shared decision (e.g., which plan to execute), consensus protocols ensure agreement despite differing local information.
@@ -143,6 +149,8 @@ Agents share their reasoning, update beliefs, and re-vote across multiple rounds
 $$\text{belief}_i^{(t+1)} = \alpha \cdot \text{belief}_i^{(t)} + (1-\alpha) \cdot \frac{1}{n-1}\sum_{j \neq i} \text{belief}_j^{(t)}$$
 
 where $\alpha$ controls how much an agent trusts its own prior versus the group average.
+
+---
 
 ## Shared Memory Architectures
 
@@ -174,6 +182,8 @@ Blackboard systems excel when the problem-solving process is opportunistic -- an
 
 For LLM-based agents, a shared vector database serves as collective memory. Agents write observations and retrieved facts as embeddings; other agents query the store to benefit from previously gathered knowledge.
 
+---
+
 ## Coordination Strategies
 
 | Strategy | Best For | Tradeoff |
@@ -183,6 +193,8 @@ For LLM-based agents, a shared vector database serves as collective memory. Agen
 | Blackboard | Opportunistic problem solving | Potential write conflicts |
 | Auction | Resource-constrained environments | Requires cost estimation |
 | Peer-to-peer | Equal, autonomous agents | Harder to guarantee convergence |
+
+---
 
 ## Key Takeaways
 
