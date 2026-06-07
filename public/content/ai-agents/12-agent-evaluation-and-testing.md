@@ -1,6 +1,8 @@
 ---
 title: "Agent Evaluation & Testing"
 level: advanced
+difficulty: advanced
+summary: "Metrics, methods, and tooling for rigorously evaluating AI agents — including task success rate, tool precision/recall, synthetic test generation, and A/B testing."
 topic: ai-agents
 order: 12
 estimatedTime: "60 minutes"
@@ -62,6 +64,8 @@ Split incoming tasks randomly between the current prompt (control) and the new p
 
 The key pitfall: agent behavior is high-variance. A single task might take 3 steps or 30 depending on stochastic LLM sampling. You need more samples than you think -- typically 200-500 per variant -- to detect meaningful differences.
 
+---
+
 ## Key Concepts
 
 - **Task success rate**: Fraction of tasks the agent completes correctly, the most fundamental metric
@@ -70,6 +74,8 @@ The key pitfall: agent behavior is high-variance. A single task might take 3 ste
 - **Synthetic test generation**: Using LLMs to create large, diverse evaluation datasets automatically
 - **GAIA benchmark**: Multi-step reasoning benchmark with unambiguous answers requiring real tool use
 - **A/B testing**: Randomized comparison of agent prompt variants with statistical significance testing
+
+---
 
 ## Code Examples
 
@@ -191,6 +197,8 @@ print(json.dumps(report, indent=2))
 - `evaluate_suite` aggregates across all traces to produce the final report with averages.
 - In trace `t1`, the agent called `calculator` unnecessarily, so tool precision is $\frac{1}{2} = 0.5$ while recall is $\frac{1}{1} = 1.0$.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 **Tool F1 Score** balances precision and recall of tool usage:
@@ -210,6 +218,8 @@ Reject the null hypothesis (no difference) if $|z| > 1.96$ at the 95% confidence
 $$\text{CASR} = \frac{\text{Task Success Rate}}{\log_2(1 + \text{avg tokens per task})}$$
 
 This penalizes agents that achieve high success but consume disproportionate resources.
+
+---
 
 ## Diagrams
 
@@ -243,6 +253,8 @@ flowchart TD
     Test --> Ship([Significant? Ship it.])
 ```
 
+---
+
 ## Exercises
 
 1. **Compute tool metrics**: An agent was expected to call `[search, read_file, calculate]`. It actually called `[search, search, calculate, summarize]`. Compute tool precision, tool recall, and tool F1 by hand.
@@ -252,6 +264,8 @@ flowchart TD
 3. **Build a test generator**: Write a Python function that takes a list of tool definitions (name + description) and uses string templates to generate 20 synthetic (task, expected_tools, expected_answer) triples. No LLM required -- use rule-based generation to cover each tool individually and in pairs.
 
 4. **Evaluate trajectory quality**: Extend `evaluate_trace` to compute step accuracy by comparing `actual_steps` against an `expected_steps` field, using edit distance (Levenshtein) normalized by the length of the expected trajectory.
+
+---
 
 ## Further Reading
 
