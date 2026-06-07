@@ -4,6 +4,8 @@ level: intermediate
 topic: ai-agents
 order: 3
 estimatedTime: "45 minutes"
+difficulty: intermediate
+summary: "How LLMs use structured function calling to invoke tools, with best practices for schema design, error handling, and security."
 ---
 
 # Tool Use & Function Calling
@@ -24,6 +26,8 @@ Error handling is critical in tool-use systems. Tools can fail (network errors, 
 
 Security is an equally important concern. If an agent can execute arbitrary code or make API calls, a prompt injection attack could cause it to perform malicious actions. Tool-use systems should implement sandboxing (run code in containers), input validation (check tool arguments before execution), output filtering (redact sensitive information), and permission boundaries (restrict which tools are available in which contexts).
 
+---
+
 ## Key Concepts
 
 - **Function Calling**: A structured output mode where the LLM produces a JSON object specifying a tool name and arguments, rather than free text.
@@ -32,6 +36,8 @@ Security is an equally important concern. If an agent can execute arbitrary code
 - **Parallel Tool Calls**: The ability to invoke multiple tools in a single turn, with results returned together.
 - **Observation**: The result returned by a tool after execution, fed back to the LLM for further reasoning.
 - **Grounding**: Tools connect the LLM to real-world data, reducing hallucination by providing factual observations.
+
+---
 
 ## Code Examples
 
@@ -153,6 +159,8 @@ Explanation of the critical sections:
 - **Lines 82-83**: When the model does not produce tool calls, the loop exits and we return the text response.
 - **Lines 86-97**: Each tool call is executed and the result is appended as a `"tool"` role message, linked to the specific `tool_call_id` so the model can match results to calls.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The tool selection problem can be modeled as a discrete choice. Given a set of $n$ tools $\{t_1, t_2, \ldots, t_n\}$ and the current context $c$, the agent selects tool $t^*$:
@@ -170,6 +178,8 @@ The expected information gain from calling tool $t_i$ with input $x$ can be expr
 $$\text{IG}(t_i, x) = H(A \mid c) - H(A \mid c, o_{t_i}(x))$$
 
 where $A$ is the answer random variable, $H$ is entropy, and $o_{t_i}(x)$ is the observation returned by tool $t_i$ on input $x$. The agent should prefer tools that maximally reduce its uncertainty about the answer.
+
+---
 
 ## Diagrams
 
@@ -198,6 +208,8 @@ flowchart LR
     Good -. avoid .-> Bad
 ```
 
+---
+
 ## Exercises
 
 1. **Design a tool set**: You are building a research agent. Design schemas for 4 tools: `search_academic_papers`, `read_paper_abstract`, `summarize_text`, and `save_notes`. For each, write the complete JSON schema with name, description, and parameters.
@@ -209,6 +221,8 @@ flowchart LR
 4. **Security audit**: Given an agent with a `run_python_code(code: str)` tool, list 5 potential security risks and propose a mitigation strategy for each.
 
 5. **Token efficiency**: You have 10 tools available but only 3 are relevant to most queries. Design a two-stage tool selection system where a lightweight first pass selects the top 3 tools, and only those 3 are included in the main LLM call. Write pseudocode for this approach.
+
+---
 
 ## Further Reading
 
