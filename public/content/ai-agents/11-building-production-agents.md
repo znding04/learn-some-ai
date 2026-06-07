@@ -1,6 +1,8 @@
 ---
 title: "Building Production Agents"
 level: advanced
+difficulty: advanced
+summary: "Engineering production-grade AI agents with deployment architecture, cost optimization, monitoring, observability, and reliability patterns."
 topic: ai-agents
 order: 11
 estimatedTime: "60 minutes"
@@ -46,6 +48,8 @@ An agent that silently fails is worse than one that crashes loudly. Production a
 
 Production agents need defensive coding. **Retry with exponential backoff** handles transient LLM API failures. **Circuit breakers** stop calling a tool that has failed repeatedly, preventing cascade failures. **Timeouts** on every external call prevent the agent from hanging indefinitely. **Graceful degradation** means the agent can still provide a partial answer if one tool is unavailable.
 
+---
+
 ## Key Concepts
 
 - **Cold start latency**: Delay when a serverless function initializes; typically 1-5 seconds for LLM-based agents
@@ -54,6 +58,8 @@ Production agents need defensive coding. **Retry with exponential backoff** hand
 - **Model routing**: Directing tasks to appropriately-sized models based on complexity
 - **Structured logging**: JSON-formatted logs with trace IDs, step numbers, and tool metadata for debugging
 - **Circuit breaker**: Pattern that stops calling a failing service after repeated errors, allowing recovery
+
+---
 
 ## Code Examples
 
@@ -170,6 +176,8 @@ def run_agent_with_tracking(task: str, trace_id: str):
 - `summary()` computes percentile latencies (p50, p95) from the collected measurements.
 - The agent loop checks the budget on every iteration, preventing runaway cost.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 **Cost per agent task** combines input and output token pricing:
@@ -187,6 +195,8 @@ where $p_{\text{cache}}$ is the reduced price for cached tokens (typically $0.1 
 **Percentile latency** (p95) from $n$ sorted observations $l_1 \leq l_2 \leq \ldots \leq l_n$:
 
 $$p_{95} = l_{\lceil 0.95 \cdot n \rceil}$$
+
+---
 
 ## Diagrams
 
@@ -215,6 +225,8 @@ flowchart LR
     W --> H([100% - Hard stop<br/>force end])
 ```
 
+---
+
 ## Exercises
 
 1. **Token budget calculator**: Given an agent that averages 8 LLM calls per task, with 2,000 input tokens and 500 output tokens per call, at $3/M input and $15/M output, calculate the average cost per task. Then calculate savings if prompt caching reduces input cost by 90% for a 1,500-token cached prefix.
@@ -224,6 +236,8 @@ flowchart LR
 3. **Deployment decision**: You are building an agent that (a) responds to Slack messages within 2 seconds, (b) processes documents in batch overnight, (c) runs multi-step research tasks lasting 5-10 minutes. For each, recommend serverless or long-running and justify your choice.
 
 4. **Structured logging query**: Write a `jq` command to extract all log entries from the agent where `latency_ms > 1000` and `tool` is not null, sorted by latency descending. This simulates real incident investigation.
+
+---
 
 ## Further Reading
 
