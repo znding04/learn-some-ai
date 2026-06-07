@@ -2,8 +2,13 @@
 title: "Project: Implement a RAG Agent"
 level: intermediate
 topic: ai-agents
-order: 16
+order: 18
 estimatedTime: "90 minutes"
+difficulty: intermediate
+prerequisites:
+  - ai-agents-07
+  - ai-agents-15
+summary: "Build an end-to-end RAG agent that ingests documents, embeds them into a FAISS vector store, retrieves and re-ranks relevant chunks, and generates cited answers grounded in the retrieved context."
 ---
 
 # Project: Implement a RAG Agent
@@ -13,6 +18,8 @@ estimatedTime: "90 minutes"
 Retrieval-Augmented Generation (RAG) grounds a language model's answers in a corpus of documents so it can respond accurately to questions about private or up-to-date information. In this project you will build an end-to-end RAG agent that ingests documents, embeds them into a FAISS vector store, retrieves the most relevant chunks at query time, optionally re-ranks them, and feeds them to an LLM to produce a cited answer.
 
 The pipeline follows four stages: **Ingest -> Embed -> Retrieve -> Generate**. By the end you will have a self-contained Python script that can answer questions over any document collection.
+
+---
 
 ## Key Concepts
 
@@ -33,6 +40,8 @@ We retrieve the top-$k$ chunks with the highest similarity, then optionally re-r
 $$s(q, d) = \sigma(\mathbf{w}^T \, \text{BERT}([q; d]) + b)$$
 
 where $\sigma$ is the sigmoid function.
+
+---
 
 ## Code Examples
 
@@ -181,6 +190,8 @@ if __name__ == "__main__":
     print(rag_pipeline(q))
 ```
 
+---
+
 ## Diagrams
 
 **RAG pipeline: ingest, embed, retrieve, generate**
@@ -196,6 +207,8 @@ flowchart TD
     L --> A([Final Answer])
 ```
 
+---
+
 ## Exercises
 
 1. **Hybrid search** -- Combine FAISS vector search with BM25 keyword search. Merge results using Reciprocal Rank Fusion: $\text{RRF}(d) = \sum_{r \in R} \frac{1}{k + \text{rank}_r(d)}$ with $k=60$.
@@ -203,6 +216,8 @@ flowchart TD
 3. **Metadata filtering** -- Add a `date` field to each chunk and let the user filter to documents from the last 30 days before retrieval.
 4. **Streaming answers** -- Use the OpenAI streaming API to print tokens as they arrive while still citing sources.
 5. **Evaluation** -- Implement a simple evaluation: for each test question with a known answer, compute the ROUGE-L score between the generated answer and the reference.
+
+---
 
 ## Further Reading
 
