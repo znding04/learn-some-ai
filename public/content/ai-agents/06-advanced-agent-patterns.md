@@ -1,6 +1,8 @@
 ---
 title: "Advanced Agent Patterns"
 level: advanced
+difficulty: advanced
+summary: "Explore multi-agent systems, hierarchical task decomposition, self-critique loops, and debate-based reasoning patterns."
 topic: ai-agents
 order: 6
 estimatedTime: "60 minutes"
@@ -52,6 +54,8 @@ Research shows that self-critique improves factual accuracy by 10-30% on benchma
 
 In a debate system, two agents argue opposing positions on a question. A judge agent (or the user) evaluates the arguments. This adversarial structure surfaces weaknesses in reasoning that a single agent might overlook.
 
+---
+
 ## Key Concepts
 
 - **Role specialization**: Assign distinct capabilities and system prompts to each agent in a multi-agent system
@@ -60,6 +64,8 @@ In a debate system, two agents argue opposing positions on a question. A judge a
 - **Self-critique loop**: Generate-then-evaluate cycle with a fixed iteration budget
 - **Adversarial debate**: Two agents argue opposing sides; a judge selects the stronger argument
 - **Communication protocol**: The format and rules governing inter-agent message exchange
+
+---
 
 ## Code Examples
 
@@ -134,6 +140,8 @@ print(result)
 - `run_debate` alternates between Agent A (pro) and Agent B (con) for a configurable number of rounds, accumulating history so each response builds on prior arguments.
 - The shared `history` list acts as a lightweight blackboard -- both agents read from the same conversation record.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The **Nash equilibrium** concept applies to multi-agent systems. In a two-agent cooperative game, each agent $i$ selects a strategy $s_i$ to maximize a shared utility:
@@ -147,6 +155,8 @@ For the self-critique loop, we can measure improvement as the expected quality g
 $$\Delta Q_t = \mathbb{E}[s(y_{t+1}) - s(y_t)] = \mathbb{E}[s(f_{\text{revise}}(y_t, f_{\text{critique}}(y_t))) - s(y_t)]$$
 
 Empirically, $\Delta Q_t$ decreases with $t$, following an approximate power law: $\Delta Q_t \propto t^{-\alpha}$ with $\alpha \approx 0.5$ to $1.0$.
+
+---
 
 ## Diagrams
 
@@ -182,6 +192,8 @@ flowchart TD
     W2 --> SW2
 ```
 
+---
+
 ## Exercises
 
 1. **Extend the debate system**: Add a "moderator" agent that summarizes each round before the next begins. Measure whether this improves the quality of the final verdict.
@@ -193,6 +205,8 @@ flowchart TD
 4. **Communication protocol**: Design a JSON schema for inter-agent messages that includes fields for sender, recipient, message type (request, response, critique), and content. Implement validation.
 
 5. **Scaling analysis**: Run the debate system with 2, 3, and 4 rounds. Plot the judge's confidence score vs. number of rounds. At what point do diminishing returns appear?
+
+---
 
 ## Further Reading
 
