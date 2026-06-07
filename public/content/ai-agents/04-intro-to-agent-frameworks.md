@@ -1,6 +1,8 @@
 ---
 title: "Introduction to Agent Frameworks"
 level: beginner
+difficulty: beginner
+summary: "Survey of major agent frameworks including LangChain, LangGraph, AutoGPT, CrewAI, and CAMEL, with a hands-on example using LangChain."
 topic: ai-agents
 order: 4
 estimatedTime: "30 minutes"
@@ -26,6 +28,8 @@ When choosing a framework, consider these factors. For simple, single-agent task
 
 The core building blocks shared across most frameworks are: **Chains** (sequences of operations), **Agents** (LLM-driven decision makers), **Tools** (external capabilities), **Memory** (short-term and long-term storage), and **Callbacks/Hooks** (observability and control). Understanding these abstractions in one framework makes it easier to work with any of them.
 
+---
+
 ## Key Concepts
 
 - **Chains**: Composable sequences of LLM calls and transformations. The simplest chain is prompt-then-call-LLM. Chains can be nested and branched.
@@ -34,6 +38,8 @@ The core building blocks shared across most frameworks are: **Chains** (sequence
 - **Memory**: Systems for persisting information across interactions. Includes conversation buffer memory, summary memory, and vector-store-backed retrieval memory.
 - **LCEL (LangChain Expression Language)**: A declarative syntax for composing chains using the `|` (pipe) operator, similar to Unix pipes.
 - **Graph-Based Workflows**: In LangGraph, the agent's control flow is an explicit directed graph with nodes and conditional edges.
+
+---
 
 ## Code Examples
 
@@ -129,6 +135,8 @@ print(response)
 
 The `|` operator chains components: the prompt template formats the input, passes it to the LLM, and the output parser extracts the string content.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The agent decision process in these frameworks can be abstracted as a Markov Decision Process (MDP). The agent's state at time $t$ is:
@@ -144,6 +152,8 @@ The expected utility of the agent over an episode of length $T$ is:
 $$U = \mathbb{E}\left[\sum_{t=0}^{T} \gamma^t \cdot r(s_t, a_t)\right]$$
 
 where $\gamma \in [0,1]$ is a discount factor and $r(s_t, a_t)$ is the reward at step $t$ (e.g., task completion, user satisfaction). Frameworks do not optimize this explicitly, but good architecture choices implicitly improve $U$ by reducing $T$ (fewer steps) and increasing $r$ (better tool selection).
+
+---
 
 ## Diagrams
 
@@ -182,6 +192,8 @@ flowchart TD
     Agent -- no tool calls --> End([END])
 ```
 
+---
+
 ## Exercises
 
 1. **First agent**: Install LangChain and LangGraph (`pip install langchain langchain-openai langgraph`). Create a ReAct agent with a `calculator` tool and a `current_date` tool. Test it with the query "How many days until December 31, 2025?"
@@ -193,6 +205,8 @@ flowchart TD
 4. **LCEL chains**: Build an LCEL chain that takes a topic, generates 3 questions about it, then answers each question. Use the pipe operator to compose the steps.
 
 5. **Framework selection**: For each of the following use cases, recommend a framework and justify your choice: (a) a customer support chatbot with tool access, (b) a code review system with multiple specialist reviewers, (c) an autonomous research assistant, (d) a simple RAG pipeline.
+
+---
 
 ## Further Reading
 
