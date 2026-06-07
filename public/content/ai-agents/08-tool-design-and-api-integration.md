@@ -1,6 +1,8 @@
 ---
 title: "Tool Design & API Integration"
 level: intermediate
+difficulty: intermediate
+summary: "Wrapping external APIs into clean, reliable tool interfaces that AI agents can invoke with proper authentication, retries, and error handling."
 topic: ai-agents
 order: 8
 estimatedTime: "45 minutes"
@@ -71,6 +73,8 @@ $$C_{\text{batch}} = C_{\text{overhead}} + n \cdot C_{\text{per\_item}} \ll n \c
 
 where $n$ is the number of items and $C_{\text{overhead}}$ is the fixed cost per request (DNS, TLS handshake, etc.).
 
+---
+
 ## Key Concepts
 
 - **Tool schema**: A JSON specification of a tool's name, description, and parameters that the LLM uses to decide when and how to call it
@@ -79,6 +83,8 @@ where $n$ is the number of items and $C_{\text{overhead}}$ is the fixed cost per
 - **Exponential backoff**: Doubling the wait time between retries to handle rate limits gracefully
 - **Pagination**: Splitting large result sets across multiple API calls to manage response size
 - **Idempotency**: Ensuring repeated tool calls with the same parameters produce the same result (critical for retry logic)
+
+---
 
 ## Code Examples
 
