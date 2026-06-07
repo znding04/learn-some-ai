@@ -2,8 +2,13 @@
 title: "Project: Build a Q&A Agent with Tool Use"
 level: intermediate
 topic: ai-agents
-order: 14
+order: 16
 estimatedTime: "90 minutes"
+difficulty: intermediate
+prerequisites:
+  - ai-agents-03
+  - ai-agents-05
+summary: "Build a question-answering agent that uses the ReAct pattern to decide when and which external tools to call, combining web search, a calculator, and a knowledge base into a single reasoning loop."
 ---
 
 # Project: Build a Q&A Agent with Tool Use
@@ -13,6 +18,8 @@ estimatedTime: "90 minutes"
 In this project you will build a question-answering agent that can decide **when and which external tool to call** in order to answer a user's question. The agent combines three tools -- a web search API, an arithmetic calculator, and a local knowledge base -- into a single reasoning loop. By the end you will have a working Python system that accepts natural-language questions, plans a sequence of tool calls, executes them, and synthesises a final answer.
 
 The core idea is the **ReAct** (Reason + Act) pattern: the language model produces a *thought*, selects an *action*, observes the *result*, and repeats until it can give a final answer.
+
+---
 
 ## Key Concepts
 
@@ -28,6 +35,8 @@ The probability that the agent picks the correct tool on the first try depends o
 $$P(\text{tool}_j) = \frac{e^{z_j}}{\sum_{i=1}^{k} e^{z_i}}$$
 
 Better descriptions sharpen the logit for the right tool and push this probability toward 1.
+
+---
 
 ## Code Examples
 
@@ -172,6 +181,8 @@ if __name__ == "__main__":
     #   Answer -> "Approximately 9,714,286"
 ```
 
+---
+
 ## Diagrams
 
 **ReAct loop with tool dispatch**
@@ -191,6 +202,8 @@ flowchart TD
 
 The loop repeats until the model emits an `"answer"` key or hits `MAX_ITERATIONS`.
 
+---
+
 ## Exercises
 
 1. **Add a new tool** -- Implement a `weather(city: str)` tool using a free weather API and register it in `TOOLS`. Verify the agent uses it when asked about weather.
@@ -198,6 +211,8 @@ The loop repeats until the model emits an `"answer"` key or hits `MAX_ITERATIONS
 3. **Cost tracking** -- After each LLM call, log `response.usage.prompt_tokens` and `response.usage.completion_tokens`. Compute total cost assuming a price of $c$ per 1 M input tokens: $\text{cost} = \frac{n_{\text{input}} \cdot c}{10^6}$.
 4. **Retry with back-off** -- Wrap the API call in an exponential back-off loop so transient failures do not crash the agent.
 5. **Evaluation harness** -- Create 10 question-answer pairs and measure the agent's accuracy. Report precision as $P = \frac{\text{correct}}{\text{total}}$.
+
+---
 
 ## Further Reading
 
