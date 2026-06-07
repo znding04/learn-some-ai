@@ -1,6 +1,8 @@
 ---
 title: "Error Handling & Robustness"
 level: intermediate
+difficulty: intermediate
+summary: "Building resilient AI agents with graceful degradation, retry budgets, circuit breakers, timeout handling, and sandboxed code execution."
 topic: ai-agents
 order: 10
 estimatedTime: "45 minutes"
@@ -79,6 +81,8 @@ $$P(\text{breach}) = \prod_{i=1}^{n} P(\text{bypass layer } i) = p_1 \cdot p_2 \
 
 If each of 4 layers has a 10% bypass rate, the combined breach probability is $0.1^4 = 0.01\%$.
 
+---
+
 ## Key Concepts
 
 - **Graceful degradation**: Providing reduced but useful functionality when components fail
@@ -88,6 +92,8 @@ If each of 4 layers has a 10% bypass rate, the combined breach probability is $0
 - **Sandbox**: An isolated execution environment with restricted permissions for running untrusted code
 - **Defense in depth**: Layering multiple security measures so that no single failure is catastrophic
 - **Circuit breaker**: A pattern that stops calling a failing service after repeated failures, allowing it time to recover
+
+---
 
 ## Code Examples
 
@@ -314,6 +320,8 @@ else:
 - `robust_tool_call` orchestrates the full flow: circuit breaker check, retry loop with exponential backoff, severity-based routing, timeout enforcement, and fallback execution.
 - The weather example shows practical integration: `fetch_weather` is the primary tool, `cached_weather` is the fallback, and the circuit breaker prevents hammering a failing API.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 Availability of a tool with $N$ independent fallback layers:
@@ -329,6 +337,8 @@ The expected token cost with retry budget $N$ and per-attempt cost $c$:
 $$\mathbb{E}[\text{cost}] = c \cdot \frac{1 - (1-p)^N}{p}$$
 
 For $p = 0.8$ (80% success rate) and $N = 3$: $\mathbb{E}[\text{cost}] = c \cdot \frac{1 - 0.008}{0.8} = 1.24c$.
+
+---
 
 ## Diagrams
 
@@ -377,6 +387,8 @@ stateDiagram-v2
     HALF_OPEN --> OPEN: failure
 ```
 
+---
+
 ## Exercises
 
 1. **Implement the circuit breaker**: Test the `CircuitBreaker` class by simulating a service that fails 60% of the time. Verify that the breaker opens after the threshold and recovers after the timeout.
@@ -388,6 +400,8 @@ stateDiagram-v2
 4. **Error classification**: Extend `classify_error` to handle 10 additional error types. Test it with mock exceptions for each type and verify correct severity assignment.
 
 5. **Monitoring dashboard**: Add logging to `robust_tool_call` that records: tool name, attempt count, latency, success/failure, and error severity. Write a function that summarizes these logs into a report showing tool reliability statistics.
+
+---
 
 ## Further Reading
 
