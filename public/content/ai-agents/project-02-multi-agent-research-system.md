@@ -2,8 +2,13 @@
 title: "Project: Multi-Agent Research System"
 level: advanced
 topic: ai-agents
-order: 15
+order: 17
 estimatedTime: "90 minutes"
+difficulty: advanced
+prerequisites:
+  - ai-agents-06
+  - ai-agents-14
+summary: "Build a multi-agent research system with a Planner, Searcher, and Synthesiser that collaborate via a shared message bus to decompose questions, gather evidence, and produce cited reports."
 ---
 
 # Project: Multi-Agent Research System
@@ -13,6 +18,8 @@ estimatedTime: "90 minutes"
 This project builds a **multi-agent research system** consisting of three specialised agents -- a Planner, a Searcher, and a Synthesiser -- that collaborate to answer complex research questions. Instead of one monolithic prompt, each agent owns a narrow responsibility and communicates through a shared message bus. The result is a system that can decompose a broad question into sub-queries, gather evidence from the web, and produce a cited summary report.
 
 Multi-agent architectures shine when tasks are too complex for a single context window. By splitting work across agents you gain modularity (swap one agent without rewriting others), parallelism (multiple searchers can run concurrently), and improved reliability (each agent's prompt is simpler so it hallucinates less).
+
+---
 
 ## Key Concepts
 
@@ -26,6 +33,8 @@ Multi-agent architectures shine when tasks are too complex for a single context 
 When the Planner decomposes a question into $n$ independent sub-queries, the total latency drops from $n \cdot t$ (serial) to roughly $t$ (parallel) plus coordination overhead. The expected wall-clock time with $p$ parallel workers is:
 
 $$T_{\text{parallel}} = \frac{n}{p} \cdot t + t_{\text{overhead}}$$
+
+---
 
 ## Code Examples
 
@@ -219,6 +228,8 @@ async def run_research(question: str) -> str:
 # asyncio.run(run_research("What are the economic effects of AI adoption in healthcare?"))
 ```
 
+---
+
 ## Diagrams
 
 **Multi-agent research system with fan-out / fan-in**
@@ -236,6 +247,8 @@ flowchart TD
     O --> F([Final Report])
 ```
 
+---
+
 ## Exercises
 
 1. **Parallel searchers** -- Spawn $p$ searcher workers that pull from the same queue. Measure wall-clock time as $p$ varies from 1 to 5.
@@ -243,6 +256,8 @@ flowchart TD
 3. **Persistent bus** -- Replace the in-memory `MessageBus` with Redis Streams so agents can run in separate processes.
 4. **Token budget** -- The total cost is $C = \sum_{i=1}^{k} (n_{\text{in},i} \cdot c_{\text{in}} + n_{\text{out},i} \cdot c_{\text{out}})$ across $k$ LLM calls. Add a budget tracker that halts the system when $C$ exceeds a threshold.
 5. **Human-in-the-loop** -- Add an approval step after the Planner: print the sub-queries and wait for the user to confirm before dispatching to searchers.
+
+---
 
 ## Further Reading
 
