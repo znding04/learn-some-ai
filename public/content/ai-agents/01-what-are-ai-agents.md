@@ -4,6 +4,8 @@ level: beginner
 topic: ai-agents
 order: 1
 estimatedTime: "30 minutes"
+difficulty: beginner
+summary: "An introduction to AI agents — their history, core perception-reasoning-action loop, and how modern LLMs enable autonomous tool-using systems."
 ---
 
 # What are AI Agents?
@@ -24,6 +26,8 @@ AI agents can be classified along several axes. A single-agent system has one LL
 
 The power of agents comes from composability. By combining a reasoning engine (the LLM) with a set of tools (APIs, databases, code interpreters) and a memory system (conversation history, vector stores), you can build systems that tackle complex, multi-step tasks that no single prompt-response interaction could handle.
 
+---
+
 ## Key Concepts
 
 - **Perception-Reasoning-Action Loop**: The agent observes the current state of the world (or the result of its last action), reasons about what to do next, and executes an action. This loop repeats until a termination condition is met.
@@ -33,6 +37,8 @@ The power of agents comes from composability. By combining a reasoning engine (t
 - **Goal / Objective**: The task the agent is trying to accomplish. Well-defined goals lead to better agent performance.
 - **Single-Agent vs Multi-Agent**: A single agent handles everything alone. Multi-agent systems split work across specialized agents that coordinate.
 - **Hierarchical Agents**: A manager agent breaks a task into subtasks and delegates them to worker agents, aggregating results.
+
+---
 
 ## Code Examples
 
@@ -88,6 +94,8 @@ Line-by-line explanation:
 - **Lines 27-30**: Otherwise, the selected tool is called and its output becomes the next observation.
 - **Line 33**: A safety net in case the agent never converges.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The agent loop can be expressed as a state transition system. At each time step $t$, the agent is in state $s_t$. It selects an action $a_t$ according to its policy $\pi$:
@@ -99,6 +107,8 @@ where $h_t = (s_0, a_0, o_0, s_1, a_1, o_1, \ldots, s_t)$ is the full history of
 $$s_{t+1} = T(s_t, a_t, o_t)$$
 
 The agent continues until it reaches a terminal state $s_T$ where $T$ is the first time step satisfying a goal predicate $G(s_T) = \text{true}$.
+
+---
 
 ## Diagrams
 
@@ -129,6 +139,8 @@ flowchart TD
     H --> H2[Recursive Delegation]
 ```
 
+---
+
 ## Exercises
 
 1. **Trace the loop**: Given the goal "What is the population of France?", a `web_search` tool, and a `finish` action, write out the full scratchpad (Thought, Action, Observation sequence) that a ReAct agent might produce. Include at least two iterations.
@@ -138,6 +150,8 @@ flowchart TD
 3. **Implement a trivial agent**: Write a Python agent that has access to two tools, `calculator(expression)` and `finish(answer)`. The agent should solve the problem "What is (17 * 23) + (45 / 9)?" by calling the calculator and then finishing with the result. You may simulate the LLM with hard-coded responses.
 
 4. **History and comparison**: Research SHRDLU and compare its architecture to a modern LLM-based agent. What are the key differences in how they handle language understanding, planning, and world interaction?
+
+---
 
 ## Further Reading
 
