@@ -2,8 +2,13 @@
 title: "Project: Production Customer Service Agent"
 level: advanced
 topic: ai-agents
-order: 17
+order: 19
 estimatedTime: "90 minutes"
+difficulty: advanced
+prerequisites:
+  - ai-agents-10
+  - ai-agents-11
+summary: "Build a production-grade customer service agent with session management, intent classification, confidence-gated escalation, sub-agent hand-offs, and a FastAPI deployment."
 ---
 
 # Project: Production Customer Service Agent
@@ -13,6 +18,8 @@ estimatedTime: "90 minutes"
 This project walks through building a **production-grade customer service agent** that handles user inquiries, performs actions on their account, and escalates to human operators when confidence is low. The system covers session management (multi-turn memory), hand-off logic (transferring between specialised sub-agents), escalation rules, and deployment behind a FastAPI server. By the end you will have a deployable service that handles realistic support conversations.
 
 Production agents differ from prototypes in several ways: they must be stateful across turns, respect rate limits, log every interaction for auditing, handle errors gracefully, and know when to stop and call a human.
+
+---
 
 ## Key Concepts
 
@@ -29,6 +36,8 @@ The escalation decision uses a confidence threshold $\theta$. Given the model's 
 $$\text{escalate} = \begin{cases} \text{true} & \text{if } \max_i P(\text{intent}_i) < \theta \\ \text{false} & \text{otherwise} \end{cases}$$
 
 A typical production value is $\theta = 0.70$.
+
+---
 
 ## Code Examples
 
@@ -232,6 +241,8 @@ curl -X POST http://localhost:8000/chat \
   -d '{"user_id": "u123", "message": "I was charged twice for my subscription"}'
 ```
 
+---
+
 ## Diagrams
 
 **Request flow with confidence-gated escalation**
@@ -261,6 +272,8 @@ flowchart LR
     Resolve -.-> N4[close or<br/>hand to human]
 ```
 
+---
+
 ## Exercises
 
 1. **Redis sessions** -- Replace `SessionStore` with a Redis-backed store using `redis-py`. Set a TTL of 1 hour on each key.
@@ -268,6 +281,8 @@ flowchart LR
 3. **Audit logging** -- Write every request and response to a structured JSON log file. Include timestamps, session ID, intent, and token counts.
 4. **Hand-off between sub-agents** -- Allow the billing agent to transfer the session to technical support mid-conversation if the user's issue changes.
 5. **Sentiment monitoring** -- After each user message, compute a sentiment score $s \in [-1, 1]$. If $s < -0.6$ for two consecutive turns, auto-escalate.
+
+---
 
 ## Further Reading
 
