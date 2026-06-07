@@ -4,6 +4,8 @@ level: intermediate
 topic: ai-agents
 order: 2
 estimatedTime: "45 minutes"
+difficulty: intermediate
+summary: "A deep dive into the three major agent architecture paradigms — ReAct, Plan-and-Execute, and Tree of Thoughts — with implementation details and trade-offs."
 ---
 
 # Agent Architectures
@@ -24,6 +26,8 @@ An important consideration across all architectures is the action space. The set
 
 Another cross-cutting concern is context management. As the agent takes more steps, the accumulated history (thoughts, actions, observations) grows and may exceed the LLM's context window. Strategies include summarizing older history, using a sliding window, or offloading details to an external memory store and retrieving them as needed.
 
+---
+
 ## Key Concepts
 
 - **ReAct**: Interleaves Thought, Action, and Observation in a single stream. Adaptive but potentially myopic on long tasks.
@@ -32,6 +36,8 @@ Another cross-cutting concern is context management. As the agent takes more ste
 - **Action Space**: The set of all tools the agent can invoke. Determines capability and controllability.
 - **Context Management**: Strategies for keeping the agent's working memory within the LLM's context window as the interaction grows.
 - **Hybrid Architectures**: Combining Plan-and-Execute at the macro level with ReAct at the micro level for both coherence and adaptability.
+
+---
 
 ## Code Examples
 
@@ -120,6 +126,8 @@ Key implementation details:
 - **Lines 34-37**: Each LLM response is appended to the message history, giving the model full context of its prior reasoning.
 - **Lines 44-49**: Tool execution happens outside the LLM. The observation is fed back as a user message, maintaining the conversational structure.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 **ReAct as a policy**: At each step $t$, the agent produces a thought $\tau_t$ and action $a_t$:
@@ -141,6 +149,8 @@ $$[g_1, g_2, \ldots, g_n] = \text{Plan}(G)$$
 Each subgoal $g_i$ is executed by a ReAct sub-agent: $r_i = \text{ReAct}(g_i, \text{tools})$. If execution of $g_i$ fails, re-planning is triggered:
 
 $$[g_i', g_{i+1}', \ldots, g_m'] = \text{Replan}(G, r_1, \ldots, r_{i-1}, \text{failure}(g_i))$$
+
+---
 
 ## Diagrams
 
@@ -189,6 +199,8 @@ flowchart TD
     B -. select best .-> Best
 ```
 
+---
+
 ## Exercises
 
 1. **ReAct trace**: Given the goal "Find the GDP of Japan and convert it to euros", tools `web_search(query)` and `calculator(expr)`, write the full ReAct trace (Thought/Action/Observation for each step). Assume the search returns "Japan GDP: $4.2 trillion" and the exchange rate is 1 USD = 0.92 EUR.
@@ -198,6 +210,8 @@ flowchart TD
 3. **ToT branching**: Suppose you are solving the problem "Write a persuasive essay about renewable energy." Generate 3 candidate opening paragraphs (the first level of the tree). Write a scoring rubric (0-10) and score each candidate. Select the top 2 to expand further.
 
 4. **Architecture comparison**: Build both a ReAct agent and a Plan-and-Execute agent for the same task (e.g., "research and summarize the top 3 Python web frameworks"). Compare the number of LLM calls, total tokens used, and quality of the final output.
+
+---
 
 ## Further Reading
 
