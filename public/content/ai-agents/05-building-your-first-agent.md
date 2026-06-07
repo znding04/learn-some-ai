@@ -1,6 +1,8 @@
 ---
 title: "Building Your First Simple Agent"
 level: beginner
+difficulty: beginner
+summary: "Build a complete tool-using AI agent from scratch in under 100 lines of Python, with error handling and retry logic."
 topic: ai-agents
 order: 5
 estimatedTime: "30 minutes"
@@ -24,6 +26,8 @@ One important design decision is how to handle the conversation history. Each LL
 
 Another consideration is temperature. For agent loops, a temperature of 0 (or very low) is strongly recommended. Non-deterministic outputs can cause the agent to take inconsistent paths, making debugging nearly impossible. Save creative temperature settings for the final output generation, not for the tool-selection loop.
 
+---
+
 ## Key Concepts
 
 - **Stateless Agent**: Processes a single goal per invocation with no memory between runs. Simple, predictable, and easy to test.
@@ -32,6 +36,8 @@ Another consideration is temperature. For agent loops, a temperature of 0 (or ve
 - **Retry with Backoff**: For transient API errors (rate limits, timeouts), wait and retry with exponentially increasing delays.
 - **Max Steps Guard**: A hard limit on loop iterations to prevent runaway agents from consuming unbounded resources.
 - **Temperature Control**: Using `temperature=0` during the agent loop for deterministic tool selection.
+
+---
 
 ## Code Examples
 
@@ -202,6 +208,8 @@ Line-by-line walkthrough of the agent loop:
 - **Lines 117-120**: JSON parsing of tool arguments can fail if the model outputs malformed JSON. We catch this and return a descriptive error.
 - **Lines 122-127**: Tool execution is wrapped in try/except. Any exception becomes an error observation that the LLM can reason about.
 
+---
+
 ## Math/Formulas (KaTeX)
 
 The agent's execution can be modeled as a finite sequence of states. Let $N$ be the maximum number of steps. The agent produces a trajectory:
@@ -223,6 +231,8 @@ The retry strategy uses exponential backoff. The wait time before attempt $k$ is
 $$w_k = 2^k \text{ seconds}, \quad k = 0, 1, \ldots, K-1$$
 
 The total maximum wait before giving up is $\sum_{k=0}^{K-1} 2^k = 2^K - 1$ seconds.
+
+---
 
 ## Diagrams
 
@@ -257,6 +267,8 @@ flowchart TD
     Q4 -- YES --> AP[Append result<br/>to messages]
 ```
 
+---
+
 ## Exercises
 
 1. **Run the agent**: Copy the complete code example, set your `OPENAI_API_KEY` environment variable, and run it. Observe the step-by-step output. Try asking "What is the surface area of the Earth?" (the agent should combine the `lookup` tool for the radius and the `calculator` tool for $4\pi r^2$).
@@ -270,6 +282,8 @@ flowchart TD
 5. **Token cost analysis**: Run the agent on 5 different queries and record the number of steps and total tokens used (available in `response.usage`). Plot steps vs. total tokens. Does the relationship look linear or quadratic? How does this match the formula in the Math section?
 
 6. **Streaming output**: Modify the agent to use the streaming API (`stream=True`) so that the final answer is printed token-by-token as it is generated. Keep tool calls non-streamed for simplicity.
+
+---
 
 ## Further Reading
 
