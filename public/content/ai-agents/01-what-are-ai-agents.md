@@ -1,6 +1,5 @@
 ---
 title: "What are AI Agents?"
-level: beginner
 topic: ai-agents
 order: 1
 estimatedTime: "30 minutes"
@@ -12,19 +11,43 @@ summary: "An introduction to AI agents — their history, core perception-reason
 
 ## Overview
 
-An AI agent is a software system that perceives its environment, reasons about what it observes, and takes actions to achieve a goal. Unlike a simple chatbot that produces a single response to a single prompt, an agent operates in a loop: it observes, thinks, acts, and then observes the result of its action before deciding what to do next. This perception-reasoning-action cycle is the defining characteristic that separates agents from static question-answering systems.
+An AI agent is a software system that perceives its environment, reasons about what it observes, and takes actions to
+achieve a goal. Unlike a simple chatbot that produces a single response to a single prompt, an agent operates in a loop:
+it observes, thinks, acts, and then observes the result of its action before deciding what to do next. This
+perception-reasoning-action cycle is the defining characteristic that separates agents from static question-answering
+systems.
 
-The idea is not new. In the 1970s, Terry Winograd built SHRDLU, a program that could understand natural-language commands and manipulate blocks in a simulated world. SHRDLU could parse sentences like "pick up the red block" and execute the corresponding action in its environment. It was, in a meaningful sense, one of the earliest AI agents. However, SHRDLU worked only in a tiny, closed world. The language understanding was brittle, and the environment was trivial.
+The idea is not new. In the 1970s, Terry Winograd built SHRDLU, a program that could understand natural-language
+commands and manipulate blocks in a simulated world. SHRDLU could parse sentences like "pick up the red block" and
+execute the corresponding action in its environment. It was, in a meaningful sense, one of the earliest AI agents.
+However, SHRDLU worked only in a tiny, closed world. The language understanding was brittle, and the environment was
+trivial.
 
-Through the 1980s and 1990s, researchers explored rule-based expert systems, planning agents (like STRIPS), and reinforcement-learning agents that learned policies by interacting with environments. The Belief-Desire-Intention (BDI) architecture formalized how an agent could maintain beliefs about the world, desires about outcomes, and intentions that guide action selection. Robotics gave us embodied agents that navigated physical spaces.
+Through the 1980s and 1990s, researchers explored rule-based expert systems, planning agents (like STRIPS), and
+reinforcement-learning agents that learned policies by interacting with environments. The Belief-Desire-Intention (BDI)
+architecture formalized how an agent could maintain beliefs about the world, desires about outcomes, and intentions that
+guide action selection. Robotics gave us embodied agents that navigated physical spaces.
 
-The modern era of AI agents began when large language models (LLMs) became capable enough to serve as the reasoning core. Instead of hand-coded rules, an LLM can interpret open-ended instructions, break problems into steps, decide which tools to invoke, and adapt its plan based on feedback. Systems like AutoGPT (2023) demonstrated that an LLM could be placed inside a loop with access to tools such as web search, code execution, and file I/O, effectively turning a language model into an autonomous agent.
+The modern era of AI agents began when large language models (LLMs) became capable enough to serve as the reasoning
+core. Instead of hand-coded rules, an LLM can interpret open-ended instructions, break problems into steps, decide which
+tools to invoke, and adapt its plan based on feedback. Systems like AutoGPT (2023) demonstrated that an LLM could be
+placed inside a loop with access to tools such as web search, code execution, and file I/O, effectively turning a
+language model into an autonomous agent.
 
-It is important to distinguish between a chat interface and an agent. A chat interface is reactive: the user sends a message, the model replies, and the interaction is over until the user speaks again. An agent is proactive: given a goal, it autonomously decides what steps to take, executes them, evaluates results, and continues until the goal is met or it determines it cannot proceed. The user may not need to intervene at all after providing the initial objective.
+It is important to distinguish between a chat interface and an agent. A chat interface is reactive: the user sends a
+message, the model replies, and the interaction is over until the user speaks again. An agent is proactive: given a
+goal, it autonomously decides what steps to take, executes them, evaluates results, and continues until the goal is met
+or it determines it cannot proceed. The user may not need to intervene at all after providing the initial objective.
 
-AI agents can be classified along several axes. A single-agent system has one LLM instance running one loop. A multi-agent system involves multiple agents that communicate with each other, each potentially specialized for a different subtask (for example, one agent writes code while another reviews it). A hierarchical system adds layers: a manager agent delegates tasks to worker agents and synthesizes their outputs. Frameworks like CrewAI and CAMEL formalize these multi-agent patterns.
+AI agents can be classified along several axes. A single-agent system has one LLM instance running one loop. A
+multi-agent system involves multiple agents that communicate with each other, each potentially specialized for a
+different subtask (for example, one agent writes code while another reviews it). A hierarchical system adds layers: a
+manager agent delegates tasks to worker agents and synthesizes their outputs. Frameworks like CrewAI and CAMEL formalize
+these multi-agent patterns.
 
-The power of agents comes from composability. By combining a reasoning engine (the LLM) with a set of tools (APIs, databases, code interpreters) and a memory system (conversation history, vector stores), you can build systems that tackle complex, multi-step tasks that no single prompt-response interaction could handle.
+The power of agents comes from composability. By combining a reasoning engine (the LLM) with a set of tools (APIs,
+databases, code interpreters) and a memory system (conversation history, vector stores), you can build systems that
+tackle complex, multi-step tasks that no single prompt-response interaction could handle.
 
 ---
 
@@ -42,7 +65,8 @@ The power of agents comes from composability. By combining a reasoning engine (t
 
 ## Code Examples
 
-Below is minimal pseudocode for a ReAct-style agent loop. ReAct interleaves reasoning ("Thought") with tool use ("Action") and observation of results ("Observation").
+Below is minimal pseudocode for a ReAct-style agent loop. ReAct interleaves reasoning ("Thought") with tool use
+("Action") and observation of results ("Observation").
 
 ```python
 # Minimal ReAct Agent Pseudocode
@@ -98,15 +122,18 @@ Line-by-line explanation:
 
 ## Math/Formulas (KaTeX)
 
-The agent loop can be expressed as a state transition system. At each time step $t$, the agent is in state $s_t$. It selects an action $a_t$ according to its policy $\pi$:
+The agent loop can be expressed as a state transition system. At each time step $t$, the agent is in state $s_t$. It
+selects an action $a_t$ according to its policy $\pi$:
 
 $$a_t = \pi(s_t, h_t)$$
 
-where $h_t = (s_0, a_0, o_0, s_1, a_1, o_1, \ldots, s_t)$ is the full history of states, actions, and observations. After executing $a_t$, the environment returns an observation $o_t$ and the agent transitions to a new state:
+where $h_t = (s_0, a_0, o_0, s_1, a_1, o_1, \ldots, s_t)$ is the full history of states, actions, and observations.
+After executing $a_t$, the environment returns an observation $o_t$ and the agent transitions to a new state:
 
 $$s_{t+1} = T(s_t, a_t, o_t)$$
 
-The agent continues until it reaches a terminal state $s_T$ where $T$ is the first time step satisfying a goal predicate $G(s_T) = \text{true}$.
+The agent continues until it reaches a terminal state $s_T$ where $T$ is the first time step satisfying a goal predicate
+$G(s_T) = \text{true}$.
 
 ---
 
