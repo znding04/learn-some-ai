@@ -1,69 +1,104 @@
 ---
 title: "Memory Systems"
-level: intermediate
-difficulty: intermediate
-summary: "How AI agents retain, organize, and retrieve information across interactions using short-term and long-term memory systems."
 topic: ai-agents
 order: 7
 estimatedTime: "45 minutes"
+difficulty: intermediate
+summary: "How AI agents retain, organize, and retrieve information across interactions using short-term and long-term memory systems."
 ---
 
 # Memory Systems
 
 ## Overview
 
-A stateless LLM forgets everything the moment a conversation ends. For an AI agent to be truly useful, it needs **memory** -- the ability to retain, organize, and retrieve information across interactions. Memory systems transform a forgetful chatbot into a persistent assistant that learns from experience.
+A stateless LLM forgets everything the moment a conversation ends. For an AI agent to be truly useful, it needs
+**memory** -- the ability to retain, organize, and retrieve information across interactions. Memory systems transform a
+forgetful chatbot into a persistent assistant that learns from experience.
 
 ### Short-Term Memory: Conversation History
 
-The simplest form of memory is the conversation history itself. Every message exchanged between the user and the agent is stored in a list and included in each subsequent API call. This is **short-term memory** (STM) -- it persists within a session but vanishes when the session ends.
+The simplest form of memory is the conversation history itself. Every message exchanged between the user and the agent
+is stored in a list and included in each subsequent API call. This is **short-term memory** (STM) -- it persists within
+a session but vanishes when the session ends.
 
-The challenge is that LLMs have finite context windows. A model with a context length of $L$ tokens can hold at most $L$ tokens of combined system prompt, memory, and current input. As conversations grow, you must decide what to keep and what to discard.
+The challenge is that LLMs have finite context windows. A model with a context length of $L$ tokens can hold at most $L$
+tokens of combined system prompt, memory, and current input. As conversations grow, you must decide what to keep and
+what to discard.
 
-**Turn windows** are the most common STM strategy: keep only the last $k$ turns of conversation. If each turn averages $t$ tokens, the memory cost is approximately $k \cdot t$ tokens. The tradeoff is clear -- larger $k$ means more context but higher latency and cost.
+**Turn windows** are the most common STM strategy: keep only the last $k$
+turns of conversation. If each turn averages $t$ tokens, the memory cost is
+approximately $k \cdot t$ tokens. The tradeoff is clear -- larger $k$ means
+more context but higher latency and cost.
 
-A more sophisticated approach is **summarization**: periodically compress older turns into a summary, retaining key facts while freeing token budget. The compressed representation might reduce $n$ turns into a summary of $s$ tokens where $s \ll n \cdot t$.
+A more sophisticated approach is **summarization**: periodically compress older turns into a summary, retaining key
+facts while freeing token budget. The compressed representation might reduce $n$ turns into a summary of $s$ tokens
+where $s \ll n \cdot t$.
 
 ### Long-Term Memory: Vector Databases
 
-Long-term memory (LTM) persists across sessions. The dominant approach uses **vector databases** that store text as high-dimensional embeddings and retrieve relevant passages via similarity search.
+Long-term memory (LTM) persists across sessions. The dominant approach uses **vector databases** that store text as
+high-dimensional embeddings and retrieve relevant passages via similarity search.
 
 The pipeline works as follows:
 
-1. **Encode**: Convert text into a vector using an embedding model. A text chunk $d$ becomes a vector $\mathbf{v}_d \in \mathbb{R}^n$ where $n$ is the embedding dimension (typically 768 to 3072).
-2. **Store**: Insert the vector and its associated metadata into a vector database.
-3. **Query**: When the agent needs to recall information, encode the query $q$ as $\mathbf{v}_q$ and find the $k$ nearest neighbors in the database.
-4. **Retrieve**: Return the original text associated with the top-$k$ closest vectors.
+1. **Encode**: Convert text into a vector using an embedding model. A text
+   chunk $d$ becomes a vector $\mathbf{v}_d \in \mathbb{R}^n$ where $n$ is
+   the embedding dimension (typically 768 to 3072).
+2. **Store**: Insert the vector and its associated metadata into a vector
+   database.
+3. **Query**: When the agent needs to recall information, encode the query
+   $q$ as $\mathbf{v}_q$ and find the $k$ nearest neighbors in the
+   database.
+4. **Retrieve**: Return the original text associated with the top-$k$
+   closest vectors.
 
 Popular vector databases include:
 
-- **FAISS** (Facebook AI Similarity Search): Open-source, runs locally, excellent for prototyping. Supports exact and approximate nearest neighbor search.
-- **Pinecone**: Managed cloud service with automatic scaling. Good for production deployments.
-- **Milvus**: Open-source, distributed, handles billions of vectors. Strong choice for large-scale applications.
+- **FAISS** (Facebook AI Similarity Search): Open-source, runs locally,
+  excellent for prototyping. Supports exact and approximate nearest neighbor
+  search.
+- **Pinecone**: Managed cloud service with automatic scaling. Good for
+  production deployments.
+- **Milvus**: Open-source, distributed, handles billions of vectors. Strong
+  choice for large-scale applications.
 
 The similarity between two vectors is typically measured using **cosine similarity**:
 
 $$\text{sim}(\mathbf{v}_q, \mathbf{v}_d) = \frac{\mathbf{v}_q \cdot \mathbf{v}_d}{\|\mathbf{v}_q\| \cdot \|\mathbf{v}_d\|}$$
 
-This value ranges from $-1$ (opposite) to $1$ (identical direction). In practice, embedding models produce mostly positive similarities, so the effective range is roughly $[0, 1]$.
+This value ranges from $-1$ (opposite) to $1$ (identical direction). In practice, embedding models produce mostly
+positive similarities, so the effective range is roughly $[0, 1]$.
 
 ### Semantic vs. Episodic Memory
 
 Borrowing terminology from cognitive science, agent memory can be categorized into two types:
 
-- **Semantic memory** stores general facts and knowledge: "Python is a programming language," "The user prefers dark mode." These are context-free truths that do not depend on when they were learned.
-- **Episodic memory** stores specific events and experiences: "On Tuesday, the user asked me to refactor the auth module," "The API returned a 503 error during the last deployment." These are time-stamped, context-rich records.
+- **Semantic memory** stores general facts and knowledge: "Python is a
+  programming language," "The user prefers dark mode." These are
+  context-free truths that do not depend on when they were learned.
+- **Episodic memory** stores specific events and experiences: "On Tuesday,
+  the user asked me to refactor the auth module," "The API returned a 503
+  error during the last deployment." These are time-stamped, context-rich
+  records.
 
-An effective agent memory system maintains both. Semantic memory provides stable background knowledge, while episodic memory enables the agent to reference specific past interactions and learn from mistakes.
+An effective agent memory system maintains both. Semantic memory provides stable background knowledge, while episodic
+memory enables the agent to reference specific past interactions and learn from mistakes.
 
 ### Memory Retrieval Strategies
 
 Naive nearest-neighbor retrieval often returns irrelevant results. Better strategies include:
 
-- **Hybrid search**: Combine vector similarity with keyword (BM25) search. This catches cases where the query and document share exact terms but have different embeddings.
-- **Recency weighting**: Multiply similarity scores by a time-decay factor $e^{-\lambda \Delta t}$ where $\Delta t$ is the time since the memory was stored and $\lambda$ controls decay speed.
-- **Importance scoring**: Assign an importance weight $w_i$ to each memory at storage time. The retrieval score becomes $\text{score} = \alpha \cdot \text{sim} + \beta \cdot w_i + \gamma \cdot \text{recency}$.
-- **Maximum marginal relevance (MMR)**: Penalize retrieved items that are too similar to each other, ensuring diversity in recalled memories.
+- **Hybrid search**: Combine vector similarity with keyword (BM25) search.
+  This catches cases where the query and document share exact terms but
+  have different embeddings.
+- **Recency weighting**: Multiply similarity scores by a time-decay factor
+  $e^{-\lambda \Delta t}$ where $\Delta t$ is the time since the memory
+  was stored and $\lambda$ controls decay speed.
+- **Importance scoring**: Assign an importance weight $w_i$ to each memory
+  at storage time. The retrieval score becomes
+  $\text{score} = \alpha \cdot \text{sim} + \beta \cdot w_i + \gamma \cdot \text{recency}$.
+- **Maximum marginal relevance (MMR)**: Penalize retrieved items that are
+  too similar to each other, ensuring diversity in recalled memories.
 
 ---
 
@@ -198,10 +233,17 @@ print(agent.chat("What do I like to code in?"))  # Should recall Rust
 
 **Explanation:**
 
-- `VectorMemoryStore` wraps embedding generation, storage, and retrieval. Each memory is a dataclass with text, embedding vector, timestamp, and importance score.
-- `retrieve` computes a weighted combination of cosine similarity, importance, and recency for each stored memory, then returns the top-$k$ results.
-- `MemoryAgent` integrates the store into a conversational agent. Before each response, it retrieves relevant memories and injects them into the system prompt.
-- The conversation is trimmed to the last 10 turns (`[-10:]`) to manage short-term memory within the context window.
+- `VectorMemoryStore` wraps embedding generation, storage, and retrieval.
+  Each memory is a dataclass with text, embedding vector, timestamp, and
+  importance score.
+- `retrieve` computes a weighted combination of cosine similarity,
+  importance, and recency for each stored memory, then returns the top-$k$
+  results.
+- `MemoryAgent` integrates the store into a conversational agent. Before
+  each response, it retrieves relevant memories and injects them into the
+  system prompt.
+- The conversation is trimmed to the last 10 turns (`[-10:]`) to manage
+  short-term memory within the context window.
 
 ---
 
@@ -221,7 +263,8 @@ The context window budget can be expressed as:
 
 $$L_{\text{available}} = L_{\text{max}} - L_{\text{system}} - L_{\text{current}} - L_{\text{reserved}}$$
 
-where $L_{\text{system}}$ is the system prompt length, $L_{\text{current}}$ is the current user message, and $L_{\text{reserved}}$ is space kept for the model's response.
+where $L_{\text{system}}$ is the system prompt length, $L_{\text{current}}$ is the current user message, and
+$L_{\text{reserved}}$ is space kept for the model's response.
 
 ---
 
@@ -256,15 +299,26 @@ flowchart TD
 
 ## Exercises
 
-1. **Implement summarization**: Write a function that takes the last 20 conversation turns and produces a 3-sentence summary using an LLM. Replace the oldest 15 turns with this summary in the agent's history.
+1. **Implement summarization**: Write a function that takes the last 20
+   conversation turns and produces a 3-sentence summary using an LLM.
+   Replace the oldest 15 turns with this summary in the agent's history.
 
-2. **FAISS integration**: Replace the NumPy-based vector store with FAISS. Use `faiss.IndexFlatIP` for inner product search. Benchmark retrieval speed with 1,000 vs. 10,000 stored memories.
+2. **FAISS integration**: Replace the NumPy-based vector store with FAISS.
+   Use `faiss.IndexFlatIP` for inner product search. Benchmark retrieval
+   speed with 1,000 vs. 10,000 stored memories.
 
-3. **Hybrid search**: Add BM25 keyword search alongside vector search. Implement a function that merges results from both, giving 60% weight to vector similarity and 40% to BM25 score.
+3. **Hybrid search**: Add BM25 keyword search alongside vector search.
+   Implement a function that merges results from both, giving 60% weight
+   to vector similarity and 40% to BM25 score.
 
-4. **Memory importance**: Design a heuristic or LLM-based system that automatically assigns importance scores when storing memories. Test whether high-importance memories are retrieved more often when relevant.
+4. **Memory importance**: Design a heuristic or LLM-based system that
+   automatically assigns importance scores when storing memories. Test
+   whether high-importance memories are retrieved more often when relevant.
 
-5. **Episodic vs. semantic separation**: Modify the `VectorMemoryStore` to maintain two separate collections -- one for facts and one for events. Implement logic that routes memories to the correct collection based on content analysis.
+5. **Episodic vs. semantic separation**: Modify the `VectorMemoryStore` to
+   maintain two separate collections -- one for facts and one for events.
+   Implement logic that routes memories to the correct collection based on
+   content analysis.
 
 ---
 
