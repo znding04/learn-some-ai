@@ -1,6 +1,5 @@
 ---
 title: "Tool Use & Function Calling"
-level: intermediate
 topic: ai-agents
 order: 3
 estimatedTime: "45 minutes"
@@ -12,19 +11,45 @@ summary: "How LLMs use structured function calling to invoke tools, with best pr
 
 ## Overview
 
-Tool use is what transforms a language model from a text generator into an agent. Without tools, an LLM can only produce tokens. With tools, it can search the web, execute code, query databases, send emails, and interact with arbitrary APIs. Function calling is the mechanism by which modern LLMs express their intent to use a tool in a structured, parseable format rather than as free-form text.
+Tool use is what transforms a language model from a text generator into an agent. Without tools, an LLM can only produce
+tokens. With tools, it can search the web, execute code, query databases, send emails, and interact with arbitrary APIs.
+Function calling is the mechanism by which modern LLMs express their intent to use a tool in a structured, parseable
+format rather than as free-form text.
 
-The core idea is straightforward. You define a set of tools, each described by a name, a natural-language description, and a schema specifying the parameters it accepts. These definitions are provided to the LLM as part of its prompt or through a dedicated API field. When the LLM determines that it needs to use a tool, instead of generating a plain text response, it outputs a structured function call: the tool name and the arguments formatted as JSON. Your application code intercepts this structured output, executes the corresponding function, and feeds the result back to the LLM as an observation. The LLM can then reason about the result and decide whether to call another tool or produce a final answer.
+The core idea is straightforward. You define a set of tools, each described by a name, a natural-language description,
+and a schema specifying the parameters it accepts. These definitions are provided to the LLM as part of its prompt or
+through a dedicated API field. When the LLM determines that it needs to use a tool, instead of generating a plain text
+response, it outputs a structured function call: the tool name and the arguments formatted as JSON. Your application
+code intercepts this structured output, executes the corresponding function, and feeds the result back to the LLM as an
+observation. The LLM can then reason about the result and decide whether to call another tool or produce a final answer.
 
-OpenAI popularized this pattern with their function calling API (later renamed to "tool use"), and it has since been adopted by Anthropic, Google, Mistral, and others. The key insight is that by training the model to produce structured JSON rather than free-text tool invocations, you get dramatically more reliable parsing. Before function calling APIs, developers had to prompt the model to output tool calls in a specific text format and then parse that text with fragile regex or string matching. Structured function calling eliminates most parsing failures.
+OpenAI popularized this pattern with their function calling API (later renamed to "tool use"), and it has since been
+adopted by Anthropic, Google, Mistral, and others. The key insight is that by training the model to produce structured
+JSON rather than free-text tool invocations, you get dramatically more reliable parsing. Before function calling APIs,
+developers had to prompt the model to output tool calls in a specific text format and then parse that text with fragile
+regex or string matching. Structured function calling eliminates most parsing failures.
 
-Designing good tool schemas is an art. Each tool should have a single, clear responsibility. The description should explain not just what the tool does but when to use it, so the model can make informed selection decisions. Parameters should have descriptive names, clear types, and sensible defaults. Overly complex tool schemas confuse the model; overly simple schemas may require too many sequential calls. A common best practice is to provide 3-8 tools, each focused and well-documented.
+Designing good tool schemas is an art. Each tool should have a single, clear responsibility. The description should
+explain not just what the tool does but when to use it, so the model can make informed selection decisions. Parameters
+should have descriptive names, clear types, and sensible defaults. Overly complex tool schemas confuse the model; overly
+simple schemas may require too many sequential calls. A common best practice is to provide 3-8 tools, each focused and
+well-documented.
 
-Multi-tool orchestration adds another layer of complexity. When an agent has access to many tools, it must decide which tool to call, in what order, and how to combine their outputs. Some tasks require parallel tool calls (e.g., searching two databases simultaneously), while others require sequential calls where the output of one tool feeds into the next. Modern APIs support parallel tool calling, where the model can request multiple tool invocations in a single response, and the application executes them concurrently before returning all results.
+Multi-tool orchestration adds another layer of complexity. When an agent has access to many tools, it must decide which
+tool to call, in what order, and how to combine their outputs. Some tasks require parallel tool calls (e.g., searching
+two databases simultaneously), while others require sequential calls where the output of one tool feeds into the next.
+Modern APIs support parallel tool calling, where the model can request multiple tool invocations in a single response,
+and the application executes them concurrently before returning all results.
 
-Error handling is critical in tool-use systems. Tools can fail (network errors, invalid inputs, rate limits), and the agent must handle these failures gracefully. Common strategies include: returning the error message as the observation so the LLM can reason about it and try a different approach; implementing automatic retries with exponential backoff for transient errors; and setting timeouts to prevent the agent from hanging on a slow tool call.
+Error handling is critical in tool-use systems. Tools can fail (network errors, invalid inputs, rate limits), and the
+agent must handle these failures gracefully. Common strategies include: returning the error message as the observation
+so the LLM can reason about it and try a different approach; implementing automatic retries with exponential backoff for
+transient errors; and setting timeouts to prevent the agent from hanging on a slow tool call.
 
-Security is an equally important concern. If an agent can execute arbitrary code or make API calls, a prompt injection attack could cause it to perform malicious actions. Tool-use systems should implement sandboxing (run code in containers), input validation (check tool arguments before execution), output filtering (redact sensitive information), and permission boundaries (restrict which tools are available in which contexts).
+Security is an equally important concern. If an agent can execute arbitrary code or make API calls, a prompt injection
+attack could cause it to perform malicious actions. Tool-use systems should implement sandboxing (run code in
+containers), input validation (check tool arguments before execution), output filtering (redact sensitive information),
+and permission boundaries (restrict which tools are available in which contexts).
 
 ---
 
@@ -153,21 +178,29 @@ print(answer)
 ```
 
 Explanation of the critical sections:
-- **Lines 7-50**: Tool schemas follow JSON Schema conventions. Each tool has a `name`, `description`, and `parameters` block. The description is what the model reads to decide when to use the tool.
-- **Lines 53-59**: The actual implementations are plain Python functions. They could call real APIs, query databases, or run any computation.
-- **Lines 72-76**: The `tool_choice="auto"` parameter lets the model decide whether to call a tool or respond directly. Alternatives include `"none"` (never call tools) and `{"type": "function", "function": {"name": "..."}}` (force a specific tool).
+
+- **Lines 7-50**: Tool schemas follow JSON Schema conventions. Each tool has a `name`, `description`, and `parameters`
+  block. The description is what the model reads to decide when to use the tool.
+- **Lines 53-59**: The actual implementations are plain Python functions. They could call real APIs, query databases, or
+  run any computation.
+- **Lines 72-76**: The `tool_choice="auto"` parameter lets the model decide whether to call a tool or respond directly.
+  Alternatives include `"none"` (never call tools) and `{"type": "function", "function": {"name": "..."}}` (force a
+  specific tool).
 - **Lines 82-83**: When the model does not produce tool calls, the loop exits and we return the text response.
-- **Lines 86-97**: Each tool call is executed and the result is appended as a `"tool"` role message, linked to the specific `tool_call_id` so the model can match results to calls.
+- **Lines 86-97**: Each tool call is executed and the result is appended as a `"tool"` role message, linked to the
+  specific `tool_call_id` so the model can match results to calls.
 
 ---
 
 ## Math/Formulas (KaTeX)
 
-The tool selection problem can be modeled as a discrete choice. Given a set of $n$ tools $\{t_1, t_2, \ldots, t_n\}$ and the current context $c$, the agent selects tool $t^*$:
+The tool selection problem can be modeled as a discrete choice. Given a set of $n$ tools $\{t_1, t_2, \ldots, t_n\}$ and
+the current context $c$, the agent selects tool $t^*$:
 
 $$t^* = \arg\max_{t_i} P(t_i \mid c)$$
 
-where $P(t_i \mid c)$ is the model's probability of selecting tool $t_i$ given the context. In practice, this probability is implicitly computed by the LLM's next-token prediction.
+where $P(t_i \mid c)$ is the model's probability of selecting tool $t_i$ given the context. In practice, this
+probability is implicitly computed by the LLM's next-token prediction.
 
 For parallel tool calls, the agent selects a subset $S \subseteq \{t_1, \ldots, t_n\}$:
 
@@ -177,7 +210,8 @@ The expected information gain from calling tool $t_i$ with input $x$ can be expr
 
 $$\text{IG}(t_i, x) = H(A \mid c) - H(A \mid c, o_{t_i}(x))$$
 
-where $A$ is the answer random variable, $H$ is entropy, and $o_{t_i}(x)$ is the observation returned by tool $t_i$ on input $x$. The agent should prefer tools that maximally reduce its uncertainty about the answer.
+where $A$ is the answer random variable, $H$ is entropy, and $o_{t_i}(x)$ is the observation returned by tool $t_i$ on
+input $x$. The agent should prefer tools that maximally reduce its uncertainty about the answer.
 
 ---
 
@@ -212,15 +246,23 @@ flowchart LR
 
 ## Exercises
 
-1. **Design a tool set**: You are building a research agent. Design schemas for 4 tools: `search_academic_papers`, `read_paper_abstract`, `summarize_text`, and `save_notes`. For each, write the complete JSON schema with name, description, and parameters.
+1. **Design a tool set**: You are building a research agent. Design schemas for 4 tools: `search_academic_papers`,
+   `read_paper_abstract`, `summarize_text`, and `save_notes`. For each, write the complete JSON schema with name,
+   description, and parameters.
 
-2. **Error handling**: Extend the code example above to handle three failure cases: (a) the tool function raises an exception, (b) the LLM produces an invalid tool name, (c) the LLM produces malformed JSON for the arguments. For each, return a helpful error message as the observation.
+2. **Error handling**: Extend the code example above to handle three failure cases: (a) the tool function raises an
+   exception, (b) the LLM produces an invalid tool name, (c) the LLM produces malformed JSON for the arguments. For
+   each, return a helpful error message as the observation.
 
-3. **Parallel calls**: Modify the agent to handle the query "Compare the weather in Tokyo and London." Verify that the model produces two `get_weather` calls in a single response and that both are executed before returning results.
+3. **Parallel calls**: Modify the agent to handle the query "Compare the weather in Tokyo and London." Verify that the
+   model produces two `get_weather` calls in a single response and that both are executed before returning results.
 
-4. **Security audit**: Given an agent with a `run_python_code(code: str)` tool, list 5 potential security risks and propose a mitigation strategy for each.
+4. **Security audit**: Given an agent with a `run_python_code(code: str)` tool, list 5 potential security risks and
+   propose a mitigation strategy for each.
 
-5. **Token efficiency**: You have 10 tools available but only 3 are relevant to most queries. Design a two-stage tool selection system where a lightweight first pass selects the top 3 tools, and only those 3 are included in the main LLM call. Write pseudocode for this approach.
+5. **Token efficiency**: You have 10 tools available but only 3 are relevant to most queries. Design a two-stage tool
+   selection system where a lightweight first pass selects the top 3 tools, and only those 3 are included in the main
+   LLM call. Write pseudocode for this approach.
 
 ---
 
