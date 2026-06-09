@@ -1,6 +1,5 @@
 ---
 title: "Multi-Agent Collaboration"
-level: intermediate
 topic: ai-agents
 order: 14
 estimatedTime: "45 minutes"
@@ -14,13 +13,17 @@ summary: "Learn how multiple AI agents communicate, delegate tasks, reach consen
 
 ## Overview
 
-A single agent can handle many tasks, but complex problems often benefit from decomposition across multiple specialized agents. Multi-agent systems divide work among agents that communicate, negotiate, and collaborate -- much like teams of humans. This lesson covers the core communication protocols, delegation patterns, consensus mechanisms, and coordination architectures that make multi-agent collaboration effective.
+A single agent can handle many tasks, but complex problems often benefit from decomposition across multiple specialized
+agents. Multi-agent systems divide work among agents that communicate, negotiate, and collaborate -- much like teams of
+humans. This lesson covers the core communication protocols, delegation patterns, consensus mechanisms, and coordination
+architectures that make multi-agent collaboration effective.
 
 ---
 
 ## Communication Protocols
 
-Agents need a shared language for exchanging information. The simplest approach is structured message passing where each message has a sender, receiver, performative (intent), and content.
+Agents need a shared language for exchanging information. The simplest approach is structured message passing where each
+message has a sender, receiver, performative (intent), and content.
 
 Common performatives borrowed from speech act theory:
 
@@ -81,7 +84,8 @@ class Agent:
 
 ### Manager-Worker Pattern
 
-A manager agent decomposes a complex task into subtasks and assigns them to specialized worker agents. The manager collects results, detects failures, and may reassign work.
+A manager agent decomposes a complex task into subtasks and assigns them to specialized worker agents. The manager
+collects results, detects failures, and may reassign work.
 
 ```python
 class ManagerAgent(Agent):
@@ -107,7 +111,8 @@ class ManagerAgent(Agent):
 
 ### Contract Net Protocol
 
-In the contract net protocol, a manager broadcasts a task announcement. Workers evaluate whether they can perform the task and submit bids. The manager awards the contract to the best bidder.
+In the contract net protocol, a manager broadcasts a task announcement. Workers evaluate whether they can perform the
+task and submit bids. The manager awards the contract to the best bidder.
 
 1. Manager broadcasts **CALL FOR PROPOSALS**
 2. Workers evaluate and respond with **PROPOSE** (bid) or **REJECT**
@@ -116,7 +121,8 @@ In the contract net protocol, a manager broadcasts a task announcement. Workers 
 
 ### Auction-Based Allocation
 
-When resources are scarce, auction mechanisms allocate tasks efficiently. Each agent bids based on its estimated cost or capability. The allocation minimizes total cost:
+When resources are scarce, auction mechanisms allocate tasks efficiently. Each agent bids based on its estimated cost or
+capability. The allocation minimizes total cost:
 
 $$\text{allocation}^* = \arg\min_{\mathbf{a}} \sum_{i=1}^{n} c_i(a_i)$$
 
@@ -126,7 +132,8 @@ where $c_i(a_i)$ is the cost for agent $i$ to perform its assigned task $a_i$.
 
 ## Consensus Mechanisms
 
-When agents must agree on a shared decision (e.g., which plan to execute), consensus protocols ensure agreement despite differing local information.
+When agents must agree on a shared decision (e.g., which plan to execute), consensus protocols ensure agreement despite
+differing local information.
 
 ### Majority Voting
 
@@ -144,7 +151,8 @@ Weights can be updated over time based on each agent's track record accuracy.
 
 ### Iterative Refinement
 
-Agents share their reasoning, update beliefs, and re-vote across multiple rounds until convergence. This mirrors the Delphi method:
+Agents share their reasoning, update beliefs, and re-vote across multiple rounds until convergence. This mirrors the
+Delphi method:
 
 $$\text{belief}_i^{(t+1)} = \alpha \cdot \text{belief}_i^{(t)} + (1-\alpha) \cdot \frac{1}{n-1}\sum_{j \neq i} \text{belief}_j^{(t)}$$
 
@@ -156,7 +164,8 @@ where $\alpha$ controls how much an agent trusts its own prior versus the group 
 
 ### Blackboard Systems
 
-A blackboard is a shared data structure that all agents can read and write. Agents monitor the blackboard for relevant changes and contribute partial solutions:
+A blackboard is a shared data structure that all agents can read and write. Agents monitor the blackboard for relevant
+changes and contribute partial solutions:
 
 ```python
 class Blackboard:
@@ -176,11 +185,13 @@ class Blackboard:
         self.subscribers[key].append(callback)
 ```
 
-Blackboard systems excel when the problem-solving process is opportunistic -- any agent can contribute whenever it has relevant knowledge.
+Blackboard systems excel when the problem-solving process is opportunistic -- any agent can contribute whenever it has
+relevant knowledge.
 
 ### Shared Vector Store
 
-For LLM-based agents, a shared vector database serves as collective memory. Agents write observations and retrieved facts as embeddings; other agents query the store to benefit from previously gathered knowledge.
+For LLM-based agents, a shared vector database serves as collective memory. Agents write observations and retrieved
+facts as embeddings; other agents query the store to benefit from previously gathered knowledge.
 
 ---
 

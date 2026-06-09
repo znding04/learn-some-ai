@@ -1,6 +1,5 @@
 ---
 title: "Error Handling & Robustness"
-level: intermediate
 difficulty: intermediate
 summary: "Building resilient AI agents with graceful degradation, retry budgets, circuit breakers, timeout handling, and sandboxed code execution."
 topic: ai-agents
@@ -12,11 +11,15 @@ estimatedTime: "45 minutes"
 
 ## Overview
 
-AI agents operate in unpredictable environments. APIs go down, models hallucinate tool arguments, code execution produces runtime errors, and network connections time out. A robust agent must handle every failure mode gracefully -- recovering when possible, degrading when necessary, and never crashing silently.
+AI agents operate in unpredictable environments. APIs go down, models hallucinate tool arguments, code execution
+produces runtime errors, and network connections time out. A robust agent must handle every failure mode gracefully --
+recovering when possible, degrading when necessary, and never crashing silently.
 
 ### Graceful Degradation When Tools Fail
 
-Graceful degradation means the agent continues to provide value even when some capabilities are unavailable. If the weather API is down, the agent should say "I cannot fetch live weather data right now, but based on historical patterns for this region and season..." rather than returning a cryptic error or hanging.
+Graceful degradation means the agent continues to provide value even when some capabilities are unavailable. If the
+weather API is down, the agent should say "I cannot fetch live weather data right now, but based on historical patterns
+for this region and season..." rather than returning a cryptic error or hanging.
 
 The degradation hierarchy typically follows three levels:
 
@@ -24,11 +27,14 @@ The degradation hierarchy typically follows three levels:
 2. **Partial capability**: The tool partially fails (e.g., returns incomplete data). The agent uses what it can and notes the limitation.
 3. **Fallback mode**: The tool is completely unavailable. The agent falls back to its parametric knowledge, cached results, or an alternative tool.
 
-Implementing this requires wrapping every tool call in error handling that classifies the failure and routes to the appropriate fallback. The agent's system prompt should also include instructions for fallback behavior so the LLM knows how to respond when a tool returns an error.
+Implementing this requires wrapping every tool call in error handling that classifies the failure and routes to the
+appropriate fallback. The agent's system prompt should also include instructions for fallback behavior so the LLM knows
+how to respond when a tool returns an error.
 
 ### Fallback Strategies and Retry Budgets
 
-Not all errors deserve a retry. A **retry budget** limits how many times the agent retries a failed operation before giving up. Without a budget, an agent can burn tokens and time in an infinite retry loop.
+Not all errors deserve a retry. A **retry budget** limits how many times the agent retries a failed operation before
+giving up. Without a budget, an agent can burn tokens and time in an infinite retry loop.
 
 The retry budget can be defined per tool or globally. A reasonable default:
 
@@ -36,11 +42,13 @@ The retry budget can be defined per tool or globally. A reasonable default:
 - **Global budget**: 10 retries total across all tools in a single task
 - **Token budget**: Stop if total token consumption exceeds a threshold $T_{\text{max}}$
 
-The expected cost of retries follows a geometric series. If each retry has a probability $p$ of succeeding and a cost $c$, the expected total cost before success or exhaustion is:
+The expected cost of retries follows a geometric series. If each retry has a probability $p$ of succeeding and a cost
+$c$, the expected total cost before success or exhaustion is:
 
 $$\mathbb{E}[C] = c \cdot \sum_{k=0}^{N-1} (1-p)^k = c \cdot \frac{1 - (1-p)^N}{p}$$
 
-where $N$ is the retry budget. For $p = 0.7$ and $N = 3$, the expected cost is $c \cdot \frac{1 - 0.027}{0.7} \approx 1.39c$ -- only 39% more than a single attempt.
+where $N$ is the retry budget. For $p = 0.7$ and $N = 3$, the expected cost is $c \cdot \frac{1 - 0.027}{0.7} \approx
+1.39c$ -- only 39% more than a single attempt.
 
 **Fallback strategies** go beyond simple retries:
 
@@ -51,7 +59,8 @@ where $N$ is the retry budget. For $p = 0.7$ and $N = 3$, the expected cost is $
 
 ### Timeout Handling for External APIs
 
-External API calls can hang indefinitely without proper timeout configuration. An agent making a tool call should enforce three types of timeouts:
+External API calls can hang indefinitely without proper timeout configuration. An agent making a tool call should
+enforce three types of timeouts:
 
 - **Connection timeout**: How long to wait for the TCP connection to establish (typically 5-10 seconds)
 - **Read timeout**: How long to wait for the server to send a response (typically 10-30 seconds)
@@ -61,11 +70,13 @@ The total time for a tool call with retries and exponential backoff is bounded b
 
 $$T_{\text{total}} \leq \sum_{k=0}^{N-1} \left( t_{\text{timeout}} + t_{\text{base}} \cdot 2^k \right) = N \cdot t_{\text{timeout}} + t_{\text{base}} \cdot (2^N - 1)$$
 
-For $N = 3$, $t_{\text{timeout}} = 10s$, and $t_{\text{base}} = 1s$: $T_{\text{total}} \leq 30 + 7 = 37$ seconds. This is a useful upper bound for setting the global operation timeout.
+For $N = 3$, $t_{\text{timeout}} = 10s$, and $t_{\text{base}} = 1s$: $T_{\text{total}} \leq 30 + 7 = 37$ seconds. This
+is a useful upper bound for setting the global operation timeout.
 
 ### Sandbox Security for Code Execution
 
-Agents that execute code face a serious security surface. User inputs, model hallucinations, or malicious prompt injections can produce dangerous code. A robust agent must sandbox code execution:
+Agents that execute code face a serious security surface. User inputs, model hallucinations, or malicious prompt
+injections can produce dangerous code. A robust agent must sandbox code execution:
 
 - **Process isolation**: Run code in a separate process with limited permissions
 - **Filesystem restrictions**: Restrict read/write access to a dedicated temporary directory
@@ -73,7 +84,8 @@ Agents that execute code face a serious security surface. User inputs, model hal
 - **Resource limits**: Cap CPU time, memory usage, and disk space
 - **Input sanitization**: Validate that generated code does not contain dangerous patterns (e.g., `os.system`, `subprocess.call`, `eval` on user input)
 
-The defense-in-depth principle applies: no single layer of protection is sufficient. Combine multiple layers to minimize risk.
+The defense-in-depth principle applies: no single layer of protection is sufficient. Combine multiple layers to minimize
+risk.
 
 The probability of a security breach decreases multiplicatively with each independent layer:
 
@@ -328,7 +340,8 @@ Availability of a tool with $N$ independent fallback layers:
 
 $$A_{\text{total}} = 1 - \prod_{i=0}^{N} (1 - A_i)$$
 
-where $A_i$ is the availability of layer $i$. If the primary tool has $A_0 = 0.95$ and the fallback has $A_1 = 0.99$, the combined availability is:
+where $A_i$ is the availability of layer $i$. If the primary tool has $A_0 = 0.95$ and the fallback has $A_1 = 0.99$,
+the combined availability is:
 
 $$A_{\text{total}} = 1 - (0.05)(0.01) = 1 - 0.0005 = 0.9995$$
 

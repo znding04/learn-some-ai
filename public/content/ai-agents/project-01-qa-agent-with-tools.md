@@ -1,6 +1,5 @@
 ---
 title: "Project: Build a Q&A Agent with Tool Use"
-level: intermediate
 topic: ai-agents
 order: 16
 estimatedTime: "90 minutes"
@@ -15,9 +14,13 @@ summary: "Build a question-answering agent that uses the ReAct pattern to decide
 
 ## Overview
 
-In this project you will build a question-answering agent that can decide **when and which external tool to call** in order to answer a user's question. The agent combines three tools -- a web search API, an arithmetic calculator, and a local knowledge base -- into a single reasoning loop. By the end you will have a working Python system that accepts natural-language questions, plans a sequence of tool calls, executes them, and synthesises a final answer.
+In this project you will build a question-answering agent that can decide **when and which external tool to call** in
+order to answer a user's question. The agent combines three tools -- a web search API, an arithmetic calculator, and a
+local knowledge base -- into a single reasoning loop. By the end you will have a working Python system that accepts
+natural-language questions, plans a sequence of tool calls, executes them, and synthesises a final answer.
 
-The core idea is the **ReAct** (Reason + Act) pattern: the language model produces a *thought*, selects an *action*, observes the *result*, and repeats until it can give a final answer.
+The core idea is the **ReAct** (Reason + Act) pattern: the language model produces a *thought*, selects an *action*,
+observes the *result*, and repeats until it can give a final answer.
 
 ---
 
@@ -30,7 +33,9 @@ The core idea is the **ReAct** (Reason + Act) pattern: the language model produc
 | Function dispatch | Maps the model's chosen tool name to real Python functions |
 | Token budget | Each loop iteration costs tokens; a maximum iteration cap prevents runaway spending |
 
-The probability that the agent picks the correct tool on the first try depends on how well the tool descriptions match the query. Formally, if we model tool selection as a softmax over $k$ tools with logits $z_i$, the probability of choosing tool $j$ is:
+The probability that the agent picks the correct tool on the first try depends on how well the tool descriptions match
+the query. Formally, if we model tool selection as a softmax over $k$ tools with logits $z_i$, the probability of
+choosing tool $j$ is:
 
 $$P(\text{tool}_j) = \frac{e^{z_j}}{\sum_{i=1}^{k} e^{z_i}}$$
 

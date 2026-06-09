@@ -1,6 +1,5 @@
 ---
 title: "Building Production Agents"
-level: advanced
 difficulty: advanced
 summary: "Engineering production-grade AI agents with deployment architecture, cost optimization, monitoring, observability, and reliability patterns."
 topic: ai-agents
@@ -12,7 +11,9 @@ estimatedTime: "60 minutes"
 
 ## Overview
 
-Building an AI agent that works in a notebook is one thing. Running it reliably in production -- handling thousands of requests, staying within budget, and diagnosing failures at 3 AM -- is an entirely different challenge. This lesson covers the engineering practices that separate a prototype agent from a production-grade system.
+Building an AI agent that works in a notebook is one thing. Running it reliably in production -- handling thousands of
+requests, staying within budget, and diagnosing failures at 3 AM -- is an entirely different challenge. This lesson
+covers the engineering practices that separate a prototype agent from a production-grade system.
 
 ### Deployment Architecture: Serverless vs Long-Running
 
@@ -22,11 +23,13 @@ The first decision is how your agent process runs. Each approach has distinct tr
 
 **Long-running processes** (Kubernetes pods, EC2 instances, Railway): Your agent runs continuously, accepting requests via an API or message queue. This eliminates cold starts, supports persistent in-memory state, and allows long-running agentic loops (e.g., a coding agent that works for 10 minutes on a task). The trade-off is cost: you pay for the instance whether it is busy or idle. Autoscaling helps, but you need to configure it carefully.
 
-A common hybrid pattern: use a long-running orchestrator service that dispatches individual tool calls to serverless functions. The orchestrator holds conversation state; the tools scale independently.
+A common hybrid pattern: use a long-running orchestrator service that dispatches individual tool calls to serverless
+functions. The orchestrator holds conversation state; the tools scale independently.
 
 ### Cost Optimization
 
-LLM API costs can spiral quickly in agentic systems because each reasoning step consumes tokens, and agents often take many steps. Three strategies matter most:
+LLM API costs can spiral quickly in agentic systems because each reasoning step consumes tokens, and agents often take
+many steps. Three strategies matter most:
 
 **Token budgeting** sets a hard ceiling on how many tokens an agent can consume per task. Track cumulative input and output tokens across all LLM calls in a session. When the budget is 80% exhausted, instruct the agent to wrap up. When it hits 100%, force-stop the loop. Without budgets, a confused agent can loop indefinitely, burning hundreds of dollars on a single task.
 
@@ -46,7 +49,10 @@ An agent that silently fails is worse than one that crashes loudly. Production a
 
 ### Reliability Patterns
 
-Production agents need defensive coding. **Retry with exponential backoff** handles transient LLM API failures. **Circuit breakers** stop calling a tool that has failed repeatedly, preventing cascade failures. **Timeouts** on every external call prevent the agent from hanging indefinitely. **Graceful degradation** means the agent can still provide a partial answer if one tool is unavailable.
+Production agents need defensive coding. **Retry with exponential backoff** handles transient LLM API failures.
+**Circuit breakers** stop calling a tool that has failed repeatedly, preventing cascade failures. **Timeouts** on every
+external call prevent the agent from hanging indefinitely. **Graceful degradation** means the agent can still provide a
+partial answer if one tool is unavailable.
 
 ---
 
@@ -184,7 +190,8 @@ def run_agent_with_tracking(task: str, trace_id: str):
 
 $$C_{\text{task}} = \sum_{i=1}^{N} \left( t_{\text{in},i} \cdot p_{\text{in}} + t_{\text{out},i} \cdot p_{\text{out}} \right)$$
 
-where $N$ is the number of LLM calls, $t_{\text{in},i}$ and $t_{\text{out},i}$ are input/output tokens for call $i$, and $p_{\text{in}}$, $p_{\text{out}}$ are the per-token prices.
+where $N$ is the number of LLM calls, $t_{\text{in},i}$ and $t_{\text{out},i}$ are input/output tokens for call $i$, and
+$p_{\text{in}}$, $p_{\text{out}}$ are the per-token prices.
 
 **Cache savings** for a prefix of length $L$ tokens cached across $R$ requests:
 

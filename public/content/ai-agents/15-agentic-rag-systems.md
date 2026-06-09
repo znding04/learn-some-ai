@@ -1,6 +1,5 @@
 ---
 title: "Agentic RAG Systems"
-level: intermediate
 topic: ai-agents
 order: 15
 estimatedTime: "45 minutes"
@@ -15,7 +14,11 @@ summary: "Explore how Retrieval-Augmented Generation becomes agentic through que
 
 ## Overview
 
-Standard RAG follows a simple pipeline: embed the query, retrieve top-k documents, stuff them into the context, and generate an answer. This works for straightforward factual questions but fails on complex queries requiring synthesis across multiple documents, disambiguation, or reasoning chains. Agentic RAG transforms retrieval into an iterative, self-directed process where an agent decides what to retrieve, evaluates whether retrieved information is sufficient, and adaptively refines its search strategy.
+Standard RAG follows a simple pipeline: embed the query, retrieve top-k documents, stuff them into the context, and
+generate an answer. This works for straightforward factual questions but fails on complex queries requiring synthesis
+across multiple documents, disambiguation, or reasoning chains. Agentic RAG transforms retrieval into an iterative,
+self-directed process where an agent decides what to retrieve, evaluates whether retrieved information is sufficient,
+and adaptively refines its search strategy.
 
 ---
 
@@ -39,7 +42,8 @@ Agentic RAG adds decision-making loops:
 
 ## Relevance Scoring
 
-The foundation of retrieval is measuring similarity between a query and documents. Cosine similarity between embedding vectors $\mathbf{q}$ (query) and $\mathbf{d}$ (document) is the standard metric:
+The foundation of retrieval is measuring similarity between a query and documents. Cosine similarity between embedding
+vectors $\mathbf{q}$ (query) and $\mathbf{d}$ (document) is the standard metric:
 
 $$\text{sim}(\mathbf{q}, \mathbf{d}) = \frac{\mathbf{q} \cdot \mathbf{d}}{\|\mathbf{q}\| \cdot \|\mathbf{d}\|} = \frac{\sum_{i=1}^{n} q_i d_i}{\sqrt{\sum_{i=1}^{n} q_i^2} \cdot \sqrt{\sum_{i=1}^{n} d_i^2}}$$
 
@@ -47,13 +51,15 @@ In agentic RAG, the agent also applies a learned relevance threshold $\tau$. A d
 
 $$\text{sim}(\mathbf{q}, \mathbf{d}) > \tau$$
 
-The agent can dynamically adjust $\tau$ based on the task -- lowering it when information is scarce, raising it when precision matters.
+The agent can dynamically adjust $\tau$ based on the task -- lowering it when information is scarce, raising it when
+precision matters.
 
 ---
 
 ## Query Planning
 
-Complex questions often require multiple sub-queries. The agent decomposes the original question into an information-gathering plan:
+Complex questions often require multiple sub-queries. The agent decomposes the original question into an
+information-gathering plan:
 
 ```python
 from dataclasses import dataclass
@@ -177,13 +183,15 @@ Respond with JSON:
 
 ## Multi-Hop Reasoning
 
-Some questions require chaining information across documents. For example: "What university did the CEO of the company that acquired Instagram attend?" requires:
+Some questions require chaining information across documents. For example: "What university did the CEO of the company
+that acquired Instagram attend?" requires:
 
 1. Retrieve: who acquired Instagram (Facebook/Meta)
 2. Retrieve: who is the CEO of Meta (Mark Zuckerberg)
 3. Retrieve: where did Zuckerberg attend university (Harvard)
 
-The agent's sequential strategy handles this naturally -- each retrieval result informs the next query. The information chain can be modeled as:
+The agent's sequential strategy handles this naturally -- each retrieval result informs the next query. The information
+chain can be modeled as:
 
 $$\text{answer} = f(d_1, d_2, \ldots, d_k)$$
 

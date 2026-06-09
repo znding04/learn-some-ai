@@ -1,8 +1,7 @@
 ---
 title: "Project: Deploy an Agent to Production"
-level: advanced
 topic: ai-agents
-order: 17
+order: 21
 estimatedTime: "90 minutes"
 difficulty: advanced
 prerequisites:
@@ -14,7 +13,10 @@ summary: "A hands-on project covering containerization, API design, rate limitin
 
 ## Overview
 
-Building an AI agent is only half the challenge -- deploying it reliably is the other half. This project walks through the full production deployment pipeline: wrapping your agent in an API, containerizing it with Docker, adding rate limiting and monitoring, implementing health checks, and preparing for scale. By the end, you will have a production-ready deployment configuration.
+Building an AI agent is only half the challenge -- deploying it reliably is the other half. This project walks through
+the full production deployment pipeline: wrapping your agent in an API, containerizing it with Docker, adding rate
+limiting and monitoring, implementing health checks, and preparing for scale. By the end, you will have a
+production-ready deployment configuration.
 
 ## Step 1: API Wrapper with FastAPI
 

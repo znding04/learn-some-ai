@@ -1,8 +1,7 @@
 ---
 title: "Project: Fine-Tune an LLM for Agent Tasks"
-level: advanced
 topic: ai-agents
-order: 18
+order: 20
 estimatedTime: "90 minutes"
 difficulty: advanced
 summary: "Collect agent trajectories, build preference pairs, and fine-tune a 7B model using DPO and LoRA for improved tool-use reliability."
@@ -12,9 +11,13 @@ summary: "Collect agent trajectories, build preference pairs, and fine-tune a 7B
 
 ## Overview
 
-General-purpose LLMs can follow tool-use instructions, but a fine-tuned model that has seen thousands of agent trajectories will be faster, cheaper, and more reliable at selecting the right tool and formatting the right arguments. In this project you will collect agent trajectories from a teacher model, convert them into training data, fine-tune a smaller student model using **Direct Preference Optimisation (DPO)**, and evaluate the result on a held-out benchmark.
+General-purpose LLMs can follow tool-use instructions, but a fine-tuned model that has seen thousands of agent
+trajectories will be faster, cheaper, and more reliable at selecting the right tool and formatting the right arguments.
+In this project you will collect agent trajectories from a teacher model, convert them into training data, fine-tune a
+smaller student model using **Direct Preference Optimisation (DPO)**, and evaluate the result on a held-out benchmark.
 
-The workflow has four stages: **Collect -> Curate -> Train -> Evaluate**. By the end you will have a reproducible pipeline that turns a 7B-parameter open-weight model into a capable agent backbone.
+The workflow has four stages: **Collect -> Curate -> Train -> Evaluate**. By the end you will have a reproducible
+pipeline that turns a 7B-parameter open-weight model into a capable agent backbone.
 
 ## Key Concepts
 
@@ -31,7 +34,8 @@ Given a prompt $x$, a preferred completion $y_w$ and a dispreferred completion $
 
 $$\mathcal{L}_{\text{DPO}}(\pi_\theta; \pi_{\text{ref}}) = -\mathbb{E}_{(x, y_w, y_l)} \left[ \log \sigma \left( \beta \log \frac{\pi_\theta(y_w | x)}{\pi_{\text{ref}}(y_w | x)} - \beta \log \frac{\pi_\theta(y_l | x)}{\pi_{\text{ref}}(y_l | x)} \right) \right]$$
 
-where $\pi_\theta$ is the model being trained, $\pi_{\text{ref}}$ is the frozen reference model, $\sigma$ is the sigmoid, and $\beta$ controls the strength of the KL constraint (typically $\beta = 0.1$).
+where $\pi_\theta$ is the model being trained, $\pi_{\text{ref}}$ is the frozen reference model, $\sigma$ is the
+sigmoid, and $\beta$ controls the strength of the KL constraint (typically $\beta = 0.1$).
 
 ### LoRA parameterisation
 

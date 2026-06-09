@@ -1,6 +1,5 @@
 ---
 title: "Agent Evaluation & Testing"
-level: advanced
 difficulty: advanced
 summary: "Metrics, methods, and tooling for rigorously evaluating AI agents — including task success rate, tool precision/recall, synthetic test generation, and A/B testing."
 topic: ai-agents
@@ -12,11 +11,18 @@ estimatedTime: "60 minutes"
 
 ## Overview
 
-Evaluating an AI agent is fundamentally harder than evaluating a classifier or a language model. A classifier produces a single output you can compare to a label. An agent produces a sequence of actions -- tool calls, reasoning steps, intermediate outputs -- and the final result depends on the entire trajectory. A correct answer reached through wasteful, dangerous, or unreliable steps is not a good agent. This lesson covers the metrics, methods, and tooling needed to rigorously evaluate agentic systems.
+Evaluating an AI agent is fundamentally harder than evaluating a classifier or a language model. A classifier produces a
+single output you can compare to a label. An agent produces a sequence of actions -- tool calls, reasoning steps,
+intermediate outputs -- and the final result depends on the entire trajectory. A correct answer reached through
+wasteful, dangerous, or unreliable steps is not a good agent. This lesson covers the metrics, methods, and tooling
+needed to rigorously evaluate agentic systems.
 
 ### What Makes Agent Evaluation Different
 
-Traditional ML evaluation asks: "Is the output correct?" Agent evaluation must ask three additional questions: (1) Did the agent take the right steps? (2) Did it use tools appropriately? (3) Did it stay within resource constraints? An agent that answers a question correctly but makes 47 unnecessary API calls, leaks user data to an external tool, or takes 12 minutes when 30 seconds would suffice has failed in important ways that output-only metrics miss.
+Traditional ML evaluation asks: "Is the output correct?" Agent evaluation must ask three additional questions: (1) Did
+the agent take the right steps? (2) Did it use tools appropriately? (3) Did it stay within resource constraints? An
+agent that answers a question correctly but makes 47 unnecessary API calls, leaks user data to an external tool, or
+takes 12 minutes when 30 seconds would suffice has failed in important ways that output-only metrics miss.
 
 ### Core Metrics
 
@@ -34,17 +40,23 @@ $$\text{Tool Precision} = \frac{\text{Necessary tool calls made}}{\text{Total to
 
 $$\text{Tool Recall} = \frac{\text{Necessary tool calls made}}{\text{Total necessary tool calls}}$$
 
-High tool precision with low recall means the agent is cautious but misses information. Low precision with high recall means the agent calls everything and wastes resources. You want both to be high.
+High tool precision with low recall means the agent is cautious but misses information. Low precision with high recall
+means the agent calls everything and wastes resources. You want both to be high.
 
 **Cost efficiency** tracks tokens consumed and wall-clock time per task, normalized by task complexity. Two agents with the same success rate but 10x different costs are not equivalent.
 
 ### Synthetic Test Data Generation
 
-You cannot evaluate agents on 5 examples. You need hundreds or thousands of test cases covering diverse scenarios, edge cases, and failure modes. Manually creating these is impractical, so synthetic generation is essential.
+You cannot evaluate agents on 5 examples. You need hundreds or thousands of test cases covering diverse scenarios, edge
+cases, and failure modes. Manually creating these is impractical, so synthetic generation is essential.
 
-The approach: use a strong LLM to generate (task, expected_tool_calls, expected_answer) triples. Provide the generator with your agent's tool definitions and ask it to create tasks of varying difficulty that exercise different tools and tool combinations. Then have a human review a sample (10-20%) to catch hallucinated or impossible tasks.
+The approach: use a strong LLM to generate (task, expected_tool_calls, expected_answer) triples. Provide the generator
+with your agent's tool definitions and ask it to create tasks of varying difficulty that exercise different tools and
+tool combinations. Then have a human review a sample (10-20%) to catch hallucinated or impossible tasks.
 
-For tool-using agents, you can also **record production traffic** (with user consent), strip PII, and convert real interactions into test cases. These are invaluable because they capture the distribution of actual user requests, including the weird edge cases you would never think to synthesize.
+For tool-using agents, you can also **record production traffic** (with user consent), strip PII, and convert real
+interactions into test cases. These are invaluable because they capture the distribution of actual user requests,
+including the weird edge cases you would never think to synthesize.
 
 ### Agentic Benchmarks
 
@@ -58,11 +70,16 @@ Several benchmarks exist for evaluating agentic capabilities:
 
 ### A/B Testing Agent Prompts
 
-Prompt changes can have unpredictable effects on agent behavior. A small wording change might improve performance on one task type while degrading another. A/B testing is the disciplined way to evaluate prompt changes.
+Prompt changes can have unpredictable effects on agent behavior. A small wording change might improve performance on one
+task type while degrading another. A/B testing is the disciplined way to evaluate prompt changes.
 
-Split incoming tasks randomly between the current prompt (control) and the new prompt (variant). Track task success rate, step count, tool usage, cost, and latency for both groups. Run the test until you have statistical significance. Use a two-proportion z-test for binary outcomes (success/failure) and a t-test or Mann-Whitney U test for continuous metrics (latency, cost).
+Split incoming tasks randomly between the current prompt (control) and the new prompt (variant). Track task success
+rate, step count, tool usage, cost, and latency for both groups. Run the test until you have statistical significance.
+Use a two-proportion z-test for binary outcomes (success/failure) and a t-test or Mann-Whitney U test for continuous
+metrics (latency, cost).
 
-The key pitfall: agent behavior is high-variance. A single task might take 3 steps or 30 depending on stochastic LLM sampling. You need more samples than you think -- typically 200-500 per variant -- to detect meaningful differences.
+The key pitfall: agent behavior is high-variance. A single task might take 3 steps or 30 depending on stochastic LLM
+sampling. You need more samples than you think -- typically 200-500 per variant -- to detect meaningful differences.
 
 ---
 

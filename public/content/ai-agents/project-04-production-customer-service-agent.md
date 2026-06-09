@@ -1,6 +1,5 @@
 ---
 title: "Project: Production Customer Service Agent"
-level: advanced
 topic: ai-agents
 order: 19
 estimatedTime: "90 minutes"
@@ -15,9 +14,13 @@ summary: "Build a production-grade customer service agent with session managemen
 
 ## Overview
 
-This project walks through building a **production-grade customer service agent** that handles user inquiries, performs actions on their account, and escalates to human operators when confidence is low. The system covers session management (multi-turn memory), hand-off logic (transferring between specialised sub-agents), escalation rules, and deployment behind a FastAPI server. By the end you will have a deployable service that handles realistic support conversations.
+This project walks through building a **production-grade customer service agent** that handles user inquiries, performs
+actions on their account, and escalates to human operators when confidence is low. The system covers session management
+(multi-turn memory), hand-off logic (transferring between specialised sub-agents), escalation rules, and deployment
+behind a FastAPI server. By the end you will have a deployable service that handles realistic support conversations.
 
-Production agents differ from prototypes in several ways: they must be stateful across turns, respect rate limits, log every interaction for auditing, handle errors gracefully, and know when to stop and call a human.
+Production agents differ from prototypes in several ways: they must be stateful across turns, respect rate limits, log
+every interaction for auditing, handle errors gracefully, and know when to stop and call a human.
 
 ---
 
@@ -31,7 +34,8 @@ Production agents differ from prototypes in several ways: they must be stateful 
 | Hand-off protocol | Transfers context from one sub-agent to another or to a human |
 | Guardrails | Prevents the agent from executing dangerous actions without confirmation |
 
-The escalation decision uses a confidence threshold $\theta$. Given the model's softmax output over intents, if the maximum probability falls below $\theta$ we escalate:
+The escalation decision uses a confidence threshold $\theta$. Given the model's softmax output over intents, if the
+maximum probability falls below $\theta$ we escalate:
 
 $$\text{escalate} = \begin{cases} \text{true} & \text{if } \max_i P(\text{intent}_i) < \theta \\ \text{false} & \text{otherwise} \end{cases}$$
 

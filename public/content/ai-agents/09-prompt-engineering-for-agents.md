@@ -1,6 +1,5 @@
 ---
 title: "Prompt Engineering for Agents"
-level: intermediate
 difficulty: intermediate
 summary: "Crafting structured system prompts, chain-of-thought reasoning protocols, and tool selection strategies that make AI agents reliable and predictable."
 topic: ai-agents
@@ -12,11 +11,15 @@ estimatedTime: "45 minutes"
 
 ## Overview
 
-Prompt engineering for agents is fundamentally different from prompt engineering for single-turn question answering. An agent prompt must guide the model through multi-step reasoning, tool selection, output formatting, and error recovery -- often across dozens of turns. A poorly written agent prompt leads to tool misuse, hallucinated actions, and infinite loops. A well-crafted one produces a reliable, predictable system.
+Prompt engineering for agents is fundamentally different from prompt engineering for single-turn question answering. An
+agent prompt must guide the model through multi-step reasoning, tool selection, output formatting, and error recovery --
+often across dozens of turns. A poorly written agent prompt leads to tool misuse, hallucinated actions, and infinite
+loops. A well-crafted one produces a reliable, predictable system.
 
 ### Structured Output for Agent Instructions
 
-The most effective agent prompts use explicit structure to reduce ambiguity. Rather than a paragraph of natural language, break the system prompt into labeled sections:
+The most effective agent prompts use explicit structure to reduce ambiguity. Rather than a paragraph of natural
+language, break the system prompt into labeled sections:
 
 1. **Identity and role**: Who is the agent? What is its purpose?
 2. **Available tools**: List each tool with its name, description, and when to use it.
@@ -24,9 +27,12 @@ The most effective agent prompts use explicit structure to reduce ambiguity. Rat
 4. **Output format**: Specify whether the agent should use JSON, markdown, or plain text.
 5. **Examples**: One or two demonstrations of correct tool usage.
 
-This structure works because LLMs are sensitive to formatting. Research shows that structured prompts with headers and bullet points reduce instruction-following errors by 15-40% compared to unstructured paragraphs.
+This structure works because LLMs are sensitive to formatting. Research shows that structured prompts with headers and
+bullet points reduce instruction-following errors by 15-40% compared to unstructured paragraphs.
 
-The information-theoretic intuition is straightforward: a structured prompt has lower **entropy** in its instruction signal. If we model the LLM's interpretation as a distribution over possible behaviors $P(b | \text{prompt})$, a good prompt concentrates probability mass on the desired behavior:
+The information-theoretic intuition is straightforward: a structured prompt has lower **entropy** in its instruction
+signal. If we model the LLM's interpretation as a distribution over possible behaviors $P(b | \text{prompt})$, a good
+prompt concentrates probability mass on the desired behavior:
 
 $$H(B | \text{prompt}_{\text{structured}}) < H(B | \text{prompt}_{\text{unstructured}})$$
 
@@ -39,7 +45,8 @@ When an agent needs to make decisions (which tool to call, what arguments to pas
 - **Implicit reasoning**: The model reasons internally within its forward pass. The output jumps directly to an action. This is fast but opaque -- you cannot debug why the agent chose a particular tool.
 - **Explicit reasoning (Chain-of-Thought)**: The model writes out its reasoning before acting. For example: "The user wants weather data. I should use the `get_weather` tool with city='London'." This is slower but more reliable and debuggable.
 
-For agents, explicit reasoning is almost always preferable. The prompt should instruct the model to "think step by step" before each action. A common pattern is the **Thought-Action-Observation** loop:
+For agents, explicit reasoning is almost always preferable. The prompt should instruct the model to "think step by step"
+before each action. A common pattern is the **Thought-Action-Observation** loop:
 
 ```
 Thought: [The agent reasons about what to do next]
@@ -54,7 +61,8 @@ This format, inspired by the ReAct framework, makes agent behavior predictable a
 
 ### Tool Selection Prompting
 
-When an agent has access to many tools (10+), selecting the right one becomes a challenge. The model must match the user's intent to the correct tool without exhaustive search.
+When an agent has access to many tools (10+), selecting the right one becomes a challenge. The model must match the
+user's intent to the correct tool without exhaustive search.
 
 Effective strategies include:
 
@@ -63,7 +71,8 @@ Effective strategies include:
 - **Tool grouping**: Organize tools into categories (information retrieval, data manipulation, communication). The agent first selects the category, then the specific tool.
 - **Confidence thresholds**: Instruct the agent to state its confidence before calling a tool. If confidence is below a threshold, ask the user for clarification instead.
 
-The tool selection problem can be viewed as a classification task. Given a user query $q$ and tools $\{t_1, t_2, \ldots, t_n\}$, the agent must estimate:
+The tool selection problem can be viewed as a classification task. Given a user query $q$ and tools $\{t_1, t_2, \ldots,
+t_n\}$, the agent must estimate:
 
 $$t^* = \arg\max_{t_i} P(t_i | q, \text{context})$$
 
@@ -71,13 +80,15 @@ where the prompt engineering challenge is shaping $P$ so that the correct tool h
 
 ### Multi-Modal Agent Prompts
 
-Modern agents increasingly handle multiple modalities: text, images, code, and structured data. Multi-modal prompts must specify how to handle each modality:
+Modern agents increasingly handle multiple modalities: text, images, code, and structured data. Multi-modal prompts must
+specify how to handle each modality:
 
 - **Image inputs**: "When the user provides an image, describe what you see before deciding on an action."
 - **Code context**: "When analyzing code, first identify the language and framework, then determine the relevant tool."
 - **Structured data**: "When given a CSV or JSON, summarize the schema (columns, types, row count) before processing."
 
-The key principle is **modality-aware routing**: the agent should identify the input type first, then apply modality-specific reasoning before acting.
+The key principle is **modality-aware routing**: the agent should identify the input type first, then apply
+modality-specific reasoning before acting.
 
 ### Common Prompt Anti-Patterns
 
@@ -201,13 +212,15 @@ The probability of correct tool selection given a prompt can be modeled as:
 
 $$P(t^* | q, \text{prompt}) = \frac{\exp(s(t^*, q, \text{prompt}) / \tau)}{\sum_{i=1}^{n} \exp(s(t_i, q, \text{prompt}) / \tau)}$$
 
-where $s(t, q, \text{prompt})$ is the affinity score between tool $t$ and query $q$ given the prompt, $\tau$ is the temperature parameter, and $n$ is the number of available tools.
+where $s(t, q, \text{prompt})$ is the affinity score between tool $t$ and query $q$ given the prompt, $\tau$ is the
+temperature parameter, and $n$ is the number of available tools.
 
 The expected number of tool calls before task completion:
 
 $$\mathbb{E}[N] = \frac{1}{p_{\text{correct}}} + \frac{(1 - p_{\text{correct}})}{p_{\text{correct}}} \cdot \mathbb{E}[N_{\text{recovery}}]$$
 
-where $p_{\text{correct}}$ is the probability of selecting the right tool and $N_{\text{recovery}}$ is the number of additional calls needed to recover from a wrong selection.
+where $p_{\text{correct}}$ is the probability of selecting the right tool and $N_{\text{recovery}}$ is the number of
+additional calls needed to recover from a wrong selection.
 
 ---
 

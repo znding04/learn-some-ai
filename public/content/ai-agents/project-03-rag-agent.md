@@ -1,6 +1,5 @@
 ---
 title: "Project: Implement a RAG Agent"
-level: intermediate
 topic: ai-agents
 order: 18
 estimatedTime: "90 minutes"
@@ -15,9 +14,13 @@ summary: "Build an end-to-end RAG agent that ingests documents, embeds them into
 
 ## Overview
 
-Retrieval-Augmented Generation (RAG) grounds a language model's answers in a corpus of documents so it can respond accurately to questions about private or up-to-date information. In this project you will build an end-to-end RAG agent that ingests documents, embeds them into a FAISS vector store, retrieves the most relevant chunks at query time, optionally re-ranks them, and feeds them to an LLM to produce a cited answer.
+Retrieval-Augmented Generation (RAG) grounds a language model's answers in a corpus of documents so it can respond
+accurately to questions about private or up-to-date information. In this project you will build an end-to-end RAG agent
+that ingests documents, embeds them into a FAISS vector store, retrieves the most relevant chunks at query time,
+optionally re-ranks them, and feeds them to an LLM to produce a cited answer.
 
-The pipeline follows four stages: **Ingest -> Embed -> Retrieve -> Generate**. By the end you will have a self-contained Python script that can answer questions over any document collection.
+The pipeline follows four stages: **Ingest -> Embed -> Retrieve -> Generate**. By the end you will have a self-contained
+Python script that can answer questions over any document collection.
 
 ---
 
@@ -35,7 +38,8 @@ Cosine similarity between a query vector $\mathbf{q}$ and a document vector $\ma
 
 $$\text{sim}(\mathbf{q}, \mathbf{d}) = \frac{\mathbf{q} \cdot \mathbf{d}}{\|\mathbf{q}\| \; \|\mathbf{d}\|}$$
 
-We retrieve the top-$k$ chunks with the highest similarity, then optionally re-rank with a cross-encoder whose relevance score is:
+We retrieve the top-$k$ chunks with the highest similarity, then optionally re-rank with a cross-encoder whose relevance
+score is:
 
 $$s(q, d) = \sigma(\mathbf{w}^T \, \text{BERT}([q; d]) + b)$$
 

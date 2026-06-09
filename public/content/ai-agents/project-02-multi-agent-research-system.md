@@ -1,6 +1,5 @@
 ---
 title: "Project: Multi-Agent Research System"
-level: advanced
 topic: ai-agents
 order: 17
 estimatedTime: "90 minutes"
@@ -15,9 +14,14 @@ summary: "Build a multi-agent research system with a Planner, Searcher, and Synt
 
 ## Overview
 
-This project builds a **multi-agent research system** consisting of three specialised agents -- a Planner, a Searcher, and a Synthesiser -- that collaborate to answer complex research questions. Instead of one monolithic prompt, each agent owns a narrow responsibility and communicates through a shared message bus. The result is a system that can decompose a broad question into sub-queries, gather evidence from the web, and produce a cited summary report.
+This project builds a **multi-agent research system** consisting of three specialised agents -- a Planner, a Searcher,
+and a Synthesiser -- that collaborate to answer complex research questions. Instead of one monolithic prompt, each agent
+owns a narrow responsibility and communicates through a shared message bus. The result is a system that can decompose a
+broad question into sub-queries, gather evidence from the web, and produce a cited summary report.
 
-Multi-agent architectures shine when tasks are too complex for a single context window. By splitting work across agents you gain modularity (swap one agent without rewriting others), parallelism (multiple searchers can run concurrently), and improved reliability (each agent's prompt is simpler so it hallucinates less).
+Multi-agent architectures shine when tasks are too complex for a single context window. By splitting work across agents
+you gain modularity (swap one agent without rewriting others), parallelism (multiple searchers can run concurrently),
+and improved reliability (each agent's prompt is simpler so it hallucinates less).
 
 ---
 
@@ -30,7 +34,9 @@ Multi-agent architectures shine when tasks are too complex for a single context 
 | DAG execution | The Planner produces a directed acyclic graph of sub-tasks |
 | Citation tracking | Every claim links back to a source URL |
 
-When the Planner decomposes a question into $n$ independent sub-queries, the total latency drops from $n \cdot t$ (serial) to roughly $t$ (parallel) plus coordination overhead. The expected wall-clock time with $p$ parallel workers is:
+When the Planner decomposes a question into $n$ independent sub-queries, the total latency drops from $n \cdot t$
+(serial) to roughly $t$ (parallel) plus coordination overhead. The expected wall-clock time with $p$ parallel workers
+is:
 
 $$T_{\text{parallel}} = \frac{n}{p} \cdot t + t_{\text{overhead}}$$
 
