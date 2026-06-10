@@ -1,3 +1,11 @@
+---
+title: "Queueing Networks and Stochastic Optimization with Deep Learning"
+level: intermediate
+topic: ai-for-operations-research
+order: 7
+estimatedTime: "45 minutes"
+---
+
 # Queueing Networks and Stochastic Optimization with Deep Learning
 
 ## Overview
