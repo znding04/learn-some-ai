@@ -160,7 +160,7 @@ sequenceDiagram
     participant EHR as EHR System
     participant CDSS as ML Model
     participant MD as Clinician
-    
+
     EHR->>CDSS: Patient data stream (vitals, labs, orders)
     CDSS->>CDSS: Run prediction model
     CDSS->>EHR: Risk score + explanation

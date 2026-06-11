@@ -141,7 +141,6 @@ trend = np.concatenate([np.full(750, 0.0003), np.full(750, -0.0001)])
 log_returns = trend + daily_vol * rng.standard_normal(n_days)
 prices = 100.0 * np.exp(np.cumsum(log_returns))
 
-
 # ── Signal generation: cross-sectional momentum ───────────────────────────────
 
 def momentum_signal(prices: np.ndarray, lookback: int = 20) -> np.ndarray:
@@ -159,9 +158,7 @@ def momentum_signal(prices: np.ndarray, lookback: int = 20) -> np.ndarray:
         sig[t] = (raw_signal[t] - np.nanmean(w)) / (np.nanstd(w) + 1e-8)
     return sig
 
-
 signal = momentum_signal(prices, lookback=20)
-
 
 # ── Position sizing ───────────────────────────────────────────────────────────
 
@@ -171,9 +168,7 @@ def signal_to_positions(signal: np.ndarray, max_pos: float = 1.0) -> np.ndarray:
     pos = np.where(np.isfinite(pos), pos, 0.0)
     return np.clip(pos, -max_pos, max_pos)
 
-
 target_positions = signal_to_positions(signal)
-
 
 # ── Transaction cost modeling ─────────────────────────────────────────────────
 
@@ -212,9 +207,7 @@ def vectorized_backtest(
         "cum_net":     np.cumsum(net_pnl),
     }
 
-
 results = vectorized_backtest(prices, target_positions, slippage_bps=5, commission_bps=1)
-
 
 # ── Sharpe ratio with block bootstrap ────────────────────────────────────────
 
@@ -248,7 +241,6 @@ def sharpe_with_bootstrap(
     lo, hi = np.percentile(bs_sharpes, [2.5, 97.5])
     return point_est, lo, hi
 
-
 gross_sr, g_lo, g_hi = sharpe_with_bootstrap(results["gross_pnl"])
 net_sr,   n_lo, n_hi = sharpe_with_bootstrap(results["net_pnl"])
 
@@ -258,7 +250,6 @@ print(f"Net Sharpe:   {net_sr:+.2f}  95% CI [{n_lo:+.2f}, {n_hi:+.2f}]")
 print(f"Avg daily turnover: {results['turnover'].mean():.3f}")
 print(f"Cumulative gross P&L: {results['cum_gross'][-1]:.2%}")
 print(f"Cumulative net P&L:   {results['cum_net'][-1]:.2%}")
-
 
 # ── Alpha decay analysis ──────────────────────────────────────────────────────
 
@@ -287,14 +278,12 @@ def alpha_decay_analysis(
             ics.append(np.nan)
     return np.array(ics)
 
-
 ics = alpha_decay_analysis(signal, prices)
 half_life = np.argmax(ics < ics[0] / 2) + 1 if ics[0] > 0 else None
 print(f"\nSignal IC at 1-day horizon:  {ics[0]:.3f}")
 print(f"Signal IC at 5-day horizon:  {ics[4]:.3f}")
 print(f"Signal IC at 20-day horizon: {ics[19]:.3f}")
 print(f"Estimated alpha half-life:   {half_life} days" if half_life else "No decay detected")
-
 
 # ── VWAP execution simulation ─────────────────────────────────────────────────
 
@@ -333,7 +322,6 @@ def simulate_vwap(
         "vwap_shortfall_bps":  (vwap_price  - arrival_price) / arrival_price * 10_000,
         "naive_shortfall_bps": (naive_price - arrival_price) / arrival_price * 10_000,
     }
-
 
 vwap_results = simulate_vwap(order_qty=5000)
 print(f"\n=== VWAP vs. Naive Execution (5000-share order) ===")

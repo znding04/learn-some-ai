@@ -68,7 +68,7 @@ def simulate_dispatch(jobs, dispatch_rule):
     import heapq
     time = 0
     completed = []
-    
+
     if dispatch_rule == "SPT":
         # Sort by processing time
         queue = sorted(enumerate(jobs), key=lambda x: x[1]['proc_time'])
@@ -77,13 +77,13 @@ def simulate_dispatch(jobs, dispatch_rule):
         queue = sorted(enumerate(jobs), key=lambda x: x[1]['due_date'])
     else:
         queue = list(enumerate(jobs))
-    
+
     for idx, job in queue:
         time += job['proc_time']
         completion_time = time
         tardiness = max(0, completion_time - job['due_date'])
         completed.append({'job': idx, 'completion': completion_time, 'tardiness': tardiness})
-    
+
     return completed
 
 jobs = [

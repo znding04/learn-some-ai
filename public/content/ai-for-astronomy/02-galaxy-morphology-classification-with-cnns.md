@@ -167,7 +167,6 @@ class SyntheticGalaxyDataset(Dataset):
             img = self.transform(img)
         return img, label
 
-
 # -------------------------------------------------------------------------
 # Model definition: lightweight CNN for galaxy classification
 # -------------------------------------------------------------------------
@@ -217,7 +216,6 @@ class GalaxyCNN(nn.Module):
         x = x.view(x.size(0), -1)
         return self.classifier(x)
 
-
 # -------------------------------------------------------------------------
 # Data augmentation: exploit rotational symmetry of galaxies
 # -------------------------------------------------------------------------
@@ -251,7 +249,6 @@ def train_epoch(model, loader, optimizer, criterion, device):
     n = len(loader.dataset)
     return total_loss / n, correct / n
 
-
 def eval_epoch(model, loader, criterion, device):
     model.eval()
     total_loss, correct = 0.0, 0
@@ -264,7 +261,6 @@ def eval_epoch(model, loader, criterion, device):
             correct += (outputs.argmax(1) == labels).sum().item()
     n = len(loader.dataset)
     return total_loss / n, correct / n
-
 
 def run_training():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -325,7 +321,6 @@ def run_training():
     plt.show()
 
     return model, history
-
 
 if __name__ == "__main__":
     model, history = run_training()

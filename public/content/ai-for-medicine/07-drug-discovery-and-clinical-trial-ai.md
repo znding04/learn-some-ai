@@ -26,7 +26,7 @@ flowchart LR
     C1 --> C2[Phase II<br/>Efficacy]
     C2 --> C3[Phase III<br/>Large-Scale]
     C3 --> A[FDA<br/>Approval]
-    
+
     T ---|AI: genomics,<br/>network analysis| T
     H ---|AI: virtual screening,<br/>generative models| H
     L ---|AI: ADMET prediction,<br/>multi-objective opt| L
@@ -157,7 +157,7 @@ import torch.nn as nn
 
 class ADMETPredictor(nn.Module):
     """Multi-task ADMET prediction from molecular fingerprints."""
-    
+
     def __init__(self, input_dim=2048, hidden_dim=512):
         super().__init__()
         self.shared = nn.Sequential(
@@ -173,7 +173,7 @@ class ADMETPredictor(nn.Module):
         self.permeability_head = nn.Linear(256, 1)     # regression
         self.cyp_inhibition_head = nn.Linear(256, 5)   # multi-label (5 CYP isoforms)
         self.toxicity_head = nn.Linear(256, 1)         # binary classification
-    
+
     def forward(self, x):
         shared = self.shared(x)
         return {

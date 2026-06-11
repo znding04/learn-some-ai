@@ -49,7 +49,7 @@ def extract_commit_features(repo_path: str, n_commits: int = 500) -> pd.DataFram
         ["git", "log", f"-{n_commits}", f"--format={log_format}", "--numstat"],
         cwd=repo_path, capture_output=True, text=True
     )
-    
+
     commits = []
     current = None
     for line in result.stdout.strip().split("\n"):
@@ -68,7 +68,7 @@ def extract_commit_features(repo_path: str, n_commits: int = 500) -> pd.DataFram
                 current["lines_deleted"] += int(parts[1])
     if current:
         commits.append(current)
-    
+
     df = pd.DataFrame(commits)
     # Feature engineering
     df["change_size"] = df["lines_added"] + df["lines_deleted"]
@@ -86,7 +86,7 @@ def train_defect_predictor(df: pd.DataFrame):
                 "change_size", "add_del_ratio"]
     X = df[features].fillna(0)
     y = df["is_buggy"]
-    
+
     clf = RandomForestClassifier(n_estimators=100, random_state=42)
     scores = cross_val_score(clf, X, y, cv=5, scoring="f1")
     print(f"Defect prediction F1: {scores.mean():.3f} ± {scores.std():.3f}")

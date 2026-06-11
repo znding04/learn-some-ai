@@ -48,7 +48,7 @@ import re
 
 def extract_gdpr_obligations(article_text: str) -> list[dict]:
     """Extract obligations and conditions from GDPR article text."""
-    
+
     # Pattern:识别obligation-triggering phrases
     obligation_patterns = [
         (r"shall\s+(.+?)(?:\.|$)", "obligation"),
@@ -57,7 +57,7 @@ def extract_gdpr_obligations(article_text: str) -> list[dict]:
         (r"shall\s+not\s+(.+?)(?:\.|$)", "prohibition"),
         (r"the\s+controller\s+(.+?)(?:\.|$)", "controller_duty"),
     ]
-    
+
     results = []
     for pattern, label in obligation_patterns:
         matches = re.finditer(pattern, article_text, re.IGNORECASE | re.MULTILINE)
@@ -67,11 +67,11 @@ def extract_gdpr_obligations(article_text: str) -> list[dict]:
                 "text": m.group(0).strip(),
                 "action": m.group(1).strip() if m.lastindex else m.group(0)
             })
-    
+
     # Extract exceptions (条件 clauses)
     exception_pattern = r"where\s+(.+?)(?:shall|must|may)"
     exceptions = re.findall(exception_pattern, article_text, re.IGNORECASE)
-    
+
     return {
         "obligations": results,
         "exceptions": [{"condition": e.strip()} for e in exceptions]
@@ -79,12 +79,12 @@ def extract_gdpr_obligations(article_text: str) -> list[dict]:
 
 gdpr_article17 = """
 Article 17 Right to erasure ('right to be forgotten')
-1. The data subject shall have the right to obtain from the controller the 
-   erasure of personal data concerning him or her without undue delay and 
+1. The data subject shall have the right to obtain from the controller the
+   erasure of personal data concerning him or her without undue delay and
    the controller shall have the obligation to erase personal data.
-2. Where the controller has made the personal data public, the controller 
+2. Where the controller has made the personal data public, the controller
    shall take account of available technology and the cost of erasure...
-3. The right to erasure shall not apply to the extent that processing is 
+3. The right to erasure shall not apply to the extent that processing is
    necessary for the establishment, exercise or defence of legal claims.
 """
 
@@ -112,7 +112,7 @@ flowchart TD
     F -->|No| H["Gap Analysis Report\n+ remediation plan"]
     H --> I["Implement Changes\n(processes, documentation)"]
     I --> G
-    
+
     G -->|"New regulation"|A
 ```
 

@@ -48,7 +48,7 @@ flowchart TD
         PR --> SORT["Automated\nSorter"]
         SORT --> OUT["Outbound\nDock"]
     end
-    AMR -.-> "Dynamic\nRouting" 
+    AMR -.-> "Dynamic\nRouting"
     PS -.-> "Order\nBatching AI"
     PR -.-> "Box Selection\nML"
 ```
@@ -76,14 +76,14 @@ def nearest_neighbor_pick(pick_locations: list, depot: tuple) -> list:
     remaining = list(pick_locations)
     route = []
     current = depot
-    
+
     while remaining:
         distances = [np.sqrt((current[0] - p[0])**2 + (current[1] - p[1])**2) for p in remaining]
         nearest_idx = np.argmin(distances)
         nearest = remaining.pop(nearest_idx)
         route.append(nearest)
         current = nearest
-    
+
     route.append(depot)  # return to depot
     return route
 
@@ -109,16 +109,16 @@ def conflict_based_search(agents, obstacles):
     '''Simplified CBS: find conflict-free paths for all agents.'''
     # Start with independent shortest paths
     paths = [shortest_path(a.start, a.goal, obstacles) for a in agents]
-    
+
     while True:
         # Detect conflicts (two agents in same cell at same time)
         conflicts = find_conflicts(paths)
         if not conflicts:
             return paths  # All conflict-free
-        
+
         # Create constraints from most pressing conflict
         constraint = conflict_to_constraint(conflicts[0])
-        
+
         # Re-plan agents affected by constraint
         for agent_id in constraint['agents']:
             paths[agent_id] = shortest_path_with_constraint(

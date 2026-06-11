@@ -91,7 +91,6 @@ class WaypointController:
         self.integral_error = np.zeros(3)
         self.prev_error = np.zeros(3)
 
-
 def follow_waypoints(waypoints, start_pos, dt=0.02, threshold=0.3):
     """Simulate waypoint following with simple dynamics."""
     controller = WaypointController(dt=dt)
@@ -128,7 +127,6 @@ def follow_waypoints(waypoints, start_pos, dt=0.02, threshold=0.3):
             controller.reset()
 
     return np.array(trajectory)
-
 
 # Example usage
 waypoints = [

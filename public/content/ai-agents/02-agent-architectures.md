@@ -74,7 +74,7 @@ import json
 def react_agent(goal, tools, llm, max_steps=10):
     """
     ReAct agent: interleave reasoning and action.
-    
+
     tools: dict of {name: {"fn": callable, "description": str}}
     llm: function(prompt) -> str
     """
@@ -83,7 +83,7 @@ def react_agent(goal, tools, llm, max_steps=10):
         f"- {name}: {info['description']}"
         for name, info in tools.items()
     )
-    
+
     system = f"""You are a ReAct agent. You have these tools:
 {tool_desc}
 
@@ -101,34 +101,33 @@ Action Input: <final answer>"""
         {"role": "system", "content": system},
         {"role": "user", "content": f"Goal: {goal}"}
     ]
-    
+
     for step in range(max_steps):
         # Get LLM response
         response = llm(messages)
         messages.append({"role": "assistant", "content": response})
-        
+
         # Parse Thought, Action, Action Input
         thought, action, action_input = parse_react(response)
         print(f"Step {step+1} | Thought: {thought}")
         print(f"         | Action: {action}({action_input})")
-        
+
         if action == "finish":
             return action_input
-        
+
         # Execute tool and feed observation back
         if action in tools:
             observation = tools[action]["fn"](action_input)
         else:
             observation = f"Error: unknown tool '{action}'"
-        
+
         print(f"         | Observation: {observation}\n")
         messages.append({
             "role": "user",
             "content": f"Observation: {observation}"
         })
-    
-    return "Reached max steps without finishing."
 
+    return "Reached max steps without finishing."
 
 def parse_react(text):
     """Extract Thought, Action, and Action Input from LLM output."""

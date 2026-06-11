@@ -103,7 +103,6 @@ class SoCEstimator(nn.Module):
         soc = self.sigmoid(self.fc(out))  # SoC ∈ [0, 1]
         return soc.squeeze(-1)
 
-
 # Example
 model = SoCEstimator()
 # Simulate a discharge cycle: 100 timesteps, batch of 8
@@ -156,7 +155,6 @@ def simulate_battery_arbitrage(
                        if (soc_history[i] - soc_history[i-1]) *
                           (soc_history[i-1] - soc_history[max(0, i-2)]) < 0) / 2
     }
-
 
 # Example: 24-hour price profile
 prices = np.array([0.04, 0.03, 0.03, 0.03, 0.04, 0.05, 0.08, 0.12,

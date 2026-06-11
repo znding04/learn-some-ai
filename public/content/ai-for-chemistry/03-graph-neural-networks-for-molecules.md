@@ -48,7 +48,7 @@ import numpy as np
 # Convert molecule to PyG Data object
 def mol_to_pyg(smiles, y=None):
     mol = Chem.MolFromSmiles(smiles)
-    
+
     # Atom features: [atomic_num, degree, formal_charge, aromatic]
     x = []
     for atom in mol.GetAtoms():
@@ -59,14 +59,14 @@ def mol_to_pyg(smiles, y=None):
             int(atom.GetIsAromatic()),
         ])
     x = torch.tensor(x, dtype=torch.float)
-    
+
     # Edge index
     edge_index = []
     for bond in mol.GetBonds():
         i, j = bond.GetBeginAtomIdx(), bond.GetEndAtomIdx()
         edge_index += [[i, j], [j, i]]
     edge_index = torch.tensor(edge_index, dtype=torch.long).t().contiguous()
-    
+
     data = Data(x=x, edge_index=edge_index)
     if y is not None:
         data.y = torch.tensor([y], dtype=torch.float)
@@ -80,16 +80,16 @@ class MoleculeGCN(torch.nn.Module):
         self.conv2 = GCNConv(hidden_channels, hidden_channels)
         self.conv3 = GCNConv(hidden_channels, hidden_channels)
         self.lin = torch.nn.Linear(hidden_channels, out_channels)
-    
+
     def forward(self, x, edge_index, batch):
         # Message passing layers
         x = F.relu(self.conv1(x, edge_index))
         x = F.relu(self.conv2(x, edge_index))
         x = F.relu(self.conv3(x, edge_index))
-        
+
         # Readout: aggregate node features to graph level
         x = global_mean_pool(x, batch)  # [batch_size, hidden_channels]
-        
+
         # Predict property
         x = self.lin(x)
         return x
@@ -101,7 +101,7 @@ print(f"Caffeine graph: {caffeine_data.num_nodes} atoms, "
 
 # Initialize and run model
 model = MoleculeGCN()
-out = model(caffeine_data.x, caffeine_data.edge_index, 
+out = model(caffeine_data.x, caffeine_data.edge_index,
             torch.zeros(caffeine_data.num_nodes, dtype=torch.long))
 print(f"Predicted property: {out.item():.4f}")
 ```
@@ -146,7 +146,7 @@ graph TD
         C --> D
         D --> G[Updated Atom i]
     end
-    
+
     subgraph "Full Pipeline"
         H[Molecular Graph] --> I[Layer 1]
         I --> J[Layer 2]

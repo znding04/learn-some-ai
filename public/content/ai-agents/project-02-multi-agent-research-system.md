@@ -62,7 +62,6 @@ class Message:
     payload: dict
     msg_id: str = field(default_factory=lambda: uuid.uuid4().hex[:8])
 
-
 class MessageBus:
     """Simple async message bus backed by per-agent queues."""
 
@@ -126,7 +125,6 @@ async def planner_agent(bus: MessageBus):
         payload={"expected": len(plan["sub_queries"]), "question": question},
     ))
 
-
 # ---------- Searcher Agent ----------
 
 async def searcher_agent(bus: MessageBus):
@@ -154,7 +152,6 @@ async def searcher_agent(bus: MessageBus):
             kind="search_result",
             payload={"sub_query": query, "snippets": snippets},
         ))
-
 
 # ---------- Synthesiser Agent ----------
 

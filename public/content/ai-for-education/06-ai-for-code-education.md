@@ -62,7 +62,6 @@ import ast
 from collections import Counter
 from difflib import SequenceMatcher
 
-
 def extract_ast_features(code: str) -> dict:
     """Extract structural features from Python code's AST."""
     try:
@@ -101,7 +100,6 @@ def extract_ast_features(code: str) -> dict:
     walk(tree)
     return features
 
-
 def normalize_ast(code: str) -> str:
     """Normalize an AST by stripping variable names and docstrings."""
     try:
@@ -138,7 +136,6 @@ def normalize_ast(code: str) -> str:
     normalized_tree = normalizer.visit(tree)
     return ast.dump(normalized_tree)
 
-
 def ast_similarity(code1: str, code2: str) -> float:
     """Compute similarity between two code snippets based on AST structure."""
     norm1 = normalize_ast(code1)
@@ -171,7 +168,6 @@ def ast_similarity(code1: str, code2: str) -> float:
 
     # Weighted combination
     return 0.6 * seq_sim + 0.4 * cosine_sim
-
 
 # Example: two implementations of the same function
 code_a = """

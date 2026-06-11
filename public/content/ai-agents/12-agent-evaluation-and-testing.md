@@ -101,7 +101,6 @@ import json
 from dataclasses import dataclass, field
 from typing import Optional
 
-
 @dataclass
 class AgentTrace:
     """Records one agent execution for evaluation."""
@@ -114,7 +113,6 @@ class AgentTrace:
     actual_steps: list[dict] = field(default_factory=list)
     total_tokens: int = 0
     latency_ms: float = 0.0
-
 
 def evaluate_trace(trace: AgentTrace) -> dict:
     """Compute all evaluation metrics for a single agent trace."""
@@ -153,7 +151,6 @@ def evaluate_trace(trace: AgentTrace) -> dict:
         "latency_ms": trace.latency_ms,
     }
 
-
 def evaluate_suite(traces: list[AgentTrace]) -> dict:
     """Aggregate metrics across a full evaluation suite."""
     results = [evaluate_trace(t) for t in traces]
@@ -176,7 +173,6 @@ def evaluate_suite(traces: list[AgentTrace]) -> dict:
         "avg_steps_per_task": round(avg_steps, 1),
         "per_task": results,
     }
-
 
 # --- Example usage ---
 traces = [

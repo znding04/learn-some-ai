@@ -79,13 +79,13 @@ def clark_wright_savings(customers: list, depot: tuple, vehicle_capacity: float)
             didj = math.sqrt((ci[1]-cj[1])**2 + (ci[2]-cj[2])**2)
             saving = di_dj + dj_di - didj
             savings.append((saving, i, j))
-    
+
     # Step 2: Sort savings descending
     savings.sort(key=lambda s: s[0], reverse=True)
-    
+
     # Step 3: Merge routes
     routes = {i: [i] for i in range(len(customers))}
-    
+
     for _, i, j in savings:
         ri, rj = routes.get(i, [i]), routes.get(j, [j])
         if ri is rj:
@@ -98,7 +98,7 @@ def clark_wright_savings(customers: list, depot: tuple, vehicle_capacity: float)
         new_route = ri + rj
         for k in rj:
             routes[k] = new_route
-    
+
     # Collect unique routes
     seen = set()
     result = []

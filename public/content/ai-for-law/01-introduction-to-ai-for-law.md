@@ -54,19 +54,19 @@ flowchart TD
     A --> C[Retrieval AI]
     A --> D[Reasoning AI]
     A --> E[Generative AI]
-    
+
     B --> B1[Contract Analysis]
     B --> B2[Clause Classification]
     B --> B3[NER for Legal Entities]
-    
+
     C --> C1[Case Law Search]
     C --> C2[Statutory Retrieval]
     C --> C3[Precedent Research]
-    
+
     D --> D1[Statutory Reasoning]
     D --> D2[Argument Mining]
     D --> D3[Risk Assessment]
-    
+
     E --> E1[Document Drafting]
     E --> E2[Legal Writing Aid]
     E --> E3[Regulatory Impact Analysis]

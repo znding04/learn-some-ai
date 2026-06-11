@@ -64,7 +64,7 @@ class SkinLesionClassifier(nn.Module):
             nn.Dropout(p=0.4),
             nn.Linear(in_features, num_classes),
         )
-    
+
     def forward(self, x):
         return self.backbone(x)
 

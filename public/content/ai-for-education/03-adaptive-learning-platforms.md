@@ -71,7 +71,6 @@ class IRTModel:
         a = self.a[item_idx]
         return a**2 * p * (1 - p)
 
-
 def adaptive_test(model: IRTModel, true_theta: float, num_questions: int = 10):
     """
     Simulate a computerized adaptive test.
@@ -112,7 +111,6 @@ def adaptive_test(model: IRTModel, true_theta: float, num_questions: int = 10):
     print(f"\nTrue ability: {true_theta:+.3f}")
     print(f"Estimated ability: {theta_hat:+.3f}")
     print(f"Error: {abs(theta_hat - true_theta):.3f}")
-
 
 # Run adaptive test
 np.random.seed(123)

@@ -92,7 +92,6 @@ class Vehicle:
                 ))
         return detections
 
-
 def fuse_detections(
     local_dets: List[Detection],
     shared_dets: List[Detection],
@@ -125,7 +124,6 @@ def fuse_detections(
             fused.append(s_det)
 
     return fused
-
 
 # Simulation setup
 objects = {

@@ -54,16 +54,16 @@ class BrainDigitalTwin:
         self.subject_id = subject_id
         self.sc = structural_connectome  # adjacency matrix
         self.fc = self._compute_fc(functional_timeseries)
-        
+
     def _compute_fc(self, timeseries):
         """Functional connectivity = Pearson correlation of regional timeseries"""
         return np.corrcoef(timeseries.T)
-    
+
     def predict_treatment_response(self, drug_effects):
         """
         Simulate predicting response to different drugs.
         drug_effects: dict of drug_name -> effectiveness model parameters
-        
+
         Returns: predicted outcomes for each drug
         """
         results = {}

@@ -128,10 +128,10 @@ def inpaint_step(model, x_t, t, original_audio, mask, text_cond):
     # Denoise the full sequence
     predicted_noise = model(x_t, t, text_cond)
     x_denoised = reverse_step(x_t, predicted_noise, t)
-    
+
     # Re-noise the original audio to timestep t-1
     original_noised = add_noise(original_audio, torch.randn_like(original_audio), t - 1)
-    
+
     # Combine: keep original in unmasked regions, use generated in masked regions
     x_next = mask * x_denoised + (1 - mask) * original_noised
     return x_next

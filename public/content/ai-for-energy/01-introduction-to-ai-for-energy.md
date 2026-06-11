@@ -102,7 +102,6 @@ def economic_dispatch(demand: float, generators: list[dict]) -> dict:
         dispatch[i] = float(np.clip(p, g['Pmin'], g['Pmax']))
     return dispatch
 
-
 # Example: 3-generator system
 generators = [
     {'a': 0.004, 'b': 5.3, 'Pmin': 100, 'Pmax': 500},

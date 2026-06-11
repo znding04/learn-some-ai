@@ -105,7 +105,6 @@ for thought in thoughts:
     print(f"Thought: {thought}")
     print(f"  Detected distortions: {result}\n")
 
-
 # Simple homework recommender using contextual features
 def recommend_homework(symptom_scores, completion_rates, exercise_library):
     """Recommend next CBT homework based on recent symptom trajectory."""

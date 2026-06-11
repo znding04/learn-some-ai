@@ -117,7 +117,6 @@ class SimpleLevelGAN:
 
         return d_error_real.item(), d_error_fake.item()
 
-
 def create_training_levels(n: int, size: int = 8) -> np.ndarray:
     """Create sample platformer levels (floor + platforms)."""
     levels = np.zeros((n, size, size))

@@ -137,13 +137,13 @@ class KnowledgeBase:
     def __init__(self):
         self.facts = set()
         self.rules = []  # (antecedents, consequent)
-    
+
     def add_fact(self, fact):
         self.facts.add(fact)
-    
+
     def add_rule(self, antecedents, consequent):
         self.rules.append((antecedents, consequent))
-    
+
     def forward_chain(self):
         """Infer new facts until fixpoint"""
         changed = True
@@ -178,7 +178,7 @@ flowchart TD
     G --> H[Knowledge Base Query]
     H --> I[Entailment Check]
     I --> J[Formal Answer]
-    
+
     style A fill:#e1f5fe
     style G fill:#fff3e0
     style J fill:#e8f5e9

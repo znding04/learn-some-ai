@@ -53,7 +53,7 @@ class RULPredictor(nn.Module):
             nn.Linear(32, 1),
             nn.Softplus()  # Positive RUL output
         )
-    
+
     def forward(self, x):
         # x: [batch, seq_len, input_dim]
         lstm_out, (h_n, c_n) = self.lstm(x)
@@ -88,10 +88,10 @@ class DefectClassifier(nn.Module):
         # Use pretrained ResNet backbone
         self.backbone = torch.hub.load('pytorch/vision', 'resnet18', pretrained=True)
         self.backbone.fc = nn.Linear(512, num_defect_classes)
-    
+
     def forward(self, x):
         return self.backbone(x)
-    
+
     def train_with_angles(self, train_loader, val_loader, epochs=50):
         """Use data augmentation (rotation, flip) for defect orientation invariance."""
         for epoch in range(epochs):
@@ -116,20 +116,20 @@ class UNetDefectSegmentation(nn.Module):
         self.enc1 = self._block(in_channels, 64)
         self.enc2 = self._block(64, 128)
         self.enc3 = self._block(128, 256)
-        
+
         # Decoder
         self.dec2 = self._block(256 + 128, 128)
         self.dec1 = self._block(128 + 64, 64)
         self.out = nn.Conv2d(64, out_channels, 1)
-        
+
         self.pool = nn.MaxPool2d(2)
         self.upsample = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=True)
-    
+
     def forward(self, x):
         e1 = self.enc1(x)
         e2 = self.enc2(self.pool(e1))
         e3 = self.enc3(self.pool(e2))
-        
+
         d2 = self.dec2(torch.cat([self.upsample(e3), e2], dim=1))
         d1 = self.dec1(torch.cat([self.upsample(d2), e1], dim=1))
         return torch.sigmoid(self.out(d1))
@@ -153,7 +153,7 @@ class MeltPoolClassifier(nn.Module):
         self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
         self.lstm = nn.LSTM(64 * 64, 128, batch_first=True)
         self.fc = nn.Linear(128, 2)  # Normal vs Defect
-    
+
     def forward(self, x):
         # x: [batch, seq_len, H, W]
         x = torch.relu(self.conv1(x))
@@ -178,7 +178,7 @@ def optimize_am_params():
         Real(50, 150, name='hatch_spacing_um'),
         Real(20, 80, name='layer_thickness_um'),
     ]
-    
+
     def objective(params):
         density, roughness = run_am_experiment(
             laser_power=params[0],
@@ -187,7 +187,7 @@ def optimize_am_params():
             layer_thickness=params[3]
         )
         return -(0.6 * density + 0.4 * (1 / (roughness + 1e-6)))
-    
+
     result = gp_minimize(objective, dimensions, n_calls=50, random_state=42)
     return result.x
 ```

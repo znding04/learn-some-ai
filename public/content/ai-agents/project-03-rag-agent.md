@@ -63,7 +63,6 @@ def load_documents(directory: str) -> list[dict]:
             docs.append({"source": str(p), "text": text})
     return docs
 
-
 def chunk_text(text: str, chunk_size: int = 500, overlap: int = 100) -> list[str]:
     """Split text into overlapping chunks by character count."""
     chunks = []
@@ -73,7 +72,6 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 100) -> list[str
         chunks.append(text[start:end])
         start += chunk_size - overlap
     return chunks
-
 
 def build_corpus(directory: str) -> list[dict]:
     """Return a list of {source, chunk_index, text} dicts."""
@@ -97,7 +95,6 @@ from sentence_transformers import SentenceTransformer
 
 EMBED_MODEL = SentenceTransformer("all-MiniLM-L6-v2")  # dimension = 384
 
-
 def create_index(corpus: list[dict]) -> tuple[faiss.IndexFlatIP, np.ndarray]:
     """Embed all chunks and build a FAISS inner-product index."""
     texts = [c["text"] for c in corpus]
@@ -108,7 +105,6 @@ def create_index(corpus: list[dict]) -> tuple[faiss.IndexFlatIP, np.ndarray]:
     index = faiss.IndexFlatIP(dim)  # inner product on normalised vecs = cosine sim
     index.add(embeddings)
     return index, embeddings
-
 
 def retrieve(query: str, index: faiss.IndexFlatIP,
              corpus: list[dict], top_k: int = 10) -> list[dict]:
@@ -130,7 +126,6 @@ from sentence_transformers import CrossEncoder
 
 RERANKER = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
-
 def rerank(query: str, results: list[dict], top_n: int = 5) -> list[dict]:
     """Re-rank retrieved chunks with a cross-encoder."""
     pairs = [(query, r["text"]) for r in results]
@@ -147,7 +142,6 @@ def rerank(query: str, results: list[dict], top_n: int = 5) -> list[dict]:
 import openai
 
 client = openai.OpenAI()
-
 
 def generate_answer(query: str, context_chunks: list[dict]) -> str:
     """Generate an answer grounded in retrieved context."""

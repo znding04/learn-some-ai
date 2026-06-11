@@ -116,7 +116,6 @@ def mandel_agol_transit(t, t0, P, Rp_Rs, a_Rs, b=0.0, u1=0.3, u2=0.2):
             flux[i] = 1.0 - transit_depth * overlap
     return flux
 
-
 def generate_light_curve(n_points=1500, cadence_min=30.0, seed=None,
                          planet=True, Rp_Rs=0.1, P_days=10.0,
                          noise_level=500e-6):
@@ -165,7 +164,6 @@ def generate_light_curve(n_points=1500, cadence_min=30.0, seed=None,
 
     return t, flux
 
-
 # -------------------------------------------------------------------------
 # Box Least Squares (simplified BLS periodogram)
 # -------------------------------------------------------------------------
@@ -203,7 +201,6 @@ def bls_periodogram(t, flux, P_min=0.5, P_max=50.0, n_periods=5000,
 
     return periods, sr
 
-
 def phase_fold(t, flux, period, t0=0.0, n_bins=200):
     """Phase-fold and bin a light curve."""
     phase = ((t - t0) % period) / period
@@ -220,7 +217,6 @@ def phase_fold(t, flux, period, t0=0.0, n_bins=200):
 
     bin_centers = 0.5 * (bins[:-1] + bins[1:])
     return bin_centers, binned_flux
-
 
 # -------------------------------------------------------------------------
 # CNN classifier on phase-folded light curves
@@ -263,7 +259,6 @@ class TransitCNN(nn.Module):
         l = self.local_branch(local_view.unsqueeze(1))
         x = torch.cat([g, l], dim=1)
         return self.head(x)
-
 
 def build_training_data(n_planet=400, n_false=400,
                         global_bins=200, local_bins=50):
@@ -326,7 +321,6 @@ def build_training_data(n_planet=400, n_false=400,
     Y = torch.tensor(np.array(labels)[idx], dtype=torch.long)
     return G, L, Y
 
-
 def train_transit_classifier():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Training transit classifier on: {device}")
@@ -365,7 +359,6 @@ def train_transit_classifier():
                   f"Val acc: {val_correct/len(val_ds):.3f}")
 
     return model
-
 
 def plot_example_transit():
     """Visualize a synthetic transit light curve and phase-folded view."""
@@ -408,7 +401,6 @@ def plot_example_transit():
     plt.tight_layout()
     plt.savefig("transit_example.png", dpi=150)
     plt.show()
-
 
 if __name__ == "__main__":
     plot_example_transit()

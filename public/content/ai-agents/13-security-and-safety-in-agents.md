@@ -122,7 +122,6 @@ def check_injection(text: str) -> tuple[bool, Optional[str]]:
             return True, pattern
     return False, None
 
-
 # -----------------------------------------------------------
 # 2. Tool call validator: enforce allowlists and argument rules
 # -----------------------------------------------------------
@@ -185,7 +184,6 @@ class ToolGuard:
         self.call_counts[tool_name] = count + 1
         return True, "OK"
 
-
 # -----------------------------------------------------------
 # 3. Rate limiter: token-bucket per user
 # -----------------------------------------------------------
@@ -212,7 +210,6 @@ class TokenBucketRateLimiter:
             self.tokens -= cost
             return True
         return False
-
 
 # --- Demo ---
 guard = ToolGuard(user_approved_recipients=["alice@company.com"])

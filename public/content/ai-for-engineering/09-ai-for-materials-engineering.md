@@ -40,7 +40,7 @@ def compute_composition_features(element_list, fractions):
         ' Melting Point': np.array([923, 1560, ...]),     # Kelvin
         ' Density': np.array([2.70, 7.87, ...]),           # g/cm^3
     }
-    
+
     features = []
     for prop_name, prop_values in properties.items():
         mean = np.sum(fractions * prop_values)
@@ -48,7 +48,7 @@ def compute_composition_features(element_list, fractions):
         max_val = np.max(prop_values)
         min_val = np.min(prop_values)
         features.extend([mean, std, max_val, min_val])
-    
+
     return np.array(features)
 
 def compute_structure_features(crystal_lattice, atom_positions):
@@ -62,7 +62,7 @@ def compute_structure_features(crystal_lattice, atom_positions):
         for j, pos_j in enumerate(atom_positions):
             if i < j:
                 distances.append(np.linalg.norm(pos_i - pos_j))
-    
+
     # Bin into histogram features
     rdf_hist, _ = np.histogram(distances, bins=50, range=(0, 10))
     return rdf_hist / rdf_hist.sum()  # Normalized RDF
@@ -82,7 +82,7 @@ def train_materials_predictor(X_train, y_train):
     y_train: [n_samples] target property (e.g., bulk modulus, yield strength)
     """
     train_data = lgb.Dataset(X_train, label=y_train)
-    
+
     params = {
         'objective': 'regression',
         'metric': 'rmse',
@@ -93,7 +93,7 @@ def train_materials_predictor(X_train, y_train):
         'bagging_freq': 5,
         'min_data_in_leaf': 5
     }
-    
+
     model = lgb.train(params, train_data, num_boost_round=1000)
     return model
 ```
@@ -108,7 +108,7 @@ import torch.nn as nn
 
 class CGCNN(nn.Module):
     """Crystal Graph Convolutional Neural Network for property prediction."""
-    def __init__(self, atom_feature_dim=92, nbr_feature_dim=41, 
+    def __init__(self, atom_feature_dim=92, nbr_feature_dim=41,
                  embedding_dim=64, num_conv=3, n_classes=1):
         super().__init__()
         # Atom embedding
@@ -122,22 +122,22 @@ class CGCNN(nn.Module):
         # Pooling and prediction
         self.pool = nn.Linear(embedding_dim, embedding_dim)
         self.predictor = nn.Linear(embedding_dim, n_classes)
-    
+
     def forward(self, atom_features, nbr_indices, nbr_features, batch_idx):
         # Atom features: [N_atoms, atom_feature_dim]
         # Nbr indices: [N_atoms, max_n_neighbors]
         # Nbr features: [N_atoms, max_n_neighbors, nbr_feature_dim]
         x = torch.relu(self.atom_embedding(atom_features))
-        
+
         for conv in self.convs:
             x = conv(x, nbr_indices, nbr_features)
-        
+
         # Pool to crystal-level representation
         crystal_feat = self.pool(torch.zeros_like(x))
         for i in range(int(batch_idx.max()) + 1):
             mask = (batch_idx == i)
             crystal_feat[mask] = x[mask].mean(dim=0)
-        
+
         return self.predictor(crystal_feat[:len(atom_features)])
 
 class GraphConv(nn.Module):
@@ -145,18 +145,18 @@ class GraphConv(nn.Module):
     def __init__(self, in_dim, out_dim):
         super().__init__()
         self.fc = nn.Linear(in_dim, out_dim)
-    
+
     def forward(self, node_features, nbr_indices, nbr_features):
         # Aggregate neighbor features
         N, K = nbr_indices.shape
         out_dim = node_features.shape[1]
         aggregated = torch.zeros_like(node_features)
-        
+
         for k in range(K):
             nbr_idx = nbr_indices[:, k]
             nbr_feat = node_features[nbr_idx]
             aggregated += nbr_feat
-        
+
         aggregated /= K
         return torch.relu(self.fc(aggregated))
 ```
@@ -177,7 +177,7 @@ class BayesianLinear(nn.Module):
         self.weight_std = nn.Parameter(torch.ones(out_features, in_features) * prior_std)
         self.bias_mean = nn.Parameter(torch.zeros(out_features))
         self.bias_std = nn.Parameter(torch.ones(out_features) * prior_std)
-    
+
     def forward(self, x):
         weight = self.weight_mean + torch.randn_like(self.weight_std) * self.weight_std
         bias = self.bias_mean + torch.randn_like(self.bias_std) * self.bias_std
@@ -192,7 +192,7 @@ class BayesianMaterialsNet(nn.Module):
             BayesianLinear(hidden_dim, hidden_dim),
             BayesianLinear(hidden_dim, output_dim)
         ])
-    
+
     def predict_with_uncertainty(self, x, n_samples=50):
         """Monte Carlo dropout for uncertainty estimation."""
         predictions = []
@@ -201,7 +201,7 @@ class BayesianMaterialsNet(nn.Module):
             for layer in self.layers:
                 h = torch.relu(layer(h))
             predictions.append(h)
-        
+
         preds = torch.stack(predictions)
         mean = preds.mean(dim=0)
         std = preds.std(dim=0)  # Epistemic uncertainty
@@ -249,28 +249,28 @@ flowchart TD
 ### Active Learning Loop
 
 ```python
-def active_learning_loop(materials_predictor, experiment_executor, 
+def active_learning_loop(materials_predictor, experiment_executor,
                          initial_data, budget=100):
     """
     Iteratively select experiments using Bayesian optimization.
     """
     X_train, y_train = initial_data['compositions'], initial_data['properties']
     model = train_gpr_model(X_train, y_train)
-    
+
     for iteration in range(budget):
         # Select next experiment using acquisition function
         next_candidate = bayesian_optimization_select(model, search_space)
-        
+
         # Execute experiment
         measured_property = experiment_executor.run(next_candidate)
-        
+
         # Update model
         X_train = np.vstack([X_train, next_candidate])
         y_train = np.append(y_train, measured_property)
         model = train_gpr_model(X_train, y_train)
-        
+
         print(f"Iteration {iteration}: Tested {next_candidate}, Got {measured_property}")
-    
+
     return X_train, y_train
 ```
 

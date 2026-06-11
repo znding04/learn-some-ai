@@ -70,7 +70,6 @@ import numpy as np
 from scipy.optimize import minimize
 from scipy.special import expit  # logistic sigmoid
 
-
 def simulate_irt_data(
     n_students: int = 500,
     n_items: int = 20,
@@ -89,7 +88,6 @@ def simulate_irt_data(
     responses = (rng.random((n_students, n_items)) < prob_matrix).astype(int)
 
     return responses, theta_true, b_true
-
 
 def neg_log_likelihood_1pl(
     params: np.ndarray,
@@ -113,7 +111,6 @@ def neg_log_likelihood_1pl(
         responses * np.log(probs) + (1 - responses) * np.log(1 - probs)
     )
     return -ll
-
 
 def estimate_1pl_parameters(
     responses: np.ndarray,
@@ -156,7 +153,6 @@ def estimate_1pl_parameters(
 
     return theta_est, b_est
 
-
 def evaluate_estimation(
     theta_true: np.ndarray, theta_est: np.ndarray,
     b_true: np.ndarray, b_est: np.ndarray
@@ -180,7 +176,6 @@ def evaluate_estimation(
           f"RMSE = {theta_rmse:.4f}")
     print(f"  Difficulty (b):   correlation = {b_corr:.4f}, "
           f"RMSE = {b_rmse:.4f}")
-
 
 # Run the full pipeline
 print("Simulating 1PL IRT data...")

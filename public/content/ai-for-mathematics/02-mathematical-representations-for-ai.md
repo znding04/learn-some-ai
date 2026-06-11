@@ -95,7 +95,6 @@ class MathTokenizer:
         expr = sp.sympify(expression_str)
         return MathTokenizer.tree_to_prefix(expr)
 
-
 # Example usage
 tokens = MathTokenizer.tokenize("x**2 + 3*x - 1")
 print("Prefix tokens:", tokens)

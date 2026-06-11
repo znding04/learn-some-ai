@@ -43,7 +43,7 @@ import torch.nn as nn
 
 class AudioDiffusionModel(nn.Module):
     """U-Net style model for audio diffusion (simplified)."""
-    
+
     def __init__(self, latent_dim=64, time_dim=256, cond_dim=512):
         super().__init__()
         # Time embedding
@@ -53,43 +53,43 @@ class AudioDiffusionModel(nn.Module):
             nn.GELU(),
             nn.Linear(time_dim, time_dim)
         )
-        
+
         # Conditioning projection (text embeddings)
         self.cond_proj = nn.Linear(cond_dim, time_dim)
-        
+
         # U-Net encoder
         self.down1 = ResBlock(latent_dim, 128, time_dim)
         self.down2 = ResBlock(128, 256, time_dim)
         self.down3 = ResBlock(256, 512, time_dim)
-        
+
         # Bottleneck with cross-attention to text
         self.mid_attn = CrossAttention(512, cond_dim)
         self.mid_block = ResBlock(512, 512, time_dim)
-        
+
         # U-Net decoder (with skip connections)
         self.up3 = ResBlock(1024, 256, time_dim)  # 512 + 512 skip
         self.up2 = ResBlock(512, 128, time_dim)    # 256 + 256 skip
         self.up1 = ResBlock(256, latent_dim, time_dim)
-        
+
         self.out = nn.Conv1d(latent_dim, latent_dim, 1)
-    
+
     def forward(self, x_t, t, text_cond):
         t_emb = self.time_mlp(t) + self.cond_proj(text_cond.mean(dim=1))
-        
+
         # Encoder
         h1 = self.down1(x_t, t_emb)
         h2 = self.down2(h1, t_emb)
         h3 = self.down3(h2, t_emb)
-        
+
         # Bottleneck
         h = self.mid_attn(h3, text_cond)
         h = self.mid_block(h, t_emb)
-        
+
         # Decoder with skip connections
         h = self.up3(torch.cat([h, h3], dim=1), t_emb)
         h = self.up2(torch.cat([h, h2], dim=1), t_emb)
         h = self.up1(torch.cat([h, h1], dim=1), t_emb)
-        
+
         return self.out(h)  # predicted noise
 ```
 
@@ -155,7 +155,7 @@ def training_step(model, x_0, text_cond, drop_prob=0.1):
     mask = torch.rand(x_0.shape[0]) < drop_prob
     cond = text_cond.clone()
     cond[mask] = null_embedding  # empty/unconditional
-    
+
     # Standard diffusion training
     t = torch.randint(0, T, (x_0.shape[0],))
     noise = torch.randn_like(x_0)

@@ -49,7 +49,7 @@ def lif_neuron(I_ext, dt=0.1, t_max=200,
                tau=10, R=10):
     """
     Simulate a LIF neuron receiving external current.
-    
+
     Parameters:
     - I_ext: external input current (nA) over time
     - dt: time step (ms)
@@ -67,12 +67,12 @@ def lif_neuron(I_ext, dt=0.1, t_max=200,
         # LIF dynamics
         dV = (-(V[t] - V_rest) + R * I_ext[t]) / tau
         V[t+1] = V[t] + dt * dV
-        
+
         # Spike condition
         if V[t+1] >= V_thresh:
             spikes.append(t * dt)
             V[t+1] = V_reset
-    
+
     return V[:-1], np.array(spikes)
 
 # Simulate with a step current injection

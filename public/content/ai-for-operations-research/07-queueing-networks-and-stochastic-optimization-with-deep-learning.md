@@ -67,15 +67,15 @@ def simulate_mm1(lambda_rate: float, mu_rate: float, num_arrivals: int, seed: in
     np.random.seed(seed)
     arrival_times = np.cumsum(np.random.exponential(1/lambda_rate, num_arrivals))
     service_times = np.random.exponential(1/mu_rate, num_arrivals)
-    
+
     departure_times = np.zeros(num_arrivals)
     departure_times[0] = arrival_times[0] + service_times[0]
     wait_times = np.zeros(num_arrivals)
-    
+
     for i in range(1, num_arrivals):
         departure_times[i] = max(arrival_times[i], departure_times[i-1]) + service_times[i]
         wait_times[i] = max(0, departure_times[i-1] - arrival_times[i])
-    
+
     return arrival_times, departure_times, wait_times
 
 # M/M/1 theory

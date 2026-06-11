@@ -194,7 +194,6 @@ class OrderBook:
             self.asks.sort(key=lambda o: o.price)
         return trades
 
-
 # ── Agent classes ─────────────────────────────────────────────────────────────
 
 class ZeroIntelligenceTrader:
@@ -209,7 +208,6 @@ class ZeroIntelligenceTrader:
         price = np.random.uniform(fundamental - spread, fundamental + spread)
         qty = np.random.randint(1, 10)
         return Order(self.agent_id, side, round(price, 2), qty, 'limit')
-
 
 class TrendFollower:
     """Buys after recent up-moves, sells after down-moves."""
@@ -233,7 +231,6 @@ class TrendFollower:
             return Order(self.agent_id, 'sell', mid * 0.999, 5, 'limit')
         return None
 
-
 class MarketMaker:
     """Quotes both sides of the book around the mid price."""
     def __init__(self, agent_id: int, spread: float = 0.002):
@@ -248,7 +245,6 @@ class MarketMaker:
             Order(self.agent_id, 'buy',  bid_price, 10, 'limit'),
             Order(self.agent_id, 'sell', ask_price, 10, 'limit'),
         ]
-
 
 # ── Simulation ────────────────────────────────────────────────────────────────
 
@@ -295,7 +291,6 @@ def run_simulation(n_steps: int = 2000, seed: int = 42) -> dict:
         "spreads": np.array(spreads),
         "autocorr_sq_returns": np.corrcoef(returns[:-1]**2, returns[1:]**2)[0, 1],
     }
-
 
 results = run_simulation(n_steps=2000)
 print(f"Final mid price:            {results['mid_prices'][-1]:.2f}")

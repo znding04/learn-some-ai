@@ -44,7 +44,7 @@ from sklearn.gaussian_process.kernels import RBF, ConstantKernel
 from sklearn.preprocessing import StandardScaler
 
 # Simulated catalyst descriptors (inspired by d-band model)
-# Features: [d-band center (eV), coordination number, 
+# Features: [d-band center (eV), coordination number,
 #            electronegativity, lattice constant (Å)]
 # Target: CO adsorption energy (eV)
 
@@ -91,7 +91,7 @@ print("-" * 55)
 # Known catalysts
 for metal in metals:
     pred, std = gpr.predict(
-        scaler.transform([catalyst_data[metal]['features']]), 
+        scaler.transform([catalyst_data[metal]['features']]),
         return_std=True
     )
     print(f"{metal:<10} {pred[0]:>8.3f}    {std[0]:>8.3f}      (train)")
@@ -151,7 +151,7 @@ graph TD
         B --> C[Single Candidate Evaluated]
         C --> D[Weeks per candidate]
     end
-    
+
     subgraph "ML-Accelerated Pipeline"
         E[Large DFT Dataset] --> F[Train GNN Model]
         F --> G[Screen 10⁶ Candidates]
@@ -159,7 +159,7 @@ graph TD
         H --> I[DFT Validation]
         I --> J[Experimental Testing]
     end
-    
+
     subgraph "Descriptors"
         K[d-band center]
         L[Coordination]

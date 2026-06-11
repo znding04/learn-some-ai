@@ -90,7 +90,6 @@ class EssaySimilarityScorer:
         weighted_score = np.average(top_k_scores, weights=top_k_sims)
         return round(weighted_score, 2)
 
-
 # Example usage with sample essays
 reference_essays = [
     "Machine learning algorithms can identify complex patterns in data. "
@@ -177,7 +176,6 @@ def analyze_text_complexity(text: str) -> dict:
         'lexical_diversity': round(lexical_diversity, 3),
         'long_word_ratio': round(long_word_ratio, 3),
     }
-
 
 # Compare two texts
 simple_text = ("The cat sat on the mat. It was a big cat. The mat was red. "

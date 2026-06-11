@@ -111,7 +111,6 @@ class FarmAgent:
         load_penalty = len(self.current_tasks) / self.capacity
         return distance + load_penalty * 5.0
 
-
 class FarmCoordinator:
     """Central coordinator using auction-based task allocation."""
 
@@ -167,7 +166,6 @@ class FarmCoordinator:
                 f"{len(a.current_tasks)} tasks, battery={a.battery_level:.0%}"
             )
         return "\n".join(lines)
-
 
 # --- Example usage ---
 async def main():

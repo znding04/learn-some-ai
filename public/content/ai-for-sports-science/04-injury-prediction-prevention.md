@@ -174,7 +174,7 @@ class InjuryRiskTransformer(nn.Module):
             nn.Linear(64, 1),
             nn.Sigmoid()
         )
-    
+
     def forward(self, x):
         # x shape: (batch, seq_len, input_dim)
         x = self.embedding(x)
@@ -264,31 +264,31 @@ class ACWRCalculator:
         self.athlete_id = athlete_id
         self.acute_days = acute_days
         self.lookback_days = lookback_days
-    
+
     def compute_rolling_loads(self, session_data):
         """
         session_data: DataFrame with columns [date, distance, player_load, hsr_distance]
         """
         session_data = session_data.sort_values('date')
-        
+
         # Compute daily totals
         daily = session_data.groupby('date').agg({
             'distance': 'sum',
             'player_load': 'sum',
             'hsr_distance': 'sum'
         })
-        
+
         # Rolling averages
         chronic_load = daily['player_load'].rolling(
             window=self.lookback_days, min_periods=21
         ).mean()
-        
+
         acute_load = daily['player_load'].rolling(
             window=self.acute_days, min_periods=5
         ).mean()
-        
+
         acwr = acute_load / chronic_load
-        
+
         return pd.DataFrame({
             'date': daily.index,
             'acute_load': acute_load,
@@ -296,7 +296,7 @@ class ACWRCalculator:
             'acwr': acwr,
             'risk_zone': self._classify_risk(acwr)
         })
-    
+
     def _classify_risk(self, acwr):
         if acwr < 0.8:
             return 'Underprepared'

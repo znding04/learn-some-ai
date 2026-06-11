@@ -55,20 +55,20 @@ Active learning is a special case of Bayesian optimization where the model itera
 def active_learning_cycle(molecules, measured_properties, model):
     # Train model on current data
     model.fit(molecules, measured_properties)
-    
+
     # Predict on candidate pool with uncertainty
     mean_pred, uncertainty = model.predict_with_uncertainty(candidate_pool)
-    
+
     # Select batch of molecules to measure (batch Bayesian optimization)
     selected = select_batch(mean_pred, uncertainty, batch_size=10)
-    
+
     # Experimental measurement (robot or computation)
     new_properties = measure(selected)
-    
+
     # Expand training data
     molecules.extend(selected)
     measured_properties.extend(new_properties)
-    
+
     return model, molecules, measured_properties
 
 # Run until budget exhausted

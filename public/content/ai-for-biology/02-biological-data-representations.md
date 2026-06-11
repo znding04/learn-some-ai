@@ -147,10 +147,10 @@ AA_TO_IDX = {aa: i for i, aa in enumerate(AA_ALPHABET)}
 def one_hot_encode(sequence: str) -> np.ndarray:
     """
     One-hot encode a protein sequence.
-    
+
     Args:
         sequence: A string of single-letter amino acid codes (uppercase).
-    
+
     Returns:
         A numpy array of shape (L, 20) where L = len(sequence).
         Unknown characters (X, B, Z, etc.) are encoded as all-zeros.
@@ -162,7 +162,6 @@ def one_hot_encode(sequence: str) -> np.ndarray:
             encoding[i, AA_TO_IDX[aa]] = 1.0
     return encoding
 
-
 def decode_one_hot(encoding: np.ndarray) -> str:
     """Recover a sequence string from a one-hot encoded matrix."""
     indices = np.argmax(encoding, axis=1)
@@ -170,7 +169,6 @@ def decode_one_hot(encoding: np.ndarray) -> str:
         AA_ALPHABET[idx] if encoding[i].sum() > 0 else "X"
         for i, idx in enumerate(indices)
     )
-
 
 # Example: first 10 residues of human ubiquitin
 sequence = "MQIFVKTLTGK"

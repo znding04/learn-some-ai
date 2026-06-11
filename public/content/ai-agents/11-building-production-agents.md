@@ -85,7 +85,6 @@ handler.setFormatter(logging.Formatter("%(message)s"))
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
 
-
 @dataclass
 class AgentMetrics:
     """Tracks per-request metrics for a production agent."""
@@ -142,7 +141,6 @@ class AgentMetrics:
             "p50_latency_ms": round(p50, 1),
             "p95_latency_ms": round(p95, 1),
         }
-
 
 # --- Latency-tracked agent loop ---
 

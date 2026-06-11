@@ -33,11 +33,11 @@ class SketchPrimitiveClassifier(nn.Module):
         self.backbone = torch.hub.load('pytorch/vision', 'resnet18', pretrained=True)
         self.backbone.fc = nn.Linear(512, 256)
         self.classifier = nn.Linear(256, num_classes)
-    
+
     def forward(self, x):
         features = torch.relu(self.backbone(x))
         return self.classifier(features)
-    
+
     def detect_constraints(self, primitives, keypoints):
         """
         Detect geometric constraints between recognized primitives.
@@ -45,7 +45,7 @@ class SketchPrimitiveClassifier(nn.Module):
         """
         constraint_edges = []
         for i, j in combinations(range(len(primitives)), 2):
-            feat = torch.cat([primitives[i], primitives[j], 
+            feat = torch.cat([primitives[i], primitives[j],
                              distance(keypoints[i], keypoints[j])])
             constraint_type = self.constraint_head(feat)
             if torch.argmax(constraint_type) != 0:  # Not "no constraint"
@@ -69,12 +69,12 @@ class SketchToCADTranslator(nn.Module):
         self.operation_decoder = nn.GRU(hidden * 2, hidden, batch_first=True)
         self.operation_head = nn.Linear(hidden, num_ops)
         self.parameter_head = nn.Linear(hidden, 4)  # dx, dy, radius, angle
-    
+
     def forward(self, keypoints):
         # keypoints: [batch, seq_len, 2] (x, y per point)
         encoded, h_n = self.keypoint_encoder(keypoints)
         h_init = torch.cat([h_n[-1], h_n[-1]], dim=-1)
-        
+
         # Autoregressive generation of CAD operations
         ops = []
         hidden = h_init.unsqueeze(1)
@@ -112,7 +112,7 @@ class InverseCADNet(nn.Module):
         self.feature_predictor = nn.Linear(256, num_feature_types)  # Sketch plane, extrude, etc.
         self.parameter_predictor = nn.Linear(256, 50)  # Dimensional parameters
         self.construction_predictor = nn.Linear(256, 20)  # Mates, constraints
-    
+
     def forward(self, point_cloud):
         # point_cloud: [batch, 3, N]
         encoded = self.point_encoder(point_cloud).squeeze(-1)
@@ -131,9 +131,9 @@ def interpret_design_intent(natural_language, cad_model):
     prompt = f"""
     CAD model: {cad_model.description}
     User says: "{natural_language}"
-    
+
     What parametric changes achieve this intent?
-    Return: {{"changed_features": [...], "new_parameters": {{...}}}} 
+    Return: {{"changed_features": [...], "new_parameters": {{...}}}}
     """
     response = llm.generate(prompt)
     return parse_cad_changes(response)
@@ -165,12 +165,12 @@ class ShapeDescriptor(nn.Module):
             nn.AdaptiveAvgPool3d(1)
         )
         self.projection = nn.Linear(128, embedding_dim)
-    
+
     def forward(self, voxel_grid):
         # voxel_grid: [batch, 1, V, V, V] (voxelized CAD model)
         features = self.encoder(voxel_grid).squeeze(-1).squeeze(-1).squeeze(-1)
         return self.projection(features)
-    
+
     def retrieval_query(self, query_model, database_models, k=5):
         query_emb = self.forward(query_model)
         db_embs = torch.stack([self.forward(m) for m in database_models])
@@ -205,13 +205,13 @@ class PartDiffusion(nn.Module):
             nn.SiLU(),
             nn.Linear(hidden, 3)
         )
-    
+
     def forward(self, x, t):
         # x: [batch, N, 3], t: [batch, 1] (diffusion timestep)
         t_emb = self.time_embed(t)
         h = torch.cat([x, t_emb.unsqueeze(1).expand(-1, x.shape[1], -1)], dim=-1)
         return self.point_net(h)
-    
+
     @torch.no_grad()
     def sample(self, n_points, num_steps=100):
         """Generate point cloud via DDPM."""

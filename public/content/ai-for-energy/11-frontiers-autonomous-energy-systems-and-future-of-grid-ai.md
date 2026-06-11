@@ -123,7 +123,6 @@ class EnergyMarketAgent:
         td_target = reward + self.gamma * best_next
         self.q_table[s] += self.lr * (td_target - self.q_table[s])
 
-
 def simulate_local_market(agents: list[EnergyMarketAgent], n_rounds: int = 1000):
     """Simulate a local energy market with multiple agents."""
     for round_idx in range(n_rounds):
@@ -155,7 +154,6 @@ def simulate_local_market(agents: list[EnergyMarketAgent], n_rounds: int = 1000)
             agent.update((price_bin, soc_bins[i]), action, reward, (next_price, next_soc))
 
     return agents
-
 
 # Create and train agents
 agents = [
@@ -209,7 +207,6 @@ def carbon_aware_scheduler(
     baseline_carbon = job_energy_kwh * np.mean(carbon_intensities)
     print(f"Carbon savings: {(1 - total_carbon/baseline_carbon)*100:.1f}%")
     return schedule
-
 
 # Example: 24-hour carbon intensity profile
 carbon = np.array([400, 380, 350, 320, 310, 300, 280, 250, 200, 180,

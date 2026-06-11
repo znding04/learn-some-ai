@@ -55,7 +55,7 @@ class PointPillars(nn.Module):
             nn.ReLU()
         )
         self.detection_head = nn.Conv2d(256, num_classes * 7)  # (x, y, z, w, h, l, theta)
-    
+
     def forward(self, pillars, coordinates, batch_indices):
         for pfn in self.pfn:
             pillars = pfn(pillars, coordinates, batch_indices)
@@ -68,7 +68,7 @@ class PFNLayer(nn.Module):
         super().__init__()
         self.linear = nn.Linear(in_channels, out_channels)
         self.norm = nn.BatchNorm1d(out_channels)
-    
+
     def forward(self, features, coordinates, batch_indices):
         x = self.linear(features)
         x = self.norm(x.permute(1, 2, 0).contiguous()).permute(2, 0, 1).contiguous()
@@ -101,7 +101,7 @@ class BEVTransformer(nn.Module):
             nn.ReLU(),
             nn.Conv2d(64, bev_size, 1)
         )
-    
+
     def forward(self, multi_camera_images, intrinsics, extrinsics):
         camera_features = [enc(img) for enc, img in zip(self.camera_encoders, multi_camera_images)]
         bev_queries = torch.randn(bev_size, bev_size, hidden_dim)
@@ -134,7 +134,7 @@ class NeRF(nn.Module):
             nn.Linear(hidden_dim // 2, 3)
         )
         self.pos_encoding = PositionalEncoding(10)
-    
+
     def forward(self, ray_origin, ray_direction):
         p = self.pos_encoding(ray_origin)
         d = self.pos_encoding(ray_direction)
@@ -165,7 +165,7 @@ class RiskAwarePlanner(nn.Module):
             nn.ReLU(),
             nn.Linear(256, 1)
         )
-    
+
     def forward(self, agent_states):
         encoded, _ = self.encoder(agent_states)
         ego_encoded = encoded[:, 0:1]
@@ -173,7 +173,7 @@ class RiskAwarePlanner(nn.Module):
         flat_features = encoded.flatten(1)
         collision_prob = torch.sigmoid(self.cost_predictor(flat_features))
         return action, collision_prob
-    
+
     def plan_with_ensemble(self, agent_states, n_ensemble=10):
         """Plan under uncertainty using ensemble of predictions."""
         actions = []

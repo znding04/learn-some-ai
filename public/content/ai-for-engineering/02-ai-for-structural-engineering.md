@@ -117,7 +117,7 @@ class DamageClassifier(nn.Module):
             nn.Linear(128, n_locations),  # Damage location
             nn.Softmax(dim=1)
         )
-    
+
     def forward(self, freq_shifts):
         # freq_shifts: tensor of natural frequency changes
         return self.fc(freq_shifts)

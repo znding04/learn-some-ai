@@ -37,7 +37,7 @@ flowchart TD
     Risk -->|Class II| FiveK[510k Pathway<br/>Substantial equivalence<br/>to predicate device]
     Risk -->|Class III| PMA[Premarket Approval<br/>Clinical trial evidence<br/>required]
     Risk -->|Novel| DeNovo[De Novo Pathway<br/>New classification<br/>for novel devices]
-    
+
     FiveK --> Review[FDA Review<br/>~90-180 days]
     PMA --> ClinTrial[Clinical Trial<br/>+ FDA Review<br/>~1-3 years]
     DeNovo --> Review2[FDA Review<br/>~150-300 days]

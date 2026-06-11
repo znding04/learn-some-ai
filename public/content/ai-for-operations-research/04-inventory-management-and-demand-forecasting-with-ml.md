@@ -94,7 +94,7 @@ except ImportError:
 # Newsvendor with forecast distribution
 from scipy.stats import norm
 
-def newsvendor_order(forecast_mean: float, forecast_std: float, 
+def newsvendor_order(forecast_mean: float, forecast_std: float,
                      price: float, cost: float, salvage: float = 0) -> float:
     """
     Optimal order quantity using normal demand approximation.

@@ -99,7 +99,6 @@ def detect_grid_anomalies(pmu_data: np.ndarray, contamination: float = 0.01) -> 
     labels = model.fit_predict(pmu_data)
     return labels
 
-
 # Example: simulate PMU data with injected anomalies
 np.random.seed(42)
 n = 10000

@@ -54,8 +54,8 @@ model = AutoModelForSequenceClassification.from_pretrained(
 domain_labels = ["criminal", "contract", "tax", "property", "administrative"]
 
 statute_text = """
-Section 201 of the Internal Revenue Code imposes a tax on 
-transfers of property by reason of death. The tax shall be 
+Section 201 of the Internal Revenue Code imposes a tax on
+transfers of property by reason of death. The tax shall be
 known as the estate tax, and shall be a liability of the estate.
 """
 

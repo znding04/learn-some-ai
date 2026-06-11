@@ -24,17 +24,17 @@ flowchart TD
     EHR[Electronic Health Record] --> Structured[Structured Data]
     EHR --> Unstructured[Unstructured Data]
     EHR --> Temporal[Temporal Data]
-    
+
     Structured --> Dx[Diagnoses - ICD codes]
     Structured --> Rx[Medications - RxNorm]
     Structured --> Proc[Procedures - CPT codes]
     Structured --> Labs[Lab Results]
     Structured --> Demo[Demographics]
-    
+
     Unstructured --> Notes[Clinical Notes]
     Unstructured --> Img[Imaging Reports]
     Unstructured --> Path[Pathology Reports]
-    
+
     Temporal --> Vitals[Vital Signs - q15min to q4h]
     Temporal --> Med[Medication Administration]
     Temporal --> Events[Clinical Events]
@@ -64,9 +64,9 @@ The **Observational Medical Outcomes Partnership (OMOP)** Common Data Model stan
 query = """
 SELECT p.person_id, m.measurement_date, m.value_as_number
 FROM person p
-JOIN condition_occurrence co 
+JOIN condition_occurrence co
     ON p.person_id = co.person_id
-JOIN measurement m 
+JOIN measurement m
     ON p.person_id = m.person_id
 WHERE co.condition_concept_id = 201826  -- Type 2 DM (SNOMED)
   AND m.measurement_concept_id = 3004410  -- HbA1c (LOINC)

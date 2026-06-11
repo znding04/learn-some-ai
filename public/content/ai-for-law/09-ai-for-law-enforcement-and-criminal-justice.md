@@ -88,7 +88,7 @@ predictions must be explainable to defendants, must not discriminate on the basi
 import numpy as np
 from sklearn.metrics import confusion_matrix
 
-def compute_fairness_metrics(y_true: np.ndarray, y_pred: np.ndarray, 
+def compute_fairness_metrics(y_true: np.ndarray, y_pred: np.ndarray,
                              group: np.ndarray) -> dict:
     """Compute fairness metrics for a binary classifier across two groups."""
     results = {}
@@ -102,12 +102,12 @@ def compute_fairness_metrics(y_true: np.ndarray, y_pred: np.ndarray,
             "FPR": fpr, "FNR": fnr, "PPV": ppv,
             "base_rate": (tp + fn) / (tp + fn + fp + tn)
         }
-    
+
     # Disparity: ratio of FPR between groups
     fpr_0 = results["group_0"]["FPR"]
     fpr_1 = results["group_1"]["FPR"]
     results["FPR_disparity"] = fpr_1 / fpr_0 if fpr_0 > 0 else float('inf')
-    
+
     return results
 
 # Simulated data: COMPAS-like risk assessment with racial bias
@@ -143,9 +143,9 @@ flowchart TD
     D --> E["Defense Attorney Review\nand challenge"]
     E --> F["Judicial Decision\nBail / Sentencing"]
     F --> G["Ongoing Monitoring\n(post-conviction)"]
-    
+
     D -.->|"Must include: factors,\nweights, confidence"|D
-    
+
     style C fill:#fdc
     style F fill:#cfc
 ```

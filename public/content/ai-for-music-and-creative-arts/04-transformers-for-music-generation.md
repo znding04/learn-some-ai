@@ -134,7 +134,7 @@ class CrossAttentionBlock(nn.Module):
             nn.GELU(),
             nn.Linear(4 * d_model, d_model)
         )
-    
+
     def forward(self, x, text_embeddings):
         # Self-attention over audio tokens
         x = x + self.self_attn(x, x, x)[0]

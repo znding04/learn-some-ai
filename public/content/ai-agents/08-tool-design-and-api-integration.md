@@ -151,7 +151,6 @@ WEATHER_TOOL_SCHEMA = {
     },
 }
 
-
 # -------------------------------------------------------------------
 # Step 2: Implement the handler with auth, retries, and error handling
 # -------------------------------------------------------------------
@@ -208,7 +207,6 @@ class WeatherTool:
             "units": "C" if units == "metric" else "F",
         }
 
-
 # -------------------------------------------------------------------
 # Step 3: Register and use in an agent loop
 # -------------------------------------------------------------------
@@ -254,7 +252,6 @@ def agent_loop(user_message: str) -> str:
         return final.choices[0].message.content
 
     return msg.content
-
 
 print(agent_loop("What's the weather like in Tokyo right now?"))
 ```

@@ -152,7 +152,6 @@ def smart_charging_schedule(
     else:
         raise ValueError(f"Optimization failed: {result.message}")
 
-
 # Example: 5 EVs, 24 hourly slots
 np.random.seed(42)
 n_evs, n_slots = 5, 24

@@ -138,7 +138,7 @@ graph LR
     E --> F
     F --> G[Property Prediction]
     F --> H[Uncertainty Estimate]
-    
+
     subgraph "Evaluation"
         I[Random Split]
         J[Scaffold Split]

@@ -60,7 +60,6 @@ def compute_iou(box_a, box_b):
 
     return intersection / (union + 1e-6)
 
-
 def compute_average_precision(precisions, recalls):
     """Compute AP using the 11-point interpolation method."""
     ap = 0.0
@@ -68,7 +67,6 @@ def compute_average_precision(precisions, recalls):
         precisions_above = [p for p, r in zip(precisions, recalls) if r >= t]
         ap += max(precisions_above) if precisions_above else 0.0
     return ap / 11.0
-
 
 def evaluate_detections(predictions, ground_truths, iou_threshold=0.5):
     """

@@ -79,7 +79,6 @@ class SimpleClassifier(nn.Module):
         x = F.relu(self.fc2(x))
         return self.fc3(x)
 
-
 def fgsm_attack(model: nn.Module, x: torch.Tensor, y: torch.Tensor,
                 epsilon: float) -> torch.Tensor:
     """
@@ -95,7 +94,6 @@ def fgsm_attack(model: nn.Module, x: torch.Tensor, y: torch.Tensor,
     perturbation = epsilon * x_adv.grad.sign()
     x_adv = x_adv + perturbation
     return x_adv.detach()
-
 
 def pgd_attack(model: nn.Module, x: torch.Tensor, y: torch.Tensor,
                epsilon: float, alpha: float = 0.01,
@@ -121,7 +119,6 @@ def pgd_attack(model: nn.Module, x: torch.Tensor, y: torch.Tensor,
         x_adv = torch.clamp(x + delta, 0, 1)
 
     return x_adv.detach()
-
 
 # Demonstration
 torch.manual_seed(42)

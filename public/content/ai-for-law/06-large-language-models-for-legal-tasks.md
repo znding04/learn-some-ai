@@ -59,13 +59,13 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def legal_qa_with_rag(question: str, retrieved_docs: list[str]) -> str:
     """Answer a legal question using RAG with grounding."""
-    
+
     # Build context from retrieved documents
     context = "\n\n---\n\n".join([
         f"[Document {i+1}]: {doc['text'][:500]}\n(Citation: {doc.get('citation', 'N/A')})"
         for i, doc in enumerate(retrieved_docs)
     ])
-    
+
     prompt = f"""You are a legal research assistant. Answer the question based ONLY on the provided documents.
 If the answer cannot be determined from the documents, say so explicitly.
 Cite specific documents when stating facts.
@@ -92,9 +92,9 @@ few_shot_prompt = """
 Example 1:
 Question: Under California law, what constitutes prima facie evidence of negligence?
 Answer: Under California Civil Code § 1714, negligence is established by showing:
-(1) a duty of care owed by defendant to plaintiff, 
-(2) breach of that duty, 
-(3) causation, and 
+(1) a duty of care owed by defendant to plaintiff,
+(2) breach of that duty,
+(3) causation, and
 (4) damages. [California Civil Code § 1714]
 
 Question: Does a landlord have a duty to disclose known mold conditions to tenants?

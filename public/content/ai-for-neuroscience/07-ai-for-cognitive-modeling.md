@@ -48,7 +48,7 @@ import matplotlib.pyplot as plt
 def drift_diffusion(T, dt=0.001, v=0.5, a=1.0, z=0.5, s=0.1, n_simulations=10000):
     """
     Simulate decisions using the drift diffusion model.
-    
+
     Parameters:
     - T: maximum decision time (s)
     - dt: time step (s)
@@ -56,24 +56,24 @@ def drift_diffusion(T, dt=0.001, v=0.5, a=1.0, z=0.5, s=0.1, n_simulations=10000
     - a: boundary separation (decision confidence threshold)
     - z: starting point bias (relative to 0)
     - s: noise standard deviation (within-trial variability)
-    
+
     Returns: reaction times and choices for each simulation
     """
     n_steps = int(T / dt)
     rts = []
     choices = []
-    
+
     for _ in range(n_simulations):
         evidence = np.zeros(n_steps)
         t = 0
         # Random starting point within the boundary
         evidence[0] = np.random.uniform(-z*a, (1-z)*a)
-        
+
         for t in range(n_steps):
             # Wiener process: drift + Gaussian noise
             if t > 0:
                 evidence[t] = evidence[t-1] + v*dt + s*np.sqrt(dt)*np.random.randn()
-            
+
             # Check decision boundary
             if evidence[t] >= a:
                 rts.append(t * dt)
@@ -86,7 +86,7 @@ def drift_diffusion(T, dt=0.001, v=0.5, a=1.0, z=0.5, s=0.1, n_simulations=10000
         else:
             rts.append(T)
             choices.append(np.random.choice([0, 1]))
-    
+
     return np.array(rts), np.array(choices)
 
 # Simulate with moderate evidence accumulation

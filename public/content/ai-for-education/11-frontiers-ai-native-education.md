@@ -186,7 +186,6 @@ class LearnerState:
     misconceptions: list = field(default_factory=list)
     goals: list = field(default_factory=list)
 
-
 class AgenticLearningCompanion:
     """
     An autonomous AI agent that plans, acts, observes, and reflects
@@ -347,7 +346,6 @@ class AgentRole(Enum):
     CHALLENGER = "challenger"
     COACH = "metacognitive_coach"
 
-
 class PedagogicalAgent:
     """A single agent with a specific pedagogical role."""
 
@@ -394,7 +392,6 @@ class PedagogicalAgent:
         response = self.llm.generate(messages=messages)
         self.conversation_history.append({"role": "assistant", "content": response})
         return response
-
 
 class MultiAgentOrchestrator:
     """
@@ -495,7 +492,6 @@ def extract_text_emotion_features(text: str, nlp_model) -> dict:
     }
 
     return features
-
 
 def adaptive_emotional_response(emotion: str, context: dict) -> dict:
     """
@@ -617,7 +613,7 @@ stateDiagram-v2
 
     Confusion --> Engagement: scaffolding + aha moment
     Confusion --> Frustration: prolonged difficulty
-    
+
     Frustration --> Confusion: difficulty reduced
     Frustration --> Boredom: disengagement
     Frustration --> [*]: dropout

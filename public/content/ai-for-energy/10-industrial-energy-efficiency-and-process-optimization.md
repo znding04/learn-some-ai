@@ -122,7 +122,6 @@ def train_combustion_optimizer(process_data: np.ndarray, energy_labels: np.ndarr
 
     return best_setpoints, best_sec, model
 
-
 # Simulate cement kiln process data
 np.random.seed(42)
 n = 5000

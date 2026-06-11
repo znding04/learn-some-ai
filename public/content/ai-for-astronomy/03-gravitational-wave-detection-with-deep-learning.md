@@ -61,7 +61,6 @@ from torch.utils.data import Dataset, DataLoader, TensorDataset
 import matplotlib.pyplot as plt
 from scipy.signal import butter, sosfilt, welch
 
-
 # -------------------------------------------------------------------------
 # Signal generation
 # -------------------------------------------------------------------------
@@ -71,7 +70,6 @@ def chirp_mass_to_component(Mc, q=1.0):
     m1 = Mc * (1 + q) ** (1/5) / q ** (3/5)
     m2 = q * m1
     return m1, m2
-
 
 def generate_chirp(sample_rate=4096, duration=1.0, Mc=10.0, tc=0.9,
                    phase0=0.0, distance_Mpc=400.0):
@@ -139,7 +137,6 @@ def generate_chirp(sample_rate=4096, duration=1.0, Mc=10.0, tc=0.9,
 
     return t, h
 
-
 def generate_colored_noise(n_samples, sample_rate=4096, seed=None):
     """
     Generate noise colored by a simplified LIGO sensitivity curve.
@@ -161,7 +158,6 @@ def generate_colored_noise(n_samples, sample_rate=4096, seed=None):
     noise = np.fft.irfft(noise_fft, n=n_samples)
     noise = noise / (noise.std() + 1e-30)
     return noise
-
 
 def make_dataset(n_signal=500, n_noise=500, sample_rate=4096,
                  duration=1.0, snr_range=(5, 20)):
@@ -197,7 +193,6 @@ def make_dataset(n_signal=500, n_noise=500, sample_rate=4096,
     y = np.array(y, dtype=np.int64)
     idx = rng.permutation(len(y))
     return X[idx], y[idx]
-
 
 # -------------------------------------------------------------------------
 # 1D CNN model for GW detection
@@ -242,7 +237,6 @@ class GravitationalWaveCNN(nn.Module):
 
     def forward(self, x):
         return self.classifier(self.features(x))
-
 
 # -------------------------------------------------------------------------
 # Training and evaluation
@@ -306,7 +300,6 @@ def train_gw_detector():
 
     return model, history
 
-
 def visualize_chirp():
     """Plot a synthetic chirp in time and time-frequency domain."""
     sample_rate = 4096
@@ -341,7 +334,6 @@ def visualize_chirp():
     plt.tight_layout()
     plt.savefig("gw_chirp.png", dpi=150)
     plt.show()
-
 
 if __name__ == "__main__":
     visualize_chirp()

@@ -49,19 +49,19 @@ def radial_symmetry_function(distances, eta, Rs):
     """G2 radial symmetry function."""
     return np.exp(-eta * (distances - Rs)**2)
 
-def compute_descriptor(positions, center_idx, cutoff=6.0, 
+def compute_descriptor(positions, center_idx, cutoff=6.0,
                        n_radial=8, eta=0.5):
     """
     Compute symmetry function descriptor for an atom.
-    This creates a rotationally invariant representation of the 
+    This creates a rotationally invariant representation of the
     local atomic environment.
     """
     center = positions[center_idx]
     descriptor = []
-    
+
     # Radial symmetry functions at different Rs values
     Rs_values = np.linspace(0.5, cutoff - 0.5, n_radial)
-    
+
     for other_idx in range(len(positions)):
         if other_idx == center_idx:
             continue
@@ -69,12 +69,12 @@ def compute_descriptor(positions, center_idx, cutoff=6.0,
         if dist < cutoff:
             for Rs in Rs_values:
                 descriptor.append(radial_symmetry_function(dist, eta, Rs))
-    
+
     # Pad or truncate to fixed size
     descriptor = np.array(descriptor[:n_radial * 10])
     if len(descriptor) < n_radial * 10:
         descriptor = np.pad(descriptor, (0, n_radial * 10 - len(descriptor)))
-    
+
     return descriptor
 
 # Simple Neural Network Potential
@@ -93,7 +93,7 @@ class NeuralNetworkPotential(nn.Module):
             nn.SiLU(),
             nn.Linear(hidden_dim, 1)
         )
-    
+
     def forward(self, descriptors):
         """
         descriptors: (n_atoms, descriptor_dim)
@@ -110,14 +110,14 @@ def compute_forces(model, positions_tensor, descriptor_fn):
     This is the key advantage of autodiff-based potentials.
     """
     positions_tensor.requires_grad_(True)
-    
+
     # In practice, descriptors would be differentiable functions of positions
     # Here we demonstrate the concept
     descriptors = descriptor_fn(positions_tensor)
     energy = model(descriptors)
-    
+
     # Forces = -dE/dr
-    forces = -torch.autograd.grad(energy, positions_tensor, 
+    forces = -torch.autograd.grad(energy, positions_tensor,
                                    create_graph=True)[0]
     return energy, forces
 
@@ -210,7 +210,7 @@ graph TD
         D -->|Poor conservation| A
         D -->|Good conservation| E[Production MD]
     end
-    
+
     subgraph "Inference (MD Step)"
         F[Atomic Positions] --> G[Compute Descriptors]
         G --> H[Neural Network]
@@ -219,7 +219,7 @@ graph TD
         J --> K[Verlet Integration]
         K --> F
     end
-    
+
     subgraph "Model Hierarchy"
         L[Classical FF: Fast, Inaccurate]
         M[ML FF: Fast, Accurate]

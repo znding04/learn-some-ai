@@ -70,10 +70,10 @@ def composition_features(formula_dict):
     """
     props = ['Z', 'EN', 'r', 'IE']
     features = []
-    
+
     for prop in props:
-        values = [element_props[el][prop] * frac 
-                  for el, frac in formula_dict.items() 
+        values = [element_props[el][prop] * frac
+                  for el, frac in formula_dict.items()
                   if el in element_props]
         if values:
             features.extend([
@@ -83,11 +83,11 @@ def composition_features(formula_dict):
             ])
         else:
             features.extend([0, 0, 0])
-    
+
     # Add electronegativity difference (proxy for ionicity)
     ens = [element_props[el]['EN'] for el in formula_dict if el in element_props]
     features.append(max(ens) - min(ens) if len(ens) > 1 else 0)
-    
+
     return np.array(features)
 
 # Example: perovskite band gap prediction (ABX3)
@@ -163,14 +163,14 @@ graph TD
         D --> E[DFT Validation]
         E --> F[Experimental Synthesis]
     end
-    
+
     subgraph "Crystal Graph"
         G((Atom i)) --> H((Atom j))
         G --> I((Atom k))
         H --> I
         J[Periodic boundary conditions]
     end
-    
+
     subgraph "GNoME Active Learning"
         K[Initial Dataset] --> L[Train GNN]
         L --> M[Predict Candidates]

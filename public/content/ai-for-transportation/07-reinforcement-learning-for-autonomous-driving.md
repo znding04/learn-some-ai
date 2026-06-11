@@ -57,24 +57,24 @@ import numpy as np
 
 class SimpleDrivingEnv:
     """A minimal 1D driving environment following OpenAI Gym conventions."""
-    
+
     def __init__(self, road_length=100, speed_limit=5.0):
         self.road_length = road_length
         self.speed_limit = speed_limit
         self.dt = 0.5
         self.reset()
-    
+
     def reset(self):
         """Reset to start of road with zero velocity."""
         self.position = 0.0
         self.velocity = 0.0
         self.steps = 0
         return self._get_obs()
-    
+
     def _get_obs(self):
         return np.array([self.position / self.road_length,
                          self.velocity / self.speed_limit])
-    
+
     def step(self, action):
         """Action: acceleration in [-2, 2] m/s^2."""
         action = np.clip(action, -2.0, 2.0)
@@ -82,22 +82,22 @@ class SimpleDrivingEnv:
         self.velocity = np.clip(self.velocity, 0.0, self.speed_limit * 1.5)
         self.position += self.velocity * self.dt
         self.steps += 1
-        
+
         # Reward design
         reward = 0.0
         reward += 0.1 * self.velocity / self.speed_limit     # progress
         reward -= 0.5 * max(0, self.velocity - self.speed_limit)  # speeding penalty
         reward -= 0.01 * abs(action)                          # comfort (low jerk)
-        
+
         done = False
         if self.position >= self.road_length:
             reward += 10.0  # goal reached
             done = True
         if self.steps >= 500:
             done = True     # timeout
-        
+
         return self._get_obs(), reward, done, {}
-    
+
     def render(self):
         bar_len = 40
         pos = int(self.position / self.road_length * bar_len)

@@ -135,7 +135,6 @@ for headline in headlines:
     print(f"[{top['label'].upper():8s}] {headline[:60]}")
     print(f"           scores: {scores}\n")
 
-
 # ── Part 2: Minimal RAG pipeline for SEC filing Q&A ──────────────────────
 
 # Requirements: pip install sentence-transformers faiss-cpu openai
@@ -178,7 +177,6 @@ class FinancialRAG:
             f"ANSWER:"
         )
         return prompt  # Pass this prompt to your LLM of choice (GPT-4, Claude, etc.)
-
 
 # Example usage (with dummy filing text)
 filing_excerpt = """

@@ -94,7 +94,6 @@ class LoadForecaster(nn.Module):
         out, _ = self.gru(x)
         return self.head(out[:, -1, :])
 
-
 # Example
 model = LoadForecaster()
 batch = 16
@@ -128,7 +127,6 @@ def simulate_dr_event(
     load_change = elasticity * price_change
     adjusted_load = baseline_load * (1 + load_change)
     return adjusted_load
-
 
 # Example: critical peak pricing event (2-6 PM)
 baseline = np.array([40, 42, 45, 50, 55, 60, 65, 62, 58, 52, 48, 44,  # hours 0-11

@@ -137,7 +137,6 @@ for expr in integrands:
     print(f"  integral of {expr} dx = {result}")
     print(f"  verification (should be 0): {check}\n")
 
-
 # --- Neural-style: prefix tokenization of expression trees ---
 def expr_to_prefix(expr):
     """Convert a SymPy expression to prefix-notation tokens,
@@ -164,7 +163,6 @@ def expr_to_prefix(expr):
         tokens += expr_to_prefix(remaining)
         return tokens
 
-
 print("=== Prefix Tokenization (for seq2seq training) ===")
 integrand = x**2 * sp.exp(x)
 antideriv = sp.integrate(integrand, x)
@@ -176,7 +174,6 @@ print(f"  Integrand: {integrand}")
 print(f"  Input tokens:  {' '.join(input_tokens)}")
 print(f"  Antiderivative: {antideriv}")
 print(f"  Output tokens: {' '.join(output_tokens)}")
-
 
 # --- Generate training data (backward generation) ---
 print("\n=== Backward Data Generation ===")

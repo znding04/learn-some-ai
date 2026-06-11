@@ -92,7 +92,7 @@ def execute_tool(name: str, args: dict) -> str:
 
 def coding_agent(task: str, max_steps: int = 20):
     """An autonomous coding agent that plans, implements, and tests."""
-    messages = [{"role": "user", "content": f"""You are an autonomous coding agent. 
+    messages = [{"role": "user", "content": f"""You are an autonomous coding agent.
 Your task: {task}
 
 Approach:
@@ -102,7 +102,7 @@ Approach:
 4. Run tests after each change
 5. Debug and fix any failures
 6. Report completion when done"""}]
-    
+
     for step in range(max_steps):
         response = client.messages.create(
             model="claude-sonnet-4-20250514",
@@ -110,7 +110,7 @@ Approach:
             tools=TOOLS,
             messages=messages
         )
-        
+
         # Process tool calls
         if response.stop_reason == "tool_use":
             tool_results = []
@@ -130,7 +130,7 @@ Approach:
                 if hasattr(block, "text"):
                     print(f"Agent complete: {block.text}")
             return
-    
+
     print("Max steps reached")
 ```
 

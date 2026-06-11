@@ -89,7 +89,7 @@ class SimpleSupplyChainEnv:
         incoming = self.pending_orders.pop(0)
         self.retailer_stock += incoming
         self.pending_orders.append(order)
-        
+
         # Demand served if possible
         sales = min(self.retailer_stock, demand)
         stockout_penalty = 2 * (demand - sales)
@@ -115,7 +115,7 @@ for episode in range(500):
             action = np.random.randint(0, 5)
         else:
             action = np.argmax(q_table[s_idx])
-        
+
         next_state, reward, done = env.step(action * 4)  # order = action * 4
         ns_idx = tuple(min(int(ns/5), 10) for ns in next_state))
         q_table[s_idx + (action,)] += 0.1 * (reward + 0.9 * np.max(q_table[ns_idx]) - q_table[s_idx + (action,)])

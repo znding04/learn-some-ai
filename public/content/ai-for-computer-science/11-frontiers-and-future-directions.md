@@ -83,14 +83,14 @@ def evolve_assembly_program(population_size=100, generations=1000):
     """
     # Start with random programs
     population = [generate_random_program(length=20) for _ in range(population_size)]
-    
+
     for gen in range(generations):
         # Evaluate fitness (simulated execution time)
         fitness_scores = [evaluate_program(p) for p in population]
-        
+
         # Select parents for next generation
         parents = select_top(population, fitness_scores, k=20)
-        
+
         # Create next generation through crossover and mutation
         next_gen = []
         while len(next_gen) < population_size:
@@ -98,13 +98,13 @@ def evolve_assembly_program(population_size=100, generations=1000):
             child = crossover(p1, p2)
             child = mutate(child, mutation_rate=0.1)
             next_gen.append(child)
-        
+
         population = next_gen
-        
+
         if gen % 100 == 0:
             best = max(zip(fitness_scores, population))
             print(f"Generation {gen}: best fitness = {best[0]}")
-    
+
     return max(zip(fitness_scores, population))[1]
 ```
 

@@ -39,17 +39,17 @@ class ChipFloorplanGNN(nn.Module):
             nn.GATConv(hidden, hidden, heads=4) for _ in range(6)
         ])
         self.policy_head = nn.Linear(hidden, 4)  # dx, dy, flip, rotation
-    
+
     def forward(self, node_features, edge_index, edge_features):
         # node_features: [N, node_dim]
         # edge_index: [2, E]
         # edge_features: [E, edge_dim]
         x = torch.relu(self.node_encoder(node_features))
-        
+
         for layer in self.message_passing:
             x = layer(x, edge_index)
             x = torch.relu(x)
-        
+
         action_logits = self.policy_head(x)
         return action_logits
 ```
@@ -89,7 +89,7 @@ class AnalogCircuitPredictor(nn.Module):
             nn.ReLU(),
             nn.Linear(hidden, 5)  # DC gain, GBW, phase margin, noise, power
         )
-    
+
     def forward(self, device_sizes):
         # device_sizes: [batch, n_devices] (W/L values)
         return self.net(device_sizes)
@@ -110,7 +110,7 @@ def optimize_amplifier():
         Real(1e-6, 100e-6, name='W2'),  # Load transistor width
         Real(1e-6, 10e-6, name='L2'),   # Load transistor length
     ]
-    
+
     result = gp_minimize(
         lambda x: -simulate_amplifier(x),  # Negative because we maximize
         dimensions,
@@ -146,10 +146,10 @@ def train_load_forecaster(X_train, y_train, X_test):
         'bagging_fraction': 0.8,
         'bagging_freq': 5
     }
-    
+
     train_data = lgb.Dataset(X_train, label=y_train)
     model = lgb.train(params, train_data, num_boost_round=500)
-    
+
     return model.predict(X_test)
 ```
 
@@ -164,7 +164,7 @@ class FaultClassifierGNN(nn.Module):
         self.conv1 = GCNConv(n_features, hidden)
         self.conv2 = GCNConv(hidden, hidden)
         self.classifier = nn.Linear(hidden, n_classes)
-    
+
     def forward(self, x, edge_index):
         x = torch.relu(self.conv1(x, edge_index))
         x = torch.relu(self.conv2(x, edge_index))

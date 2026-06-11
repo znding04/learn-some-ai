@@ -57,7 +57,7 @@ def audit_scoring_bias(
 ):
     """
     Audit an automated scoring system for demographic bias.
-    
+
     scores_df: DataFrame with columns for AI scores, human scores,
                and demographic group membership.
     """
@@ -94,7 +94,6 @@ def audit_scoring_bias(
         print(f"Group {group}: Pearson r = {correlation:.3f}")
 
     return pd.DataFrame(results).T
-
 
 def compute_fairness_metrics(
     predictions: np.ndarray,
@@ -157,7 +156,7 @@ def compute_fairness_metrics(
 def check_content_accessibility(content: dict) -> dict:
     """
     Audit educational content for basic accessibility issues.
-    
+
     content: dict with keys like 'images', 'videos', 'text_elements',
              'interactive_elements'
     """

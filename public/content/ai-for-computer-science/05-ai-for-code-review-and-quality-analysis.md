@@ -101,7 +101,7 @@ def process_order(order, user, inventory):
 """
 
 result = analyze_complexity(code)
-# Output: {lines: 18, functions: 1, cyclomatic_complexity: 7, 
+# Output: {lines: 18, functions: 1, cyclomatic_complexity: 7,
 #          max_depth: 3, maintainability_index: 52.3}
 ```
 

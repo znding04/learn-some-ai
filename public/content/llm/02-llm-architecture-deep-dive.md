@@ -47,29 +47,29 @@ import numpy as np
 def scaled_dot_product_attention(Q, K, V, mask=None):
     """
     Compute scaled dot-product attention.
-    
+
     Args:
         Q: Query matrix, shape (seq_len, d_k)
         K: Key matrix, shape (seq_len, d_k)
         V: Value matrix, shape (seq_len, d_v)
         mask: Optional causal mask, shape (seq_len, seq_len)
-    
+
     Returns:
         Attention output, shape (seq_len, d_v)
     """
     d_k = Q.shape[-1]
-    
+
     # Step 1: Compute raw attention scores
     scores = Q @ K.T / np.sqrt(d_k)   # (seq_len, seq_len)
-    
+
     # Step 2: Apply causal mask (set future positions to -inf)
     if mask is not None:
         scores = np.where(mask == 0, -1e9, scores)
-    
+
     # Step 3: Softmax to get attention weights
     exp_scores = np.exp(scores - scores.max(axis=-1, keepdims=True))
     weights = exp_scores / exp_scores.sum(axis=-1, keepdims=True)
-    
+
     # Step 4: Weighted sum of values
     output = weights @ V   # (seq_len, d_v)
     return output

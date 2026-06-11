@@ -51,7 +51,7 @@ from sklearn.preprocessing import StandardScaler
 def extract_student_features(logs: pd.DataFrame) -> pd.DataFrame:
     """
     Extract behavioral features from LMS clickstream logs.
-    
+
     logs columns: student_id, timestamp, action_type, resource_id, duration_sec
     action_type: 'page_view', 'quiz_attempt', 'forum_post', 'assignment_submit',
                  'hint_request', 'video_watch'
@@ -87,7 +87,6 @@ def extract_student_features(logs: pd.DataFrame) -> pd.DataFrame:
     features["login_regularity_std"] = features["login_regularity_std"].fillna(0)
 
     return features
-
 
 def build_early_warning_system(features: pd.DataFrame, labels: pd.Series):
     """
@@ -136,7 +135,6 @@ def build_early_warning_system(features: pd.DataFrame, labels: pd.Series):
     print(importances.head(10))
 
     return best_model, scaler
-
 
 def detect_gaming_behavior(logs: pd.DataFrame, threshold_seconds: float = 3.0):
     """
@@ -192,7 +190,6 @@ def extract_action_sequences(logs: pd.DataFrame, window_size: int = 5):
             student_seqs.append(tuple(actions[i:i + window_size]))
         sequences[student_id] = student_seqs
     return sequences
-
 
 def find_frequent_subsequences(
     sequences: dict, min_support: float = 0.1, subseq_len: int = 3
@@ -311,11 +308,11 @@ stateDiagram-v2
 
     RequestHint --> AttemptProblem: re-attempt
     RequestHint --> RequestHint: rapid hints (gaming)
-    
+
     Correct --> NextProblem
     RapidGuessing --> RequestHint: seek answer
     RapidGuessing --> OffTask: disengage
-    
+
     NextProblem --> ReadContent
     OffTask --> ReadContent: return
     OffTask --> [*]: dropout

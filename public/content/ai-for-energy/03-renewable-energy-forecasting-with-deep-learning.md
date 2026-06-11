@@ -95,7 +95,6 @@ class SolarLSTM(nn.Module):
         last = lstm_out[:, -1, :]
         return self.fc(last)  # (batch, forecast_horizon)
 
-
 # Example usage
 input_dim = 8   # GHI, temperature, humidity, wind speed, hour, month, etc.
 model = SolarLSTM(input_dim=input_dim, hidden_dim=128, forecast_horizon=24)

@@ -72,17 +72,17 @@ from z3 import Int, Solver, And, If, sat
 def verify_abs_correct():
     """Verify that our abs implementation is correct for all integers."""
     x = Int('x')
-    
+
     # Our implementation
     abs_x = If(x >= 0, x, -x)
-    
+
     # Specification: result >= 0 and result*result == x*x
     spec = And(abs_x >= 0, abs_x * abs_x == x * x)
-    
+
     # Try to find a counterexample (negate the spec)
     solver = Solver()
     solver.add(Not(spec))
-    
+
     if solver.check() == sat:
         counter = solver.model()
         print(f"Bug found! Counterexample: x = {counter[x]}")

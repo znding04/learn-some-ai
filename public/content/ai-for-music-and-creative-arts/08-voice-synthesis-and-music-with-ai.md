@@ -58,21 +58,21 @@ class DiffSingerPipeline:
         self.pitch_predictor = PitchPredictor()   # Predicts F0 with vibrato
         self.diffusion_model = MelDiffusion()      # Denoises to mel spectrogram
         self.vocoder = HiFiGAN()                   # Mel → waveform
-    
+
     def synthesize(self, phonemes, notes, durations):
         # Encode phonemes
         phone_emb = self.phoneme_encoder(phonemes)
-        
+
         # Predict pitch contour (F0) with natural vibrato
         f0 = self.pitch_predictor(phone_emb, notes, durations)
-        
+
         # Generate mel spectrogram via diffusion
         # Start from noise, denoise conditioned on phonemes + F0
         mel = self.diffusion_model.generate(
             condition=torch.cat([phone_emb, f0], dim=-1),
             steps=100
         )
-        
+
         # Convert mel to waveform
         waveform = self.vocoder(mel)
         return waveform
@@ -115,14 +115,14 @@ class VoiceConverter:
         self.speaker_embedding = load_speaker(model_path)  # Who it sounds like
         self.decoder = VITS_Decoder()          # Synthesis
         self.vocoder = HiFiGAN()
-    
+
     def convert(self, source_audio):
         # Extract content from source (preserves melody and lyrics)
         content = self.content_encoder(source_audio)
-        
+
         # Extract F0 from source (preserves pitch and expression)
         f0 = extract_f0(source_audio)
-        
+
         # Decode with target speaker's voice characteristics
         mel = self.decoder(content, self.speaker_embedding, f0)
         return self.vocoder(mel)
@@ -143,7 +143,7 @@ def clone_and_sing(reference_audio, musical_score):
     """
     # Extract voice characteristics from reference
     voice_embedding = speaker_encoder(reference_audio)
-    
+
     # Generate singing conditioned on voice embedding + score
     output = singing_model.generate(
         voice=voice_embedding,

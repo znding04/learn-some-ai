@@ -74,7 +74,7 @@ Below is minimal pseudocode for a ReAct-style agent loop. ReAct interleaves reas
 def react_agent(goal, tools, llm, max_steps=10):
     """
     A simple agent loop following the ReAct pattern.
-    
+
     Args:
         goal: The objective the agent should accomplish.
         tools: A dictionary mapping tool names to callable functions.
@@ -83,29 +83,29 @@ def react_agent(goal, tools, llm, max_steps=10):
     """
     # Initialize the scratchpad with the goal
     scratchpad = f"Goal: {goal}\n"
-    
+
     for step in range(max_steps):
         # Ask the LLM to produce a Thought and an Action
         prompt = scratchpad + "Thought:"
         response = llm(prompt)  # LLM generates reasoning + action
-        
+
         # Parse the response into thought and action
         thought, action, action_input = parse_response(response)
         scratchpad += f"Thought: {thought}\n"
-        
+
         # Check if the agent wants to finish
         if action == "finish":
             return action_input  # Final answer
-        
+
         # Execute the chosen tool
         if action in tools:
             observation = tools[action](action_input)
         else:
             observation = f"Error: tool '{action}' not found."
-        
+
         scratchpad += f"Action: {action}({action_input})\n"
         scratchpad += f"Observation: {observation}\n"
-    
+
     return "Max steps reached without a final answer."
 ```
 

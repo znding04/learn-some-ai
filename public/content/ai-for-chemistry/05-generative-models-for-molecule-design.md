@@ -65,27 +65,27 @@ class MoleculeVAE(nn.Module):
     def __init__(self, latent_dim=128):
         super().__init__()
         self.latent_dim = latent_dim
-        
+
         # Encoder
         self.encoder = nn.GRU(VOCAB_SIZE, 256, batch_first=True)
         self.fc_mu = nn.Linear(256, latent_dim)
         self.fc_logvar = nn.Linear(256, latent_dim)
-        
+
         # Decoder
         self.fc_decode = nn.Linear(latent_dim, 256)
         self.decoder = nn.GRU(VOCAB_SIZE + 256, 256, batch_first=True)
         self.output = nn.Linear(256, VOCAB_SIZE)
-    
+
     def encode(self, x):
         _, h = self.encoder(x)
         h = h.squeeze(0)
         return self.fc_mu(h), self.fc_logvar(h)
-    
+
     def reparameterize(self, mu, logvar):
         std = torch.exp(0.5 * logvar)
         eps = torch.randn_like(std)
         return mu + eps * std
-    
+
     def decode(self, z, max_len=MAX_LEN):
         h = self.fc_decode(z).unsqueeze(0)
         # Teacher forcing omitted for brevity
@@ -99,7 +99,7 @@ class MoleculeVAE(nn.Module):
             outputs.append(logits)
             input_token = F.softmax(logits, dim=-1)
         return torch.cat(outputs, dim=1)
-    
+
     def forward(self, x):
         mu, logvar = self.encode(x)
         z = self.reparameterize(mu, logvar)
@@ -109,7 +109,7 @@ class MoleculeVAE(nn.Module):
 # VAE loss: reconstruction + KL divergence
 def vae_loss(recon_x, x, mu, logvar):
     recon_loss = F.cross_entropy(
-        recon_x.view(-1, VOCAB_SIZE), 
+        recon_x.view(-1, VOCAB_SIZE),
         x.argmax(dim=-1).view(-1),
         reduction='mean'
     )
@@ -123,10 +123,10 @@ def sample_molecules(model, n=5, latent_dim=128):
         z = torch.randn(n, latent_dim)
         logits = model.decode(z)
         indices = logits.argmax(dim=-1)
-        
+
         molecules = []
         for i in range(n):
-            smiles = ''.join([idx_to_char.get(idx.item(), '') 
+            smiles = ''.join([idx_to_char.get(idx.item(), '')
                             for idx in indices[i]]).strip()
             mol = Chem.MolFromSmiles(smiles)
             molecules.append((smiles, mol is not None))
@@ -167,14 +167,14 @@ graph TD
         D --> E[Decoder]
         E --> F[Reconstructed SMILES]
     end
-    
+
     subgraph "Latent Space Optimization"
         D --> G[Property Predictor]
         G --> H[Gradient ∇z]
         H --> I[Optimized z*]
         I --> E
     end
-    
+
     subgraph "Diffusion for 3D Molecules"
         J[Noise] --> K[Denoise Step 1]
         K --> L[Denoise Step 2]

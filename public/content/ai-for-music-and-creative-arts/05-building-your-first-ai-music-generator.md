@@ -163,7 +163,7 @@ class MusicPipeline:
     def __init__(self, model_size="small"):
         self.model = MusicGen.get_pretrained(f"facebook/musicgen-{model_size}")
         self.sr = self.model.sample_rate
-    
+
     def generate(self, prompt, duration=15, temperature=1.0, cfg=3.0):
         """Generate audio from a text prompt."""
         self.model.set_generation_params(
@@ -174,33 +174,33 @@ class MusicPipeline:
         )
         wav = self.model.generate([prompt])
         return wav[0, 0].cpu()  # (samples,)
-    
+
     def add_fade(self, audio, fade_in=0.5, fade_out=1.0):
         """Apply fade-in and fade-out to avoid clicks."""
         n_in = int(fade_in * self.sr)
         n_out = int(fade_out * self.sr)
-        
+
         fade_in_curve = torch.linspace(0, 1, n_in)
         fade_out_curve = torch.linspace(1, 0, n_out)
-        
+
         audio[:n_in] *= fade_in_curve
         audio[-n_out:] *= fade_out_curve
         return audio
-    
+
     def normalize(self, audio, target_db=-14.0):
         """Loudness normalization."""
         rms = torch.sqrt(torch.mean(audio ** 2))
         target_rms = 10 ** (target_db / 20)
         audio = audio * (target_rms / (rms + 1e-8))
         return torch.clamp(audio, -1.0, 1.0)
-    
+
     def run(self, prompt, output_path="output", duration=15):
         """Full pipeline: generate → fade → normalize → save."""
         print(f"Generating: {prompt}")
         audio = self.generate(prompt, duration=duration)
         audio = self.add_fade(audio)
         audio = self.normalize(audio)
-        
+
         # Save as WAV
         torchaudio.save(f"{output_path}.wav", audio.unsqueeze(0), self.sr)
         print(f"Saved: {output_path}.wav ({duration}s)")

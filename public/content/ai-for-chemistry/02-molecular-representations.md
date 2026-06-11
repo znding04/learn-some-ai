@@ -76,13 +76,13 @@ def mol_to_graph(mol):
             int(atom.GetHybridization()),
             int(atom.GetIsAromatic())
         ])
-    
+
     # Edge index (COO format)
     edge_index = []
     for bond in mol.GetBonds():
         i, j = bond.GetBeginAtomIdx(), bond.GetEndAtomIdx()
         edge_index.extend([[i, j], [j, i]])  # Undirected
-    
+
     return np.array(node_features), np.array(edge_index).T
 
 mol = Chem.MolFromSmiles('c1ccccc1')  # Benzene

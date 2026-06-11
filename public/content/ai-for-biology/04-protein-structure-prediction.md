@@ -99,11 +99,11 @@ import numpy as np
 def align_and_rmsd(coords_pred: np.ndarray, coords_true: np.ndarray) -> float:
     """
     Compute RMSD between two sets of 3D coordinates after Kabsch alignment.
-    
+
     Args:
         coords_pred: (N, 3) array of predicted C-alpha positions
         coords_true:  (N, 3) array of true C-alpha positions
-    
+
     Returns:
         RMSD in the same units as the input coordinates (typically Angstroms)
     """
@@ -130,7 +130,6 @@ def align_and_rmsd(coords_pred: np.ndarray, coords_true: np.ndarray) -> float:
     diff = pred_aligned - true_c
     rmsd = np.sqrt((diff ** 2).sum() / N)
     return rmsd
-
 
 # Example: two small "structures" with some noise
 np.random.seed(42)

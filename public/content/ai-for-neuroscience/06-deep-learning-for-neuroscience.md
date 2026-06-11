@@ -54,7 +54,7 @@ class Simple3DCNN(nn.Module):
         self.pool = nn.MaxPool3d(2)
         self.fc = nn.Linear(64 * 8 * 8 * 8, 2)  # after 3 poolings of 64^3
         self.relu = nn.ReLU()
-        
+
     def forward(self, x):
         x = self.relu(self.conv1(x))
         x = self.pool(x)        # 64 -> 32

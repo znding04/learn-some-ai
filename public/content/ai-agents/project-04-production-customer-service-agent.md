@@ -60,7 +60,6 @@ class Session:
     created_at: float = field(default_factory=time.time)
     escalated: bool = False
 
-
 class SessionStore:
     """In-memory session store. Replace with Redis for production."""
 
@@ -92,7 +91,6 @@ client = openai.OpenAI()
 
 INTENTS = ["billing", "technical_support", "general_inquiry", "account_action"]
 CONFIDENCE_THRESHOLD = 0.70
-
 
 def classify_intent(user_message: str) -> tuple[str, float]:
     """Classify user intent and return (intent, confidence)."""
@@ -142,7 +140,6 @@ MOCK_TOOLS = {
     "reset_password": lambda uid: {"status": "reset_email_sent"},
 }
 
-
 async def run_sub_agent(session: Session, user_message: str) -> str:
     """Run the sub-agent assigned to this session."""
     agent_name = session.current_agent
@@ -182,18 +179,15 @@ import uuid
 app = FastAPI(title="Customer Service Agent")
 store = SessionStore()
 
-
 class ChatRequest(BaseModel):
     session_id: str | None = None
     user_id: str
     message: str
 
-
 class ChatResponse(BaseModel):
     session_id: str
     reply: str
     escalated: bool
-
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
@@ -219,7 +213,6 @@ async def chat(req: ChatRequest):
     reply = await run_sub_agent(session, req.message)
     store.save(session)
     return ChatResponse(session_id=sid, reply=reply, escalated=session.escalated)
-
 
 @app.get("/session/{session_id}")
 async def get_session(session_id: str):

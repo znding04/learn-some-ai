@@ -47,7 +47,7 @@ import anthropic
 client = anthropic.Anthropic()
 
 # System prompt sets the overall behavior
-system_prompt = """You are a data extraction assistant. 
+system_prompt = """You are a data extraction assistant.
 Given a natural language description of a person, extract structured data.
 Always respond with valid JSON matching this schema:
 {"name": string, "age": number|null, "occupation": string|null, "skills": string[]}"""
@@ -59,7 +59,7 @@ few_shot_examples = [
         "content": "Dr. Sarah Chen is a 42-year-old neurosurgeon who specializes in pediatric cases. She is skilled in microsurgery and MRI interpretation."
     },
     {
-        "role": "assistant", 
+        "role": "assistant",
         "content": '{"name": "Dr. Sarah Chen", "age": 42, "occupation": "neurosurgeon", "skills": ["microsurgery", "MRI interpretation", "pediatric neurosurgery"]}'
     },
     {
@@ -87,7 +87,7 @@ response = client.messages.create(
 )
 
 print(response.content[0].text)
-# Expected: {"name": "Priya Patel", "age": 29, "occupation": "full-stack developer", 
+# Expected: {"name": "Priya Patel", "age": 29, "occupation": "full-stack developer",
 #            "skills": ["React", "Python", "PostgreSQL"]}
 ```
 
@@ -108,7 +108,7 @@ cot_prompt = """What is 247 * 38?
 
 Think step by step:
 1. Break down the multiplication
-2. Show each intermediate calculation  
+2. Show each intermediate calculation
 3. Sum the partial products
 4. State the final answer"""
 

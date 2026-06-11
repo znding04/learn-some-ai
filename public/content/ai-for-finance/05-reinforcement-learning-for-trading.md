@@ -104,7 +104,7 @@ import random
 
 class TradingEnv:
     """Single-asset discrete trading environment."""
-    
+
     ACTIONS = {0: "hold", 1: "buy", 2: "sell"}
     TRANSACTION_COST = 0.001  # 10 bps per trade
 
@@ -218,7 +218,6 @@ class DQNAgent:
 
     def sync_target(self):
         self.target_net.load_state_dict(self.policy_net.state_dict())
-
 
 # ── Example Usage ─────────────────────────────────────────────────────────────
 

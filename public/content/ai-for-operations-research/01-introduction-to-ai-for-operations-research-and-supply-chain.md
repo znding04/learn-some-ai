@@ -59,7 +59,7 @@ def newsvendor_solution(price: float, cost: float, demand_samples: np.ndarray) -
     """
     critical_ratio = (price - cost) / price
     print(f"Critical ratio: {critical_ratio:.3f}")
-    
+
     optimal_q = np.quantile(demand_samples, critical_ratio)
     return optimal_q
 

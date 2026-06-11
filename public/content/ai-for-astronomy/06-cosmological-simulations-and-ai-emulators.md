@@ -73,25 +73,25 @@ def linear_power_spectrum(k, omega_m=0.3, sigma8=0.8, ns=0.96, h=0.67):
     """
     Simplified linear P(k) approximation for illustration.
     Real emulators use CLASS/CAMB outputs for the training set.
-    
+
     Uses the Eisenstein & Hu (1998) transfer function shape.
     """
     # Equality scale (Mpc/h)
     k_eq = 0.073 * omega_m * h  # approximate
-    
+
     # Transfer function (Eisenstein & Hu fitting formula, simplified)
     q = k / (omega_m * h**2) * np.exp(omega_m + np.sqrt(2*h) * omega_m)
     T = np.log(1 + 2.34*q) / (2.34*q) * (
         1 + 3.89*q + (16.1*q)**2 + (5.46*q)**3 + (6.71*q)**4
     )**(-0.25)
-    
+
     # Primordial power spectrum
     k_pivot = 0.05  # Mpc^-1
     P_prim = k**ns
-    
+
     # Normalize to sigma8
     P_lin = P_prim * T**2
-    norm = sigma8**2 / (np.trapz(P_lin * (3 * (np.sin(8*k) - 8*k*np.cos(8*k)) 
+    norm = sigma8**2 / (np.trapz(P_lin * (3 * (np.sin(8*k) - 8*k*np.cos(8*k))
                                            / (8*k)**3)**2 / (2*np.pi**2), k) + 1e-10)
     return norm * P_lin
 

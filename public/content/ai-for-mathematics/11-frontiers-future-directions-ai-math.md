@@ -145,7 +145,6 @@ def test_conjecture(
             print(f"  Counterexamples: {counterexamples}")
     return result
 
-
 print("=== Number Theory Conjecture-Testing Agent ===\n")
 
 # Conjecture 1 (TRUE): Goldbach-like check for small evens
@@ -183,7 +182,6 @@ test_conjecture(
     ),
     range(1, 50)
 )
-
 
 # --- Automated conjecture generation ---
 print("\n\n=== Automated Conjecture Generator ===\n")

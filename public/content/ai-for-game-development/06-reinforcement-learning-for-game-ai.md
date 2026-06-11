@@ -128,7 +128,6 @@ class DQNAgent:
         self.target_weights = self.weights.copy()
         self.target_bias = self.bias.copy()
 
-
 # Simple grid game environment
 class GridGame:
     def __init__(self, size=5):
@@ -153,7 +152,6 @@ class GridGame:
         done = np.array_equal(self.pos, self.goal)
         reward = 1.0 if done else -0.01
         return self._get_state(), reward, done
-
 
 # Train the agent
 env = GridGame(size=5)

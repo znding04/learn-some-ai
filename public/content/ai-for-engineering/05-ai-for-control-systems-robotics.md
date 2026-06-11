@@ -53,13 +53,13 @@ class PolicyNetwork(nn.Module):
             nn.ReLU(),
             nn.Linear(hidden, action_dim * 2)  # mean and log_std per action
         )
-    
+
     def forward(self, state):
         output = self.actor(state)
         mean, log_std = output.chunk(2, dim=-1)
         std = torch.exp(log_std)
         return Normal(mean, std)
-    
+
     def get_action(self, state):
         dist = self.forward(state)
         action = dist.sample()
@@ -78,10 +78,10 @@ class SACAgent:
         self.target_critic1 = CriticNetwork(state_dim, action_dim)
         self.target_critic2 = CriticNetwork(state_dim, action_dim)
         self.alpha = torch.tensor(0.2, requires_grad=True)
-    
+
     def update(self, replay_buffer, batch_size=256):
         states, actions, rewards, next_states, dones = replay_buffer.sample(batch_size)
-        
+
         # Critic loss
         with torch.no_grad():
             next_actions, _ = self.actor.get_action(next_states)
@@ -90,10 +90,10 @@ class SACAgent:
                 self.target_critic2(next_states, next_actions)
             )
             target_q = rewards + (1 - dones) * 0.99 * min_next_q
-        
+
         q1_loss = nn.MSELoss()(self.critic1(states, actions), target_q)
         q2_loss = nn.MSELoss()(self.critic2(states, actions), target_q)
-        
+
         # Actor loss
         new_actions, log_pi = self.actor.get_action(states)
         q_values = torch.min(
@@ -101,7 +101,7 @@ class SACAgent:
             self.critic2(states, new_actions)
         )
         actor_loss = (self.alpha * log_pi - q_values).mean()
-        
+
         # Update networks...
 ```
 
@@ -127,7 +127,7 @@ class LearnedDynamicsModel(nn.Module):
             nn.ReLU(),
             nn.Linear(hidden, state_dim)
         )
-    
+
     def forward(self, state, action):
         xa = torch.cat([state, action], dim=-1)
         delta = self.net(xa)
@@ -181,7 +181,7 @@ def system_identification(real_robot_data, sim_model):
     for _ in range(num_iterations):
         # Collect rollouts in real robot (limited samples!)
         real_transitions = collect_real_robot_data(n_samples=1000)
-        
+
         # Update simulator parameters to match real data
         loss = mse(sim_model(real_transitions.state, real_transitions.action),
                    real_transitions.next_state)

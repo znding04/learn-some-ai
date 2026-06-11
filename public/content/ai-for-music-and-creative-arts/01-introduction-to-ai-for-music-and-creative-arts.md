@@ -114,7 +114,7 @@ graph LR
     C --> D[Audio Tokens]
     D --> E[Vocoder/Decoder]
     E --> F[Audio Waveform]
-    
+
     style A fill:#e1f5fe
     style F fill:#e8f5e9
 ```

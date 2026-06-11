@@ -42,9 +42,9 @@ ner_pipeline = pipeline("ner", model="saoodamin/contract-ner", aggregation_strat
 
 contract_text = """
 ARTICLE 5: INDEMNIFICATION
-Supplier shall indemnify Buyer against all claims arising from 
-breach of this Agreement, provided such breach is notified within 
-thirty (30) days of discovery. The aggregate liability shall not 
+Supplier shall indemnify Buyer against all claims arising from
+breach of this Agreement, provided such breach is notified within
+thirty (30) days of discovery. The aggregate liability shall not
 exceed USD 2,000,000 (Two Million United States Dollars).
 """
 
@@ -79,13 +79,13 @@ flowchart TD
     D --> E["Named Entity Recognition\n(NER for entities in each clause)"]
     E --> F["Obligation Extraction\n(party, action, condition, deadline)"]
     F --> G["Structured Contract Summary\n(parties, obligations, key dates, risks)"]
-    
+
     D --> D1[Indemnification]
     D --> D2[Termination]
     D --> D3[Assignment]
     D --> D4[Confidentiality]
     D --> D5[Force Majeure]
-    
+
     F --> F1[Party A → Pay $X by date Y]
     F --> F2[Party B → Deliver Z by condition W]
     F --> F3[Party A → Indemnify Party B]

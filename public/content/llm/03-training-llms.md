@@ -58,19 +58,19 @@ for epoch in range(3):
         input_ids = batch["input_ids"].to(device)      # (batch, seq_len)
         labels = batch["labels"].to(device)             # (batch, seq_len)
         # labels[i] = -100 for prompt tokens (ignored in loss)
-        
+
         # Forward pass: model returns logits for each position
         outputs = model(input_ids=input_ids, labels=labels)
         loss = outputs.loss  # cross-entropy over non-masked tokens
-        
+
         # Backward pass and update
         optimizer.zero_grad()
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
         optimizer.step()
-        
+
         total_loss += loss.item()
-    
+
     avg_loss = total_loss / len(dataloader)
     print(f"Epoch {epoch+1}, Average Loss: {avg_loss:.4f}")
 ```

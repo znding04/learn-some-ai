@@ -137,7 +137,6 @@ from typing import Optional
 
 rng = np.random.default_rng(2024)
 
-
 # ── Market state ──────────────────────────────────────────────────────────────
 
 @dataclass
@@ -146,7 +145,6 @@ class MarketState:
     daily_volume: float = 1_000_000.0
     circuit_breaker_active: bool = False
     circuit_breaker_threshold: float = 0.03   # 3% move triggers halt
-
 
 # ── Agent types ───────────────────────────────────────────────────────────────
 
@@ -175,7 +173,6 @@ class MonocultureAgent:
             return self.capital / current_price   # liquidate all
         return 0.0
 
-
 class DiverseAgent:
     """
     Contrarian / value agent: buys on dips, providing stabilising liquidity.
@@ -191,7 +188,6 @@ class DiverseAgent:
             return -min(self.capital / current_price, 500)   # buy up to 500 shares
         return 0.0
 
-
 # ── Price impact model ────────────────────────────────────────────────────────
 
 def price_impact(
@@ -205,7 +201,6 @@ def price_impact(
     if net_sell_qty <= 0:
         return 0.0
     return -daily_vol * lambda_ * np.sqrt(net_sell_qty / daily_volume) * price
-
 
 # ── Flash crash simulation ────────────────────────────────────────────────────
 
@@ -309,7 +304,6 @@ def simulate_flash_crash(
         "recovery_pct":       (prices[-1] - prices[trough_idx]) / prices[trough_idx],
     }
 
-
 # ── Run experiments: vary monoculture fraction ────────────────────────────────
 
 print("=== Flash Crash Severity vs. Model Monoculture Fraction ===\n")
@@ -327,7 +321,6 @@ for phi in fractions:
     )
     print(f"{phi:>14.0%}  {result['trough_drop']:>11.2%}  "
           f"{result['trough_step']:>12d}  {result['recovery_pct']:>9.2%}")
-
 
 # ── Contagion model: network propagation ─────────────────────────────────────
 

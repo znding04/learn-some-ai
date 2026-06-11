@@ -194,7 +194,6 @@ def solve_with_self_consistency(problem: str, k: int = 5) -> str:
     print(f"Consensus ({count}/{k}): {best_answer}")
     return best_answer
 
-
 # --- Example usage ---
 problem = (
     "A ball is thrown upward with initial velocity 20 m/s from a height "

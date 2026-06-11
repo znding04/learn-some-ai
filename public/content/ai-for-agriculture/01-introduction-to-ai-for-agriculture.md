@@ -74,7 +74,7 @@ print("NDVI:\n", ndvi)
 ```mermaid
 flowchart LR
     subgraph Data Sources
-        A1[Satellites] 
+        A1[Satellites]
         A2[Drones / UAVs]
         A3[IoT Sensors]
         A4[Weather Stations]

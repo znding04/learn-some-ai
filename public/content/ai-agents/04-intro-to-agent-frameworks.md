@@ -83,7 +83,7 @@ from langgraph.prebuilt import create_react_agent
 @tool
 def calculator(expression: str) -> str:
     """Evaluate a mathematical expression. Use for any math calculations.
-    
+
     Args:
         expression: A valid Python math expression, e.g. '2 + 3 * 4'
     """
@@ -96,7 +96,7 @@ def calculator(expression: str) -> str:
 @tool
 def search_knowledge(query: str) -> str:
     """Search the knowledge base for factual information.
-    
+
     Args:
         query: A natural language search query
     """

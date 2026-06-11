@@ -64,21 +64,21 @@ def test_length_generalization(model_name, train_rules, test_rules):
     """
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-    
+
     results = {}
     for rule_type, train_len, test_len in test_rules:
         # Generate training examples
         train_exs = generate_examples(rule_type, length=train_len, n=1000)
         # Generate test examples (same rule, longer)
         test_exs = generate_examples(rule_type, length=test_len, n=100)
-        
+
         # Fine-tune on training
         fine_tune(model, train_exs)
-        
+
         # Evaluate on held-out longer sequences
         accuracy = evaluate(model, test_exs)
         results[rule_type] = accuracy
-    
+
     return results
 
 # Typical result: 98% on train_len=5, 15% on test_len=10
@@ -131,15 +131,15 @@ def compositionality_score(model, probe_dataset):
     """
     Measure how well a model's representations support
     systematic generalization across compositional dimensions.
-    
+
     Dataset: (object_color, object_shape, action, result) tuples
     e.g., ("red sphere", "push", "sphere") → "red sphere"
     """
     from scipy.stats import pearsonr
-    
+
     # Probe model's internal representations
     representations = [model.get_representation(x) for x in probe_dataset]
-    
+
     # Measure disentanglement: do dimensions encode factors independently?
     disentanglement_scores = []
     for i, dim in enumerate(representations[0]):
@@ -152,7 +152,7 @@ def compositionality_score(model, probe_dataset):
         max_corr = max(correlations)
         isolation = max_corr / (sum(correlations) + 1e-8)
         disentanglement_scores.append(isolation)
-    
+
     return np.mean(disentanglement_scores)
 
 # High disentanglement → dimensions encode factors independently
@@ -168,21 +168,21 @@ flowchart TD
         A[Universal Grammar Hypotheses] --> B[Corpus Testing]
         B --> C[Linguistic Generalizations]
     end
-    
+
     subgraph "AI-Assisted Discovery"
         D[Massive Text Corpora] --> E[Neural Language Models]
         E --> F[Internal Representations]
         F --> G[Probing Experiments]
         G --> H[New Linguistic Hypotheses]
     end
-    
+
     subgraph "Validation Loop"
         H --> B
         C --> I[AI Theory Testing]
         I --> J[Revised Theory]
         J --> A
     end
-    
+
     style A fill:#e8f5e9
     style D fill:#e3f2fd
     style H fill:#fff3e0

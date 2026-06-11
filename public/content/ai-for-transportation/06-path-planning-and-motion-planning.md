@@ -53,11 +53,11 @@ def astar(grid, start, goal):
     open_set = [(0, start)]  # (f_score, position)
     came_from = {}
     g_score = {start: 0}
-    
+
     def heuristic(a, b):
         # Euclidean distance (admissible heuristic)
         return ((a[0] - b[0])**2 + (a[1] - b[1])**2) ** 0.5
-    
+
     while open_set:
         f, current = heapq.heappop(open_set)
         if current == goal:
@@ -67,7 +67,7 @@ def astar(grid, start, goal):
                 current = came_from[current]
                 path.append(current)
             return path[::-1]
-        
+
         for dr, dc in [(-1,0),(1,0),(0,-1),(0,1),(-1,-1),(-1,1),(1,-1),(1,1)]:
             neighbor = (current[0] + dr, current[1] + dc)
             if 0 <= neighbor[0] < rows and 0 <= neighbor[1] < cols:
@@ -80,7 +80,7 @@ def astar(grid, start, goal):
                     g_score[neighbor] = tentative_g
                     f_score = tentative_g + heuristic(neighbor, goal)
                     heapq.heappush(open_set, (f_score, neighbor))
-    
+
     return None  # no path found
 
 # Example: 10x10 grid with obstacles
@@ -105,7 +105,7 @@ graph TD
     A[Route Planning] -->|Global path on road network| B[Behavioral Planning]
     B -->|Maneuver decision: lane change, yield| C[Motion Planning]
     C -->|Smooth trajectory| D[Vehicle Control]
-    
+
     E[HD Map + GPS] --> A
     F[Perception: Objects, Lanes, Signals] --> B
     F --> C

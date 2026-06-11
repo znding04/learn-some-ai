@@ -55,7 +55,7 @@ def compute_admet_descriptors(smiles):
     mol = Chem.MolFromSmiles(smiles)
     if mol is None:
         return None
-    
+
     return {
         'MW': Descriptors.MolWt(mol),
         'LogP': Crippen.MolLogP(mol),
@@ -73,9 +73,9 @@ def check_drug_likeness(smiles):
     """Apply multiple drug-likeness rules."""
     mol = Chem.MolFromSmiles(smiles)
     desc = compute_admet_descriptors(smiles)
-    
+
     results = {}
-    
+
     # Lipinski's Rule of Five (oral bioavailability)
     lipinski_violations = sum([
         desc['MW'] > 500,
@@ -84,18 +84,18 @@ def check_drug_likeness(smiles):
         desc['HBA'] > 10
     ])
     results['Lipinski'] = lipinski_violations <= 1
-    
+
     # Veber's rules (oral bioavailability)
     results['Veber'] = desc['RotBonds'] <= 10 and desc['TPSA'] <= 140
-    
+
     # CNS penetration (BBB)
-    results['BBB_likely'] = (desc['MW'] < 450 and 
-                             desc['TPSA'] < 90 and 
+    results['BBB_likely'] = (desc['MW'] < 450 and
+                             desc['TPSA'] < 90 and
                              desc['HBD'] <= 3)
-    
+
     # Pfizer 3/75 rule (toxicity risk)
     results['Pfizer_safe'] = not (desc['LogP'] > 3 and desc['TPSA'] < 75)
-    
+
     return results
 
 # Example: evaluate drug candidates
@@ -162,14 +162,14 @@ graph TD
     C --> D[Lead Optimization]
     D --> E[Preclinical]
     E --> F[Clinical Trials]
-    
+
     subgraph "AI Acceleration"
         B --> G[Virtual Screening ML]
         C --> H[ADMET Prediction]
         D --> I[Multi-objective Generation]
         D --> J[SAR Analysis]
     end
-    
+
     subgraph "ADMET Properties"
         K[Absorption]
         L[Distribution]

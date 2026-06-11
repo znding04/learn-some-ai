@@ -65,7 +65,6 @@ SYSTEM = (
     "{\"thought\": ..., \"action\": ..., \"input\": ...} or {\"thought\": ..., \"answer\": ...}."
 )
 
-
 def collect_trajectory(question: str, max_steps: int = 6) -> list[dict]:
     """Run the teacher and record every step."""
     messages = [
@@ -92,7 +91,6 @@ def collect_trajectory(question: str, max_steps: int = 6) -> list[dict]:
         trajectory.append({"observation": observation})
 
     return trajectory
-
 
 def collect_dataset(questions: list[str], output_path: str = "trajectories.jsonl"):
     """Collect trajectories for a list of questions."""
@@ -218,7 +216,6 @@ agent_pipe = pipeline(
     tokenizer=MODEL_NAME,
     device_map="auto",
 )
-
 
 def evaluate(test_questions: list[dict]) -> dict:
     """

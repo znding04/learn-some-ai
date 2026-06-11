@@ -142,13 +142,13 @@ decoded_audio = model.decode(encoded_frames)
 ```mermaid
 graph TD
     subgraph "Music Representations"
-        A[Raw Waveform<br/>44100 samples/sec] 
+        A[Raw Waveform<br/>44100 samples/sec]
         B[MIDI Events<br/>~10-50 events/sec]
         C[Mel Spectrogram<br/>~86 frames/sec × 128 bands]
         D[Neural Tokens<br/>~75 tokens/sec × 8 codebooks]
         E[ABC Notation<br/>Text tokens]
     end
-    
+
     A -->|STFT| C
     A -->|Encodec/SoundStream| D
     B -->|Synthesizer| A

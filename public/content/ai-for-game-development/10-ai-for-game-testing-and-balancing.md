@@ -148,7 +148,6 @@ class GameBalanceSimulator:
             bar = "#" * int(wr * 40)
             print(f"  {char:12s} WR={wr:.1%} [{bar:40s}] {status}")
 
-
 # Define characters with stats
 characters = {
     "Warrior":  {"hp": 120, "attack": 15, "defense": 10},
@@ -229,7 +228,6 @@ class AutomatedExplorationTester:
             "bugs_found": len(self.bugs_found),
             "unreached_areas": walkable.sum() - self.visited[walkable].sum()
         }
-
 
 # Create a test map
 test_map = np.zeros((12, 12), dtype=int)

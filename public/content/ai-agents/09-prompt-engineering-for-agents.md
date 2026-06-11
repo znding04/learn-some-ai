@@ -131,7 +131,7 @@ You are a research assistant that finds and summarizes information.
 1. **search_web**: Search the internet for current information.
    - USE when: the user asks about recent events, statistics, or facts you're unsure of.
    - DO NOT use when: the question is about well-known general knowledge.
-   
+
 2. **read_url**: Fetch and read the content of a specific URL.
    - USE when: you need detailed information from a specific source.
    - DO NOT use when: you don't have a specific URL to read.
@@ -170,14 +170,13 @@ def run_research_agent(question: str) -> str:
     )
     return response.choices[0].message.content
 
-
 # Comparing good vs bad prompts
 BAD_PROMPT = "You are a helpful assistant. You can search the web and read URLs."
 
 def demonstrate_prompt_impact(question: str):
     """Show the difference between a structured and unstructured prompt."""
     good_result = run_research_agent(question)
-    
+
     messages = [
         {"role": "system", "content": BAD_PROMPT},
         {"role": "user", "content": question},
@@ -190,7 +189,6 @@ def demonstrate_prompt_impact(question: str):
     print(good_result)
     print("\n=== Unstructured Prompt ===")
     print(bad_result)
-
 
 demonstrate_prompt_impact("What were the key AI breakthroughs in 2025?")
 ```

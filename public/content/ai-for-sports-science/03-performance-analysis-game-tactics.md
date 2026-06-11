@@ -243,10 +243,10 @@ def voronoi_space_control(positions, field_bounds, team_mask=None):
         [field_bounds[1]+10, field_bounds[3]+10],
     ]
     all_pts = np.vstack([positions, boundary_pts])
-    
+
     # Compute Voronoi diagram
     vor = Voronoi(all_pts)
-    
+
     # Compute area of each cell clipped to field
     field_poly = Polygon([
         [field_bounds[0], field_bounds[2]],
@@ -254,12 +254,12 @@ def voronoi_space_control(positions, field_bounds, team_mask=None):
         [field_bounds[1], field_bounds[3]],
         [field_bounds[0], field_bounds[3]],
     ])
-    
+
     team_areas = {}
     if team_mask is not None:
         team_areas['team1'] = 0.0
         team_areas['team2'] = 0.0
-        
+
         for ridge_idx, region_idx in zip(vor.ridge_vertices, vor.point_region):
             if -1 in ridge_idx:  # Infinite region
                 continue
@@ -270,17 +270,17 @@ def voronoi_space_control(positions, field_bounds, team_mask=None):
                     cell_poly = Polygon(cell_pts)
                     clipped = cell_poly.intersection(field_poly)
                     area = clipped.area
-                    
+
                     if team_mask[pt_idx]:
                         team_areas['team1'] += area
                     else:
                         team_areas['team2'] += area
                 except:
                     continue
-        
+
         total_area = team_areas['team1'] + team_areas['team2']
         return {k: v/total_area for k, v in team_areas.items()}
-    
+
     return vor
 
 # Analyze space control during a build-up phase

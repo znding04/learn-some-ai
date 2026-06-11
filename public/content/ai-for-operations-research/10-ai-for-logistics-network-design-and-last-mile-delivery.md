@@ -73,16 +73,16 @@ def greedy_facility_location(customers: list, facilities: list, opening_cost: li
     """
     n_facilities = len(facilities)
     n_customers = len(customers)
-    
+
     # Compute assignment cost matrix
     dist = np.zeros((n_customers, n_facilities))
     for j, cust in enumerate(customers):
         for i, fac in enumerate(facilities):
             dist[j, i] = np.sqrt((cust[0]-fac[0])**2 + (cust[1]-fac[1])**2)
-    
+
     open_facilities = set()
     assigned = [False] * n_customers
-    
+
     while sum(assigned) < n_customers:
         # Find cheapest facility to open next that reduces total cost
         best_delta = float('inf')
@@ -97,16 +97,16 @@ def greedy_facility_location(customers: list, facilities: list, opening_cost: li
             if delta < best_delta:
                 best_delta = delta
                 best_facility = i
-        
+
         open_facilities.add(best_facility)
-        
+
         # Assign customers to nearest open facility
         for j in range(n_customers):
             if not assigned[j]:
                 min_dist = min(dist[j, i] for i in open_facilities)
                 if dist[j, best_facility] == min_dist:
                     assigned[j] = True
-    
+
     return open_facilities
 
 # Example
@@ -125,7 +125,7 @@ class DynamicVRP:
         '''Insert new delivery order into existing route.'''
         best_insert = None
         best_cost = float('inf')
-        
+
         for pos in range(len(current_route) + 1):
             for vehicle in self.vehicles:
                 trial_route = current_route[:pos] + [order] + current_route[pos:]
@@ -133,7 +133,7 @@ class DynamicVRP:
                 if cost < best_cost:
                     best_cost = cost
                     best_insert = (pos, vehicle)
-        
+
         if best_insert:
             self.commit_insertion(best_insert)
         return best_cost

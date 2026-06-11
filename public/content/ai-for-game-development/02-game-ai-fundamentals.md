@@ -97,7 +97,6 @@ class FSM:
         if self.current_state in self.actions:
             self.actions[self.current_state](context)
 
-
 # Build a guard NPC FSM
 guard = FSM()
 
@@ -165,7 +164,6 @@ class UtilityAI:
     def select(self, context: dict) -> str:
         scores = self.evaluate(context)
         return max(scores, key=scores.get)
-
 
 # Define scoring functions
 def hunger_score(ctx): return ctx["hunger"] / 100.0

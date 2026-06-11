@@ -180,7 +180,6 @@ importances = pd.Series(
 print("\nTop feature importances:")
 print(importances.head(5))
 
-
 # ── Part 2: Anomaly Detection with Isolation Forest ──────────────────────────
 
 # Simulate transaction data with a small fraction of anomalous fraud

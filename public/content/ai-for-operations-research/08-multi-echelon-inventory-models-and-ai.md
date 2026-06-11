@@ -66,16 +66,16 @@ def simulate_multiechelon(T: int, base_stocks: list, lead_times: list) -> dict:
     """
     # Demand at retailer
     demand = np.random.normal(100, 20, T)
-    
+
     # Inventory at each echelon
     retailer_stock = np.zeros(T)
     mfg_stock = np.zeros(T)
     supplier_stock = np.zeros(T)
-    
+
     # Orders (pipeline inventory)
     orders_retailer = np.zeros(T)   # orders to manufacturer
     orders_mfg = np.zeros(T)        # orders to supplier
-    
+
     for t in range(T):
         # Retailer: demand arrives, reorder to base stock
         if t >= lead_times[0]:
@@ -83,20 +83,20 @@ def simulate_multiechelon(T: int, base_stocks: list, lead_times: list) -> dict:
             retailer_stock[t] = max(0, retailer_stock[t-1] - demand[t] + incoming_mfg) if t > 0 else max(0, 200 - demand[t] + incoming_mfg)
         else:
             retailer_stock[t] = max(0, 200 - demand[t]) if t > 0 else max(0, 200 - demand[t])
-        
+
         target_order_r = max(0, base_stocks[0] - retailer_stock[t])
         orders_retailer[t] = target_order_r
-        
+
         # Manufacturer: receives from supplier, sends to retailer
         if t >= lead_times[1]:
             incoming_supplier = orders_mfg[t - lead_times[1]]
             mfg_stock[t] = max(0, mfg_stock[t-1] - target_order_r + incoming_supplier) if t > 0 else max(0, 300 - target_order_r + incoming_supplier)
         else:
             mfg_stock[t] = max(0, 300 - target_order_r) if t > 0 else max(0, 300 - target_order_r)
-        
+
         target_order_m = max(0, base_stocks[1] - mfg_stock[t])
         orders_mfg[t] = target_order_m
-    
+
     return {
         'retailer_stock': retailer_stock,
         'mfg_stock': mfg_stock,

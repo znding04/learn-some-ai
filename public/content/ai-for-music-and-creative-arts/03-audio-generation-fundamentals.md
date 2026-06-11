@@ -53,7 +53,7 @@ class DilatedCausalConv(nn.Module):
             dilation=dilation,
             padding=dilation
         )
-    
+
     def forward(self, x):
         # Gated activation (key to WaveNet's expressiveness)
         h = torch.tanh(self.conv(x)) * torch.sigmoid(self.gate(x))
@@ -114,7 +114,7 @@ class SimpleDiffusionStep(nn.Module):
             nn.SiLU(),
             nn.Linear(512, audio_dim)
         )
-    
+
     def forward(self, noisy_audio, timestep):
         t_emb = self.time_embed(timestep.float().unsqueeze(-1))
         x = torch.cat([noisy_audio, t_emb], dim=-1)

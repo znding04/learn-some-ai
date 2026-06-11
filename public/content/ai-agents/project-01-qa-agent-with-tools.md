@@ -66,7 +66,6 @@ def web_search(query: str) -> str:
     results = resp.json().get("results", [])
     return "\n".join(r["content"] for r in results)
 
-
 def calculator(expression: str) -> str:
     """Evaluate a mathematical expression safely."""
     allowed = set("0123456789+-*/.() ")
@@ -78,7 +77,6 @@ def calculator(expression: str) -> str:
     except Exception as e:
         return f"Error: {e}"
 
-
 def knowledge_base(topic: str) -> str:
     """Look up a topic in our local JSON knowledge base."""
     with open("kb.json") as f:
@@ -87,7 +85,6 @@ def knowledge_base(topic: str) -> str:
     if entry:
         return entry
     return "No entry found for that topic."
-
 
 TOOLS: dict[str, dict[str, Any]] = {
     "web_search": {
@@ -130,7 +127,6 @@ When you have the final answer, respond with:
 )
 
 MAX_ITERATIONS = 6
-
 
 def run_agent(question: str) -> str:
     messages = [

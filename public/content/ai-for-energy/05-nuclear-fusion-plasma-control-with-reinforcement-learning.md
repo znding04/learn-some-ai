@@ -133,7 +133,6 @@ class SimpleTokamakEnv:
 
         return self._get_state(), reward, done, {}
 
-
 # Test the environment
 env = SimpleTokamakEnv(n_coils=6)
 state = env.reset()

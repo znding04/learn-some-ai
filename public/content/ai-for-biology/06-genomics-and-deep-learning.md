@@ -126,7 +126,6 @@ def one_hot_encode(sequence: str) -> torch.Tensor:
         # N (ambiguous) stays all zeros
     return encoded
 
-
 # ── 2. Simple 1D CNN for TF binding site classification ───────────────────────
 
 class TFBindingCNN(nn.Module):
@@ -159,7 +158,6 @@ class TFBindingCNN(nn.Module):
         x = self.dropout(x)
         return self.fc2(x).squeeze(-1)  # (batch,) logits
 
-
 # ── 3. Train on synthetic data ────────────────────────────────────────────────
 
 def make_synthetic_data(n_pos=500, n_neg=500, seq_len=101):
@@ -188,7 +186,6 @@ def make_synthetic_data(n_pos=500, n_neg=500, seq_len=101):
     X = torch.stack([one_hot_encode(s) for s in seqs])   # (N, L, 4)
     y = torch.tensor(labels, dtype=torch.float32)
     return X, y
-
 
 X, y = make_synthetic_data()
 model = TFBindingCNN(seq_len=101)

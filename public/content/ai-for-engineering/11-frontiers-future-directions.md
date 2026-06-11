@@ -38,7 +38,7 @@ class EngineeringCodeGenerator(nn.Module):
             num_layers=12
         )
         self.code_head = nn.Linear(hidden_dim, vocab_size)
-    
+
     def forward(self, nl_specification):
         # Encode natural language specification
         spec_embedding = self.encoder(nl_specification)
@@ -56,9 +56,9 @@ def generate_cad_from_spec(model, spec_text):
     """Generate CAD operations from specification text."""
     prompt = f"""
     Task: Generate CAD feature tree for the following component:
-    
+
     Component: {spec_text}
-    
+
     Output format:
     1. SKETCH Plane=XY, Features=[Line(0,0,10,0), Arc(...)]
     2. EXTRUDE Depth=5, Operation=New
@@ -92,15 +92,15 @@ class HybridSolver(nn.Module):
             nn.GELU(),
             nn.Linear(nn_hidden, state_dim)  # Learns solver error
         )
-    
+
     def forward(self, state, control, dt):
         # Classical solver prediction
         classical_pred = self.physics_solver.step(state, control, dt)
-        
+
         # Neural residual correction
         augmented_input = torch.cat([classical_pred, control], dim=-1)
         residual = self.residual_net(augmented_input)
-        
+
         # Final prediction: classical + learned correction
         return classical_pred + residual
 ```
@@ -116,13 +116,13 @@ def neural_architecture_search_pde(pde_family, n_trials=100):
     """
     best_architecture = None
     best_error = float('inf')
-    
+
     for trial in range(n_trials):
         # Sample architecture hyperparameters
         n_layers = trial % 12 + 1
         hidden_dim = 2 ** (trial % 6 + 5)  # 32 to 512
         n_heads = [4, 8, 16][trial % 3]
-        
+
         # Build and evaluate
         model = TransformerOperator(
             n_layers=n_layers,
@@ -130,11 +130,11 @@ def neural_architecture_search_pde(pde_family, n_trials=100):
             n_heads=n_heads
         )
         error = evaluate_on_pde_family(model, pde_family)
-        
+
         if error < best_error:
             best_error = error
             best_architecture = model.get_config()
-    
+
     return best_architecture, best_error
 ```
 
@@ -152,19 +152,19 @@ def interactive_generative_design(engineer_feedback, initial_designs):
     Iterative design loop where engineer provides feedback.
     """
     current_population = initial_designs
-    
+
     for iteration in range(10):
         # Generate candidate designs
         candidates = generative_model.propose(current_population, n=50)
-        
+
         # Engineer ranks and provides feedback
         ranked = engineer_rank(candidates)
-        
+
         # Update generative model based on preference
         generative_model.update_preferences(ranked)
-        
+
         print(f"Iteration {iteration}: Best design score = {ranked[0].score}")
-    
+
     return ranked[0].design
 ```
 
@@ -182,7 +182,7 @@ class DesignReviewAI(nn.Module):
         self.cad_encoder = CADGraphEncoder()
         self.standards_classifier = nn.Linear(512, 100)  # 100 common design rules
         self.issue_predictor = nn.Linear(512, 20)  # 20 common issue types
-    
+
     def forward(self, cad_model):
         features = self.cad_encoder(cad_model)
         rule_violations = torch.softmax(self.standards_classifier(features), dim=-1)
@@ -208,26 +208,26 @@ class AutonomousStructuralLab:
         self.testing_machine = RoboticTensileTester()
         self.property_predictor = PropertyPredictorML()
         self.optimizer = BayesianOptimizer()
-    
+
     def run_autonomous_campaign(self, material_candidates, budget=50):
         for candidate in material_candidates[:budget]:
             # Prepare specimen
             specimen = self.specimen_prep.prepare(material_candidates)
-            
+
             # Run mechanical test
             stress_strain = self.testing_machine.test(specimen)
-            
+
             # Extract properties
             properties = self.extract_properties(stress_strain)
-            
+
             # Update predictor
             self.property_predictor.update(material_candidates, properties)
-            
+
             # Select next candidate
             next_candidate = self.optimizer.suggest(self.property_predictor)
-            
+
             print(f"Tested {candidate}, Properties: {properties}")
-        
+
         return self.property_predictor
 ```
 
@@ -240,20 +240,20 @@ class AutonomousElectronicsLab:
     """
     def run_firmware_debug_campaign(self, firmware_images, error_logs):
         classifier = DefectClassifier()
-        
+
         for firmware, error_log in zip(firmware_images, error_logs):
             # Automated probe placement
             probe_points = self.locate_test_points(firmware)
-            
+
             # Execute and measure
             measurements = self.automated_multimeter.measure(probe_points)
-            
+
             # Classify defect
             defect_type = classifier.predict(error_log, measurements)
-            
+
             # Root cause analysis
             root_cause = self.explain_defect(firmware, defect_type, measurements)
-            
+
             print(f"Firmware {firmware}: {defect_type} -> {root_cause}")
 ```
 

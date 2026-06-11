@@ -38,11 +38,11 @@ class TrafficSignalAgent(nn.Module):
         )
         self.policy = nn.Linear(hidden, num_phases)  # Phase selection
         self.value = nn.Linear(hidden, 1)
-    
+
     def forward(self, state):
         encoded = self.encoder(state)
         return self.policy(encoded), self.value(encoded)
-    
+
     def get_action(self, state, epsilon=0.1):
         if torch.rand(1).item() < epsilon:
             return torch.randint(0, 4, (1,)).item()  # Random
@@ -68,7 +68,7 @@ class TrafficForecaster(nn.Module):
             GCNConv(hidden, hidden) for _ in range(6)
         ])
         self.decoder = nn.Linear(hidden, horizon)  # Predict H steps ahead
-    
+
     def forward(self, x, edge_index):
         # x: [batch, num_nodes, in_channels] (traffic state per node)
         # edge_index: [2, num_edges] (road network topology)
@@ -105,7 +105,7 @@ class ConcreteDefectDetector(nn.Module):
             nn.ReLU(),
             nn.Linear(128, 4)  # None, minor, moderate, severe
         )
-    
+
     def forward(self, x):
         features = torch.relu(self.backbone.classifier(self.backbone(x)))
         return {
@@ -130,7 +130,7 @@ class CrackWidthRegressor(nn.Module):
             nn.Conv2d(128, 1, 1),
             nn.Softplus()  # Positive width in mm
         )
-    
+
     def forward(self, x):
         features = self.encoder(x)
         mask = torch.sigmoid(self.segmentation_head(features))
@@ -156,7 +156,7 @@ class PumpScheduler(nn.Module):
             nn.ReLU(),
             nn.Linear(hidden, num_pumps * num_timesteps)  # On/off per pump per hour
         )
-    
+
     def forward(self, demand_series):
         # demand_series: [batch, 24, 1] (hourly demand forecast)
         enc, _ = self.temporal_encoder(demand_series)
@@ -183,7 +183,7 @@ class LeakDetector(nn.Module):
             nn.AdaptiveAvgPool1d(1)
         )
         self.classifier = nn.Linear(64, 2)  # Leak vs no leak
-    
+
     def forward(self, audio_signal):
         # audio_signal: [batch, signal_length]
         features = self.melspec(audio_signal.unsqueeze(-1)).transpose(1, 2)
@@ -209,7 +209,7 @@ class LandUseClassifier(nn.Module):
         self.backbone = torch.hub.load('pytorch/vision', 'resnet50', pretrained=True)
         self.backbone.fc = nn.Linear(2048, 512)
         self.classifier = nn.Linear(512, num_classes)  # Residential, commercial, industrial, etc.
-    
+
     def forward(self, satellite_patch):
         return self.classifier(torch.relu(self.backbone(satellite_patch)))
 ```
@@ -221,7 +221,7 @@ class BuildingSegmentation(nn.Module):
     def __init__(self):
         super().__init__()
         self.unet = torch.hub.load('mateuszbuda/brain-segmentation-pytorch', 'unet', in_channels=3, out_channels=1)
-    
+
     def forward(self, aerial_image):
         return torch.sigmoid(self.unet(aerial_image))  # Binary building mask
 ```

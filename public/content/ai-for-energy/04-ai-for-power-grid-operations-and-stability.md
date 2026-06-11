@@ -95,7 +95,6 @@ def simulate_frequency_response(
 
     return t, delta_f * f0  # convert to Hz
 
-
 # Simulate loss of 500 MW on a 50 GW system (0.01 pu)
 t, freq_dev = simulate_frequency_response(H=5.0, D=1.0, R=0.05, delta_P=-0.01)
 print(f"Frequency nadir: {60 + min(freq_dev):.3f} Hz at t={t[np.argmin(freq_dev)]:.1f}s")
@@ -128,7 +127,6 @@ class StabilityClassifier(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.net(x)
-
 
 # Example: 14-bus system with 28 state features (voltage mag + angle per bus)
 model = StabilityClassifier(input_dim=28)

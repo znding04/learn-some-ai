@@ -72,17 +72,17 @@ class SupplyChainAgent:
     def __init__(self, llm, tools):
         self.llm = llm  # LLM for reasoning
         self.tools = tools  # ERP, weather API, supplier API
-    
+
     def run_cycle(self):
         # Sense: collect signals
         demand_signal = self.tools.get_recent_demand()
         supplier_signal = self.tools.get_supplier_status()
         risk_signal = self.tools.get_geopolitical_risk()
-        
+
         # Think: analyze and plan
         context = f"Demand: {demand_signal}, Supplier: {supplier_signal}, Risk: {risk_signal}"
         plan = self.llm.think(context, task="replenishment_decision")
-        
+
         # Act: execute plan
         if plan['action'] == 'order':
             self.tools.place_order(plan['sku'], plan['qty'])
@@ -90,7 +90,7 @@ class SupplyChainAgent:
             pass  # Monitor
         elif plan['action'] == 'escalate':
             self.tools.notify_human(plan['reason'])
-        
+
         return plan
 
 # Example invocation
@@ -111,10 +111,10 @@ def carbon_aware_route(orders, vehicles, road_network, carbon_factors):
     Returns Pareto front of routes.
     """
     pareto_routes = []
-    
+
     for order in orders:
         # Compute cost-optimal and carbon-optimal routes separately
-        route_cost = compute_route(orders, vehicles, road_network, 
+        route_cost = compute_route(orders, vehicles, road_network,
                                    objective=lambda r: r['distance'] * vehicles[0]['cost_per_km'])
         route_carbon = compute_route(orders, vehicles, road_network,
                                      objective=lambda r: r['distance'] * carbon_factors[r['vehicle_type']])
@@ -123,7 +123,7 @@ def carbon_aware_route(orders, vehicles, road_network, carbon_factors):
             'cost_optimal': route_cost,
             'carbon_optimal': route_carbon,
         })
-    
+
     return pareto_routes
 
 # Example: truck vs. electric van

@@ -53,11 +53,11 @@ class LayeredMusicSystem:
             "combat_strings": {"audio": load("strings.wav"),   "volume": 0.0},
             "boss_brass":     {"audio": load("brass.wav"),     "volume": 0.0},
         }
-    
+
     def update(self, game_state):
         """Adjust layer volumes based on game state."""
         threat = game_state["threat_level"]  # 0.0 to 1.0
-        
+
         self.layers["ambient_pad"]["volume"] = 1.0 - threat * 0.5
         self.layers["gentle_melody"]["volume"] = max(0, 1.0 - threat * 1.5)
         self.layers["percussion"]["volume"] = min(1.0, threat * 2.0)
@@ -78,34 +78,34 @@ import torch
 
 class RealTimeMusicGenerator:
     """Generate music tokens in real-time based on game state."""
-    
+
     def __init__(self, model, tokenizer):
         self.model = model
         self.tokenizer = tokenizer
         self.context = []           # Rolling context window
         self.max_context = 2048     # Token context length
-    
+
     def generate_next_chunk(self, game_state, chunk_duration=0.5):
         """Generate the next chunk of music tokens."""
         # Encode game state as conditioning
         state_tokens = self.encode_game_state(game_state)
-        
+
         # Prepare context: recent generated tokens + state conditioning
         context = state_tokens + self.context[-self.max_context:]
-        
+
         # Generate tokens for the next chunk
         tokens_needed = int(chunk_duration * 75)  # ~75 tokens/sec
-        
+
         with torch.no_grad():
             new_tokens = self.model.generate(
                 context,
                 max_new_tokens=tokens_needed,
                 temperature=self.get_temperature(game_state),
             )
-        
+
         self.context.extend(new_tokens)
         return new_tokens
-    
+
     def encode_game_state(self, state):
         """Convert game state to conditioning tokens."""
         return self.tokenizer.encode_state({
@@ -114,7 +114,7 @@ class RealTimeMusicGenerator:
             "environment": state["biome"],   # "forest", "dungeon", "ocean"
             "tempo_hint": state.get("tempo", "medium"),
         })
-    
+
     def get_temperature(self, state):
         """Dynamic temperature: calmer scenes = more predictable music."""
         base = 0.8
@@ -129,19 +129,19 @@ RL can learn transition policies that maximize musical coherence:
 ```python
 class MusicTransitionAgent:
     """RL agent that learns optimal music transitions."""
-    
+
     def __init__(self, n_sections, n_transitions):
         self.q_table = {}  # state → action values
-    
+
     def choose_transition(self, current_section, game_state):
         """Select the best musical transition for the current context."""
         state = (current_section, game_state["mood"], game_state["intensity_bucket"])
-        
+
         if state not in self.q_table:
             return random.choice(range(self.n_transitions))
-        
+
         return max(range(self.n_transitions), key=lambda a: self.q_table[state][a])
-    
+
     def get_reward(self, transition_smoothness, mood_match, player_engagement):
         """
         Reward function balancing:
@@ -149,8 +149,8 @@ class MusicTransitionAgent:
         - Mood appropriateness (music matches game context)
         - Player engagement (measured via biometrics or play patterns)
         """
-        return (0.4 * transition_smoothness + 
-                0.4 * mood_match + 
+        return (0.4 * transition_smoothness +
+                0.4 * mood_match +
                 0.2 * player_engagement)
 ```
 

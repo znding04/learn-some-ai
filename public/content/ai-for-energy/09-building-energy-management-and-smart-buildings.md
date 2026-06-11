@@ -115,7 +115,6 @@ class BuildingThermalModel:
         self.T_in += dT
         return self.T_in
 
-
 def mpc_controller(
     building: BuildingThermalModel,
     T_out_forecast: np.ndarray,
@@ -152,7 +151,6 @@ def mpc_controller(
             best_action = q_hvac
 
     return best_action
-
 
 # Simulate 24 hours with MPC
 building = BuildingThermalModel(T_init=22.0, dt=300)  # 5-min steps

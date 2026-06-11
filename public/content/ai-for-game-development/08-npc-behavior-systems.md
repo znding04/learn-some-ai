@@ -258,7 +258,6 @@ class GOAPPlanner:
 
         return []  # No plan found
 
-
 # Define NPC actions
 actions = [
     GOAPAction("scout",      1, {"has_weapon": True},

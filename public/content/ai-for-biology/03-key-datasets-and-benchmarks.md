@@ -161,11 +161,11 @@ import numpy as np
 def fetch_and_analyze_pdb(pdb_id: str, chain_id: str = "A") -> dict:
     """
     Download a PDB structure and extract basic structural information.
-    
+
     Args:
         pdb_id:   4-character PDB accession code (e.g., "1TIM")
         chain_id: Chain to analyze (default "A")
-    
+
     Returns:
         Dictionary with sequence, residue count, and backbone geometry.
     """
@@ -209,7 +209,6 @@ def fetch_and_analyze_pdb(pdb_id: str, chain_id: str = "A") -> dict:
         "n_residues_with_ca": len(ca_coords),
         "mean_ca_ca_distance_angstroms": round(mean_ca_dist, 3),
     }
-
 
 # Triosephosphate isomerase (TIM barrel — a classic fold)
 result = fetch_and_analyze_pdb("1TIM", chain_id="A")

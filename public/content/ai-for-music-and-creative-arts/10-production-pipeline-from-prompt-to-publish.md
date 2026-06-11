@@ -61,52 +61,52 @@ class ProductionSession:
     def __init__(self, model_size="large"):
         self.model = MusicGen.get_pretrained(f"facebook/musicgen-{model_size}")
         self.takes = []
-    
+
     def generate_candidates(self, prompt, n_candidates=5, duration=30):
         """Generate multiple candidates and let the producer choose."""
         self.model.set_generation_params(duration=duration, cfg_coef=3.0)
-        
+
         candidates = []
         for i in range(n_candidates):
             # Vary temperature slightly for diversity
             self.model.set_generation_params(
-                duration=duration, 
+                duration=duration,
                 temperature=0.9 + i * 0.05,
                 cfg_coef=3.0
             )
             wav = self.model.generate([prompt])
             candidates.append(wav[0].cpu())
             audio_write(f"candidate_{i}", wav[0].cpu(), self.model.sample_rate)
-        
+
         self.takes = candidates
         return candidates
-    
+
     def extend_track(self, base_audio, continuation_prompt, extend_seconds=30):
         """Extend a selected candidate with continuation generation."""
         self.model.set_generation_params(duration=extend_seconds, cfg_coef=3.0)
-        
+
         # Use the end of the base audio as context for continuation
         continuation = self.model.generate_continuation(
             base_audio.unsqueeze(0),
             self.model.sample_rate,
             [continuation_prompt]
         )
-        
+
         # Crossfade and concatenate
         extended = self.crossfade_concat(base_audio, continuation[0].cpu())
         return extended
-    
+
     def crossfade_concat(self, audio_a, audio_b, fade_samples=22050):
         """Concatenate two audio clips with a crossfade."""
         fade_out = torch.linspace(1, 0, fade_samples)
         fade_in = torch.linspace(0, 1, fade_samples)
-        
+
         # Apply crossfade to overlapping region
         audio_a_end = audio_a[..., -fade_samples:] * fade_out
         audio_b_start = audio_b[..., :fade_samples] * fade_in
-        
+
         crossfaded = audio_a_end + audio_b_start
-        
+
         result = torch.cat([
             audio_a[..., :-fade_samples],
             crossfaded,
@@ -130,18 +130,18 @@ def export_stems(audio_path, output_dir="stems"):
     """Separate generated audio into editable stems."""
     model = get_model("htdemucs")
     mix, sr = torchaudio.load(audio_path)
-    
+
     if sr != model.samplerate:
         mix = torchaudio.functional.resample(mix, sr, model.samplerate)
-    
+
     sources = apply_model(model, mix.unsqueeze(0))[0]
-    
+
     stems = {}
     for i, name in enumerate(["drums", "bass", "other", "vocals"]):
         path = f"{output_dir}/{name}.wav"
         torchaudio.save(path, sources[i], model.samplerate)
         stems[name] = path
-    
+
     return stems
 
 # Now each stem can be independently:
@@ -164,33 +164,33 @@ import librosa
 
 class AIMixer:
     """Simplified AI-assisted mixing pipeline."""
-    
+
     def __init__(self, sample_rate=44100):
         self.sr = sample_rate
-    
+
     def auto_eq(self, audio, target_curve="balanced"):
         """Apply frequency balancing based on a target curve."""
         stft = librosa.stft(audio)
         magnitude = np.abs(stft)
-        
+
         # Analyze frequency distribution
         freq_energy = magnitude.mean(axis=1)
-        
+
         # Target curves for different styles
         targets = {
             "balanced": self._balanced_curve(len(freq_energy)),
             "warm": self._warm_curve(len(freq_energy)),
             "bright": self._bright_curve(len(freq_energy)),
         }
-        
+
         # Apply correction
         target = targets[target_curve]
         correction = target / (freq_energy + 1e-8)
         correction = np.clip(correction, 0.25, 4.0)  # limit ±12dB
-        
+
         corrected_stft = stft * correction[:, np.newaxis]
         return librosa.istft(corrected_stft)
-    
+
     def auto_pan(self, stems):
         """Apply standard panning conventions."""
         pan_map = {
@@ -201,7 +201,7 @@ class AIMixer:
             "guitar_r": 0.6,   # right
             "keys": 0.3,       # slight right
         }
-        
+
         mixed = np.zeros((2, max(len(s) for s in stems.values())))
         for name, audio in stems.items():
             pan = pan_map.get(name, 0.0)
@@ -209,34 +209,34 @@ class AIMixer:
             right_gain = np.sin((pan + 1) * np.pi / 4)
             mixed[0, :len(audio)] += audio * left_gain
             mixed[1, :len(audio)] += audio * right_gain
-        
+
         return mixed
 
 class AIMaster:
     """AI-assisted mastering pipeline."""
-    
+
     def __init__(self, sample_rate=44100):
         self.sr = sample_rate
-    
+
     def master(self, audio, target_lufs=-14.0):
         """Apply mastering chain: EQ → compression → limiting → loudness."""
         # Step 1: Gentle EQ (reduce muddiness, add clarity)
         audio = self.mastering_eq(audio)
-        
+
         # Step 2: Multiband compression (even out dynamics)
         audio = self.multiband_compress(audio)
-        
+
         # Step 3: Stereo widening
         audio = self.stereo_enhance(audio)
-        
+
         # Step 4: True-peak limiting
         audio = self.true_peak_limit(audio, ceiling=-1.0)
-        
+
         # Step 5: Loudness normalization (LUFS targeting)
         audio = self.normalize_lufs(audio, target_lufs)
-        
+
         return audio
-    
+
     def normalize_lufs(self, audio, target_lufs=-14.0):
         """Normalize to target LUFS for streaming platforms."""
         # Spotify: -14 LUFS, Apple Music: -16 LUFS, YouTube: -14 LUFS

@@ -59,7 +59,6 @@ The effectiveness of an LLM tutor depends heavily on the system prompt. Key comp
 from dataclasses import dataclass
 import json
 
-
 @dataclass
 class TutoringSession:
     """Manages a Socratic tutoring session with hint escalation."""
@@ -204,7 +203,6 @@ SAFETY:
             ),
         }
         return responses.get(hint_level, responses["socratic_question"])
-
 
 # Demonstration
 session = TutoringSession(subject="Calculus I", level="introductory")

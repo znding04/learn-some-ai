@@ -117,7 +117,6 @@ def agent_respond(role: str, position: str, history: list[dict]) -> str:
     )
     return response.choices[0].message.content
 
-
 def judge_debate(history: list[dict]) -> str:
     """A judge agent evaluates the debate and picks a winner."""
     system_prompt = (
@@ -133,7 +132,6 @@ def judge_debate(history: list[dict]) -> str:
         max_tokens=400,
     )
     return response.choices[0].message.content
-
 
 def run_debate(topic: str, rounds: int = 2) -> str:
     """Orchestrate a multi-round debate between two agents."""
@@ -151,7 +149,6 @@ def run_debate(topic: str, rounds: int = 2) -> str:
     # Judge evaluates
     verdict = judge_debate(history)
     return verdict
-
 
 # Run the debate
 result = run_debate("AI agents should be given internet access by default", rounds=2)

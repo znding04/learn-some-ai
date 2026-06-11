@@ -48,10 +48,10 @@ class FEA_Surrogate(nn.Module):
             nn.GELU(),
             nn.Linear(hidden, n_output_nodes)  # Displacements at each node
         )
-    
+
     def forward(self, design_params, node_positions):
         # design_params: [batch, n_design]
-        # node_positions: [batch, n_nodes, 2] 
+        # node_positions: [batch, n_nodes, 2]
         encoded = self.geometry_encoder(design_params)  # [batch, hidden]
         # Broadcast and combine with positions
         return self.output_predictor(encoded.unsqueeze(1).expand(-1, node_positions.shape[1], -1))
@@ -84,7 +84,7 @@ where $\mathcal{L}_{residual} = \frac{1}{N}\sum_{i=1}^{N} \|\boldsymbol{\nabla} 
 PINNs are particularly powerful for **inverse problems** — where some material parameters or boundary conditions are unknown and must be inferred from sparse measurements:
 
 ```python
-def pinn_elasticity_loss(network, x_collocation, x_boundary, x_data, 
+def pinn_elasticity_loss(network, x_collocation, x_boundary, x_data,
                          u_data, lamda, mu, rho):
     """
     PINN loss for 2D linear elasticity inverse problem.
@@ -92,29 +92,29 @@ def pinn_elasticity_loss(network, x_collocation, x_boundary, x_data,
     """
     x = x_collocation.clone().requires_grad_(True)
     u_pred = network(x)
-    
+
     # Compute strains
     u_x, u_y = u_pred[:, 0:1], u_pred[:, 1:2]
     eps_xx = grad(u_x, x, torch.ones_like(u_x))[0][:, 0:1]
     eps_yy = grad(u_y, x, torch.ones_like(u_y))[0][0][:, 1:2]
-    eps_xy = 0.5 * (grad(u_x, x, torch.ones_like(u_x))[0][:, 1:2] + 
+    eps_xy = 0.5 * (grad(u_x, x, torch.ones_like(u_x))[0][:, 1:2] +
                    grad(u_y, x, torch.ones_like(u_y))[0][:, 0:1])
-    
+
     # Stress
     sigma_xx = (2*mu + lamda) * eps_xx + lamda * eps_yy
     sigma_yy = (2*mu + lamda) * eps_yy + lamda * eps_xx
     sigma_xy = mu * 2 * eps_xy
-    
+
     # Equilibrium residual
     residual_x = grad(sigma_xx, x, torch.ones_like(sigma_xx))[0][:, 0:1] + \
                  grad(sigma_xy, x, torch.ones_like(sigma_xy))[0][:, 1:2] + b_x
     residual_y = grad(sigma_xy, x, torch.ones_like(sigma_xy))[0][:, 0:1] + \
                  grad(sigma_yy, x, torch.ones_like(sigma_yy))[0][:, 1:2] + b_y
-    
+
     # Data loss (sparse measurements)
     u_data_pred = network(x_data)
     data_loss = mse(u_data_pred, u_data)
-    
+
     return residual_x.pow(2).mean() + residual_y.pow(2).mean() + data_loss
 ```
 
@@ -139,26 +139,26 @@ class FNO2D(nn.Module):
         super().__init__()
         self.modes = modes
         self.width = width
-        
+
         # Lifting layer
         self.fc0 = nn.Linear(3, width)  # input: (u, v, p) channels
-        
+
         # Fourier layers
         self.fourier_layers = nn.ModuleList([
             FourierLayer(width, modes) for _ in range(4)
         ])
-        
+
         # Projection
         self.fc1 = nn.Linear(width, 128)
         self.fc2 = nn.Linear(128, 1)
-    
+
     def forward(self, x):
         # x: [batch, H, W, 3]
         x = self.fc0(x)
-        
+
         for layer in self.fourier_layers:
             x = layer(x)
-        
+
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return x
@@ -172,12 +172,12 @@ class FourierLayer(nn.Module):
         self.weight = nn.Parameter(
             torch.rand(width, width, 2*modes, 2*modes, dtype=torch.float32)
         )
-    
+
     def forward(self, x):
         # x: [batch, H, W, width]
         B, H, W, C = x.shape
         x_ft = torch.fft.rfft2(x)
-        
+
         # Apply spectral multiplier
         out_ft = torch.zeros_like(x_ft)
         x_ft_crop = x_ft[:, :self.modes, :self.modes, :]
@@ -185,7 +185,7 @@ class FourierLayer(nn.Module):
         out_ft[:, :self.modes, :self.modes, :] = torch.einsum(
             'bhwc,cHW->bHwc', x_ft_crop, weight_crop
         )
-        
+
         x_hat = torch.fft.irfft2(out_ft, s=(H, W))
         return x_hat
 ```

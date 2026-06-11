@@ -138,7 +138,7 @@ tool_functions = {
 # Step 3: Agent loop with function calling
 def run_agent(user_message):
     messages = [{"role": "user", "content": user_message}]
-    
+
     while True:
         # Call the LLM with tools
         response = client.chat.completions.create(
@@ -147,24 +147,24 @@ def run_agent(user_message):
             tools=tools,
             tool_choice="auto"  # Let model decide
         )
-        
+
         msg = response.choices[0].message
         messages.append(msg)
-        
+
         # If no tool calls, we have the final answer
         if not msg.tool_calls:
             return msg.content
-        
+
         # Process each tool call
         for tool_call in msg.tool_calls:
             fn_name = tool_call.function.name
             fn_args = json.loads(tool_call.function.arguments)
-            
+
             print(f"Calling: {fn_name}({fn_args})")
-            
+
             # Execute the function
             result = tool_functions[fn_name](**fn_args)
-            
+
             # Append the tool result to messages
             messages.append({
                 "role": "tool",

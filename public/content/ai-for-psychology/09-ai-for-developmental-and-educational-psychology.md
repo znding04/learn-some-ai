@@ -107,7 +107,6 @@ class BayesianKnowledgeTracing:
         """Predict probability of answering next question correctly."""
         return self.p_L * (1 - self.p_S) + (1 - self.p_L) * self.p_G
 
-
 # Simulate a student learning a skill over 15 practice problems
 bkt = BayesianKnowledgeTracing(p_L0=0.05, p_T=0.15, p_S=0.05, p_G=0.2)
 
@@ -120,7 +119,6 @@ for i, correct in enumerate(responses):
     p_next = bkt.predict_correct()
     p_mastery = bkt.update(correct)
     print(f"  {i+1:2d}  |  {'Y' if correct else 'N':^7s} |   {p_mastery:.3f}    |     {p_next:.3f}")
-
 
 # Eye-tracking autism screening feature extraction
 def compute_social_gaze_ratio(gaze_points, social_aoi, screen_bounds):
@@ -148,7 +146,6 @@ def compute_social_gaze_ratio(gaze_points, social_aoi, screen_bounds):
     if total_valid == 0:
         return 0.0
     return float((valid_mask & social_mask).sum()) / total_valid
-
 
 # Example: simulated eye-tracking data
 np.random.seed(42)

@@ -67,7 +67,6 @@ k_critical = 75  # density at max flow
 q_max = fundamental_diagram(k_critical)[0]
 print(f"Max flow: {q_max:.0f} veh/hr at density {k_critical} veh/km")
 
-
 # --- Simple neural network for traffic flow prediction ---
 class TrafficFlowPredictor:
     """
@@ -110,7 +109,6 @@ class TrafficFlowPredictor:
         self.W1 -= self.lr * d_W1
         self.b1 -= self.lr * d_b1
         return loss
-
 
 # Generate synthetic traffic data (hourly flow with daily pattern)
 np.random.seed(42)

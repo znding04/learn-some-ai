@@ -78,21 +78,21 @@ for round_num in range(3):
     decision_values = clf.decision_function(X)
     uncertainties = np.abs(decision_values)
     most_uncertain_idx = np.argsort(uncertainties)[:2]  # Pick 2 most uncertain
-    
+
     print(f"\nRound {round_num + 1}: Request labels for:")
     for idx in most_uncertain_idx:
         print(f"  - {documents[idx]}")
-    
+
     # Simulate human labeling (in practice, attorney labels these)
     # Here: assume correct labels for demonstration
     # In real active learning: present to attorney, get true labels
     new_labels = [labels[idx] for idx in most_uncertain_idx]
-    
+
     # Update model with new labels
     for idx, label in zip(most_uncertain_idx, new_labels):
         X_new = vectorizer.transform([documents[idx]])
         clf.partial_fit(X_new, [label])
-    
+
     print(f"Model updated with {len(most_uncertain_idx)} new labels")
 
 # Final prediction

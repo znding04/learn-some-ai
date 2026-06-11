@@ -106,7 +106,6 @@ class TicTacToe:
             if i < 6:
                 print("-----------")
 
-
 def minimax_alpha_beta(game: TicTacToe, depth: int, alpha: float,
                        beta: float, maximizing: bool) -> tuple[float, int]:
     """Minimax with alpha-beta pruning. Returns (score, best_move)."""
@@ -205,7 +204,6 @@ class MCTSNode:
         self.wins += result
         if self.parent:
             self.parent.backpropagate(1 - result)
-
 
 def mcts_search(game: TicTacToe, iterations: int = 1000) -> int:
     root = MCTSNode(game)

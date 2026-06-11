@@ -49,14 +49,14 @@ class ArgumentationFramework:
     def __init__(self, arguments: list, attacks: list[tuple]):
         self.arguments = set(arguments)
         self.attacks = set(attacks)  # (attacker, attacked)
-    
+
     def attackers(self, arg) -> set:
         """Return arguments that attack the given argument."""
         return {a for a, b in self.attacks if b == arg}
-    
+
     def grounded_extension(self) -> set:
         """
-        Compute the grounded extension using the least fixed point of 
+        Compute the grounded extension using the least fixed point of
         the characteristic function. The grounded extension is unique.
         """
         import copy
@@ -73,7 +73,7 @@ class ArgumentationFramework:
         return S
 
 # Example: self-defense scenario
-args = ["prosecution_intent", "defense_self_defense", 
+args = ["prosecution_intent", "defense_self_defense",
         "prosecution causation", "defense_necessity"]
 attacks = [
     ("defense_self_defense", "prosecution_intent"),    # self-defense negates intent
@@ -96,17 +96,17 @@ flowchart TD
     A["Argument A\n'Intent to kill'"] --> B["Argument B\n'Self-defense'"]
     A -. attack .-> B
     B -. attack .-> A
-    
+
     A --> C["Argument C\n'Causation'"]
     B -. attack .-> C
-    
+
     A --> D["Argument D\n'Premeditation'"]
     D -. attack .-> B
-    
+
     E["Grounded Extension\n= {A, D}"] --> F["Decision\nGuilty of 1st degree"]
-    
+
     C --> E
-    
+
     style A fill:#cde
     style B fill:#fdc
     style E fill:#cfc

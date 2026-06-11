@@ -24,7 +24,7 @@ flowchart TD
         B[Video<br/>Tracking]
         C[Lab<br/>Tests]
     end
-    
+
     subgraph Digital ["Digital Twin"]
         D[Data<br/>Ingestion]
         E[State<br/>Estimation]
@@ -32,12 +32,12 @@ flowchart TD
         G[Biomechanical<br/>Model]
         H[Performance<br/>Prediction]
     end
-    
+
     subgraph Feedback ["Feedback Loop"]
         I[Intervention<br/>Prescription]
         J[Training<br/>Environment]
     end
-    
+
     A --> D
     B --> D
     C --> D
@@ -113,18 +113,18 @@ class AthleteDigitalTwin:
         self.vo2max = vo2max
         self.w_prime = w_prime  # kJ
         self.cp = critical_power  # W
-    
+
     def predict_time_to_exhaustion(self, power_output):
         """
         Using critical power model.
         """
         if power_output <= self.cp:
             return float('inf')  # Can sustain indefinitely
-        
+
         # t = W' / (P - CP)
         t_seconds = (self.w_prime * 1000) / (power_output - self.cp)
         return t_seconds / 60  # Return minutes
-    
+
     def estimate_recovery(self, initial_depletion, time_minutes):
         """
         Exponential recovery of W'.
@@ -132,37 +132,37 @@ class AthleteDigitalTwin:
         tau_recovery = 15  # minutes (simplified)
         recovered_fraction = 1 - np.exp(-time_minutes / tau_recovery)
         return initial_depletion * (1 - recovered_fraction)
-    
+
     def simulate_training_block(self, sessions):
         """
         Simulate a week of training sessions.
         sessions: list of {duration_min, intensity_w, rest_min}
         """
         w_prime_state = self.w_prime  # Start fully recovered
-        
+
         results = []
         for session in sessions:
             # Calculate W' expenditure
             excess_power = max(0, session['intensity_w'] - self.cp)
             expenditure_kj = (excess_power * session['duration_min'] * 60) / 1000
             w_prime_state = max(0, w_prime_state - expenditure_kj)
-            
+
             # Predict time limit at current W' state
             effective_power = self.cp + (w_prime_state * 1000 / (session['duration_min'] * 60))
-            
+
             results.append({
                 'session': session,
                 'remaining_w_prime': w_prime_state,
                 'effective_power': effective_power
             })
-            
+
             # Recovery between sessions
-            w_prime_state = min(self.w_prime, 
+            w_prime_state = min(self.w_prime,
                                 w_prime_state + self.estimate_recovery(
-                                    self.w_prime - w_prime_state, 
+                                    self.w_prime - w_prime_state,
                                     session['rest_min']
                                 ))
-        
+
         return results
 ```
 
@@ -183,7 +183,7 @@ class MusculoskeletalTwin:
     """
     def __init__(self, muscle_names):
         self.muscles = {name: MuscleModel() for name in muscle_names}
-    
+
     def simulate_sprint(self, technique, ground_reaction_forces):
         """
         technique: dict of joint angle trajectories
@@ -195,25 +195,25 @@ class MusculoskeletalTwin:
             angular_accel = np.gradient(angle_traj, axis=0)
             torque = self._compute_torque(joint, angular_accel, ground_reaction_forces)
             joint_torques[joint] = torque
-        
+
         # Map torques to individual muscle forces
         muscle_forces = self._torque_to_muscle_forces(joint_torques)
-        
+
         return muscle_forces
-    
+
     def _torque_to_muscle_forces(self, joint_torques):
         # Moment arms (simplified)
         moment_arms = {
             'knee': {'hamstrings': 0.04, 'quadriceps': 0.05, 'gastrocnemius': 0.03},
             'ankle': {'soleus': 0.03, 'tibialis': 0.02}
         }
-        
+
         forces = {}
         for joint, muscles in moment_arms.items():
             torque = joint_torques.get(joint, 0)
             for muscle, moment_arm in muscles.items():
                 forces[muscle] = abs(torque / moment_arm) if moment_arm > 0 else 0
-        
+
         return forces
 ```
 
@@ -261,7 +261,7 @@ class TeamTacticSimulator:
     def __init__(self, team_model, opponent_model):
         self.team = team_model
         self.opponent = opponent_model
-    
+
     def simulate_match(self, tactic_a, tactic_b, n_simulations=100):
         """
         Run Monte Carlo simulations of match outcomes.
@@ -270,22 +270,22 @@ class TeamTacticSimulator:
         for _ in range(n_simulations):
             match_result = self._run_simulation(tactic_a, tactic_b)
             results.append(match_result)
-        
+
         return {
             'win_probability': np.mean([r['winner'] == 'team_a' for r in results]),
             'expected_goals_a': np.mean([r['xG_a'] for r in results]),
             'expected_goals_b': np.mean([r['xG_b'] for r in results]),
             'goal_distribution': self._goal_distribution(results)
         }
-    
+
     def _run_simulation(self, tactic_a, tactic_b):
         # Simplified: use xG model with tactical modifiers
         base_xG_a = self.team.base_xG
         base_xG_b = self.opponent.base_xG
-        
+
         # Apply tactic effects
         modifier = self._compute_tactic_modifier(tactic_a, tactic_b)
-        
+
         return {
             'winner': 'team_a' if np.random.random() < modifier['win_prob'] else 'team_b',
             'xG_a': base_xG_a * modifier['xG_mod_a'],
@@ -303,19 +303,19 @@ def optimize_training_load(current_fitness, injury_history, target_date):
     Optimize training loads to peak performance at target_date.
     """
     from scipy.optimize import minimize
-    
+
     def objective(weekly_loads):
         # Simulate fitness trajectory
         fitness = simulate_fitness_trajectory(weekly_loads, current_fitness)
-        
+
         # Calculate injury risk penalty
         injury_risk = simulate_injury_risk(weekly_loads, injury_history)
-        
+
         # Performance at target date
         performance = fitness[-1]
-        
+
         return -(performance - 0.1 * injury_risk)  # Maximize performance, minimize risk
-    
+
     # Optimize weekly loads subject to constraints
     result = minimize(
         objective,
@@ -326,7 +326,7 @@ def optimize_training_load(current_fitness, injury_history, target_date):
             {'type': 'ineq', 'fun': lambda x: compute_acwr(x) - 0.5},  # ACWR > 0.5
         ]
     )
-    
+
     return result.x
 ```
 
@@ -369,29 +369,29 @@ class AthleteStateEstimator:
     """
     def __init__(self):
         self.kf = KalmanFilter(dim_x=3, dim_z=2)
-        
+
         # State transition matrix (simple random walk with decay)
         self.kf.F = np.array([
             [1, 0, 0],      # Fitness persists
             [0, 0.9, 0],    # Fatigue decays
             [0, 0, 0.85]    # Soreness decays
         ])
-        
+
         # Measurement matrix (we measure fatigue and soreness)
         self.kf.H = np.array([
             [0, 1, 0],
             [0, 0, 1]
         ])
-        
+
         # Initial state covariance
         self.kf.P = np.eye(3) * 10
-        
+
         # Measurement noise (from survey reliability)
         self.kf.R = np.array([
             [2, 0],
             [0, 2]
         ])
-    
+
     def update(self, measured_fatigue, measured_soreness):
         """
         Update state estimate with survey measurements.
@@ -399,9 +399,9 @@ class AthleteStateEstimator:
         measurement = np.array([[measured_fatigue], [measured_soreness]])
         self.kf.predict()
         self.kf.update(measurement.flatten())
-        
+
         return self.kf.x  # [fitness, fatigue, soreness]
-    
+
     def predict_performance(self):
         """
         Predict performance as fitness - fatigue.

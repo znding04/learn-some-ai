@@ -83,7 +83,6 @@ class BayesianKnowledgeTracing:
         self.p_L = p_L_given_obs + self.p_T * (1 - p_L_given_obs)
         return self.p_L
 
-
 # Simulate a student practicing a skill
 bkt = BayesianKnowledgeTracing(p_L0=0.05, p_T=0.15, p_G=0.2, p_S=0.05)
 responses = [False, False, True, True, True, True, False, True, True, True]

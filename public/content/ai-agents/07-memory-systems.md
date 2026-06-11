@@ -127,7 +127,6 @@ from datetime import datetime
 
 client = openai.OpenAI()
 
-
 @dataclass
 class Memory:
     """A single memory entry with text, embedding, and metadata."""
@@ -135,7 +134,6 @@ class Memory:
     embedding: list[float]
     timestamp: datetime = field(default_factory=datetime.now)
     importance: float = 0.5  # 0.0 to 1.0
-
 
 class VectorMemoryStore:
     """Simple in-memory vector store using NumPy (FAISS-like behavior)."""
@@ -186,7 +184,6 @@ class VectorMemoryStore:
         top_indices = np.argsort(scores)[::-1][:top_k]
         return [self.memories[i].text for i in top_indices]
 
-
 class MemoryAgent:
     """An agent that uses vector memory for context-aware responses."""
 
@@ -223,7 +220,6 @@ class MemoryAgent:
         self.memory.add(f"Assistant replied: {reply}", importance=0.3)
 
         return reply
-
 
 # Usage
 agent = MemoryAgent()

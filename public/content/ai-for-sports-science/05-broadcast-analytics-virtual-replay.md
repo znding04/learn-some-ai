@@ -29,12 +29,12 @@ class BallTracker:
     def __init__(self, model_path='ball_detection_model.pt'):
         self.model = torch.load(model_path)
         self.kalman_filter = self._init_kalman_filter()
-    
+
     def _init_kalman_filter(self):
         # State: [x, y, vx, vy]
         state_dim = 4
         meas_dim = 2
-        
+
         kf = cv2.KalmanFilter(state_dim, meas_dim)
         kf.transitionMatrix = np.array([
             [1, 0, 1, 0],
@@ -49,17 +49,17 @@ class BallTracker:
         kf.processNoiseCov = np.eye(state_dim) * 1e-4
         kf.measurementNoiseCov = np.eye(meas_dim) * 1e-2
         return kf
-    
+
     def track(self, frame):
         # Detect ball position in frame
         detections = self.model(frame)
-        
+
         if detections:
             # Pick most confident detection
             best = max(detections, key=lambda d: d.confidence)
             measurement = np.array([[best.x], [best.y]])
             kf.correct(measurement)
-        
+
         # Predict ball position for camera control
         prediction = kf.predict()
         return prediction[:2]  # [x, y] in frame coordinates
@@ -134,7 +134,7 @@ From multiple calibrated broadcast cameras, AI systems reconstruct a 3D represen
 class MultiViewReconstructor:
     def __init__(self, cameras):
         self.cameras = cameras  # List of calibrated camera parameters
-    
+
     def triangulate_player(self, detections_by_camera):
         """
         detections_by_camera: dict of cam_id -> [(keypoints, confidence)]
@@ -142,7 +142,7 @@ class MultiViewReconstructor:
         """
         all_projs = []
         all_Ks = []
-        
+
         for cam_id, dets in detections_by_camera.items():
             cam = self.cameras[cam_id]
             for keypoints in dets:
@@ -157,14 +157,14 @@ class MultiViewReconstructor:
                             u_j, v_j = det_j[kp_name]
                             A.append(u_j * P_j[2,:] - P_j[0,:])
                             A.append(v_j * P_j[2,:] - P_j[1,:])
-                    
+
                     if len(A) >= 2:
                         _, _, vt = np.linalg.svd(np.array(A))
                         X_3d = vt[-1][:3] / vt[-1][3]
                         all_projs.append(X_3d)
-        
+
         return np.median(all_projs, axis=0) if all_projs else None
-    
+
     def generate_replay_view(self, novel_camera_params, timestamp):
         """
         Synthesize a new camera angle for the replay.
@@ -216,14 +216,14 @@ class HighlightDetector:
         self.clip = CLIPModel.from_pretrained('openai/clip-vit-base-patch32')
         self.processor = CLIPProcessor.from_pretrained('openai/clip-vit-base-patch32')
         self.event_classifier = torch.load('event_classifier.pt')
-        
+
         # Sports-specific concept embeddings
         self.concepts = {
             'goal_celebration': ['player running', 'crowd jumping', 'net bulging'],
             'tackle': ['players colliding', 'ground tackle', 'aerial challenge'],
             'save': ['goalkeeper diving', 'ball stopped', 'defender block']
         }
-    
+
     def score_clip(self, frames, audio_features):
         """
         Score a 10-second clip for highlight potential.
@@ -232,7 +232,7 @@ class HighlightDetector:
         # Visual scoring via concept matching
         inputs = self.processor(images=frames, return_tensors='pt')
         image_features = self.clip.get_image_features(**inputs)
-        
+
         visual_scores = []
         for concept, prompts in self.concepts.items():
             text_features = self.clip.get_text_features(
@@ -240,16 +240,16 @@ class HighlightDetector:
             )
             similarity = cosine_similarity(image_features, text_features).mean()
             visual_scores.append(similarity)
-        
+
         # Audio scoring
         audio_score = self._analyze_audio_excitement(audio_features)
-        
+
         # Combine scores
-        combined = (0.5 * max(visual_scores) + 0.3 * audio_score + 
+        combined = (0.5 * max(visual_scores) + 0.3 * audio_score +
                     0.2 * self.event_classifier(frames).item())
-        
+
         return torch.sigmoid(torch.tensor(combined))
-    
+
     def _analyze_audio_excitement(self, audio_features):
         # Detect volume spikes, crowd noise, commentator pitch
         spectral_energy = np.mean(audio_features['mel_spectrogram'][:, :10])

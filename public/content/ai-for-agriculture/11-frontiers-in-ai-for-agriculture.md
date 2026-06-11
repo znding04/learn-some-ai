@@ -73,7 +73,6 @@ class GreenhouseState:
     def as_vector(self) -> np.ndarray:
         return np.array([self.temperature, self.humidity, self.co2, self.light])
 
-
 class CropGrowthModel:
     """Simplified crop growth model for lettuce in a vertical farm."""
 
@@ -94,7 +93,6 @@ class CropGrowthModel:
             -0.1 * (state.light - self.dli_opt) ** 2,
         ]
         return max(0.0, max_rate + sum(penalties))
-
 
 class MPCController:
     """Simple model predictive controller for greenhouse climate."""
@@ -148,7 +146,6 @@ class MPCController:
                 best_obj = obj
                 best_seq = seq
         return best_seq
-
 
 # --- Example usage ---
 def main():
@@ -204,7 +201,6 @@ class ProduceRecord:
         record_str = json.dumps(asdict(self), sort_keys=True)
         return hashlib.sha256(record_str.encode()).hexdigest()
 
-
 def build_chain(records: list[dict]) -> list[ProduceRecord]:
     """Build a simple hash chain from supply chain events."""
     chain = []
@@ -214,7 +210,6 @@ def build_chain(records: list[dict]) -> list[ProduceRecord]:
         prev_hash = record.compute_hash()
         chain.append(record)
     return chain
-
 
 def verify_chain(chain: list[ProduceRecord]) -> bool:
     """Verify integrity of the hash chain."""

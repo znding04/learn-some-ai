@@ -46,7 +46,7 @@ graph TD
     F -->|Yes| H[Add to Population]
     F -->|No| G
     H --> B
-    
+
     subgraph "Island Model"
         B
         I1[Island 1: Exploration]
@@ -56,7 +56,7 @@ graph TD
         B --- I2
         B --- I3
     end
-    
+
     subgraph "Evaluation"
         E --> E1[Run Program]
         E1 --> E2[Compute Solution Size]
@@ -106,7 +106,6 @@ def evaluate_cap_set(candidate_fn: Callable, dimension: int) -> int:
                 if all((p[d] + q[d] + r[d]) % 3 == 0 for d in range(dimension)):
                     return 0  # invalid: contains collinear triple
     return len(selected_list)
-
 
 # --- Example candidate functions (these would be LLM-generated) ---
 
@@ -166,7 +165,6 @@ def greedy_from_ordering(ordered_points, dim):
             r = tuple((-(p[d] + q[d])) % 3 for d in range(dim))
             blocked.add(r)
     return cap
-
 
 # --- Evolutionary loop (simplified) ---
 

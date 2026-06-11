@@ -156,7 +156,7 @@ inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
 with torch.no_grad():
     outputs = model(**inputs)
     predictions = torch.argmax(outputs.logits, dim=-1)
-    
+
 # Map predictions back to tokens
 tokens = tokenizer.convert_ids_to_tokens(inputs["input_ids"][0])
 for token, pred in zip(tokens, predictions[0]):

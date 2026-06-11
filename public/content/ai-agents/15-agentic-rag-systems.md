@@ -73,11 +73,11 @@ class RetrievalPlan:
 def plan_queries(llm, question: str) -> RetrievalPlan:
     """Use the LLM to decompose a complex question into sub-queries."""
     prompt = f"""Given the question: "{question}"
-    
+
     Decompose this into sub-queries needed to fully answer it.
     Return a JSON object with:
     - sub_queries: list of specific retrieval queries
-    - strategy: "parallel" if independent, "sequential" if later 
+    - strategy: "parallel" if independent, "sequential" if later
       queries depend on earlier results
     """
     response = llm.generate(prompt)

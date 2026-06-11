@@ -148,11 +148,11 @@ class ByteTracker:
         for threshold in [0.5, 0.3]:
             matched, unmatched_tracks, unmatched_detections = \
                 self.association(detections, threshold)
-            
+
             # Update matched tracks
             for track, det in zip(matched):
                 track.update(det)
-            
+
             # Initialize new tracks from unmatched detections
             for det in unmatched_detections:
                 if det.confidence > threshold:
@@ -175,13 +175,13 @@ def triangulate_position(detections, cameras):
     # Construct projection matrices
     P = [cameras[cam_id].K @ cameras[cam_id].RT for cam_id, _, _ in detections]
     points_2d = np.array([pt for _, pt, _ in detections])
-    
+
     # Triangulate using DLT (Direct Linear Transform)
     A = []
     for i, (P_i, (x, y)) in enumerate(zip(P, points_2d)):
         A.append(x * P_i[2,:] - P_i[0,:])
         A.append(y * P_i[2,:] - P_i[1,:])
-    
+
     _, _, vt = np.linalg.svd(np.array(A))
     X = vt[-1]
     return X[:3] / X[3]  # Normalize homogeneous coordinates
@@ -262,17 +262,17 @@ def process_frame(frame, frame_id):
     # Detect all players (COCO class 0 = person)
     results = detector(frame, classes=[0], conf=0.5)[0]
     detections = results.boxes
-    
+
     # Convert to tracker format: [x1, y1, x2, y2, score, class]
     dets = []
     for box in detections:
         x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
         score = box.conf[0].cpu().numpy()
         dets.append([x1, y1, x2, y2, score, 0])
-    
+
     # Update tracks
     tracks = tracker.update(np.array(dets), frame_id)
-    
+
     return tracks
 
 # Process video with tracking

@@ -142,7 +142,6 @@ class NutritionPredictor(nn.Module):
         features = self.backbone(x)
         return self.regressor(features)
 
-
 # ── Preprocessing transform ──
 val_transform = transforms.Compose([
     transforms.Resize(256),
@@ -163,7 +162,6 @@ def predict_nutrition(image_path: str, model: NutritionPredictor) -> dict:
         pred = model(tensor).squeeze().numpy()
 
     return dict(zip(NutritionPredictor.NUTRIENT_NAMES, pred))
-
 
 # ── Training loop outline (with a real dataset) ──
 def train_nutrition_predictor(train_loader, val_loader, epochs=20):

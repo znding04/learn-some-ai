@@ -101,16 +101,16 @@ def reaction_difference_fp(reactant_smiles, product_smiles, radius=2, nbits=2048
     """
     react_mol = Chem.MolFromSmiles(reactant_smiles)
     prod_mol = Chem.MolFromSmiles(product_smiles)
-    
+
     react_fp = np.zeros(nbits)
     prod_fp = np.zeros(nbits)
-    
+
     from rdkit.Chem import DataStructs
     fp_r = AllChem.GetMorganFingerprintAsBitVect(react_mol, radius, nBits=nbits)
     fp_p = AllChem.GetMorganFingerprintAsBitVect(prod_mol, radius, nBits=nbits)
     DataStructs.ConvertToNumpyArray(fp_r, react_fp)
     DataStructs.ConvertToNumpyArray(fp_p, prod_fp)
-    
+
     return prod_fp - react_fp  # Difference FP captures transformation
 
 # Compare two reactions
@@ -141,7 +141,7 @@ print("""
 Target: Drug molecule X
   ├── Step 1 (Amide coupling): Acid A + Amine B
   │   ├── Acid A: commercially available ($50/g)
-  │   └── Amine B: 
+  │   └── Amine B:
   │       ├── Step 2 (Reduction): Nitro C
   │       │   └── Nitro C: commercially available ($30/g)
   │       └── [Alternative] Step 2' (Buchwald): ArBr + NH3
@@ -185,7 +185,7 @@ graph TD
         C --> E[Decoder]
         E --> F[Product SMILES]
     end
-    
+
     subgraph "Retrosynthesis Tree Search"
         G[Target] --> H{Disconnection 1}
         G --> I{Disconnection 2}
@@ -195,7 +195,7 @@ graph TD
         L --> M[Buyable C]
         L --> N[Buyable D]
     end
-    
+
     subgraph "LocalRetro"
         O[Target Molecule] --> P[GNN: Find Reaction Center]
         P --> Q[Apply Local Template]

@@ -149,7 +149,7 @@ flowchart TD
     CYP --> PM[Poor Metabolizer<br/>⬆️ Drug Level → Toxicity]
     CYP --> NM[Normal Metabolizer<br/>✅ Expected Response]
     CYP --> UM[Ultra-Rapid Metabolizer<br/>⬇️ Drug Level → Failure]
-    
+
     Gene[CYP2D6 Genotype] --> CYP
     Gene --> Star[*4/*4 → PM]
     Gene --> Normal[*1/*1 → NM]

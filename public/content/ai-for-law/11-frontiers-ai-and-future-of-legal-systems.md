@@ -44,22 +44,22 @@ Emerging research directions include:
 ```mermaid
 flowchart TD
     A["Current Legal AI\n(RAG, clause classification,\nE-Discovery, legal search)"] --> B["Emerging Applications"]
-    
+
     B --> B1["Autonomous Legal Agents\n(filing, negotiating,\nmonitoring)"]
     B --> B2["AI Judge Systems\n(small claims, admin disputes)"]
     B --> B3["Justice Accessibility AI\n(chatbots, document assembly)"]
     B --> B4["Neuro-symbolic Legal AI\n(logic + embeddings)"]
-    
+
     B1 --> C1["Legal liability framework\n(who is responsible?)"]
     B2 --> C2["Regulatory approval\n(can AI decide cases?)"]
     B3 --> C3["Bar admission rules\n(AI-assisted practice)"]
     B4 --> C4["Interpretability standards\n(explainable reasoning)"]
-    
+
     C1 --> D["Future Integrated\nLegal AI Ecosystem"]
     C2 --> D
     C3 --> D
     C4 --> D
-    
+
     style B1 fill:#cde
     style B2 fill:#fdc
     style B3 fill:#cfc

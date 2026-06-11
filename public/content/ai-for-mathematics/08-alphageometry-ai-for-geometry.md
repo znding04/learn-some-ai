@@ -29,7 +29,7 @@ graph TD
     C -->|Stuck: No New Deductions| E[LLM Proposes Auxiliary Construction]
     E --> F[Add New Point / Line / Circle]
     F --> C
-    
+
     subgraph "Deductive Database Rules"
         G[Angle Chasing]
         H[Congruent Triangles]
@@ -37,7 +37,7 @@ graph TD
         J[Cyclic Quadrilaterals]
         K[Parallel / Perpendicular Lines]
     end
-    
+
     C -.-> G
     C -.-> H
     C -.-> I

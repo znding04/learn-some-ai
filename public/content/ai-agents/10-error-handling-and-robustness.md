@@ -121,14 +121,12 @@ from dataclasses import dataclass, field
 
 logger = logging.getLogger(__name__)
 
-
 class ErrorSeverity(Enum):
     """Classification of tool errors by severity."""
     TRANSIENT = "transient"      # Retry: network blip, rate limit
     DEGRADED = "degraded"        # Partial result available
     PERMANENT = "permanent"      # Do not retry: bad input, auth failure
     CRITICAL = "critical"        # Security issue: stop immediately
-
 
 @dataclass
 class ToolResult:
@@ -140,7 +138,6 @@ class ToolResult:
     retries_used: int = 0
     latency_ms: float = 0.0
 
-
 @dataclass
 class RetryConfig:
     """Configuration for retry behavior."""
@@ -149,7 +146,6 @@ class RetryConfig:
     max_delay: float = 30.0        # seconds
     timeout: float = 15.0          # per-attempt timeout in seconds
     total_timeout: float = 60.0    # total wall-clock limit
-
 
 class CircuitBreaker:
     """Stops calling a failing service after repeated failures."""
@@ -181,7 +177,6 @@ class CircuitBreaker:
             return True
         return False
 
-
 def classify_error(exception: Exception) -> ErrorSeverity:
     """Classify an exception into a severity level."""
     error_msg = str(exception).lower()
@@ -200,7 +195,6 @@ def classify_error(exception: Exception) -> ErrorSeverity:
         return ErrorSeverity.CRITICAL
 
     return ErrorSeverity.TRANSIENT  # Default: assume transient
-
 
 def robust_tool_call(
     fn: Callable,
@@ -283,7 +277,6 @@ def robust_tool_call(
         retries_used=config.max_retries,
         latency_ms=(time.time() - start_time) * 1000,
     )
-
 
 # ---------------------------------------------------------------
 # Example usage with a weather tool
