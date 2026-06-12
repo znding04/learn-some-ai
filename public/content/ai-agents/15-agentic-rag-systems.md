@@ -231,3 +231,22 @@ If the grounding score falls below a threshold, the agent retrieves additional e
 - Multi-hop reasoning chains information across sequential retrievals
 - Adaptive strategies match retrieval approach to question complexity
 - Grounding scores detect and prevent hallucination in final answers
+
+## Exercises
+
+1. **Build a Query Planner**: Implement the `plan_queries` function using an LLM API. Test it with 5 complex questions and evaluate whether the generated sub-queries are actually independent or sequential.
+
+2. **Threshold Tuning**: Implement adaptive threshold adjustment. Lower the threshold when a retrieval returns no useful documents after 2 retries. Track how often this happens and compare answer quality with fixed vs. adaptive thresholds.
+
+3. **Multi-Hop Evaluation**: Create a dataset of 20 multi-hop questions (with ground truth answers). Run agentic RAG and compare it with naive RAG. Measure precision, recall, and whether multi-hop questions benefit more from agentic retrieval.
+
+4. **Grounding Score Analysis**: After generating an answer, ask the LLM to identify each claim in the answer and evaluate whether it is supported by the context. Calculate the grounding score and flag answers with scores below 0.8.
+
+## Further Reading
+
+- Gao, Y., et al. (2023). "Active Retrieval Augmented Generation." *arXiv:2310.13714* — foundational agentic RAG paper.
+- Khattab, O., et al. (2022). "Demonstrate-Search-Predict: Composing RAG with Language Models." *arXiv:2312.04424* — multi-hop retrieval patterns.
+- Asai, A., et al. (2023). "Songbird: Multi-Hop Graph RAG." *GitHub* — multi-hop reasoning at scale.
+- Self-RAG paper (DeepMind): [https://arxiv.org/abs/2310.11511](https://arxiv.org/abs/2310.11511) — self-reflection for RAG verification.
+- LangChain's Agentic RAG: [https://python.langchain.com/docs/tutorials/rag](https://python.langchain.com/docs/tutorials/rag) — production patterns.
+

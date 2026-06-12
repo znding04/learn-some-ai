@@ -215,3 +215,21 @@ facts as embeddings; other agents query the store to benefit from previously gat
 - Consensus mechanisms (voting, weighted, iterative) enable group decisions
 - Shared memory (blackboards, vector stores) provides collective knowledge
 - Choose coordination strategy based on task structure, agent autonomy, and fault tolerance requirements
+
+## Exercises
+
+1. **Implement a Message Bus**: Extend the `MessageBus` class to support message priority levels and delivery timestamps. Add a method to retrieve undelivered messages older than a configurable threshold.
+
+2. **Manager-Worker Pipeline**: Implement the full manager-worker pipeline using asyncio. Add fault tolerance: if a worker fails to respond within a timeout, reassign the task to another worker. Track success/failure rates for each worker.
+
+3. **Contract Net Simulation**: Simulate a contract net with 5 worker agents and 1 manager. Each worker should bid based on simulated cost estimates. Run 20 rounds and analyze which workers win more contracts and why.
+
+4. **Consensus Visualization**: Implement the iterative refinement algorithm with 4 agents. Each agent starts with a random belief vector. Visualize how beliefs converge over rounds. Experiment with different values of $\alpha$.
+
+## Further Reading
+
+- Dorri, A., et al. (2018). "Multi-agent systems: A survey." *IEEE Access* — comprehensive overview of multi-agent architectures.
+- Lesser, V. R. (1999). "Cooperative Multiagent Systems: A Personal Perspective." *AI Magazine* — foundational reading on coordination.
+- Stone, P., & Veloso, M. (2000). "Multiagent Systems: A Survey from a Machine Learning Perspective." *Autonomous Robots* — covers task delegation and auctions.
+- Wooldridge, M. (2009). *An Introduction to MultiAgent Systems*, 2nd ed. Wiley — standard textbook on agent communication and coordination.
+- OpenAI's Swarm framework: [https://github.com/openai/swarm](https://github.com/openai/swarm) — multi-agent coordination patterns in production.

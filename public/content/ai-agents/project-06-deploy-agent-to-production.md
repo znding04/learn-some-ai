@@ -371,3 +371,24 @@ $$\text{desired\_replicas} = \left\lceil \frac{\text{queue\_depth}}{\text{target
 - Structured logging and metrics are non-negotiable for debugging production issues
 - Graceful shutdown prevents data loss during deployments
 - Scale horizontally with stateless design and external session storage
+
+## Exercises
+
+1. **Containerize an Existing Agent**: Take any agent you've built in previous projects and wrap it in a FastAPI app with health checks and rate limiting. Verify it runs inside a Docker container.
+
+2. **Add Structured Logging**: Add request correlation IDs (pass a `X-Request-ID` header through all log entries). Add a log aggregation pipeline: ship logs to a local file, then use `docker-compose` with a Logstash or Loki sidecar to visualize them.
+
+3. **Implement Readiness Probe**: Extend the readiness probe to check external dependencies (Redis connection, LLM API availability). Simulate a dependency failure and verify the probe returns 503.
+
+4. **Load Test**: Use `locust` or `wrk` to load test your deployed agent. Measure latency at 10, 50, and 100 concurrent requests. Identify the bottleneck (CPU, memory, LLM API rate limits, or network I/O).
+
+5. **Build Auto-Scaling Config**: Write a Kubernetes `HorizontalPodAutoscaler` manifest that scales based on queue depth or request latency. Deploy to minikube or kind for local testing.
+
+## Further Reading
+
+- FastAPI deployment docs: [https://fastapi.tiangolo.com/deployment/](https://fastapi.tiangolo.com/deployment/) — official production deployment guide.
+- Docker best practices: [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) — secure and efficient image builds.
+- Prometheus metrics: [https://prometheus.io/docs/concepts/data_model/](https://prometheus.io/docs/concepts/data_model/) — metric types and naming conventions.
+- Kubernetes production guide: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) — deployment strategies and rolling updates.
+- OpenTelemetry for distributed tracing: [https://opentelemetry.io/](https://opentelemetry.io/) — observability beyond metrics and logs.
+
