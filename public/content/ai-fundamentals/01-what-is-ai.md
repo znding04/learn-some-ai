@@ -3,6 +3,8 @@ title: "What is Artificial Intelligence?"
 level: beginner
 topic: ai-fundamentals
 order: 1
+estimatedTime: 15
+summary: "An introduction to AI — its history, types (narrow, general, superintelligent), how it compares to human intelligence, and the current landscape of foundation models and AI agents."
 ---
 
 # What is Artificial Intelligence?
@@ -49,7 +51,7 @@ Current AI systems are powerful but fundamentally different from human cognition
 | Learning efficiency | Needs millions of examples | Can learn from a few examples |
 | Generalization | Poor across domains | Excellent transfer learning |
 | Common sense | Weak | Strong intuitive physics/psychology |
-| Energy | GPT-4 training: ~$100M in compute | Brain: ~20 watts |
+| Energy | GPT-4 training: ~\$100M in compute | Brain: ~20 watts |
 
 ### The Current AI Landscape
 
