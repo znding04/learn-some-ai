@@ -1,8 +1,10 @@
 ---
 title: "Crop Health Monitoring with Deep Learning"
-level: beginner
+difficulty: beginner
 topic: ai-for-agriculture
 order: 4
+estimatedTime: "30 minutes"
+summary: "Deep learning approaches for automated crop health monitoring, including CNNs, Vision Transformers, and transfer learning for disease, nutrient, pest, and water stress detection."
 ---
 
 # Crop Health Monitoring with Deep Learning

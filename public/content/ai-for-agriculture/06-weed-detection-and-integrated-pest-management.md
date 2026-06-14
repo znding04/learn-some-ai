@@ -1,8 +1,10 @@
 ---
 title: "Weed Detection and Integrated Pest Management"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-agriculture
 order: 6
+estimatedTime: "30 minutes"
+summary: "AI-powered weed detection and integrated pest management using object detection models like YOLO and Faster R-CNN for precision spraying systems."
 ---
 
 # Weed Detection and Integrated Pest Management

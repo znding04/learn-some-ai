@@ -1,8 +1,10 @@
 ---
 title: "Agricultural Data and Remote Sensing"
-level: beginner
+difficulty: beginner
 topic: ai-for-agriculture
 order: 2
+estimatedTime: "30 minutes"
+summary: "Survey of major agricultural data sources including satellite imagery, drone data, IoT sensors, and GPS systems, with preprocessing techniques for machine learning pipelines."
 ---
 
 # Agricultural Data and Remote Sensing

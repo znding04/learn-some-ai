@@ -1,8 +1,10 @@
 ---
 title: "Frontiers in AI for Agriculture"
-level: advanced
+difficulty: advanced
 topic: ai-for-agriculture
 order: 11
+estimatedTime: "30 minutes"
+summary: "Emerging frontiers in agricultural AI including generative crop design, vertical farming optimization, blockchain traceability, and climate change adaptation."
 ---
 
 # Frontiers in AI for Agriculture

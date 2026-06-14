@@ -1,8 +1,10 @@
 ---
 title: "Key Datasets and Benchmarks in Agricultural AI"
-level: beginner
+difficulty: beginner
 topic: ai-for-agriculture
 order: 3
+estimatedTime: "30 minutes"
+summary: "Overview of key open datasets and benchmarks for agricultural AI, including PlantVillage, DeepWeeds, UC Merced, and yield prediction resources."
 ---
 
 # Key Datasets and Benchmarks in Agricultural AI

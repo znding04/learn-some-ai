@@ -1,8 +1,10 @@
 ---
 title: "Soil Health, Water Management, and Precision Irrigation"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-agriculture
 order: 8
+estimatedTime: "30 minutes"
+summary: "Machine learning for soil health assessment, water stress detection, and precision irrigation scheduling using sensor data and remote sensing."
 ---
 
 # Soil Health, Water Management, and Precision Irrigation

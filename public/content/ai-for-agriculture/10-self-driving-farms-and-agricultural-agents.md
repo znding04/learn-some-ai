@@ -1,8 +1,10 @@
 ---
 title: "Self-Driving Farms and Agricultural Agents"
-level: advanced
+difficulty: advanced
 topic: ai-for-agriculture
 order: 10
+estimatedTime: "30 minutes"
+summary: "Multi-agent systems and LLM-powered advisors for coordinating autonomous farm operations including robots, drones, and sensor networks."
 ---
 
 # Self-Driving Farms and Agricultural Agents
