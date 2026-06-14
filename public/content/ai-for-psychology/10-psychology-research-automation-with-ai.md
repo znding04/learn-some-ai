@@ -2,7 +2,7 @@
 title: "Psychology Research Automation with AI"
 summary: "Automated literature review, experiment design, survey analysis, and hypothesis generation with LLMs."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Psychology Research Automation with AI

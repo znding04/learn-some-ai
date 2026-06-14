@@ -1,11 +1,10 @@
 ---
 title: "NLP for Clinical Psychology"
-level: intermediate
 topic: ai-for-psychology
 order: 3
 summary: "Applying NLP to clinical notes, mood tracking, text-based assessment, and chatbot-based intake."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # NLP for Clinical Psychology

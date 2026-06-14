@@ -1,11 +1,10 @@
 ---
 title: "Introduction to AI for Psychology"
-level: beginner
 topic: ai-for-psychology
 order: 1
 summary: "Overview of how AI is transforming psychology from ELIZA to modern LLMs, including ethical considerations."
 difficulty: beginner
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Introduction to AI for Psychology

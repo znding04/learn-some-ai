@@ -2,7 +2,7 @@
 title: "Ethics, Privacy, and Limits in AI for Psychology"
 summary: "Informed consent, data privacy, algorithm aversion, depersonalization risks, and regulation landscape."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Ethics, Privacy, and Limits in AI for Psychology

@@ -1,11 +1,10 @@
 ---
 title: "Mental Health Data and Representations"
-level: beginner
 topic: ai-for-psychology
 order: 2
 summary: "Types of psychological data including clinical notes, scales, wearables, and multimodal signals for AI processing."
 difficulty: beginner
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Mental Health Data and Representations

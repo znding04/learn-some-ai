@@ -2,7 +2,7 @@
 title: "Emotion Recognition and Affective Computing"
 summary: "Facial expression recognition, voice prosody analysis, multimodal emotion detection, and physiological signals for therapy."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Emotion Recognition and Affective Computing

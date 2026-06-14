@@ -2,7 +2,7 @@
 title: "Cognitive Behavioral Therapy and AI"
 summary: "How CBT works and how AI assists with session analysis, homework tracking, and personalized adaptations."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Cognitive Behavioral Therapy and AI
