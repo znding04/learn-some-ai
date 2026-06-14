@@ -1,11 +1,10 @@
 ---
 title: "Autonomous Vehicles: Levels, History, and Architecture"
-level: beginner
 topic: ai-for-transportation
 order: 2
 summary: "Understanding SAE automation levels, the historical milestones of self-driving, and the core software architecture of autonomous vehicle systems."
 difficulty: beginner
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Autonomous Vehicles: Levels, History, and Architecture

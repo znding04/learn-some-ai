@@ -1,11 +1,10 @@
 ---
 title: "AI for Traffic Management and Smart Cities"
-level: beginner
 topic: ai-for-transportation
 order: 4
 summary: "How AI powers intelligent transportation systems through adaptive signal control, traffic flow prediction, and smart city infrastructure."
 difficulty: beginner
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # AI for Traffic Management and Smart Cities

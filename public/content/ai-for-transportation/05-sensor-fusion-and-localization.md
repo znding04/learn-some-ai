@@ -1,11 +1,10 @@
 ---
 title: "Sensor Fusion and Localization for Self-Driving"
-level: intermediate
 topic: ai-for-transportation
 order: 5
 summary: "Combining cameras, LiDAR, and radar through fusion architectures and using Kalman filters, SLAM, and modern transformers for robust localization."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "15 minutes"
 ---
 
 # Sensor Fusion and Localization for Self-Driving

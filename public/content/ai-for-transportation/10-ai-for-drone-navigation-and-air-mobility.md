@@ -1,11 +1,10 @@
 ---
 title: "AI for Drone Navigation and Air Mobility"
-level: advanced
 topic: ai-for-transportation
 order: 10
 summary: "Examine the AI autonomy stack powering drones and urban air mobility, from visual-inertial odometry to swarm coordination and airspace management."
 difficulty: advanced
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # AI for Drone Navigation and Air Mobility

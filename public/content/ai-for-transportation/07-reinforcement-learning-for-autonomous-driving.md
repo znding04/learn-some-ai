@@ -1,11 +1,10 @@
 ---
 title: "Reinforcement Learning for Autonomous Driving"
-level: intermediate
 topic: ai-for-transportation
 order: 7
 summary: "Applying RL and imitation learning to autonomous driving, from MDP formulation and policy gradients to sim-to-real transfer and multi-agent scenarios."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Reinforcement Learning for Autonomous Driving

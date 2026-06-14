@@ -1,11 +1,10 @@
 ---
 title: "Simulation Platforms for Autonomous Vehicle Testing"
-level: advanced
 topic: ai-for-transportation
 order: 9
 summary: "Explore simulation platforms, digital twins, and validation frameworks used to test and certify autonomous vehicles safely at scale."
 difficulty: advanced
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Simulation Platforms for Autonomous Vehicle Testing

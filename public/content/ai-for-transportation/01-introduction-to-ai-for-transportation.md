@@ -1,11 +1,10 @@
 ---
 title: "Introduction to AI for Transportation"
-level: beginner
 topic: ai-for-transportation
 order: 1
 summary: "An overview of how artificial intelligence is transforming transportation across autonomous vehicles, traffic management, logistics, and public transit."
 difficulty: beginner
-estimatedTime: "30min"
+estimatedTime: "15 minutes"
 ---
 
 # Introduction to AI for Transportation

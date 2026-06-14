@@ -1,11 +1,10 @@
 ---
 title: "Computer Vision for Driving: Cameras, LiDAR, and Perception"
-level: beginner
 topic: ai-for-transportation
 order: 3
 summary: "How computer vision powers vehicle perception through camera-based detection, LiDAR point cloud processing, and evaluation metrics like IoU and mAP."
 difficulty: beginner
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Computer Vision for Driving: Cameras, LiDAR, and Perception

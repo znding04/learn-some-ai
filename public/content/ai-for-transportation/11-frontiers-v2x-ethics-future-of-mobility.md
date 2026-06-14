@@ -1,11 +1,10 @@
 ---
 title: "Frontiers: V2X Communication, Ethics, and the Future of Mobility"
-level: advanced
 topic: ai-for-transportation
 order: 11
 summary: "Investigate V2X communication, ethical dilemmas in autonomous driving, and transformative trends shaping the future of AI-powered mobility."
 difficulty: advanced
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # Frontiers: V2X Communication, Ethics, and the Future of Mobility

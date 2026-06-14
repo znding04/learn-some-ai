@@ -1,11 +1,10 @@
 ---
 title: "AI for Public Transit and Mobility-as-a-Service (MaaS)"
-level: intermediate
 topic: ai-for-transportation
 order: 8
 summary: "How AI optimizes public transit scheduling, ride-sharing demand prediction, dynamic pricing, and multi-modal MaaS platforms."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "30 minutes"
 ---
 
 # AI for Public Transit and Mobility-as-a-Service (MaaS)

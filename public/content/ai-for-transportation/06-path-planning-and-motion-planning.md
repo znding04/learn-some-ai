@@ -1,11 +1,10 @@
 ---
 title: "Path Planning and Motion Planning Algorithms"
-level: intermediate
 topic: ai-for-transportation
 order: 6
 summary: "Global and local planning algorithms from A* to MPC, including behavioral planning, trajectory optimization, and the Frenet frame."
 difficulty: intermediate
-estimatedTime: "30min"
+estimatedTime: "15 minutes"
 ---
 
 # Path Planning and Motion Planning Algorithms
