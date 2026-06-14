@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Chemistry"
-level: beginner
+difficulty: beginner
 topic: ai-for-chemistry
 order: 1
+estimatedTime: "15 minutes"
+summary: "An introduction to how artificial intelligence is transforming chemistry, from drug discovery to materials science, covering the history of computational chemistry and the key AI methods driving modern chemical research."
 ---
 
 # Introduction to AI for Chemistry

@@ -1,8 +1,10 @@
 ---
 title: "Graph Neural Networks for Molecules"
-level: beginner
+difficulty: beginner
 topic: ai-for-chemistry
 order: 3
+estimatedTime: "30 minutes"
+summary: "Explores how graph neural networks exploit the natural graph structure of molecules for property prediction, covering message passing, the MPNN framework, SchNet, D-MPNN, and practical implementation with PyTorch Geometric."
 ---
 
 # Graph Neural Networks for Molecules

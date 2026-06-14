@@ -1,8 +1,10 @@
 ---
 title: "Catalyst Design with Machine Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-chemistry
 order: 7
+estimatedTime: "30 minutes"
+summary: "Explores how machine learning accelerates catalyst discovery by learning structure-activity relationships, covering the Sabatier principle, descriptor-based approaches, the Open Catalyst Project, and ML-guided screening for electrocatalysis."
 ---
 
 # Catalyst Design with Machine Learning

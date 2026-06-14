@@ -1,8 +1,10 @@
 ---
 title: "Materials Discovery and Crystal Structure Prediction"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-chemistry
 order: 8
+estimatedTime: "30 minutes"
+summary: "Covers AI-driven materials discovery including crystal structure prediction, band gap prediction, crystal graph neural networks, and Google DeepMind's GNoME system that discovered 2.2 million new stable crystals."
 ---
 
 # Materials Discovery and Crystal Structure Prediction

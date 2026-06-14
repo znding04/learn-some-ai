@@ -1,8 +1,10 @@
 ---
 title: "Generative Models for Molecule Design"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-chemistry
 order: 5
+estimatedTime: "30 minutes"
+summary: "Explores generative modeling approaches for inverse molecular design, including VAEs, GANs, autoregressive models, diffusion models, and reinforcement learning methods for designing novel molecules with desired properties."
 ---
 
 # Generative Models for Molecule Design

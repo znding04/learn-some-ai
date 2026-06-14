@@ -1,8 +1,10 @@
 ---
 title: "AutoML and Active Learning for Chemistry"
-level: advanced
+difficulty: advanced
 topic: ai-for-chemistry
 order: 11
+estimatedTime: "30 minutes"
+summary: "Covers Bayesian optimization, multi-objective optimization, and active learning loops for molecular discovery, including self-driving labs and automated feature engineering for chemistry."
 ---
 
 # AutoML and Active Learning for Chemistry
