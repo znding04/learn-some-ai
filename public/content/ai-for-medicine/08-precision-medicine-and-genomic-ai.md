@@ -1,6 +1,8 @@
 ---
 title: "Precision Medicine and Genomic AI"
-level: advanced
+difficulty: advanced
+estimatedTime: "30 minutes"
+summary: "Covers AI techniques powering precision medicine including polygenic risk scores, cancer genomic profiling, pharmacogenomics for personalized dosing, and single-cell genomics analysis."
 topic: ai-for-medicine
 order: 8
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Medical AI Regulations and Ethics"
-level: advanced
+difficulty: advanced
+estimatedTime: "30 minutes"
+summary: "Covers the FDA regulatory pathway for AI medical devices, the EU AI Act, algorithmic fairness and bias mitigation in healthcare, liability frameworks, and ethical principles for responsible medical AI."
 topic: ai-for-medicine
 order: 9
 ---

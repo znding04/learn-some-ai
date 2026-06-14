@@ -1,6 +1,8 @@
 ---
 title: "Drug Discovery and Clinical Trial AI"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Explores AI applications across the drug development pipeline including virtual screening, generative molecule design, ADMET prediction, adaptive clinical trial design, and drug repurposing."
 topic: ai-for-medicine
 order: 7
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Introduction to AI in Medicine"
-level: beginner
+difficulty: beginner
+estimatedTime: "30 minutes"
+summary: "An introduction to the landscape of AI in medicine, covering its history, why healthcare is both a natural fit and a uniquely challenging domain for machine learning, and the major application areas."
 topic: ai-for-medicine
 order: 1
 ---

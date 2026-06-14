@@ -1,6 +1,8 @@
 ---
 title: "Clinical Decision Support Systems"
-level: beginner
+difficulty: beginner
+estimatedTime: "30 minutes"
+summary: "Explores ML-powered clinical decision support systems that predict sepsis, stratify patient risk, and recommend treatments, covering architectures, clinical workflow integration, and evaluation frameworks."
 topic: ai-for-medicine
 order: 3
 ---

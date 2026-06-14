@@ -1,6 +1,8 @@
 ---
 title: "Electronic Health Records and Clinical Data"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers EHR data structure, preprocessing challenges like missing data and irregular time series, and modeling approaches including gradient-boosted trees and deep learning for clinical prediction tasks."
 topic: ai-for-medicine
 order: 6
 ---

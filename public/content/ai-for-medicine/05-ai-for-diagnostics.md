@@ -1,6 +1,8 @@
 ---
 title: "AI for Diagnostics"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Examines AI diagnostic systems in dermatology, ophthalmology, and radiology, including landmark studies, FDA-authorized autonomous diagnostics, and clinical validation through reader studies."
 topic: ai-for-medicine
 order: 5
 ---

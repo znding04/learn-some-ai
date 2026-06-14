@@ -1,6 +1,8 @@
 ---
 title: "Frontiers in Medical AI"
-level: advanced
+difficulty: advanced
+estimatedTime: "30 minutes"
+summary: "Explores cutting-edge frontiers in medical AI including foundation models, autonomous surgical robotics, wearable health monitoring, federated learning for privacy-preserving AI, and multimodal clinical systems."
 topic: ai-for-medicine
 order: 10
 ---

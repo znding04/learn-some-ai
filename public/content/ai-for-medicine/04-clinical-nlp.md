@@ -1,6 +1,8 @@
 ---
 title: "Natural Language Processing for Clinical Notes"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers clinical NLP techniques for extracting structured medical concepts from unstructured clinical text, including NER, negation detection, and transformer-based models like ClinicalBERT."
 topic: ai-for-medicine
 order: 4
 ---

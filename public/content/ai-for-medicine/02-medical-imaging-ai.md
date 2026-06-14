@@ -1,6 +1,8 @@
 ---
 title: "Medical Imaging AI"
-level: beginner
+difficulty: beginner
+estimatedTime: "30 minutes"
+summary: "Covers AI for medical imaging including detection, segmentation, and classification across radiology, pathology, and ophthalmology, with key architectures like U-Net and training strategies for clinical deployment."
 topic: ai-for-medicine
 order: 2
 ---
