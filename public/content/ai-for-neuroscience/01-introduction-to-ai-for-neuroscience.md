@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Neuroscience"
-level: beginner
+difficulty: beginner
 topic: ai-for-neuroscience
 order: 1
+estimatedTime: "15 minutes"
+summary: "An introduction to how AI bridges the gap between massive neuroscience datasets and discovery, covering key concepts from neuroimaging to brain-computer interfaces."
 ---
 
 # Introduction to AI for Neuroscience

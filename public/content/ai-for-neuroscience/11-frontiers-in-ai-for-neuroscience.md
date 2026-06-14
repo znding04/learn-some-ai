@@ -1,8 +1,10 @@
 ---
 title: "Frontiers: AI-Native Brain Science"
-level: advanced
+difficulty: advanced
 topic: ai-for-neuroscience
 order: 11
+estimatedTime: "15 minutes"
+summary: "Explores cutting-edge frontiers including foundation models for brain data, neural architecture search for circuits, digital twins, and brain-to-text cognitive BCIs."
 ---
 
 # Frontiers: AI-Native Brain Science

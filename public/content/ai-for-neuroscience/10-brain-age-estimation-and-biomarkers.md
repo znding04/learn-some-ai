@@ -1,8 +1,10 @@
 ---
 title: "Brain Age Estimation and Biomarkers"
-level: beginner
+difficulty: beginner
 topic: ai-for-neuroscience
 order: 10
+estimatedTime: "15 minutes"
+summary: "Introduces brain age as an AI-derived biomarker, covering how regression models estimate biological brain age from MRI and how brain age delta indicates accelerated aging."
 ---
 
 # Brain Age Estimation and Biomarkers

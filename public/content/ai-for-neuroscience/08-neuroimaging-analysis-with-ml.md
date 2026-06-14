@@ -1,8 +1,10 @@
 ---
 title: "Neuroimaging Analysis with Machine Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-neuroscience
 order: 8
+estimatedTime: "15 minutes"
+summary: "Covers machine learning approaches for fMRI analysis, including multivariate pattern analysis (MVPA), searchlight decoding, and representational similarity analysis."
 ---
 
 # Neuroimaging Analysis with Machine Learning

@@ -1,8 +1,10 @@
 ---
 title: "Neural Decoding and Brain-Computer Interfaces"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-neuroscience
 order: 3
+estimatedTime: "15 minutes"
+summary: "Covers neural decoding methods that reconstruct sensory experiences and motor intentions from brain activity, and their application in brain-computer interfaces."
 ---
 
 # Neural Decoding and Brain-Computer Interfaces
