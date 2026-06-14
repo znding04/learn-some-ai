@@ -1,8 +1,10 @@
 ---
 title: "AI for Shelf Life Prediction and Food Freshness"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-food-science
 order: 9
+estimatedTime: "30 minutes"
+summary: "Covers the shift from calendar-based to condition-based freshness assessment using ML, including sensor fusion architectures combining e-noses, temperature loggers, and computer vision, LSTM models for cold chain monitoring, and dynamic expiration labeling."
 ---
 
 # AI for Shelf Life Prediction and Food Freshness

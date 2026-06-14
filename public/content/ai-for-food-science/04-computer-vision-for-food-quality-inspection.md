@@ -1,8 +1,10 @@
 ---
 title: "Computer Vision for Food Quality Inspection"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-food-science
 order: 4
+estimatedTime: "15 minutes"
+summary: "Covers CNN-based classification and YOLO-based real-time detection for food quality inspection, including hyperspectral imaging pipelines, edge deployment on embedded hardware, and strategies for handling domain shift in production environments."
 ---
 
 # Computer Vision for Food Quality Inspection

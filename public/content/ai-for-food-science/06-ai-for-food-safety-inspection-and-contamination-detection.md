@@ -1,8 +1,10 @@
 ---
 title: "AI for Food Safety Inspection and Contamination Detection"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-food-science
 order: 6
+estimatedTime: "30 minutes"
+summary: "Maps biological, chemical, and physical food hazards to their AI-powered detection methods, including spectroscopy-based pathogen screening, hyperspectral mycotoxin detection, X-ray foreign object detection with autoencoders, and regulatory compliance frameworks."
 ---
 
 # AI for Food Safety Inspection and Contamination Detection

@@ -1,8 +1,10 @@
 ---
 title: "Food Science Data Types, Representations, and Quality"
-level: beginner
+difficulty: beginner
 topic: ai-for-food-science
 order: 2
+estimatedTime: "30 minutes"
+summary: "Covers the five major food science data categories — spectral, imaging, chemical composition, sensor time-series, and text — along with their ML representations, public datasets, and common data quality challenges like batch effects and sensor drift."
 ---
 
 # Food Science Data Types, Representations, and Quality
