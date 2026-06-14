@@ -1,8 +1,10 @@
 ---
 title: "AI for Threat Intelligence"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-cybersecurity
 order: 8
+estimatedTime: "30 minutes"
+summary: "Explores how AI transforms cyber threat intelligence through automated IOC extraction, MITRE ATT&CK mapping, knowledge graph construction, and AI-powered threat hunting integrated with the ELK stack."
 ---
 
 # AI for Threat Intelligence

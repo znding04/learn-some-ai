@@ -1,8 +1,10 @@
 ---
 title: "Frontiers: AI-Native Cybersecurity"
-level: advanced
+difficulty: advanced
 topic: ai-for-cybersecurity
 order: 11
+estimatedTime: "30 minutes"
+summary: "Explores frontier AI-native cybersecurity concepts including the AI security arms race, moving target defense, AI-generated honeypots, API watermarking, self-healing systems, and the regulatory landscape."
 ---
 
 # Frontiers: AI-Native Cybersecurity

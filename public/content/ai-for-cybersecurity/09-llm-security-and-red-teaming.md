@@ -1,8 +1,10 @@
 ---
 title: "LLM Security and Red Teaming"
-level: advanced
+difficulty: advanced
 topic: ai-for-cybersecurity
 order: 9
+estimatedTime: "30 minutes"
+summary: "Covers LLM-specific security threats including prompt injection, jailbreaks, domain-camouflaged attacks, and RAG corruption, along with detection systems and automated red-teaming approaches."
 ---
 
 # LLM Security and Red Teaming

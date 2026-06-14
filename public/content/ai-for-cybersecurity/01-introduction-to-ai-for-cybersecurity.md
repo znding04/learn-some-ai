@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Cybersecurity"
-level: beginner
+difficulty: beginner
 topic: ai-for-cybersecurity
 order: 1
+estimatedTime: "15 minutes"
+summary: "Explores how AI and machine learning are applied to cybersecurity, covering supervised, unsupervised, and reinforcement learning approaches to threat detection, analysis, and response."
 ---
 
 # Introduction to AI for Cybersecurity

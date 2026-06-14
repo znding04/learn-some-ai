@@ -1,8 +1,10 @@
 ---
 title: "Phishing and Spam Detection"
-level: beginner
+difficulty: beginner
 topic: ai-for-cybersecurity
 order: 4
+estimatedTime: "30 minutes"
+summary: "Covers ML approaches to phishing and spam detection, from classical Naive Bayes and SVM classifiers to transformer-based models, including feature extraction from email headers, body text, and URLs."
 ---
 
 # Phishing and Spam Detection
