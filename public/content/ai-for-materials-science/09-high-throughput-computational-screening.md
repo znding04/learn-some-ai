@@ -1,6 +1,8 @@
 ---
 title: "High-Throughput Computational Screening"
-level: advanced
+difficulty: advanced
+estimatedTime: "30 minutes"
+summary: "Covers high-throughput computational screening pipelines that use ML surrogates to evaluate millions of candidate materials, along with Bayesian optimization for efficient inverse design."
 topic: ai-for-materials-science
 order: 9
 ---

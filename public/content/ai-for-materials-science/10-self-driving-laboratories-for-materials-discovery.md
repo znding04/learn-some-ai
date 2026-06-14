@@ -1,6 +1,8 @@
 ---
 title: "Self-Driving Laboratories for Materials Discovery"
-level: advanced
+difficulty: advanced
+estimatedTime: "30 minutes"
+summary: "Explores autonomous experimental platforms where AI designs experiments, robots execute them, and instruments characterize results in a closed loop, including Bayesian optimization strategies."
 topic: ai-for-materials-science
 order: 10
 ---

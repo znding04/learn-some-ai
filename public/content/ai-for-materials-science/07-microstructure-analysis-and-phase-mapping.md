@@ -1,6 +1,8 @@
 ---
 title: "Microstructure Analysis and Phase Mapping"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Explores how deep learning automates microstructure characterization, including XRD phase identification with 1D CNNs, SEM/TEM image segmentation with U-Net, and hyperspectral decomposition."
 topic: ai-for-materials-science
 order: 7
 ---

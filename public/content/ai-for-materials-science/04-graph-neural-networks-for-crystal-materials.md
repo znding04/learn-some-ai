@@ -1,6 +1,8 @@
 ---
 title: "Graph Neural Networks for Crystal Materials"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers graph neural network architectures for crystal property prediction, from CGCNN through ALIGNN and universal potentials like M3GNet, including message passing and periodic boundary handling."
 topic: ai-for-materials-science
 order: 4
 ---

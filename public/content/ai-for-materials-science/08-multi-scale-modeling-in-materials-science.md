@@ -1,6 +1,8 @@
 ---
 title: "Multi-Scale Modeling in Materials Science"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers how AI bridges the gap between electronic, atomistic, mesoscale, and macroscale modeling using ML surrogates, Fourier Neural Operators, and multi-fidelity learning approaches."
 topic: ai-for-materials-science
 order: 8
 ---

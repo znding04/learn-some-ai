@@ -1,6 +1,8 @@
 ---
 title: "Machine Learning for Materials Property Prediction"
-level: beginner
+difficulty: beginner
+estimatedTime: "30 minutes"
+summary: "Explores supervised learning pipelines for predicting material properties such as formation energy, band gap, and elastic moduli from composition or structure features."
 topic: ai-for-materials-science
 order: 3
 ---

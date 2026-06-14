@@ -1,6 +1,8 @@
 ---
 title: "Introduction to AI for Materials Science"
-level: beginner
+difficulty: beginner
+estimatedTime: "30 minutes"
+summary: "An introduction to materials informatics, covering how AI and machine learning accelerate materials discovery across multiple length scales, from electronic structure to macroscopic properties."
 topic: ai-for-materials-science
 order: 1
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Crystal Structure Prediction with ML"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Examines how ML accelerates crystal structure prediction through surrogate energy models and generative approaches like diffusion models, including Google DeepMind's GNoME system."
 topic: ai-for-materials-science
 order: 5
 ---

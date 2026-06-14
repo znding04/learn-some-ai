@@ -1,6 +1,8 @@
 ---
 title: "Materials Representations and Descriptors"
-level: beginner
+difficulty: beginner
+estimatedTime: "30 minutes"
+summary: "Covers how to encode atomic structures into numerical formats for ML, including composition-based features like Magpie, structure-based descriptors like SOAP, and crystal graph representations."
 topic: ai-for-materials-science
 order: 2
 ---

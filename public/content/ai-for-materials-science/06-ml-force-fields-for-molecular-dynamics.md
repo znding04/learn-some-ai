@@ -1,6 +1,8 @@
 ---
 title: "Machine Learning Force Fields for Molecular Dynamics"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers machine learning interatomic potentials that bridge the accuracy of DFT with the speed of classical force fields, including equivariant architectures like NequIP and MACE."
 topic: ai-for-materials-science
 order: 6
 ---

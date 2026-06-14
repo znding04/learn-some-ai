@@ -1,6 +1,8 @@
 ---
 title: "Frontiers in AI for Materials Science"
-level: advanced
+difficulty: advanced
+estimatedTime: "15 minutes"
+summary: "Surveys cutting-edge frontiers including foundation models for materials, generative metamaterial design, uncertainty-aware discovery, AI for sustainability, and key open challenges."
 topic: ai-for-materials-science
 order: 11
 ---
