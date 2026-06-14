@@ -1,8 +1,10 @@
 ---
 title: "Risk Management and Fraud Detection"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-finance
 order: 8
+estimatedTime: "30 minutes"
+summary: "Covers ML approaches to credit scoring, Value-at-Risk estimation, fraud detection with Isolation Forests and graph neural networks, and techniques for handling extreme class imbalance."
 ---
 
 # Risk Management and Fraud Detection

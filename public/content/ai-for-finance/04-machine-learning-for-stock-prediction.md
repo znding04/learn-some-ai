@@ -1,8 +1,10 @@
 ---
 title: "Machine Learning for Stock Prediction"
-level: beginner
+difficulty: beginner
 topic: ai-for-finance
 order: 4
+estimatedTime: "30 minutes"
+summary: "Covers the full ML pipeline for stock prediction including problem framing, feature engineering, model selection, walk-forward validation, and key failure modes like look-ahead bias and overfitting."
 ---
 
 # Machine Learning for Stock Prediction

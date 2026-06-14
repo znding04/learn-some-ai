@@ -1,8 +1,10 @@
 ---
 title: "Large Language Models for Finance (FinLLMs)"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-finance
 order: 6
+estimatedTime: "30 minutes"
+summary: "Explores how large language models like BloombergGPT and FinGPT are applied to financial sentiment analysis, NER, document summarization, and retrieval-augmented generation for SEC filing analysis."
 ---
 
 # Large Language Models for Finance (FinLLMs)

@@ -1,8 +1,10 @@
 ---
 title: "AI Agents in Financial Markets"
-level: advanced
+difficulty: advanced
 topic: ai-for-finance
 order: 9
+estimatedTime: "45 minutes"
+summary: "Explores agent-based modeling of financial markets, including zero-intelligence traders, multi-agent reinforcement learning, LLM-powered financial agents, and emergent phenomena like flash crashes."
 ---
 
 # AI Agents in Financial Markets

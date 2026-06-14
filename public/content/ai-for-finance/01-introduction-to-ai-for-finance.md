@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Finance"
-level: beginner
+difficulty: beginner
 topic: ai-for-finance
 order: 1
+estimatedTime: "30 minutes"
+summary: "An overview of how AI has transformed the financial industry, covering algorithmic trading, robo-advisors, credit scoring, fraud detection, and NLP for market intelligence."
 ---
 
 # Introduction to AI for Finance

@@ -1,8 +1,10 @@
 ---
 title: "Frontiers: AI and Financial Stability"
-level: advanced
+difficulty: advanced
 topic: ai-for-finance
 order: 11
+estimatedTime: "45 minutes"
+summary: "Examines systemic risks from AI in finance including model monoculture, flash crashes, regulatory responses, DeFi interactions, and the ethical challenges of algorithmic decision-making."
 ---
 
 # Frontiers: AI and Financial Stability

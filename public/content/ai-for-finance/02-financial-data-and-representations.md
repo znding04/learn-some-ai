@@ -1,8 +1,10 @@
 ---
 title: "Financial Data and Representations"
-level: beginner
+difficulty: beginner
 topic: ai-for-finance
 order: 2
+estimatedTime: "30 minutes"
+summary: "Explores the taxonomy of financial data including OHLCV, order books, tick data, fundamentals, and alternative data, along with the pipeline from raw data to ML-ready features."
 ---
 
 # Financial Data and Representations

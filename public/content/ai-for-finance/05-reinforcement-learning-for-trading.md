@@ -1,8 +1,10 @@
 ---
 title: "Reinforcement Learning for Trading"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-finance
 order: 5
+estimatedTime: "30 minutes"
+summary: "Introduces reinforcement learning for algorithmic trading, covering Markov Decision Processes, DQN agents, reward shaping with transaction costs, and the challenges of non-stationarity in financial markets."
 ---
 
 # Reinforcement Learning for Trading
