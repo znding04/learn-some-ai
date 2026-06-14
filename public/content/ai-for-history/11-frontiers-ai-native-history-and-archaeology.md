@@ -2,7 +2,7 @@
 title: "Frontiers: AI-Native History and Archaeology"
 summary: "Survey the cutting edge of AI in historical research: foundation models for reasoning over the past, causal inference for counterfactual history, AI-generated narratives, and the future of AI in museums and public history."
 difficulty: advanced
-estimatedTime: "40 min"
+estimatedTime: "30 minutes"
 ---
 
 ## Overview

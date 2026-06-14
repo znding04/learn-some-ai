@@ -2,7 +2,7 @@
 title: "Spatial Analysis and GIS with AI"
 summary: "Combine geographic information systems with machine learning to predict site locations, reconstruct trade routes, and detect archaeological features from satellite imagery."
 difficulty: intermediate
-estimatedTime: "45 min"
+estimatedTime: "30 minutes"
 ---
 
 ## Overview

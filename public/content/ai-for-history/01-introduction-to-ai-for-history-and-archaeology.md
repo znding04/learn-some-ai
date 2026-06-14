@@ -2,7 +2,7 @@
 title: "Introduction to AI for History and Archaeology"
 summary: "An overview of how artificial intelligence is transforming historical research and archaeological discovery, covering key methods, ethical considerations, and the modern computational pipeline."
 difficulty: beginner
-estimatedTime: "30 min"
+estimatedTime: "15 minutes"
 ---
 
 ## Overview

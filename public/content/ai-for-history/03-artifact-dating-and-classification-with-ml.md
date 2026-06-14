@@ -2,7 +2,7 @@
 title: "Artifact Dating and Classification with ML"
 summary: "Explore how machine learning models assist archaeologists in dating artifacts through radiocarbon calibration and classifying objects by style, material, and provenance."
 difficulty: beginner
-estimatedTime: "40 min"
+estimatedTime: "30 minutes"
 ---
 
 ## Overview

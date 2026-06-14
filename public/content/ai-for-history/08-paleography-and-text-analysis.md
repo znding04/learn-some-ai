@@ -2,7 +2,7 @@
 title: "Paleography and Text Analysis"
 summary: "Use deep learning for ancient script recognition, handwriting synthesis, automated translation of historical languages, and script dating through feature extraction."
 difficulty: intermediate
-estimatedTime: "45 min"
+estimatedTime: "30 minutes"
 ---
 
 ## Overview
