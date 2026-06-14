@@ -1,8 +1,10 @@
 ---
 title: "Word Embeddings and Beyond: Representing Linguistic Knowledge"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-linguistics
 order: 5
+estimatedTime: "30 minutes"
+summary: "Traces the evolution of word representations from one-hot vectors through dense embeddings (word2vec, GloVe) to contextual representations (ELMo, BERT) that capture polysemy and context-dependence."
 ---
 
 # Word Embeddings and Beyond: Representing Linguistic Knowledge

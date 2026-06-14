@@ -1,8 +1,10 @@
 ---
 title: "Cross-Linguistic NLP: Typology, Multilingual Models, and Code-Switching"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-linguistics
 order: 7
+estimatedTime: "30 minutes"
+summary: "Studies how linguistic typology affects NLP systems, how multilingual models like mBERT and XLM-R enable cross-lingual transfer, and the challenges posed by code-switching in multilingual communities."
 ---
 
 # Cross-Linguistic NLP: Typology, Multilingual Models, and Code-Switching

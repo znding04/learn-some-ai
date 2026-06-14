@@ -1,8 +1,10 @@
 ---
 title: "Discourse Analysis and Coherence"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-linguistics
 order: 8
+estimatedTime: "30 minutes"
+summary: "Explores how sentences form coherent texts through rhetorical structure theory, coreference resolution, entity-based coherence models, and dialogue act classification."
 ---
 
 # Discourse Analysis and Coherence
@@ -164,7 +166,7 @@ What makes a text feel coherent beyond local relations? At the discourse level, 
 
 The **Entity Grid Model** (Barzilay & Lapata, 2008) represents a text as a matrix where rows are sentences, columns are entity mentions, and cell values indicate the grammatical role of each entity in each sentence (subject, object, other, absent):
 
-```
+```text
          John  Mary  car
 S1:      SUBJ  ---   OBJ    (John bought the car)
 S2:      ---   SUBJ  SUBJ    (Mary drove it)

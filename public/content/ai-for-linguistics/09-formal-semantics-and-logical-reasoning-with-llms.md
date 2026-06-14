@@ -1,8 +1,10 @@
 ---
 title: "Formal Semantics and Logical Reasoning with LLMs"
-level: advanced
+difficulty: advanced
 topic: ai-for-linguistics
 order: 9
+estimatedTime: "30 minutes"
+summary: "Bridges classical computational semantics using lambda calculus and first-order logic with modern LLMs' emergent reasoning capabilities, examining where transformer-based models succeed and fail on formal reasoning tasks."
 ---
 
 # Formal Semantics and Logical Reasoning with LLMs

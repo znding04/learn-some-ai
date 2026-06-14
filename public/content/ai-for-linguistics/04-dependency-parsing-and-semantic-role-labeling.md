@@ -1,8 +1,10 @@
 ---
 title: "Dependency Parsing and Semantic Role Labeling"
-level: beginner
+difficulty: beginner
 topic: ai-for-linguistics
 order: 4
+estimatedTime: "30 minutes"
+summary: "Introduces dependency parsing with Universal Dependencies, transition-based and graph-based parsing algorithms, and semantic role labeling using PropBank-style predicate-argument structures."
 ---
 
 # Dependency Parsing and Semantic Role Labeling
@@ -13,7 +15,7 @@ While constituency parsing organizes sentences into nested phrase structures, **
 
 The sentence *The cat sat on the mat* has this dependency structure:
 
-```
+```text
       sat
     ┌──┼──────┐
     │  │      │
