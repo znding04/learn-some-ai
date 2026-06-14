@@ -1,8 +1,10 @@
 ---
 title: "AI for Code Education"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-education
 order: 6
+estimatedTime: "30 minutes"
+summary: "Covers AI-powered code education tools including teaching assistants, auto-grading systems, bug explanation, and personalized hint generation with reinforcement learning."
 ---
 
 # AI for Code Education

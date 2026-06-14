@@ -1,8 +1,10 @@
 ---
 title: "Intelligent Tutoring Systems"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-education
 order: 2
+estimatedTime: "30 minutes"
+summary: "Explores the architecture and algorithms behind Intelligent Tutoring Systems, including expert models, student models, Bayesian Knowledge Tracing, Deep Knowledge Tracing, and pedagogical decision-making."
 ---
 
 # Intelligent Tutoring Systems

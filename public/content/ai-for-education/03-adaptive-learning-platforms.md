@@ -1,8 +1,10 @@
 ---
 title: "Adaptive Learning Platforms"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-education
 order: 3
+estimatedTime: "30 minutes"
+summary: "Covers data-driven adaptive learning platforms, knowledge tracing algorithms (BKT and DKT), Item Response Theory, computerized adaptive testing, and learning path optimization."
 ---
 
 # Adaptive Learning Platforms

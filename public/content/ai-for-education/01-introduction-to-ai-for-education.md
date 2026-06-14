@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Education"
-level: beginner
+difficulty: beginner
 topic: ai-for-education
 order: 1
+estimatedTime: "15 minutes"
+summary: "Traces the history of AI in education from early intelligent tutoring systems to modern LLMs, and surveys the major categories of educational AI technology including ITS, adaptive learning, and educational data mining."
 ---
 
 # Introduction to AI for Education

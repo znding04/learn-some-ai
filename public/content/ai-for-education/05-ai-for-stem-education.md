@@ -1,8 +1,10 @@
 ---
 title: "AI for STEM Education"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-education
 order: 5
+estimatedTime: "30 minutes"
+summary: "Explores AI tools transforming STEM education, including math solvers, virtual labs, simulation platforms, and AI-generated feedback on scientific work."
 ---
 
 # AI for STEM Education
