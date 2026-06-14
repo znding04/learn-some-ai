@@ -1,8 +1,10 @@
 ---
 title: "Cosmological Simulations and AI Emulators"
-level: advanced
+difficulty: advanced
 topic: ai-for-astronomy
 order: 6
+estimatedTime: "30 minutes"
+summary: "Neural network emulators as fast surrogates for computationally expensive cosmological N-body simulations, covering the matter power spectrum and parameter inference."
 ---
 
 # Cosmological Simulations and AI Emulators

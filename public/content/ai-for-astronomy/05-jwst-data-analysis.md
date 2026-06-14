@@ -1,8 +1,10 @@
 ---
 title: "JWST Data Analysis: From Images to Discoveries"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-astronomy
 order: 5
+estimatedTime: "30 minutes"
+summary: "AI-assisted analysis of James Webb Space Telescope data, covering the instrument suite, calibration pipeline, and machine learning applications for source detection and classification."
 ---
 
 # JWST Data Analysis: From Images to Discoveries

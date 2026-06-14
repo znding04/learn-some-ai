@@ -1,8 +1,10 @@
 ---
 title: "Time-Domain Astronomy and Anomaly Detection"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-astronomy
 order: 7
+estimatedTime: "30 minutes"
+summary: "Machine learning for time-domain astronomy, covering transient classification, alert broker systems, and anomaly detection in large-scale survey data."
 ---
 
 # Time-Domain Astronomy and Anomaly Detection

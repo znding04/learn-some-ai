@@ -1,8 +1,10 @@
 ---
 title: "AI for Radio Astronomy: Pulsars and Fast Radio Bursts"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-astronomy
 order: 8
+estimatedTime: "30 minutes"
+summary: "AI applications in radio astronomy including interferometric imaging, pulsar candidate classification, RFI mitigation, and fast radio burst detection."
 ---
 
 # AI for Radio Astronomy: Pulsars and Fast Radio Bursts

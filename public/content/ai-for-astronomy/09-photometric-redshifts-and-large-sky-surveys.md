@@ -1,8 +1,10 @@
 ---
 title: "Photometric Redshifts and Large Sky Surveys"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-astronomy
 order: 9
+estimatedTime: "30 minutes"
+summary: "Photometric redshift estimation using machine learning as a scalable alternative to spectroscopic measurements for large sky surveys like LSST."
 ---
 
 # Photometric Redshifts and Large Sky Surveys

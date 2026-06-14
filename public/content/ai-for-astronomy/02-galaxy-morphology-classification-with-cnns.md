@@ -1,8 +1,10 @@
 ---
 title: "Galaxy Morphology and Classification with CNNs"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-astronomy
 order: 2
+estimatedTime: "45 minutes"
+summary: "CNN-based galaxy morphology classification using Galaxy Zoo labels, covering the Hubble sequence, transfer learning, rotation equivariance, and practical datasets."
 ---
 
 # Galaxy Morphology and Classification with CNNs

@@ -1,8 +1,10 @@
 ---
 title: "Gravitational Wave Detection with Deep Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-astronomy
 order: 3
+estimatedTime: "45 minutes"
+summary: "Deep learning approaches for gravitational wave detection in LIGO data, covering matched filtering, CNN-based signal classification, and neural posterior estimation."
 ---
 
 # Gravitational Wave Detection with Deep Learning

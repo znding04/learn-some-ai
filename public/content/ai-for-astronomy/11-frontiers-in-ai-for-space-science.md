@@ -1,8 +1,10 @@
 ---
 title: "Frontiers in AI for Space Science"
-level: advanced
+difficulty: advanced
 topic: ai-for-astronomy
 order: 11
+estimatedTime: "30 minutes"
+summary: "Frontier AI topics in space science including foundation models, Bayesian uncertainty quantification, interpretability techniques, and the balance between model power and scientific insight."
 ---
 
 # Frontiers in AI for Space Science

@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Astronomy"
-level: beginner
+difficulty: beginner
 topic: ai-for-astronomy
 order: 1
+estimatedTime: "30 minutes"
+summary: "Overview of AI applications in astronomy, covering the data deluge from modern surveys like LSST and SKA, and key domains including galaxy classification, gravitational waves, and exoplanet detection."
 ---
 
 # Introduction to AI for Astronomy

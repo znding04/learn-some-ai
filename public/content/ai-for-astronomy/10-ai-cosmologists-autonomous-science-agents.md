@@ -1,8 +1,10 @@
 ---
 title: "AI Cosmologists: Autonomous Science Agents for Astrophysics"
-level: advanced
+difficulty: advanced
 topic: ai-for-astronomy
 order: 10
+estimatedTime: "30 minutes"
+summary: "Autonomous science agents for astrophysics, covering symbolic regression for law discovery, self-driving telescopes, and automated scientific hypothesis testing."
 ---
 
 # AI Cosmologists: Autonomous Science Agents for Astrophysics
