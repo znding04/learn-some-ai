@@ -1,8 +1,10 @@
 ---
 title: "Transformers Architecture"
-level: intermediate
+difficulty: intermediate
 topic: ai-fundamentals
 order: 6
+estimatedTime: "30 minutes"
+summary: "Explains the Transformer architecture including self-attention, multi-head attention, positional encoding, and the encoder-decoder structure that powers modern language models."
 ---
 
 # Transformers Architecture

@@ -1,8 +1,10 @@
 ---
 title: "Evaluating AI Systems"
-level: intermediate
+difficulty: intermediate
 topic: ai-fundamentals
 order: 9
+estimatedTime: "30 minutes"
+summary: "Covers classification metrics (precision, recall, F1, AUC-ROC), regression metrics, benchmark datasets, and LLM-specific evaluation methods including perplexity and BLEU."
 ---
 
 # Evaluating AI Systems

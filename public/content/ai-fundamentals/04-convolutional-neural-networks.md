@@ -1,8 +1,10 @@
 ---
 title: "CNNs for Image Processing"
-level: intermediate
+difficulty: intermediate
 topic: ai-fundamentals
 order: 4
+estimatedTime: "30 minutes"
+summary: "Explains how convolutional neural networks exploit spatial structure in images through convolution, pooling, and landmark architectures like LeNet, AlexNet, VGG, and ResNet."
 ---
 
 # CNNs for Image Processing
@@ -45,7 +47,7 @@ Early layers learn **low-level features**: edges, corners, color gradients. Deep
 
 A 3×3 edge-detection filter might look like:
 
-```
+```text
 [-1  -1  -1]
 [-1   8  -1]
 [-1  -1  -1]
@@ -59,7 +61,7 @@ Pooling reduces the spatial dimensions of feature maps, decreasing computation a
 
 **Max Pooling** (most common): Take the maximum value in each window.
 
-```
+```text
 Input (4×4):          Max Pool (2×2, stride 2):
 [1  3  2  1]
 [4  6  5  2]    →     [6  5]

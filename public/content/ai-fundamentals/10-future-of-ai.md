@@ -1,8 +1,10 @@
 ---
 title: "Future of AI"
-level: beginner
+difficulty: beginner
 topic: ai-fundamentals
 order: 10
+estimatedTime: "15 minutes"
+summary: "Examines current AI limitations, the AGI timeline debate, opportunities in healthcare and education, risks like job displacement and disinformation, and how to prepare for an AI-transformed world."
 ---
 
 # Future of AI

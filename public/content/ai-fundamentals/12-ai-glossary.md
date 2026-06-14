@@ -2,7 +2,7 @@
 title: "AI Glossary and Key Concepts"
 topic: ai-fundamentals
 order: 12
-estimatedTime: "20 minutes"
+estimatedTime: "30 minutes"
 difficulty: beginner
 prerequisites: []
 summary: "A comprehensive alphabetical glossary of essential AI and machine learning terms, complete with mathematical definitions and concise explanations."

@@ -1,8 +1,10 @@
 ---
 title: "Deep Learning Foundations"
-level: intermediate
+difficulty: intermediate
 topic: ai-fundamentals
 order: 3
+estimatedTime: "30 minutes"
+summary: "Covers neural network architecture, activation functions, backpropagation, the chain rule, and mini-batch gradient descent as the foundations of deep learning."
 ---
 
 # Deep Learning Foundations

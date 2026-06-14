@@ -1,8 +1,10 @@
 ---
 title: "RNNs and LSTMs for Sequence Data"
-level: intermediate
+difficulty: intermediate
 topic: ai-fundamentals
 order: 5
+estimatedTime: "30 minutes"
+summary: "Covers recurrent neural networks and LSTMs for sequence data, including the vanishing gradient problem, gating mechanisms, and applications in NLP and time series."
 ---
 
 # RNNs and LSTMs for Sequence Data

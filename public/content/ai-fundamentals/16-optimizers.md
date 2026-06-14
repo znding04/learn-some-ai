@@ -1,8 +1,10 @@
 ---
 title: "Optimizers and Learning Rates"
-level: intermediate
+difficulty: intermediate
 topic: ai-fundamentals
 order: 16
+estimatedTime: "30 minutes"
+summary: "Walks through the evolution of optimization algorithms from vanilla SGD through momentum, AdaGrad, RMSprop, Adam, and AdamW, plus learning rate schedules like cosine annealing and warmup."
 ---
 
 # Optimizers and Learning Rates

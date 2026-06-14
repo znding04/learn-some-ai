@@ -1,9 +1,9 @@
 ---
 title: "What is Artificial Intelligence?"
-level: beginner
+difficulty: beginner
 topic: ai-fundamentals
 order: 1
-estimatedTime: 15
+estimatedTime: "15 minutes"
 summary: "An introduction to AI — its history, types (narrow, general, superintelligent), how it compares to human intelligence, and the current landscape of foundation models and AI agents."
 ---
 
