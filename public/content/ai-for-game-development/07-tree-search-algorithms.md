@@ -1,8 +1,10 @@
 ---
 title: "Tree Search Algorithms: Minimax and MCTS in Strategy Games"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-game-development
 order: 7
+estimatedTime: "30 minutes"
+summary: "Covers minimax with alpha-beta pruning and Monte Carlo Tree Search for strategy games, with complete implementations of both algorithms playing Tic-Tac-Toe."
 ---
 
 # Tree Search Algorithms: Minimax and MCTS in Strategy Games

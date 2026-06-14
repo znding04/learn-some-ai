@@ -1,8 +1,10 @@
 ---
 title: "Game AI Fundamentals: From Rule-Based Systems to Modern Approaches"
-level: beginner
+difficulty: beginner
 topic: ai-for-game-development
 order: 2
+estimatedTime: "30 minutes"
+summary: "Covers foundational game AI architectures including finite state machines, utility systems, and rule-based systems, with practical implementations of FSM-based NPC behavior and utility-driven action selection."
 ---
 
 # Game AI Fundamentals: From Rule-Based Systems to Modern Approaches

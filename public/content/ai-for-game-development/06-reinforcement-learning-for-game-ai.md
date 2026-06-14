@@ -1,8 +1,10 @@
 ---
 title: "Reinforcement Learning for Game AI"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-game-development
 order: 6
+estimatedTime: "30 minutes"
+summary: "Explores reinforcement learning algorithms for game-playing agents including DQN and PPO, with a complete implementation of a DQN agent learning to navigate a grid world."
 ---
 
 # Reinforcement Learning for Game AI

@@ -1,8 +1,10 @@
 ---
 title: "Player Modeling and Behavior Prediction"
-level: beginner
+difficulty: beginner
 topic: ai-for-game-development
 order: 4
+estimatedTime: "30 minutes"
+summary: "Introduces player modeling techniques including dynamic difficulty adjustment, Elo rating systems, and flow theory, with implementations of adaptive difficulty and skill-based matchmaking."
 ---
 
 # Player Modeling and Behavior Prediction
