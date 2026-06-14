@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Operations Research and Supply Chain"
-level: beginner
+difficulty: beginner
 topic: ai-for-operations-research
 order: 1
+estimatedTime: "15 minutes"
+summary: "Introduces how AI and machine learning are transforming operations research and supply chain management, covering data-driven learning, scalable optimization, and closed-loop reinforcement learning approaches."
 ---
 
 # Introduction to AI for Operations Research and Supply Chain

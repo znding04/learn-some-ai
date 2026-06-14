@@ -1,8 +1,10 @@
 ---
 title: "Vehicle Routing Problems and Neural Solvers"
-level: beginner
+difficulty: beginner
 topic: ai-for-operations-research
 order: 3
+estimatedTime: "15 minutes"
+summary: "Explores the Vehicle Routing Problem and its variants, covering classical heuristics like Clark-Wright savings and modern neural solvers including Pointer Networks and attention-based models for logistics optimization."
 ---
 
 # Vehicle Routing Problems and Neural Solvers

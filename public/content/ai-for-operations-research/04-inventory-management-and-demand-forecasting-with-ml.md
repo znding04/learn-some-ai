@@ -1,8 +1,10 @@
 ---
 title: "Inventory Management and Demand Forecasting with ML"
-level: beginner
+difficulty: beginner
 topic: ai-for-operations-research
 order: 4
+estimatedTime: "15 minutes"
+summary: "Covers inventory optimization models (newsvendor, EOQ, base-stock policies) and modern ML-based demand forecasting using gradient boosting, LSTMs, and Transformer architectures."
 ---
 
 # Inventory Management and Demand Forecasting with ML

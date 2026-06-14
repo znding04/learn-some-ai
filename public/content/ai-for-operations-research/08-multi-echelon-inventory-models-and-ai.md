@@ -1,8 +1,10 @@
 ---
 title: "Multi-Echelon Inventory Models and AI"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-operations-research
 order: 8
+estimatedTime: "15 minutes"
+summary: "Addresses multi-tier supply chain inventory optimization, the bullwhip effect, and how deep RL and hierarchical forecasting can improve coordinated replenishment across echelons."
 ---
 
 # Multi-Echelon Inventory Models and AI
