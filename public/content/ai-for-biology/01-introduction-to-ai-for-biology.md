@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Biology"
-level: beginner
+difficulty: beginner
 topic: ai-for-biology
 order: 1
+estimatedTime: "30 minutes"
+summary: "Introduces why AI and biology make a powerful pair, traces the history from early sequence alignment tools to modern deep learning, and surveys the major application domains where AI is transforming biological discovery."
 ---
 
 # Introduction to AI for Biology

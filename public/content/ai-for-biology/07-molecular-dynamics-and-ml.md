@@ -1,8 +1,10 @@
 ---
 title: "Molecular Dynamics and Machine Learning Force Fields"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-biology
 order: 7
+estimatedTime: "30 minutes"
+summary: "Explains classical molecular dynamics simulation, its limitations, and how machine learning force fields (ANI, SchNet, NequIP) learn quantum-accurate potential energy surfaces to replace expensive force evaluation while maintaining physical equivariance."
 ---
 
 # Molecular Dynamics and Machine Learning Force Fields

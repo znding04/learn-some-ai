@@ -1,8 +1,10 @@
 ---
 title: "Genomics and Gene Expression with Deep Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-biology
 order: 6
+estimatedTime: "30 minutes"
+summary: "Covers how deep learning treats DNA as a language, from CNNs for transcription factor binding prediction to Enformer for long-range gene regulation, variant effect prediction, single-cell RNA-seq autoencoders, and genomic foundation models."
 ---
 
 # Genomics and Gene Expression with Deep Learning

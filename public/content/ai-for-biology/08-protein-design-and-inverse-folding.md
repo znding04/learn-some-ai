@@ -1,8 +1,10 @@
 ---
 title: "Protein Design and Inverse Folding"
-level: advanced
+difficulty: advanced
 topic: ai-for-biology
 order: 8
+estimatedTime: "30 minutes"
+summary: "Covers the inverse folding problem and key methods for AI-driven protein design, including ProteinMPNN, RFdiffusion, and hallucination-based approaches, along with applications in enzyme design, therapeutics, and biosensors."
 ---
 
 # Protein Design and Inverse Folding

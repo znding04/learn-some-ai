@@ -1,8 +1,10 @@
 ---
 title: "Key Datasets and Benchmarks in Computational Biology"
-level: beginner
+difficulty: beginner
 topic: ai-for-biology
 order: 3
+estimatedTime: "30 minutes"
+summary: "Surveys the most important datasets and benchmarks in computational biology, including the Protein Data Bank, UniProt, CASP, GEO, MoleculeNet, and TAPE, explaining what they contain, why they matter, and how to work with them programmatically."
 ---
 
 # Key Datasets and Benchmarks in Computational Biology
@@ -218,7 +220,7 @@ for key, value in result.items():
 ```
 
 Expected output (approximate):
-```
+```text
 pdb_id                                  : 1TIM
 chain                                   : A
 sequence_length                         : 247
