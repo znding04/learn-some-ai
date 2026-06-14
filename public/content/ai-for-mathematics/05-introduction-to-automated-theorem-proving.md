@@ -1,8 +1,10 @@
 ---
 title: "Introduction to Automated Theorem Proving"
-level: beginner
+difficulty: beginner
 topic: ai-for-mathematics
 order: 5
+estimatedTime: "30 minutes"
+summary: "Introduces automated theorem proving from classical resolution methods to modern proof assistants like Lean 4 and Coq, covering proof search strategies including Monte Carlo Tree Search."
 ---
 
 # Introduction to Automated Theorem Proving

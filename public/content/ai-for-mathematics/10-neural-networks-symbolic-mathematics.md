@@ -1,8 +1,10 @@
 ---
 title: "Neural Network Approaches to Symbolic Mathematics"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-mathematics
 order: 10
+estimatedTime: "30 minutes"
+summary: "Explores how deep learning treats symbolic math tasks like integration as sequence-to-sequence translation, and covers neural approaches to expression simplification and symbolic regression."
 ---
 
 # Neural Network Approaches to Symbolic Mathematics

@@ -1,8 +1,10 @@
 ---
 title: "AlphaGeometry: AI for Geometry Problems"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-mathematics
 order: 8
+estimatedTime: "30 minutes"
+summary: "Explains AlphaGeometry's neuro-symbolic architecture that pairs a symbolic Deductive Database with an LLM for auxiliary construction to solve olympiad-level geometry problems."
 ---
 
 # AlphaGeometry: AI for Geometry Problems

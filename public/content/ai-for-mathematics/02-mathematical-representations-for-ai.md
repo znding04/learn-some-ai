@@ -1,8 +1,10 @@
 ---
 title: "Mathematical Representations for AI"
-level: beginner
+difficulty: beginner
 topic: ai-for-mathematics
 order: 2
+estimatedTime: "30 minutes"
+summary: "Explores the major strategies for encoding mathematical objects for neural networks, including prefix tokenization, expression trees, graph representations, and LaTeX sequences."
 ---
 
 # Mathematical Representations for AI
@@ -203,7 +205,7 @@ $$\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$$
 
 becomes the token sequence:
 
-```
+```latex
 \int_0^{\infty} e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
 ```
 

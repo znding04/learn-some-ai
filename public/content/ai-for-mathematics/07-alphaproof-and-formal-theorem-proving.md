@@ -1,8 +1,10 @@
 ---
 title: "AlphaProof and Formal Theorem Proving"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-mathematics
 order: 7
+estimatedTime: "15 minutes"
+summary: "Details how Google DeepMind's AlphaProof achieved IMO silver medal performance by combining a Gemini-based LLM with Lean 4 formal verification through reinforcement learning."
 ---
 
 # AlphaProof and Formal Theorem Proving

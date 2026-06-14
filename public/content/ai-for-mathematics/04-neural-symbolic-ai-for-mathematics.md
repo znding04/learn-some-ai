@@ -1,8 +1,10 @@
 ---
 title: "Neural Symbolic AI for Mathematics"
-level: beginner
+difficulty: beginner
 topic: ai-for-mathematics
 order: 4
+estimatedTime: "30 minutes"
+summary: "Explains how neuro-symbolic AI combines neural pattern recognition with symbolic exact reasoning for mathematical tasks, with a focus on symbolic regression and neural-guided search."
 ---
 
 # Neural Symbolic AI for Mathematics

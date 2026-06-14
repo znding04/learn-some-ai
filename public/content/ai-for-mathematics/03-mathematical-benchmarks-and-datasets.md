@@ -1,8 +1,10 @@
 ---
 title: "Mathematical Benchmarks and Datasets"
-level: beginner
+difficulty: beginner
 topic: ai-for-mathematics
 order: 3
+estimatedTime: "30 minutes"
+summary: "Surveys the major mathematical benchmarks including GSM8K, MATH, MiniF2F, and MMLU-Math, explaining what each measures and how to load and evaluate them in Python."
 ---
 
 # Mathematical Benchmarks and Datasets
@@ -176,7 +178,7 @@ for subject, count in type_counts.most_common():
 
 Expected output (approximate):
 
-```
+```text
 GSM8K test set: 1319 problems
 
 MATH test set: 5000 problems
