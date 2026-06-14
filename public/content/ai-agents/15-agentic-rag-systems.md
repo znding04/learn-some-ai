@@ -2,7 +2,7 @@
 title: "Agentic RAG Systems"
 topic: ai-agents
 order: 15
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
 difficulty: advanced
 prerequisites:
   - ai-agents-07

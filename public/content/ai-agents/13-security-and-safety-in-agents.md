@@ -4,7 +4,7 @@ difficulty: advanced
 summary: "Defending AI agents against prompt injection, tool hijacking, and data leakage with layered guardrails, rate limiting, and content filtering."
 topic: ai-agents
 order: 13
-estimatedTime: "60 minutes"
+estimatedTime: "45 minutes"
 ---
 
 # Security & Safety in AI Agents

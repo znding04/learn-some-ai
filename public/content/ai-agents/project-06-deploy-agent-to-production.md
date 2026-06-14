@@ -2,7 +2,7 @@
 title: "Project: Deploy an Agent to Production"
 topic: ai-agents
 order: 21
-estimatedTime: "90 minutes"
+estimatedTime: "45 minutes"
 difficulty: advanced
 prerequisites:
   - ai-agents-11

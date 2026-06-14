@@ -2,7 +2,7 @@
 title: "Project: Production Customer Service Agent"
 topic: ai-agents
 order: 19
-estimatedTime: "90 minutes"
+estimatedTime: "30 minutes"
 difficulty: advanced
 prerequisites:
   - ai-agents-10

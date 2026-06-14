@@ -2,7 +2,7 @@
 title: "Project: Multi-Agent Research System"
 topic: ai-agents
 order: 17
-estimatedTime: "90 minutes"
+estimatedTime: "30 minutes"
 difficulty: advanced
 prerequisites:
   - ai-agents-06

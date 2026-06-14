@@ -2,7 +2,7 @@
 title: "Advanced Agent Patterns"
 topic: ai-agents
 order: 6
-estimatedTime: "60 minutes"
+estimatedTime: "30 minutes"
 difficulty: advanced
 summary: "Explore multi-agent systems, hierarchical task decomposition, self-critique loops, and debate-based reasoning patterns."
 ---

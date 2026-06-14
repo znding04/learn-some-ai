@@ -4,7 +4,7 @@ difficulty: intermediate
 summary: "Crafting structured system prompts, chain-of-thought reasoning protocols, and tool selection strategies that make AI agents reliable and predictable."
 topic: ai-agents
 order: 9
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
 ---
 
 # Prompt Engineering for Agents
@@ -48,7 +48,7 @@ When an agent needs to make decisions (which tool to call, what arguments to pas
 For agents, explicit reasoning is almost always preferable. The prompt should instruct the model to "think step by step"
 before each action. A common pattern is the **Thought-Action-Observation** loop:
 
-```
+```text
 Thought: [The agent reasons about what to do next]
 Action: [The agent calls a tool with specific arguments]
 Observation: [The tool returns a result]

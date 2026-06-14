@@ -2,7 +2,7 @@
 title: "Tool Use & Function Calling"
 topic: ai-agents
 order: 3
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
 difficulty: intermediate
 summary: "How LLMs use structured function calling to invoke tools, with best practices for schema design, error handling, and security."
 ---

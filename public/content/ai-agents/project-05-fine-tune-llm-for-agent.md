@@ -2,7 +2,7 @@
 title: "Project: Fine-Tune an LLM for Agent Tasks"
 topic: ai-agents
 order: 20
-estimatedTime: "90 minutes"
+estimatedTime: "30 minutes"
 difficulty: advanced
 summary: "Collect agent trajectories, build preference pairs, and fine-tune a 7B model using DPO and LoRA for improved tool-use reliability."
 ---

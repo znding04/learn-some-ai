@@ -2,7 +2,7 @@
 title: "Project: Build a Q&A Agent with Tool Use"
 topic: ai-agents
 order: 16
-estimatedTime: "90 minutes"
+estimatedTime: "30 minutes"
 difficulty: intermediate
 prerequisites:
   - ai-agents-03

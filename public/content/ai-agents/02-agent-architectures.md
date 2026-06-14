@@ -2,7 +2,7 @@
 title: "Agent Architectures"
 topic: ai-agents
 order: 2
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
 difficulty: intermediate
 summary: "A deep dive into the three major agent architecture paradigms — ReAct, Plan-and-Execute, and Tree of Thoughts — with implementation details and trade-offs."
 ---

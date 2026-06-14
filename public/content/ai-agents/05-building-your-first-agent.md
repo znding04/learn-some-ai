@@ -2,7 +2,7 @@
 title: "Building Your First Simple Agent"
 topic: ai-agents
 order: 5
-estimatedTime: "30 minutes"
+estimatedTime: "45 minutes"
 difficulty: beginner
 summary: "Build a complete tool-using AI agent from scratch in under 100 lines of Python, with error handling and retry logic."
 ---

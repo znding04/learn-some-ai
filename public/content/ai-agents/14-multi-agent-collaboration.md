@@ -2,7 +2,7 @@
 title: "Multi-Agent Collaboration"
 topic: ai-agents
 order: 14
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
 difficulty: advanced
 prerequisites:
   - ai-agents-06

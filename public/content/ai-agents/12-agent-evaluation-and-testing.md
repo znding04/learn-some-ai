@@ -4,7 +4,7 @@ difficulty: advanced
 summary: "Metrics, methods, and tooling for rigorously evaluating AI agents — including task success rate, tool precision/recall, synthetic test generation, and A/B testing."
 topic: ai-agents
 order: 12
-estimatedTime: "60 minutes"
+estimatedTime: "30 minutes"
 ---
 
 # Agent Evaluation & Testing
