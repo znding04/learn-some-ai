@@ -4,6 +4,7 @@ difficulty: beginner
 topic: llm
 order: 4
 estimatedTime: "30 minutes"
+summary: "Covers core prompt engineering techniques including zero-shot, few-shot, and chain-of-thought prompting, as well as system prompts, structured output, and temperature control."
 ---
 
 # Prompt Engineering Fundamentals

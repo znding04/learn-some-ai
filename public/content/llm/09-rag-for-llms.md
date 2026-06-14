@@ -3,7 +3,8 @@ title: "Retrieval Augmented Generation"
 difficulty: intermediate
 topic: llm
 order: 9
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
+summary: "Covers the RAG pipeline from document chunking and embedding to vector database retrieval and generation, including dense, sparse, and hybrid retrieval methods with re-ranking."
 ---
 
 # Retrieval Augmented Generation (RAG)

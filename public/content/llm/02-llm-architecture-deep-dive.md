@@ -3,7 +3,8 @@ title: "LLM Architecture Deep Dive"
 difficulty: intermediate
 topic: llm
 order: 2
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
+summary: "A detailed walkthrough of the Transformer decoder architecture, covering multi-head self-attention, positional encodings, layer normalization, KV caching, and efficient attention variants like Flash Attention and GQA."
 ---
 
 # LLM Architecture Deep Dive

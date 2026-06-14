@@ -3,7 +3,8 @@ title: "Context Windows and Attention"
 difficulty: intermediate
 topic: llm
 order: 6
-estimatedTime: "45 minutes"
+estimatedTime: "30 minutes"
+summary: "Explores context window mechanics, the quadratic cost of self-attention, and efficiency techniques like sliding window attention and Flash Attention, plus the tradeoffs between RAG and long-context approaches."
 ---
 
 # Context Windows and Attention

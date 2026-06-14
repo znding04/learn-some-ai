@@ -3,7 +3,8 @@ title: "Introduction to LLM Fine-Tuning"
 difficulty: intermediate
 topic: llm
 order: 8
-estimatedTime: "45 minutes"
+estimatedTime: "15 minutes"
+summary: "Introduces LLM fine-tuning concepts including full fine-tuning vs. parameter-efficient methods like LoRA and QLoRA, with practical guidance on dataset preparation and training setup."
 ---
 
 # Introduction to LLM Fine-Tuning
