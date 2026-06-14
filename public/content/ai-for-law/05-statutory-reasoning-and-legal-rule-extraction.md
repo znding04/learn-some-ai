@@ -1,8 +1,10 @@
 ---
 title: "Statutory Reasoning and Legal Rule Extraction"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-law
 order: 5
+estimatedTime: "15 minutes"
+summary: "Covers techniques for converting natural-language statutory text into structured logical representations (Horn clauses, temporal logic) to enable automated legal reasoning and statute classification."
 ---
 
 # Statutory Reasoning and Legal Rule Extraction

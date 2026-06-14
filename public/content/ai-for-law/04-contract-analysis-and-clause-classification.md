@@ -1,8 +1,10 @@
 ---
 title: "Contract Analysis and Clause Classification"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-law
 order: 4
+estimatedTime: "15 minutes"
+summary: "Examines how AI automates contract review through clause segmentation, classification, named entity recognition, and obligation extraction using transformer-based models."
 ---
 
 # Contract Analysis and Clause Classification

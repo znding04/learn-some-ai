@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Law"
-level: beginner
+difficulty: beginner
 topic: ai-for-law
 order: 1
+estimatedTime: "15 minutes"
+summary: "An introduction to how AI is applied to legal tasks including document review, case retrieval, contract analysis, and legal reasoning, covering key challenges and datasets in the field."
 ---
 
 # Introduction to AI for Law

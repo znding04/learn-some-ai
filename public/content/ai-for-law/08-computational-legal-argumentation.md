@@ -1,8 +1,10 @@
 ---
 title: "Computational Legal Argumentation"
-level: advanced
+difficulty: advanced
 topic: ai-for-law
 order: 8
+estimatedTime: "15 minutes"
+summary: "Introduces formal models of legal argumentation including Dung's argumentation frameworks, case-based reasoning, defeasible logic, and Answer Set Programming for representing legal knowledge."
 ---
 
 # Computational Legal Argumentation
@@ -19,7 +21,7 @@ The foundational formal model is the **Argumentation Framework** introduced by D
 
 **Logic programming for legal norms** uses languages like Prolog and Answer Set Programming (ASP) to represent legal knowledge. A Prolog database of rules and facts can answer queries through resolution:
 
-```
+```prolog
 % Prolog-style legal knowledge base
 enforceable(Contract) :- written(Contract).
 enforceable(Contract) :- oral(Contract), promissory_estoppel(Contract), reliance(Contract).

@@ -1,8 +1,10 @@
 ---
 title: "AI for Governance, Regulation, and Compliance"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-law
 order: 10
+estimatedTime: "15 minutes"
+summary: "Covers AI tools for regulatory compliance including obligation extraction from regulatory text, multi-jurisdiction compliance monitoring, and the EU AI Act's risk-based framework."
 ---
 
 # AI for Governance, Regulation, and Compliance

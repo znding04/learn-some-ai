@@ -1,8 +1,10 @@
 ---
 title: "Legal Text Representation and Embeddings"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-law
 order: 2
+estimatedTime: "15 minutes"
+summary: "Explores how legal text is represented as dense vector embeddings using domain-specific models like LegalBERT, enabling semantic search and similarity computations over legal documents."
 ---
 
 # Legal Text Representation and Embeddings

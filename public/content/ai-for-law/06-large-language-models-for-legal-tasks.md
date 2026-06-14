@@ -1,8 +1,10 @@
 ---
 title: "Large Language Models for Legal Tasks (LegalLLMs)"
-level: advanced
+difficulty: advanced
 topic: ai-for-law
 order: 6
+estimatedTime: "15 minutes"
+summary: "Explores how large language models are adapted for legal tasks through domain-specific pre-training, retrieval-augmented generation, and chain-of-thought prompting, while addressing hallucination and citation accuracy challenges."
 ---
 
 # Large Language Models for Legal Tasks (LegalLLMs)
@@ -23,7 +25,7 @@ Large Language Models (LLMs) like GPT-4, Claude, and open-source alternatives (L
 
 **Chain-of-thought (CoT) prompting** for legal reasoning encourages the LLM to articulate intermediate steps:
 
-```
+```text
 Question: Was the defendant's conduct in Case X sufficient to establish negligence?
 Think step by step:
 1. Identify the elements of negligence: duty, breach, causation, damages.
