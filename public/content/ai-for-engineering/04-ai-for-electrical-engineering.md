@@ -1,8 +1,10 @@
 ---
 title: "AI for Electrical and Computer Engineering"
-level: beginner
+difficulty: beginner
 topic: ai-for-engineering
 order: 4
+estimatedTime: "30 minutes"
+summary: "Covers AI for electronic design automation, circuit optimization, and power system operation in electrical and computer engineering."
 ---
 
 # AI for Electrical and Computer Engineering

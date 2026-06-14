@@ -1,8 +1,10 @@
 ---
 title: "AI for Computer-Aided Design"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-engineering
 order: 7
+estimatedTime: "30 minutes"
+summary: "Explores AI for CAD workflows including sketch understanding, parametric model automation, design search, and generative design of mechanical parts."
 ---
 
 # AI for Computer-Aided Design

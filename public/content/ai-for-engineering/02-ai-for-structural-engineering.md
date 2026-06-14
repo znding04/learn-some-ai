@@ -1,8 +1,10 @@
 ---
 title: "AI for Structural Engineering and Design Optimization"
-level: beginner
+difficulty: beginner
 topic: ai-for-engineering
 order: 2
+estimatedTime: "15 minutes"
+summary: "Covers AI applications in structural engineering including topology optimization, generative design, and structural health monitoring."
 ---
 
 # AI for Structural Engineering and Design Optimization

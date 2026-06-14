@@ -1,8 +1,10 @@
 ---
 title: "AI for Control Systems and Robotics"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-engineering
 order: 5
+estimatedTime: "30 minutes"
+summary: "Examines reinforcement learning for control systems, model predictive control with learned models, and sim-to-real transfer for robotics."
 ---
 
 # AI for Control Systems and Robotics

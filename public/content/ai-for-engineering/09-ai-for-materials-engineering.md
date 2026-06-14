@@ -1,8 +1,10 @@
 ---
 title: "AI for Materials Engineering"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-engineering
 order: 9
+estimatedTime: "30 minutes"
+summary: "Explores ML for materials engineering including microstructure-property prediction, uncertainty quantification, and autonomous materials discovery."
 ---
 
 # AI for Materials Engineering
