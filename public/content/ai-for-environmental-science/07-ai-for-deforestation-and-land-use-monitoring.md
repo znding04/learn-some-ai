@@ -1,8 +1,10 @@
 ---
 title: "AI for Deforestation and Land Use Monitoring"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-environmental-science
 order: 7
+estimatedTime: "30 minutes"
+summary: "Explores AI-powered deforestation detection and land use monitoring using satellite imagery and semantic segmentation models."
 ---
 
 # AI for Deforestation and Land Use Monitoring

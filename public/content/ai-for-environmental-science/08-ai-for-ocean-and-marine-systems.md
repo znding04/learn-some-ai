@@ -1,8 +1,10 @@
 ---
 title: "AI for Ocean and Marine Systems"
-level: advanced
+difficulty: advanced
 topic: ai-for-environmental-science
 order: 8
+estimatedTime: "30 minutes"
+summary: "Covers AI applications in ocean and marine systems including fisheries management, ocean modeling, and pollution monitoring."
 ---
 
 # AI for Ocean and Marine Systems

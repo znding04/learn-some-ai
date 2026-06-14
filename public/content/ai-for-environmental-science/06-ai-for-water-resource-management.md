@@ -1,8 +1,10 @@
 ---
 title: "AI for Water Resource Management"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-environmental-science
 order: 6
+estimatedTime: "30 minutes"
+summary: "Covers AI for water resource management including streamflow prediction with LSTMs, groundwater modeling, and flood/drought forecasting."
 ---
 
 # AI for Water Resource Management

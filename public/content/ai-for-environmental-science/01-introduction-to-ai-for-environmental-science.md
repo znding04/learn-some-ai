@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Environmental Science"
-level: beginner
+difficulty: beginner
 topic: ai-for-environmental-science
 order: 1
+estimatedTime: "15 minutes"
+summary: "Introduces AI for environmental science, covering why the field is both a natural fit and a uniquely challenging domain for machine learning."
 ---
 
 # Introduction to AI for Environmental Science

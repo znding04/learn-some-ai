@@ -1,8 +1,10 @@
 ---
 title: "Frontiers in AI for Environmental Science"
-level: advanced
+difficulty: advanced
 topic: ai-for-environmental-science
 order: 11
+estimatedTime: "30 minutes"
+summary: "Explores frontier research in AI for environmental science including digital Earth twins, foundation models for Earth observation, and AI-driven climate solutions."
 ---
 
 # Frontiers in AI for Environmental Science

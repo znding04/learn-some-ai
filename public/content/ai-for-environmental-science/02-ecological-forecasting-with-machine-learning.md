@@ -1,8 +1,10 @@
 ---
 title: "Ecological Forecasting with Machine Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-environmental-science
 order: 2
+estimatedTime: "30 minutes"
+summary: "Covers ML approaches to ecological forecasting including species population dynamics, community composition prediction, and ensemble uncertainty quantification."
 ---
 
 # Ecological Forecasting with Machine Learning

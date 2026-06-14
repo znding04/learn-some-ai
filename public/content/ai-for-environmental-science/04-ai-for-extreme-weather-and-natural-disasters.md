@@ -1,8 +1,10 @@
 ---
 title: "AI for Extreme Weather and Natural Disasters"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-environmental-science
 order: 4
+estimatedTime: "30 minutes"
+summary: "Covers deep learning for extreme weather prediction, natural disaster forecasting, and real-time early warning systems."
 ---
 
 # AI for Extreme Weather and Natural Disasters
