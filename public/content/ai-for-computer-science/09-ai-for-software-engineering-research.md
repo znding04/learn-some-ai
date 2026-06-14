@@ -1,6 +1,8 @@
 ---
 title: "AI for Software Engineering Research"
-level: advanced
+difficulty: advanced
+estimatedTime: "15 minutes"
+summary: "Surveys AI applications in software engineering research, including mining software repositories, defect prediction, automated documentation, and effort estimation."
 topic: ai-for-computer-science
 order: 9
 ---

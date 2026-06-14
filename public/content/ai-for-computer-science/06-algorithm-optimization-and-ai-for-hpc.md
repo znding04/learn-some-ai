@@ -1,6 +1,8 @@
 ---
 title: "Algorithm Optimization and AI for HPC"
-level: advanced
+difficulty: advanced
+estimatedTime: "15 minutes"
+summary: "Explores AI-driven algorithm discovery via reinforcement learning, neural architecture search, and auto-tuning for high-performance computing."
 topic: ai-for-computer-science
 order: 6
 ---

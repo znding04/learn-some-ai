@@ -1,6 +1,8 @@
 ---
 title: "AI-Native Development: Autonomous Coding Agents"
-level: advanced
+difficulty: advanced
+estimatedTime: "30 minutes"
+summary: "Explores autonomous coding agents that independently plan, implement, test, and debug software, including CI/CD automation and infrastructure-as-code generation."
 topic: ai-for-computer-science
 order: 10
 ---

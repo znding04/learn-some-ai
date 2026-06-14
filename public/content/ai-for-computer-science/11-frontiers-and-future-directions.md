@@ -1,6 +1,8 @@
 ---
 title: "Frontiers and Future Directions"
-level: advanced
+difficulty: advanced
+estimatedTime: "15 minutes"
+summary: "Surveys emerging frontiers including AI-native programming languages, compiler-level AI optimization, intellectual property questions, and the evolving role of software engineers."
 topic: ai-for-computer-science
 order: 11
 ---

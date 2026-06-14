@@ -1,6 +1,8 @@
 ---
 title: "AI-Assisted Programming and Code Generation"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "15 minutes"
+summary: "Explores how Transformer-based models generate code from natural language, covering training pipelines, practical tools like GitHub Copilot, and key limitations."
 topic: ai-for-computer-science
 order: 2
 ---

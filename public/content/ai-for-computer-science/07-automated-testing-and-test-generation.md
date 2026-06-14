@@ -1,6 +1,8 @@
 ---
 title: "Automated Testing and Test Generation"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "15 minutes"
+summary: "Covers AI-driven test generation including LLM-generated unit tests, property-based testing with Hypothesis, and coverage-guided fuzzing techniques."
 topic: ai-for-computer-science
 order: 7
 ---

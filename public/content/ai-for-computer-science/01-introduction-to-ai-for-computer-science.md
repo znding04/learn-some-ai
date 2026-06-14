@@ -1,6 +1,8 @@
 ---
 title: "Introduction to AI for Computer Science"
-level: beginner
+difficulty: beginner
+estimatedTime: "15 minutes"
+summary: "An overview of how AI is reshaping computer science, from code generation and bug detection to formal verification and autonomous coding agents."
 topic: ai-for-computer-science
 order: 1
 ---

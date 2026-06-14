@@ -1,6 +1,8 @@
 ---
 title: "Code Search and Retrieval-Augmented Code Generation"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers retrieval-augmented generation for code, including semantic code search with embeddings, AST-based chunking, and hybrid retrieval strategies."
 topic: ai-for-computer-science
 order: 3
 ---

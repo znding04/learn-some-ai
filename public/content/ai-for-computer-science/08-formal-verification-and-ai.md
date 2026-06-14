@@ -1,6 +1,8 @@
 ---
 title: "Formal Verification and AI"
-level: advanced
+difficulty: advanced
+estimatedTime: "15 minutes"
+summary: "Introduces formal verification with proof assistants and SMT solvers, and how AI automates theorem proving and program synthesis from specifications."
 topic: ai-for-computer-science
 order: 8
 ---

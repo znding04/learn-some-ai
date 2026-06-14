@@ -1,6 +1,8 @@
 ---
 title: "AI for Code Review and Quality Analysis"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Covers AI-powered code review, technical debt detection, code smell identification, and quality metrics like cyclomatic complexity and maintainability index."
 topic: ai-for-computer-science
 order: 5
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Automated Bug Detection and Code Repair"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "15 minutes"
+summary: "Examines how AI detects bugs through anomaly-based pattern analysis and automatically generates code repairs using LLMs and test-based validation."
 topic: ai-for-computer-science
 order: 4
 ---
