@@ -1,8 +1,10 @@
 ---
 title: "Diffusion Models for Audio Deep Dive"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-music-and-creative-arts
 order: 6
+estimatedTime: "30 minutes"
+summary: "A deep dive into diffusion models for audio generation, covering the Stable Audio architecture, latent diffusion with VAEs, classifier-free guidance, and music-specific conditioning with CLAP."
 ---
 
 # Diffusion Models for Audio Deep Dive
@@ -23,13 +25,13 @@ What makes diffusion models particularly attractive for music is their natural s
 
 The forward diffusion process adds noise according to a variance schedule β_1, ..., β_T:
 
-```
+```text
 q(x_t | x_{t-1}) = N(x_t; √(1 - β_t) · x_{t-1}, β_t · I)
 ```
 
 A useful property allows jumping directly to any timestep t:
 
-```
+```text
 q(x_t | x_0) = N(x_t; √(ᾱ_t) · x_0, (1 - ᾱ_t) · I)
 
 where ᾱ_t = ∏_{s=1}^{t} (1 - β_s)
@@ -99,7 +101,7 @@ class AudioDiffusionModel(nn.Module):
 
 Stable Audio's architecture consists of three components:
 
-```
+```text
 ┌─────────────────────────────────────────────────────┐
 │                 Stable Audio Pipeline                 │
 │                                                       │

@@ -1,8 +1,10 @@
 ---
 title: "Stem Separation, Remixing, and Inpainting"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-music-and-creative-arts
 order: 7
+estimatedTime: "30 minutes"
+summary: "Covers AI tools for working with existing audio, including source separation with Demucs and Spleeter, music inpainting with diffusion models, and cross-modal editing techniques like style transfer and tempo modification."
 ---
 
 # Stem Separation, Remixing, and Inpainting
@@ -23,7 +25,7 @@ The technical foundation for these capabilities is **source separation** — the
 
 Given a mixed audio signal:
 
-```
+```text
 mixture(t) = vocals(t) + drums(t) + bass(t) + other(t)
 ```
 
@@ -64,7 +66,7 @@ for i, name in enumerate(stem_names):
 
 ### Demucs Architecture
 
-```
+```text
 Input Mix (stereo waveform)
         │
         ├──────────────────────────┐

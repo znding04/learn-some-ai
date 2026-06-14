@@ -1,8 +1,10 @@
 ---
 title: "Production Pipeline: From Prompt to Publish"
-level: advanced
+difficulty: advanced
 topic: ai-for-music-and-creative-arts
 order: 10
+estimatedTime: "45 minutes"
+summary: "Walks through the end-to-end pipeline for creating publishable AI-generated music, from iterative generation and stem export to AI-assisted mixing and mastering, plus legal and licensing considerations for commercial release."
 ---
 
 # Production Pipeline: From Prompt to Publish
@@ -19,7 +21,7 @@ The production pipeline has become significantly more accessible. Where a profes
 
 ## End-to-End Music Production Workflow
 
-```
+```text
 ┌────────────────────────────────────────────────────┐
 │              AI Music Production Pipeline            │
 │                                                      │
@@ -261,7 +263,7 @@ class AIMaster:
 
 ### Licensing Models
 
-```
+```text
 AI Music Licensing Landscape:
 
 1. Platform-specific licenses

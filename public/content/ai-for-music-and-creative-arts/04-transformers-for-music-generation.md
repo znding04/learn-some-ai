@@ -1,8 +1,10 @@
 ---
 title: "Transformers for Music Generation"
-level: beginner
+difficulty: beginner
 topic: ai-for-music-and-creative-arts
 order: 4
+estimatedTime: "30 minutes"
+summary: "Explains how transformer architectures are applied to music generation, covering MusicLM's hierarchical approach, MusicGen's codebook delay pattern, self-attention over music sequences, and conditioning mechanisms."
 ---
 
 # Transformers for Music Generation
@@ -21,7 +23,7 @@ The transformer approach to music generation is compelling because it leverages 
 
 MusicLM (Google, 2023) generates music from text through a cascade of three models:
 
-```
+```text
 Text Description
       ↓
 [MuLan Text Encoder] → Text embedding
@@ -101,7 +103,7 @@ The self-attention mechanism is particularly well-suited to music because musica
 
 Standard self-attention computes attention between all pairs of tokens:
 
-```
+```text
 Attention(Q, K, V) = softmax(QK^T / √d_k) · V
 
 where:
@@ -148,7 +150,7 @@ class CrossAttentionBlock(nn.Module):
 ### Melody Conditioning
 MusicGen supports melody conditioning via chroma features — a 12-dimensional representation of pitch class energy extracted from a reference audio:
 
-```
+```text
 Chroma vector at time t: [C, C#, D, D#, E, F, F#, G, G#, A, A#, B]
 Values represent energy in each pitch class.
 Preserves melody contour while allowing the model to choose timbre and arrangement.
@@ -157,7 +159,7 @@ Preserves melody contour while allowing the model to choose timbre and arrangeme
 ### Classifier-Free Guidance (CFG)
 CFG improves the alignment between text prompts and generated audio by interpolating between conditioned and unconditioned predictions:
 
-```
+```text
 output = unconditioned + guidance_scale × (conditioned - unconditioned)
 ```
 

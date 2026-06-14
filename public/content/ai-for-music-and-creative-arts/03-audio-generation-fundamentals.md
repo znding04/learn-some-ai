@@ -1,8 +1,10 @@
 ---
 title: "Audio Generation Fundamentals"
-level: beginner
+difficulty: beginner
 topic: ai-for-music-and-creative-arts
 order: 3
+estimatedTime: "30 minutes"
+summary: "Introduces the core approaches to neural audio synthesis, including autoregressive models like WaveNet, diffusion models for audio, latent diffusion, and vocoders like HiFi-GAN and Encodec."
 ---
 
 # Audio Generation Fundamentals
@@ -23,7 +25,7 @@ Understanding these fundamentals — how raw waveforms are synthesized, how diff
 
 WaveNet, introduced by DeepMind in 2016, modeled audio as an autoregressive process. Each sample is predicted based on all previous samples using dilated causal convolutions:
 
-```
+```text
 Sample prediction:
 x(t) = f(x(t-1), x(t-2), ..., x(t-R))
 
@@ -78,7 +80,7 @@ Subsequent work focused on parallel generation:
 
 Diffusion models generate audio by learning to reverse a noise-adding process. The forward process gradually adds Gaussian noise to audio until it becomes pure noise. The model learns to reverse each step:
 
-```
+```text
 Forward process (adding noise):
 x_0 (clean audio) → x_1 → x_2 → ... → x_T (pure noise)
 
@@ -135,7 +137,7 @@ def train_step(model, clean_audio, noise_schedule):
 
 Running diffusion directly on raw audio waveforms is computationally expensive. **Latent diffusion** (used by Stable Audio) first compresses audio into a lower-dimensional latent space using a VAE, runs diffusion there, then decodes:
 
-```
+```text
 Audio (44100 Hz) → VAE Encoder → Latent (compressed) → Diffusion → Decoded Latent → VAE Decoder → Audio
 ```
 
@@ -151,7 +153,7 @@ A vocoder converts mel spectrograms (or other intermediate representations) into
 
 HiFi-GAN uses a generator with multi-receptive-field fusion and multiple discriminators operating at different scales:
 
-```
+```text
 Mel Spectrogram → Transposed Convolutions → Multi-Receptive-Field Fusion → Waveform
                                                     ↕
                                     Multi-Scale Discriminator (adversarial training)
@@ -164,7 +166,7 @@ HiFi-GAN achieves near-perfect perceptual quality while running faster than real
 
 Encodec's decoder serves as a neural vocoder that converts discrete token sequences back to audio. Unlike mel-spectrogram vocoders, it operates on learned discrete codes:
 
-```
+```text
 Token IDs → Codebook Lookup → Sum Quantized Vectors → Decoder (ConvTranspose1d layers) → Waveform
 ```
 

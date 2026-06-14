@@ -1,8 +1,10 @@
 ---
 title: "Building Your First AI Music Generator"
-level: beginner
+difficulty: beginner
 topic: ai-for-music-and-creative-arts
 order: 5
+estimatedTime: "30 minutes"
+summary: "A hands-on lesson covering how to generate music using pre-trained models like MusicGen, craft effective music prompts, and build a simple generation pipeline with fade, normalization, and export."
 ---
 
 # Building Your First AI Music Generator
@@ -106,7 +108,7 @@ Just as prompt engineering is critical for text and image generation, crafting e
 
 ### Anatomy of a Good Music Prompt
 
-```
+```text
 [Genre] + [Mood/Energy] + [Instruments] + [Tempo/Rhythm] + [Production Style]
 
 Examples:

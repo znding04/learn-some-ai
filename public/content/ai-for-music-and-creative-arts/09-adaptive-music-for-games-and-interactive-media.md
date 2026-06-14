@@ -1,8 +1,10 @@
 ---
 title: "Adaptive Music for Games and Interactive Media"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-music-and-creative-arts
 order: 9
+estimatedTime: "30 minutes"
+summary: "Covers adaptive and procedural music systems for games and interactive media, including traditional techniques like vertical remixing and horizontal re-sequencing, as well as AI-driven real-time generation and reinforcement learning for music transitions."
 ---
 
 # Adaptive Music for Games and Interactive Media
@@ -25,7 +27,7 @@ Before diving into AI approaches, it is important to understand the traditional 
 
 Pre-composed musical sections are arranged dynamically based on game state:
 
-```
+```text
 Game State Sequence:
   [Explore] → [Discover Enemy] → [Combat] → [Victory]
 
@@ -160,7 +162,7 @@ class MusicTransitionAgent:
 
 Consider a complete adaptive music system for an open-world RPG:
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    Game Engine                                │
 │                                                               │

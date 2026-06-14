@@ -1,8 +1,10 @@
 ---
 title: "Voice Synthesis and Music with AI"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-music-and-creative-arts
 order: 8
+estimatedTime: "30 minutes"
+summary: "Explores AI singing voice synthesis, voice cloning, and voice conversion techniques using models like DiffSinger and So-VITS-SVC, along with the ethical and copyright considerations surrounding voice AI in music."
 ---
 
 # Voice Synthesis and Music with AI
@@ -23,7 +25,7 @@ The technology has advanced rapidly. Early concatenative synthesis (splicing pre
 
 Modern SVS systems take a musical score (notes, durations, lyrics) and produce a singing waveform:
 
-```
+```text
 Musical Score:
   Note: C4, Duration: 0.5s, Lyric: "hel-"
   Note: E4, Duration: 0.5s, Lyric: "-lo"

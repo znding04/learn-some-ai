@@ -1,8 +1,10 @@
 ---
 title: "How Computers Represent Music"
-level: beginner
+difficulty: beginner
 topic: ai-for-music-and-creative-arts
 order: 2
+estimatedTime: "30 minutes"
+summary: "Covers the different ways computers represent music, including raw waveforms, MIDI, spectrograms, and symbolic notation, with a focus on neural audio tokenization via Encodec and SoundStream."
 ---
 
 # How Computers Represent Music
@@ -23,7 +25,7 @@ Modern AI music systems have converged on a critical innovation: **neural audio 
 
 The most fundamental representation is the raw audio waveform — a one-dimensional signal representing air pressure over time:
 
-```
+```text
 Amplitude
     ^
     |   /\      /\      /\
@@ -81,7 +83,7 @@ Mel spectrograms use a perceptually-motivated frequency scale that approximates 
 
 Text-based music notations can be processed by language models directly:
 
-```
+```text
 X:1
 T:Simple Melody
 M:4/4
