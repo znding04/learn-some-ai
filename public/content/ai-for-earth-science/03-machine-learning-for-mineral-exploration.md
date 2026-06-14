@@ -1,8 +1,10 @@
 ---
 title: "Machine Learning for Mineral Exploration"
-summary: "Predicting ore deposits using geochemical and geophysical data with ensemble methods and anomaly detection."
 difficulty: beginner
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 3
+estimatedTime: "15 minutes"
+summary: "Predicting ore deposits using geochemical and geophysical data with ensemble methods and anomaly detection."
 ---
 
 # Machine Learning for Mineral Exploration

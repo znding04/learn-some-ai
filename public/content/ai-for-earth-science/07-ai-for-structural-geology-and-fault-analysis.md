@@ -1,8 +1,10 @@
 ---
 title: "AI for Structural Geology and Fault Analysis"
-summary: "Automatic fault detection, fold classification, stress field modeling, and fracture network prediction."
 difficulty: intermediate
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 7
+estimatedTime: "15 minutes"
+summary: "Automatic fault detection, fold classification, stress field modeling, and fracture network prediction."
 ---
 
 # AI for Structural Geology and Fault Analysis

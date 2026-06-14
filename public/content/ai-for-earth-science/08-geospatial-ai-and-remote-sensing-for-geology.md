@@ -1,8 +1,10 @@
 ---
 title: "Geospatial AI and Remote Sensing for Geology"
-summary: "Hyperspectral mineral mapping, InSAR deformation analysis, LiDAR geological mapping, and landslide monitoring."
 difficulty: intermediate
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 8
+estimatedTime: "15 minutes"
+summary: "Hyperspectral mineral mapping, InSAR deformation analysis, LiDAR geological mapping, and landslide monitoring."
 ---
 
 # Geospatial AI and Remote Sensing for Geology

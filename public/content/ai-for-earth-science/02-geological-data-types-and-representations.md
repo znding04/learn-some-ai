@@ -1,8 +1,10 @@
 ---
 title: "Geological Data Types and Representations"
-summary: "How to represent rock types, mineral compositions, borehole logs, and remote sensing data for machine learning."
 difficulty: beginner
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 2
+estimatedTime: "15 minutes"
+summary: "How to represent rock types, mineral compositions, borehole logs, and remote sensing data for machine learning."
 ---
 
 # Geological Data Types and Representations

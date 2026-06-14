@@ -1,8 +1,10 @@
 ---
 title: "Machine Learning for Geochemical Modeling"
-summary: "Compositional data analysis, petrological clustering, and anomaly detection in geochemical surveys."
 difficulty: intermediate
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 6
+estimatedTime: "15 minutes"
+summary: "Compositional data analysis, petrological clustering, and anomaly detection in geochemical surveys."
 ---
 
 # Machine Learning for Geochemical Modeling

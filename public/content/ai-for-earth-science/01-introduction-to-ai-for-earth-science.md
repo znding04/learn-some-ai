@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Earth Science"
-summary: "Overview of how AI is transforming geology, seismology, volcanology, and mineral exploration."
 difficulty: beginner
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 1
+estimatedTime: "15 minutes"
+summary: "Overview of how AI is transforming geology, seismology, volcanology, and mineral exploration."
 ---
 
 # Introduction to AI for Earth Science

@@ -1,8 +1,10 @@
 ---
 title: "Seismic Data Analysis with Deep Learning"
-summary: "Using CNNs and neural networks for fault detection, horizon picking, and seismic inversion."
 difficulty: beginner
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 4
+estimatedTime: "15 minutes"
+summary: "Using CNNs and neural networks for fault detection, horizon picking, and seismic inversion."
 ---
 
 # Seismic Data Analysis with Deep Learning

@@ -1,8 +1,10 @@
 ---
 title: "Physics-Informed Machine Learning for Geodynamics"
-summary: "Combining physics constraints with ML for mantle convection, plate tectonics, and geophysical inverse problems."
 difficulty: advanced
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 10
+estimatedTime: "30 minutes"
+summary: "Combining physics constraints with ML for mantle convection, plate tectonics, and geophysical inverse problems."
 ---
 
 # Physics-Informed Machine Learning for Geodynamics

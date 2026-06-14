@@ -1,8 +1,10 @@
 ---
 title: "Frontiers: AI for Earth's Past and Future"
-summary: "Paleoclimate reconstruction, AI for paleontology, critical mineral prediction, geohazard networks, and planetary geology."
 difficulty: advanced
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 11
+estimatedTime: "15 minutes"
+summary: "Paleoclimate reconstruction, AI for paleontology, critical mineral prediction, geohazard networks, and planetary geology."
 ---
 
 # Frontiers: AI for Earth's Past and Future

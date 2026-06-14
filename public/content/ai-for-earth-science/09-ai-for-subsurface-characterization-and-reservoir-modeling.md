@@ -1,8 +1,10 @@
 ---
 title: "AI for Subsurface Characterization and Reservoir Modeling"
-summary: "Well log interpretation, facies classification, porosity prediction, and neural reservoir emulators."
 difficulty: intermediate
-estimatedTime: "30 min"
+topic: ai-for-earth-science
+order: 9
+estimatedTime: "30 minutes"
+summary: "Well log interpretation, facies classification, porosity prediction, and neural reservoir emulators."
 ---
 
 # AI for Subsurface Characterization and Reservoir Modeling
