@@ -1,8 +1,10 @@
 ---
 title: "Quantum Machine Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-physics
 order: 8
+estimatedTime: "30 minutes"
+summary: "Quantum Machine Learning explores the intersection of quantum computing and ML, covering variational quantum algorithms like VQE, quantum neural networks, and the current state of quantum advantage for physics problems."
 ---
 
 # Quantum Machine Learning

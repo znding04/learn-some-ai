@@ -1,8 +1,10 @@
 ---
 title: "Solving PDEs with Deep Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-physics
 order: 5
+estimatedTime: "30 minutes"
+summary: "Neural operators like the Fourier Neural Operator (FNO) and DeepONet learn mappings between function spaces, enabling solving entire families of PDEs in a single forward pass with speedups of 1000x or more over traditional solvers."
 ---
 
 # Solving PDEs with Deep Learning

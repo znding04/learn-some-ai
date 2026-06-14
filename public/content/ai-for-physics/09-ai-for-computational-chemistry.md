@@ -1,8 +1,10 @@
 ---
 title: "AI for Computational Chemistry"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-physics
 order: 9
+estimatedTime: "30 minutes"
+summary: "AI is transforming computational chemistry by learning to predict molecular properties, energies, and forces at a fraction of the cost of quantum chemistry calculations, using equivariant graph neural networks like SchNet and GemNet."
 ---
 
 # AI for Computational Chemistry

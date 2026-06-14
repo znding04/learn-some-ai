@@ -1,8 +1,10 @@
 ---
 title: "Physics-Informed Neural Networks"
-level: beginner
+difficulty: beginner
 topic: ai-for-physics
 order: 2
+estimatedTime: "30 minutes"
+summary: "Physics-Informed Neural Networks (PINNs) embed governing PDEs directly into a neural network's loss function, using automatic differentiation to enforce physical laws without requiring mesh generation or finite differences."
 ---
 
 # Physics-Informed Neural Networks

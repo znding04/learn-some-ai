@@ -1,8 +1,10 @@
 ---
 title: "Classical vs Data-Driven Physics"
-level: beginner
+difficulty: beginner
 topic: ai-for-physics
 order: 4
+estimatedTime: "30 minutes"
+summary: "This lesson compares classical first-principles methods with data-driven ML approaches in physics, providing a decision framework for when to use each and how hybrid physics-ML methods combine the strengths of both."
 ---
 
 # Classical vs Data-Driven Physics

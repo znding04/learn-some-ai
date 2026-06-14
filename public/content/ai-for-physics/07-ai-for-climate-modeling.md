@@ -1,8 +1,10 @@
 ---
 title: "AI for Climate Modeling"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-physics
 order: 7
+estimatedTime: "30 minutes"
+summary: "AI weather models like GraphCast and GenCast have matched or exceeded traditional numerical weather prediction accuracy while running in seconds on a single GPU, transforming both weather forecasting and climate science."
 ---
 
 # AI for Climate Modeling
