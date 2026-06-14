@@ -1,6 +1,8 @@
 ---
 title: "Introduction to AI for Sports Science"
-level: beginner
+difficulty: beginner
+estimatedTime: "15 minutes"
+summary: "An introduction to how AI is transforming sports science, covering the data revolution in sports, key AI methods (computer vision, time-series analysis, GNNs, RL, NLP), and application domains including performance optimization, injury prevention, scouting, and fan engagement."
 topic: ai-for-sports-science
 order: 1
 ---

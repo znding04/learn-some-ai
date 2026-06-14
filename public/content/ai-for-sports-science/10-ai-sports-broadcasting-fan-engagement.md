@@ -1,6 +1,8 @@
 ---
 title: "AI for Sports Broadcasting and Fan Engagement"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "45 minutes"
+summary: "Explores AI-powered automated production pipelines, real-time graphics and statistics overlays, personalized fan viewing experiences, conversational sports chatbots, and the infrastructure requirements for low-latency AI broadcasting."
 topic: ai-for-sports-science
 order: 10
 ---

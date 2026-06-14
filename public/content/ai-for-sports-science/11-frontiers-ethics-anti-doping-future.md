@@ -1,6 +1,8 @@
 ---
 title: "Frontiers, Ethics, and Anti-Doping"
-level: advanced
+difficulty: advanced
+estimatedTime: "45 minutes"
+summary: "Covers emerging frontiers in sports AI (generative tactics, federated learning, neural interfaces), ethical tensions around athlete surveillance and data rights, AI-powered anti-doping detection, and future regulatory and societal implications."
 topic: ai-for-sports-science
 order: 11
 ---

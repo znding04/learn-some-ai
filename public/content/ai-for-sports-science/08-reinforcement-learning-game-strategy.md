@@ -1,6 +1,8 @@
 ---
 title: "Reinforcement Learning for Game Strategy"
-level: advanced
+difficulty: advanced
+estimatedTime: "45 minutes"
+summary: "Covers Markov decision processes for sports strategy, multi-agent game theory, self-play training (AlphaZero-style) with Monte Carlo Tree Search, and practical deployment of AI coaching assistants for in-game decision support."
 topic: ai-for-sports-science
 order: 8
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Injury Prediction and Prevention"
-level: advanced
+difficulty: advanced
+estimatedTime: "45 minutes"
+summary: "Covers injury risk modeling using acute:chronic workload ratio, feature engineering from GPS/HRV/biomechanical data, and machine learning approaches (gradient boosting, survival analysis, transformers) for predicting and preventing athletic injuries."
 topic: ai-for-sports-science
 order: 4
 ---

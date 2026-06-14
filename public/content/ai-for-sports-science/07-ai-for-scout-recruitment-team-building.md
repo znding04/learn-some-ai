@@ -1,6 +1,8 @@
 ---
 title: "AI for Scouting, Recruitment, and Team Building"
-level: advanced
+difficulty: advanced
+estimatedTime: "45 minutes"
+summary: "Explores AI-augmented scouting through video-based skill detection, market value prediction, tactical fit assessment, roster optimization as constrained optimization, and ethical considerations around algorithmic bias in recruitment."
 topic: ai-for-sports-science
 order: 7
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Player Tracking and Pose Estimation"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "45 minutes"
+summary: "Covers the complete player tracking pipeline from camera calibration and pose estimation architectures (HRNet, OpenPose) to multi-object tracking algorithms (ByteTrack) and multi-camera fusion for 3D position triangulation."
 topic: ai-for-sports-science
 order: 2
 ---

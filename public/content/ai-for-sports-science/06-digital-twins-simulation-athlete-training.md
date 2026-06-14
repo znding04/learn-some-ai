@@ -1,6 +1,8 @@
 ---
 title: "Digital Twins and Simulation for Athlete Training"
-level: advanced
+difficulty: advanced
+estimatedTime: "45 minutes"
+summary: "Covers the architecture of sports digital twins, physiological models (critical power, energy systems), biomechanical simulation, environmental modeling, and tactical what-if analysis through agent-based simulation."
 topic: ai-for-sports-science
 order: 6
 ---

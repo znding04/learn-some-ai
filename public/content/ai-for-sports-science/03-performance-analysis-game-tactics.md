@@ -1,6 +1,8 @@
 ---
 title: "Performance Analysis and Game Tactics"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "45 minutes"
+summary: "Explores how raw tracking data is transformed into performance metrics, formation analysis via Voronoi diagrams and GNNs, passing network models, Expected Threat (xT), and game-theoretic reasoning for tactical optimization."
 topic: ai-for-sports-science
 order: 3
 ---

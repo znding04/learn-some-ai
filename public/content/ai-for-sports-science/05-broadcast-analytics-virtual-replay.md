@@ -1,6 +1,8 @@
 ---
 title: "Broadcast Analytics and Virtual Replay"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "30 minutes"
+summary: "Examines AI systems powering broadcast augmentation including automated camera control, real-time statistical overlays, virtual replay generation via 3D scene reconstruction, and multimodal highlight ranking."
 topic: ai-for-sports-science
 order: 5
 ---

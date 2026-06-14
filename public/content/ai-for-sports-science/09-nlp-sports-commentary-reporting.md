@@ -1,6 +1,8 @@
 ---
 title: "NLP for Sports Commentary and Reporting"
-level: intermediate
+difficulty: intermediate
+estimatedTime: "45 minutes"
+summary: "Covers NLP applications in sports including live commentary generation, sentiment analysis for fan reactions, automated match report writing, player interview analysis, and sports-specific language model architectures."
 topic: ai-for-sports-science
 order: 9
 ---
