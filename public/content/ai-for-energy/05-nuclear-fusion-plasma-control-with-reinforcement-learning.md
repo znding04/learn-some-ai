@@ -1,8 +1,10 @@
 ---
 title: "Nuclear Fusion Plasma Control with Reinforcement Learning"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-energy
 order: 5
+estimatedTime: "30 minutes"
+summary: "Explores how reinforcement learning is used to control tokamak plasma shape and position for nuclear fusion, including DeepMind's breakthrough work on the TCV tokamak."
 ---
 
 # Nuclear Fusion Plasma Control with Reinforcement Learning

@@ -1,8 +1,10 @@
 ---
 title: "Electric Vehicle Charging Networks and Optimization"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-energy
 order: 7
+estimatedTime: "30 minutes"
+summary: "Explores AI optimization of electric vehicle charging networks, smart charging strategies, and vehicle-to-grid technology for grid flexibility."
 ---
 
 # Electric Vehicle Charging Networks and Optimization

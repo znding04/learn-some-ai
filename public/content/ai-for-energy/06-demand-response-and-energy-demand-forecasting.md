@@ -1,8 +1,10 @@
 ---
 title: "Demand Response and Energy Demand Forecasting"
-level: intermediate
+difficulty: intermediate
 topic: ai-for-energy
 order: 6
+estimatedTime: "30 minutes"
+summary: "Covers ML-based energy demand forecasting and demand response programs that shift flexible loads to optimize grid balance and reduce peak demand."
 ---
 
 # Demand Response and Energy Demand Forecasting

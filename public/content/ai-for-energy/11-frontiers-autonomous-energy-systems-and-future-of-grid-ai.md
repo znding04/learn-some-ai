@@ -1,8 +1,10 @@
 ---
 title: "Frontiers: Autonomous Energy Systems and the Future of Grid AI"
-level: advanced
+difficulty: advanced
 topic: ai-for-energy
 order: 11
+estimatedTime: "30 minutes"
+summary: "Explores frontier concepts in autonomous energy systems including multi-agent markets, foundation models for power systems, self-healing grids, and carbon-aware computing."
 ---
 
 # Frontiers: Autonomous Energy Systems and the Future of Grid AI

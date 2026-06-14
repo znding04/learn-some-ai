@@ -1,8 +1,10 @@
 ---
 title: "AI for Power Grid Operations and Stability"
-level: beginner
+difficulty: beginner
 topic: ai-for-energy
 order: 4
+estimatedTime: "30 minutes"
+summary: "Examines AI techniques for maintaining grid stability including frequency control, voltage regulation, and economic dispatch in low-inertia renewable-heavy systems."
 ---
 
 # AI for Power Grid Operations and Stability

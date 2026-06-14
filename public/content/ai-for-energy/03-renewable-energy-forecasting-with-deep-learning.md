@@ -1,8 +1,10 @@
 ---
 title: "Renewable Energy Forecasting with Deep Learning"
-level: beginner
+difficulty: beginner
 topic: ai-for-energy
 order: 3
+estimatedTime: "15 minutes"
+summary: "Covers deep learning methods for solar and wind power forecasting, including LSTMs, Transformers, and probabilistic approaches across multiple time horizons."
 ---
 
 # Renewable Energy Forecasting with Deep Learning

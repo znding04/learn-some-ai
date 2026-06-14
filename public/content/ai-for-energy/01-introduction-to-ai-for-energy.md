@@ -1,8 +1,10 @@
 ---
 title: "Introduction to AI for Energy"
-level: beginner
+difficulty: beginner
 topic: ai-for-energy
 order: 1
+estimatedTime: "15 minutes"
+summary: "Overview of how AI is transforming the energy sector, covering forecasting, grid optimization, predictive maintenance, and the shift to distributed renewable systems."
 ---
 
 # Introduction to AI for Energy
