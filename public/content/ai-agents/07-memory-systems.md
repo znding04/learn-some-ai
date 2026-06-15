@@ -12,8 +12,9 @@ summary: "How AI agents retain, organize, and retrieve information across intera
 ## Overview
 
 A stateless LLM forgets everything the moment a conversation ends. For an AI agent to be truly useful, it needs
-**memory** -- the ability to retain, organize, and retrieve information across interactions. Memory systems transform a
-forgetful chatbot into a persistent assistant that learns from experience.
+**memory** -- the ability to retain, organize, and retrieve information across interactions.
+
+Memory systems transform a forgetful chatbot into a persistent assistant that learns from experience.
 
 ### Short-Term Memory: Conversation History
 
@@ -34,6 +35,8 @@ A more sophisticated approach is **summarization**: periodically compress older 
 facts while freeing token budget. The compressed representation might reduce $n$ turns into a summary of $s$ tokens
 where $s \ll n \cdot t$.
 
+These two strategies are not mutually exclusive -- many production systems use a sliding window for recent turns and summarize everything older.
+
 ### Long-Term Memory: Vector Databases
 
 Long-term memory (LTM) persists across sessions. The dominant approach uses **vector databases** that store text as
@@ -52,7 +55,7 @@ The pipeline works as follows:
 4. **Retrieve**: Return the original text associated with the top-$k$
    closest vectors.
 
-Popular vector databases include:
+Several popular vector databases serve different use cases:
 
 - **FAISS** (Facebook AI Similarity Search): Open-source, runs locally,
   excellent for prototyping. Supports exact and approximate nearest neighbor
@@ -62,7 +65,8 @@ Popular vector databases include:
 - **Milvus**: Open-source, distributed, handles billions of vectors. Strong
   choice for large-scale applications.
 
-The similarity between two vectors is typically measured using **cosine similarity**:
+Regardless of which database you choose, the similarity between two vectors is typically measured using
+**cosine similarity**:
 
 $$\text{sim}(\mathbf{v}_q, \mathbf{v}_d) = \frac{\mathbf{v}_q \cdot \mathbf{v}_d}{\|\mathbf{v}_q\| \cdot \|\mathbf{v}_d\|}$$
 
@@ -86,7 +90,7 @@ memory enables the agent to reference specific past interactions and learn from 
 
 ### Memory Retrieval Strategies
 
-Naive nearest-neighbor retrieval often returns irrelevant results. Better strategies include:
+Naive nearest-neighbor retrieval often returns irrelevant results. Several strategies can improve retrieval quality:
 
 - **Hybrid search**: Combine vector similarity with keyword (BM25) search.
   This catches cases where the query and document share exact terms but
@@ -280,6 +284,8 @@ flowchart TD
     DB -- Top-k nearest neighbors --> RT
     RT --> CTX
 ```
+
+The following diagram shows how short-term and long-term memory interact within an agent:
 
 **Short-Term vs Long-Term Memory**
 
