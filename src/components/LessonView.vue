@@ -55,6 +55,8 @@
 <script setup>
 import { ref, computed, watch, nextTick } from 'vue'
 import { marked } from 'marked'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/github-dark.css'
 import { useRouter } from '../router.js'
 
 marked.setOptions({ gfm: true, breaks: false })
@@ -68,7 +70,14 @@ marked.use({
       if (lang === 'mermaid') {
         return `<pre class="mermaid">${escapeHtml(text)}</pre>`
       }
-      return false
+      let highlighted
+      if (lang && hljs.getLanguage(lang)) {
+        highlighted = hljs.highlight(text, { language: lang }).value
+      } else {
+        highlighted = hljs.highlightAuto(text).value
+      }
+      const langClass = lang ? ` language-${lang}` : ''
+      return `<pre><code class="hljs${langClass}">${highlighted}</code></pre>`
     },
   },
 })

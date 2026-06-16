@@ -288,6 +288,16 @@ p { line-height: 1.7; }
   line-height: 1.65;
 }
 
+.markdown-body pre:has(code.hljs) {
+  background: none;
+  padding: 0;
+}
+
+.markdown-body pre code.hljs {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+}
+
 .markdown-body pre.mermaid {
   background: transparent;
   padding: var(--space-2) 0;

@@ -10,6 +10,7 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
+    "highlight.js": "^11.11.1",
     "katex": "^0.16.45",
     "marked": "^18.0.3",
     "marked-katex-extension": "^5.1.8",
