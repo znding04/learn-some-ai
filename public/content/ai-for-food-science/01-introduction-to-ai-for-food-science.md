@@ -40,7 +40,7 @@ The AI for Food Science pipeline follows a pattern analogous to other applied ML
 
 Quantitative performance is typically measured using domain-relevant metrics. For compositional prediction, root mean square error of cross-validation (RMSECV) and root mean square error of prediction (RMSEP) from NIR calibrations are standard. For classification tasks (defect detection, fraud), precision, recall, and $F_1$ score are used. For shelf-life prediction, mean absolute error (MAE) in days is the natural unit.
 
-**Diagram**
+## Diagrams
 
 **The AI for Food Science Pipeline**
 
@@ -54,12 +54,86 @@ flowchart LR
     F --> C
 ```
 
+**AI Application Areas Across the Food Value Chain**
+
+```mermaid
+flowchart TB
+    subgraph Farm["Farm & Harvest"]
+        F1["Crop Disease Detection\n(Computer Vision)"]
+        F2["Yield Prediction\n(Time Series Models)"]
+    end
+    subgraph Processing["Processing & Manufacturing"]
+        P1["Quality Inspection\n(CNN Defect Detection)"]
+        P2["Process Optimization\n(Reinforcement Learning)"]
+        P3["Food Safety Monitoring\n(Anomaly Detection)"]
+    end
+    subgraph Distribution["Distribution & Retail"]
+        D1["Shelf-Life Prediction\n(Regression Models)"]
+        D2["Supply Chain Optimization\n(Demand Forecasting)"]
+        D3["Fraud Detection\n(Spectral Fingerprinting)"]
+    end
+    subgraph Consumer["Consumer"]
+        C1["Personalized Nutrition\n(Recommendation Engines)"]
+        C2["Smart Packaging\n(E-nose + ML)"]
+    end
+
+    Farm --> Processing --> Distribution --> Consumer
+
+    style Farm fill:#d1fae5,stroke:#059669
+    style Processing fill:#fef3c7,stroke:#d97706
+    style Distribution fill:#e0e7ff,stroke:#4338ca
+    style Consumer fill:#fce7f3,stroke:#db2777
+```
+
+## Code Examples
+
+```python
+"""
+Rule-based fruit freshness classifier — a baseline approach.
+Demonstrates the kind of expert system that AI/ML now replaces.
+"""
+import numpy as np
+
+# Simulated sensor readings for 5 fruit samples
+# Columns: [color_index (0-10), firmness (0-10), days_since_harvest]
+samples = np.array([
+    [9.2, 8.5, 1],   # bright color, firm, just picked
+    [7.0, 6.0, 4],   # slightly faded, softer
+    [5.5, 4.0, 7],   # noticeable color loss
+    [3.2, 2.1, 12],  # significant degradation
+    [1.5, 0.8, 18],  # heavily degraded
+])
+
+def rule_based_classifier(color, firmness, days):
+    """Classify fruit freshness using hand-crafted rules."""
+    score = (color + firmness) / 2 - (days * 0.3)
+    if score > 6:
+        return "fresh"
+    elif score > 3:
+        return "acceptable"
+    else:
+        return "spoiled"
+
+# Classify each sample
+for i, (color, firmness, days) in enumerate(samples):
+    label = rule_based_classifier(color, firmness, days)
+    print(f"Sample {i+1}: color={color}, firmness={firmness}, "
+          f"days={days} → {label}")
+```
+
+**Line-by-line walkthrough:**
+
+- **Lines 7–13 (`samples = np.array(...)`)**: We create a small synthetic dataset simulating sensor readings from five fruit samples at different stages of freshness. In practice, these values would come from NIR spectrometers (for color index), texture analyzers (for firmness), and supply chain logs (for days since harvest).
+- **Lines 15–21 (`rule_based_classifier`)**: This function encodes expert knowledge as explicit rules — a weighted combination of color, firmness, and age. The thresholds (6 and 3) were chosen to mimic how a human inspector might judge quality. This is the same approach used by 1980s expert systems like FLAV-SYS.
+- **Lines 24–27 (classification loop)**: Each sample is classified and printed. Notice how the rule-based approach is transparent (you can see exactly why a decision was made) but rigid — it cannot adapt to new fruit varieties or account for nonlinear interactions between features. This is precisely the gap that ML models fill.
+
 ## Exercises and Projects
 
 1. **Literature Survey**: Identify three recent papers (2022–2025) applying ML to food quality inspection. For each, note the sensing modality, ML method, and reported accuracy metric.
 2. **Pipeline Mapping**: Choose a food product you know well (e.g., coffee, cheese, bread). Sketch a full AI pipeline for quality assessment of that product, identifying sensing options at each stage.
 3. **Dataset Exploration**: Download the FooDD (Food Detection Dataset) from Kaggle and run a basic exploratory data analysis (EDA): class counts, image dimensions, sample visualization.
 4. **Expert System Simulation**: Write a simple Python rule-based classifier that predicts "fresh," "acceptable," or "spoiled" for a fruit based on three input features (color index, firmness, days since harvest). What are the limitations of this approach versus a learned ML model?
+5. **ML Upgrade**: Extend the rule-based classifier from Exercise 4 by training a scikit-learn `DecisionTreeClassifier` on a larger synthetic dataset (100+ samples). Compare its accuracy to the rule-based approach using a held-out test set. What advantages does the learned model offer?
 
 ## Further Reading
 
@@ -68,3 +142,4 @@ flowchart LR
 - Mehrotra, R. et al., "Artificial intelligence in food safety: A decade review and bibliometric analysis" (Foods, 2022)
 - Sun, D.-W. (ed.), *Computer Vision Technology for Food Quality Evaluation*, Academic Press, 2nd ed. (2016)
 - GoodFood Institute, "Precision Fermentation State of the Industry Report" (2023): [https://gfi.org](https://gfi.org)
+- Zhou, L. et al., "Application of deep learning in food: A review" (Comprehensive Reviews in Food Science and Food Safety, 2019)
