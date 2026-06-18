@@ -11,15 +11,23 @@ summary: "An introduction to AI — its history, types (narrow, general, superin
 
 ## Overview
 
-Artificial Intelligence (AI) is the field of computer science dedicated to creating systems that can perform tasks typically requiring human intelligence — reasoning, learning, perception, and decision-making. But this simple definition hides decades of debate, breakthroughs, and disappointments.
+Artificial Intelligence (AI) is the field of computer science dedicated to creating systems that can perform tasks typically requiring human intelligence — reasoning, learning, perception, and decision-making.
+
+But this simple definition hides decades of debate, breakthroughs, and disappointments.
 
 ### A Brief History
 
-The dream of intelligent machines predates computers. But the formal field began in **1956** at the Dartmouth Conference, where John McCarthy coined the term "artificial intelligence." Early pioneers like Alan Turing had already laid the groundwork — his 1950 paper introduced the famous **Turing Test**: can a machine fool a human into thinking it's human?
+The dream of intelligent machines predates computers. But the formal field began in **1956** at the Dartmouth Conference, where John McCarthy coined the term "artificial intelligence."
 
-The 1960s–70s saw early optimism. Programs could prove theorems and play checkers. But reality hit hard. The **first AI winter** (mid-1970s) arrived when funding dried up after AI failed to deliver on grand promises. A **second winter** followed in the late 1980s when expert systems proved brittle and expensive.
+Early pioneers like Alan Turing had already laid the groundwork — his 1950 paper introduced the famous **Turing Test**: can a machine fool a human into thinking it's human?
 
-The revival came in stages: statistical methods in the 1990s, big data in the 2000s, and the **deep learning revolution** starting around 2012 when AlexNet crushed the ImageNet competition. Since then, progress has been exponential — GPT, AlphaFold, DALL·E, and autonomous vehicles have reshaped what we thought possible.
+The 1960s–70s saw early optimism. Programs could prove theorems and play checkers. But reality hit hard.
+
+The **first AI winter** (mid-1970s) arrived when funding dried up after AI failed to deliver on grand promises. A **second winter** followed in the late 1980s when expert systems proved brittle and expensive.
+
+The revival came in stages: statistical methods in the 1990s, big data in the 2000s, and the **deep learning revolution** starting around 2012 when AlexNet crushed the ImageNet competition.
+
+Since then, progress has been exponential — GPT, AlphaFold, DALL·E, and autonomous vehicles have reshaped what we thought possible.
 
 ### AI vs ML vs Deep Learning
 
