@@ -2,6 +2,8 @@
 title: "Autonomous Archaeology and AI-Native Research"
 summary: "Explore how autonomous robots, ML-driven hypothesis generation, and agentic workflows are transforming archaeological fieldwork and historical research from the ground up."
 difficulty: advanced
+topic: ai-for-history
+order: 9
 estimatedTime: "30 minutes"
 ---
 

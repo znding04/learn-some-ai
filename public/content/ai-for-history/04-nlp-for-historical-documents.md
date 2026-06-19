@@ -2,6 +2,8 @@
 title: "NLP for Historical Documents"
 summary: "Discover how natural language processing techniques -- OCR, named entity recognition, and language modeling -- unlock insights from old manuscripts, degraded texts, and extinct languages."
 difficulty: beginner
+topic: ai-for-history
+order: 4
 estimatedTime: "30 minutes"
 ---
 

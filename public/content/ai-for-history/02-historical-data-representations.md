@@ -2,6 +2,8 @@
 title: "Historical Data Representations"
 summary: "Learn how to represent historical events, entities, and relationships as structured data suitable for machine learning, including knowledge graphs, temporal features, and GIS integration."
 difficulty: beginner
+topic: ai-for-history
+order: 2
 estimatedTime: "30 minutes"
 ---
 

@@ -2,6 +2,8 @@
 title: "Simulations and Digital Twins for History"
 summary: "Build agent-based models and digital twin reconstructions to simulate historical societies, test hypotheses about past behaviors, and visualize ancient environments."
 difficulty: intermediate
+topic: ai-for-history
+order: 7
 estimatedTime: "30 minutes"
 ---
 

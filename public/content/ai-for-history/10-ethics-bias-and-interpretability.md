@@ -2,6 +2,8 @@
 title: "Ethics, Bias, and Interpretability"
 summary: "Critically examine algorithmic bias in historical AI systems, the risks of Eurocentric training data, the distinction between AI as tool vs. authority, and methods for making historical classifiers interpretable."
 difficulty: advanced
+topic: ai-for-history
+order: 10
 estimatedTime: "30 minutes"
 ---
 

@@ -2,6 +2,8 @@
 title: "Computer Vision for Artifact Analysis"
 summary: "Apply object detection, segmentation, and 3D reconstruction techniques to archaeological artifacts and excavation imagery."
 difficulty: intermediate
+topic: ai-for-history
+order: 5
 estimatedTime: "30 minutes"
 ---
 
