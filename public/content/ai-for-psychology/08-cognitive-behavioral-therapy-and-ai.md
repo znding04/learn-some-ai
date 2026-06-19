@@ -2,6 +2,8 @@
 title: "Cognitive Behavioral Therapy and AI"
 summary: "How CBT works and how AI assists with session analysis, homework tracking, and personalized adaptations."
 difficulty: intermediate
+topic: ai-for-psychology
+order: 8
 estimatedTime: "30 minutes"
 ---
 

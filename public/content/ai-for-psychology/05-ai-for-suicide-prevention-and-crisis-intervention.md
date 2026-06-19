@@ -2,6 +2,8 @@
 title: "AI for Suicide Prevention and Crisis Intervention"
 summary: "NLP for suicidal ideation detection, risk stratification models, and crisis helpline AI assistants."
 difficulty: intermediate
+topic: ai-for-psychology
+order: 5
 estimatedTime: "30 minutes"
 ---
 

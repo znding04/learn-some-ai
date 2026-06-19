@@ -2,6 +2,8 @@
 title: "Chatbots and Virtual Therapists"
 summary: "History from ELIZA to modern therapy bots like Woebot and Wysa, CBT-based agents, efficacy evidence, and risks."
 difficulty: intermediate
+topic: ai-for-psychology
+order: 6
 estimatedTime: "30 minutes"
 ---
 

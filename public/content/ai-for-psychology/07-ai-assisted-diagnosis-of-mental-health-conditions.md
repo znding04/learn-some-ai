@@ -2,6 +2,8 @@
 title: "AI-Assisted Diagnosis of Mental Health Conditions"
 summary: "ML for depression, anxiety, and PTSD diagnosis with interpretability and clinical validation."
 difficulty: intermediate
+topic: ai-for-psychology
+order: 7
 estimatedTime: "30 minutes"
 ---
 

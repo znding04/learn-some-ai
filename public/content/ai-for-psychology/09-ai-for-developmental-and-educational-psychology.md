@@ -2,6 +2,8 @@
 title: "AI for Developmental and Educational Psychology"
 summary: "AI tutors, developmental milestone tracking, autism screening tools, and personalized educational interventions."
 difficulty: intermediate
+topic: ai-for-psychology
+order: 9
 estimatedTime: "30 minutes"
 ---
 
