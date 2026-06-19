@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers LLM-specific security threats including prompt injection, jailbreaks, domain-camouflaged attacks, and RAG corruption, along with detection systems and automated red-teaming approaches."
 ---
 
-# LLM Security and Red Teaming
+## LLM Security and Red Teaming
 
 ## Overview
 
