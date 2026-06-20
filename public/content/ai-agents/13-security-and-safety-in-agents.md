@@ -7,7 +7,7 @@ order: 13
 estimatedTime: "45 minutes"
 ---
 
-# Security & Safety in AI Agents
+## Security & Safety in AI Agents
 
 ## Overview
 

@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 10
 ---
 
-# Self-Driving Laboratories for Materials Discovery
+## Self-Driving Laboratories for Materials Discovery
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI applications in manufacturing including predictive maintenance, automated quality control, process optimization, and 3D printing."
 ---
 
-# AI for Manufacturing and Additive Manufacturing
+## AI for Manufacturing and Additive Manufacturing
 
 ## Overview
 

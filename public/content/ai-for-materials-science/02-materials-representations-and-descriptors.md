@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 2
 ---
 
-# Materials Representations and Descriptors
+## Materials Representations and Descriptors
 
 ## Overview
 

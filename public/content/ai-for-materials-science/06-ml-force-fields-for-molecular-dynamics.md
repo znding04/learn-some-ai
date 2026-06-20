@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 6
 ---
 
-# Machine Learning Force Fields for Molecular Dynamics
+## Machine Learning Force Fields for Molecular Dynamics
 
 ## Overview
 

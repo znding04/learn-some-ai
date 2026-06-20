@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Examines how AI automates contract review through clause segmentation, classification, named entity recognition, and obligation extraction using transformer-based models."
 ---
 
-# Contract Analysis and Clause Classification
+## Contract Analysis and Clause Classification
 
 ## Overview
 

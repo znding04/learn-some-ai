@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "AI weather models like GraphCast and GenCast have matched or exceeded traditional numerical weather prediction accuracy while running in seconds on a single GPU, transforming both weather forecasting and climate science."
 ---
 
-# AI for Climate Modeling
+## AI for Climate Modeling
 
 ## Overview
 

@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 4
 ---
 
-# Injury Prediction and Prevention
+## Injury Prediction and Prevention
 
 ## Overview
 

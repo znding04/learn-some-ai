@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 5
 ---
 
-# Crystal Structure Prediction with ML
+## Crystal Structure Prediction with ML
 
 ## Overview
 

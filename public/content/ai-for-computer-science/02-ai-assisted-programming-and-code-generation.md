@@ -7,7 +7,7 @@ topic: ai-for-computer-science
 order: 2
 ---
 
-# AI-Assisted Programming and Code Generation
+## AI-Assisted Programming and Code Generation
 
 ## Overview
 

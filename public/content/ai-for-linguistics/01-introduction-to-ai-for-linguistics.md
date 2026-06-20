@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "An introduction to AI for Linguistics, exploring how modern AI tools can be used as instruments for linguistic inquiry and what they reveal about the nature of human language."
 ---
 
-# Introduction to AI for Linguistics
+## Introduction to AI for Linguistics
 
 ## Overview
 

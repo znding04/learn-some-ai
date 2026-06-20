@@ -7,7 +7,7 @@ difficulty: intermediate
 summary: "A deep dive into the three major agent architecture paradigms — ReAct, Plan-and-Execute, and Tree of Thoughts — with implementation details and trade-offs."
 ---
 
-# Agent Architectures
+## Agent Architectures
 
 ## Overview
 

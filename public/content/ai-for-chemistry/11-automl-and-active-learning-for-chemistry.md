@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers Bayesian optimization, multi-objective optimization, and active learning loops for molecular discovery, including self-driving labs and automated feature engineering for chemistry."
 ---
 
-# AutoML and Active Learning for Chemistry
+## AutoML and Active Learning for Chemistry
 
 ## Overview
 

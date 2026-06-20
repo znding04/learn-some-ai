@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers the major data types in computational biology and the numerical representations used to make them tractable for ML, including amino acid sequences, 3D protein coordinates, molecular graphs, gene expression matrices, and DNA/RNA sequences."
 ---
 
-# Biological Data Representations
+## Biological Data Representations
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Neural network emulators as fast surrogates for computationally expensive cosmological N-body simulations, covering the matter power spectrum and parameter inference."
 ---
 
-# Cosmological Simulations and AI Emulators
+## Cosmological Simulations and AI Emulators
 
 Running a cosmological simulation from first principles is one of the most computationally expensive tasks in science. The IllustrisTNG simulation suite consumed roughly 10 million CPU-hours on the Hazel Hen supercomputer in Stuttgart. The Millennium simulation (Springel et al. 2005), a landmark N-body run with $2160^3$ particles, was state of the art for years -- and each run locked in fixed cosmological parameters, meaning that exploring parameter space required additional million-CPU-hour campaigns. Neural network emulators offer a different strategy: train a surrogate model on a grid of simulations, then use that model to predict outputs at arbitrary parameter values in milliseconds.
 

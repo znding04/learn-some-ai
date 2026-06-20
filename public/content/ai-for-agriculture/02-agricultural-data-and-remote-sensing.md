@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Survey of major agricultural data sources including satellite imagery, drone data, IoT sensors, and GPS systems, with preprocessing techniques for machine learning pipelines."
 ---
 
-# Agricultural Data and Remote Sensing
+## Agricultural Data and Remote Sensing
 
 ## Overview
 

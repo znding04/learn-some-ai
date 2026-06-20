@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 7
 ---
 
-# Microstructure Analysis and Phase Mapping
+## Microstructure Analysis and Phase Mapping
 
 ## Overview
 

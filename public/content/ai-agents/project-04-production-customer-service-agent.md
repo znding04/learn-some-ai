@@ -10,7 +10,7 @@ prerequisites:
 summary: "Build a production-grade customer service agent with session management, intent classification, confidence-gated escalation, sub-agent hand-offs, and a FastAPI deployment."
 ---
 
-# Project: Production Customer Service Agent
+## Project: Production Customer Service Agent
 
 ## Overview
 

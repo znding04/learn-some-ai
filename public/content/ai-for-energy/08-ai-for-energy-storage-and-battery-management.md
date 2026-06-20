@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI applications in battery management systems, state estimation, grid-scale storage optimization, and accelerated battery materials discovery."
 ---
 
-# AI for Energy Storage and Battery Management Systems
+## AI for Energy Storage and Battery Management Systems
 
 ## Overview
 

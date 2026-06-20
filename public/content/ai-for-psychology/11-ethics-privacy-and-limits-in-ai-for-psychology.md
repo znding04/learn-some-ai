@@ -7,7 +7,7 @@ order: 11
 estimatedTime: "30 minutes"
 ---
 
-# Ethics, Privacy, and Limits in AI for Psychology
+## Ethics, Privacy, and Limits in AI for Psychology
 
 ## Overview
 

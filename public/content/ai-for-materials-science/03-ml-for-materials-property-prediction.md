@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 3
 ---
 
-# Machine Learning for Materials Property Prediction
+## Machine Learning for Materials Property Prediction
 
 ## Overview
 

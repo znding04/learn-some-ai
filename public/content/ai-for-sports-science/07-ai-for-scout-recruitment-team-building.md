@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 7
 ---
 
-# AI for Scouting, Recruitment, and Team Building
+## AI for Scouting, Recruitment, and Team Building
 
 ## Overview
 

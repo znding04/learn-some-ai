@@ -7,7 +7,7 @@ difficulty: beginner
 estimatedTime: "30 minutes"
 ---
 
-# AI for Traffic Management and Smart Cities
+## AI for Traffic Management and Smart Cities
 
 ## Overview
 

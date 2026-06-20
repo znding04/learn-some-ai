@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "A hands-on lesson covering how to generate music using pre-trained models like MusicGen, craft effective music prompts, and build a simple generation pipeline with fade, normalization, and export."
 ---
 
-# Building Your First AI Music Generator
+## Building Your First AI Music Generator
 
 ## Overview
 

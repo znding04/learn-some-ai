@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Examines how AI detects neurological disorders including Alzheimer's, Parkinson's, epilepsy, and multiple sclerosis from brain imaging data, often years before clinical symptoms."
 ---
 
-# AI for Neurological Disorder Diagnosis
+## AI for Neurological Disorder Diagnosis
 
 ## Overview
 

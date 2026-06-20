@@ -7,7 +7,7 @@ topic: ai-for-medicine
 order: 2
 ---
 
-# Medical Imaging AI
+## Medical Imaging AI
 
 ## Overview
 

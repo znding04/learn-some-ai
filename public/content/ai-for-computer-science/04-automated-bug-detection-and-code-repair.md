@@ -7,7 +7,7 @@ topic: ai-for-computer-science
 order: 4
 ---
 
-# Automated Bug Detection and Code Repair
+## Automated Bug Detection and Code Repair
 
 ## Overview
 

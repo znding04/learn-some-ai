@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "A detailed walkthrough of the Transformer decoder architecture, covering multi-head self-attention, positional encodings, layer normalization, KV caching, and efficient attention variants like Flash Attention and GQA."
 ---
 
-# LLM Architecture Deep Dive
+## LLM Architecture Deep Dive
 
 ## Overview
 

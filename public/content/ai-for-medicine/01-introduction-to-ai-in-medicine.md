@@ -7,7 +7,7 @@ topic: ai-for-medicine
 order: 1
 ---
 
-# Introduction to AI in Medicine
+## Introduction to AI in Medicine
 
 ## Overview
 

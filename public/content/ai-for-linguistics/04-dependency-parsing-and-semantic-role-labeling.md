@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Introduces dependency parsing with Universal Dependencies, transition-based and graph-based parsing algorithms, and semantic role labeling using PropBank-style predicate-argument structures."
 ---
 
-# Dependency Parsing and Semantic Role Labeling
+## Dependency Parsing and Semantic Role Labeling
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Covers queueing theory foundations for supply chain congestion analysis and how deep learning enables fast approximation of complex queueing networks and data-driven stochastic optimization."
 ---
 
-# Queueing Networks and Stochastic Optimization with Deep Learning
+## Queueing Networks and Stochastic Optimization with Deep Learning
 
 ## Overview
 

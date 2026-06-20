@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Traces the mathematical foundations of neural networks from the McCulloch-Pitts neuron through the perceptron, the XOR problem, gradient descent, and backpropagation with automatic differentiation."
 ---
 
-# Neural Networks: A Mathematical Perspective
+## Neural Networks: A Mathematical Perspective
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "45 minutes"
 summary: "Covers the full production trading system pipeline including backtesting, execution algorithms (TWAP/VWAP), alpha decay analysis, transaction cost modeling, and deployment infrastructure."
 ---
 
-# Algorithmic Trading Systems
+## Algorithmic Trading Systems
 
 ## Overview
 

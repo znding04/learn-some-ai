@@ -7,7 +7,7 @@ estimatedTime: "45 minutes"
 summary: "Explores the frontier of AI-native education, including agentic learning companions, multi-agent pedagogical systems, emotional AI, multimodal interaction, and self-driving learning."
 ---
 
-# Frontiers: AI-Native Education
+## Frontiers: AI-Native Education
 
 ## Table of Contents
 - [Overview](#overview)

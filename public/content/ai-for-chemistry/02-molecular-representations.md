@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers the major molecular representations used in AI for chemistry, including SMILES, SELFIES, molecular graphs, fingerprints, and 3D conformations, explaining how each encoding determines what information is available to ML models."
 ---
 
-# Molecular Representations
+## Molecular Representations
 
 ## Overview
 

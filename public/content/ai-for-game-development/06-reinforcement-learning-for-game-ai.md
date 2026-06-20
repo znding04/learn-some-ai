@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores reinforcement learning algorithms for game-playing agents including DQN and PPO, with a complete implementation of a DQN agent learning to navigate a grid world."
 ---
 
-# Reinforcement Learning for Game AI
+## Reinforcement Learning for Game AI
 
 ## Overview
 

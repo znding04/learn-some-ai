@@ -7,7 +7,7 @@ difficulty: intermediate
 estimatedTime: "30 minutes"
 ---
 
-# Reinforcement Learning for Autonomous Driving
+## Reinforcement Learning for Autonomous Driving
 
 ## Overview
 

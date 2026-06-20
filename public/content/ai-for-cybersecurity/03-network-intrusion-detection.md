@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Examines ML-based network intrusion detection using Isolation Forests, autoencoders, and Graph Neural Networks, alongside integration with the ELK stack for production deployments."
 ---
 
-# Network Intrusion Detection
+## Network Intrusion Detection
 
 ## Overview
 

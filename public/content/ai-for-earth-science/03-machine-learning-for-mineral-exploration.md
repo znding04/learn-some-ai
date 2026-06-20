@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Predicting ore deposits using geochemical and geophysical data with ensemble methods and anomaly detection."
 ---
 
-# Machine Learning for Mineral Exploration
+## Machine Learning for Mineral Exploration
 
 ## Overview
 

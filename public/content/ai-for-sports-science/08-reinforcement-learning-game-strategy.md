@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 8
 ---
 
-# Reinforcement Learning for Game Strategy
+## Reinforcement Learning for Game Strategy
 
 ## Table of Contents
 - [Overview](#overview)

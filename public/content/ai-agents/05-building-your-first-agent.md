@@ -7,7 +7,7 @@ difficulty: beginner
 summary: "Build a complete tool-using AI agent from scratch in under 100 lines of Python, with error handling and retry logic."
 ---
 
-# Building Your First Simple Agent
+## Building Your First Simple Agent
 
 ## Overview
 

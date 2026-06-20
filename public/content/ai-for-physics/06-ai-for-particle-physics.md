@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "AI is essential across the particle physics pipeline at the LHC, from real-time event triggering and jet classification to anomaly detection for new physics beyond the Standard Model using graph neural networks."
 ---
 
-# AI for Particle Physics
+## AI for Particle Physics
 
 ## Overview
 

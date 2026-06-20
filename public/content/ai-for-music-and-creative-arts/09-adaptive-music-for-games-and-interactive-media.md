@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers adaptive and procedural music systems for games and interactive media, including traditional techniques like vertical remixing and horizontal re-sequencing, as well as AI-driven real-time generation and reinforcement learning for music transitions."
 ---
 
-# Adaptive Music for Games and Interactive Media
+## Adaptive Music for Games and Interactive Media
 
 ## Overview
 

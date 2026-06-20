@@ -10,7 +10,7 @@ prerequisites:
 summary: "Explore how Retrieval-Augmented Generation becomes agentic through query planning, iterative retrieval, self-evaluation, and multi-hop reasoning over documents."
 ---
 
-# Agentic RAG Systems
+## Agentic RAG Systems
 
 ## Overview
 

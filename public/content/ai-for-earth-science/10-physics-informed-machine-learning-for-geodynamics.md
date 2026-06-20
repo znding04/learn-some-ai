@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Combining physics constraints with ML for mantle convection, plate tectonics, and geophysical inverse problems."
 ---
 
-# Physics-Informed Machine Learning for Geodynamics
+## Physics-Informed Machine Learning for Geodynamics
 
 ## Overview
 

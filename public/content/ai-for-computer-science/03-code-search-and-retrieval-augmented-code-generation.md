@@ -7,7 +7,7 @@ topic: ai-for-computer-science
 order: 3
 ---
 
-# Code Search and Retrieval-Augmented Code Generation
+## Code Search and Retrieval-Augmented Code Generation
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "How to represent rock types, mineral compositions, borehole logs, and remote sensing data for machine learning."
 ---
 
-# Geological Data Types and Representations
+## Geological Data Types and Representations
 
 ## Overview
 

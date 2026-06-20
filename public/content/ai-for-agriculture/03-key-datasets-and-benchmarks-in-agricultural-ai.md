@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Overview of key open datasets and benchmarks for agricultural AI, including PlantVillage, DeepWeeds, UC Merced, and yield prediction resources."
 ---
 
-# Key Datasets and Benchmarks in Agricultural AI
+## Key Datasets and Benchmarks in Agricultural AI
 
 ## Overview
 

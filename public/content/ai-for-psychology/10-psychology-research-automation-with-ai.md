@@ -7,7 +7,7 @@ order: 10
 estimatedTime: "30 minutes"
 ---
 
-# Psychology Research Automation with AI
+## Psychology Research Automation with AI
 
 ## Overview
 

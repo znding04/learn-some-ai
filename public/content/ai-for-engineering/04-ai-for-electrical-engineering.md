@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI for electronic design automation, circuit optimization, and power system operation in electrical and computer engineering."
 ---
 
-# AI for Electrical and Computer Engineering
+## AI for Electrical and Computer Engineering
 
 ## Overview
 

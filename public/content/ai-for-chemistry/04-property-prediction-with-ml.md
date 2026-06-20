@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers the foundational task of predicting molecular properties from structure using ML, including dataset splitting strategies, the MoleculeNet benchmark suite, uncertainty quantification, and state-of-the-art methods."
 ---
 
-# Property Prediction with ML
+## Property Prediction with ML
 
 ## Overview
 

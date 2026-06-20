@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "AI-powered precision livestock farming using sensors, computer vision, and ML for behavior recognition, health monitoring, and welfare assessment across species."
 ---
 
-# Livestock Monitoring and Precision Animal Husbandry
+## Livestock Monitoring and Precision Animal Husbandry
 
 ## Overview
 

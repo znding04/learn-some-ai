@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers deep learning for extreme weather prediction, natural disaster forecasting, and real-time early warning systems."
 ---
 
-# AI for Extreme Weather and Natural Disasters
+## AI for Extreme Weather and Natural Disasters
 
 ## Overview
 

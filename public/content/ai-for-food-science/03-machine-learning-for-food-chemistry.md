@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores molecular representations (SMILES, fingerprints, graphs) for food chemistry ML, including QSAR models for sweetness and bitterness prediction, graph neural networks for molecular property prediction, and ML-driven bioactive peptide discovery."
 ---
 
-# Machine Learning for Food Chemistry
+## Machine Learning for Food Chemistry
 
 ## Overview
 

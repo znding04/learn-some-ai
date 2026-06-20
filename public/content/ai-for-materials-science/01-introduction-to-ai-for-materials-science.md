@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 1
 ---
 
-# Introduction to AI for Materials Science
+## Introduction to AI for Materials Science
 
 ## Overview
 

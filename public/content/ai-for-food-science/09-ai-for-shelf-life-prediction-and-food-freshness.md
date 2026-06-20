@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers the shift from calendar-based to condition-based freshness assessment using ML, including sensor fusion architectures combining e-noses, temperature loggers, and computer vision, LSTM models for cold chain monitoring, and dynamic expiration labeling."
 ---
 
-# AI for Shelf Life Prediction and Food Freshness
+## AI for Shelf Life Prediction and Food Freshness
 
 ## Overview
 

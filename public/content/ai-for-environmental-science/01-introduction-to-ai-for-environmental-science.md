@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Introduces AI for environmental science, covering why the field is both a natural fit and a uniquely challenging domain for machine learning."
 ---
 
-# Introduction to AI for Environmental Science
+## Introduction to AI for Environmental Science
 
 ## Overview
 

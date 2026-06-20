@@ -7,7 +7,7 @@ difficulty: advanced
 estimatedTime: "30 minutes"
 ---
 
-# AI for Drone Navigation and Air Mobility
+## AI for Drone Navigation and Air Mobility
 
 ## Overview
 

@@ -7,7 +7,7 @@ topic: ai-for-computer-science
 order: 8
 ---
 
-# Formal Verification and AI
+## Formal Verification and AI
 
 ## Overview
 

@@ -7,7 +7,7 @@ topic: ai-for-medicine
 order: 6
 ---
 
-# Electronic Health Records and Clinical Data
+## Electronic Health Records and Clinical Data
 
 ## Overview
 

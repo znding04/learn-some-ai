@@ -7,7 +7,7 @@ topic: ai-for-computer-science
 order: 1
 ---
 
-# Introduction to AI for Computer Science
+## Introduction to AI for Computer Science
 
 ## Overview
 

@@ -7,7 +7,7 @@ order: 6
 estimatedTime: "30 minutes"
 ---
 
-# Chatbots and Virtual Therapists
+## Chatbots and Virtual Therapists
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Neural ODEs parameterize continuous dynamics with a neural network and solve the resulting ODE with a numerical integrator, bridging the discrete world of neural network layers and the continuous world of differential equations."
 ---
 
-# Neural Differential Equations
+## Neural Differential Equations
 
 ## Overview
 

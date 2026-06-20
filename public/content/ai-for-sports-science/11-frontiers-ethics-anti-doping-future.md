@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 11
 ---
 
-# Frontiers, Ethics, and Anti-Doping
+## Frontiers, Ethics, and Anti-Doping
 
 ## Overview
 

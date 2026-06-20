@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "An introduction to the emerging field of AI for mathematics, covering its history from the 1950s Logic Theorist to 2024 breakthroughs like AlphaProof and FunSearch, and explaining why AI-driven mathematical discovery matters."
 ---
 
-# What is AI for Mathematics?
+## What is AI for Mathematics?
 
 ## Overview
 

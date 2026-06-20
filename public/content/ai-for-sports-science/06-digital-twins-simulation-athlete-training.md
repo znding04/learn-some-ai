@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 6
 ---
 
-# Digital Twins and Simulation for Athlete Training
+## Digital Twins and Simulation for Athlete Training
 
 ## Overview
 

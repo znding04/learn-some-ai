@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explains AlphaGeometry's neuro-symbolic architecture that pairs a symbolic Deductive Database with an LLM for auxiliary construction to solve olympiad-level geometry problems."
 ---
 
-# AlphaGeometry: AI for Geometry Problems
+## AlphaGeometry: AI for Geometry Problems
 
 ## Overview
 

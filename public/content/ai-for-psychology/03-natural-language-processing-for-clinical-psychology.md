@@ -7,7 +7,7 @@ difficulty: intermediate
 estimatedTime: "30 minutes"
 ---
 
-# NLP for Clinical Psychology
+## NLP for Clinical Psychology
 
 ## Overview
 

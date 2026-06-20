@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers advanced CNN architectures including VGGNet, Inception, ResNet, DenseNet, and EfficientNet, plus transfer learning techniques and object detection fundamentals."
 ---
 
-# Convolutional Neural Networks: Advanced Architectures
+## Convolutional Neural Networks: Advanced Architectures
 
 ## Overview
 

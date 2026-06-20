@@ -10,7 +10,7 @@ prerequisites:
 summary: "Build a multi-agent research system with a Planner, Searcher, and Synthesiser that collaborate via a shared message bus to decompose questions, gather evidence, and produce cited reports."
 ---
 
-# Project: Multi-Agent Research System
+## Project: Multi-Agent Research System
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "An introduction to machine learning fundamentals covering supervised, unsupervised, and reinforcement learning paradigms, the ML workflow, overfitting, loss functions, and gradient descent."
 ---
 
-# Machine Learning Basics
+## Machine Learning Basics
 
 ## Overview
 

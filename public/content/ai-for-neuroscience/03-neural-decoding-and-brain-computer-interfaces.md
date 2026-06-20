@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Covers neural decoding methods that reconstruct sensory experiences and motor intentions from brain activity, and their application in brain-computer interfaces."
 ---
 
-# Neural Decoding and Brain-Computer Interfaces
+## Neural Decoding and Brain-Computer Interfaces
 
 ## Overview
 

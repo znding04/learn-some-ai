@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores frontier concepts in autonomous energy systems including multi-agent markets, foundation models for power systems, self-healing grids, and carbon-aware computing."
 ---
 
-# Frontiers: Autonomous Energy Systems and the Future of Grid AI
+## Frontiers: Autonomous Energy Systems and the Future of Grid AI
 
 ## Overview
 

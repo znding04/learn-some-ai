@@ -7,7 +7,7 @@ order: 9
 estimatedTime: "30 minutes"
 ---
 
-# AI for Developmental and Educational Psychology
+## AI for Developmental and Educational Psychology
 
 ## Overview
 

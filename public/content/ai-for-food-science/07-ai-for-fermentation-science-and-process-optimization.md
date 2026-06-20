@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI-driven fermentation monitoring and control, including LSTM soft sensors for real-time metabolite prediction, reinforcement learning for bioreactor optimization, and physics-informed digital twins combining mechanistic ODE models with ML residual corrections."
 ---
 
-# AI for Fermentation Science and Process Optimization
+## AI for Fermentation Science and Process Optimization
 
 ## Overview
 

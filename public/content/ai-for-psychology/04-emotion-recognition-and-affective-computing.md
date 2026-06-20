@@ -7,7 +7,7 @@ order: 4
 estimatedTime: "30 minutes"
 ---
 
-# Emotion Recognition and Affective Computing
+## Emotion Recognition and Affective Computing
 
 ## Overview
 

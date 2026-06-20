@@ -7,7 +7,7 @@ difficulty: advanced
 estimatedTime: "30 minutes"
 ---
 
-# Frontiers: V2X Communication, Ethics, and the Future of Mobility
+## Frontiers: V2X Communication, Ethics, and the Future of Mobility
 
 ## Overview
 

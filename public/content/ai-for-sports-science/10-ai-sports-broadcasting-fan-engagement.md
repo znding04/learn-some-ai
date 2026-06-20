@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 10
 ---
 
-# AI for Sports Broadcasting and Fan Engagement
+## AI for Sports Broadcasting and Fan Engagement
 
 ## Table of Contents
 - [Overview](#overview)

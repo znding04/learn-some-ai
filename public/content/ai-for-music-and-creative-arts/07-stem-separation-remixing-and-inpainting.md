@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI tools for working with existing audio, including source separation with Demucs and Spleeter, music inpainting with diffusion models, and cross-modal editing techniques like style transfer and tempo modification."
 ---
 
-# Stem Separation, Remixing, and Inpainting
+## Stem Separation, Remixing, and Inpainting
 
 ## Overview
 

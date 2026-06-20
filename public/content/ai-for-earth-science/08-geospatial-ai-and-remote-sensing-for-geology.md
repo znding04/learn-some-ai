@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Hyperspectral mineral mapping, InSAR deformation analysis, LiDAR geological mapping, and landslide monitoring."
 ---
 
-# Geospatial AI and Remote Sensing for Geology
+## Geospatial AI and Remote Sensing for Geology
 
 ## Overview
 

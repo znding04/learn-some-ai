@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Examines using large language models as educational tutors, covering Socratic tutoring, prompt engineering, hallucination risks, and constitutional AI for pedagogical alignment."
 ---
 
-# Large Language Models as Tutors
+## Large Language Models as Tutors
 
 ## Overview
 

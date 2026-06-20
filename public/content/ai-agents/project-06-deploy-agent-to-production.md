@@ -9,7 +9,7 @@ prerequisites:
 summary: "A hands-on project covering containerization, API design, rate limiting, monitoring, health checks, and scaling strategies for deploying an AI agent to production."
 ---
 
-# Project: Deploy an Agent to Production
+## Project: Deploy an Agent to Production
 
 ## Overview
 

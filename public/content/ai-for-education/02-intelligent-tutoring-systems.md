@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores the architecture and algorithms behind Intelligent Tutoring Systems, including expert models, student models, Bayesian Knowledge Tracing, Deep Knowledge Tracing, and pedagogical decision-making."
 ---
 
-# Intelligent Tutoring Systems
+## Intelligent Tutoring Systems
 
 ## Overview
 

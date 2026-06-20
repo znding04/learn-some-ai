@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Machine learning for time-domain astronomy, covering transient classification, alert broker systems, and anomaly detection in large-scale survey data."
 ---
 
-# Time-Domain Astronomy and Anomaly Detection
+## Time-Domain Astronomy and Anomaly Detection
 
 The night sky is not static. Stars pulsate, explode, merge, and flare. Planets periodically eclipse their host stars. Black holes shred passing stars. White dwarfs detonate. With the Vera C. Rubin Observatory (formerly LSST) beginning full science operations, the survey will image the entire southern sky every three nights, generating approximately 10 million alerts per night -- each flagging a source that changed brightness between observations. No human team can review 10 million alerts nightly. Machine learning is not an optional enhancement; it is the only path to science.
 

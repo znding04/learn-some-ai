@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Explains how AI reconstructs complete neural wiring diagrams from electron microscopy data, covering the connectomics pipeline from image segmentation to network analysis."
 ---
 
-# Connectomics: Mapping the Brain with AI
+## Connectomics: Mapping the Brain with AI
 
 ## Overview
 

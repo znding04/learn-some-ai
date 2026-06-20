@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers privacy-preserving machine learning techniques for collaborative cybersecurity, including federated learning, differential privacy, homomorphic encryption, and secure multi-party computation."
 ---
 
-# Privacy-Preserving ML for Security
+## Privacy-Preserving ML for Security
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Surveys the major mathematical benchmarks including GSM8K, MATH, MiniF2F, and MMLU-Math, explaining what each measures and how to load and evaluate them in Python."
 ---
 
-# Mathematical Benchmarks and Datasets
+## Mathematical Benchmarks and Datasets
 
 ## Overview
 

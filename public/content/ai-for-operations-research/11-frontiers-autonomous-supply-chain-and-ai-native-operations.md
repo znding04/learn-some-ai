@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores the frontier of fully autonomous supply chains, including foundation models for supply chain reasoning, digital twins, agentic AI for procurement, and carbon-aware multi-objective optimization."
 ---
 
-# Frontiers: Autonomous Supply Chain and AI-Native Operations
+## Frontiers: Autonomous Supply Chain and AI-Native Operations
 
 ## Overview
 

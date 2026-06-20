@@ -7,7 +7,7 @@ difficulty: advanced
 summary: "Explore multi-agent systems, hierarchical task decomposition, self-critique loops, and debate-based reasoning patterns."
 ---
 
-# Advanced Agent Patterns
+## Advanced Agent Patterns
 
 ## Overview
 

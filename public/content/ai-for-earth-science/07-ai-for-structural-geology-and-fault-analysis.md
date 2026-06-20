@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Automatic fault detection, fold classification, stress field modeling, and fracture network prediction."
 ---
 
-# AI for Structural Geology and Fault Analysis
+## AI for Structural Geology and Fault Analysis
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers the different ways computers represent music, including raw waveforms, MIDI, spectrograms, and symbolic notation, with a focus on neural audio tokenization via Encodec and SoundStream."
 ---
 
-# How Computers Represent Music
+## How Computers Represent Music
 
 ## Overview
 

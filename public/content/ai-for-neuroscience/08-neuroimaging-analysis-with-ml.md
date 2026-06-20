@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Covers machine learning approaches for fMRI analysis, including multivariate pattern analysis (MVPA), searchlight decoding, and representational similarity analysis."
 ---
 
-# Neuroimaging Analysis with Machine Learning
+## Neuroimaging Analysis with Machine Learning
 
 ## Overview
 

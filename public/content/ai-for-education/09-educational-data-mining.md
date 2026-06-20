@@ -7,7 +7,7 @@ estimatedTime: "45 minutes"
 summary: "Explores educational data mining techniques for analyzing student interaction data, building early warning systems, detecting gaming behavior, and discovering learning patterns."
 ---
 
-# Educational Data Mining
+## Educational Data Mining
 
 ## Overview
 

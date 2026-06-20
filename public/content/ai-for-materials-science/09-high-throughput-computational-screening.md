@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 9
 ---
 
-# High-Throughput Computational Screening
+## High-Throughput Computational Screening
 
 ## Overview
 

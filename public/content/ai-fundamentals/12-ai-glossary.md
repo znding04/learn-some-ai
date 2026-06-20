@@ -8,7 +8,7 @@ prerequisites: []
 summary: "A comprehensive alphabetical glossary of essential AI and machine learning terms, complete with mathematical definitions and concise explanations."
 ---
 
-# AI Glossary and Key Concepts
+## AI Glossary and Key Concepts
 
 ## Overview
 

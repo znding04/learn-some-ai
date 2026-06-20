@@ -7,7 +7,7 @@ topic: ai-for-computer-science
 order: 6
 ---
 
-# Algorithm Optimization and AI for HPC
+## Algorithm Optimization and AI for HPC
 
 ## Overview
 

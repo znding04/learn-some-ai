@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers ML approaches to credit scoring, Value-at-Risk estimation, fraud detection with Isolation Forests and graph neural networks, and techniques for handling extreme class imbalance."
 ---
 
-# Risk Management and Fraud Detection
+## Risk Management and Fraud Detection
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Surveys frontier AI approaches in food science including chemical language models for molecular taste prediction, multi-objective Bayesian optimization for food formulation, smart and active packaging with AI-enabled sensors, self-driving experiment platforms, and ethical considerations."
 ---
 
-# Frontiers: AI-Native Food Science
+## Frontiers: AI-Native Food Science
 
 ## Overview
 

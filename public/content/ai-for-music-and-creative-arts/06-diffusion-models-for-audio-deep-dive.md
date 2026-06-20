@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "A deep dive into diffusion models for audio generation, covering the Stable Audio architecture, latent diffusion with VAEs, classifier-free guidance, and music-specific conditioning with CLAP."
 ---
 
-# Diffusion Models for Audio Deep Dive
+## Diffusion Models for Audio Deep Dive
 
 ## Overview
 

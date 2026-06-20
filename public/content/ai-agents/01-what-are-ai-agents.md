@@ -7,7 +7,7 @@ difficulty: beginner
 summary: "An introduction to AI agents — their history, core perception-reasoning-action loop, and how modern LLMs enable autonomous tool-using systems."
 ---
 
-# What are AI Agents?
+## What are AI Agents?
 
 ## Overview
 

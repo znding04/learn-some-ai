@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores AI tools transforming STEM education, including math solvers, virtual labs, simulation platforms, and AI-generated feedback on scientific work."
 ---
 
-# AI for STEM Education
+## AI for STEM Education
 
 ## Overview
 

@@ -7,7 +7,7 @@ topic: ai-for-medicine
 order: 4
 ---
 
-# Natural Language Processing for Clinical Notes
+## Natural Language Processing for Clinical Notes
 
 ## Overview
 

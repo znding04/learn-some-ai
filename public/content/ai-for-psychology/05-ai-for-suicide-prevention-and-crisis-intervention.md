@@ -7,7 +7,7 @@ order: 5
 estimatedTime: "30 minutes"
 ---
 
-# AI for Suicide Prevention and Crisis Intervention
+## AI for Suicide Prevention and Crisis Intervention
 
 ## Overview
 

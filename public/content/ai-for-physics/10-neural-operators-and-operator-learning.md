@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Neural operators generalize neural networks to learn mappings between infinite-dimensional function spaces, with a rigorous treatment of FNO, DeepONet, and their theoretical foundations for solving PDEs."
 ---
 
-# Neural Operators and Operator Learning
+## Neural Operators and Operator Learning
 
 ## Overview
 

@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 9
 ---
 
-# NLP for Sports Commentary and Reporting
+## NLP for Sports Commentary and Reporting
 
 ## Table of Contents
 - [Overview](#overview)

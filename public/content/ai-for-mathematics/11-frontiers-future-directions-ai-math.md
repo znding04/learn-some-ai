@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Surveys the frontier of AI for mathematics including the AIMO Prize, autonomous conjecture generation, multi-modal reasoning, mathematical research agents, and ethical considerations."
 ---
 
-# Frontiers and Future Directions in AI for Mathematics
+## Frontiers and Future Directions in AI for Mathematics
 
 ## Overview
 

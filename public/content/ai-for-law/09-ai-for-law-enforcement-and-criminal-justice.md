@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Examines AI applications in criminal justice including risk assessment tools like COMPAS, algorithmic bias, fairness definitions and their impossibility theorem, and the constitutional constraints on AI in legal proceedings."
 ---
 
-# AI for Law Enforcement and Criminal Justice
+## AI for Law Enforcement and Criminal Justice
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Explores the history and current landscape of AI music generation, covering major platforms like Suno and MusicGen, key model families (transformers, diffusion, GANs, VAEs), and foundational concepts like audio tokenization and conditioning."
 ---
 
-# Introduction to AI for Music and Creative Arts
+## Introduction to AI for Music and Creative Arts
 
 ## Overview
 

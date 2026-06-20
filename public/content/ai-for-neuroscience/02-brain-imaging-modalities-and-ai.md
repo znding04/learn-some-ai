@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Explores the major brain imaging modalities (MRI, fMRI, EEG, MEG, PET), their physical bases and resolution tradeoffs, and how deep learning is applied to each."
 ---
 
-# Brain Imaging Modalities and AI
+## Brain Imaging Modalities and AI
 
 ## Overview
 

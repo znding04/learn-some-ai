@@ -7,7 +7,7 @@ order: 8
 estimatedTime: "30 minutes"
 ---
 
-# Cognitive Behavioral Therapy and AI
+## Cognitive Behavioral Therapy and AI
 
 ## Overview
 

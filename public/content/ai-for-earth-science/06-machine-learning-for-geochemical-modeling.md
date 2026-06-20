@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Compositional data analysis, petrological clustering, and anomaly detection in geochemical surveys."
 ---
 
-# Machine Learning for Geochemical Modeling
+## Machine Learning for Geochemical Modeling
 
 ## Overview
 

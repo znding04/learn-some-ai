@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Explores how reinforcement learning can learn optimal supply chain policies directly from interaction data, covering Q-learning, policy gradient, and actor-critic methods for inventory and routing decisions."
 ---
 
-# Reinforcement Learning for Dynamic Supply Chain Decisions
+## Reinforcement Learning for Dynamic Supply Chain Decisions
 
 ## Overview
 

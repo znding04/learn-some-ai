@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores how AI transforms cyber threat intelligence through automated IOC extraction, MITRE ATT&CK mapping, knowledge graph construction, and AI-powered threat hunting integrated with the ELK stack."
 ---
 
-# AI for Threat Intelligence
+## AI for Threat Intelligence
 
 ## Overview
 

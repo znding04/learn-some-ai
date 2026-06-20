@@ -7,7 +7,7 @@ difficulty: beginner
 estimatedTime: "30 minutes"
 ---
 
-# Mental Health Data and Representations
+## Mental Health Data and Representations
 
 ## Overview
 

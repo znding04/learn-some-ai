@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Frontier AI topics in space science including foundation models, Bayesian uncertainty quantification, interpretability techniques, and the balance between model power and scientific insight."
 ---
 
-# Frontiers in AI for Space Science
+## Frontiers in AI for Space Science
 
 ## The Dual Challenge: Power and Interpretability
 

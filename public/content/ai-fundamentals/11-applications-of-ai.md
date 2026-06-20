@@ -9,7 +9,7 @@ prerequisites:
 summary: "A survey of how AI is transforming industries including healthcare, finance, transportation, language processing, creative arts, and manufacturing."
 ---
 
-# Real-World Applications of AI
+## Real-World Applications of AI
 
 ## Overview
 

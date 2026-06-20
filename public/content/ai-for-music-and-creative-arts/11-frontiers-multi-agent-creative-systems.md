@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores cutting-edge research in AI music including multi-agent creative systems, real-time interactive generation, emotional AI for music, and the ethical frontiers of voice cloning, style mimicry, and attribution."
 ---
 
-# Frontiers: Multi-Agent Creative Systems and the Future of AI Music
+## Frontiers: Multi-Agent Creative Systems and the Future of AI Music
 
 ## Overview
 

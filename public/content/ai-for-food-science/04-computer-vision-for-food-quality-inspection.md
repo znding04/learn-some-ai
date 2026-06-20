@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Covers CNN-based classification and YOLO-based real-time detection for food quality inspection, including hyperspectral imaging pipelines, edge deployment on embedded hardware, and strategies for handling domain shift in production environments."
 ---
 
-# Computer Vision for Food Quality Inspection
+## Computer Vision for Food Quality Inspection
 
 ## Overview
 

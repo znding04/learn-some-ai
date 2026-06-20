@@ -7,7 +7,7 @@ difficulty: intermediate
 estimatedTime: "15 minutes"
 ---
 
-# Path Planning and Motion Planning Algorithms
+## Path Planning and Motion Planning Algorithms
 
 ## Overview
 

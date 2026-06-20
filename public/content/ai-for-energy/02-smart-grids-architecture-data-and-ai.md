@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores smart grid architecture, data streams from sensors and meters, and AI applications for real-time grid management and control."
 ---
 
-# Smart Grids: Architecture, Data, and AI Applications
+## Smart Grids: Architecture, Data, and AI Applications
 
 ## Overview
 

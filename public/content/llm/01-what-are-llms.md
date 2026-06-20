@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "An introduction to Large Language Models, covering their history from Transformers to modern systems like GPT-4 and Claude, the next-token prediction mechanism, emergent behaviors, and scaling laws."
 ---
 
-# What are Large Language Models?
+## What are Large Language Models?
 
 ## Overview
 

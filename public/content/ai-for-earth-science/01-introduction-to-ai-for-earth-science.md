@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Overview of how AI is transforming geology, seismology, volcanology, and mineral exploration."
 ---
 
-# Introduction to AI for Earth Science
+## Introduction to AI for Earth Science
 
 ## Overview
 

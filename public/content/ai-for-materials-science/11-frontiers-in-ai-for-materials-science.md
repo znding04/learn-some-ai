@@ -7,7 +7,7 @@ topic: ai-for-materials-science
 order: 11
 ---
 
-# Frontiers in AI for Materials Science
+## Frontiers in AI for Materials Science
 
 ## Overview
 

@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Covers inventory optimization models (newsvendor, EOQ, base-stock policies) and modern ML-based demand forecasting using gradient boosting, LSTMs, and Transformer architectures."
 ---
 
-# Inventory Management and Demand Forecasting with ML
+## Inventory Management and Demand Forecasting with ML
 
 ## Overview
 

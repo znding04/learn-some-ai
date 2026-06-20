@@ -7,7 +7,7 @@ difficulty: beginner
 estimatedTime: "30 minutes"
 ---
 
-# Introduction to AI for Psychology
+## Introduction to AI for Psychology
 
 ## Overview
 

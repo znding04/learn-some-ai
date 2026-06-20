@@ -7,7 +7,7 @@ topic: ai-for-sports-science
 order: 2
 ---
 
-# Player Tracking and Pose Estimation
+## Player Tracking and Pose Estimation
 
 ## Overview
 

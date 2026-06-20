@@ -7,7 +7,7 @@ difficulty: intermediate
 estimatedTime: "15 minutes"
 ---
 
-# Sensor Fusion and Localization for Self-Driving
+## Sensor Fusion and Localization for Self-Driving
 
 ## Overview
 

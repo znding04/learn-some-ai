@@ -7,7 +7,7 @@ difficulty: intermediate
 summary: "How AI agents retain, organize, and retrieve information across interactions using short-term and long-term memory systems."
 ---
 
-# Memory Systems
+## Memory Systems
 
 ## Overview
 

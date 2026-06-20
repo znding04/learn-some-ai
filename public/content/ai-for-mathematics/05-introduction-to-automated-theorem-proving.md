@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Introduces automated theorem proving from classical resolution methods to modern proof assistants like Lean 4 and Coq, covering proof search strategies including Monte Carlo Tree Search."
 ---
 
-# Introduction to Automated Theorem Proving
+## Introduction to Automated Theorem Proving
 
 ## Overview
 

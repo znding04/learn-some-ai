@@ -7,7 +7,7 @@ topic: ai-for-medicine
 order: 9
 ---
 
-# Medical AI Regulations and Ethics
+## Medical AI Regulations and Ethics
 
 ## Overview
 

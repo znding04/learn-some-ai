@@ -7,7 +7,7 @@ estimatedTime: "15 minutes"
 summary: "Covers the mathematical foundations of optimization for supply chains, from linear and integer programming to combinatorial optimization, including modern AI-augmented approaches using graph neural networks and attention mechanisms."
 ---
 
-# Optimization Fundamentals: From Linear Programming to Combinatorial Optimization
+## Optimization Fundamentals: From Linear Programming to Combinatorial Optimization
 
 ## Overview
 

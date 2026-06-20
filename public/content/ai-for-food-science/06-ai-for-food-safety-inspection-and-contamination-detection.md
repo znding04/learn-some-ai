@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Maps biological, chemical, and physical food hazards to their AI-powered detection methods, including spectroscopy-based pathogen screening, hyperspectral mycotoxin detection, X-ray foreign object detection with autoencoders, and regulatory compliance frameworks."
 ---
 
-# AI for Food Safety Inspection and Contamination Detection
+## AI for Food Safety Inspection and Contamination Detection
 
 ## Overview
 

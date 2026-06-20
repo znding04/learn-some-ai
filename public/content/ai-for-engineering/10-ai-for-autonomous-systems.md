@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI for autonomous systems including self-driving vehicles, perception-prediction-planning stacks, uncertainty-aware planning, and safety verification."
 ---
 
-# AI for Autonomous Systems
+## AI for Autonomous Systems
 
 ## Overview
 

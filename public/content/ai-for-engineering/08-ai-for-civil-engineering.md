@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI applications in civil engineering including traffic optimization, structural inspection, water systems management, and urban resilience planning."
 ---
 
-# AI for Civil Engineering and Infrastructure
+## AI for Civil Engineering and Infrastructure
 
 ## Overview
 

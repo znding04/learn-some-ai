@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Covers AI-driven industrial energy efficiency including combustion optimization, process control, and predictive maintenance in energy-intensive industries."
 ---
 
-# Industrial Energy Efficiency and Process Optimization
+## Industrial Energy Efficiency and Process Optimization
 
 ## Overview
 

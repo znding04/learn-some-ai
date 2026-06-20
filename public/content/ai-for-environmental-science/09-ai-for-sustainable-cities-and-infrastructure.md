@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores AI for sustainable urban development including energy optimization, transportation, climate-resilient infrastructure, and urban heat island mitigation."
 ---
 
-# AI for Sustainable Cities and Infrastructure
+## AI for Sustainable Cities and Infrastructure
 
 ## Overview
 

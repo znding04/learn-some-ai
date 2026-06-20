@@ -7,7 +7,7 @@ estimatedTime: "30 minutes"
 summary: "Explores the major strategies for encoding mathematical objects for neural networks, including prefix tokenization, expression trees, graph representations, and LaTeX sequences."
 ---
 
-# Mathematical Representations for AI
+## Mathematical Representations for AI
 
 ## Overview
 
