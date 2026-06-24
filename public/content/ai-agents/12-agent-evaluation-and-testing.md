@@ -1,10 +1,10 @@
 ---
 title: "Agent Evaluation & Testing"
-difficulty: advanced
-summary: "Metrics, methods, and tooling for rigorously evaluating AI agents — including task success rate, tool precision/recall, synthetic test generation, and A/B testing."
 topic: ai-agents
 order: 12
 estimatedTime: "30 minutes"
+difficulty: advanced
+summary: "Metrics, methods, and tooling for rigorously evaluating AI agents — including task success rate, tool precision/recall, synthetic test generation, and A/B testing."
 ---
 
 ## Agent Evaluation & Testing

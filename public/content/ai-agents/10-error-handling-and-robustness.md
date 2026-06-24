@@ -1,10 +1,10 @@
 ---
 title: "Error Handling & Robustness"
-difficulty: intermediate
-summary: "Building resilient AI agents with graceful degradation, retry budgets, circuit breakers, timeout handling, and sandboxed code execution."
 topic: ai-agents
 order: 10
 estimatedTime: "45 minutes"
+difficulty: intermediate
+summary: "Building resilient AI agents with graceful degradation, retry budgets, circuit breakers, timeout handling, and sandboxed code execution."
 ---
 
 ## Error Handling & Robustness

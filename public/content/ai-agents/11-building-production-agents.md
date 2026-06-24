@@ -1,10 +1,10 @@
 ---
 title: "Building Production Agents"
-difficulty: advanced
-summary: "Engineering production-grade AI agents with deployment architecture, cost optimization, monitoring, observability, and reliability patterns."
 topic: ai-agents
 order: 11
 estimatedTime: "30 minutes"
+difficulty: advanced
+summary: "Engineering production-grade AI agents with deployment architecture, cost optimization, monitoring, observability, and reliability patterns."
 ---
 
 ## Building Production Agents
