@@ -6,8 +6,7 @@ summary: "Explores how raw tracking data is transformed into performance metrics
 topic: ai-for-sports-science
 order: 3
 ---
-
-## Performance Analysis and Game Tactics
+# Performance Analysis and Game Tactics
 
 ## Overview
 

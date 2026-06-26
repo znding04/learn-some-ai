@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "30 minutes"
 summary: "Examines how language models trained on next-word prediction implicitly acquire linguistic knowledge, from n-gram models to neural LMs, and what probing studies reveal about their syntactic and semantic competence."
 ---
-
-## Language Modeling as Linguistic Knowledge Acquisition
+# Language Modeling as Linguistic Knowledge Acquisition
 
 ## Overview
 

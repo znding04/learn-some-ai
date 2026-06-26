@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "30 minutes"
 summary: "Surveys cutting-edge research in multi-agent reinforcement learning for games, AI game directors that orchestrate player experiences, and AI-native game design systems that generate complete games."
 ---
-
-## Frontiers: Multi-Agent Game Systems, AI Game Directors, and the Future
+# Frontiers: Multi-Agent Game Systems, AI Game Directors, and the Future
 
 ## Overview
 

@@ -6,8 +6,7 @@ estimatedTime: "30 minutes"
 difficulty: beginner
 summary: "Survey of major agent frameworks including LangChain, LangGraph, AutoGPT, CrewAI, and CAMEL, with a hands-on example using LangChain."
 ---
-
-## Introduction to Agent Frameworks
+# Introduction to Agent Frameworks
 
 ## Overview
 

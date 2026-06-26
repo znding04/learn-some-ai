@@ -6,8 +6,7 @@ summary: "Examines AI diagnostic systems in dermatology, ophthalmology, and radi
 topic: ai-for-medicine
 order: 5
 ---
-
-## AI for Diagnostics: Dermatology, Ophthalmology, and Radiology
+# AI for Diagnostics: Dermatology, Ophthalmology, and Radiology
 
 ## Overview
 

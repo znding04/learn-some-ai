@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "15 minutes"
 summary: "Covers techniques for automated case law retrieval including BM25, semantic search with bi-encoders, cross-encoder reranking, and Shepard's citation analysis for assessing precedent validity."
 ---
-
-## Case Law Retrieval and Precedent Research
+# Case Law Retrieval and Precedent Research
 
 ## Overview
 

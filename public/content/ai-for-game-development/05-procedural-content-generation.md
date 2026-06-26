@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Covers procedural content generation techniques including cellular automata for caves, Perlin noise for terrain, and Wave Function Collapse, with practical implementations of cave and terrain generators."
 ---
-
-## Procedural Content Generation with Machine Learning
+# Procedural Content Generation with Machine Learning
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "30 minutes"
 summary: "Explains how transformer architectures are applied to music generation, covering MusicLM's hierarchical approach, MusicGen's codebook delay pattern, self-attention over music sequences, and conditioning mechanisms."
 ---
-
-## Transformers for Music Generation
+# Transformers for Music Generation
 
 ## Overview
 

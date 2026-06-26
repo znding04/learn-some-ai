@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 3
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Dating and classifying artifacts are two of the most fundamental tasks in archaeology. Traditionally, these tasks rely on expert knowledge, typological comparison, and laboratory techniques such as radiocarbon dating. Machine learning can augment these workflows by fitting calibration curves, extracting visual features from artifact images, and learning classification boundaries even when labeled data is scarce. This lesson covers the key ML approaches to artifact dating and classification, along with the practical challenges of working with limited archaeological datasets.
 

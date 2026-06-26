@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Covers the full LLM training pipeline including pre-training, supervised fine-tuning, and alignment techniques such as RLHF, DPO, and GRPO, along with compute-optimal scaling laws."
 ---
-
-## Training LLMs
+# Training LLMs
 
 ## Overview
 

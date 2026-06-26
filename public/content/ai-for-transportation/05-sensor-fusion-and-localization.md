@@ -6,8 +6,7 @@ summary: "Combining cameras, LiDAR, and radar through fusion architectures and u
 difficulty: intermediate
 estimatedTime: "15 minutes"
 ---
-
-## Sensor Fusion and Localization for Self-Driving
+# Sensor Fusion and Localization for Self-Driving
 
 ## Overview
 

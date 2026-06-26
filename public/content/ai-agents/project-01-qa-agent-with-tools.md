@@ -9,8 +9,7 @@ prerequisites:
   - ai-agents-05
 summary: "Build a question-answering agent that uses the ReAct pattern to decide when and which external tools to call, combining web search, a calculator, and a knowledge base into a single reasoning loop."
 ---
-
-## Project: Build a Q&A Agent with Tool Use
+# Project: Build a Q&A Agent with Tool Use
 
 ## Overview
 

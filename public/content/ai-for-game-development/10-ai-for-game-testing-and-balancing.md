@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Covers AI-driven game testing and balance analysis using automated exploration agents and tournament simulations, with implementations of a balance simulator and an exploration-based bug finder."
 ---
-
-## AI for Game Testing, Balancing, and Automated Playtesting
+# AI for Game Testing, Balancing, and Automated Playtesting
 
 ## Overview
 

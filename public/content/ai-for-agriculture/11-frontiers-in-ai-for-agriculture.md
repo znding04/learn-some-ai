@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "30 minutes"
 summary: "Emerging frontiers in agricultural AI including generative crop design, vertical farming optimization, blockchain traceability, and climate change adaptation."
 ---
-
-## Frontiers in AI for Agriculture
+# Frontiers in AI for Agriculture
 
 ## Overview
 

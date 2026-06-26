@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "30 minutes"
 summary: "Explores personalized nutrition powered by ML, including gut microbiome-based glycemic response prediction, food composition estimation from spectral and image data, large food language models, and multi-modal food understanding systems."
 ---
-
-## AI for Nutrition Science and Personalized Diet
+# AI for Nutrition Science and Personalized Diet
 
 ## Overview
 

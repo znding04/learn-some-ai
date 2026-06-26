@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "30 minutes"
 summary: "Introduces adversarial attacks on ML models including FGSM and PGD, their implications for cybersecurity systems like malware classifiers and intrusion detection, and defenses such as adversarial training and certified robustness."
 ---
-
-## Adversarial Machine Learning
+# Adversarial Machine Learning
 
 ## Overview
 

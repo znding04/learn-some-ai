@@ -6,8 +6,7 @@ summary: "How AI optimizes public transit scheduling, ride-sharing demand predic
 difficulty: intermediate
 estimatedTime: "30 minutes"
 ---
-
-## AI for Public Transit and Mobility-as-a-Service (MaaS)
+# AI for Public Transit and Mobility-as-a-Service (MaaS)
 
 ## Overview
 

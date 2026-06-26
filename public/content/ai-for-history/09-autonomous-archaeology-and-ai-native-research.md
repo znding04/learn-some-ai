@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 9
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Archaeology and historical research have traditionally relied on painstaking manual labor: survey teams walking transects, scholars spending months in archives, and researchers manually synthesizing hundreds of papers. A new paradigm is emerging where AI systems operate as autonomous research agents -- planning surveys, generating hypotheses, synthesizing literature, and even proposing excavation strategies with minimal human oversight.
 

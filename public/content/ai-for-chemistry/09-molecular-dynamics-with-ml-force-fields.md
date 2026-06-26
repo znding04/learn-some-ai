@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Covers how ML force fields bridge the gap between fast but inaccurate classical force fields and accurate but expensive quantum methods, including SchNet, NequIP, DeePMD-kit, MACE, and universal potentials."
 ---
-
-## Molecular Dynamics with ML Force Fields
+# Molecular Dynamics with ML Force Fields
 
 ## Overview
 

@@ -6,8 +6,7 @@ summary: "Explores AI-augmented scouting through video-based skill detection, ma
 topic: ai-for-sports-science
 order: 7
 ---
-
-## AI for Scouting, Recruitment, and Team Building
+# AI for Scouting, Recruitment, and Team Building
 
 ## Overview
 

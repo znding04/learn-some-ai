@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Explores constituency parsing from formal context-free grammars and the CYK algorithm through modern neural chart parsers, including evaluation with Parseval metrics."
 ---
-
-## Syntactic Parsing: From Context-Free Grammars to Neural Constituency Parsers
+# Syntactic Parsing: From Context-Free Grammars to Neural Constituency Parsers
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "15 minutes"
 summary: "Using CNNs and neural networks for fault detection, horizon picking, and seismic inversion."
 ---
-
-## Seismic Data Analysis with Deep Learning
+# Seismic Data Analysis with Deep Learning
 
 ## Overview
 

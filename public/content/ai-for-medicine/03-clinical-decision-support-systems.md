@@ -6,8 +6,7 @@ summary: "Explores ML-powered clinical decision support systems that predict sep
 topic: ai-for-medicine
 order: 3
 ---
-
-## Clinical Decision Support Systems
+# Clinical Decision Support Systems
 
 ## Overview
 

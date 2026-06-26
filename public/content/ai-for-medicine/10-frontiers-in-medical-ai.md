@@ -6,8 +6,7 @@ summary: "Explores cutting-edge frontiers in medical AI including foundation mod
 topic: ai-for-medicine
 order: 10
 ---
-
-## Frontiers in Medical AI
+# Frontiers in Medical AI
 
 ## Overview
 

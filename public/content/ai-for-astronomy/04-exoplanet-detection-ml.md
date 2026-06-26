@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "45 minutes"
 summary: "Machine learning methods for exoplanet detection from transit photometry and radial velocity time series, covering Kepler/TESS data and CNN-based classification."
 ---
-
-## Exoplanet Detection: ML for Transit and Radial Velocity Data
+# Exoplanet Detection: ML for Transit and Radial Velocity Data
 
 ## Overview
 

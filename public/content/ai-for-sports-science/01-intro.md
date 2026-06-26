@@ -6,8 +6,7 @@ summary: "An introduction to how AI is transforming sports science, covering the
 topic: ai-for-sports-science
 order: 1
 ---
-
-## Introduction to AI for Sports Science
+# Introduction to AI for Sports Science
 
 ## Overview
 

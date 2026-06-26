@@ -6,8 +6,7 @@ order: 1
 estimatedTime: "15 minutes"
 summary: "An introduction to AI applications across the food value chain, covering the history from expert systems to modern deep learning, key application areas including quality inspection, food safety, and precision fermentation, and the general AI pipeline for food science."
 ---
-
-## Introduction to AI for Food Science
+# Introduction to AI for Food Science
 
 ## Overview
 

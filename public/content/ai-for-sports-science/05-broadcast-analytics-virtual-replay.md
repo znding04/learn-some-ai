@@ -6,8 +6,7 @@ summary: "Examines AI systems powering broadcast augmentation including automate
 topic: ai-for-sports-science
 order: 5
 ---
-
-## Broadcast Analytics and Virtual Replay
+# Broadcast Analytics and Virtual Replay
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Examines AI-powered building energy management systems, HVAC optimization, thermal load shifting, and digital twins for smart buildings."
 ---
-
-## Building Energy Management and Smart Buildings
+# Building Energy Management and Smart Buildings
 
 ## Overview
 

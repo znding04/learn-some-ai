@@ -6,8 +6,7 @@ summary: "Covers AI for medical imaging including detection, segmentation, and c
 topic: ai-for-medicine
 order: 2
 ---
-
-## Medical Imaging AI
+# Medical Imaging AI
 
 ## Overview
 

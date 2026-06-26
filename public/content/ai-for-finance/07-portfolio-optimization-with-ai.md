@@ -6,8 +6,7 @@ order: 7
 estimatedTime: "30 minutes"
 summary: "Covers mean-variance optimization, Black-Litterman, risk parity, hierarchical risk parity, and ML-enhanced covariance estimation for portfolio construction."
 ---
-
-## Portfolio Optimization with AI
+# Portfolio Optimization with AI
 
 ## Overview
 

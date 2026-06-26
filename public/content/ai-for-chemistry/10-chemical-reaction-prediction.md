@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Covers AI approaches to forward reaction prediction and retrosynthetic analysis, including template-based and template-free methods, the Molecular Transformer, LocalRetro, and multi-step route planning."
 ---
-
-## Chemical Reaction Prediction and Retrosynthesis
+# Chemical Reaction Prediction and Retrosynthesis
 
 ## Overview
 

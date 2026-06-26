@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "15 minutes"
 summary: "Covers the key deep learning architectures (CNNs, RNNs, GNNs, transformers) used in neuroscience research, from brain scan analysis to modeling neural dynamics."
 ---
-
-## Deep Learning for Neuroscience
+# Deep Learning for Neuroscience
 
 ## Overview
 

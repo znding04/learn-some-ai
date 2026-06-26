@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Introduces the core approaches to neural audio synthesis, including autoregressive models like WaveNet, diffusion models for audio, latent diffusion, and vocoders like HiFi-GAN and Encodec."
 ---
-
-## Audio Generation Fundamentals
+# Audio Generation Fundamentals
 
 ## Overview
 

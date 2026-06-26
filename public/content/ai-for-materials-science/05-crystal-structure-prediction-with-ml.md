@@ -6,8 +6,7 @@ summary: "Examines how ML accelerates crystal structure prediction through surro
 topic: ai-for-materials-science
 order: 5
 ---
-
-## Crystal Structure Prediction with ML
+# Crystal Structure Prediction with ML
 
 ## Overview
 

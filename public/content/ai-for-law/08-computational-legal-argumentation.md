@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "15 minutes"
 summary: "Introduces formal models of legal argumentation including Dung's argumentation frameworks, case-based reasoning, defeasible logic, and Answer Set Programming for representing legal knowledge."
 ---
-
-## Computational Legal Argumentation
+# Computational Legal Argumentation
 
 ## Overview
 

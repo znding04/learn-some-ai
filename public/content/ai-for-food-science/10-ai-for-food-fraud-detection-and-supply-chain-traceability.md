@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Covers AI-powered food authentication using stable isotope analysis, elemental profiling, and chemometrics, along with blockchain-anchored supply chain traceability enhanced by anomaly detection, NLP, and multi-modal fusion for robust fraud detection."
 ---
-
-## AI for Food Fraud Detection and Supply Chain Traceability
+# AI for Food Fraud Detection and Supply Chain Traceability
 
 ## Overview
 

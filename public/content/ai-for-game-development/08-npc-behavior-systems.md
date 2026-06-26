@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "45 minutes"
 summary: "Covers behavior trees and Goal-Oriented Action Planning (GOAP) for complex NPC decision-making, with implementations of a hierarchical behavior tree and a backward-chaining GOAP planner."
 ---
-
-## NPC Behavior Systems: Behavior Trees and Goal-Oriented Action Planning
+# NPC Behavior Systems: Behavior Trees and Goal-Oriented Action Planning
 
 ## Overview
 

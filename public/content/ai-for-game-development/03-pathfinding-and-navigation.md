@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Covers A* pathfinding, flow fields, navigation meshes, and steering behaviors for game character movement, with implementations of A* on grids and flow field generation."
 ---
-
-## Pathfinding and Navigation in Games
+# Pathfinding and Navigation in Games
 
 ## Overview
 

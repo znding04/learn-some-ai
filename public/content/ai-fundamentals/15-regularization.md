@@ -6,8 +6,7 @@ order: 15
 estimatedTime: "30 minutes"
 summary: "Covers regularization techniques to prevent overfitting including L1/L2 regularization, dropout, batch normalization, early stopping, and data augmentation with practical guidelines."
 ---
-
-## Regularization Techniques
+# Regularization Techniques
 
 ## Overview
 

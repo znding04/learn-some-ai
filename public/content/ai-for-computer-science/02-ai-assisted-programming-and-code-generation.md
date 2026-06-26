@@ -6,8 +6,7 @@ summary: "Explores how Transformer-based models generate code from natural langu
 topic: ai-for-computer-science
 order: 2
 ---
-
-## AI-Assisted Programming and Code Generation
+# AI-Assisted Programming and Code Generation
 
 ## Overview
 

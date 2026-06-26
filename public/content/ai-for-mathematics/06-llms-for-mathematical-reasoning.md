@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "45 minutes"
 summary: "Covers how large language models perform mathematical reasoning through techniques like chain-of-thought prompting, program-of-thought, self-consistency, and multi-agent debate."
 ---
-
-## Large Language Models for Mathematical Reasoning
+# Large Language Models for Mathematical Reasoning
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Explores how neural networks augment Earth system models by replacing expensive sub-grid parameterizations and accelerating climate simulations."
 ---
-
-## AI for Earth System Modeling
+# AI for Earth System Modeling
 
 ## Overview
 

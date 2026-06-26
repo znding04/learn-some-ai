@@ -6,8 +6,7 @@ summary: "Surveys emerging frontiers including AI-native programming languages, 
 topic: ai-for-computer-science
 order: 11
 ---
-
-## Frontiers and Future Directions
+# Frontiers and Future Directions
 
 ## Overview
 

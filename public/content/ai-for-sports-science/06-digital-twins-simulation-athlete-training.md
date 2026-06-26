@@ -6,8 +6,7 @@ summary: "Covers the architecture of sports digital twins, physiological models 
 topic: ai-for-sports-science
 order: 6
 ---
-
-## Digital Twins and Simulation for Athlete Training
+# Digital Twins and Simulation for Athlete Training
 
 ## Overview
 

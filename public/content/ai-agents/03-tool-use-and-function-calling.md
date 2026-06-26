@@ -6,8 +6,7 @@ estimatedTime: "30 minutes"
 difficulty: intermediate
 summary: "How LLMs use structured function calling to invoke tools, with best practices for schema design, error handling, and security."
 ---
-
-## Tool Use & Function Calling
+# Tool Use & Function Calling
 
 ## Overview
 

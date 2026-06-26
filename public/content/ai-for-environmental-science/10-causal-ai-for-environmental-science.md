@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Introduces causal AI methods for environmental science, going beyond correlation to quantify the effects of interventions and policies."
 ---
-
-## Causal AI for Environmental Science
+# Causal AI for Environmental Science
 
 ## Overview
 

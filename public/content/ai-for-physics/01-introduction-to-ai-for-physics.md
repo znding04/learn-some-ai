@@ -6,8 +6,7 @@ order: 1
 estimatedTime: "15 minutes"
 summary: "AI is rapidly becoming the third pillar of physics alongside theory and experiment, enabling surrogate models for intractable PDEs, pattern discovery in massive experimental datasets, and even proposing new physical laws from raw observations."
 ---
-
-## Introduction to AI for Physics
+# Introduction to AI for Physics
 
 ## Overview
 

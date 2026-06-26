@@ -6,8 +6,7 @@ summary: "Understanding SAE automation levels, the historical milestones of self
 difficulty: beginner
 estimatedTime: "30 minutes"
 ---
-
-## Autonomous Vehicles: Levels, History, and Architecture
+# Autonomous Vehicles: Levels, History, and Architecture
 
 ## Overview
 

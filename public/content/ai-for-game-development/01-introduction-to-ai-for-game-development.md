@@ -6,8 +6,7 @@ order: 1
 estimatedTime: "30 minutes"
 summary: "Explores the history and landscape of AI in game development, covering key concepts from game classification to the AI game loop, with a practical implementation of a simple perceive-decide-act agent."
 ---
-
-## Introduction to AI for Game Development
+# Introduction to AI for Game Development
 
 ## Overview
 

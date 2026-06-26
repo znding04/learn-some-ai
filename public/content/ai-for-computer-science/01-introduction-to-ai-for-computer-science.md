@@ -6,8 +6,7 @@ summary: "An overview of how AI is reshaping computer science, from code generat
 topic: ai-for-computer-science
 order: 1
 ---
-
-## Introduction to AI for Computer Science
+# Introduction to AI for Computer Science
 
 ## Overview
 

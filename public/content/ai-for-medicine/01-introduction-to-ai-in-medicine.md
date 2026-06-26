@@ -6,8 +6,7 @@ summary: "An introduction to the landscape of AI in medicine, covering its histo
 topic: ai-for-medicine
 order: 1
 ---
-
-## Introduction to AI in Medicine
+# Introduction to AI in Medicine
 
 ## Overview
 

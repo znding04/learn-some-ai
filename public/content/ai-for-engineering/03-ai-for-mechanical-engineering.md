@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Explores AI-accelerated mechanical engineering simulation including surrogate models for FEA, physics-informed neural networks, and AI-driven CFD."
 ---
-
-## AI for Mechanical Engineering and Simulation
+# AI for Mechanical Engineering and Simulation
 
 ## Overview
 

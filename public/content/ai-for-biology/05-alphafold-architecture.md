@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Dissects the AlphaFold2 architecture, including the Evoformer, Invariant Point Attention, and iterative recycling, and explains why it was a breakthrough in protein structure prediction."
 ---
-
-## AlphaFold: Architecture and Impact
+# AlphaFold: Architecture and Impact
 
 ## Overview
 

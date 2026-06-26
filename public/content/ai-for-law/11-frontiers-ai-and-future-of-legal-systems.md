@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "15 minutes"
 summary: "Explores emerging frontiers in legal AI including AI judges, autonomous legal agents, access to justice tools, liability for AI legal advice, and divergent international regulatory approaches."
 ---
-
-## Frontiers: AI and the Future of Legal Systems
+# Frontiers: AI and the Future of Legal Systems
 
 ## Overview
 

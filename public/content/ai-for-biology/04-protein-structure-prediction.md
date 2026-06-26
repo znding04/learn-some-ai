@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "30 minutes"
 summary: "Explains the protein folding problem, Levinthal's paradox, the four levels of protein structure, traditional computational approaches (homology modeling, threading, ab initio), and standard evaluation metrics like RMSD and TM-score."
 ---
-
-## Protein Structure Prediction
+# Protein Structure Prediction
 
 ## Overview
 

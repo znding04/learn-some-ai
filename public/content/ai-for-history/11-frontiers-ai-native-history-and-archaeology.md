@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 11
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 We stand at the threshold of a new era in historical research -- one where AI is not just a processing tool but a **reasoning partner** capable of engaging with the past in fundamentally new ways. Foundation models can now read ancient scripts, reason across centuries of evidence, and generate plausible historical narratives. Causal inference frameworks allow us to ask "what if?" questions about history with mathematical rigor. And AI-powered museum experiences are transforming how the public encounters the past.
 

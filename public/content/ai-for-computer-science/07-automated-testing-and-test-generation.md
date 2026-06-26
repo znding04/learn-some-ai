@@ -6,8 +6,7 @@ summary: "Covers AI-driven test generation including LLM-generated unit tests, p
 topic: ai-for-computer-science
 order: 7
 ---
-
-## Automated Testing and Test Generation
+# Automated Testing and Test Generation
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Examines reinforcement learning for control systems, model predictive control with learned models, and sim-to-real transfer for robotics."
 ---
-
-## AI for Control Systems and Robotics
+# AI for Control Systems and Robotics
 
 ## Overview
 

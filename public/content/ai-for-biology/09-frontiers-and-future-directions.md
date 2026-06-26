@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "45 minutes"
 summary: "Surveys the current frontier of AI in biology, including AlphaFold3, foundation models for proteins and genomes, self-driving labs, multimodal biological AI, unsolved technical challenges, and ethical considerations around dual-use and equitable access."
 ---
-
-## Frontiers and Future Directions in AI for Biology
+# Frontiers and Future Directions in AI for Biology
 
 ## Overview
 

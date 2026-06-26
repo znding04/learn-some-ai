@@ -6,8 +6,7 @@ summary: "Covers AI techniques powering precision medicine including polygenic r
 topic: ai-for-medicine
 order: 8
 ---
-
-## Precision Medicine and Genomic AI
+# Precision Medicine and Genomic AI
 
 ## Overview
 

@@ -6,8 +6,7 @@ summary: "Covers injury risk modeling using acute:chronic workload ratio, featur
 topic: ai-for-sports-science
 order: 4
 ---
-
-## Injury Prediction and Prevention
+# Injury Prediction and Prevention
 
 ## Overview
 

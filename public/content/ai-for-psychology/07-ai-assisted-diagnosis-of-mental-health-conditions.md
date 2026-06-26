@@ -6,8 +6,7 @@ topic: ai-for-psychology
 order: 7
 estimatedTime: "30 minutes"
 ---
-
-## AI-Assisted Diagnosis of Mental Health Conditions
+# AI-Assisted Diagnosis of Mental Health Conditions
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 1
 estimatedTime: "15 minutes"
 summary: "Introduces the landscape of AI for engineering, covering why engineering is a natural fit for machine learning and the major application domains."
 ---
-
-## Introduction to AI for Engineering
+# Introduction to AI for Engineering
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 7
 estimatedTime: "15 minutes"
 summary: "Explores types of bias in AI systems, real-world examples of algorithmic harm, fairness definitions and trade-offs, explainability techniques, and the EU AI Act."
 ---
-
-## AI Ethics and Bias
+# AI Ethics and Bias
 
 ## Overview
 

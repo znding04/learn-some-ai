@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "30 minutes"
 summary: "AI applications in radio astronomy including interferometric imaging, pulsar candidate classification, RFI mitigation, and fast radio burst detection."
 ---
-
-## AI for Radio Astronomy: Pulsars and Fast Radio Bursts
+# AI for Radio Astronomy: Pulsars and Fast Radio Bursts
 
 Radio astronomy observes the universe at wavelengths from millimeters to meters, revealing phenomena invisible at optical wavelengths: the cold interstellar medium, synchrotron radiation from relativistic electrons, molecular masers, and the most extreme compact objects -- pulsars and magnetars. Modern radio telescopes generate data at rates of terabytes per hour, and the signals of interest are buried in terrestrial radio frequency interference (RFI) that can be orders of magnitude brighter than the astrophysical signal. Machine learning has become central to radio astronomy data processing.
 

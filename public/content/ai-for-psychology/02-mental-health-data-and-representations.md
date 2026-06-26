@@ -6,8 +6,7 @@ summary: "Types of psychological data including clinical notes, scales, wearable
 difficulty: beginner
 estimatedTime: "30 minutes"
 ---
-
-## Mental Health Data and Representations
+# Mental Health Data and Representations
 
 ## Overview
 

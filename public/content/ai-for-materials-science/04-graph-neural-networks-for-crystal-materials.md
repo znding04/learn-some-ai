@@ -6,8 +6,7 @@ summary: "Covers graph neural network architectures for crystal property predict
 topic: ai-for-materials-science
 order: 4
 ---
-
-## Graph Neural Networks for Crystal Materials
+# Graph Neural Networks for Crystal Materials
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 7
 estimatedTime: "30 minutes"
 summary: "Examines why LLMs hallucinate, distinguishing confabulation from factual errors, and covers mitigation strategies including RAG, confidence scoring, and chain-of-thought prompting."
 ---
-
-## LLM Limitations and Hallucinations
+# LLM Limitations and Hallucinations
 
 ## Overview
 

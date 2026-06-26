@@ -6,8 +6,7 @@ estimatedTime: "45 minutes"
 difficulty: intermediate
 summary: "Building resilient AI agents with graceful degradation, retry budgets, circuit breakers, timeout handling, and sandboxed code execution."
 ---
-
-## Error Handling & Robustness
+# Error Handling & Robustness
 
 ## Overview
 

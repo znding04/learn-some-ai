@@ -6,8 +6,7 @@ summary: "Examine the AI autonomy stack powering drones and urban air mobility, 
 difficulty: advanced
 estimatedTime: "30 minutes"
 ---
-
-## AI for Drone Navigation and Air Mobility
+# AI for Drone Navigation and Air Mobility
 
 ## Overview
 

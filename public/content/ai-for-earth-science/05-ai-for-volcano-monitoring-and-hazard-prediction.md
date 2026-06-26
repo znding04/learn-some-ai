@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "15 minutes"
 summary: "Time-series analysis and multi-modal data fusion for eruption forecasting and volcanic hazard assessment."
 ---
-
-## AI for Volcano Monitoring and Hazard Prediction
+# AI for Volcano Monitoring and Hazard Prediction
 
 ## Overview
 

@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "30 minutes"
 summary: "Surveys NLP applications in education including automated essay scoring, conversational tutoring, grammar error correction, and text complexity analysis."
 ---
-
-## NLP for Education
+# NLP for Education
 
 ## Overview
 

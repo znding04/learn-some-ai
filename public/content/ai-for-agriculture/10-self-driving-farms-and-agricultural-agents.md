@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Multi-agent systems and LLM-powered advisors for coordinating autonomous farm operations including robots, drones, and sensor networks."
 ---
-
-## Self-Driving Farms and Agricultural Agents
+# Self-Driving Farms and Agricultural Agents
 
 ## Overview
 

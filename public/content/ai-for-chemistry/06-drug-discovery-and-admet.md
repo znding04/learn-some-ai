@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "30 minutes"
 summary: "Covers how AI is transforming every stage of the drug discovery pipeline, from virtual screening and lead optimization to ADMET property prediction and de novo drug design."
 ---
-
-## Drug Discovery and ADMET Prediction
+# Drug Discovery and ADMET Prediction
 
 ## Overview
 

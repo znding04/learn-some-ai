@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "15 minutes"
 summary: "Introduces mathematical models of neurons and neural circuits, from the Hodgkin-Huxley model to mean field models, and their deep connection to AI architectures."
 ---
-
-## Computational Neuroscience and Neural Modeling
+# Computational Neuroscience and Neural Modeling
 
 ## Overview
 

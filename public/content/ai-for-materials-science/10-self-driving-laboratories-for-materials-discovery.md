@@ -6,8 +6,7 @@ summary: "Explores autonomous experimental platforms where AI designs experiment
 topic: ai-for-materials-science
 order: 10
 ---
-
-## Self-Driving Laboratories for Materials Discovery
+# Self-Driving Laboratories for Materials Discovery
 
 ## Overview
 

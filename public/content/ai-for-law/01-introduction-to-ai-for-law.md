@@ -6,8 +6,7 @@ order: 1
 estimatedTime: "15 minutes"
 summary: "An introduction to how AI is applied to legal tasks including document review, case retrieval, contract analysis, and legal reasoning, covering key challenges and datasets in the field."
 ---
-
-## Introduction to AI for Law
+# Introduction to AI for Law
 
 ## Overview
 

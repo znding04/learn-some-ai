@@ -8,8 +8,7 @@ prerequisites:
   - ai-agents-06
 summary: "Learn how multiple AI agents communicate, delegate tasks, reach consensus, and coordinate through shared memory architectures and structured protocols."
 ---
-
-## Multi-Agent Collaboration
+# Multi-Agent Collaboration
 
 ## Overview
 

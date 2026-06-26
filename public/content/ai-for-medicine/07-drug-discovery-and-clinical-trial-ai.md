@@ -6,8 +6,7 @@ summary: "Explores AI applications across the drug development pipeline includin
 topic: ai-for-medicine
 order: 7
 ---
-
-## Drug Discovery and Clinical Trial AI
+# Drug Discovery and Clinical Trial AI
 
 ## Overview
 

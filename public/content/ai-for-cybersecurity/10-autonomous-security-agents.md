@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Explores autonomous AI agents for SOC automation, alert triage, and penetration testing, including LLM-powered incident response, RL-based attack path exploration, and the challenges of trust and autonomy boundaries."
 ---
-
-## Autonomous Security Agents
+# Autonomous Security Agents
 
 ## Overview
 

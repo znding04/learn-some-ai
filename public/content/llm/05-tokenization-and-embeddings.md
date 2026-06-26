@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Explains how LLMs convert text to numerical representations through subword tokenization (BPE, WordPiece, SentencePiece) and embedding layers, including practical token counting and cost estimation."
 ---
-
-## Tokenization and Embeddings
+# Tokenization and Embeddings
 
 ## Overview
 

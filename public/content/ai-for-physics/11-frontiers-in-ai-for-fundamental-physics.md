@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "30 minutes"
 summary: "AI is pushing the boundaries of fundamental physics, from gravitational wave detection and dark matter searches to symbolic regression for discovering physical laws and self-driving laboratories."
 ---
-
-## Frontiers in AI for Fundamental Physics
+# Frontiers in AI for Fundamental Physics
 
 ## Overview
 

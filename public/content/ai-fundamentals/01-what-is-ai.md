@@ -6,10 +6,9 @@ order: 1
 estimatedTime: "15 minutes"
 summary: "An introduction to AI — its history, types (narrow, general, superintelligent), how it compares to human intelligence, and the current landscape of foundation models and AI agents."
 ---
-
 # What is Artificial Intelligence?
 
-## Overview
+# Overview
 
 Artificial Intelligence (AI) is the field of computer science dedicated to creating systems that can perform tasks typically requiring human intelligence — reasoning, learning, perception, and decision-making.
 

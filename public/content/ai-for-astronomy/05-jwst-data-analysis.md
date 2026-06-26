@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "AI-assisted analysis of James Webb Space Telescope data, covering the instrument suite, calibration pipeline, and machine learning applications for source detection and classification."
 ---
-
-## JWST Data Analysis: From Images to Discoveries
+# JWST Data Analysis: From Images to Discoveries
 
 The James Webb Space Telescope, launched in December 2021, represents the most powerful space observatory ever built. Its 6.5-meter segmented primary mirror -- nearly three times the diameter of Hubble's 2.4-meter mirror -- combined with infrared sensitivity down to 0.6 microns and out to 28 microns makes JWST uniquely capable of peering into the early universe and characterizing exoplanet atmospheres. Processing its data, however, demands sophisticated computational pipelines and increasingly, machine learning methods.
 

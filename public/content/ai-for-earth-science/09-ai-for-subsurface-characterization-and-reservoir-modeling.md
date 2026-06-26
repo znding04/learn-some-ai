@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Well log interpretation, facies classification, porosity prediction, and neural reservoir emulators."
 ---
-
-## AI for Subsurface Characterization and Reservoir Modeling
+# AI for Subsurface Characterization and Reservoir Modeling
 
 ## Overview
 

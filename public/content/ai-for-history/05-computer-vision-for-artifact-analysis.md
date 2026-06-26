@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 5
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Computer vision has transformed how archaeologists document, classify, and analyze material culture. Rather than relying solely on expert visual assessment, machine learning models can process thousands of excavation photographs, automatically detect artifacts in situ, segment stratigraphic layers, reconstruct 3D models from 2D images, and classify objects by style and period. This lesson covers the core CV techniques used in archaeological artifact analysis and provides hands-on code for building a CNN-based artifact classifier.
 

@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "30 minutes"
 summary: "Explores AI singing voice synthesis, voice cloning, and voice conversion techniques using models like DiffSinger and So-VITS-SVC, along with the ethical and copyright considerations surrounding voice AI in music."
 ---
-
-## Voice Synthesis and Music with AI
+# Voice Synthesis and Music with AI
 
 ## Overview
 

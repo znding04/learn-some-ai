@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Covers strategic facility location optimization and last-mile delivery challenges including dynamic traffic, crowdsourced logistics, and electric vehicle routing, with AI approaches for network design."
 ---
-
-## AI for Logistics Network Design and Last-Mile Delivery
+# AI for Logistics Network Design and Last-Mile Delivery
 
 ## Overview
 

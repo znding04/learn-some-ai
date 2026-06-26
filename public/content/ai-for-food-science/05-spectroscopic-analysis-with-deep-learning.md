@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Explains how deep learning (1D-CNNs and spectral transformers) is replacing classical chemometrics for food spectroscopic analysis, covering NIR/MIR/Raman principles, preprocessing techniques, and applications in food authentication and quantification."
 ---
-
-## Spectroscopic Analysis with Deep Learning
+# Spectroscopic Analysis with Deep Learning
 
 ## Overview
 

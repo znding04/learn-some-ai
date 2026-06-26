@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "45 minutes"
 summary: "Examines ethical challenges in AI education including data privacy, algorithmic bias, fairness metrics, accessibility, the digital divide, and governance frameworks."
 ---
-
-## Ethics and Equity in AI Education
+# Ethics and Equity in AI Education
 
 ## Overview
 

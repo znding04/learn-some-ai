@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "30 minutes"
 summary: "Explores context window mechanics, the quadratic cost of self-attention, and efficiency techniques like sliding window attention and Flash Attention, plus the tradeoffs between RAG and long-context approaches."
 ---
-
-## Context Windows and Attention
+# Context Windows and Attention
 
 ## Overview
 

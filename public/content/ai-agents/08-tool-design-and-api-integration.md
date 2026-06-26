@@ -6,8 +6,7 @@ estimatedTime: "45 minutes"
 difficulty: intermediate
 summary: "Wrapping external APIs into clean, reliable tool interfaces that AI agents can invoke with proper authentication, retries, and error handling."
 ---
-
-## Tool Design & API Integration
+# Tool Design & API Integration
 
 ## Overview
 

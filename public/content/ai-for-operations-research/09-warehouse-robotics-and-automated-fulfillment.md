@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "15 minutes"
 summary: "Explores warehouse automation technologies including AS/RS, autonomous mobile robots, and goods-to-person systems, along with AI challenges in multi-robot path finding, task allocation, and order batching."
 ---
-
-## Warehouse Robotics and Automated Fulfillment
+# Warehouse Robotics and Automated Fulfillment
 
 ## Overview
 

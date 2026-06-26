@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "45 minutes"
 summary: "Examines frontier directions in AI for engineering including foundation models, AI-augmented simulation, human-AI co-design, and convergence with physical sciences."
 ---
-
-## Frontiers and Future Directions in AI for Engineering
+# Frontiers and Future Directions in AI for Engineering
 
 ## Overview
 

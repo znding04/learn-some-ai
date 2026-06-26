@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "15 minutes"
 summary: "Addresses multi-tier supply chain inventory optimization, the bullwhip effect, and how deep RL and hierarchical forecasting can improve coordinated replenishment across echelons."
 ---
-
-## Multi-Echelon Inventory Models and AI
+# Multi-Echelon Inventory Models and AI
 
 ## Overview
 

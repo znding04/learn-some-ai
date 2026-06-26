@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Explores AI applications in biodiversity monitoring and conservation, from automated species identification to extinction risk prediction."
 ---
-
-## AI for Biodiversity and Conservation
+# AI for Biodiversity and Conservation
 
 ## Overview
 

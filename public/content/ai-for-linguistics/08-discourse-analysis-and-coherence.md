@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "30 minutes"
 summary: "Explores how sentences form coherent texts through rhetorical structure theory, coreference resolution, entity-based coherence models, and dialogue act classification."
 ---
-
-## Discourse Analysis and Coherence
+# Discourse Analysis and Coherence
 
 ## Overview
 

@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 1
 estimatedTime: "15 minutes"
 ---
-
-## Overview
+# Overview
 
 Artificial intelligence is reshaping how we study the past. From deciphering ancient scripts to mapping buried cities with satellite imagery, AI methods -- machine learning, natural language processing, and computer vision -- now augment the historian's toolkit in ways that were unimaginable a generation ago.
 

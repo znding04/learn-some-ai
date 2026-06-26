@@ -6,8 +6,7 @@ order: 14
 estimatedTime: "30 minutes"
 summary: "A deep dive into activation functions including sigmoid, tanh, ReLU, and modern alternatives like GELU and Swish, covering their mathematical properties, the vanishing gradient problem, and weight initialization."
 ---
-
-## Activation Functions Deep Dive
+# Activation Functions Deep Dive
 
 ## Overview
 

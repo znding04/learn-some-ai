@@ -6,8 +6,7 @@ summary: "How computer vision powers vehicle perception through camera-based det
 difficulty: beginner
 estimatedTime: "30 minutes"
 ---
-
-## Computer Vision for Driving: Cameras, LiDAR, and Perception
+# Computer Vision for Driving: Cameras, LiDAR, and Perception
 
 ## Overview
 

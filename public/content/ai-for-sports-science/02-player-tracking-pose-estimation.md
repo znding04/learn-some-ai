@@ -6,8 +6,7 @@ summary: "Covers the complete player tracking pipeline from camera calibration a
 topic: ai-for-sports-science
 order: 2
 ---
-
-## Player Tracking and Pose Estimation
+# Player Tracking and Pose Estimation
 
 ## Overview
 

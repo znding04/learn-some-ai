@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "15 minutes"
 summary: "Examines production planning and scheduling in manufacturing, from MRP and job shop scheduling to ML-driven dispatch rule selection and neural schedule generation using Pointer Networks."
 ---
-
-## Production Planning, Scheduling, and Process Optimization
+# Production Planning, Scheduling, and Process Optimization
 
 ## Overview
 

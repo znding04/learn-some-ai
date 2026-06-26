@@ -9,8 +9,7 @@ prerequisites:
   - ai-agents-15
 summary: "Build an end-to-end RAG agent that ingests documents, embeds them into a FAISS vector store, retrieves and re-ranks relevant chunks, and generates cited answers grounded in the retrieved context."
 ---
-
-## Project: Implement a RAG Agent
+# Project: Implement a RAG Agent
 
 ## Overview
 

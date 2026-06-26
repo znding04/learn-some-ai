@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "30 minutes"
 summary: "Covers ML-based energy demand forecasting and demand response programs that shift flexible loads to optimize grid balance and reduce peak demand."
 ---
-
-## Demand Response and Energy Demand Forecasting
+# Demand Response and Energy Demand Forecasting
 
 ## Overview
 

@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 10
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 As AI systems become increasingly embedded in historical and archaeological research, fundamental questions of **ethics**, **bias**, and **interpretability** demand serious attention. Unlike domains where ground truth is well-defined, historical interpretation is inherently contested -- shaped by perspective, power, and incomplete evidence. When an AI system classifies an artifact, dates a text, or synthesizes a historical narrative, it encodes assumptions from its training data that may reflect centuries of colonial scholarship, gender bias, or geographic imbalance.
 

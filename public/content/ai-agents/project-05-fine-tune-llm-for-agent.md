@@ -6,8 +6,7 @@ estimatedTime: "30 minutes"
 difficulty: advanced
 summary: "Collect agent trajectories, build preference pairs, and fine-tune a 7B model using DPO and LoRA for improved tool-use reliability."
 ---
-
-## Project: Fine-Tune an LLM for Agent Tasks
+# Project: Fine-Tune an LLM for Agent Tasks
 
 ## Overview
 

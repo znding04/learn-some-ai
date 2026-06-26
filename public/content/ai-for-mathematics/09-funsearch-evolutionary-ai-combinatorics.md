@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Describes FunSearch's approach of evolving Python functions via LLM-driven evolutionary search to discover new mathematical results, including the largest known cap set in dimension 8."
 ---
-
-## FunSearch: Evolutionary AI for Combinatorial Mathematics
+# FunSearch: Evolutionary AI for Combinatorial Mathematics
 
 ## Overview
 

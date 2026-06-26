@@ -6,8 +6,7 @@ estimatedTime: "30 minutes"
 difficulty: advanced
 summary: "Engineering production-grade AI agents with deployment architecture, cost optimization, monitoring, observability, and reliability patterns."
 ---
-
-## Building Production Agents
+# Building Production Agents
 
 ## Overview
 

@@ -6,8 +6,7 @@ summary: "Overview of how AI is transforming psychology from ELIZA to modern LLM
 difficulty: beginner
 estimatedTime: "30 minutes"
 ---
-
-## Introduction to AI for Psychology
+# Introduction to AI for Psychology
 
 ## Overview
 

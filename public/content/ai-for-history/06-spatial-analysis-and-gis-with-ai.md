@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 6
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Archaeology is inherently spatial. Where artifacts are found matters as much as what they are. Geographic Information Systems (GIS) have long been a staple of archaeological fieldwork, but the integration of machine learning takes spatial analysis from descriptive mapping to predictive modeling. This lesson explores how gradient boosting, graph neural networks, and deep learning on remote sensing data enable archaeologists to predict undiscovered site locations, reconstruct ancient trade networks, and detect buried structures from orbit.
 

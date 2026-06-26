@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "15 minutes"
 summary: "Paleoclimate reconstruction, AI for paleontology, critical mineral prediction, geohazard networks, and planetary geology."
 ---
-
-## Frontiers: AI for Earth's Past and Future
+# Frontiers: AI for Earth's Past and Future
 
 ## Overview
 

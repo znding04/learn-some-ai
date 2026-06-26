@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "45 minutes"
 summary: "Deep learning approaches for gravitational wave detection in LIGO data, covering matched filtering, CNN-based signal classification, and neural posterior estimation."
 ---
-
-## Gravitational Wave Detection with Deep Learning
+# Gravitational Wave Detection with Deep Learning
 
 ## Overview
 

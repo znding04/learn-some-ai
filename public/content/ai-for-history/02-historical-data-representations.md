@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 2
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Before any AI model can reason about the past, historical information must be translated into structured representations that algorithms can process. This lesson explores how historians and data scientists encode time periods, events, geographic locations, and relationships between entities. We also address the persistent challenge of working with sparse, incomplete, and contradictory historical records.
 

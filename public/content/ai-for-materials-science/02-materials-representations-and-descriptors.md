@@ -6,8 +6,7 @@ summary: "Covers how to encode atomic structures into numerical formats for ML, 
 topic: ai-for-materials-science
 order: 2
 ---
-
-## Materials Representations and Descriptors
+# Materials Representations and Descriptors
 
 ## Overview
 

@@ -6,8 +6,7 @@ summary: "An overview of how artificial intelligence is transforming transportat
 difficulty: beginner
 estimatedTime: "15 minutes"
 ---
-
-## Introduction to AI for Transportation
+# Introduction to AI for Transportation
 
 ## Overview
 

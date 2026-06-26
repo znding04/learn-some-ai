@@ -6,8 +6,7 @@ summary: "Covers the FDA regulatory pathway for AI medical devices, the EU AI Ac
 topic: ai-for-medicine
 order: 9
 ---
-
-## Medical AI Regulations and Ethics
+# Medical AI Regulations and Ethics
 
 ## Overview
 

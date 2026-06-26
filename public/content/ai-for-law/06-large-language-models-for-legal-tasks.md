@@ -6,8 +6,7 @@ order: 6
 estimatedTime: "15 minutes"
 summary: "Explores how large language models are adapted for legal tasks through domain-specific pre-training, retrieval-augmented generation, and chain-of-thought prompting, while addressing hallucination and citation accuracy challenges."
 ---
-
-## Large Language Models for Legal Tasks (LegalLLMs)
+# Large Language Models for Legal Tasks (LegalLLMs)
 
 ## Overview
 

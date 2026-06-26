@@ -6,8 +6,7 @@ order: 7
 estimatedTime: "15 minutes"
 summary: "Covers AI-assisted electronic discovery including predictive coding, active learning for document review, privilege detection, and the EDRM framework for litigation support."
 ---
-
-## AI for E-Discovery and Litigation Support
+# AI for E-Discovery and Litigation Support
 
 ## Overview
 

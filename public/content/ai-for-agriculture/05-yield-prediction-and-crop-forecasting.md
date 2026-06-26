@@ -6,8 +6,7 @@ order: 5
 estimatedTime: "30 minutes"
 summary: "Machine learning methods for crop yield prediction, from regression and ensemble models to neural networks, using satellite imagery, weather data, and multi-modal data fusion."
 ---
-
-## Yield Prediction and Crop Forecasting
+# Yield Prediction and Crop Forecasting
 
 ## Overview
 

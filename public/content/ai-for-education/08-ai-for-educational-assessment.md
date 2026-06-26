@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "30 minutes"
 summary: "Covers AI-powered educational assessment including formative and summative approaches, Item Response Theory, cognitive diagnostic models, stealth assessment, and psychometric fairness."
 ---
-
-## AI for Educational Assessment
+# AI for Educational Assessment
 
 ## Overview
 

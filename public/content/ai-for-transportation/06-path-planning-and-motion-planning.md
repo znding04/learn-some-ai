@@ -6,8 +6,7 @@ summary: "Global and local planning algorithms from A* to MPC, including behavio
 difficulty: intermediate
 estimatedTime: "15 minutes"
 ---
-
-## Path Planning and Motion Planning Algorithms
+# Path Planning and Motion Planning Algorithms
 
 ## Overview
 

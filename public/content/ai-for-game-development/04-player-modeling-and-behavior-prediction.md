@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "30 minutes"
 summary: "Introduces player modeling techniques including dynamic difficulty adjustment, Elo rating systems, and flow theory, with implementations of adaptive difficulty and skill-based matchmaking."
 ---
-
-## Player Modeling and Behavior Prediction
+# Player Modeling and Behavior Prediction
 
 ## Overview
 

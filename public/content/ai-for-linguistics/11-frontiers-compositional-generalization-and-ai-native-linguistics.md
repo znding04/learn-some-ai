@@ -6,8 +6,7 @@ order: 11
 estimatedTime: "30 minutes"
 summary: "Explores the frontiers of AI and linguistics, including compositional generalization failures in LLMs, emergent syntax in neural models, AI-driven linguistic discovery, and the vision of AI-native linguistics."
 ---
-
-## Frontiers: Compositional Generalization, Linguistic Inquiry, and AI-Native Linguistics
+# Frontiers: Compositional Generalization, Linguistic Inquiry, and AI-Native Linguistics
 
 ## Overview
 

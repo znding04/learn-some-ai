@@ -6,8 +6,7 @@ order: 7
 estimatedTime: "30 minutes"
 summary: "Autonomous agricultural vehicles and robotics covering path planning, SLAM navigation, robotic picking, and commercial deployment examples."
 ---
-
-## Autonomous Farm Machinery and Robotics
+# Autonomous Farm Machinery and Robotics
 
 ## Overview
 

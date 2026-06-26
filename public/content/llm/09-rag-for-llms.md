@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Covers the RAG pipeline from document chunking and embedding to vector database retrieval and generation, including dense, sparse, and hybrid retrieval methods with re-ranking."
 ---
-
-## Retrieval Augmented Generation (RAG)
+# Retrieval Augmented Generation (RAG)
 
 ## Overview
 

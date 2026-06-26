@@ -6,8 +6,7 @@ order: 1
 estimatedTime: "15 minutes"
 summary: "Introduction to AI applications in agriculture, covering precision farming, crop monitoring, yield prediction, autonomous machinery, and livestock management."
 ---
-
-## Introduction to AI for Agriculture
+# Introduction to AI for Agriculture
 
 ## Overview
 

@@ -6,8 +6,7 @@ summary: "Examines how AI detects bugs through anomaly-based pattern analysis an
 topic: ai-for-computer-science
 order: 4
 ---
-
-## Automated Bug Detection and Code Repair
+# Automated Bug Detection and Code Repair
 
 ## Overview
 

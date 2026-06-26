@@ -6,8 +6,7 @@ summary: "Explore simulation platforms, digital twins, and validation frameworks
 difficulty: advanced
 estimatedTime: "30 minutes"
 ---
-
-## Simulation Platforms for Autonomous Vehicle Testing
+# Simulation Platforms for Autonomous Vehicle Testing
 
 ## Overview
 

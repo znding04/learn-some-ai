@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Covers data-driven adaptive learning platforms, knowledge tracing algorithms (BKT and DKT), Item Response Theory, computerized adaptive testing, and learning path optimization."
 ---
-
-## Adaptive Learning Platforms
+# Adaptive Learning Platforms
 
 ## Overview
 

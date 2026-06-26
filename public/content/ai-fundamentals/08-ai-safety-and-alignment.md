@@ -6,8 +6,7 @@ order: 8
 estimatedTime: "15 minutes"
 summary: "Covers AI alignment challenges including the specification problem, RLHF, Constitutional AI, mechanistic interpretability, and current safety research directions."
 ---
-
-## AI Safety and Alignment
+# AI Safety and Alignment
 
 ## Overview
 

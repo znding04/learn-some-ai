@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 4
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Historical documents are among the richest primary sources available to researchers, yet much of this material remains locked in formats that resist easy computational analysis: handwritten manuscripts, faded inscriptions, texts in archaic or extinct languages. Natural language processing provides a suite of tools to digitize, parse, and extract meaning from these sources at scale. This lesson covers OCR for degraded documents, named entity recognition for historical texts, language modeling for old and extinct languages, and sentiment analysis as a window into past cultures.
 

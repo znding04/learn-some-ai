@@ -6,8 +6,7 @@ order: 2
 estimatedTime: "30 minutes"
 summary: "Covers computational approaches to morphology, from finite-state transducers for morpheme segmentation and generation to neural sequence-to-sequence models for morphological inflection."
 ---
-
-## Computational Morphology: Morphological Analysis and Generation
+# Computational Morphology: Morphological Analysis and Generation
 
 ## Overview
 

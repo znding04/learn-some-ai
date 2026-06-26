@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Examines how few-shot learning, cross-lingual transfer, and active learning techniques are applied to preserve and process low-resource and endangered languages, along with ethical considerations for AI-assisted language documentation."
 ---
-
-## Linguistic Diversity and Low-Resource NLP
+# Linguistic Diversity and Low-Resource NLP
 
 ## Overview
 

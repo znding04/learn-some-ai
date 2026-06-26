@@ -6,8 +6,7 @@ order: 10
 estimatedTime: "30 minutes"
 summary: "Autonomous science agents for astrophysics, covering symbolic regression for law discovery, self-driving telescopes, and automated scientific hypothesis testing."
 ---
-
-## AI Cosmologists: Autonomous Science Agents for Astrophysics
+# AI Cosmologists: Autonomous Science Agents for Astrophysics
 
 ## The Scientific Discovery Loop
 

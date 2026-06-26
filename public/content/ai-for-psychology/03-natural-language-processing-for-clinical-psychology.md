@@ -6,8 +6,7 @@ summary: "Applying NLP to clinical notes, mood tracking, text-based assessment, 
 difficulty: intermediate
 estimatedTime: "30 minutes"
 ---
-
-## NLP for Clinical Psychology
+# NLP for Clinical Psychology
 
 ## Overview
 

@@ -6,8 +6,7 @@ summary: "Surveys AI applications in software engineering research, including mi
 topic: ai-for-computer-science
 order: 9
 ---
-
-## AI for Software Engineering Research
+# AI for Software Engineering Research
 
 ## Overview
 

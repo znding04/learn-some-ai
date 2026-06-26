@@ -6,8 +6,7 @@ summary: "Introduces formal verification with proof assistants and SMT solvers, 
 topic: ai-for-computer-science
 order: 8
 ---
-
-## Formal Verification and AI
+# Formal Verification and AI
 
 ## Overview
 

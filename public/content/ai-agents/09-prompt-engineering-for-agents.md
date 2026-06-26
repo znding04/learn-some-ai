@@ -6,8 +6,7 @@ estimatedTime: "30 minutes"
 difficulty: intermediate
 summary: "Crafting structured system prompts, chain-of-thought reasoning protocols, and tool selection strategies that make AI agents reliable and predictable."
 ---
-
-## Prompt Engineering for Agents
+# Prompt Engineering for Agents
 
 ## Overview
 

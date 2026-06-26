@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Explores ML for materials engineering including microstructure-property prediction, uncertainty quantification, and autonomous materials discovery."
 ---
-
-## AI for Materials Engineering
+# AI for Materials Engineering
 
 ## Overview
 

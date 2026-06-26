@@ -6,8 +6,7 @@ summary: "Applying RL and imitation learning to autonomous driving, from MDP for
 difficulty: intermediate
 estimatedTime: "30 minutes"
 ---
-
-## Reinforcement Learning for Autonomous Driving
+# Reinforcement Learning for Autonomous Driving
 
 ## Overview
 

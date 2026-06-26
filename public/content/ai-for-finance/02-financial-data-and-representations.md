@@ -6,8 +6,7 @@ order: 2
 estimatedTime: "30 minutes"
 summary: "Explores the taxonomy of financial data including OHLCV, order books, tick data, fundamentals, and alternative data, along with the pipeline from raw data to ML-ready features."
 ---
-
-## Financial Data and Representations
+# Financial Data and Representations
 
 ## Overview
 

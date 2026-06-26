@@ -6,8 +6,7 @@ summary: "Covers retrieval-augmented generation for code, including semantic cod
 topic: ai-for-computer-science
 order: 3
 ---
-
-## Code Search and Retrieval-Augmented Code Generation
+# Code Search and Retrieval-Augmented Code Generation
 
 ## Overview
 

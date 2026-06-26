@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 8
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Paleography -- the study of historical handwriting and scripts -- is one of the most specialized skills in the humanities. Reading a cuneiform tablet, deciphering a medieval manuscript, or identifying the hand of a particular scribe requires years of training. Machine learning now augments this expertise by automating script recognition, classifying writing styles across periods, extracting features for dating, and even enabling translation of low-resource historical languages. This lesson explores how convolutional and recurrent neural networks handle ancient writing systems, how generative models synthesize historical handwriting, and how modern NLP pipelines adapt to languages with minimal training data.
 

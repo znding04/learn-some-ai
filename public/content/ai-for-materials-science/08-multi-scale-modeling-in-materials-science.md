@@ -6,8 +6,7 @@ summary: "Covers how AI bridges the gap between electronic, atomistic, mesoscale
 topic: ai-for-materials-science
 order: 8
 ---
-
-## Multi-Scale Modeling in Materials Science
+# Multi-Scale Modeling in Materials Science
 
 ## Overview
 

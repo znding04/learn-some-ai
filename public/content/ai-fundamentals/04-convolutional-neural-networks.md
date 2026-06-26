@@ -6,8 +6,7 @@ order: 4
 estimatedTime: "30 minutes"
 summary: "Explains how convolutional neural networks exploit spatial structure in images through convolution, pooling, and landmark architectures like LeNet, AlexNet, VGG, and ResNet."
 ---
-
-## CNNs for Image Processing
+# CNNs for Image Processing
 
 ## Overview
 

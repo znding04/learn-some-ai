@@ -6,8 +6,7 @@ topic: ai-for-history
 order: 7
 estimatedTime: "30 minutes"
 ---
-
-## Overview
+# Overview
 
 Historical and archaeological evidence is fragmentary. We rarely observe past societies directly -- we infer their dynamics from scattered remains. Computational simulations bridge this gap by creating virtual laboratories where hypotheses about past human behavior can be tested against the material record. Agent-based models (ABMs) simulate individual decision-makers interacting within environments, producing emergent social phenomena like settlement hierarchies, migration waves, and resource depletion. Digital twins reconstruct ancient cities and landscapes in detailed 3D, integrating archaeological data with environmental models. This lesson covers the principles of historical simulation, demonstrates a settlement dynamics ABM, and discusses validation strategies.
 

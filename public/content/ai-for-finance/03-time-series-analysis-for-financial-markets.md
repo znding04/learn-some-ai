@@ -6,8 +6,7 @@ order: 3
 estimatedTime: "30 minutes"
 summary: "Covers stationarity, autocorrelation, ARIMA models, GARCH volatility modeling, and foundation models for financial time series forecasting."
 ---
-
-## Time Series Analysis for Financial Markets
+# Time Series Analysis for Financial Markets
 
 ## Overview
 

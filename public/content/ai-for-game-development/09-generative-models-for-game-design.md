@@ -6,8 +6,7 @@ order: 9
 estimatedTime: "30 minutes"
 summary: "Explores generative AI techniques for game content creation including GANs, diffusion models, and language models, with implementations of a simple level-generating GAN and Markov chain dialogue generator."
 ---
-
-## Generative Models for Game Design: GANs, Diffusion, and Transformers
+# Generative Models for Game Design: GANs, Diffusion, and Transformers
 
 ## Overview
 

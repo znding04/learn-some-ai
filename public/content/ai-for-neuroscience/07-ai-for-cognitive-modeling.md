@@ -6,8 +6,7 @@ order: 7
 estimatedTime: "15 minutes"
 summary: "Explores how AI is used to build and test computational models of cognition, including attention, working memory, decision-making, and reinforcement learning in the brain."
 ---
-
-## AI for Cognitive Modeling
+# AI for Cognitive Modeling
 
 ## Overview
 
