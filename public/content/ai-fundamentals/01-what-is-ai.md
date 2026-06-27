@@ -8,7 +8,7 @@ summary: "An introduction to AI — its history, types (narrow, general, superin
 ---
 # What is Artificial Intelligence?
 
-# Overview
+## Overview
 
 Artificial Intelligence (AI) is the field of computer science dedicated to creating systems that can perform tasks typically requiring human intelligence — reasoning, learning, perception, and decision-making.
 
