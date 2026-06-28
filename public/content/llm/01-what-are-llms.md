@@ -6,7 +6,7 @@ order: 1
 estimatedTime: "30 minutes"
 summary: "An introduction to Large Language Models, covering their history from Transformers to modern systems like GPT-4 and Claude, the next-token prediction mechanism, emergent behaviors, and scaling laws."
 ---
-# Overview
+# What are Large Language Models?
 
 Large Language Models (LLMs) are neural networks trained on massive text corpora to predict the next token in a sequence. While the idea of statistical language modeling dates back decades, the modern era of LLMs began with the 2017 paper "Attention Is All You Need," which introduced the Transformer architecture. Before Transformers, recurrent neural networks (RNNs) and LSTMs dominated sequence modeling, but they struggled with long-range dependencies and could not be parallelized efficiently during training.
 

@@ -1,5 +1,5 @@
 ---
-title: "Retrieval Augmented Generation"
+title: "Retrieval Augmented Generation (RAG)"
 difficulty: intermediate
 topic: llm
 order: 9

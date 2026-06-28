@@ -322,7 +322,7 @@
   },
   "llm-09": {
     "id": "llm-09",
-    "title": "Retrieval Augmented Generation",
+    "title": "Retrieval Augmented Generation (RAG)",
     "topic": "llm",
     "topicPath": "llm",
     "estimatedTime": "40min",
