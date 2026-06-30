@@ -10,11 +10,19 @@ summary: "An introduction to how AI is applied to legal tasks including document
 
 ## Overview
 
-Legal AI refers to the application of artificial intelligence techniques to legal tasks—ranging from document review and case retrieval to reasoning about statutes and predicting litigation outcomes. The field has roots in the 1980s with early expert systems like TAXMAN and HMEXPERT, but modern Legal AI is driven by large-scale language models, dense embeddings, and retrieval-augmented generation. Today, law firms, corporate legal departments, and courts increasingly rely on AI to handle the enormous volume of documents generated in litigation, transactions, and regulatory compliance.
+Legal AI refers to the application of artificial intelligence techniques to legal tasks—ranging from document review and case retrieval to reasoning about statutes and predicting litigation outcomes.
 
-The legal domain presents unique challenges for AI. Legal text is characterized by formal precision layered over centuries of precedent, Latin phrases, and domain-specific vocabulary that evolves through court decisions. A statute may contain vague terms ("reasonable care," "due diligence") whose meaning is filled in through case law. Reasoning about a legal problem often requires tracking multiple contradictory authorities, understanding hierarchical relationships between rules, and applying analogical reasoning from prior cases. These challenges distinguish Legal AI from general NLP.
+The field has roots in the 1980s with early expert systems like TAXMAN and HMEXPERT. Modern Legal AI is driven by large-scale language models, dense embeddings, and retrieval-augmented generation. Today, law firms, corporate legal departments, and courts increasingly rely on AI to handle the enormous volume of documents generated in litigation, transactions, and regulatory compliance.
 
-Why does AI for law matter? Efficiency is one driver: legal work involves enormous amounts of reading, searching, and writing. Natural language search over contracts, predictive coding for e-discovery, and AI-assisted drafting can reduce billable hours dramatically. A deeper motivation is access to justice: most people cannot afford legal representation. AI tools that summarize legal documents, guide users through procedures, or identify relevant precedents can democratize access to legal information. Research from the World Commerce and Contracting Association found that Fortune 500 companies spend billions annually on contract review—AI can reduce that cost significantly.
+## Overview (continued)
+
+The legal domain presents unique challenges for AI. Legal text is characterized by formal precision layered over centuries of precedent, Latin phrases, and domain-specific vocabulary that evolves through court decisions.
+
+A statute may contain vague terms ("reasonable care," "due diligence") whose meaning is filled in through case law. Reasoning about a legal problem often requires tracking multiple contradictory authorities, understanding hierarchical relationships between rules, and applying analogical reasoning from prior cases. These challenges distinguish Legal AI from general NLP.
+
+Why does AI for law matter? Efficiency is one driver: legal work involves enormous amounts of reading, searching, and writing. Natural language search over contracts, predictive coding for e-discovery, and AI-assisted drafting can reduce billable hours dramatically.
+
+A deeper motivation is access to justice: most people cannot afford legal representation. AI tools that summarize legal documents, guide users through procedures, or identify relevant precedents can democratize access to legal information. Research from the World Commerce and Contracting Association found that Fortune 500 companies spend billions annually on contract review—AI can reduce that cost significantly.
 
 The types of legal tasks AI assists with span a wide spectrum:
 
