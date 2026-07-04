@@ -1,8 +1,8 @@
 ---
 title: "Introduction to AI for Finance"
-difficulty: beginner
 topic: ai-for-finance
 order: 1
+difficulty: beginner
 estimatedTime: "30 minutes"
 summary: "An overview of how AI has transformed the financial industry, covering algorithmic trading, robo-advisors, credit scoring, fraud detection, and NLP for market intelligence."
 ---
@@ -12,7 +12,9 @@ summary: "An overview of how AI has transformed the financial industry, covering
 
 Finance is one of the oldest and most data-rich domains in human history — ledgers, prices, and transaction records stretch back millennia. Yet the last four decades have seen finance transform more radically than in all prior centuries combined, driven by computers, the internet, and now artificial intelligence. **AI is not a future possibility for finance — it is already its operational backbone.**
 
-The story begins in the 1980s, when quantitative analysts ("quants") at firms like Renaissance Technologies and D.E. Shaw began applying statistical models to systematically trade markets. These early algorithmic trading systems were rule-based: buy when the 50-day moving average crossed the 200-day moving average, sell when volatility exceeded a threshold. They were profitable because markets were inefficient and human traders were slow to react. By the 1990s, high-frequency trading (HFT) firms were co-locating servers next to exchange matching engines to shave microseconds off trade execution. Speed became the primary edge.
+The story begins in the 1980s, when quantitative analysts ("quants") at firms like Renaissance Technologies and D.E. Shaw began applying statistical models to systematically trade markets. These early algorithmic trading systems were rule-based: buy when the 50-day moving average crossed the 200-day moving average, sell when volatility exceeded a threshold.
+
+They were profitable because markets were inefficient and human traders were slow to react. By the 1990s, high-frequency trading (HFT) firms were co-locating servers next to exchange matching engines to shave microseconds off trade execution. Speed became the primary edge.
 
 The 2010s marked a second inflection: machine learning entered finance in earnest. Hedge funds began training gradient boosting models on hundreds of features derived from price data, earnings reports, and satellite imagery of retail parking lots. Credit card companies deployed neural networks to detect fraud in real time. Banks used NLP to extract signals from earnings call transcripts before the human analyst community could read them. Regulators began using ML to scan for market manipulation patterns across billions of trades.
 
@@ -45,7 +47,7 @@ This course introduces the AI toolkit for finance. We cover financial data and r
 
 ## The AI in Finance Ecosystem
 
-**AI in Finance Ecosystem**
+The figure below shows how raw financial data flows through feature engineering and ML models to produce trading signals, risk assessments, and credit scores.
 
 ```mermaid
 flowchart TD
