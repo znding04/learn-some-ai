@@ -10,25 +10,48 @@ summary: "Explores how legal text is represented as dense vector embeddings usin
 
 ## Overview
 
-Every Legal AI system begins with a fundamental question: how do we represent legal text so that a machine can reason about it? Legal documents span multiple modalities—statutes codified in hierarchical sections, case opinions with narrative reasoning and holdings, contracts with nested clause structures—each with distinct semantic properties that generic NLP models may fail to capture.
+Every Legal AI system begins with a fundamental question: how do we represent legal text so that a machine can reason about it? Legal documents span multiple modalities — statutes codified in hierarchical sections, case opinions with narrative reasoning and holdings, contracts with nested clause structures — each with distinct semantic properties that generic NLP models may fail to capture.
 
-Generic word embeddings like Word2Vec or GloVe represent each word as a fixed dense vector. However, legal vocabulary often carries precise technical meanings that differ from everyday usage. The word "consideration" in contract law means something legally sufficient exchanged between parties, not merely "thoughtful regard." Generic embeddings trained on news or web text encode the common meaning, missing the legal sense. Domain-specific embeddings trained on legal corpora learn representations that better reflect how terms function in legal contexts.
+### Why Domain-Specific Embeddings
 
-**LegalBERT**, introduced by Chalkidis et al. (2019), is a BERT-based model pre-trained on a large corpus of English legal text from EU legislation, US court opinions, and contracts. LegalBERT captures legal terminology, citation patterns, and argument structures. When fine-tuned on downstream tasks like clause classification or statute retrieval, it consistently outperforms general BERT variants. The model's architecture follows the standard transformer encoder: a stack of self-attention layers that process input text bidirectionally, learning contextual representations:
+Generic word embeddings like Word2Vec or GloVe represent each word as a fixed dense vector. However, legal vocabulary often carries precise technical meanings that differ from everyday usage.
+
+The word **"consideration"** in contract law means something legally sufficient exchanged between parties, not merely "thoughtful regard." Generic embeddings trained on news or web text encode the common meaning, missing the legal sense entirely.
+
+Domain-specific embeddings trained on legal corpora learn representations that better reflect how terms function in legal contexts. They capture the specialized semantics that make legal language distinct from general English.
+
+### LegalBERT: Pre-trained Legal Language Models
+
+**LegalBERT**, introduced by Chalkidis et al. (2019), is a BERT-based model pre-trained on a large corpus of English legal text from EU legislation, US court opinions, and contracts. It captures legal terminology, citation patterns, and argument structures in a way that general models cannot.
+
+When fine-tuned on downstream tasks such as clause classification or statute retrieval, LegalBERT consistently outperforms general BERT variants. The model's architecture follows the standard transformer encoder: a stack of self-attention layers that process input text bidirectionally, learning contextual representations:
 
 $$h_i^{(L)} = \text{Attention}(h_i^{(L-1)}, H^{(L-1)}) \cdot W_O$$
 
 where $h_i^{(0)} = E_i + P_i$ is the sum of token embeddings and positional encodings.
 
-**CaseEncoder** refers to a family of models specifically designed to encode case facts, holdings, and rationales for case-based reasoning tasks. These models capture the causal structure of legal arguments—what facts led the court to reach a particular conclusion—and support similarity computations over case bases.
+### CaseEncoder and Case-Based Reasoning
+
+**CaseEncoder** refers to a family of models specifically designed to encode case facts, holdings, and rationales for case-based reasoning tasks.
+
+These models capture the causal structure of legal arguments — what facts led the court to reach a particular conclusion — and support similarity computations over large case databases. This capability is essential for precedent research, where finding factually similar prior cases is the core task.
 
 ## Key Concepts
 
-- **Domain-specific embeddings**: Dense vector representations trained on or fine-tuned for legal corpora; LegalBERT, LexBERT, and EU-BERT are prominent examples
-- **LegalBERT**: BERT model pre-trained on 12GB of legal text (EU laws, US court opinions, contracts); outperforms general BERT on 5 of 6 downstream legal tasks
-- **Sentence embeddings for law**: Models like **sfbert** or **NLI-based legal encoders** that produce single vectors for entire sentences or paragraphs
-- **Vector databases**: FAISS, Pinecone, or Qdrant stores embeddings for fast nearest-neighbor retrieval; essential for legal semantic search at scale
-- **Contrastive learning**: Training objective that pulls similar legal texts (same outcome, same legal domain) closer in embedding space while pushing dissimilar texts apart
+**Domain-specific embeddings**
+Dense vector representations trained on or fine-tuned for legal corpora. Prominent examples include LegalBERT, LexBERT, and EU-BERT. These models learn to encode legal terminology in ways that general-purpose models cannot.
+
+**LegalBERT**
+A BERT-based model pre-trained on approximately 12 GB of legal text spanning EU laws, US court opinions, and contracts. It outperforms general BERT on 5 out of 6 downstream legal tasks including clause classification and statute retrieval.
+
+**Sentence embeddings for law**
+Models such as **SF-BERT** and **NLI-based legal encoders** that produce single fixed-size vectors representing entire sentences or paragraphs. Useful for semantic similarity comparisons without processing each token individually.
+
+**Vector databases**
+Systems like FAISS, Pinecone, and Qdrant that store embeddings and enable fast nearest-neighbor retrieval. Essential for legal semantic search at scale — with millions of cases, exhaustive comparison is infeasible.
+
+**Contrastive learning**
+A training objective that pulls similar legal texts closer together in embedding space while pushing dissimilar texts apart. Two cases with the same legal outcome should have similar embeddings; cases from unrelated domains should be far apart.
 
 ## Code Examples
 
