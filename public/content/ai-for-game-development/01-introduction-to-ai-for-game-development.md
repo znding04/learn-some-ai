@@ -12,27 +12,40 @@ summary: "Explores the history and landscape of AI in game development, covering
 
 Games have been one of the most important proving grounds for artificial intelligence since the field's inception. In 1950, Claude Shannon published his seminal paper on chess-playing programs, and Alan Turing hand-simulated a chess algorithm before any computer could run it. Since then, games have served as benchmarks, sandboxes, and inspiration for AI breakthroughs — from IBM Deep Blue defeating Garry Kasparov in 1997 to DeepMind's AlphaGo conquering the ancient game of Go in 2016.
 
-Why do games matter so much for AI? First, games provide well-defined environments with clear rules, measurable objectives, and quantifiable success metrics — ideal for training and evaluating agents. Second, games span an enormous range of complexity: from deterministic, perfect-information games like chess to stochastic, partially observable, multi-agent environments like real-time strategy games. Third, games demand real-time performance, forcing researchers to develop efficient algorithms that work under strict time constraints.
+### Why Games Matter for AI
+
+Games provide well-defined environments with clear rules, measurable objectives, and quantifiable success metrics — ideal for training and evaluating agents. They span an enormous range of complexity: from deterministic, perfect-information games like chess to stochastic, partially observable, multi-agent environments like real-time strategy games. Games also demand real-time performance, forcing researchers to develop efficient algorithms that work under strict time constraints.
+
+### AI in the Game Industry
 
 Beyond research, AI is transforming the game industry itself. Modern game studios use AI for procedural content generation (creating levels, textures, and narratives), NPC behavior (making non-player characters believable), player modeling (adapting difficulty and experiences to individual players), automated testing (finding bugs and balance issues), and generative AI (producing art, music, and dialogue). The global games market exceeds $180 billion annually, and AI is becoming a critical competitive advantage.
+
+### What This Track Covers
 
 This track covers the full spectrum of AI in game development — from classic algorithms like A* pathfinding and finite state machines to cutting-edge techniques like deep reinforcement learning, Monte Carlo tree search, and generative models. Whether you want to build smarter NPCs, generate infinite worlds, or train superhuman game agents, this track provides the foundations.
 
 ## Key Concepts
 
-- **Game AI vs. Academic AI**: Game AI prioritizes the *appearance* of intelligence and real-time performance, while academic AI pursues optimal decision-making regardless of computational cost. Game developers often use "good enough" heuristics, while researchers seek provably optimal solutions.
+**Game AI vs. Academic AI**
+Game AI prioritizes the *appearance* of intelligence and real-time performance, while academic AI pursues optimal decision-making regardless of computational cost. Game developers often use "good enough" heuristics, while researchers seek provably optimal solutions.
 
-- **Deterministic vs. Stochastic Games**: Deterministic games (chess, Go) have no randomness — the same actions always produce the same outcomes. Stochastic games (poker, backgammon) involve chance elements that require probabilistic reasoning.
+**Deterministic vs. Stochastic Games**
+Deterministic games (chess, Go) have no randomness — the same actions always produce the same outcomes. Stochastic games (poker, backgammon) involve chance elements that require probabilistic reasoning.
 
-- **Perfect vs. Imperfect Information**: In perfect-information games (chess), all players see the full game state. In imperfect-information games (poker, StarCraft with fog of war), players must reason under uncertainty.
+**Perfect vs. Imperfect Information**
+In perfect-information games (chess), all players see the full game state. In imperfect-information games (poker, StarCraft with fog of war), players must reason under uncertainty.
 
-- **Real-Time vs. Turn-Based**: Turn-based games allow unlimited computation per decision. Real-time games demand decisions within milliseconds, requiring efficient algorithms and time-budgeted search.
+**Real-Time vs. Turn-Based**
+Turn-based games allow unlimited computation per decision. Real-time games demand decisions within milliseconds, requiring efficient algorithms and time-budgeted search.
 
-- **The AI Stack in Games**: Modern game AI operates at multiple levels — strategic (long-term planning), tactical (mid-level decisions), and reactive (immediate responses). Each level uses different algorithms and techniques.
+**The AI Stack in Games**
+Modern game AI operates at multiple levels — strategic (long-term planning), tactical (mid-level decisions), and reactive (immediate responses). Each level uses different algorithms and techniques.
 
-- **Procedural Content Generation (PCG)**: Using algorithms to create game content — levels, terrain, items, quests, narratives — rather than hand-crafting everything. PCG enables infinite replayability and reduces development costs.
+**Procedural Content Generation (PCG)**
+Using algorithms to create game content — levels, terrain, items, quests, narratives — rather than hand-crafting everything. PCG enables infinite replayability and reduces development costs.
 
-- **Player Modeling**: Building computational models of player behavior, preferences, and skill to adapt the game experience in real time.
+**Player Modeling**
+Building computational models of player behavior, preferences, and skill to adapt the game experience in real time.
 
 ## Technical Details
 
