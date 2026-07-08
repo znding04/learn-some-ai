@@ -14,15 +14,13 @@ While constituency parsing organizes sentences into nested phrase structures, **
 
 The sentence *The cat sat on the mat* has this dependency structure:
 
-```text
-      sat
-    ┌──┼──────┐
-    │  │      │
-  The cat   on
-           ┌──┼──┐
-           │  │  the mat
-           │  │
-          the mat
+```mermaid
+graph TD
+    sat["sat (root)"] --> cat["cat (nsubj)"]
+    sat --> on["on (prep)"]
+    cat --> the1["The (det)"]
+    on --> mat["mat (pobj)"]
+    mat --> the2["the (det)"]
 ```
 
 *sat* is the root; *cat* is its subject (nsubj); *on* is the prepositional complement of *sat*; *mat* is the object of the preposition *on*.
