@@ -12,11 +12,21 @@ summary: "Covers techniques for automated case law retrieval including BM25, sem
 
 Finding the right case is often the most time-consuming part of legal research. A lawyer might spend hours sifting through thousands of opinions to find one that supports a particular argument. Case law retrieval systems aim to automate and accelerate this process by matching researcher queries to relevant precedents, ordered by authority and relevance.
 
-Traditional legal search relied on Boolean keyword matching—searching for exact phrases like `"duty of care" AND negligence`. This approach fails when cases discuss the same concept using different terminology. A case about a contractor's duty to prevent foreseeable harm might not use the phrase "duty of care" at all, yet remain highly relevant. Semantic search addresses this by encoding queries and documents into dense vectors where related concepts cluster near each other, regardless of surface vocabulary.
+### From Keywords to Semantics
 
-**Shepard's Analysis** is the traditional legal methodology for assessing case authority. When a case is cited by later cases, it gains positive treatment (it was followed, applied, or affirmed). When a case is cited in a way that limits or overrules it, it receives negative treatment. The goal is to identify the current vitality of a precedent: is it good law, or has it been eroded? Modern computational approaches to Shepard's analysis treat it as a citation classification problem—classifying each citation link as positive, negative, or neutral.
+Traditional legal search relied on Boolean keyword matching—searching for exact phrases like `"duty of care" AND negligence`. This approach fails when cases discuss the same concept using different terminology.
 
-Query expansion is critical for legal search. A researcher's initial query might miss relevant cases that use synonyms or related concepts. Query expansion adds terms—for example, expanding "breach of contract" to include "failure to perform," "non-performance," and "material breach"—then re-weights document scores accordingly.
+A case about a contractor's duty to prevent foreseeable harm might not use the phrase "duty of care" at all, yet remain highly relevant. Semantic search addresses this by encoding queries and documents into dense vectors where related concepts cluster near each other, regardless of surface vocabulary.
+
+### Shepard's Analysis and Citation Classification
+
+**Shepard's Analysis** is the traditional legal methodology for assessing case authority. When a case is cited by later cases, it gains positive treatment — it was followed, applied, or affirmed. When a case is cited in a way that limits or overrules it, it receives negative treatment.
+
+The goal is to identify the current vitality of a precedent: is it good law, or has it been eroded? Modern computational approaches to Shepard's analysis treat it as a citation classification problem, classifying each citation link as positive, negative, or neutral.
+
+### Query Expansion and Hybrid Retrieval
+
+Query expansion is critical for legal search. A researcher's initial query might miss relevant cases that use synonyms or related concepts. Query expansion adds terms — for example, expanding "breach of contract" to include "failure to perform," "non-performance," and "material breach" — then re-weights document scores accordingly.
 
 **Hybrid retrieval** combines multiple signals. A practical case retrieval pipeline might:
 
@@ -34,12 +44,23 @@ where $f(q_i, D)$ is the term frequency, $k_1$ and $b$ are tunable parameters (t
 
 ## Key Concepts
 
-- **BM25**: Okapi BM25, a probabilistic bag-of-words retrieval function used as a strong baseline for legal text retrieval
-- **Bi-encoder**: Encodes query and document independently into vectors; fast retrieval but may lose cross-document context
-- **Cross-encoder**: Jointly encodes query and document; more accurate but computationally expensive, used for reranking
-- **Shepard's citation analysis**: Method of tracing a case's treatment history through subsequent citations to determine its current validity
-- **Query expansion**: Enriches a search query with synonyms, related terms, and domain knowledge to improve recall
-- **Dense passage retrieval**: Using neural encoders to retrieve relevant legal documents based on semantic similarity rather than keyword overlap
+**BM25 (Okapi BM25)**
+A probabilistic bag-of-words retrieval function widely used as a strong baseline for legal text retrieval. It extends TF-IDF by incorporating document length normalization via tunable parameters $k_1$ and $b$, giving it an edge over simpler keyword-matching approaches.
+
+**Bi-encoder**
+Encodes the query and each document independently into dense vector representations, then retrieves documents by vector similarity. Fast and scalable for large collections, but may lose cross-document context since query and document never interact during encoding.
+
+**Cross-encoder**
+Jointly encodes query-document pairs through attention layers, producing more accurate relevance scores than bi-encoders. Computationally expensive per pair, so typically reserved for reranking a small set of top candidates retrieved by a faster method.
+
+**Shepard's citation analysis**
+A method of tracing a case's treatment history through subsequent citations to determine its current validity as precedent. Each citation is classified as positive (followed, applied, affirmed) or negative (limited, overruled, criticized), producing a vitality assessment of whether the case remains good law.
+
+**Query expansion**
+Enriches a search query with synonyms, related terms, and domain-specific vocabulary to improve recall. For example, expanding "breach of contract" to include "failure to perform," "non-performance," and "material breach" helps surface relevant cases that use different terminology.
+
+**Dense passage retrieval**
+Uses neural encoders to retrieve relevant legal documents based on semantic similarity rather than keyword overlap. Documents and queries are embedded into a shared vector space where conceptually related content clusters together, even when surface vocabulary differs.
 
 ## Code Examples
 
