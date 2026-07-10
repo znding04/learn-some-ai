@@ -12,9 +12,17 @@ summary: "Explores smart grid architecture, data streams from sensors and meters
 
 A smart grid is an electricity network that uses digital communication, sensors, and automated control to improve the reliability, efficiency, and sustainability of power delivery. Unlike the traditional grid — a one-way system where power flows from large plants to passive consumers — a smart grid is bidirectional, data-rich, and adaptive.
 
-The term "smart grid" gained prominence after the U.S. Energy Independence and Security Act of 2007, but the underlying ideas go back decades. What changed was the convergence of cheap sensors (smart meters, phasor measurement units), ubiquitous connectivity (fiber, 5G, LoRaWAN), and machine learning capable of extracting actionable intelligence from massive, noisy, real-time data streams.
+### What Makes a Grid "Smart"?
 
-A modern smart grid generates enormous volumes of data: a single phasor measurement unit (PMU) samples voltage and current at 30–120 Hz, producing millions of measurements per day. Smart meters report consumption at 15-minute to 1-second intervals across millions of endpoints. Weather stations, satellite imagery, and market data add further dimensions. The central challenge is turning this data flood into real-time decisions — exactly the kind of problem where AI excels.
+The term "smart grid" gained prominence after the U.S. Energy Independence and Security Act of 2007, but the underlying ideas go back decades. What changed was the convergence of three technologies: cheap sensors (smart meters, phasor measurement units), ubiquitous connectivity (fiber, 5G, LoRaWAN), and machine learning capable of extracting actionable intelligence from massive, noisy, real-time data streams.
+
+The key difference from traditional grids is bidirectional flow — both of electricity and information. In a conventional grid, power flows one way from large centralized plants to passive consumers. In a smart grid, distributed energy resources (rooftop solar, batteries, EVs) feed power back into the network, while sensors stream real-time data to control centers that can respond automatically.
+
+### The Data Challenge
+
+A modern smart grid generates enormous volumes of data. A single phasor measurement unit (PMU) samples voltage and current at 30–120 Hz, producing millions of measurements per day. Smart meters report consumption at 15-minute to 1-second intervals across millions of endpoints. Weather stations, satellite imagery, and market data add further dimensions.
+
+The central challenge is turning this data flood into real-time decisions — exactly the kind of problem where AI excels. Machine learning can detect anomalies, forecast demand, optimize dispatch, and predict equipment failures faster than traditional SCADA systems.
 
 **Smart Grid Architecture**
 
@@ -56,12 +64,23 @@ flowchart TB
 
 ## Key Concepts
 
-- **SCADA (Supervisory Control and Data Acquisition)**: The legacy control system for grid monitoring. SCADA polls data every 2–4 seconds — too slow for modern dynamic phenomena. AI supplements SCADA with faster PMU-based analytics.
-- **Phasor Measurement Units (PMUs)**: Devices that measure voltage and current phasors synchronized via GPS at 30–120 samples/second. PMU data enables wide-area monitoring and AI-based oscillation detection.
-- **Advanced Metering Infrastructure (AMI)**: The network of smart meters, communication links, and data management systems that provides granular consumption data for load forecasting and demand response.
-- **Grid Topology**: The graph structure of buses, lines, and switches. Graph neural networks (GNNs) are increasingly used to learn representations that respect this topology.
-- **State Estimation**: Estimating the full state (voltages, angles) of the grid from noisy, incomplete measurements. ML-enhanced state estimators improve accuracy and robustness.
-- **Fault Detection and Isolation**: Identifying and localizing faults (short circuits, equipment failures) using time-series anomaly detection on sensor data.
+**SCADA (Supervisory Control and Data Acquisition)**
+The legacy control system for grid monitoring. SCADA polls data every 2–4 seconds — too slow for modern dynamic phenomena. AI supplements SCADA with faster PMU-based analytics and real-time anomaly detection.
+
+**Phasor Measurement Units (PMUs)**
+Devices that measure voltage and current phasors synchronized via GPS at 30–120 samples per second. PMU data enables wide-area monitoring, oscillation detection, and AI-based disturbance classification that traditional SCADA cannot provide.
+
+**Advanced Metering Infrastructure (AMI)**
+The network of smart meters, communication links, and data management systems that provides granular consumption data. AMI enables load forecasting at the household level, demand response programs, and load disaggregation using machine learning.
+
+**Grid Topology**
+The graph structure of buses, lines, and switches that defines the physical power network. Graph neural networks (GNNs) are increasingly used to learn representations that respect this topology, enabling faster state estimation and contingency analysis.
+
+**State Estimation**
+The process of estimating the full state (voltages, angles) of the grid from noisy, incomplete measurements. ML-enhanced state estimators improve accuracy and robustness, especially when PMU data is sparse or communication channels are unreliable.
+
+**Fault Detection and Isolation**
+Identifying and localizing faults (short circuits, equipment failures) using time-series anomaly detection on sensor data. AI models can detect and classify faults within milliseconds, enabling automated protection schemes that prevent cascading blackouts.
 
 ## Core Mathematics
 
