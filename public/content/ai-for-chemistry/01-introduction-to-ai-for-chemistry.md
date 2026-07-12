@@ -12,11 +12,28 @@ summary: "An introduction to how artificial intelligence is transforming chemist
 
 Chemistry has always been a data-rich science. From the periodic table to crystallographic databases, chemists have long organized knowledge into structured systems that lend themselves naturally to computational methods. The marriage of artificial intelligence with chemistry represents one of the most transformative developments in modern science, accelerating discovery timelines from years to weeks.
 
-The history of computational chemistry stretches back to the 1930s with Hammett's linear free-energy relationships — among the first quantitative structure-activity relationships (QSARs). These early empirical models established the principle that molecular properties could be predicted from structural features, a concept that underpins modern AI approaches. The 1960s brought Hansch analysis and the birth of cheminformatics as a formal discipline. By the 1990s, combinatorial chemistry and high-throughput screening generated massive datasets that demanded automated analysis.
+### From Hammett to Cheminformatics
 
-The deep learning revolution, beginning around 2012, changed everything. Neural networks could now learn complex, nonlinear relationships between molecular structure and properties directly from data, bypassing the need for hand-crafted descriptors. Key milestones include: the development of graph neural networks for molecules (2015-2017), AlphaFold's protein structure prediction breakthrough (2020), and generative models that design novel molecules with desired properties (2018-present).
+The history of computational chemistry stretches back to the 1930s with Hammett's linear free-energy relationships — among the first quantitative structure-activity relationships (QSARs). These early empirical models established the principle that molecular properties could be predicted from structural features, a concept that underpins modern AI approaches.
 
-Today, AI for chemistry spans an enormous range of applications. In drug discovery, ML models predict binding affinity, toxicity, and pharmacokinetics orders of magnitude faster than traditional methods. In materials science, neural networks predict crystal stability and band gaps, guiding the search for next-generation batteries and solar cells. In synthetic chemistry, transformer models plan retrosynthetic routes and predict reaction outcomes. And in molecular simulation, ML force fields achieve quantum-mechanical accuracy at a fraction of the computational cost.
+The 1960s brought Hansch analysis and the birth of cheminformatics as a formal discipline. By the 1990s, combinatorial chemistry and high-throughput screening generated massive datasets that demanded automated analysis.
+
+### The Deep Learning Revolution
+
+The deep learning revolution, beginning around 2012, changed everything. Neural networks could now learn complex, nonlinear relationships between molecular structure and properties directly from data, bypassing the need for hand-crafted descriptors.
+
+Key milestones include the development of graph neural networks for molecules (2015-2017), AlphaFold's protein structure prediction breakthrough (2020), and generative models that design novel molecules with desired properties (2018-present).
+
+### Modern Applications
+
+Today, AI for chemistry spans an enormous range of applications:
+
+- **Drug discovery:** ML models predict binding affinity, toxicity, and pharmacokinetics orders of magnitude faster than traditional methods
+- **Materials science:** Neural networks predict crystal stability and band gaps, guiding the search for next-generation batteries and solar cells
+- **Synthetic chemistry:** Transformer models plan retrosynthetic routes and predict reaction outcomes
+- **Molecular simulation:** ML force fields achieve quantum-mechanical accuracy at a fraction of the computational cost
+
+### Why Chemistry Suits AI
 
 What makes chemistry particularly well-suited for AI? First, molecules have natural graph structure — atoms as nodes, bonds as edges — that maps perfectly onto graph neural networks. Second, the chemical space is vast (estimated $10^{60}$ drug-like molecules) yet highly structured, making it ideal for generative modeling. Third, physics-based constraints provide strong inductive biases that improve data efficiency. Finally, experimental automation enables closed-loop "self-driving labs" where AI designs experiments, robots execute them, and results feed back into improved models.
 
@@ -24,12 +41,23 @@ This course will take you from molecular representations and basic property pred
 
 ## Key Concepts
 
-- **Cheminformatics**: The application of informatics methods to solve chemical problems, including molecular representation, database searching, and property prediction
-- **QSAR/QSPR**: Quantitative Structure-Activity/Property Relationships — mathematical models relating molecular structure to biological activity or physical properties
-- **Chemical space**: The theoretical set of all possible molecules; drug-like chemical space alone contains an estimated $10^{60}$ compounds
-- **Molecular descriptors**: Numerical features computed from molecular structure (e.g., molecular weight, LogP, topological indices) used as ML inputs
-- **Inverse design**: Using AI to design molecules with desired target properties, rather than screening existing libraries
-- **Self-driving laboratories**: Automated systems combining AI-driven experimental design with robotic execution for autonomous scientific discovery
+**Cheminformatics**
+The application of informatics methods to solve chemical problems, including molecular representation, database searching, and property prediction. It bridges computer science and chemistry, providing the data structures and algorithms that make AI-driven chemistry possible.
+
+**QSAR/QSPR**
+Quantitative Structure-Activity/Property Relationships — mathematical models relating molecular structure to biological activity or physical properties. These models capture the principle that structurally similar molecules tend to have similar properties, enabling virtual screening of millions of compounds.
+
+**Chemical space**
+The theoretical set of all possible molecules. Drug-like chemical space alone contains an estimated $10^{60}$ compounds — far too many to ever synthesize or test experimentally. AI helps navigate this vast space efficiently by learning which regions are most likely to contain molecules with desired properties.
+
+**Molecular descriptors**
+Numerical features computed from molecular structure — such as molecular weight, LogP, and topological indices — used as inputs to machine learning models. The choice of descriptors fundamentally shapes what a model can learn about chemical behavior.
+
+**Inverse design**
+Using AI to design molecules with desired target properties, rather than screening existing libraries. This "reverse" approach starts with a property goal and generates molecular structures predicted to meet it — a paradigm shift from traditional discovery.
+
+**Self-driving laboratories**
+Automated systems combining AI-driven experimental design with robotic execution for autonomous scientific discovery. These closed-loop platforms plan experiments, execute them, analyze results, and refine their models without human intervention — dramatically accelerating the pace of materials and drug discovery.
 
 ## Code Examples
 
