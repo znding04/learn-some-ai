@@ -36,12 +36,27 @@ This lesson series will guide you from these foundational concepts through the d
 
 ## Key Concepts
 
-- **Precision Agriculture**: A farm management strategy that uses information technology and data analytics to observe, measure, and respond to variability within and between fields, optimizing inputs such as water, fertilizer, and pesticides on a site-specific basis.
-- **Remote Sensing**: The acquisition of information about crops, soil, and terrain using sensors mounted on satellites, aircraft, or drones, without making physical contact with the surface. Common data products include multispectral and hyperspectral imagery.
-- **Computer Vision**: A subfield of AI that trains machines to interpret visual data such as images and video. In agriculture, it is used for plant disease classification, weed detection, fruit counting, and crop row guidance.
-- **Yield Prediction**: The use of statistical or machine learning models to estimate the quantity of crop that will be harvested from a given area, typically combining weather, soil, genetic, and management variables.
-- **Edge AI**: Running AI inference on local hardware (e.g., embedded processors on a tractor or drone) rather than sending data to the cloud, enabling real-time decision-making in areas with limited connectivity.
-- **Vegetation Index**: A mathematical combination of spectral reflectance bands that highlights plant health. The most common is the Normalized Difference Vegetation Index (NDVI), defined as $NDVI = \frac{NIR - Red}{NIR + Red}$.
+**Precision Agriculture**
+A farm management strategy that uses information technology and data analytics to observe, measure, and respond to variability within and between fields. It optimizes inputs such as water, fertilizer, and pesticides on a site-specific basis, reducing waste and environmental impact.
+
+**Remote Sensing**
+The acquisition of information about crops, soil, and terrain using sensors mounted on satellites, aircraft, or drones, without making physical contact with the surface. Common data products include multispectral and hyperspectral imagery that reveal plant health patterns invisible to the naked eye.
+
+**Computer Vision**
+A subfield of AI that trains machines to interpret visual data such as images and video. In agriculture, it powers plant disease classification, weed detection, fruit counting, and crop row guidance — all critical for automating farm operations.
+
+**Yield Prediction**
+The use of statistical or machine learning models to estimate the quantity of crop that will be harvested from a given area. These models typically combine weather data, soil measurements, genetic information, and management variables to produce forecasts at field, regional, and national scales.
+
+**Edge AI**
+Running AI inference on local hardware — such as embedded processors on a tractor or drone — rather than sending data to the cloud. This enables real-time decision-making in areas with limited connectivity, a common constraint in rural farming regions.
+
+**Vegetation Index**
+A mathematical combination of spectral reflectance bands that highlights plant health. The most common is the Normalized Difference Vegetation Index (NDVI), defined as:
+
+$$NDVI = \frac{NIR - Red}{NIR + Red}$$
+
+Healthy vegetation typically yields NDVI values above 0.3.
 
 ## Technical Details
 
