@@ -167,12 +167,23 @@ This pattern — fetch, parse, analyze — is a foundation you will build on thr
 
 ## Key Concepts
 
-- **Central Dogma**: The flow of biological information from DNA to RNA to protein to function
-- **Next-generation sequencing**: High-throughput DNA/RNA sequencing technologies that generate massive datasets
-- **AlphaFold2**: A deep learning model from DeepMind that predicts protein 3D structure from sequence with near-experimental accuracy
-- **Protein language model**: A transformer trained on millions of protein sequences to learn evolutionary and structural representations
-- **BLAST**: Basic Local Alignment Search Tool — the classical heuristic for sequence similarity search
-- **CASP**: Critical Assessment of Structure Prediction — a biennial blind prediction competition that benchmarks structure prediction methods
+**Central Dogma**
+The flow of biological information from DNA to RNA to protein to function. Articulated by Francis Crick in 1958, this framework remains the organizing principle for molecular biology and for where AI models intervene — at every step from gene sequence to folded protein to biological function.
+
+**Next-generation sequencing (NGS)**
+High-throughput DNA and RNA sequencing technologies that generate massive datasets at dramatically reduced cost. A human genome that cost $3 billion in 2003 now costs under $200. NGS produces the raw data — reads, expression counts, variant calls — that machine learning models consume.
+
+**AlphaFold2**
+A deep learning model from DeepMind that predicts a protein's three-dimensional structure from its amino acid sequence with near-experimental accuracy. Its 2020 CASP14 results are widely considered one of the biggest breakthroughs in structural biology in decades, making proteome-scale structure prediction practical.
+
+**Protein language model**
+A transformer-based neural network trained on millions of protein sequences to learn evolutionary and structural representations. Like GPT learns linguistic patterns from text corpora, protein language models learn the "grammar" of amino acid sequences — which residues co-evolve, which mutations are tolerated, and what patterns signal specific folds or functions.
+
+**BLAST**
+Basic Local Alignment Search Tool — the classical heuristic for sequence similarity search that has been a biologist's daily workhorse for over thirty years. Given a query sequence, BLAST searches massive databases for similar sequences by finding short matches (k-mers) and extending them into alignments.
+
+**CASP**
+Critical Assessment of Structure Prediction — a biennial blind prediction competition that benchmarks protein structure prediction methods. CASP has been the driving force behind structure prediction progress since 1994; AlphaFold2's decisive victory at CASP14 in 2020 marked the moment when computational methods matched experimental accuracy.
 
 ## Exercises
 
