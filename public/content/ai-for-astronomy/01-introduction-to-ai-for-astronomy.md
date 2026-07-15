@@ -10,26 +10,49 @@ summary: "Overview of AI applications in astronomy, covering the data deluge fro
 
 ## Overview
 
+### From Photographic Plates to Petabytes
+
 Astronomy has always been a data-driven science. For most of its history the constraint was scarcity: too few photons, too few nights, too few detectors. That era is over. The Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST) will photograph the entire southern sky every three nights, producing roughly 20 terabytes of raw pixel data per night and around 10 million alerts about transient or variable sources every 24 hours. The Square Kilometre Array (SKA), expected to reach full operation in the late 2020s, will generate data at a rate that exceeds the current global internet traffic — on the order of an exabyte per day before compression and filtering. For comparison, the Hubble Space Telescope, which launched in 1990 and spent decades as the premier imaging facility, produces roughly 10 gigabytes per week. The increase in data rate from Hubble to LSST to SKA spans roughly nine orders of magnitude.
+
+### Why AI Is Not Optional
 
 No human team can inspect, classify, or interpret data at these scales. That is the core motivation for applying artificial intelligence to astronomy. A single LSST observing season will produce more galaxy images than all professional astronomers alive today could manually examine in their combined lifetimes. AI is not an optional enhancement to modern observational astronomy; it is a necessary infrastructure component without which the scientific value of these instruments cannot be extracted.
 
+### The Three Vs of Astronomical Data
+
 The data challenges in astronomy are characterized by three properties that together define the difficulty. **Volume**: raw data accumulates faster than it can be stored indefinitely, requiring on-the-fly processing and filtering. **Velocity**: transient events — supernovae, gamma-ray bursts, neutron star mergers — evolve on timescales of seconds to days and must be identified and followed up in near real time. **Variety**: a modern observatory produces images, spectra, time series, interferometric visibilities, and polarization maps, often for the same object at wavelengths spanning radio through gamma-ray. Effective AI systems must handle all of these modalities.
+
+### Early AI in Astronomy
 
 The historical trajectory of AI in astronomy mirrors the broader field of machine learning. Early work in the 1990s used decision trees and neural networks with a handful of handcrafted features to separate stars from galaxies in photometric surveys. The Galaxy Zoo project, launched in 2007 by Lintott et al., took a citizen science approach and enlisted hundreds of thousands of volunteers to classify galaxy morphologies from Sloan Digital Sky Survey images — generating over 40 million classifications for nearly one million galaxies and demonstrating both the scale of the problem and the power of distributed human intelligence. Galaxy Zoo's crowdsourced labels subsequently became training data for the deep learning models that superseded manual classification.
 
+### The Deep Learning Revolution (2015–Present)
+
 The modern era began around 2015 as deep convolutional neural networks became practical for astronomical images. Dieleman et al. (2015) trained a CNN on Galaxy Zoo labels to predict crowd-sourced morphological vote fractions directly from pixel data, winning the Galaxy Zoo Kaggle competition and establishing that CNNs could match or exceed human-level classification. In gravitational wave astronomy, George and Huerta (2018) showed that a CNN could detect binary black hole merger signals in simulated LIGO noise in milliseconds, compared to the hours required by matched filter pipelines searching a large template bank. In exoplanet science, Shallue and Vanderburg (2018) applied a CNN to Kepler light curves and discovered two new exoplanets, one of which — Kepler-90i — completed an eight-planet system, the largest known at the time.
+
+### Where AI Has Made the Deepest Impact
 
 The domains where AI has made the deepest impact in astronomy include: galaxy morphology classification and photometric redshift estimation from imaging surveys; gravitational wave detection and parameter estimation from interferometer strain data; exoplanet detection from transit photometry and radial velocity time series; source classification in radio surveys; strong gravitational lens finding; and real-time alert brokers for transient event classification. This course covers the most important of these applications with enough depth to understand both the astrophysics and the machine learning.
 
 ## Key Concepts
 
-- **Data deluge**: Modern sky surveys generate data faster than human inspection can process; AI is required infrastructure, not optional enhancement
-- **Signal-to-noise ratio (SNR)**: Astronomical signals are typically embedded in photon shot noise, detector read noise, sky background, and instrumental systematics; ML models must be robust to low SNR regimes
-- **Multi-wavelength astronomy**: The same astrophysical object emits radiation across the electromagnetic spectrum; combining data from radio, infrared, optical, X-ray, and gamma-ray observatories (and now gravitational waves) provides a more complete physical picture
-- **Time-domain astronomy**: Many astrophysical phenomena vary or are transient; detecting and classifying variability in real time is one of the primary use cases for ML in current and future surveys
-- **Alert brokers**: Automated pipelines that receive raw transient detections from surveys like LSST and apply ML classifiers to prioritize follow-up observations; examples include ALeRCE, ANTARES, and Fink
-- **Transfer learning**: Astronomical datasets are often too small to train deep models from scratch; pretrained features from ImageNet or other large datasets can be fine-tuned effectively on galaxy images and spectra
+**Data deluge**
+Modern sky surveys generate data faster than human inspection can process; AI is required infrastructure, not optional enhancement. The LSST will produce 20 TB of raw data per night, and the SKA is projected to generate an exabyte per day — rates that exceed current global internet traffic.
+
+**Signal-to-noise ratio (SNR)**
+Astronomical signals are typically embedded in photon shot noise, detector read noise, sky background, and instrumental systematics. ML models must be robust to low SNR regimes where the signal may be only a few percent of the noise level. The SNR formula for CCD observations is discussed in detail in the code example below.
+
+**Multi-wavelength astronomy**
+The same astrophysical object emits radiation across the electromagnetic spectrum — from radio through infrared, optical, X-ray, and gamma-ray. Combining data from observatories operating at different wavelengths (and now gravitational wave detectors) provides a more complete physical picture than any single observation can. Multi-modal data fusion is an active area of ML research in astronomy.
+
+**Time-domain astronomy**
+Many astrophysical phenomena vary or are transient — supernovae, gamma-ray bursts, variable stars, and tidal disruption events are detected by their brightness changes over time. Detecting and classifying variability in real time is one of the primary use cases for ML in current and future surveys.
+
+**Alert brokers**
+Automated pipelines that receive raw transient detections from surveys like LSST and apply ML classifiers to prioritize follow-up observations. Examples include ALeRCE (Automatic Learning for the Rapid Classification of Events), ANTARES (Arizona-NOAO Temporal Analysis and Response to Events System), and Fink (a broker developed for LSST). Each processes millions of alerts per night and assigns classification probabilities and priority scores.
+
+**Transfer learning**
+Astronomical datasets are often too small to train deep models from scratch — a typical labeled galaxy morphology dataset may contain only tens of thousands of examples. Pretrained features from ImageNet or other large computer vision datasets can be fine-tuned effectively on galaxy images and spectra, dramatically reducing the labeled data requirement.
 
 ## Code Example: Signal-to-Noise Analysis and Data Volume Estimation
 
