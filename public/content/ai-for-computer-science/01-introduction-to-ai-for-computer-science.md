@@ -12,26 +12,59 @@ order: 1
 
 Artificial intelligence is reshaping the practice of computer science itself. For decades, software development relied on human intuition, experience, and manual effort at every stage — from writing the first line of code to diagnosing a production outage at 3 AM. Today, AI systems can generate code from natural-language descriptions, detect bugs before they reach production, optimize algorithms beyond human capability, and even reason about the correctness of software using formal methods.
 
+### From Autocomplete to Copilot
+
 The story begins with simple autocomplete. Early IDEs offered keyword completion and template snippets — useful, but shallow. The leap came when statistical language models, trained on billions of lines of open-source code, learned the implicit patterns and conventions that programmers follow. GitHub Copilot, released in 2021, demonstrated that a large language model (LLM) could suggest entire functions, not just variable names. Within two years, AI-assisted programming moved from novelty to standard practice.
+
+### AI Across the Software Development Lifecycle
 
 But code generation is only one dimension. AI is now applied across the entire software development lifecycle (SDLC). Static analysis tools powered by machine learning can flag potential security vulnerabilities with far fewer false positives than rule-based scanners. AI-driven test generators can produce unit tests that achieve high coverage without manual effort. Code review bots can catch style violations, logic errors, and even suggest architectural improvements. In the realm of DevOps, AI monitors production systems, predicts failures, and can even auto-remediate certain classes of incidents.
 
+### The Research Frontier
+
 At the research frontier, AI is making contributions that were once thought to require deep human creativity. DeepMind's AlphaCode demonstrated competitive programming ability by generating solutions that ranked in the top 54% of human contestants on Codeforces. More recently, AI systems have discovered novel sorting algorithms (AlphaDev), optimized matrix multiplication beyond known human methods, and assisted in formal theorem proving for software verification.
 
+### Democratization and Its Implications
+
 The implications extend beyond productivity. AI is changing who can build software. Natural-language interfaces to code generation lower the barrier to entry, enabling domain experts — biologists, financial analysts, educators — to create functional software without years of programming training. This democratization raises questions about code quality, security, and the evolving role of professional software engineers.
+
+### What This Track Covers
 
 This track surveys AI's applications across computer science: from code generation and bug detection to formal verification, autonomous coding agents, and the frontiers of AI-driven programming language design. Each lesson combines conceptual explanation with working code examples, giving you both the theoretical grounding and practical skills to leverage AI in your own software engineering practice.
 
 ## Key Concepts
 
-- **AI-Assisted Programming**: Using AI models to help write, complete, and suggest code. Tools like GitHub Copilot, Codeium, and Claude use LLMs trained on large code corpora.
-- **Software Development Lifecycle (SDLC)**: The stages software passes through — requirements, design, implementation, testing, deployment, and maintenance. AI now touches every stage.
-- **Code Generation Models**: Neural networks (typically Transformers) trained on source code to predict the next token, complete functions, or translate natural language to code.
-- **Static Analysis**: Examining code without executing it to find bugs, vulnerabilities, or style issues. AI-enhanced static analysis reduces false positives.
-- **Automated Testing**: AI-generated unit tests, property-based tests, and fuzz tests that explore code behavior systematically.
-- **Formal Verification**: Mathematically proving that software meets its specification. AI assists by suggesting proof strategies and lemmas.
-- **Autonomous Coding Agents**: Systems like Devin and Claude Code that can independently plan, write, test, and debug code with minimal human intervention.
-- **Democratization of Software**: AI tools enabling non-programmers to build functional software through natural-language interaction.
+**AI-Assisted Programming**
+
+Using AI models to help write, complete, and suggest code. Tools like GitHub Copilot, Codeium, and Claude use LLMs trained on large code corpora. These systems learn coding conventions, idioms, and patterns from billions of lines of open-source code, enabling them to generate contextually appropriate completions.
+
+**Software Development Lifecycle (SDLC)**
+
+The stages software passes through — requirements, design, implementation, testing, deployment, and maintenance. AI now touches every stage, from requirements analysis with NLP to automated deployment and AI-driven incident response.
+
+**Code Generation Models**
+
+Neural networks (typically Transformers) trained on source code to predict the next token, complete functions, or translate natural language to code. Modern code LLMs like Codex, StarCoder, and CodeLlama are fine-tuned on curated code datasets for improved correctness and style adherence.
+
+**Static Analysis**
+
+Examining code without executing it to find bugs, vulnerabilities, or style issues. Traditional rule-based static analyzers produce high false-positive rates; AI-enhanced static analysis uses learned patterns to dramatically reduce false positives while catching subtle logic errors.
+
+**Automated Testing**
+
+AI-generated unit tests, property-based tests, and fuzz tests that explore code behavior systematically. Tools can generate test cases that maximize branch coverage, identify edge cases from natural-language specifications, and even write integration tests for API endpoints.
+
+**Formal Verification**
+
+Mathematically proving that software meets its specification. AI assists by suggesting proof strategies and lemmas, bridging the gap between practical software development and formal methods that has traditionally been too labor-intensive for widespread adoption.
+
+**Autonomous Coding Agents**
+
+Systems like Devin and Claude Code that can independently plan, write, test, and debug code with minimal human intervention. These agents combine code generation with tool use — reading files, running shell commands, and iteratively refining solutions based on test results and compiler feedback.
+
+**Democratization of Software**
+
+AI tools enabling non-programmers to build functional software through natural-language interaction. This shift is lowering the barrier to software creation but also raising important questions about code quality, security practices, and the evolving role of professional engineers.
 
 ## Code Examples
 
