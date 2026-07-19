@@ -12,23 +12,55 @@ summary: "Covers the key deep learning architectures (CNNs, RNNs, GNNs, transfor
 
 Deep learning has become indispensable for neuroscience research — applied to everything from analyzing brain scans to modeling neural dynamics. The key architectures are CNNs for spatial imaging data, RNNs/LSTMs for temporal neural recordings, and more recently, transformers and graph neural networks for complex relational data.
 
-**CNNs for neuroimaging** inherit their design from computer vision but must contend with 3D volumetric data, limited training data (dozens to hundreds of subjects, not millions), and the need for interpretability. Transfer learning from large natural image datasets (ImageNet) provides limited benefit since brain images are structurally very different from natural images. Instead, pretraining on large neuroimaging datasets (thousands of brain scans) has emerged as the standard approach. Models like **BrainLM** (pretrained on 50,000+ UK Biobank brain scans) produce generalizable representations that transfer across datasets and analysis tasks.
+### CNNs for Neuroimaging
 
-**RNNs for neural dynamics** model how neural activity evolves over time. The brain is fundamentally a dynamical system — its state at any moment determines what happens next. RNNs trained on neural recordings can learn the underlying dynamical system, enabling prediction of future activity and comparison between biological and artificial dynamical systems. A key finding: trained RNNs spontaneously develop neural representations similar to those observed in the brain, suggesting that recurrent dynamics are a fundamental computation substrate.
+CNNs for neuroimaging inherit their design from computer vision but must contend with 3D volumetric data, limited training data (dozens to hundreds of subjects, not millions), and the need for interpretability. Transfer learning from large natural image datasets (ImageNet) provides limited benefit since brain images are structurally very different from natural images.
 
-**Graph Neural Networks (GNNs)** for brain connectivity data model the brain as a graph — nodes are brain regions, edges are structural or functional connections. GNNs propagate information across this graph, learning representations that predict cognitive traits, clinical outcomes, and individual identities. This is particularly powerful for connectomics data where the graph structure itself carries information.
+Instead, pretraining on large neuroimaging datasets (thousands of brain scans) has emerged as the standard approach. Models like **BrainLM** (pretrained on 50,000+ UK Biobank brain scans) produce generalizable representations that transfer across datasets and analysis tasks.
 
-The interpretability challenge is acute in neuroscience: it's not enough for a CNN to correctly classify Alzheimer's scans; neuroscientists want to know which brain regions and patterns the model uses. Methods like **grad-CAM** (Gradient-weighted Class Activation Mapping), attention visualization, and probing classifiers are standard tools.
+### RNNs for Neural Dynamics
+
+RNNs for neural dynamics model how neural activity evolves over time. The brain is fundamentally a dynamical system — its state at any moment determines what happens next. RNNs trained on neural recordings can learn the underlying dynamical system, enabling prediction of future activity and comparison between biological and artificial dynamical systems.
+
+A key finding: trained RNNs spontaneously develop neural representations similar to those observed in the brain, suggesting that recurrent dynamics are a fundamental computation substrate.
+
+### Graph Neural Networks for Brain Connectivity
+
+Graph Neural Networks (GNNs) for brain connectivity data model the brain as a graph — nodes are brain regions, edges are structural or functional connections. GNNs propagate information across this graph, learning representations that predict cognitive traits, clinical outcomes, and individual identities. This is particularly powerful for connectomics data where the graph structure itself carries information.
+
+### Interpretability in Neuroimaging AI
+
+The interpretability challenge is acute in neuroscience: it's not enough for a CNN to correctly classify Alzheimer's scans; neuroscientists want to know which brain regions and patterns the model uses. Methods like **grad-CAM** (Gradient-weighted Class Activation Mapping), attention visualization, and probing classifiers are standard tools for explaining model decisions.
 
 ## Key Concepts
 
-- **Transfer learning in neuroimaging**: Pretraining a model on large datasets (UK Biobank, ABCD, ENIGMA) then fine-tuning on smaller task-specific datasets
-- **BrainLM**: A foundation model for neuroimaging — a transformer pretrained on 50,000+ brain MRIs that produces generalizable representations
-- **Neural dynamics**: The time-evolving pattern of neural activity; studied through the lens of dynamical systems theory
-- **Latent dynamics model**: A model that learns low-dimensional latent variables that govern neural activity over time
-- **GNN for brain graphs**: Graph neural network applied to brain connectivity matrices; nodes are regions, edges are FC or SC
-- **Probing classifier**: A simple linear classifier trained on a deep model's activations to test what information is encoded at each layer
-- **grad-CAM**: Gradient-weighted Class Activation Mapping — visualizes which image regions most influence a CNN's prediction
+**Transfer learning in neuroimaging**
+
+Pretraining a model on large datasets (UK Biobank, ABCD, ENIGMA) then fine-tuning on smaller task-specific datasets. This approach leverages the representations learned from thousands of brain scans to improve performance on smaller, specialized studies.
+
+**BrainLM**
+
+A foundation model for neuroimaging — a transformer pretrained on 50,000+ brain MRIs that produces generalizable representations. BrainLM embeddings transfer across datasets and tasks, serving as a starting point for classification, regression, and segmentation.
+
+**Neural dynamics**
+
+The time-evolving pattern of neural activity, studied through the lens of dynamical systems theory. Understanding neural dynamics is key to predicting future brain states and comparing biological computation with artificial neural networks.
+
+**Latent dynamics model**
+
+A model that learns low-dimensional latent variables governing neural activity over time. These models compress high-dimensional neural recordings into interpretable factors that drive the system's evolution.
+
+**GNN for brain graphs**
+
+A graph neural network applied to brain connectivity matrices. Nodes represent brain regions, and edges represent functional connectivity (FC) or structural connectivity (SC). GNNs learn to propagate information across this graph to predict individual traits, cognitive states, or clinical outcomes.
+
+**Probing classifier**
+
+A simple linear classifier trained on a deep model's activations to test what information is encoded at each layer. Probing reveals whether a model has learned to represent concepts of interest (e.g., disease status, cognitive tasks) without requiring the model to output them directly.
+
+**grad-CAM**
+
+Gradient-weighted Class Activation Mapping — a visualization technique that highlights which image regions most influence a CNN's prediction. In neuroimaging, grad-CAM helps identify brain regions a model relies on for its classification decisions.
 
 ## Code Examples
 
