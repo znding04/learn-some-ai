@@ -12,23 +12,36 @@ summary: "An overview of how AI has transformed the financial industry, covering
 
 Finance is one of the oldest and most data-rich domains in human history — ledgers, prices, and transaction records stretch back millennia. Yet the last four decades have seen finance transform more radically than in all prior centuries combined, driven by computers, the internet, and now artificial intelligence. **AI is not a future possibility for finance — it is already its operational backbone.**
 
+### The Rise of Quantitative Trading: 1980s–1990s
+
 The story begins in the 1980s, when quantitative analysts ("quants") at firms like Renaissance Technologies and D.E. Shaw began applying statistical models to systematically trade markets. These early algorithmic trading systems were rule-based: buy when the 50-day moving average crossed the 200-day moving average, sell when volatility exceeded a threshold.
 
 They were profitable because markets were inefficient and human traders were slow to react. By the 1990s, high-frequency trading (HFT) firms were co-locating servers next to exchange matching engines to shave microseconds off trade execution. Speed became the primary edge.
 
+### Machine Learning Enters Finance: The 2010s
+
 The 2010s marked a second inflection: machine learning entered finance in earnest. Hedge funds began training gradient boosting models on hundreds of features derived from price data, earnings reports, and satellite imagery of retail parking lots. Credit card companies deployed neural networks to detect fraud in real time. Banks used NLP to extract signals from earnings call transcripts before the human analyst community could read them. Regulators began using ML to scan for market manipulation patterns across billions of trades.
+
+### AI in Today's Financial System
 
 Today, AI permeates every layer of the financial system:
 
-**Algorithmic and Quantitative Trading**: Machine learning models predict short-term price movements, optimize execution to minimize market impact, and construct portfolios that balance expected return against risk. Reinforcement learning agents learn to execute large orders without moving the market against themselves.
+**Algorithmic and Quantitative Trading**
+Machine learning models predict short-term price movements, optimize execution to minimize market impact, and construct portfolios that balance expected return against risk. Reinforcement learning agents learn to execute large orders without moving the market against themselves.
 
-**Robo-Advisors**: Platforms like Betterment and Wealthfront use optimization algorithms to allocate client portfolios across asset classes, automatically rebalancing when drift exceeds a threshold and harvesting tax losses. They have democratized access to sophisticated portfolio management that once required a human advisor.
+**Robo-Advisors**
+Platforms like Betterment and Wealthfront use optimization algorithms to allocate client portfolios across asset classes, automatically rebalancing when drift exceeds a threshold and harvesting tax losses. They have democratized access to sophisticated portfolio management that once required a human advisor.
 
-**Credit Scoring and Lending**: Traditional FICO scores use a small number of features (payment history, credit utilization, length of credit history). ML models trained on thousands of features — including transaction-level spending patterns and mobile device metadata — can predict default with much higher accuracy, enabling lenders to extend credit to thin-file borrowers who would have been rejected under legacy scoring.
+**Credit Scoring and Lending**
+Traditional FICO scores use a small number of features (payment history, credit utilization, length of credit history). ML models trained on thousands of features — including transaction-level spending patterns and mobile device metadata — can predict default with much higher accuracy, enabling lenders to extend credit to thin-file borrowers who would have been rejected under legacy scoring.
 
-**Fraud Detection**: Banks process hundreds of millions of card transactions daily. Each transaction must be scored for fraud in under 100 milliseconds. Graph neural networks that model transaction networks, combined with anomaly detection on spending patterns, catch fraudsters that rule-based systems miss. Real-time models have reduced credit card fraud losses by billions of dollars annually.
+**Fraud Detection**
+Banks process hundreds of millions of card transactions daily. Each transaction must be scored for fraud in under 100 milliseconds. Graph neural networks that model transaction networks, combined with anomaly detection on spending patterns, catch fraudsters that rule-based systems miss. Real-time models have reduced credit card fraud losses by billions of dollars annually.
 
-**NLP for Market Intelligence**: Earnings calls, SEC filings, central bank speeches, and news articles move markets. LLMs fine-tuned on financial text can parse these documents, extract sentiment, identify forward-looking statements, and compare management guidance against actual results — at a scale and speed no human analyst can match.
+**NLP for Market Intelligence**
+Earnings calls, SEC filings, central bank speeches, and news articles move markets. LLMs fine-tuned on financial text can parse these documents, extract sentiment, identify forward-looking statements, and compare management guidance against actual results — at a scale and speed no human analyst can match.
+
+### What This Track Covers
 
 This course introduces the AI toolkit for finance. We cover financial data and representations, time series analysis, machine learning for price prediction, risk modeling, portfolio optimization, and NLP for finance. Each lesson builds toward practical skills: writing code that loads real data, builds models, and evaluates them honestly.
 
@@ -36,12 +49,29 @@ This course introduces the AI toolkit for finance. We cover financial data and r
 
 ## Key Concepts
 
-- **Algorithmic trading**: Using computer programs to execute trades based on pre-defined rules or learned models, removing human emotion and latency from execution.
-- **Quantitative finance**: Applying mathematical and statistical models to financial markets, risk management, and derivative pricing.
-- **Fintech**: The broad category of technology companies applying software and AI to financial services — payments, lending, insurance, wealth management.
-- **Robo-advisor**: An automated digital platform that provides financial planning and portfolio management with minimal human intervention, using optimization and ML algorithms.
-- **High-frequency trading (HFT)**: Algorithmic trading strategies that execute thousands to millions of trades per second, exploiting tiny price discrepancies across venues. Latency (measured in microseconds) is the primary competitive dimension.
-- **Alternative data**: Non-traditional data sources used to generate trading signals — satellite imagery, credit card transaction aggregates, web scraping, app download statistics, shipping container tracking.
+**Algorithmic trading**
+
+Using computer programs to execute trades based on pre-defined rules or learned models, removing human emotion and latency from execution. Algorithmic trading spans a spectrum from simple VWAP (volume-weighted average price) execution algorithms to sophisticated multi-factor predictive models.
+
+**Quantitative finance**
+
+Applying mathematical and statistical models to financial markets, risk management, and derivative pricing. The field draws from stochastic calculus, optimization theory, and time series econometrics to build models of market behavior, price assets, and manage risk.
+
+**Fintech**
+
+The broad category of technology companies applying software and AI to financial services — payments, lending, insurance, wealth management, and capital markets. Fintech encompasses both startups disrupting traditional finance (Stripe, Square) and incumbent banks digitizing their operations.
+
+**Robo-advisor**
+
+An automated digital platform that provides financial planning and portfolio management with minimal human intervention, using optimization and ML algorithms. Robo-advisors typically use mean-variance optimization (Markowitz portfolio theory) to construct diversified portfolios from low-cost ETFs.
+
+**High-frequency trading (HFT)**
+
+Algorithmic trading strategies that execute thousands to millions of trades per second, exploiting tiny price discrepancies across venues. Latency, measured in microseconds, is the primary competitive dimension. HFT firms invest heavily in hardware — FPGA-based trading engines, microwave transmission towers, and direct exchange fiber connections.
+
+**Alternative data**
+
+Non-traditional data sources used to generate trading signals — satellite imagery of retail parking lots, credit card transaction aggregates, web scraping of job listings, app download statistics, shipping container tracking, and social media sentiment. The key edge in alternative data is not the data itself, but the ability to process it into a signal before competitors can.
 
 ---
 
