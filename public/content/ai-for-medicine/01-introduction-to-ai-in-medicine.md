@@ -14,6 +14,8 @@ Medicine is one of the most data-rich and consequential domains in human activit
 
 **Artificial intelligence is transforming medicine** by augmenting clinical reasoning, automating routine analysis, accelerating drug discovery, and enabling personalized treatment at population scale. From detecting diabetic retinopathy in retinal scans to predicting sepsis hours before clinical deterioration, AI systems are entering clinical workflows with measurable impact on patient outcomes.
 
+### The Promise of Medical AI
+
 This lesson introduces the landscape of AI in medicine: its history, why healthcare is both a natural fit and a uniquely challenging domain for machine learning, and the major application areas covered in this track.
 
 ---
@@ -90,14 +92,29 @@ flowchart TD
 
 The major domains where AI is making clinical impact include:
 
-- **Medical Imaging**: Automated analysis of X-rays, CT scans, MRIs, pathology slides, and retinal images (Lessons 2 and 5)
-- **Clinical Decision Support**: Systems that assist physicians with diagnosis, treatment planning, and risk stratification (Lesson 3)
-- **Clinical NLP**: Extracting structured information from unstructured clinical notes and medical literature (Lesson 4)
-- **Diagnostics**: AI-powered screening and diagnosis in dermatology, ophthalmology, and radiology (Lesson 5)
-- **Electronic Health Records**: Mining EHR data for predictive analytics and population health (Lesson 6)
-- **Drug Discovery**: AI-accelerated target identification, molecule design, and clinical trial optimization (Lesson 7)
-- **Precision Medicine**: Genomic analysis, pharmacogenomics, and personalized treatment selection (Lesson 8)
-- **Regulation and Ethics**: FDA pathways, bias mitigation, and responsible deployment (Lesson 9)
+**Medical Imaging** (Lessons 2 and 5)
+Automated analysis of X-rays, CT scans, MRIs, pathology slides, and retinal images. CNNs and vision transformers now match or exceed radiologist performance on specific detection tasks.
+
+**Clinical Decision Support** (Lesson 3)
+Systems that assist physicians with diagnosis, treatment planning, and risk stratification, integrating patient history, lab results, and imaging findings into actionable recommendations.
+
+**Clinical NLP** (Lesson 4)
+Extracting structured information from unstructured clinical notes and medical literature. Transformer models identify medications, diseases, procedures, and relationships between them from free-text records.
+
+**Diagnostics** (Lesson 5)
+AI-powered screening and diagnosis in dermatology, ophthalmology, and radiology. These systems bring specialist-level accuracy to primary care and low-resource settings.
+
+**Electronic Health Records** (Lesson 6)
+Mining EHR data for predictive analytics and population health. Machine learning models identify patients at risk of deterioration, readmission, or developing chronic conditions.
+
+**Drug Discovery** (Lesson 7)
+AI-accelerated target identification, molecule design, and clinical trial optimization. Deep learning reduces the time and cost of bringing new therapies to patients.
+
+**Precision Medicine** (Lesson 8)
+Genomic analysis, pharmacogenomics, and personalized treatment selection. AI models predict which patients will respond to specific therapies based on their molecular profiles.
+
+**Regulation and Ethics** (Lesson 9)
+FDA pathways, bias mitigation, and responsible deployment. Medical AI must navigate rigorous regulatory frameworks to ensure safety and equity.
 
 ---
 
